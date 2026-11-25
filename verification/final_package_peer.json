@@ -1,0 +1,94 @@
+{
+  "kind": "INDEPENDENT_FINAL_PUBLIC_PACKAGE_V0_5_0_PEER_V2",
+  "status": "PASS_LOCAL_PACKAGE_NOT_PUBLISHED",
+  "code_archive": {
+    "bytes": 82619965,
+    "sha256": "1d775a10ba4d35ccb317219feebbd342411793d7e7d2c9e298873a130058f8ad"
+  },
+  "manifest": {
+    "bytes": 239340,
+    "sha256": "19164d3d8305d30dfcf5e007dfc39cb07fd5b49b3e2a60ab70632cab1e88b159"
+  },
+  "all963_snapshot_payloads_and964_tar_members_streamed_rehashed_regular_exact": true,
+  "actual_source_freeze_ledger": {
+    "bytes": 3188,
+    "sha256": "0e2eecdb6ce9d6f4fee063ac70d2d5530d0b86a2fb4da4ae3024cabd2eeb2c87"
+  },
+  "tests": {
+    "passed": 35,
+    "seconds": 4.09,
+    "packaging_and_transport": 16,
+    "friendster_score_math_and_corruption": 19
+  },
+  "actual_unrelated_unicode_path_roundtrip": {
+    "bytes": 18875,
+    "sha256": "e0ddbf7febb20c2bb9d7b6712afda40fb0f82b413f24ad201e2e5a3faad242a7"
+  },
+  "all13_command_outputs_independently_rehashed_and_reviewed": true,
+  "E19_and_E21_all_scientific_checks_exact": true,
+  "E20_entire_audit_exact": true,
+  "Friendster6_full_score_and_RR_Citation2_full_score_numeric_cohort_provenance_exact": true,
+  "all391_systems_payloads_three_figures_all768_E17_rows_and_saved_dimensions_verified": true,
+  "object_map": {
+    "bytes": 19778,
+    "sha256": "e65b950e270698108291bd86516e4c0e0a3ceb2209e6fd9063d5f9321386892b"
+  },
+  "all13_current_paper_objects_raw_inputs_aggregation_commands_present": true,
+  "independent_object_scope_peer": {
+    "bytes": 8660,
+    "sha256": "74e8c311d6e7d07b76d0f41e978f8a017606b09a5530cf48fb5744d76612306c"
+  },
+  "external_assets6": {
+    "cpu_E20_raw": {
+      "filename": "lpp_public_friendster_cpu_matched_v2_raw.tgz",
+      "bytes": 2121570,
+      "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374"
+    },
+    "cpu_pt22_wheels": {
+      "filename": "pt22_native_wheels_v1.tgz",
+      "bytes": 15064339,
+      "sha256": "5e9edbdc067325cd0b41b5fb292e2cc7343cc535da87ff3bef720cbf85da38cf"
+    },
+    "pencil_E19_instrumented48_raw": {
+      "filename": "lpp_public_pencil_instrumented48_raw.tgz",
+      "bytes": 9966534,
+      "sha256": "7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c"
+    },
+    "pencil_E21_clean44_raw": {
+      "filename": "lpp_public_pencil_clean44_raw.tgz",
+      "bytes": 10230546,
+      "sha256": "708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0"
+    },
+    "public_quality": {
+      "filename": "lpp_public_quality_evidence_v1.tgz",
+      "bytes": 404147012,
+      "sha256": "e17cdc9678d00a3f372fc8083741a200a63662226f730f47eeda79f89b4ad3b2"
+    },
+    "public_systems": {
+      "filename": "lpp_public_systems_evidence_v1.tgz",
+      "bytes": 83629661,
+      "sha256": "48232549089f3295c893bb33f6cea0d1aac4a0ee45b91a2669392c90ae1bfe40"
+    }
+  },
+  "release_archives7_total_bytes": 607779627,
+  "quality_asset12_public_weights_and12_complete_score_NPZs_same_prior_verified_asset": true,
+  "public_only_surface_and_all_upstream_notices_retained": true,
+  "parent471_old963_current963_and_v0_4_all_independently_rehashed_exact": true,
+  "current_README_fresh_inode_pending_license_only_historical": true,
+  "closed_findings": [
+    "Friendster RR recipe now uses correct quality-root; Citation2 streaming recipe explicitly supplies the bundled original manifest.",
+    "Only C2 local elapsed/peak observations excluded from report identity, with finite elapsed and512MiB bound checked separately; every scientific/cohort/provenance field remains exact.",
+    "Corrected offline helper detached atomically; pre-fix963snapshot remains intact, revised963snapshot/archive bound separately."
+  ],
+  "must_fix_findings": [],
+  "publication_or_network_actions": 0,
+  "new_scientific_experiments": 0,
+  "graphs_or_models_loaded_by_peer": 0,
+  "manuscript_or_frozen_source_edits_by_peer": 0,
+  "scope": "Recorded numerical recomputation and artifact integrity only. Fresh full portable seven-arm/44-job performance reproduction is explicitly not claimed. Publication/durable URLs remain a separate authorized action.",
+  "preservation_receipt": {
+    "bytes": 1838,
+    "sha256": "d25b64b4c60181c5b31c4d9a081f551a854a5ed7cd6bae073d91f3cdd34481e6"
+  },
+  "peer_script_sha256": "e3a565945ca5f1d09af8ebeb65e283543713adfeb2942ee14a5f2b8b2db9609f"
+}
