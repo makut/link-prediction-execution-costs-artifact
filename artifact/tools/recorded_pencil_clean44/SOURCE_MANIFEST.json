@@ -1,0 +1,67 @@
+{
+  "file_count": 12,
+  "files": [
+    {
+      "bytes": 4261,
+      "path": "DERIVATION.json",
+      "sha256": "0c564b120b4f87b244f4510d11fd4e2b783a2b307caca0882f272868d62cd7bb"
+    },
+    {
+      "bytes": 28329,
+      "path": "FROZEN_CONTRACT.json",
+      "sha256": "d043d8600ed44d411edc4a38629dc846936f4051e6d73d84462f6d2b43f8963e"
+    },
+    {
+      "bytes": 6341,
+      "path": "README.txt",
+      "sha256": "ba5ca1e8ee99daeea08eb69d40b2a58254bac74b7ef0cfafa33b55cf6d2e6a2c"
+    },
+    {
+      "bytes": 12248,
+      "path": "archive_contract.py",
+      "sha256": "582620fe1ecdd4dde52d3335787784f4237b1e71233334d7e675fb61c864689b"
+    },
+    {
+      "bytes": 11068,
+      "path": "audit_clean_v1.py",
+      "sha256": "e1f43a574f7e886c7d89d5ed63302375633d3b1538c7a922e81d86bbb5895221"
+    },
+    {
+      "bytes": 8380,
+      "path": "evidence_checks.py",
+      "sha256": "606fb640de046ed05eadab2b8206bfaae1df8c2de9842ef0cb896e259a991e4d"
+    },
+    {
+      "bytes": 7083,
+      "path": "plan_contract.py",
+      "sha256": "cb225d7088a898453e7febf38660508894c7f5e82f9a67312201f9736b77a387"
+    },
+    {
+      "bytes": 23276,
+      "path": "science_core.py",
+      "sha256": "83097c2055dc8ad100281b796b75f832bbdd4426e0558a599807c537850e3557"
+    },
+    {
+      "bytes": 26932,
+      "path": "synthetic_fixtures.py",
+      "sha256": "3e155e8de28bc1472bca348aaff1ec2243d22f261df66d292f7d5a28157bfc2e"
+    },
+    {
+      "bytes": 13915,
+      "path": "test_clean_audit.py",
+      "sha256": "8702d512cc598d6e66cd170722cd58b458761ea4e957443cb31c56d6991b4371"
+    },
+    {
+      "bytes": 9820,
+      "path": "test_regressions.py",
+      "sha256": "a48a68e171b75c43dc60e671a9774358cb184d8a9ecf18662f2cfb0ffa00d634"
+    },
+    {
+      "bytes": 10482,
+      "path": "trace_audit.py",
+      "sha256": "0b98d7dc54a6ee25668bd708e49be28295354355e148a9b8f82ceea3647c1ea0"
+    }
+  ],
+  "frozen_before_actual_clean_scientific_results": true,
+  "kind": "frozen_independent_pencil_clean_final_auditor_v1"
+}

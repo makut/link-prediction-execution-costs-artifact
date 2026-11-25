@@ -1,0 +1,22 @@
+{
+  "kind": "FINAL_ARCHIVAL_SCORE_ANALYSIS_PROVENANCE_V3",
+  "quality_asset_sha256": "e17cdc9678d00a3f372fc8083741a200a63662226f730f47eeda79f89b4ad3b2",
+  "source": {
+    "bytes": 20862,
+    "sha256": "c63588a92d2cec5ce081be1dd0f74a172c369cb6cfb8307d15269c7cc2b6e037"
+  },
+  "actual_receipt": {
+    "bytes": 23345,
+    "sha256": "f8d40eb8c9f6eae78a94df3cd6d67348534a6480ed2cee990752ad8d2297379b"
+  },
+  "v1_receipt_sha256": "d120c87a8fd7ea11a1f84abdf0d59a84aacf389aa5c904aed50b4af56d5102bb",
+  "v2_receipt_sha256": "c356ddb895b8173bd66b5d8ff37b6c7b67bc00572f9f9a5f48507b101b4cb8d7",
+  "only_changes_since_v1": "Two scope/error strings clarify bounded streaming/discarding of checkpoint TAR members rather than claiming their bytes are never opened. No ranking/cohort/permutation/hash/metric gate change. All original v1/v2 local receipts/source packets preserved.",
+  "actual_v3_rows_candidates_and_aggregates_exact_v1": true,
+  "peak_rss_bytes": 204455936,
+  "peak_limit_exclusive": 268435456,
+  "tests_passed": 19,
+  "frozen_core_or_producer_edits": 0,
+  "new_training_inference_experiments": 0,
+  "remote_actions": 0
+}

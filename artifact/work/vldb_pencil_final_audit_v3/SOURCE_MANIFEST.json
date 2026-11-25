@@ -1,0 +1,46 @@
+{
+  "kind": "independent_local_pencil_v3_auditor_sources",
+  "files": [
+    {
+      "path": "FROZEN_CONTRACT.json",
+      "bytes": 32217,
+      "sha256": "ce6db2d6a713f71b1fd48b8a031a3140811186cee404423ee02d0cf19077afc8"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 5774,
+      "sha256": "308f89570c5be1cd58b6d87c2c495c32353ee1ad88c7449594daa0de0ba8fbb9"
+    },
+    {
+      "path": "archive_contract.py",
+      "bytes": 8377,
+      "sha256": "9849bc0e7e07be094cc2a4fae36b98060e54bb8ecef4b12083ab691b7c944685"
+    },
+    {
+      "path": "audit_pencil_v3_v1.py",
+      "bytes": 45756,
+      "sha256": "0184e647889f3096f3a45be67ee195379ef959fa44a13ca436bfc62a96125118"
+    },
+    {
+      "path": "peer_review.json",
+      "bytes": 348,
+      "sha256": "6f72d88f8bbd327356760bb09d0df129c243247b5d61fa3e9dd7a09ac1ff2332"
+    },
+    {
+      "path": "synthetic_fixtures.py",
+      "bytes": 25556,
+      "sha256": "4c481e354a92749a12660d0df6a144f6664ad7a5c6360edfe0a01511ad1f08dd"
+    },
+    {
+      "path": "test_final_audit.py",
+      "bytes": 21939,
+      "sha256": "ffd88d64406ca951c54ad71c03191d0a2d13ef46c3e8fd35c76f2d5bff888a0e"
+    },
+    {
+      "path": "trace_audit.py",
+      "bytes": 10482,
+      "sha256": "0b98d7dc54a6ee25668bd708e49be28295354355e148a9b8f82ceea3647c1ea0"
+    }
+  ],
+  "scope": "Frozen LOCAL independent verifier with full110-test peer closure; no actual V3 results."
+}

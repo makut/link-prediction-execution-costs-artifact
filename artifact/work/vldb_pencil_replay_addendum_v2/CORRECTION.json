@@ -1,0 +1,25 @@
+{
+  "kind": "explicit_auditor_contract_correction_not_science_rerun",
+  "original_core_manifest_sha256": "22822f198620846ca0db4b6f71e74da1ff3229d65438eeec87f6a842e717313c",
+  "original_failed_attempt": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_pencil_final_actual_audit_attempt_v1.json",
+    "bytes": 1506,
+    "sha256": "99be82384e6730634f4ea7c1205f094e1aaa92e993aab8b34a10a801d6b1d2a2",
+    "returncode": 2
+  },
+  "original_failure_stderr": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_pencil_final_actual_audit_attempt_v1.stderr.txt",
+    "bytes": 156,
+    "sha256": "b938e848e3663bcca85e0b12bb363cb3eac7b0d9d6689e769ad673b3fc2ed082"
+  },
+  "invalid_assumption": "REPLAY sampler_seconds.max_s must equal0",
+  "corrected_semantics": "Frozen SamplerHook bypasses self.real when frozenS is provided but times np.array(frozenS,dtype=int64)+torch.from_numpy; replay sampler_seconds is frozenS materialization overhead, not native sampling time.",
+  "unchanged": [
+    "original frozen110-check core files and first actual failure receipt",
+    "producer/source/input/results and scientific execution",
+    "all other benchmark gates and source/environment/trace/model/full-score/ratio checks"
+  ],
+  "root_authorization": "Separate NEW derived auditor/addendumV2 and one-shot synthetic actual-SamplerHook callspy, independent peer before actualV2",
+  "actual_scientific_reruns": 0,
+  "producer_edits": 0
+}

@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "bytes": 8428,
+      "path": "audit_recorded_e19.py",
+      "sha256": "96bbae53602321a0f792d943c9f4829a087aded86f166c7679c8f1aeadbf33d4"
+    },
+    {
+      "bytes": 28991,
+      "path": "DEPENDENCIES.json",
+      "sha256": "e7b401a6af5ba5a8dbc52b17e5af357d53ad9700ae5c64225625b8c4bd57ff2a"
+    },
+    {
+      "bytes": 6707,
+      "path": "test_relocation.py",
+      "sha256": "44a903c60f49afa381a7073fd1588c2a2bb90f9a4968905efc684cfb19809b58"
+    },
+    {
+      "bytes": 5826,
+      "path": "README.txt",
+      "sha256": "bf2e4cb7695fe0938aa1981bbdc950a7e8b2a8540f7ac9dd477f2595b767d5fb"
+    }
+  ],
+  "frozen_core_addendum_or_science_edits": false,
+  "kind": "EXACT_RECORDED_E19_PATH_ADAPTER_V1_SOURCES",
+  "new_science": false
+}

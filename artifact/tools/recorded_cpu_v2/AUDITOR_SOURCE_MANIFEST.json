@@ -1,0 +1,20 @@
+{
+  "kind": "FROZEN_INDEPENDENT_LOCAL_PUBLIC_FR_CPU_V2_AUDITOR_SOURCES",
+  "files": {
+    "audit_public_fr_cpu_v1.py": {
+      "bytes": 55880,
+      "sha256": "6344b592c44b50a17326fca6e2ac14c82da7ec20d01deb9b0554bbcf48be58ea"
+    },
+    "synthetic_fixtures.py": {
+      "bytes": 29209,
+      "sha256": "58fbcc289d4be24b5e020d40e8d094eb294aa87b64f39e1fc04fa22ec90b8c51"
+    },
+    "test_audit_public_fr_cpu_v1.py": {
+      "bytes": 18025,
+      "sha256": "954bf022c59c0b34728063814407dc7242e177b4bb7efdea0f12416269d7e82b"
+    }
+  },
+  "scientific_jobs": 0,
+  "remote_actions": 0,
+  "YT_writes": 0
+}

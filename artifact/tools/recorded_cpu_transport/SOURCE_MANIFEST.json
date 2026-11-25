@@ -1,0 +1,17 @@
+{
+  "kind": "FROZEN_ROOT_AUTHORIZED_LOSSLESS_TRANSPORT_ADAPTER_V1",
+  "files": {
+    "normalize_transport_v1.py": {
+      "bytes": 10774,
+      "sha256": "67a4420402c17d21e5dd69e0239752fc70242c033aed1b519adb00420d1b0464"
+    },
+    "test_normalize_transport_v1.py": {
+      "bytes": 8085,
+      "sha256": "011609f800bdebf63d36a5ed138204f86730e3b5fbe7f0be16775e53393f1b54"
+    }
+  },
+  "new_observations": 0,
+  "scientific_or_timer_changes": 0,
+  "remote_actions": 0,
+  "YT_writes": 0
+}

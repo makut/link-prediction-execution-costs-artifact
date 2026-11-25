@@ -1,0 +1,32 @@
+{
+  "kind": "INDEPENDENT_LOCAL_CPU_V2_AUDITOR_READY_BEFORE_ONE_ACTUAL_AUDIT",
+  "status": "SOURCE_AND_SYNTHETIC_TESTS_PASS_NO_ACTUAL_RESULTS_CLAIM",
+  "frozen_source_manifest": {
+    "bytes": 598,
+    "sha256": "17708a7f76c2d7b7e482a372676cd42b76686b15105430f61fc8919fbef2ebc4"
+  },
+  "independent_peer": {
+    "path": "work/vldb_public_fr_cpu_audit_peer_v1/INDEPENDENT_PEER_REVIEW.json",
+    "bytes": 2884,
+    "sha256": "476a2488dfaa19b4500b08397db9c88811cd95aa3ada0bb9411f9c79d401945d"
+  },
+  "own_tests": {
+    "passed": 91,
+    "seconds": 23.5
+  },
+  "independent_tests": {
+    "passed": 91,
+    "seconds": 23.43
+  },
+  "approved_source_packet": {
+    "path": "work/vldb_public_fr_cpu_v2_sources.tgz",
+    "bytes": 1781157,
+    "sha256": "f79cd610e8f24830b896ed4e8b3a37035ab31d0626349699c3b568ebe69c118f"
+  },
+  "actual_attempts_before_this_freeze": 0,
+  "authorized_next_step": "Exactly one local audit of root-collected genuine CPUv2 export; preserve failure and request versioned change if necessary.",
+  "production_CLI_has_synthetic_bypass": false,
+  "graph_model_or_native_library_loads": 0,
+  "remote_actions": 0,
+  "YT_writes": 0
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "SOURCE_AND_TRANSPORT_CORRUPTION_TESTS_PASS_BEFORE_ACTUAL_DERIVATIVE",
+  "source_manifest": {
+    "bytes": 486,
+    "sha256": "6edea1b64ad8f0434cb7089317977544ea876a71d3250fcab7fbefe7ebbea5ed"
+  },
+  "independent_peer": {
+    "path": "work/vldb_public_fr_cpu_export_adapter_peer_v1/INDEPENDENT_PEER_REVIEW.json",
+    "bytes": 2500,
+    "sha256": "0fe07b4b856ced00be4fdfe044ad7217c636a2666b9500fc88cc13eab6b044b1"
+  },
+  "own_tests": {
+    "passed": 17,
+    "seconds": 4.32
+  },
+  "independent_tests": {
+    "passed": 17,
+    "seconds": 4.52
+  },
+  "unchanged_frozen_auditor_sha256": "6344b592c44b50a17326fca6e2ac14c82da7ec20d01deb9b0554bbcf48be58ea",
+  "preserved_first_failure_sha256": "0ea9697cc0531adb531d6520aee720f2b0aedbe60ba08ec9462a0be7197ea44a",
+  "actual_derivatives_before_this_freeze": 0,
+  "authorized_next_step": "One lossless separate local derivative, then exactly one adapted audit invocation; preserve any failure.",
+  "new_observations": 0,
+  "scientific_or_timer_changes": 0,
+  "remote_actions": 0,
+  "YT_writes": 0
+}

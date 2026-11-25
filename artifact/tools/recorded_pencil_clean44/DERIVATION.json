@@ -1,0 +1,91 @@
+{
+  "original_auditor_sha256": "0184e647889f3096f3a45be67ee195379ef959fa44a13ca436bfc62a96125118",
+  "functions": {
+    "clean_exit": {
+      "original_sha256": "cf7f2f3d2c1707f5f13f994b1e5213f62bd46cffcd91b22c91813e16bd700029",
+      "new_sha256": "cf7f2f3d2c1707f5f13f994b1e5213f62bd46cffcd91b22c91813e16bd700029",
+      "byte_unchanged": true
+    },
+    "guards": {
+      "original_sha256": "97189d2df1927ecdc7a87ee38de4e782bd32ea3bf2a6d796c32cd11538fd7031",
+      "new_sha256": "4181643c62e45cd703d69498f824e9b06c782b6e01284bd57264fd27e84f254d",
+      "byte_unchanged": false
+    },
+    "optional_vision_policy": {
+      "original_sha256": "2a0ea0c093426a68b58e7349c3c8566cf3b053aa8a06a1a5570b1a0e0ee212bf",
+      "new_sha256": "2a0ea0c093426a68b58e7349c3c8566cf3b053aa8a06a1a5570b1a0e0ee212bf",
+      "byte_unchanged": true
+    },
+    "native_environment": {
+      "original_sha256": "633e6924bb9a2099c43cc5e5929b0f825cdf263b34f776e8ad1bbfecdcce1861",
+      "new_sha256": "633e6924bb9a2099c43cc5e5929b0f825cdf263b34f776e8ad1bbfecdcce1861",
+      "byte_unchanged": true
+    },
+    "input_binding": {
+      "original_sha256": "c962961693fb5779127217d1bb5d52a7dd47002c5103338ac0c5904ec5e0bcee",
+      "new_sha256": "96515582a05b133eec19e112694d28624f43d0efce3fb5d8989830f5ff2e44e1",
+      "byte_unchanged": false
+    },
+    "model_contract": {
+      "original_sha256": "e52be4edc1016d0495c67a13ed8dca6452be99e5e75a6f8d5358e70cb8e28eef",
+      "new_sha256": "e52be4edc1016d0495c67a13ed8dca6452be99e5e75a6f8d5358e70cb8e28eef",
+      "byte_unchanged": true
+    },
+    "logits_fp": {
+      "original_sha256": "edd8690ad54b818535f217167b46da5bb62650d3edc54a4af9681c0e7dd7b0e8",
+      "new_sha256": "edd8690ad54b818535f217167b46da5bb62650d3edc54a4af9681c0e7dd7b0e8",
+      "byte_unchanged": true
+    },
+    "semantic_receipt": {
+      "original_sha256": "45418984bb9eaf2f9584599c3fb44eae3d18cb9b5436f6405c291a58eb99f0eb",
+      "new_sha256": "45418984bb9eaf2f9584599c3fb44eae3d18cb9b5436f6405c291a58eb99f0eb",
+      "byte_unchanged": true
+    },
+    "expected_configuration": {
+      "original_sha256": "aa68bee01fb8cc8d746d68afb5ea6cae5c1218697cbee19bd22115e17b2e8d7a",
+      "new_sha256": "c3439ced8303156a323a58bb861c11ddc3be59b56eadbd8140913604a4855c12",
+      "byte_unchanged": false
+    },
+    "configuration": {
+      "original_sha256": "a553b4eb904810bc1edd5135e6f440c8b90ea6173305310941523a075042aa2f",
+      "new_sha256": "a553b4eb904810bc1edd5135e6f440c8b90ea6173305310941523a075042aa2f",
+      "byte_unchanged": true
+    },
+    "finite_number": {
+      "original_sha256": "9edd04bed0ac2e6c7958f954a5c6f6c93e933ea9a941bc244ca66d98f1f8cec1",
+      "new_sha256": "9edd04bed0ac2e6c7958f954a5c6f6c93e933ea9a941bc244ca66d98f1f8cec1",
+      "byte_unchanged": true
+    },
+    "close_number": {
+      "original_sha256": "ec6ec5d91407fdc83e65063dda9a351c58823a8aa97490c313a516fc5d10c03c",
+      "new_sha256": "ec6ec5d91407fdc83e65063dda9a351c58823a8aa97490c313a516fc5d10c03c",
+      "byte_unchanged": true
+    },
+    "stage_summary": {
+      "original_sha256": "e5813004a1dd53a8b1bbee08a3594562de1007f4d1a93a273459db24b09812ae",
+      "new_sha256": "e5813004a1dd53a8b1bbee08a3594562de1007f4d1a93a273459db24b09812ae",
+      "byte_unchanged": true
+    },
+    "exact_summary": {
+      "original_sha256": "fe3bead2f03e44e5cd30a9d945447be730041886901bd426b34ec0ab5304179f",
+      "new_sha256": "fe3bead2f03e44e5cd30a9d945447be730041886901bd426b34ec0ab5304179f",
+      "byte_unchanged": true
+    },
+    "cpp_initializations": {
+      "original_sha256": "97c89b074a24b37677c37910c76483fe42d604475c97400140f22206c2052e2d",
+      "new_sha256": "97c89b074a24b37677c37910c76483fe42d604475c97400140f22206c2052e2d",
+      "byte_unchanged": true
+    },
+    "benchmark_receipt": {
+      "original_sha256": "1cfb08a99c514ed7f77d973bbc55bfead5dfe705fda21eebdd2c82f614a6f177",
+      "new_sha256": "a88a5a9bc060469146442534463bd24f6beaa3d0a161b61f6b7787364ef42aa5",
+      "byte_unchanged": false
+    },
+    "capture_receipt": {
+      "original_sha256": "d633ca388af28314755e7c3506b27ddba7010075a42cc07f584d33d4bb644f28",
+      "new_sha256": "d633ca388af28314755e7c3506b27ddba7010075a42cc07f584d33d4bb644f28",
+      "byte_unchanged": true
+    }
+  },
+  "trace_byte_unchanged": true
+}

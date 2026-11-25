@@ -1,0 +1,19 @@
+{
+  "kind": "ACTUAL_FROZEN_SAMPLER_HOOK_SYNTHETIC_CALLSPY",
+  "status": "pass",
+  "runtime_source_sha256": "ecd2ffdd38fc225a22e39d4a15fc1735de18e78e5045783f4f232a1880c82ab5",
+  "runner_source_sha256": "9fd7a48a57df90edf9e3fd87735336341c0de94766ec12d555971b0c670e5d7b",
+  "replay_real_calls": 0,
+  "online_real_calls": 1,
+  "replay_real_raises_if_called": true,
+  "frozenS_int64_values_exact": true,
+  "replay_materialization_seconds": 0.001199875,
+  "online_seconds": 6.583e-06,
+  "python": "3.12.10 (main, May 20 2025, 17:57:11) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "torch": "2.9.0",
+  "numpy": "1.26.4",
+  "source_modified": false,
+  "scientific_jobs_run": 0,
+  "GPU_work": false,
+  "scope": "Actual source on a tiny synthetic three-ID frozen set; local CPU Torch version is not native sparse/CUDA/full-graph evidence."
+}

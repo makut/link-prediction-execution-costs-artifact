@@ -1,0 +1,682 @@
+{
+  "audit_python_minor": [
+    3,
+    12
+  ],
+  "historical_author_root": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20",
+  "historical_path_aliases": [
+    {
+      "bytes": 1506,
+      "evidence_name": "ORIGINAL_FIRST_FAILED_ATTEMPT.json",
+      "historical_absolute_path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_pencil_final_actual_audit_attempt_v1.json",
+      "sha256": "99be82384e6730634f4ea7c1205f094e1aaa92e993aab8b34a10a801d6b1d2a2"
+    },
+    {
+      "bytes": 156,
+      "evidence_name": "ORIGINAL_FIRST_FAILURE_STDERR.txt",
+      "historical_absolute_path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_pencil_final_actual_audit_attempt_v1.stderr.txt",
+      "sha256": "b938e848e3663bcca85e0b12bb363cb3eac7b0d9d6689e769ad673b3fc2ed082"
+    },
+    {
+      "bytes": 2333,
+      "evidence_name": "RECOVERY_ADMISSION.json",
+      "historical_absolute_path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_gpu_recovery/RECOVERY_ADMISSION_replacement_v1.json",
+      "sha256": "3589dda0795ca201057016fbd771776ea2838c70a902536d29d76e899f228f73"
+    }
+  ],
+  "kind": "RECORDED_E19_EXACT_WHOLE_HASH_DEPENDENCIES",
+  "permitted_changes": "Only three exact in-memory local filesystem aliases and source-root globals. No captured JSON, CORRECTION, core/addendum/science functions, source bytes, raw metrics or recorded observations are modified.",
+  "recorded_archive": {
+    "bytes": 9966534,
+    "sha256": "7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c"
+  },
+  "recorded_correction_sha256": "fb11bf0786bfb9cc15e75f99a871515f440813e2c2e8258b779058c888a8d675",
+  "recorded_export_sidecars": [
+    {
+      "bytes": 3536,
+      "path": "export.json",
+      "sha256": "748086b73d3ffa9602d27e36eafb75dc93d7d2d3859428dbce50e946fc49a187"
+    },
+    {
+      "bytes": 50056,
+      "path": "extraction_manifest.json",
+      "sha256": "0cbcc147d3bf8c44581c11cd2c8208f9ed8eedf56d534a67d35935af89dbd5c8"
+    },
+    {
+      "bytes": 2333,
+      "path": "remote_receipts/RECOVERY_ADMISSION.json",
+      "sha256": "3589dda0795ca201057016fbd771776ea2838c70a902536d29d76e899f228f73"
+    },
+    {
+      "bytes": 876,
+      "path": "remote_receipts/pencil_queue_v3_launch.json",
+      "sha256": "46e942a9e2bfa6f441869f15536cb6e2d2fe06d38c1acddacd3f297ecd5e6f62"
+    },
+    {
+      "bytes": 808,
+      "path": "remote_receipts/results/pencil_bridge_v3_20261125/COMPLETE.json",
+      "sha256": "1f8e1d6f2de8c5f6bb365d8dbe7eacdac930954cf801ab2889f9f1df98caa5df"
+    },
+    {
+      "bytes": 4094,
+      "path": "remote_receipts/results/pencil_bridge_v3_20261125/SCIENTIFIC_TERMINAL.json",
+      "sha256": "a0c074fd960719f6615d324e70d8b68227a620e06d592aab73aa242b4a32e6a8"
+    },
+    {
+      "bytes": 233,
+      "path": "remote_receipts/results/pencil_bridge_v3_20261125/archive_local_receipt.json",
+      "sha256": "687cc2ac7fd37c5e40bf0697b3b5f0ae39d6cb12a32e4e4819e5971d3f4d418c"
+    },
+    {
+      "bytes": 272,
+      "path": "remote_receipts/results/pencil_bridge_v3_20261125/archive_pointer.json",
+      "sha256": "6ebe93c8a708a6b06000032698932407fad84443cf1b8cc924f5a19e8e13d0a3"
+    },
+    {
+      "bytes": 326,
+      "path": "remote_receipts/results/pencil_bridge_v3_20261125/persistence.exit.json",
+      "sha256": "ecbf5d9a153e1231af9b31564cdcf942cd655454c8138387ca2761ec15653e3f"
+    },
+    {
+      "bytes": 142481,
+      "path": "remote_receipts/results/pencil_bridge_v3_20261125/plan.json",
+      "sha256": "5c519596554ffb51adf35cafd7f4d167e8ec30c2cdd1ea28e85c6336dbe2ee90"
+    },
+    {
+      "bytes": 1083,
+      "path": "remote_receipts/results/pencil_recovery_stage_v1/COMPLETE.json",
+      "sha256": "e78c2594b09d0e9c6aa8ba5ab3e024767bf8b74ba8e88acf186164d84f334dcd"
+    },
+    {
+      "bytes": 680,
+      "path": "remote_receipts/stage_recovered_pencil_v1_launch.json",
+      "sha256": "f8756391b392bab514c4843a60538b50c693aa4c4edb36febe05636622e9ef1a"
+    },
+    {
+      "bytes": 1816,
+      "path": "remote_receipts_manifest.json",
+      "sha256": "5a7fb5946bd4808063acf307d2c2675be262bbab77ecc9edd610a4b796cecd37"
+    }
+  ],
+  "root_launch": {
+    "bytes": 876,
+    "sha256": "46e942a9e2bfa6f441869f15536cb6e2d2fe06d38c1acddacd3f297ecd5e6f62"
+  },
+  "source_dependencies": [
+    {
+      "bytes": 32217,
+      "path": "work/vldb_pencil_final_audit_v3/FROZEN_CONTRACT.json",
+      "sha256": "ce6db2d6a713f71b1fd48b8a031a3140811186cee404423ee02d0cf19077afc8"
+    },
+    {
+      "bytes": 5774,
+      "path": "work/vldb_pencil_final_audit_v3/README.txt",
+      "sha256": "308f89570c5be1cd58b6d87c2c495c32353ee1ad88c7449594daa0de0ba8fbb9"
+    },
+    {
+      "bytes": 8377,
+      "path": "work/vldb_pencil_final_audit_v3/archive_contract.py",
+      "sha256": "9849bc0e7e07be094cc2a4fae36b98060e54bb8ecef4b12083ab691b7c944685"
+    },
+    {
+      "bytes": 45756,
+      "path": "work/vldb_pencil_final_audit_v3/audit_pencil_v3_v1.py",
+      "sha256": "0184e647889f3096f3a45be67ee195379ef959fa44a13ca436bfc62a96125118"
+    },
+    {
+      "bytes": 348,
+      "path": "work/vldb_pencil_final_audit_v3/peer_review.json",
+      "sha256": "6f72d88f8bbd327356760bb09d0df129c243247b5d61fa3e9dd7a09ac1ff2332"
+    },
+    {
+      "bytes": 25556,
+      "path": "work/vldb_pencil_final_audit_v3/synthetic_fixtures.py",
+      "sha256": "4c481e354a92749a12660d0df6a144f6664ad7a5c6360edfe0a01511ad1f08dd"
+    },
+    {
+      "bytes": 21939,
+      "path": "work/vldb_pencil_final_audit_v3/test_final_audit.py",
+      "sha256": "ffd88d64406ca951c54ad71c03191d0a2d13ef46c3e8fd35c76f2d5bff888a0e"
+    },
+    {
+      "bytes": 10482,
+      "path": "work/vldb_pencil_final_audit_v3/trace_audit.py",
+      "sha256": "0b98d7dc54a6ee25668bd708e49be28295354355e148a9b8f82ceea3647c1ea0"
+    },
+    {
+      "bytes": 1403,
+      "path": "work/vldb_pencil_final_audit_v3/SOURCE_MANIFEST.json",
+      "sha256": "22822f198620846ca0db4b6f71e74da1ff3229d65438eeec87f6a842e717313c"
+    },
+    {
+      "bytes": 8296,
+      "path": "work/vldb_pencil_replay_addendum_v2/audit_addendum_v2.py",
+      "sha256": "7bb7873f5fcdab32a51967fb5d9ecb24ab164757f670e070aad107b12186d81e"
+    },
+    {
+      "bytes": 5696,
+      "path": "work/vldb_pencil_replay_addendum_v2/test_addendum_v2.py",
+      "sha256": "64130e507dd792fc6e193746f3e03585da939336f9b1508c12491a6e28226118"
+    },
+    {
+      "bytes": 2542,
+      "path": "work/vldb_pencil_replay_addendum_v2/callspy_once.py",
+      "sha256": "9fd7a48a57df90edf9e3fd87735336341c0de94766ec12d555971b0c670e5d7b"
+    },
+    {
+      "bytes": 826,
+      "path": "work/vldb_pencil_replay_addendum_v2/ACTUAL_SAMPLER_HOOK_CALLSPY.json",
+      "sha256": "81e646239edabfddbea1dc6686d3899dd7ca60e1538f0b40382d0622d9ac8960"
+    },
+    {
+      "bytes": 1469,
+      "path": "work/vldb_pencil_replay_addendum_v2/CORRECTION.json",
+      "sha256": "fb11bf0786bfb9cc15e75f99a871515f440813e2c2e8258b779058c888a8d675"
+    },
+    {
+      "bytes": 2939,
+      "path": "work/vldb_pencil_replay_addendum_v2/README.txt",
+      "sha256": "6be258cac96246149ebee0cd83bbe0b4193a5e5152a5a050861195432cc66a7a"
+    },
+    {
+      "bytes": 1178,
+      "path": "work/vldb_pencil_replay_addendum_v2/SOURCE_MANIFEST.json",
+      "sha256": "f0ee9ec52f78d16f55fa6b0c9e2bcc3e0765c64c736816057f1e273e244faa2d"
+    },
+    {
+      "bytes": 1073,
+      "path": "work/vldb_pencil_queue_v3/LICENSE",
+      "sha256": "5096961eb53321c0dd8d8b6eeb978cd3e4a58256f1ab706558500d618ffe26ca"
+    },
+    {
+      "bytes": 4014,
+      "path": "work/vldb_pencil_queue_v3/README.txt",
+      "sha256": "c14b0a26f6e60d36e0d28b901de67be59a41c8c455ef039a4c81061f07eed825"
+    },
+    {
+      "bytes": 1073,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/LICENSE",
+      "sha256": "5096961eb53321c0dd8d8b6eeb978cd3e4a58256f1ab706558500d618ffe26ca"
+    },
+    {
+      "bytes": 2470,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/README.txt",
+      "sha256": "a1f0af38395731baa9246541aa0a600b248b5623fa1ade28c8b47c90770bcb76"
+    },
+    {
+      "bytes": 14016,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/SOURCE_MANIFEST.json",
+      "sha256": "ec7ad32ef3b9f3bf84053f6f0aca41a96f1375495b41ddec71d3f8a260a40523"
+    },
+    {
+      "bytes": 1554,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/THIRD_PARTY_NOTICES.txt",
+      "sha256": "b03eadf2ad4ed31a0eab17bb3a93f2da9a9c2c45c1953bfc422288fc3c306e30"
+    },
+    {
+      "bytes": 570,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/bert_config/config.json",
+      "sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20"
+    },
+    {
+      "bytes": 513,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/bert_config/source.json",
+      "sha256": "317a1a6b801ad377cd1bdf399d29175e71727098ae85a8e54f8538d458e30e03"
+    },
+    {
+      "bytes": 22551,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/bridge_core.py",
+      "sha256": "72cbda711e0b53402f2117dbf41a39656cf7300428b9450c8fbf970f97c1e5ae"
+    },
+    {
+      "bytes": 791,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/constraints-linux-cp310.txt",
+      "sha256": "d5b8562c8742dfee0e10aff7f59806bc9910fef12a7eece27f008f1311ea1232"
+    },
+    {
+      "bytes": 1507,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/corrected_native/COPIED_CORE_MANIFEST.json",
+      "sha256": "5ca2ef855f02915dcfb02a96d336c2c7518314518511b81a90ae7b8f8e5fa61c"
+    },
+    {
+      "bytes": 2341,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/corrected_native/build_native_v1.py",
+      "sha256": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6"
+    },
+    {
+      "bytes": 1254,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/corrected_native/fixtures_v1.py",
+      "sha256": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35"
+    },
+    {
+      "bytes": 8499,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/corrected_native/native_adapter_v1.py",
+      "sha256": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549"
+    },
+    {
+      "bytes": 7987,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/corrected_native/native_assoc_v1.cpp",
+      "sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20"
+    },
+    {
+      "bytes": 5060,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/corrected_native/test_native_v1.py",
+      "sha256": "6f8337ef0b58908ba9cb02cc2d99dc49d495740d433315c27d0e3e3ae71f185f"
+    },
+    {
+      "bytes": 1086,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/corrected_native/third_party/pytorch_sparse_LICENSE",
+      "sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486"
+    },
+    {
+      "bytes": 1459,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/corrected_native/third_party/saint_cpu.cpp.upstream.txt",
+      "sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c"
+    },
+    {
+      "bytes": 1437,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/corrected_native/third_party/upstream_pin.json",
+      "sha256": "d2a5e21560926f462155b95e4e2d51056094298aa1ced75d4856c663726c3943"
+    },
+    {
+      "bytes": 940,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/environment-target.txt",
+      "sha256": "95d8d160cd87728e23a1f54d16c8ec520ca02da80127853930c3f29b3d52ebcb"
+    },
+    {
+      "bytes": 3331,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/graph_only_transformers_v2.py",
+      "sha256": "1e3a247eee760a69dbe65ffaa15b0948d5a88068462779555edf83a77902d28f"
+    },
+    {
+      "bytes": 1252,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/input_contract.json",
+      "sha256": "9eb90a67ca5b2e3d5dcbcb80421c32e53278e5714f7fd15a9d076d50fca6b0e6"
+    },
+    {
+      "bytes": 373,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/local_validation.json",
+      "sha256": "d9c4661a08c35a8d4722c45397cac2b4dfbb91826b0dabe7b3995f37033577a5"
+    },
+    {
+      "bytes": 41080,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/pencil_bridge.py",
+      "sha256": "6167f42f3add94e50b12397d5403c17142d5749b50570576329ed597de75e07d"
+    },
+    {
+      "bytes": 22945,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/pencil_runtime.py",
+      "sha256": "ecd2ffdd38fc225a22e39d4a15fc1735de18e78e5045783f4f232a1880c82ab5"
+    },
+    {
+      "bytes": 213,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/requirements-extras.txt",
+      "sha256": "5b77774b324b1391b259a5209ee442f0dfd8220fe991c887c681632c93ac039d"
+    },
+    {
+      "bytes": 12395,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/test_bridge_core.py",
+      "sha256": "9685208b1ffd4775fd49dd2467aec86d89427d209d0ac3cef198ca474c27de95"
+    },
+    {
+      "bytes": 18745,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/test_pencil_adapter.py",
+      "sha256": "3c611c644381e06f3792ac486c917977f18caf62b94996561c869c358caf831b"
+    },
+    {
+      "bytes": 11974,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_manifest.json",
+      "sha256": "6020d2bc7c2290cf251e751b97a841202c1904a3dd4e89f5521abda876e0598e"
+    },
+    {
+      "bytes": 248,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/.gitignore",
+      "sha256": "0dd8ba1693824f9418a0d424a82511a06f694c1182f03760ff17daa69f98ca69"
+    },
+    {
+      "bytes": 0,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/.project-root",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 11357,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "bytes": 2674,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/README.md",
+      "sha256": "81031dc632c77928b96f8f9eef21ca67d33e8157d5ad31a11c21213baa44faf5"
+    },
+    {
+      "bytes": 1080,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/citeseer_bert.yaml",
+      "sha256": "957ae24e13177ad14df85c46bdf2ea643904cb9fecf0225a1dad4c23b90aec0d"
+    },
+    {
+      "bytes": 1075,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/cora_bert.yaml",
+      "sha256": "c21d7af21131b8317278b7eba4f07313603eb06a31ccbe76046e8cccfd9077e6"
+    },
+    {
+      "bytes": 1086,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/heart_citeseer_bert.yaml",
+      "sha256": "ccaebf889118e4c3f4f3b7a4fc46a145b469b115328c5df958bd74728ee35c07"
+    },
+    {
+      "bytes": 1081,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/heart_cora_bert.yaml",
+      "sha256": "e08558cb0cd2c3b26cb89808bd0d65bbc5ae793cef65a5d7c8716836ea8142eb"
+    },
+    {
+      "bytes": 1121,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/heart_ogbl_citation2_bert.yaml",
+      "sha256": "33749d66c6d066459913c506dac0cd79919634554b9cc9a94168e557fc18d0d7"
+    },
+    {
+      "bytes": 1119,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/heart_ogbl_collab_bert.yaml",
+      "sha256": "e488a5273dd9545b0adff0e9b665ee7e672a2da891daf40ac6c1f8856177de08"
+    },
+    {
+      "bytes": 1123,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/heart_ogbl_ddi_bert.yaml",
+      "sha256": "34c7de69b1b46c07804c4ed33fbf8f058770597d97a59e762d37978e3d1f857f"
+    },
+    {
+      "bytes": 1118,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/heart_ogbl_ppa_bert.yaml",
+      "sha256": "4096647a5b742e5abbb47ae6dece2d66e4243542d52fcabca40fdccb29a6c2ab"
+    },
+    {
+      "bytes": 1078,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/heart_pubmed_bert.yaml",
+      "sha256": "150f7d1b2a486bdf9a9a28c72d8bb3422829a680e3fab282fa572878f0841ad5"
+    },
+    {
+      "bytes": 1126,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/heuristic_bert.yaml",
+      "sha256": "74fb69f08ab39cd8b80d64df17f6bc92390c9682c1cb169c66dd34ba22ab1f1d"
+    },
+    {
+      "bytes": 910,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/heuristic_gat.yaml",
+      "sha256": "4826bff0604c2899a26902499d6c409062b286cbd6491e7f7856cb2614ce2b2c"
+    },
+    {
+      "bytes": 910,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/heuristic_gcn.yaml",
+      "sha256": "fc0df8489768bd0b75bc3dd2f4411ea08646a48e703c57c09fc027844e0906b5"
+    },
+    {
+      "bytes": 912,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/heuristic_sage.yaml",
+      "sha256": "ac6adaf6c445a82bc4ca2e86012e40a83373da6cea9ca15d2ff78a15494f7cab"
+    },
+    {
+      "bytes": 1121,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/ogbl_citation2_bert.yaml",
+      "sha256": "33749d66c6d066459913c506dac0cd79919634554b9cc9a94168e557fc18d0d7"
+    },
+    {
+      "bytes": 1119,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/ogbl_collab_bert.yaml",
+      "sha256": "e488a5273dd9545b0adff0e9b665ee7e672a2da891daf40ac6c1f8856177de08"
+    },
+    {
+      "bytes": 1118,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/ogbl_ppa_bert.yaml",
+      "sha256": "4096647a5b742e5abbb47ae6dece2d66e4243542d52fcabca40fdccb29a6c2ab"
+    },
+    {
+      "bytes": 1077,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/args/official/pubmed_bert.yaml",
+      "sha256": "ace2e651d018737d75c08fca77dc6776ee699e424772699315bf327c449709a4"
+    },
+    {
+      "bytes": 758,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/conftest.py",
+      "sha256": "c0feca51d11f31697647b4f91480d197a009e8d045d38b0b49d0083c0cde12fd"
+    },
+    {
+      "bytes": 2341,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/__init__.py",
+      "sha256": "37a33dc93e47a0f972e16696941333c0c67aeda1f83977ac51c9405d1b2b4a83"
+    },
+    {
+      "bytes": 12389,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/collator.py",
+      "sha256": "14e9750aab33462d762a49d76a3a38cefcbb83e4bc8cac881c8bd17da4ced64b"
+    },
+    {
+      "bytes": 49525,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/dataset_map.py",
+      "sha256": "d77f06a5efd62158c5655abe648f24fe93856f8929fbab8fdbd2ed6297aae22f"
+    },
+    {
+      "bytes": 33782,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/dataset_wrapper.py",
+      "sha256": "138bcf848cddd1276daa7515bfe7cf1d2d6058d777239b36e18132c0b7d61843"
+    },
+    {
+      "bytes": 3374,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/gnn_collator.py",
+      "sha256": "a1841a1a964b9305a6e36697b154f9d7df53d72fbc81d55ff7d1db947fa2fb3a"
+    },
+    {
+      "bytes": 11386,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/heuristics.py",
+      "sha256": "45d438701cbd92454a6057f55f7c35f87aed54fc380150abd357f707b568b585"
+    },
+    {
+      "bytes": 35,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/ogbl/__init__.py",
+      "sha256": "7aceb499a9d8dc5065907259ccbe82820ae3f9173a4f3ecb20343804b579c48b"
+    },
+    {
+      "bytes": 31451,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/ogbl/dataset.py",
+      "sha256": "aef51de4e3cb887efd99cae566fd3507fe2ef68626e15f3326b6701e06ecf348"
+    },
+    {
+      "bytes": 41,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/planetoid/__init__.py",
+      "sha256": "57d26b387a38fc4599cf267ee2be8b1c8df3cb3a43e78feaeb961f01e4faa929"
+    },
+    {
+      "bytes": 9520,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/planetoid/dataset.py",
+      "sha256": "fec9ed57372a40e06fdeef3c70e2e7449a2d69a0d798b68117cd1dc25e3e8f98"
+    },
+    {
+      "bytes": 266,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/prosqa/__init__.py",
+      "sha256": "a5211cf64d5840d65b981becc7aa2b373546a8b29406368e3ba88ea94c836a19"
+    },
+    {
+      "bytes": 22790,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/prosqa/dataset.py",
+      "sha256": "80bd7a6e1d70013c93f3716d4c00a0c351c940c9bb6bcf745da4d37b465d9939"
+    },
+    {
+      "bytes": 9856,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/prosqa/pretrain.py",
+      "sha256": "98eaeb91b7bc77b52d26a0fab0e2bbc8483d6842b54564c8323fb48de96b9fb6"
+    },
+    {
+      "bytes": 98,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/random/__init__.py",
+      "sha256": "da2690979b64639096094ee8b0bd0130388430074d71b05d67ffd607c421da41"
+    },
+    {
+      "bytes": 13178,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/random/dataset.py",
+      "sha256": "e65f05dcec5c888cddf0d29fef4c4d42f330983e7b8b653b45f2da07d48a3397"
+    },
+    {
+      "bytes": 3644,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/random/generate_datasets.py",
+      "sha256": "c97ae79ba6b42982b0c25cae48305f26d846b0cb8a8ec7397188ea8a33868171"
+    },
+    {
+      "bytes": 9422,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/random/generate_graphs.py",
+      "sha256": "65ed654c3c016dcd467f925b3b28fe5977e2f71199c9646762a71da37bbac1a2"
+    },
+    {
+      "bytes": 9453,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/datasets/utils.py",
+      "sha256": "f132dec5a8c1d26d7d512b17b9ada4444c3d6e2e5bbb6bd13cd5535df614b862"
+    },
+    {
+      "bytes": 220,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/definitions.py",
+      "sha256": "fe555a504e1ae6c773d2d3b65341e234520184bd00a318f1b5efddfd5b7ce4c8"
+    },
+    {
+      "bytes": 17225,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/evaluator.py",
+      "sha256": "0b77db63f615f34a3de0585d2ba63df8630c476edbf49d31b3ed8bc87969c24a"
+    },
+    {
+      "bytes": 8515,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/extract_results.py",
+      "sha256": "f56735b29ab7be6e923faa0b79ff587b7fadc99c2c763f46fa5dea99da1a3c1d"
+    },
+    {
+      "bytes": 56,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/models/__init__.py",
+      "sha256": "6df64aa96ad2dcb5620b857c2f9602301397022b4d9b12b5f7bac7768ce3c6ce"
+    },
+    {
+      "bytes": 12380,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/models/gnns/mpnn.py",
+      "sha256": "c0da0b0735ead2b184854350e62cc47922bad17d694cb6c22165df7490e7294b"
+    },
+    {
+      "bytes": 5681,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/models/transformers/bert_lp.py",
+      "sha256": "f0be7dc17b53f69212239120030fb4d8a342b9c0537b87d557229f78ccb3400a"
+    },
+    {
+      "bytes": 16283,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/models/transformers/lp_model.py",
+      "sha256": "fb7e68db1bc64d6c92e532067ae904b6d27c9b418846ec003c04a7ea1c38b51f"
+    },
+    {
+      "bytes": 2611,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/models/transformers/stokenizer.py",
+      "sha256": "d13981386eeb09ee6b27c114bae87840242b53c049b70a3113ef5b3a666833f3"
+    },
+    {
+      "bytes": 91,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/pytest.ini",
+      "sha256": "dcfc7ce9a1001899b9b6793d7ecae6e1bbb63335253d4f1654938206cf81b5fa"
+    },
+    {
+      "bytes": 560,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/requirements.txt",
+      "sha256": "6918dd8e2ab97a2d8ff333301fb1a7bc9414336d90b292de339ab45702770590"
+    },
+    {
+      "bytes": 74561,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/run_lp.py",
+      "sha256": "89fabc51669b4eba7ad61a08ce2acf6e17fb29d26a01941706c135862225a885"
+    },
+    {
+      "bytes": 6377,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/run_with_best_gpus.py",
+      "sha256": "f4c53f5559ca9cdb82f7d3de0a7bf0931b1164f76dd540560c2034e1a7d82443"
+    },
+    {
+      "bytes": 27760,
+      "path": "work/vldb_pencil_queue_v3/bridge/vldb_pencil_bridge_v2/upstream_pencil/utils.py",
+      "sha256": "44c54264ada82ef0fc9830b546143b0a87ac4c6dca379ce0c0baf6ae2acf3482"
+    },
+    {
+      "bytes": 441,
+      "path": "work/vldb_pencil_queue_v3/evidence/native_queue_identity_v1.json",
+      "sha256": "234f26d7c7afecbef2ecce5716a03960fdd669d4e18b2a4912b1d9b021b6b15c"
+    },
+    {
+      "bytes": 1434,
+      "path": "work/vldb_pencil_queue_v3/evidence/optional_vision_actual_bert_regression_v2.json",
+      "sha256": "3d2a95e8d65008ab44ab14da950a1126d5e2681861d67c894cec0edcf35b03a6"
+    },
+    {
+      "bytes": 1091,
+      "path": "work/vldb_pencil_queue_v3/evidence/pencil_v2_failure_diagnostic.json",
+      "sha256": "6fd120877a52b2660fbe0b3a56c311b453659f13d30a59f746adb4f844f56ef9"
+    },
+    {
+      "bytes": 1377,
+      "path": "work/vldb_pencil_queue_v3/evidence/pencil_venv_inheritance_probe_v1.json",
+      "sha256": "716287dde5ea5007b084304d33812d5a0e26e832f368aede1525905112ab5fbd"
+    },
+    {
+      "bytes": 1245,
+      "path": "work/vldb_pencil_queue_v3/local_validation.json",
+      "sha256": "b0632d5bbdf7ccad22ffeed57a84f6ce295594c67faf4a57ea17caaaf2cbb8ed"
+    },
+    {
+      "bytes": 373,
+      "path": "work/vldb_pencil_queue_v3/local_validation_v3.json",
+      "sha256": "d9c4661a08c35a8d4722c45397cac2b4dfbb91826b0dabe7b3995f37033577a5"
+    },
+    {
+      "bytes": 40589,
+      "path": "work/vldb_pencil_queue_v3/pencil_queue_v3.py",
+      "sha256": "dda406371cfe9a7d5de8415224930959e970f2b9c948f56d37dca09fffaf68cd"
+    },
+    {
+      "bytes": 5508,
+      "path": "work/vldb_pencil_queue_v3/protocol_spec.json",
+      "sha256": "a9e506f35aad06692c3d1372aff5c52ea105fe572e33ffea05087bb4f690398b"
+    },
+    {
+      "bytes": 455,
+      "path": "work/vldb_pencil_queue_v3/review_receipt_v3.json",
+      "sha256": "54eb5fadd1fa68b5b4f8434b4c4adfa4475271254651be101f38d6300e837825"
+    },
+    {
+      "bytes": 5098,
+      "path": "work/vldb_pencil_queue_v3/runtime_probe_v3.py",
+      "sha256": "896d7d6088666a22c0af932ee83f27edf9108c6ebf5bad4f643d284322f789ce"
+    },
+    {
+      "bytes": 4989,
+      "path": "work/vldb_pencil_queue_v3/test_optional_vision_v3.py",
+      "sha256": "8f0b40b97cd34c38246b47e4a17741e2dbd9cb5c7d46aaf23944c090179250db"
+    },
+    {
+      "bytes": 26885,
+      "path": "work/vldb_pencil_queue_v3/test_pencil_queue_v3.py",
+      "sha256": "4f50eebd7d79e90f7d9bc7a8a51f230d7efe9894eace00ff532dff275bf88814"
+    },
+    {
+      "bytes": 36012,
+      "path": "work/vldb_pencil_queue_v3/third_party/memory_guard_v3.py",
+      "sha256": "e5bc616b518c17d6804c72f376872155514b902b490f43639526680ca5a516c8"
+    },
+    {
+      "bytes": 544,
+      "path": "work/vldb_pencil_queue_v3/third_party/native_gate/evidence/main_execution_launch.json",
+      "sha256": "1c50f58a4e1b87794d2381f3de451270565023b2c7361edf8a4297d404087e63"
+    },
+    {
+      "bytes": 25095,
+      "path": "work/vldb_pencil_queue_v3/third_party/native_gate/native_controls_queue_v1.py",
+      "sha256": "35b84f8178b5dc6804e7c9ba71859d714640a2e35751710f879d260fd5750617"
+    },
+    {
+      "bytes": 26702,
+      "path": "work/vldb_pencil_queue_v3/third_party/reviewed_supervision_v3.py",
+      "sha256": "ec07bddc13f69cbbc1c5ba63a3ede390cfea254bcc02b811422338f5b9604aaf"
+    },
+    {
+      "bytes": 19253,
+      "path": "work/vldb_pencil_queue_v3/SOURCE_MANIFEST.json",
+      "sha256": "c0174675bec8a904e32ebf151d04a83b85e84ca46da0abf5145aadc4581df412"
+    }
+  ]
+}

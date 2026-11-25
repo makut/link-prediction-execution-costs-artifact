@@ -1,0 +1,32 @@
+{
+  "actual_receipt_sha256": "f8d40eb8c9f6eae78a94df3cd6d67348534a6480ed2cee990752ad8d2297379b",
+  "files": [
+    {
+      "bytes": 20862,
+      "path": "verify_friendster_scores.py",
+      "sha256": "c63588a92d2cec5ce081be1dd0f74a172c369cb6cfb8307d15269c7cc2b6e037"
+    },
+    {
+      "bytes": 5121,
+      "path": "test_score_check.py",
+      "sha256": "5405f3323e96becdd172149ba89754bf5ee198163dfec437d44725a950ca163f"
+    },
+    {
+      "bytes": 5261,
+      "path": "README.txt",
+      "sha256": "2c07536dc052065b7d277d07098ae614adca5926488482686d9e9744cacf8c1c"
+    },
+    {
+      "bytes": 23345,
+      "path": "ACTUAL_FRIENDSTER_FLOAT_SCORE_RECEIPT_v3.json",
+      "sha256": "f8d40eb8c9f6eae78a94df3cd6d67348534a6480ed2cee990752ad8d2297379b"
+    },
+    {
+      "bytes": 1122,
+      "path": "PROVENANCE_v3.json",
+      "sha256": "4c445ef0b9f26cf9f31c011bbda3f0ad8143fd8aa70a4f1a693f4ac6a458aaea"
+    }
+  ],
+  "kind": "FINAL_RECORDED_FRIENDSTER_RAW_SCORE_CHECKER_V3_SCOPE_WORDING",
+  "new_science": false
+}

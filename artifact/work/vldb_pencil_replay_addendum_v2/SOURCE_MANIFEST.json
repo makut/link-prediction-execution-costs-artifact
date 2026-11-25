@@ -1,0 +1,38 @@
+{
+  "kind": "explicit_derived_pencil_REPLAY_timer_audit_addendum_v2",
+  "files": [
+    {
+      "path": "audit_addendum_v2.py",
+      "bytes": 8296,
+      "sha256": "7bb7873f5fcdab32a51967fb5d9ecb24ab164757f670e070aad107b12186d81e"
+    },
+    {
+      "path": "test_addendum_v2.py",
+      "bytes": 5696,
+      "sha256": "64130e507dd792fc6e193746f3e03585da939336f9b1508c12491a6e28226118"
+    },
+    {
+      "path": "callspy_once.py",
+      "bytes": 2542,
+      "sha256": "9fd7a48a57df90edf9e3fd87735336341c0de94766ec12d555971b0c670e5d7b"
+    },
+    {
+      "path": "ACTUAL_SAMPLER_HOOK_CALLSPY.json",
+      "bytes": 826,
+      "sha256": "81e646239edabfddbea1dc6686d3899dd7ca60e1538f0b40382d0622d9ac8960"
+    },
+    {
+      "path": "CORRECTION.json",
+      "bytes": 1469,
+      "sha256": "fb11bf0786bfb9cc15e75f99a871515f440813e2c2e8258b779058c888a8d675"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 2939,
+      "sha256": "6be258cac96246149ebee0cd83bbe0b4193a5e5152a5a050861195432cc66a7a"
+    }
+  ],
+  "frozen_original_core_manifest_sha256": "22822f198620846ca0db4b6f71e74da1ff3229d65438eeec87f6a842e717313c",
+  "scientific_producer_edits": 0,
+  "scientific_reruns": 0
+}
