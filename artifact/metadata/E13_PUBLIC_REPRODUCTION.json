@@ -1,0 +1,12 @@
+{
+  "Friendster_status": "pending; not covered by Citation2 proof",
+  "ledger_id": "E13",
+  "payload_identity_receipt": "metadata/evidence/citation2_public_v2/PUBLIC_19_PAYLOAD_IDENTITY.json",
+  "proof": "metadata/CITATION2_PUBLIC_REPRODUCTION.json",
+  "publication_status": "local staged; durable public release pending",
+  "quality_and_performance_claims": "not covered by this entry",
+  "schema_version": 1,
+  "scope": "Citation2 public-source-to-prepared-input identity only",
+  "suggested_parent_ledger_text": "Citation2 official-source reconstruction is verified: all 19 numeric prepared payloads match the recorded experiment under unchanged preparer source pins. Friendster full public reconstruction, durable public artifact publication and the VK access explanation remain separate gates. This receipt does not verify quality or timing.",
+  "verified_claim": "Official public archive produces the same 19 numeric prepared payloads as the original experiment."
+}

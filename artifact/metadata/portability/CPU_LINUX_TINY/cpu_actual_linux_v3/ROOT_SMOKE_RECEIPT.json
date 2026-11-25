@@ -1,0 +1,65 @@
+{
+  "kind": "ACTUAL_LINUX_PORTABLE_SOURCE_PLAN_AND_TINY_SMOKE",
+  "role": "cpu",
+  "status": "PASS_TINY_ONLY",
+  "source_packet_sha256": "875f9f74704fe1d3d1b2cc0a9517e32a5ed7e3011b700cf9c966f93d1dce093d",
+  "source_manifest_sha256": "fe94c5c9138dfdbb6c4d7dd195ab4aa54531dca7db350fbdb73228c5de3304b4",
+  "packet_regular_members": 52,
+  "phase_exits": [
+    {
+      "name": "target_default_plan",
+      "argv": [
+        "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_env/bin/python",
+        "-B",
+        "/home/jovyan/seal_revision_20261124/portable_linux_cpu_v3/code/public_friendster_cpu_v1/run_public_cpu.py",
+        "--python",
+        "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_env/bin/python",
+        "--full-csr",
+        "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/new_data/full_csr",
+        "--wheel-packet",
+        "/home/jovyan/seal_revision_20261124/cpu_pt22_native_wheels_v1.tgz",
+        "--out",
+        "/home/jovyan/seal_revision_20261124/portable_linux_cpu_v3/fresh full output with spaces",
+        "--coordination-dir",
+        "/home/jovyan/seal_revision_20261124/portable_linux_cpu_v3/shared timing coordination",
+        "--source-manifest-sha256",
+        "fe94c5c9138dfdbb6c4d7dd195ab4aa54531dca7db350fbdb73228c5de3304b4"
+      ],
+      "pid": 16961,
+      "returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 60,
+      "orphan_cleanup": false,
+      "owned_pgids_signaled": [],
+      "owned_tree_quiescent": true,
+      "elapsed_seconds": 0.5024762153625488
+    },
+    {
+      "name": "actual_tiny_native",
+      "argv": [
+        "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_env/bin/python",
+        "-B",
+        "/home/jovyan/seal_revision_20261124/portable_linux_cpu_v3/code/public_friendster_cpu_v1/tiny_native_smoke.py",
+        "--out",
+        "/home/jovyan/seal_revision_20261124/portable_linux_cpu_v3/tiny native output with spaces",
+        "--source-manifest-sha256",
+        "fe94c5c9138dfdbb6c4d7dd195ab4aa54531dca7db350fbdb73228c5de3304b4"
+      ],
+      "pid": 16962,
+      "returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 180,
+      "orphan_cleanup": false,
+      "owned_pgids_signaled": [],
+      "owned_tree_quiescent": true,
+      "elapsed_seconds": 1.0033223628997803
+    }
+  ],
+  "full_graph_science_jobs": 0,
+  "new_YT_nodes": 0,
+  "YT_writes": 0,
+  "pod_lifecycle_mutations": 0,
+  "finished_unix": 1795635628.0162396,
+  "actual_pod_uid": "2ff5999d-ecc0-4cbf-b675-d2f1b0f8316b",
+  "actual_node": "ml-kub-node108.i"
+}

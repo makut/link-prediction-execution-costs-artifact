@@ -1,0 +1,50 @@
+{
+  "E16": "18originalarchive members independently verified; explicit publicreport/JSONL/terminal/summary allowlist; source/input bytes match previouslypackaged references",
+  "E17": "Only Friendster graph projection; original numericalfunctions reused and independent stdlibrecompute; no VKfixedS required/included",
+  "JIT_cache": "Fresh per-job localNUMBA_CACHE_DIR outside sources; all declared warmups remain outside measured windows. No source cache/binaries bundled.",
+  "PENCIL": "78bridgefiles unchanged between original1d284287\u2026 and nestedV2; publicmakeplan command arguments tested against unchanged original scientific builder; no predecessor/storage/install logic copied",
+  "PENCIL_validators": {
+    "binding": "public read/require/clean_exit functions; clean_exit also rejects non-intreturncode",
+    "extracted_unmodified_functions": [
+      "validate_job",
+      "crossjob_scores"
+    ],
+    "original_sha256": "f38d75eccc9ee14209fa148fa8f1eac9f5a2f2ca4327caef564cb797266ae8ca",
+    "original_source": "work/vldb_pencil_queue_v2/pencil_queue_v2.py"
+  },
+  "frozen_V4": "metadata/protocols/V4_SOURCE_CONTRACT.json; original benchmark/suite untouched; public2graph path projection24jobs/20timings/12prefixcomparisons",
+  "generic_supervision": {
+    "default_cwd": "genericPathdot always overridden bypubliccoordinator; no originalhostconstant retained",
+    "extracted_unmodified_functions": [
+      "enable_subreaper",
+      "process_identity",
+      "owned_groups",
+      "signal_confirmed",
+      "run_owned"
+    ],
+    "original_sha256": "ec07bddc13f69cbbc1c5ba63a3ede390cfea254bcc02b811422338f5b9604aaf",
+    "original_source": "work/vldb_pencil_queue_v2/third_party/reviewed_supervision_v3.py"
+  },
+  "large_GPU_or_graph_benchmarks_executed_by_packaging_agent": false,
+  "native": "work/vldb_corrected_native source from31e375\u2026 unchanged; publicFriendster128 reportbed119\u2026 only; coordinator admission attests own local preflight, never historical quality",
+  "remote_or_YT_actions_by_packaging_agent": 0,
+  "samehost_NumBa_followup": {
+    "cases": 128,
+    "graph": "Friendster",
+    "kernel": "unchanged exact.production_induced scan/pair + exact.measure; no historicaldifferenthost ratio",
+    "measurement_claim": "No completed full-scale follow-up or residual native/Numba ratio implied.",
+    "new_graph_acquisition_or_conversion": false,
+    "original_worker_sha256": "311303cdd3c741024618f7008bc69d166f27c14f6e36ed308c9a8f934a92e9c8",
+    "public_hardware_policy": "any one documented Linux host; identical hostname/boot/CPUmodel/affinity; optional strict8480+",
+    "public_jobs": 2,
+    "reuse_existing_conversion": true,
+    "status": "implemented_locally_tested_not_full_scale_executed",
+    "widths": [
+      32,
+      64
+    ]
+  },
+  "schema_version": 1,
+  "status": "candidate_public_adapters_implemented_not_frozen_or_published",
+  "validation_setup": "Only original freeze_source_subset(namevalid,count512,seed20261124,1000negatives) is called. No testpayload arrays or qualityrunner main/fitting invoked."
+}

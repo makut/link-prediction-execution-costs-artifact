@@ -1,0 +1,29 @@
+Unchanged recorded public PENCIL evidence: E19 instrumented48 and E21 clean44
+
+lpp_public_pencil_instrumented48_raw.tgz
+9,966,534 bytes; SHA256
+7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c
+lpp_public_pencil_clean44_raw.tgz
+10,230,546 bytes; SHA256
+708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0
+
+The complete raw containers, member bytes, genuine sidecars and root admission
+observations are retained unchanged. E19's48jobs are the instrumented diagnostic;
+E21's44jobs are the separate clean consumer. Never pool or relabel them.
+
+Own code/output metadata and the E21 recorded22352-byte native_assoc_v1.so build
+evidence: MIT, copyright2026LPP contributors. Source is preserved in the artifact.
+The independent archival auditors read/hash the compiled evidence and do not
+import it. Rebuild on the target host through the portable source recipe.
+
+Public ogbl-citation2-derived node/query and RNG/replay traces: Open Graph
+Benchmark, W.Hu et al., Open Graph Benchmark: Datasets for Machine Learning on
+Graphs, NeurIPS2020; https://ogb.stanford.edu/docs/linkprop/#ogbl-citation2 .
+Dataset license: ODC-BY1.0, https://opendatacommons.org/licenses/by/1-0/ .
+Upstream Apache-2.0/MIT code remains under its original terms and notices in
+the source artifact; own MIT does not replace upstream/data licenses.
+
+No full graph, checkpoint/model weight, private industrial graph or industrial
+query payload is included. Historical author paths/host/process/runtime metadata
+and internal URIs are genuine provenance and are never contacted by the offline
+auditors. This sidecar adds attribution without rewriting immutable raw bytes.

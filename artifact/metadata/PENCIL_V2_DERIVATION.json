@@ -1,0 +1,21 @@
+{
+  "kind": "derived_portable_orchestration_not_scientific_measurement",
+  "original_queue_source_sha256": "dda406371cfe9a7d5de8415224930959e970f2b9c948f56d37dca09fffaf68cd",
+  "scientific_validation_ast_sha256": {
+    "validate_job": "b331c8c29048a47055327474d12af0409c4843fc8471643bdcdae5613c2aef94",
+    "crossjob_scores": "894a194d3a9402c2bd44b1f405f2b2367357318de65fa33b7d7180cae47eb52f"
+  },
+  "allowed_scientific_job_delta": [
+    "Absolute source/input/output/interpreter locations are portable.",
+    "Omit optional --quality-plan and its private-path-bearing file; unchanged full content contract, strict manifest and exact512-source payload hashes remain mandatory."
+  ],
+  "unchanged": [
+    "48scientific jobs/36benchmarks/8arms/9semantic audits",
+    "source-pinned graph-only optional-vision policy beforeBERT",
+    "model parameters,precision,batch,workers,1warmup+3sweeps,score-equality gates"
+  ],
+  "new_execution_controls": [
+    "Portable numerical/native/HF/policy environment before/after probes and bindings",
+    "existing0.4owned local supervision reused; no remote persistence/predecessor rules"
+  ]
+}

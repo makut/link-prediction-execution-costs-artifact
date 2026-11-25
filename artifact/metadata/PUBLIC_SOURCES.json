@@ -1,0 +1,67 @@
+{
+  "citation2": {
+    "bytes": 2293454318,
+    "central_directory_evidence": {
+      "crc_is_not_sha256_proof": true,
+      "range": "bytes2293388782-2293454317/2293454318",
+      "range_status": 206,
+      "read_bytes": 65536
+    },
+    "code_license": "MIT",
+    "dataset_license": "ODC-BY",
+    "dataset_release": "1",
+    "identity_requirement": "all19prepared numeric payload SHA256 matches; archive identity need not match",
+    "locally_verified_official_download_bytes": 2293454318,
+    "locally_verified_official_download_sha256": "f8502b935ea8f0a7bea5eb130991ca337cd26cad7f231cc9f5546fe076f4be53",
+    "metadata_url": "https://raw.githubusercontent.com/snap-stanford/ogb/1.3.6/ogb/linkproppred/master.csv",
+    "official_checksum_scope": "locally measured full official-download SHA256; not a provider-published checksum",
+    "ogb_version": "1.3.6",
+    "prepared_19_payloads_verified": true,
+    "provider_sha256_available": false,
+    "recorded_repack_bytes": 3754138412,
+    "recorded_repack_sha256": "c697e76ab31c8ed00685d065da5169e9c15e34f343c9bb89dd40de5365e6880c",
+    "url": "https://snap.stanford.edu/ogb/data/linkproppred/citation-v2.zip",
+    "verification_proof": "metadata/CITATION2_PUBLIC_REPRODUCTION.json"
+  },
+  "friendster": {
+    "binary_endian": "little",
+    "compression": "zlib",
+    "creator": "Per Fuchs",
+    "doi": "10.5281/zenodo.5146230",
+    "files": [
+      {
+        "bytes": 6572926076,
+        "locally_verified_official_download_sha256": "54f2c11d02827ade76e8b91d07a9814a3095028acf53db51141a9a0533b51a2a",
+        "md5": "81896fdbaccd0f41608ffc9065433c7f",
+        "name": "com-friendster-dense.ez",
+        "official_checksum_scope": "full endpoint-agreed SHA256 locally measured; provider MD5 separately verified",
+        "url": "https://zenodo.org/api/records/5146230/files/com-friendster-dense.ez/content"
+      },
+      {
+        "bytes": 99315813,
+        "locally_verified_official_download_sha256": "edbaa6f87a7b8a12fb325ea270c52196d24874051e4bb5b7c75c4f655ab71011",
+        "md5": "a07ac60fe42f7ab9e50c7224edc6e3c1",
+        "name": "com-friendster-dense.vz",
+        "official_checksum_scope": "full endpoint-agreed SHA256 locally measured; provider MD5 separately verified",
+        "url": "https://zenodo.org/api/records/5146230/files/com-friendster-dense.vz/content"
+      },
+      {
+        "bytes": 1178,
+        "locally_verified_official_download_sha256": "384d7ac8e7800c89541327b8194b3e5bc3346598c60385c244e927bf4d28dd6b",
+        "md5": "72388acdf5c735aff65d23359370dcf9",
+        "name": "com-friendster-dense.properties",
+        "official_checksum_scope": "full endpoint-agreed SHA256 locally measured; provider MD5 separately verified",
+        "url": "https://zenodo.org/api/records/5146230/files/com-friendster-dense.properties/content"
+      }
+    ],
+    "id_mapping": "rank of sorted Graphalytics/SNAP vertex IDs; stable-map=false",
+    "license": "CC-BY-4.0",
+    "metadata_url": "https://zenodo.org/api/records/5146230",
+    "num_nodes": 65608366,
+    "public_full_3_payloads_verified": true,
+    "public_prepared_23_payloads_verified": true,
+    "undirected_edges": 1806067135,
+    "verification_proof": "metadata/FRIENDSTER_PUBLIC_REPRODUCTION.json"
+  },
+  "verified_on": "2026-11-25"
+}

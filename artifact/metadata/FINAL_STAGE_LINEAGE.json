@@ -1,0 +1,11 @@
+{
+  "base471_payloads_preserved_unchanged": 471,
+  "base471manifest_sha256": "b4aae9e737f743e1fefef245bcf7da9dfcf2fa2ee58e8329304cbb114cdb8bec",
+  "code_archive_freeze_or_publication": false,
+  "immutable_v0_4_sha256": "8657a980e7efe1266f30022223c9dffde75882c53c1e55e6b6dd9ec160470404",
+  "preserved_overrides_prefix": "metadata/lineage/PRIOR_V0_5_CANDIDATE/",
+  "source_adapters": {
+    "cpu": "fe94c5c9138dfdbb6c4d7dd195ab4aa54531dca7db350fbdb73228c5de3304b4",
+    "pencil_clean44": "250f034c2dcd77d4e1bd266f3c01de3ff55f8a6324e1944f141f57c2751352b1"
+  }
+}

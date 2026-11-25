@@ -1,0 +1,25 @@
+{
+  "kind": "ROOT_INDEPENDENT_PORTABLE_CLEAN_SOURCE_ADMISSION",
+  "status": "PASS",
+  "observed_unix": 1795634792.0420768,
+  "source_manifest_sha256": "250f034c2dcd77d4e1bd266f3c01de3ff55f8a6324e1944f141f57c2751352b1",
+  "packet": {
+    "bytes": 197767,
+    "sha256": "aee915c211d426979dab6251a9e1288b6d50abe3487cf2e5123af6040592a411",
+    "regular_members": 97
+  },
+  "all_declared_source_and_packet_hashes_exact": true,
+  "python310_syntax_pass": true,
+  "root_independent_wrapper_tests": "21 passed in0.17s; docs-only v2 retains all Python bytes",
+  "source_review": [
+    "generic paths preserve lexical venv; full19+2 input hashes and continuity",
+    "unchanged science bridge; exact44 matrix; no replacement internal admission facts",
+    "one supplied GPU UUID propagated to children and busy refusal",
+    "shared flock+O_EXCL marker retained on unknown ownership",
+    "finite owned process guard/stop/whole local archive, failure preservation",
+    "README correctly discloses fresh-public independent auditor absent; historical auditor requires original anchors"
+  ],
+  "blockers": [],
+  "actual_Linux_GPU_run_claimed": false,
+  "remote_calls": 0
+}

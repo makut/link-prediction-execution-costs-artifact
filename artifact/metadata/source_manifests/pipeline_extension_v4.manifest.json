@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "created_unix": 1795556015.07867,
+  "scope": "Local-only single reference_union_compiled bridge; V3 untouched; no remote deployment or YT writes",
+  "protocol_version": 4,
+  "routing_version": "production_matched_vectorized_selected_degree_once_v4_reference_bridge",
+  "canonical_output": "results/pipeline",
+  "job_count": 35,
+  "timing_jobs": 30,
+  "reference_pair_audits": 18,
+  "bridge_arm": "reference_union_compiled",
+  "verification": {
+    "pytest": "45 passed in32.61s; metadata-only test passed after final contract wording",
+    "local_cpu_only": true,
+    "v3_source_preservation": {
+      "scripts/seal_revision/pipeline_benchmark_v3.py": "eb16ab3495fa03e46dbec2b4c911ffc780d0d2bbc3387254a4090449e40bdb78",
+      "experiment_configs/seal_revision_2026-11/run_pipeline_suite_v3.py": "578710fb1ea050ec26fbe27ed954e7648baf0d4b851c7ac5ca371979fcc98453"
+    }
+  },
+  "files": {
+    "scripts/seal_revision/pipeline_benchmark_v4.py": {
+      "sha256": "6e531fd941ac0d6068ffe2c97ab87015b5eab678b610c9107a95bc234e503be9",
+      "bytes": 41843
+    },
+    "scripts/seal_revision/test_pipeline_benchmark_v4.py": {
+      "sha256": "60b8b9b65b30143a7c96ae410450e6b865b7e3f7e7efcad9ff7f7bd31dddcf3f",
+      "bytes": 16769
+    },
+    "experiment_configs/seal_revision_2026-11/run_pipeline_suite_v4.py": {
+      "sha256": "9a9cd290da365bef9108dc421b445c60e728ff24b948aea6593d6a3a515b83e9",
+      "bytes": 29003
+    },
+    "experiment_configs/seal_revision_2026-11/test_run_pipeline_suite_v4.py": {
+      "sha256": "2435b78397bcad1f99a6d73ff2ffedea6706d32ab6da3c2b36f3fe1d7e5c2071",
+      "bytes": 12354
+    }
+  },
+  "integration": "Stop only waiting V3 controller and preserve its plan/status directory before V4 launch; summary consumer requires protocol4,5arms and18explicitpair audits.",
+  "archive": {
+    "name": "pipeline_extension_v4.tgz",
+    "sha256": "925d16a4eed4acb18b11b12a639267e53dcf4f10b080e0e448f85dda85cd2f81",
+    "bytes": 27599
+  }
+}

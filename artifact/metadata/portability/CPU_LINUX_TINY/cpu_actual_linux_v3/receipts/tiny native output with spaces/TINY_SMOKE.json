@@ -1,0 +1,52 @@
+{
+  "kind": "LOCAL_TINY_NATIVE_SOURCE_PORTABILITY_SMOKE",
+  "status": "PASS_TINY_ONLY",
+  "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+  "python": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+  "source_manifest_sha256": "fe94c5c9138dfdbb6c4d7dd195ab4aa54531dca7db350fbdb73228c5de3304b4",
+  "build": {
+    "schema_version": 1,
+    "kind": "corrected_native_build_v1",
+    "source": "/home/jovyan/seal_revision_20261124/portable_linux_cpu_v3/code/public_friendster_cpu_v1/frozen_cpu_v2/original/native/native_assoc_v1.cpp",
+    "source_sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20",
+    "compiler": "/usr/bin/x86_64-linux-gnu-g++-11",
+    "compiler_version": "x86_64-linux-gnu-g++-11 (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "argv": [
+      "/usr/bin/x86_64-linux-gnu-g++-11",
+      "-std=c++17",
+      "-O3",
+      "-DNDEBUG",
+      "-fPIC",
+      "-pthread",
+      "-shared",
+      "/home/jovyan/seal_revision_20261124/portable_linux_cpu_v3/code/public_friendster_cpu_v1/frozen_cpu_v2/original/native/native_assoc_v1.cpp",
+      "-o",
+      "/home/jovyan/seal_revision_20261124/portable_linux_cpu_v3/tiny native output with spaces/cpp_build/native_assoc_v1.so.building"
+    ],
+    "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+    "library": "/home/jovyan/seal_revision_20261124/portable_linux_cpu_v3/tiny native output with spaces/cpp_build/native_assoc_v1.so",
+    "library_sha256": "2a8b892a63a84061ec03fc8e7d6c5d616ecb351720a1e4f236cae0374999f967",
+    "scope": "Standalone compiled correctness/control library; not an upstream Torch extension or a performance result."
+  },
+  "admission": {
+    "reference_full_clear": {
+      "status": "pass",
+      "literal_cases": 4,
+      "ordered_raw_edges_and_eids": true,
+      "arbitrary_root_packaging_and_independent_BFS_labels": true
+    },
+    "persistent_touched_reset": {
+      "status": "pass",
+      "literal_cases": 4,
+      "ordered_raw_edges_and_eids": true,
+      "arbitrary_root_packaging_and_independent_BFS_labels": true
+    }
+  },
+  "numpy": "1.24.4",
+  "scipy": "1.10.1",
+  "full_graph_or_model_jobs": 0,
+  "GPU_calls": 0,
+  "YT_writes": 0,
+  "remote_actions": 0,
+  "scope": "Tiny standalone native correctness/build only; not full seven-arm target reproduction or performance evidence."
+}

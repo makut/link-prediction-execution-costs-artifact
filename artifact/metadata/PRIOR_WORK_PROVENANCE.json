@@ -1,0 +1,139 @@
+{
+  "VK_GNN_allocation_observed": "Java LargeArray uses Unsafe.allocateMemory; LargeArraySerializer/GraphCSRSerializer read eagerly from FileChannel. Inspected core does not demonstrate file-backed mmap.",
+  "code_searches_without_matches": [
+    "LargeInt32Array",
+    "prepare_ogb_dataset",
+    "MappedByteBuffer",
+    "mmap MAP_SHARED"
+  ],
+  "date": "2026-11-25",
+  "existing_v0_1_and_v0_2_archives_modified": false,
+  "inspected_source_file_blobs": [
+    {
+      "bytes": 11358,
+      "content_encoding": "utf-8",
+      "git_blob_sha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "url": "https://github.com/makut/VK-GNN/blob/2a06545429210962c94b84722376154d8a8c4602/LICENSE"
+    },
+    {
+      "bytes": 6057,
+      "content_encoding": "utf-8",
+      "git_blob_sha1": "d40d6a656af2dc65085affe656edfcbe6f97baa6",
+      "path": "README.md",
+      "sha256": "c67d51a0cc4602480351431f1b11dc3fc23004aa6dae1ee586e8ee718b6ff202",
+      "url": "https://github.com/makut/VK-GNN/blob/2a06545429210962c94b84722376154d8a8c4602/README.md"
+    },
+    {
+      "bytes": 3681,
+      "content_encoding": "utf-8",
+      "git_blob_sha1": "f5d2693cf19ebb896a7fe5c205c8aac5b5d53db6",
+      "path": "sampler/src/main/java/com/subgraphs/samplingStrategies/GraphCSR.java",
+      "sha256": "db89123defc0d368a4cb4548a954d6d9feae89f228ae3a089bec69154def1ce2",
+      "url": "https://github.com/makut/VK-GNN/blob/2a06545429210962c94b84722376154d8a8c4602/sampler/src/main/java/com/subgraphs/samplingStrategies/GraphCSR.java"
+    },
+    {
+      "bytes": 3889,
+      "content_encoding": "utf-8",
+      "git_blob_sha1": "a1ca7b08b655e37bec1b9e8ce27eab869f35464a",
+      "path": "sampler/src/main/java/com/subgraphs/samplingStrategies/GraphCSRSerializer.java",
+      "sha256": "797729b18ff7db0285dda40183af86c7430fe3a2eb425160af2d1f8d6ada59f7",
+      "url": "https://github.com/makut/VK-GNN/blob/2a06545429210962c94b84722376154d8a8c4602/sampler/src/main/java/com/subgraphs/samplingStrategies/GraphCSRSerializer.java"
+    },
+    {
+      "bytes": 1987,
+      "content_encoding": "utf-8",
+      "git_blob_sha1": "a5c8f3ad4357c0a467bba948ebe888b2ade70833",
+      "path": "sampler/src/main/java/com/subgraphs/samplingStrategies/LargeArray.java",
+      "sha256": "9b14a317cc0dcbbd72c3535c0fb217e948627ed8c1ccea4273ac47b8e604a42a",
+      "url": "https://github.com/makut/VK-GNN/blob/2a06545429210962c94b84722376154d8a8c4602/sampler/src/main/java/com/subgraphs/samplingStrategies/LargeArray.java"
+    },
+    {
+      "bytes": 9585,
+      "content_encoding": "utf-8",
+      "git_blob_sha1": "af19ce550e0d4ebb03fda1ebb81d1c300ac4591a",
+      "path": "sampler/src/main/java/com/subgraphs/GraphArrayManager.java",
+      "sha256": "e74fce643bd0d8884d77c7d4874f6cb7983fad3899a20c94a2019ecc822b1bf5",
+      "url": "https://github.com/makut/VK-GNN/blob/2a06545429210962c94b84722376154d8a8c4602/sampler/src/main/java/com/subgraphs/GraphArrayManager.java"
+    },
+    {
+      "bytes": 1887,
+      "content_encoding": "utf-8",
+      "git_blob_sha1": "82b6581978b0b734e828ce3a3057e21901e6de52",
+      "path": "sampler/src/main/cpp/nativeSubgraphSamplingUtils/graph_csr.h",
+      "sha256": "9ba3eda189116648e090ccefc4bbca1343e8e173b6361bd686e2cc09029bdddd",
+      "url": "https://github.com/makut/VK-GNN/blob/2a06545429210962c94b84722376154d8a8c4602/sampler/src/main/cpp/nativeSubgraphSamplingUtils/graph_csr.h"
+    },
+    {
+      "bytes": 4519,
+      "content_encoding": "utf-8",
+      "git_blob_sha1": "6c99e0a302ce175aed324a80feb92ef506218532",
+      "path": "sampler/src/main/cpp/nativeSubgraphSamplingUtils/graph_csr.cpp",
+      "sha256": "961ff0e43b2bbd109f464956ac5ca0225bad8c904cf0f3c204747df354ce944c",
+      "url": "https://github.com/makut/VK-GNN/blob/2a06545429210962c94b84722376154d8a8c4602/sampler/src/main/cpp/nativeSubgraphSamplingUtils/graph_csr.cpp"
+    },
+    {
+      "bytes": 4498,
+      "content_encoding": "utf-8",
+      "git_blob_sha1": "58fb222a6c2c415910d28ef35589ca1d9bf54bfa",
+      "path": "sampler/src/main/java/com/subgraphs/samplingStrategies/LargeArraySerializer.java",
+      "sha256": "caae65d4ce879c1730beab4488b4d8cbe891fc4953964c978b64e0e02f7f82a1",
+      "url": "https://github.com/makut/VK-GNN/blob/2a06545429210962c94b84722376154d8a8c4602/sampler/src/main/java/com/subgraphs/samplingStrategies/LargeArraySerializer.java"
+    }
+  ],
+  "license_scope": "User-approved MIT for own code retained; upstream Apache-2.0 text preserved. No VK-GNN Java/C++ source is vendored in the staged artifact.",
+  "local_LPP_history_read_only": [
+    {
+      "author": "Maksim Utushkin",
+      "commit": "2a53fe265832ec881540cd18d7a08cfffe72e987",
+      "message": "Refactor CSR graph utils",
+      "observation": "Python LargeInt64RawArray already offers file-backed mmap and explicitly mentions Java big-endian edgeStarts",
+      "recorded_date": "2026-02-09 15:10:40+0300"
+    },
+    {
+      "author": "Maksim Utushkin",
+      "commit": "8474ce009248be1846016faabc789e56cdd9fc8b",
+      "message": "Add edge list to CSR utility and fix mmap imports",
+      "recorded_date": "2026-02-11 16:07:52+0300"
+    },
+    {
+      "author": "Maksim Utushkin",
+      "commit": "2b3ea06cc34fdf4b6fba90861baeebfaa1eea197",
+      "observation": "First visible --follow history entry for scripts/prepare_ogb_dataset.py",
+      "recorded_date": "2026-05-29 17:00:23+0300"
+    }
+  ],
+  "next_version_must_rebuild_manifest_and_archive": true,
+  "novelty_conclusion": "Do not claim mixed-width CSR layout or existing Python mmap base as new. Distinguish fixed-S SEAL induction/operators and current controlled experimental analysis from earlier temporal neighbor sampling/hashed embeddings.",
+  "pinned_license": {
+    "bytes": 11358,
+    "content_encoding": "utf-8",
+    "git_blob_sha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+    "path": "LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "url": "https://github.com/makut/VK-GNN/blob/2a06545429210962c94b84722376154d8a8c4602/LICENSE"
+  },
+  "provenance_conclusion": "Shared format lineage/Java compatibility is evidenced. Direct code copying, ownership of every ancestor, and translation direction are not established; local Python history predates public VK-GNN release.",
+  "public_commit": "2a06545429210962c94b84722376154d8a8c4602",
+  "public_commit_time_reported_by_GitHub": "2026-05-23T22:47:41Z",
+  "public_repository": "https://github.com/makut/VK-GNN",
+  "public_repository_license": "Apache-2.0",
+  "published": false,
+  "related_prior_paper": "https://arxiv.org/abs/2608.27413",
+  "schema_version": 1,
+  "selected_source_bytes_modified": false,
+  "shared_layout_observed": {
+    "default_endian": "big in Java and original Python APIs; explicit little-endian in current prepared public datasets",
+    "files": [
+      "edge_starts.bin",
+      "edge_ends.bin",
+      "timestamps.bin"
+    ],
+    "int32_file_header": "int64 element count",
+    "neighbors": "int32",
+    "offset_count": "N without N+1sentinel",
+    "row_offsets": "int64"
+  },
+  "upstream_root_NOTICE_found": false
+}

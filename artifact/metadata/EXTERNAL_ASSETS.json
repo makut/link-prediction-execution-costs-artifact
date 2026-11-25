@@ -1,0 +1,61 @@
+{
+  "assets": {
+    "cpu_E20_raw": {
+      "bytes": 2121570,
+      "download_url_at_creation": null,
+      "filename": "lpp_public_friendster_cpu_matched_v2_raw.tgz",
+      "included_in_code_snapshot": false,
+      "local_source_path": "outputs/seal_after_travel_systems_final_20261125/public_fr_cpu_matched_v2_final_readonly_v1/final_snapshot.tgz",
+      "publication_state_when_created": "not_published",
+      "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374"
+    },
+    "cpu_pt22_wheels": {
+      "bytes": 15064339,
+      "download_url_at_creation": null,
+      "filename": "pt22_native_wheels_v1.tgz",
+      "included_in_code_snapshot": false,
+      "local_source_path": "work/vldb_cpu_native_wheels_pt22_v1/pt22_native_wheels_v1.tgz",
+      "publication_state_when_created": "not_published",
+      "sha256": "5e9edbdc067325cd0b41b5fb292e2cc7343cc535da87ff3bef720cbf85da38cf"
+    },
+    "pencil_E19_instrumented48_raw": {
+      "bytes": 9966534,
+      "download_url_at_creation": null,
+      "filename": "lpp_public_pencil_instrumented48_raw.tgz",
+      "included_in_code_snapshot": false,
+      "local_source_path": "outputs/seal_after_travel_systems_final_20261125/pencil_bridge_v3_final_readonly_v1/final_snapshot.tgz",
+      "publication_state_when_created": "not_published",
+      "sha256": "7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c"
+    },
+    "pencil_E21_clean44_raw": {
+      "bytes": 10230546,
+      "download_url_at_creation": null,
+      "filename": "lpp_public_pencil_clean44_raw.tgz",
+      "included_in_code_snapshot": false,
+      "local_source_path": "outputs/seal_after_travel_systems_final_20261125/pencil_clean_consumer_v1_final_readonly_v1/final_snapshot.tgz",
+      "publication_state_when_created": "not_published",
+      "sha256": "708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0"
+    },
+    "public_quality": {
+      "bytes": 404147012,
+      "download_url_at_creation": null,
+      "filename": "lpp_public_quality_evidence_v1.tgz",
+      "included_in_code_snapshot": false,
+      "local_source_path": "outputs/vldb_public_quality_evidence_20261125/lpp_public_quality_evidence_v1.tgz",
+      "publication_state_when_created": "not_published",
+      "sha256": "e17cdc9678d00a3f372fc8083741a200a63662226f730f47eeda79f89b4ad3b2"
+    },
+    "public_systems": {
+      "bytes": 83629661,
+      "download_url_at_creation": null,
+      "filename": "lpp_public_systems_evidence_v1.tgz",
+      "included_in_code_snapshot": false,
+      "local_source_path": "outputs/vldb_public_systems_evidence_20261125/lpp_public_systems_evidence_v1.tgz",
+      "publication_state_when_created": "not_published",
+      "sha256": "48232549089f3295c893bb33f6cea0d1aac4a0ee45b91a2669392c90ae1bfe40"
+    }
+  },
+  "graphs_included": false,
+  "kind": "SEPARATE_IMMUTABLE_PUBLIC_EVIDENCE_AND_CPU_WHEEL_ASSETS",
+  "publication_performed": false
+}

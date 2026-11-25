@@ -1,0 +1,16 @@
+{
+  "actual_fresh_E7_E12_reproduction_files_inserted": 26,
+  "actual_new_PENCIL_or_matched_measurements_inserted": 0,
+  "fresh_E7_E12_actual_numeric_reproduction_verified": true,
+  "full_new_PENCIL_or_matched_command_reruns_claimed": false,
+  "gates": "metadata/V0_5_GATES.json",
+  "local_archive_frozen": false,
+  "no_YT_or_remote_actions": true,
+  "parent_v0_4_untouched": true,
+  "published": false,
+  "quality_evidence": "metadata/external_assets/public_quality_v1.json",
+  "raw_public_legacy_evidence": "metadata/external_assets/public_systems_v1.json",
+  "release_ready": false,
+  "source_packets_integrated": true,
+  "version": "0.5.0-local-candidate-unfrozen"
+}

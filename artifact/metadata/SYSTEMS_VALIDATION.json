@@ -1,0 +1,42 @@
+{
+  "AST_extraction_identity": "metadata/SYSTEMS_SOURCE_SELECTION.json",
+  "YT_actions_by_packaging_agent": 0,
+  "command": "PYTHONDONTWRITEBYTECODE=1 NUMBA_CACHE_DIR=<external tiny cache> python -m pytest -p no:cacheprovider artifact_public/test_systems_reproduction.py -q",
+  "date": "2026-11-25",
+  "durable_public_release": false,
+  "full_scale_public_adapter_execution_tested": false,
+  "independent_peer_review": {
+    "remaining_must_fix": [],
+    "reviewer": "/root/project_audit",
+    "scope": "Public coordinator lifecycle SIGTERM/ownedcleanup; native orderedCSR/eid/root/rawtimer evidence; same128selection, physical32/64, actualhost/conversion/source/resourceguards; exact scientificAST and honest recorded-vs-newrun scope.",
+    "seconds": 1.71,
+    "status": "CRITICAL_PASS",
+    "tests_passed": 47
+  },
+  "large_performance_experiments_launched": 0,
+  "limits": "Local Mac tiny/mock/protocol tests do not replace fullLinux/GPU execution or independent numeric audits of recorded systems results. No residual samehostratio or newMRR claim.",
+  "new_systems_tests": 47,
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "public_input_identity_proofs": [
+    "metadata/CITATION2_PUBLIC_REPRODUCTION.json",
+    "metadata/FRIENDSTER_PUBLIC_REPRODUCTION.json"
+  ],
+  "python": "3.12.10 (main, May 20 2025, 17:57:11) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "schema_version": 1,
+  "seconds": 1.23,
+  "status": "LOCAL_SMALL_CHECKS_AND_INDEPENDENT_CRITICAL_REVIEW_PASS",
+  "tested_scopes": [
+    "exact24job publicV4 projection",
+    "all48PENCILarguments equal unchanged frozen builder",
+    "3nativearms+2samehostFRwidthworkers matrix/noextra conversion",
+    "failed/skipped/guarded/incomplete science rejection",
+    "identical hostname/boot/CPUmodel/affinity",
+    "source pins plus separate publicadapter snapshot pins",
+    "frozen128selection and original/conversion binding guards",
+    "actualtiny32/64fixedscan+pairwise execution with unchanged scientificfunctions",
+    "independent768rawE16record aggregation",
+    "standaloneplan CLIs require no graph/GPU/network/outputtree",
+    "validation-only512subset preparation without opening testarrays"
+  ],
+  "unmodified_base_validation": "metadata/VALIDATION.json:83tests+2subtests and16exactCLI; every96base source byte unchanged. Those historical checks are not newly rerun here."
+}

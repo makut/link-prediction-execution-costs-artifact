@@ -1,0 +1,13 @@
+{
+  "YT_writes": 0,
+  "all_original471_payload_bytes_rehashed_unchanged": true,
+  "kind": "ACTUAL_POST_STAGE_BASELINE_PRESERVATION_V1",
+  "original471manifest_sha256": "b4aae9e737f743e1fefef245bcf7da9dfcf2fa2ee58e8329304cbb114cdb8bec",
+  "remote_actions": 0,
+  "status": "PASS",
+  "v0_4_archive_unchanged": {
+    "bytes": 76637178,
+    "sha256": "8657a980e7efe1266f30022223c9dffde75882c53c1e55e6b6dd9ec160470404"
+  },
+  "write_strategy": "All current replacement metadata written as fresh new files; historical originals linked only at separate prior-snapshot destinations. No write-through to a source hardlink."
+}

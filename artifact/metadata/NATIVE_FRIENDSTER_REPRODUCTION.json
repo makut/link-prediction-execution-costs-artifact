@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "status": "RECOVERED_PUBLIC_FRIENDSTER_NATIVE_SCIENCE_VERIFIED_LIFECYCLE_UNKNOWN",
+  "public_only": true,
+  "original_archive": {
+    "bytes": 3963486,
+    "sha256": "5aa52038eb3045e253b9cddd1ac03afc7022a0b7c5fa5f46be03803bc77ec8f6"
+  },
+  "internal_manifest_sha256": "fbe8c86c862c7ef8b6ff7cbb34e74e59c8abc05e4a26a6319b569ea8e41eaa3a",
+  "original_full_archive_files_verified": 94,
+  "receipts_directory": "metadata/evidence/native_friendster_v1",
+  "unmodified_receipts": {
+    "COMPLETE.json": {
+      "bytes": 2071,
+      "sha256": "3d9786cb2380ea04829b99df8a21e90ddee0c360aaaee104b8e90bf796449b72",
+      "original_archive_member": "results/native_controls_v1/friendster/COMPLETE.json",
+      "unmodified": true
+    },
+    "parent_plan.json": {
+      "bytes": 2760,
+      "sha256": "71f77be9cbf2a16f8b24c6e3ee14c228e964c4a582c274c5fedcf5e457def14c",
+      "original_archive_member": "results/native_controls_v1/friendster/parent_plan.json",
+      "unmodified": true
+    },
+    "replay_plan.json": {
+      "bytes": 74238,
+      "sha256": "d2cac5cc0ef136aa0a59466cb9251f2e191e267a09904e373ece78479b55dfb4",
+      "original_archive_member": "results/native_controls_v1/friendster/replay_plan.json",
+      "unmodified": true
+    },
+    "native_conversion_receipt.json": {
+      "bytes": 5681,
+      "sha256": "91a0943f0d704eb65846c78bb7b548c1130670f3c9d105f252b5f59b13a5720d",
+      "original_archive_member": "results/native_controls_v1/friendster/native_conversion_receipt.json",
+      "unmodified": true
+    },
+    "native_conversion_exit.json": {
+      "bytes": 305,
+      "sha256": "19e2964f2fff4f299849c81939a7b498eb81ead19f5110e18297fa477a39e976",
+      "original_archive_member": "results/native_controls_v1/friendster/native_conversion_exit.json",
+      "unmodified": true
+    },
+    "runtime_bindings.json": {
+      "bytes": 2096,
+      "sha256": "c7d3368d3681cadfebcee5132da32e932a3a7c5d71ce0bceed3048c6bf90bfbe",
+      "original_archive_member": "results/native_controls_v1/friendster/runtime_bindings.json",
+      "unmodified": true
+    },
+    "reference_full_clear.json": {
+      "bytes": 129631,
+      "sha256": "d22774855273f4d927991b61d746f8fe9af63385ef65ac93de431921bc20af9e",
+      "original_archive_member": "results/native_controls_v1/friendster/reference_full_clear.json",
+      "unmodified": true
+    },
+    "persistent_touched_reset.json": {
+      "bytes": 131389,
+      "sha256": "4026b844658c62419f29a16cbb9dc1d6e517e4f43f8f43877904b5b223654979",
+      "original_archive_member": "results/native_controls_v1/friendster/persistent_touched_reset.json",
+      "unmodified": true
+    },
+    "upstream_torch_sparse_direct.json": {
+      "bytes": 130356,
+      "sha256": "6c063b8e64a612a346cbb9b5366e78c3dad2e74fbfe9124018a23733a3466136",
+      "original_archive_member": "results/native_controls_v1/friendster/upstream_torch_sparse_direct.json",
+      "unmodified": true
+    },
+    "reference_full_clear_exit.json": {
+      "bytes": 305,
+      "sha256": "5c53c1e511c4e5238a8e53f542af9fde05447ca5d0219ce054cb45d9ad25e462",
+      "original_archive_member": "results/native_controls_v1/friendster/reference_full_clear_exit.json",
+      "unmodified": true
+    },
+    "persistent_touched_reset_exit.json": {
+      "bytes": 305,
+      "sha256": "43c4c082111ef46b94c76cb6e1cea2dfb99b24a613f83508ddb9c866c784511d",
+      "original_archive_member": "results/native_controls_v1/friendster/persistent_touched_reset_exit.json",
+      "unmodified": true
+    },
+    "upstream_torch_sparse_direct_exit.json": {
+      "bytes": 305,
+      "sha256": "5ef72909dd0eaa64ee29ebde0506c8b0ae3b0adf9eca45cf83424262f7fdefab",
+      "original_archive_member": "results/native_controls_v1/friendster/upstream_torch_sparse_direct_exit.json",
+      "unmodified": true
+    },
+    "upstream_native_admission.json": {
+      "bytes": 12188,
+      "sha256": "c812f2a1eb62c8541abbb8f0960a99752e5dc708de90f55c9610c84fff2918db",
+      "original_archive_member": "results/native_controls_v1/friendster/upstream_native_admission.json",
+      "unmodified": true
+    },
+    "upstream_native_admission_exit.json": {
+      "bytes": 302,
+      "sha256": "491253ca2129afced97a72405acb951036860192f3e2d53d2f538aa948dc93e6",
+      "original_archive_member": "results/native_controls_v1/friendster/upstream_native_admission_exit.json",
+      "unmodified": true
+    },
+    "friendster.exit.json": {
+      "bytes": 317,
+      "sha256": "e2ea1f55bc54c3457b5b0f14c4ce747dfedbf87cb84175948ce4a98f85a78b6f",
+      "unmodified": true
+    }
+  },
+  "numeric_audit": "metadata/evidence/native_friendster_v1/PUBLIC_FRIENDSTER_NUMERIC_AUDIT.json",
+  "cases": 128,
+  "native_arms": 3,
+  "all384native_case_outputs_exact": true,
+  "width": "int64 native CSR for all3arms",
+  "outer_controller_clean_exit": "UNKNOWN",
+  "outer_controller_final_lock_release": "UNKNOWN",
+  "numba_comparison_included": false,
+  "crosshost_ratios_inferred": false,
+  "new_experiments_by_packaging_agent": 0,
+  "limitations": [
+    "The archived SCIENTIFIC_TERMINAL proves completed guarded scientific workers; the lost outside controller COMPLETE, final clean exit and timing-lock release remain UNKNOWN.",
+    "Pod absence is observed after the run and does not establish prior clean controller shutdown.",
+    "All three arms use the same native int64 CSR and128 original frozen ordered S; no Numba or crosshost6338/8480 speed ratios.",
+    "Actual giant native arrays are not locally available; archived successful full SHA verification and metadata are cross-bound independently, not rehashed here.",
+    "Conversion/full-payload verification/persistent8N initialization are separate setup costs; no training, quality or time-to-quality claim."
+  ],
+  "published": false
+}

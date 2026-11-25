@@ -1,0 +1,23 @@
+Unchanged recorded public Friendster matched CPU v2 raw evidence
+Archive: lpp_public_friendster_cpu_matched_v2_raw.tgz
+Bytes: 2,121,570
+SHA256: 546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374
+The raw container and all121 members are unchanged from the verified collection.
+
+Own code: MIT, copyright2026LPP contributors; the user's MIT approval is recorded
+in the parent artifact. Preserve sources/LICENSE and all original upstream notices.
+Upstream torch_sparse source/notice: MIT; exact source/git/blob pins and license
+are retained under sources/third_party/native_notices/.
+
+Public Friendster-derived ordered node/query sets and exact-output fingerprints:
+PerFuchs, Com-Friendster Dataset Densely Relabelled(2021), DOI10.5281/zenodo.5146230,
+https://zenodo.org/records/5146230, CC-BY-4.0,
+https://creativecommons.org/licenses/by/4.0/ . The authors derived the frozen
+workload and local CSR reports from that public dense graph. Original network:
+J.Yang and J.Leskovec, Defining and Evaluating Network Communities based on
+Ground-truth, ICDM2012; https://snap.stanford.edu/data/com-Friendster.html .
+No full graph, model/checkpoint, industrial graph or industrial query payload
+is included. Historical paths/host/process/runtime metadata and internal runner
+source remain genuine provenance. The internal runner is not the portable
+execution recipe; use the separate public_friendster_cpu_v1 source package.
+This sidecar adds attribution without rewriting the immutable raw archive.

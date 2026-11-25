@@ -1,0 +1,15 @@
+RESOLVED — PROJECT CODE LICENSE CONFIRMED
+
+On 2026-11-25 the user approved MIT for the authors' own code. The canonical
+license is now LICENSE, copyright (c) 2026 LPP contributors. This legacy marker
+is retained only to record resolution of the earlier local-staging issue.
+
+Upstream copyright/license notices remain unchanged. Dataset licenses remain
+separate: Friendster dense release and its included derived evaluation arrays
+CC-BY-4.0; ogbl-citation2 ODC-BY. See THIRD_PARTY.md and DATA_ACCESS.md.
+
+The package remains local staging. Citation2 input identity is verified for19
+numeric payloads; Friendster full3 and prepared23 payloads are also verified.
+Systems sources and public reviewed result projections are integrated. Fresh
+full-scale execution through the new entrypoints and a durable public release
+remain separate steps. No public publication action has been performed.

@@ -1,0 +1,13 @@
+{
+  "confirmed_by_user": true,
+  "copyright": "2026 LPP contributors",
+  "date": "2026-11-25",
+  "legacy_LICENSE_PENDING_marker": "resolved; canonical grant is LICENSE",
+  "license": "MIT",
+  "prior_Apache_license_preserved": "VK-GNN2a06545429210962c94b84722376154d8a8c4602; shared format lineage acknowledged; no direct-copy conclusion",
+  "published": false,
+  "schema_version": 1,
+  "scope": "authors own project code in staged artifact",
+  "source_repository_not_modified": true,
+  "upstream_notices_retained": true
+}

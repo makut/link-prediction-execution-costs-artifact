@@ -1,0 +1,10 @@
+{
+  "bytes": 83629661,
+  "copied_into_candidate": false,
+  "download_url": null,
+  "filename": "lpp_public_systems_evidence_v1.tgz",
+  "manifest_sha256": "2800804cfc2278d399b95a7c1112f05b79e98fe004679466876c7f9185980b2c",
+  "publication_status": "not_published",
+  "purpose": "Separate immutable public systems evidence asset",
+  "sha256": "48232549089f3295c893bb33f6cea0d1aac4a0ee45b91a2669392c90ae1bfe40"
+}

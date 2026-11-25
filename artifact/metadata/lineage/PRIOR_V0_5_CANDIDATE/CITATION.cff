@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Local staged research artifact; own code MIT, public release pending."
+title: "Execution Costs and Sampling Semantics in Subgraph-Based Link Prediction"
+type: software
+license: MIT
+authors:
+  - family-names: Utushkin
+    given-names: Maksim
+    affiliation: AI VK, Moscow, Russia
+    email: mak.utushkin@gmail.com
+  - family-names: Aminov
+    given-names: Renat
+    affiliation: AI VK, Moscow, Russia
+    email: kovalorn2@gmail.com
+  - family-names: D'yakonov
+    given-names: Alexander
+    affiliation: AI VK, Moscow, Russia
+    email: djakonov@mail.ru
+contact:
+  - family-names: Utushkin
+    given-names: Maksim
+    affiliation: AI VK, Moscow, Russia
+    email: mak.utushkin@gmail.com
+version: 0.4.0-local-staged

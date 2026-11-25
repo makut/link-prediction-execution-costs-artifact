@@ -1,0 +1,117 @@
+{
+  "YT_writes_by_packaging_agent": 0,
+  "claim": "Fresh official public dense release reconstructs the exact3 full numeric payloads and23 prepared split/query payloads used in the study.",
+  "converter_sha256": "a7af9a42327b700309e390216570edbc0f4c0931d12b66f97b6f00efa65b8f7c",
+  "dataset": "Com-Friendster densely relabelled, Zenodo5146230",
+  "final_internal_persistence": {
+    "internal_YT_path_is_not_a_durable_public_artifact_URL": true,
+    "new_file_nodes": 1,
+    "readback_verified": true
+  },
+  "full_graphs_downloaded_to_Mac": 0,
+  "full_numeric_payloads": 3,
+  "historical_expectations": {
+    "friendster_full_expected.json": {
+      "historical_false_flag_superseded_by_this_proof": true,
+      "kept_immutable": true,
+      "path": "metadata/friendster_full_expected.json",
+      "sha256": "bef1bdf62b0d164ec226056ab63d96ede5e0d2a06e7eb86667804859d7a92f52"
+    },
+    "friendster_prepared_expected.json": {
+      "historical_false_flag_superseded_by_this_proof": true,
+      "kept_immutable": true,
+      "path": "metadata/friendster_prepared_expected.json",
+      "sha256": "ebde3ab83d7ea6e303d097c5698117a5312f0cfd8f7a6be8ba05b37a8fe9c882"
+    }
+  },
+  "original_archive": {
+    "all_members_independently_verified": true,
+    "bytes": 87144,
+    "files": 59,
+    "hashed_payloads": 58,
+    "included_in_public_packet": false,
+    "sha256": "746b073f4cc722304d9e13af5bbee754134b49dd2bc3959e8297e70cb400e114"
+  },
+  "prepared_numeric_payloads": 23,
+  "provider_MD5_and_complete_endpoint_SHA_verified": true,
+  "public_friendster_full_reproduction_verified": true,
+  "published": false,
+  "receipts": {
+    "FULL_3_PAYLOAD_IDENTITY.json": {
+      "bytes": 835,
+      "original_archive_member": "full/PUBLIC_PAYLOAD_IDENTITY.json",
+      "sha256": "bf5c26208d7cd46cb2be24e0d1faa9c8236cd57177647b5471f7cfae67b6a0ac",
+      "unmodified_copy": true
+    },
+    "INPUTS_VERIFIED.json": {
+      "bytes": 1262,
+      "original_archive_member": "runtime/INPUTS_VERIFIED.json",
+      "sha256": "5b7aa7451a23a35800c89080898d50ee36bc333b946ac28ae0cc7cf8167b646a",
+      "unmodified_copy": true
+    },
+    "ORIGINAL_ARCHIVE_FILE_MANIFEST.json": {
+      "bytes": 9222,
+      "original_archive_member": "SHA256_MANIFEST.json",
+      "sha256": "96424fba7e31d408b4a7d584e8bd888a966eb8f81fd415e7a94dff551ab6bc00",
+      "unmodified_copy": true
+    },
+    "PREPARED_23_PAYLOAD_IDENTITY.json": {
+      "bytes": 4032,
+      "original_archive_member": "prepared/PUBLIC_23_PAYLOAD_IDENTITY.json",
+      "sha256": "3a2e2ed2bcab1e7f160d43031f5bf640c354a05a45614e8aa67f60569eb4ad33",
+      "unmodified_copy": true
+    },
+    "RESULT.json": {
+      "bytes": 4526,
+      "original_archive_member": "runtime/RESULT.json",
+      "sha256": "47e7e5e725df8a90dabbce3e15e4e296f0857a17c43ed4fb01cf50856e73ceca",
+      "unmodified_copy": true
+    },
+    "TERMINAL.json": {
+      "bytes": 1656,
+      "original_archive_member": "runtime/TERMINAL.json",
+      "sha256": "9552f9af8bd59965876f90cca46ed6feb98d0d2556e18e6e7b5fc0db91d84d8e",
+      "unmodified_copy": true
+    },
+    "collection_receipt.json": {
+      "bytes": 3447,
+      "sha256": "d73966995ec09c7fe1bd5171365c80a8d969c6bca38d05d4cc5bebd287689177",
+      "unmodified_copy": true
+    },
+    "com-friendster-dense.ez.download.json": {
+      "bytes": 936,
+      "original_archive_member": "inputs/com-friendster-dense.ez.download.json",
+      "sha256": "366bf530a8d45f0fcb019a83332c73d132859c87cd8f890ca85244bbd18a6031",
+      "unmodified_copy": true
+    },
+    "com-friendster-dense.properties.download.json": {
+      "bytes": 946,
+      "original_archive_member": "inputs/com-friendster-dense.properties.download.json",
+      "sha256": "9cb1b680eeb4da6400b72e0db9a6f406aa1c4f003a091f067f9b4512f3ae4435",
+      "unmodified_copy": true
+    },
+    "com-friendster-dense.vz.download.json": {
+      "bytes": 934,
+      "original_archive_member": "inputs/com-friendster-dense.vz.download.json",
+      "sha256": "b813749df4a723650c42d1215628a4851670fa4f6179a499803f4dda5d554376",
+      "unmodified_copy": true
+    },
+    "full.exit.json": {
+      "bytes": 523,
+      "original_archive_member": "runtime/full.exit.json",
+      "sha256": "f5ccbda344f717268acdf26143baf61936176c317eb55ac28c4afd3265154e4f",
+      "unmodified_copy": true
+    },
+    "split.exit.json": {
+      "bytes": 524,
+      "original_archive_member": "runtime/split.exit.json",
+      "sha256": "0acde3053b6e98e19886941fd89e106011ad43bbddeb7dfe36664d368468b0c5",
+      "unmodified_copy": true
+    }
+  },
+  "receipts_directory": "metadata/evidence/friendster_public_v1",
+  "schema_version": 1,
+  "status": "verified",
+  "verification_scope": "public source acquisition and numeric input identity, not model quality or execution performance",
+  "verified_on": "2026-11-25"
+}

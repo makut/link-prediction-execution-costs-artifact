@@ -1,0 +1,12 @@
+{
+  "original_worker_sha256": "311303cdd3c741024618f7008bc69d166f27c14f6e36ed308c9a8f934a92e9c8",
+  "original_source_archive_sha256": "33bbb3e0f78eca6ac6f371bb12c8a447505cf33b5f199bae0ff77f10eaec31d8",
+  "extracted_unmodified_functions": [
+    "original_identity",
+    "verify_same_selection",
+    "one"
+  ],
+  "scope": "Public Friendster2width projection; paths and orchestration/hardware admission differ, kernels/timers/orderedS/onewarmup/threerepeats do not.",
+  "default_hardware": "Any one documented Linux host, identical hostname/boot/CPUmodel/affinity across native and Numba jobs. Published8480+ numbers are not promised on different hardware.",
+  "strict_hardware_option": "--reference-hardware requires8480+"
+}

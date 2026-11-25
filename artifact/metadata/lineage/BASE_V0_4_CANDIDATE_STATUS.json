@@ -1,0 +1,28 @@
+{
+  "YT_writes_by_packaging_agent": 0,
+  "final_inventory_and_archive_freeze_pending": false,
+  "independent_peer_review": {
+    "remaining_must_fix": [],
+    "reviewer": "/root/project_audit",
+    "scope": "Public coordinator lifecycle SIGTERM/ownedcleanup; native orderedCSR/eid/root/rawtimer evidence; same128selection, physical32/64, actualhost/conversion/source/resourceguards; exact scientificAST and honest recorded-vs-newrun scope.",
+    "seconds": 1.71,
+    "status": "CRITICAL_PASS",
+    "tests_passed": 47
+  },
+  "independent_peer_review_pending": false,
+  "local_archive_frozen": true,
+  "local_systems_tests_passed": 47,
+  "new_remote_experiments_by_packaging_agent": 0,
+  "pending_systems_results": "Fresh public-adapter full-scale execution and matched native/Numba follow-up results are not claimed. PENCIL consumer/model result remains separate.",
+  "previous_v0_3_untouched": true,
+  "public_adapter_full_scale_execution_claimed": false,
+  "public_adapters_implemented": true,
+  "public_citation2_input_proof_integrated": true,
+  "public_friendster_input_proof_integrated": true,
+  "published": false,
+  "recorded_V4_public_aggregate_projection_integrated": true,
+  "recorded_native_public_friendster_science_audit_integrated": true,
+  "release_ready": false,
+  "samehost_friendster_followup_implemented": true,
+  "version": "0.4.0-local-staged"
+}

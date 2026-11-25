@@ -1,0 +1,1572 @@
+{
+  "base96_sources_unchanged": true,
+  "base_archive_sha256": "30e4479efd2fb80568c0b730e149c5ed58bb317eabd49f737b676111994d6ae7",
+  "base_source_selection": "metadata/SOURCE_SELECTION.json",
+  "extracted_function_identity": {
+    "PENCIL_job_builder": {
+      "all_AST_identical": true,
+      "extracted_sha256": "92cfdf90c95204df3fba806776b0898fa1be7f7961d837acc9df1e687715a832",
+      "functions": [
+        "make_jobs"
+      ],
+      "original_sha256": "f38d75eccc9ee14209fa148fa8f1eac9f5a2f2ca4327caef564cb797266ae8ca"
+    },
+    "PENCIL_validation": {
+      "all_AST_identical": true,
+      "extracted_sha256": "fadce8af922ee7f13eaddcbfb1990f963e9c0d9c2957ac3fc71cf7991e694018",
+      "functions": [
+        "validate_job",
+        "crossjob_scores"
+      ],
+      "original_sha256": "f38d75eccc9ee14209fa148fa8f1eac9f5a2f2ca4327caef564cb797266ae8ca"
+    },
+    "samehost": {
+      "all_AST_identical": true,
+      "extracted_sha256": "57b612d0c0ba37e18ceba6048661bfa5cef445cb675d999d6592f6975b0b8cdd",
+      "functions": [
+        "original_identity",
+        "verify_same_selection",
+        "one"
+      ],
+      "original_sha256": "311303cdd3c741024618f7008bc69d166f27c14f6e36ed308c9a8f934a92e9c8"
+    },
+    "supervision": {
+      "all_AST_identical": true,
+      "extracted_sha256": "fcf494937da9be0d09b8e25f8e55d0f16cfd7970e103b91e61506135d9da74a6",
+      "functions": [
+        "enable_subreaper",
+        "process_identity",
+        "owned_groups",
+        "signal_confirmed",
+        "run_owned"
+      ],
+      "original_sha256": "ec07bddc13f69cbbc1c5ba63a3ede390cfea254bcc02b811422338f5b9604aaf"
+    }
+  },
+  "immutable_frozen_input_count": 206,
+  "schema_version": 1,
+  "source_count": 115,
+  "source_integration_is_not_result_validation": true,
+  "sources": {
+    "metadata/protocols/numba_samehost_scientific_functions.py": {
+      "bytes": 2622,
+      "lineage": {
+        "kind": "unchanged_pinned_or_extracted_scientific_source",
+        "pin_registry": "metadata/SYSTEMS_FROZEN_INPUTS.json"
+      },
+      "packaged_sha256": "57b612d0c0ba37e18ceba6048661bfa5cef445cb675d999d6592f6975b0b8cdd"
+    },
+    "metadata/protocols/pencil_original_scientific_builder.py": {
+      "bytes": 3012,
+      "lineage": {
+        "kind": "unchanged_pinned_or_extracted_scientific_source",
+        "pin_registry": "metadata/SYSTEMS_FROZEN_INPUTS.json"
+      },
+      "packaged_sha256": "92cfdf90c95204df3fba806776b0898fa1be7f7961d837acc9df1e687715a832"
+    },
+    "src/artifact_public/owned_supervision.py": {
+      "bytes": 4913,
+      "lineage": {
+        "kind": "unchanged_pinned_or_extracted_scientific_source",
+        "pin_registry": "metadata/SYSTEMS_FROZEN_INPUTS.json"
+      },
+      "packaged_sha256": "fcf494937da9be0d09b8e25f8e55d0f16cfd7970e103b91e61506135d9da74a6"
+    },
+    "src/artifact_public/pencil_validation.py": {
+      "bytes": 5186,
+      "lineage": {
+        "kind": "new_public_adapter_or_test",
+        "scope": "Local paths/admission/orchestration/validation; distinct from frozen measured kernels/timers."
+      },
+      "packaged_sha256": "fadce8af922ee7f13eaddcbfb1990f963e9c0d9c2957ac3fc71cf7991e694018"
+    },
+    "src/artifact_public/prepare_pencil_validation.py": {
+      "bytes": 1871,
+      "lineage": {
+        "kind": "new_public_adapter_or_test",
+        "scope": "Local paths/admission/orchestration/validation; distinct from frozen measured kernels/timers."
+      },
+      "packaged_sha256": "2458d094b5b6fc93880df8b23bb1febf2a37fddf026c8346a7d22b239f5c9487"
+    },
+    "src/artifact_public/reproduce_native_friendster.py": {
+      "bytes": 11513,
+      "lineage": {
+        "kind": "new_public_adapter_or_test",
+        "scope": "Local paths/admission/orchestration/validation; distinct from frozen measured kernels/timers."
+      },
+      "packaged_sha256": "e86de104f64dde901eea4db21d1c8c4a19e96f7d3737cd89de99671a8d430768"
+    },
+    "src/artifact_public/reproduce_pencil.py": {
+      "bytes": 7557,
+      "lineage": {
+        "kind": "new_public_adapter_or_test",
+        "scope": "Local paths/admission/orchestration/validation; distinct from frozen measured kernels/timers."
+      },
+      "packaged_sha256": "7eaa296fe6c3ec1b5f5750a69499e6993a188545785869ce81b794dfb61600f1"
+    },
+    "src/artifact_public/reproduce_pipeline_v4.py": {
+      "bytes": 9048,
+      "lineage": {
+        "kind": "new_public_adapter_or_test",
+        "scope": "Local paths/admission/orchestration/validation; distinct from frozen measured kernels/timers."
+      },
+      "packaged_sha256": "76298b40a43e46266d0c103b96d3a681f59ccf8d1deb165d70cff221ee70bd8e"
+    },
+    "src/artifact_public/reproduce_posthoc_friendster.py": {
+      "bytes": 3214,
+      "lineage": {
+        "kind": "new_public_adapter_or_test",
+        "scope": "Local paths/admission/orchestration/validation; distinct from frozen measured kernels/timers."
+      },
+      "packaged_sha256": "70108f47ba0aca554d5dc9232fa8e8f138c3390edceba55c567aa1a05d3441fb"
+    },
+    "src/artifact_public/samehost_friendster_worker.py": {
+      "bytes": 10349,
+      "lineage": {
+        "kind": "new_public_adapter_or_test",
+        "scope": "Local paths/admission/orchestration/validation; distinct from frozen measured kernels/timers."
+      },
+      "packaged_sha256": "b03b68f05c63fa56f9541c9bdd3ea7004b3c9a044a0fe7e1b26b59c84bcb6cf3"
+    },
+    "src/artifact_public/systems_common.py": {
+      "bytes": 16859,
+      "lineage": {
+        "kind": "new_public_adapter_or_test",
+        "scope": "Local paths/admission/orchestration/validation; distinct from frozen measured kernels/timers."
+      },
+      "packaged_sha256": "70d4670123aa1c9063f56827612b4613fd236a5524b881fb30cfb2222c842309"
+    },
+    "src/artifact_public/test_systems_reproduction.py": {
+      "bytes": 21395,
+      "lineage": {
+        "kind": "new_public_adapter_or_test",
+        "scope": "Local paths/admission/orchestration/validation; distinct from frozen measured kernels/timers."
+      },
+      "packaged_sha256": "039c64cb52736a51b5d0edaa59c0dbd41851792e6814c5204e699cda578b11a7"
+    },
+    "src/artifact_public/verify_dispatch_e16.py": {
+      "bytes": 3743,
+      "lineage": {
+        "kind": "new_public_adapter_or_test",
+        "scope": "Local paths/admission/orchestration/validation; distinct from frozen measured kernels/timers."
+      },
+      "packaged_sha256": "f7c98e51f744c41bb49a327bb70c51915d895d1c0aea358cadd7dbb57e1a5d50"
+    },
+    "src/experiment_configs/seal_revision_2026-11/run_pipeline_suite_v4.py": {
+      "bytes": 29003,
+      "lineage": {
+        "archive": "work/seal_runs_20261124/pipeline_extension_v4.tgz",
+        "bytes": 29003,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "experiment_configs/seal_revision_2026-11/run_pipeline_suite_v4.py",
+        "purpose": "unchanged frozen V4 harness/suite/test; public wrapper must not call original full3graph suite as-is",
+        "sha256": "9a9cd290da365bef9108dc421b445c60e728ff24b948aea6593d6a3a515b83e9",
+        "source": "work/seal_runs_20261124/pipeline_extension_v4.tgz",
+        "target": "src/experiment_configs/seal_revision_2026-11/run_pipeline_suite_v4.py"
+      },
+      "packaged_sha256": "9a9cd290da365bef9108dc421b445c60e728ff24b948aea6593d6a3a515b83e9"
+    },
+    "src/experiment_configs/seal_revision_2026-11/test_run_pipeline_suite_v4.py": {
+      "bytes": 12354,
+      "lineage": {
+        "archive": "work/seal_runs_20261124/pipeline_extension_v4.tgz",
+        "bytes": 12354,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "experiment_configs/seal_revision_2026-11/test_run_pipeline_suite_v4.py",
+        "purpose": "unchanged frozen V4 harness/suite/test; public wrapper must not call original full3graph suite as-is",
+        "sha256": "2435b78397bcad1f99a6d73ff2ffedea6706d32ab6da3c2b36f3fe1d7e5c2071",
+        "source": "work/seal_runs_20261124/pipeline_extension_v4.tgz",
+        "target": "src/experiment_configs/seal_revision_2026-11/test_run_pipeline_suite_v4.py"
+      },
+      "packaged_sha256": "2435b78397bcad1f99a6d73ff2ffedea6706d32ab6da3c2b36f3fe1d7e5c2071"
+    },
+    "src/scripts/seal_revision/pipeline_benchmark_v4.py": {
+      "bytes": 41843,
+      "lineage": {
+        "archive": "work/seal_runs_20261124/pipeline_extension_v4.tgz",
+        "bytes": 41843,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "scripts/seal_revision/pipeline_benchmark_v4.py",
+        "purpose": "unchanged frozen V4 harness/suite/test; public wrapper must not call original full3graph suite as-is",
+        "sha256": "6e531fd941ac0d6068ffe2c97ab87015b5eab678b610c9107a95bc234e503be9",
+        "source": "work/seal_runs_20261124/pipeline_extension_v4.tgz",
+        "target": "src/scripts/seal_revision/pipeline_benchmark_v4.py"
+      },
+      "packaged_sha256": "6e531fd941ac0d6068ffe2c97ab87015b5eab678b610c9107a95bc234e503be9"
+    },
+    "src/scripts/seal_revision/test_pipeline_benchmark_v4.py": {
+      "bytes": 16769,
+      "lineage": {
+        "archive": "work/seal_runs_20261124/pipeline_extension_v4.tgz",
+        "bytes": 16769,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "scripts/seal_revision/test_pipeline_benchmark_v4.py",
+        "purpose": "unchanged frozen V4 harness/suite/test; public wrapper must not call original full3graph suite as-is",
+        "sha256": "60b8b9b65b30143a7c96ae410450e6b865b7e3f7e7efcad9ff7f7bd31dddcf3f",
+        "source": "work/seal_runs_20261124/pipeline_extension_v4.tgz",
+        "target": "src/scripts/seal_revision/test_pipeline_benchmark_v4.py"
+      },
+      "packaged_sha256": "60b8b9b65b30143a7c96ae410450e6b865b7e3f7e7efcad9ff7f7bd31dddcf3f"
+    },
+    "work/vldb_corrected_native/README.md": {
+      "bytes": 9653,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 9653,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/README.md",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "2f0dd3e009baf5d90f86f2a1a9035a1df0497de18ad5159920017d97162e9990",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/README.md"
+      },
+      "packaged_sha256": "2f0dd3e009baf5d90f86f2a1a9035a1df0497de18ad5159920017d97162e9990"
+    },
+    "work/vldb_corrected_native/build_native_v1.py": {
+      "bytes": 2341,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 2341,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/build_native_v1.py",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/build_native_v1.py"
+      },
+      "packaged_sha256": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6"
+    },
+    "work/vldb_corrected_native/fixtures_v1.py": {
+      "bytes": 1254,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 1254,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/fixtures_v1.py",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/fixtures_v1.py"
+      },
+      "packaged_sha256": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35"
+    },
+    "work/vldb_corrected_native/native_adapter_v1.py": {
+      "bytes": 8499,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 8499,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/native_adapter_v1.py",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/native_adapter_v1.py"
+      },
+      "packaged_sha256": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549"
+    },
+    "work/vldb_corrected_native/native_assoc_v1.cpp": {
+      "bytes": 7987,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 7987,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/native_assoc_v1.cpp",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/native_assoc_v1.cpp"
+      },
+      "packaged_sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20"
+    },
+    "work/vldb_corrected_native/prepare_native_only_v1.py": {
+      "bytes": 3506,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 3506,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/prepare_native_only_v1.py",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "40992a0bb790caaf77194ce568c8c1f88c0040d20a276b8e49beea8837f2e241",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/prepare_native_only_v1.py"
+      },
+      "packaged_sha256": "40992a0bb790caaf77194ce568c8c1f88c0040d20a276b8e49beea8837f2e241"
+    },
+    "work/vldb_corrected_native/prepare_replay_v1.py": {
+      "bytes": 5719,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 5719,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/prepare_replay_v1.py",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "676dde1982e7f121b8b8343365d44e4fe0ee160ad3a0fd439d9f795585ce456f",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/prepare_replay_v1.py"
+      },
+      "packaged_sha256": "676dde1982e7f121b8b8343365d44e4fe0ee160ad3a0fd439d9f795585ce456f"
+    },
+    "work/vldb_corrected_native/replay_plans/friendster_128_v1.json": {
+      "bytes": 74282,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 74282,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/replay_plans/friendster_128_v1.json",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "d61312049b446271f8982d1b5b26bee0ecd892f23ace486b0b94e7631b639a0c",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/replay_plans/friendster_128_v1.json"
+      },
+      "packaged_sha256": "d61312049b446271f8982d1b5b26bee0ecd892f23ace486b0b94e7631b639a0c"
+    },
+    "work/vldb_corrected_native/replay_plans/friendster_768_v1.json": {
+      "bytes": 438557,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 438557,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/replay_plans/friendster_768_v1.json",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "718a7ad3dc8d995d832c18550f55f914405bdfac46189ae9d656afdaf7977924",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/replay_plans/friendster_768_v1.json"
+      },
+      "packaged_sha256": "718a7ad3dc8d995d832c18550f55f914405bdfac46189ae9d656afdaf7977924"
+    },
+    "work/vldb_corrected_native/replay_worker_v1.py": {
+      "bytes": 12872,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 12872,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/replay_worker_v1.py",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "09a628149a8b06baabbb7b551bd98f00f41a8a44b5578ceb7a7d9e659cf147ea",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/replay_worker_v1.py"
+      },
+      "packaged_sha256": "09a628149a8b06baabbb7b551bd98f00f41a8a44b5578ceb7a7d9e659cf147ea"
+    },
+    "work/vldb_corrected_native/run_parent_replay_v1.py": {
+      "bytes": 12295,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 12295,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/run_parent_replay_v1.py",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "239d499ffff748799207076db782b4f90120dac8f0965d93e7e791a7a77a62b2",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/run_parent_replay_v1.py"
+      },
+      "packaged_sha256": "239d499ffff748799207076db782b4f90120dac8f0965d93e7e791a7a77a62b2"
+    },
+    "work/vldb_corrected_native/test_native_v1.py": {
+      "bytes": 5060,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 5060,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/test_native_v1.py",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "6f8337ef0b58908ba9cb02cc2d99dc49d495740d433315c27d0e3e3ae71f185f",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/test_native_v1.py"
+      },
+      "packaged_sha256": "6f8337ef0b58908ba9cb02cc2d99dc49d495740d433315c27d0e3e3ae71f185f"
+    },
+    "work/vldb_corrected_native/test_replay_v1.py": {
+      "bytes": 6704,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 6704,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/test_replay_v1.py",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "b6d8871a1c3ebd7c5dc83750169af41739dbc327290305058e36cf033344a711",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/test_replay_v1.py"
+      },
+      "packaged_sha256": "b6d8871a1c3ebd7c5dc83750169af41739dbc327290305058e36cf033344a711"
+    },
+    "work/vldb_corrected_native/third_party/pytorch_sparse_LICENSE": {
+      "bytes": 1086,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 1086,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/third_party/pytorch_sparse_LICENSE",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/third_party/pytorch_sparse_LICENSE"
+      },
+      "packaged_sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486"
+    },
+    "work/vldb_corrected_native/third_party/saint_cpu.cpp.upstream.txt": {
+      "bytes": 1459,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 1459,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/third_party/saint_cpu.cpp.upstream.txt",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/third_party/saint_cpu.cpp.upstream.txt"
+      },
+      "packaged_sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c"
+    },
+    "work/vldb_corrected_native/third_party/upstream_pin.json": {
+      "bytes": 1437,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 1437,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_corrected_native/third_party/upstream_pin.json",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "d2a5e21560926f462155b95e4e2d51056094298aa1ced75d4856c663726c3943",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_corrected_native/third_party/upstream_pin.json"
+      },
+      "packaged_sha256": "d2a5e21560926f462155b95e4e2d51056094298aa1ced75d4856c663726c3943"
+    },
+    "work/vldb_literature/analyze_fixed_s_cost_regimes_v1.py": {
+      "bytes": 11331,
+      "lineage": {
+        "kind": "unchanged_pinned_or_extracted_scientific_source",
+        "pin_registry": "metadata/SYSTEMS_FROZEN_INPUTS.json"
+      },
+      "packaged_sha256": "abceb685a9df4ffa6a81e67ed9721b8828ba1a3b5bebb6d3726a187374b4004e"
+    },
+    "work/vldb_literature/check_fixed_s_cost_regimes_v1.py": {
+      "bytes": 5111,
+      "lineage": {
+        "kind": "unchanged_pinned_or_extracted_scientific_source",
+        "pin_registry": "metadata/SYSTEMS_FROZEN_INPUTS.json"
+      },
+      "packaged_sha256": "684683c0a39557295b63b88706a3b37843689450982a84801ad9568bb3df3278"
+    },
+    "work/vldb_literature/external_operator_benchmark.py": {
+      "bytes": 29476,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 29476,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_literature/external_operator_benchmark.py",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "525e88c904fd03e10fc617853c8d733e88af90487cbbdd9122ced97962df112c",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_literature/external_operator_benchmark.py"
+      },
+      "packaged_sha256": "525e88c904fd03e10fc617853c8d733e88af90487cbbdd9122ced97962df112c"
+    },
+    "work/vldb_literature/external_operator_v1_sources.manifest.json": {
+      "bytes": 1141,
+      "lineage": {
+        "archive": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "bytes": 1141,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "work/vldb_literature/external_operator_v1_sources.manifest.json",
+        "purpose": "public Friendster native replay source/plan only; no private VK plan",
+        "sha256": "70997347b53e0b360a70823c3f28b4534a37fb3b6238365cd332aff55574c902",
+        "source": "work/vldb_corrected_native_v1_sources.tar.gz",
+        "target": "work/vldb_literature/external_operator_v1_sources.manifest.json"
+      },
+      "packaged_sha256": "70997347b53e0b360a70823c3f28b4534a37fb3b6238365cd332aff55574c902"
+    },
+    "work/vldb_pencil_bridge/README.txt": {
+      "bytes": 11671,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 11671,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/README.txt",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "5105c33f00af906f2a51098d303002e11f7fcffc8da428363f7da29bb9ce13cd",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/README.txt"
+      },
+      "packaged_sha256": "5105c33f00af906f2a51098d303002e11f7fcffc8da428363f7da29bb9ce13cd"
+    },
+    "work/vldb_pencil_bridge/SOURCE_MANIFEST.json": {
+      "bytes": 13523,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 13523,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/SOURCE_MANIFEST.json",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "821285e047413a19af6765d861abab124a5d4036f05fa208de621a79b483c217",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/SOURCE_MANIFEST.json"
+      },
+      "packaged_sha256": "821285e047413a19af6765d861abab124a5d4036f05fa208de621a79b483c217"
+    },
+    "work/vldb_pencil_bridge/THIRD_PARTY_NOTICES.txt": {
+      "bytes": 1348,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1348,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/THIRD_PARTY_NOTICES.txt",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "5d145de2273a2f9b8d2ad2c7658de76adf39a2d243a5d2055e0d478cf6d9fe96",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/THIRD_PARTY_NOTICES.txt"
+      },
+      "packaged_sha256": "5d145de2273a2f9b8d2ad2c7658de76adf39a2d243a5d2055e0d478cf6d9fe96"
+    },
+    "work/vldb_pencil_bridge/bert_config/config.json": {
+      "bytes": 570,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 570,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/bert_config/config.json",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/bert_config/config.json"
+      },
+      "packaged_sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20"
+    },
+    "work/vldb_pencil_bridge/bert_config/source.json": {
+      "bytes": 513,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 513,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/bert_config/source.json",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "317a1a6b801ad377cd1bdf399d29175e71727098ae85a8e54f8538d458e30e03",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/bert_config/source.json"
+      },
+      "packaged_sha256": "317a1a6b801ad377cd1bdf399d29175e71727098ae85a8e54f8538d458e30e03"
+    },
+    "work/vldb_pencil_bridge/bridge_core.py": {
+      "bytes": 22551,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 22551,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/bridge_core.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "72cbda711e0b53402f2117dbf41a39656cf7300428b9450c8fbf970f97c1e5ae",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/bridge_core.py"
+      },
+      "packaged_sha256": "72cbda711e0b53402f2117dbf41a39656cf7300428b9450c8fbf970f97c1e5ae"
+    },
+    "work/vldb_pencil_bridge/constraints-linux-cp310.txt": {
+      "bytes": 791,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 791,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/constraints-linux-cp310.txt",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "d5b8562c8742dfee0e10aff7f59806bc9910fef12a7eece27f008f1311ea1232",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/constraints-linux-cp310.txt"
+      },
+      "packaged_sha256": "d5b8562c8742dfee0e10aff7f59806bc9910fef12a7eece27f008f1311ea1232"
+    },
+    "work/vldb_pencil_bridge/corrected_native/COPIED_CORE_MANIFEST.json": {
+      "bytes": 1507,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1507,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/corrected_native/COPIED_CORE_MANIFEST.json",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "5ca2ef855f02915dcfb02a96d336c2c7518314518511b81a90ae7b8f8e5fa61c",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/corrected_native/COPIED_CORE_MANIFEST.json"
+      },
+      "packaged_sha256": "5ca2ef855f02915dcfb02a96d336c2c7518314518511b81a90ae7b8f8e5fa61c"
+    },
+    "work/vldb_pencil_bridge/corrected_native/build_native_v1.py": {
+      "bytes": 2341,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 2341,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/corrected_native/build_native_v1.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/corrected_native/build_native_v1.py"
+      },
+      "packaged_sha256": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6"
+    },
+    "work/vldb_pencil_bridge/corrected_native/fixtures_v1.py": {
+      "bytes": 1254,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1254,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/corrected_native/fixtures_v1.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/corrected_native/fixtures_v1.py"
+      },
+      "packaged_sha256": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35"
+    },
+    "work/vldb_pencil_bridge/corrected_native/native_adapter_v1.py": {
+      "bytes": 8499,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 8499,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/corrected_native/native_adapter_v1.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/corrected_native/native_adapter_v1.py"
+      },
+      "packaged_sha256": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549"
+    },
+    "work/vldb_pencil_bridge/corrected_native/native_assoc_v1.cpp": {
+      "bytes": 7987,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 7987,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/corrected_native/native_assoc_v1.cpp",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/corrected_native/native_assoc_v1.cpp"
+      },
+      "packaged_sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20"
+    },
+    "work/vldb_pencil_bridge/corrected_native/test_native_v1.py": {
+      "bytes": 5060,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 5060,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/corrected_native/test_native_v1.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "6f8337ef0b58908ba9cb02cc2d99dc49d495740d433315c27d0e3e3ae71f185f",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/corrected_native/test_native_v1.py"
+      },
+      "packaged_sha256": "6f8337ef0b58908ba9cb02cc2d99dc49d495740d433315c27d0e3e3ae71f185f"
+    },
+    "work/vldb_pencil_bridge/corrected_native/third_party/pytorch_sparse_LICENSE": {
+      "bytes": 1086,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1086,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/corrected_native/third_party/pytorch_sparse_LICENSE",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/corrected_native/third_party/pytorch_sparse_LICENSE"
+      },
+      "packaged_sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486"
+    },
+    "work/vldb_pencil_bridge/corrected_native/third_party/saint_cpu.cpp.upstream.txt": {
+      "bytes": 1459,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1459,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/corrected_native/third_party/saint_cpu.cpp.upstream.txt",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/corrected_native/third_party/saint_cpu.cpp.upstream.txt"
+      },
+      "packaged_sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c"
+    },
+    "work/vldb_pencil_bridge/corrected_native/third_party/upstream_pin.json": {
+      "bytes": 1437,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1437,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/corrected_native/third_party/upstream_pin.json",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "d2a5e21560926f462155b95e4e2d51056094298aa1ced75d4856c663726c3943",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/corrected_native/third_party/upstream_pin.json"
+      },
+      "packaged_sha256": "d2a5e21560926f462155b95e4e2d51056094298aa1ced75d4856c663726c3943"
+    },
+    "work/vldb_pencil_bridge/environment-target.txt": {
+      "bytes": 940,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 940,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/environment-target.txt",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "95d8d160cd87728e23a1f54d16c8ec520ca02da80127853930c3f29b3d52ebcb",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/environment-target.txt"
+      },
+      "packaged_sha256": "95d8d160cd87728e23a1f54d16c8ec520ca02da80127853930c3f29b3d52ebcb"
+    },
+    "work/vldb_pencil_bridge/input_contract.json": {
+      "bytes": 1252,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1252,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/input_contract.json",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "9eb90a67ca5b2e3d5dcbcb80421c32e53278e5714f7fd15a9d076d50fca6b0e6",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/input_contract.json"
+      },
+      "packaged_sha256": "9eb90a67ca5b2e3d5dcbcb80421c32e53278e5714f7fd15a9d076d50fca6b0e6"
+    },
+    "work/vldb_pencil_bridge/local_validation.json": {
+      "bytes": 2436,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 2436,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/local_validation.json",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "d56ce6b6f2ebe061e0e9972ee63c508ee7ca12358b1e47f2ed6c52e84937c8a4",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/local_validation.json"
+      },
+      "packaged_sha256": "d56ce6b6f2ebe061e0e9972ee63c508ee7ca12358b1e47f2ed6c52e84937c8a4"
+    },
+    "work/vldb_pencil_bridge/pencil_bridge.py": {
+      "bytes": 40828,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 40828,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/pencil_bridge.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "c777021e421fbe0e8c1a11cb06df43b264a6aa156f4ca89c7b49e4edf10a6b11",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/pencil_bridge.py"
+      },
+      "packaged_sha256": "c777021e421fbe0e8c1a11cb06df43b264a6aa156f4ca89c7b49e4edf10a6b11"
+    },
+    "work/vldb_pencil_bridge/pencil_runtime.py": {
+      "bytes": 22783,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 22783,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/pencil_runtime.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "0e0028b148d47338333f83286e3eb492076526a0cd410f5c622eee0872f9df7b",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/pencil_runtime.py"
+      },
+      "packaged_sha256": "0e0028b148d47338333f83286e3eb492076526a0cd410f5c622eee0872f9df7b"
+    },
+    "work/vldb_pencil_bridge/requirements-extras.txt": {
+      "bytes": 213,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 213,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/requirements-extras.txt",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "5b77774b324b1391b259a5209ee442f0dfd8220fe991c887c681632c93ac039d",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/requirements-extras.txt"
+      },
+      "packaged_sha256": "5b77774b324b1391b259a5209ee442f0dfd8220fe991c887c681632c93ac039d"
+    },
+    "work/vldb_pencil_bridge/test_bridge_core.py": {
+      "bytes": 12395,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 12395,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/test_bridge_core.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "9685208b1ffd4775fd49dd2467aec86d89427d209d0ac3cef198ca474c27de95",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/test_bridge_core.py"
+      },
+      "packaged_sha256": "9685208b1ffd4775fd49dd2467aec86d89427d209d0ac3cef198ca474c27de95"
+    },
+    "work/vldb_pencil_bridge/test_pencil_adapter.py": {
+      "bytes": 18745,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 18745,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/test_pencil_adapter.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "3c611c644381e06f3792ac486c917977f18caf62b94996561c869c358caf831b",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/test_pencil_adapter.py"
+      },
+      "packaged_sha256": "3c611c644381e06f3792ac486c917977f18caf62b94996561c869c358caf831b"
+    },
+    "work/vldb_pencil_bridge/upstream_manifest.json": {
+      "bytes": 11974,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 11974,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_manifest.json",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "6020d2bc7c2290cf251e751b97a841202c1904a3dd4e89f5521abda876e0598e",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_manifest.json"
+      },
+      "packaged_sha256": "6020d2bc7c2290cf251e751b97a841202c1904a3dd4e89f5521abda876e0598e"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/.gitignore": {
+      "bytes": 248,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 248,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/.gitignore",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "0dd8ba1693824f9418a0d424a82511a06f694c1182f03760ff17daa69f98ca69",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/.gitignore"
+      },
+      "packaged_sha256": "0dd8ba1693824f9418a0d424a82511a06f694c1182f03760ff17daa69f98ca69"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/.project-root": {
+      "bytes": 0,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 0,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/.project-root",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/.project-root"
+      },
+      "packaged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/LICENSE": {
+      "bytes": 11357,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 11357,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/LICENSE",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/LICENSE"
+      },
+      "packaged_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/README.md": {
+      "bytes": 2674,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 2674,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/README.md",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "81031dc632c77928b96f8f9eef21ca67d33e8157d5ad31a11c21213baa44faf5",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/README.md"
+      },
+      "packaged_sha256": "81031dc632c77928b96f8f9eef21ca67d33e8157d5ad31a11c21213baa44faf5"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/citeseer_bert.yaml": {
+      "bytes": 1080,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1080,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/citeseer_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "957ae24e13177ad14df85c46bdf2ea643904cb9fecf0225a1dad4c23b90aec0d",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/citeseer_bert.yaml"
+      },
+      "packaged_sha256": "957ae24e13177ad14df85c46bdf2ea643904cb9fecf0225a1dad4c23b90aec0d"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/cora_bert.yaml": {
+      "bytes": 1075,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1075,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/cora_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "c21d7af21131b8317278b7eba4f07313603eb06a31ccbe76046e8cccfd9077e6",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/cora_bert.yaml"
+      },
+      "packaged_sha256": "c21d7af21131b8317278b7eba4f07313603eb06a31ccbe76046e8cccfd9077e6"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_citeseer_bert.yaml": {
+      "bytes": 1086,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1086,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/heart_citeseer_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "ccaebf889118e4c3f4f3b7a4fc46a145b469b115328c5df958bd74728ee35c07",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_citeseer_bert.yaml"
+      },
+      "packaged_sha256": "ccaebf889118e4c3f4f3b7a4fc46a145b469b115328c5df958bd74728ee35c07"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_cora_bert.yaml": {
+      "bytes": 1081,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1081,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/heart_cora_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "e08558cb0cd2c3b26cb89808bd0d65bbc5ae793cef65a5d7c8716836ea8142eb",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_cora_bert.yaml"
+      },
+      "packaged_sha256": "e08558cb0cd2c3b26cb89808bd0d65bbc5ae793cef65a5d7c8716836ea8142eb"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_ogbl_citation2_bert.yaml": {
+      "bytes": 1121,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1121,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/heart_ogbl_citation2_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "33749d66c6d066459913c506dac0cd79919634554b9cc9a94168e557fc18d0d7",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_ogbl_citation2_bert.yaml"
+      },
+      "packaged_sha256": "33749d66c6d066459913c506dac0cd79919634554b9cc9a94168e557fc18d0d7"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_ogbl_collab_bert.yaml": {
+      "bytes": 1119,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1119,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/heart_ogbl_collab_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "e488a5273dd9545b0adff0e9b665ee7e672a2da891daf40ac6c1f8856177de08",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_ogbl_collab_bert.yaml"
+      },
+      "packaged_sha256": "e488a5273dd9545b0adff0e9b665ee7e672a2da891daf40ac6c1f8856177de08"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_ogbl_ddi_bert.yaml": {
+      "bytes": 1123,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1123,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/heart_ogbl_ddi_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "34c7de69b1b46c07804c4ed33fbf8f058770597d97a59e762d37978e3d1f857f",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_ogbl_ddi_bert.yaml"
+      },
+      "packaged_sha256": "34c7de69b1b46c07804c4ed33fbf8f058770597d97a59e762d37978e3d1f857f"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_ogbl_ppa_bert.yaml": {
+      "bytes": 1118,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1118,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/heart_ogbl_ppa_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "4096647a5b742e5abbb47ae6dece2d66e4243542d52fcabca40fdccb29a6c2ab",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_ogbl_ppa_bert.yaml"
+      },
+      "packaged_sha256": "4096647a5b742e5abbb47ae6dece2d66e4243542d52fcabca40fdccb29a6c2ab"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_pubmed_bert.yaml": {
+      "bytes": 1078,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1078,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/heart_pubmed_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "150f7d1b2a486bdf9a9a28c72d8bb3422829a680e3fab282fa572878f0841ad5",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/heart_pubmed_bert.yaml"
+      },
+      "packaged_sha256": "150f7d1b2a486bdf9a9a28c72d8bb3422829a680e3fab282fa572878f0841ad5"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/heuristic_bert.yaml": {
+      "bytes": 1126,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1126,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/heuristic_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "74fb69f08ab39cd8b80d64df17f6bc92390c9682c1cb169c66dd34ba22ab1f1d",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/heuristic_bert.yaml"
+      },
+      "packaged_sha256": "74fb69f08ab39cd8b80d64df17f6bc92390c9682c1cb169c66dd34ba22ab1f1d"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/heuristic_gat.yaml": {
+      "bytes": 910,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 910,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/heuristic_gat.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "4826bff0604c2899a26902499d6c409062b286cbd6491e7f7856cb2614ce2b2c",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/heuristic_gat.yaml"
+      },
+      "packaged_sha256": "4826bff0604c2899a26902499d6c409062b286cbd6491e7f7856cb2614ce2b2c"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/heuristic_gcn.yaml": {
+      "bytes": 910,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 910,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/heuristic_gcn.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "fc0df8489768bd0b75bc3dd2f4411ea08646a48e703c57c09fc027844e0906b5",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/heuristic_gcn.yaml"
+      },
+      "packaged_sha256": "fc0df8489768bd0b75bc3dd2f4411ea08646a48e703c57c09fc027844e0906b5"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/heuristic_sage.yaml": {
+      "bytes": 912,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 912,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/heuristic_sage.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "ac6adaf6c445a82bc4ca2e86012e40a83373da6cea9ca15d2ff78a15494f7cab",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/heuristic_sage.yaml"
+      },
+      "packaged_sha256": "ac6adaf6c445a82bc4ca2e86012e40a83373da6cea9ca15d2ff78a15494f7cab"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/ogbl_citation2_bert.yaml": {
+      "bytes": 1121,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1121,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/ogbl_citation2_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "33749d66c6d066459913c506dac0cd79919634554b9cc9a94168e557fc18d0d7",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/ogbl_citation2_bert.yaml"
+      },
+      "packaged_sha256": "33749d66c6d066459913c506dac0cd79919634554b9cc9a94168e557fc18d0d7"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/ogbl_collab_bert.yaml": {
+      "bytes": 1119,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1119,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/ogbl_collab_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "e488a5273dd9545b0adff0e9b665ee7e672a2da891daf40ac6c1f8856177de08",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/ogbl_collab_bert.yaml"
+      },
+      "packaged_sha256": "e488a5273dd9545b0adff0e9b665ee7e672a2da891daf40ac6c1f8856177de08"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/ogbl_ppa_bert.yaml": {
+      "bytes": 1118,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1118,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/ogbl_ppa_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "4096647a5b742e5abbb47ae6dece2d66e4243542d52fcabca40fdccb29a6c2ab",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/ogbl_ppa_bert.yaml"
+      },
+      "packaged_sha256": "4096647a5b742e5abbb47ae6dece2d66e4243542d52fcabca40fdccb29a6c2ab"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/args/official/pubmed_bert.yaml": {
+      "bytes": 1077,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 1077,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/args/official/pubmed_bert.yaml",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "ace2e651d018737d75c08fca77dc6776ee699e424772699315bf327c449709a4",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/args/official/pubmed_bert.yaml"
+      },
+      "packaged_sha256": "ace2e651d018737d75c08fca77dc6776ee699e424772699315bf327c449709a4"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/conftest.py": {
+      "bytes": 758,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 758,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/conftest.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "c0feca51d11f31697647b4f91480d197a009e8d045d38b0b49d0083c0cde12fd",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/conftest.py"
+      },
+      "packaged_sha256": "c0feca51d11f31697647b4f91480d197a009e8d045d38b0b49d0083c0cde12fd"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/__init__.py": {
+      "bytes": 2341,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 2341,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/__init__.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "37a33dc93e47a0f972e16696941333c0c67aeda1f83977ac51c9405d1b2b4a83",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/__init__.py"
+      },
+      "packaged_sha256": "37a33dc93e47a0f972e16696941333c0c67aeda1f83977ac51c9405d1b2b4a83"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/collator.py": {
+      "bytes": 12389,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 12389,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/collator.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "14e9750aab33462d762a49d76a3a38cefcbb83e4bc8cac881c8bd17da4ced64b",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/collator.py"
+      },
+      "packaged_sha256": "14e9750aab33462d762a49d76a3a38cefcbb83e4bc8cac881c8bd17da4ced64b"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/dataset_map.py": {
+      "bytes": 49525,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 49525,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/dataset_map.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "d77f06a5efd62158c5655abe648f24fe93856f8929fbab8fdbd2ed6297aae22f",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/dataset_map.py"
+      },
+      "packaged_sha256": "d77f06a5efd62158c5655abe648f24fe93856f8929fbab8fdbd2ed6297aae22f"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/dataset_wrapper.py": {
+      "bytes": 33782,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 33782,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/dataset_wrapper.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "138bcf848cddd1276daa7515bfe7cf1d2d6058d777239b36e18132c0b7d61843",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/dataset_wrapper.py"
+      },
+      "packaged_sha256": "138bcf848cddd1276daa7515bfe7cf1d2d6058d777239b36e18132c0b7d61843"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/gnn_collator.py": {
+      "bytes": 3374,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 3374,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/gnn_collator.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "a1841a1a964b9305a6e36697b154f9d7df53d72fbc81d55ff7d1db947fa2fb3a",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/gnn_collator.py"
+      },
+      "packaged_sha256": "a1841a1a964b9305a6e36697b154f9d7df53d72fbc81d55ff7d1db947fa2fb3a"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/heuristics.py": {
+      "bytes": 11386,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 11386,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/heuristics.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "45d438701cbd92454a6057f55f7c35f87aed54fc380150abd357f707b568b585",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/heuristics.py"
+      },
+      "packaged_sha256": "45d438701cbd92454a6057f55f7c35f87aed54fc380150abd357f707b568b585"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/ogbl/__init__.py": {
+      "bytes": 35,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 35,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/ogbl/__init__.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "7aceb499a9d8dc5065907259ccbe82820ae3f9173a4f3ecb20343804b579c48b",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/ogbl/__init__.py"
+      },
+      "packaged_sha256": "7aceb499a9d8dc5065907259ccbe82820ae3f9173a4f3ecb20343804b579c48b"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/ogbl/dataset.py": {
+      "bytes": 31451,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 31451,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/ogbl/dataset.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "aef51de4e3cb887efd99cae566fd3507fe2ef68626e15f3326b6701e06ecf348",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/ogbl/dataset.py"
+      },
+      "packaged_sha256": "aef51de4e3cb887efd99cae566fd3507fe2ef68626e15f3326b6701e06ecf348"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/planetoid/__init__.py": {
+      "bytes": 41,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 41,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/planetoid/__init__.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "57d26b387a38fc4599cf267ee2be8b1c8df3cb3a43e78feaeb961f01e4faa929",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/planetoid/__init__.py"
+      },
+      "packaged_sha256": "57d26b387a38fc4599cf267ee2be8b1c8df3cb3a43e78feaeb961f01e4faa929"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/planetoid/dataset.py": {
+      "bytes": 9520,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 9520,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/planetoid/dataset.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "fec9ed57372a40e06fdeef3c70e2e7449a2d69a0d798b68117cd1dc25e3e8f98",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/planetoid/dataset.py"
+      },
+      "packaged_sha256": "fec9ed57372a40e06fdeef3c70e2e7449a2d69a0d798b68117cd1dc25e3e8f98"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/prosqa/__init__.py": {
+      "bytes": 266,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 266,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/prosqa/__init__.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "a5211cf64d5840d65b981becc7aa2b373546a8b29406368e3ba88ea94c836a19",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/prosqa/__init__.py"
+      },
+      "packaged_sha256": "a5211cf64d5840d65b981becc7aa2b373546a8b29406368e3ba88ea94c836a19"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/prosqa/dataset.py": {
+      "bytes": 22790,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 22790,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/prosqa/dataset.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "80bd7a6e1d70013c93f3716d4c00a0c351c940c9bb6bcf745da4d37b465d9939",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/prosqa/dataset.py"
+      },
+      "packaged_sha256": "80bd7a6e1d70013c93f3716d4c00a0c351c940c9bb6bcf745da4d37b465d9939"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/prosqa/pretrain.py": {
+      "bytes": 9856,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 9856,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/prosqa/pretrain.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "98eaeb91b7bc77b52d26a0fab0e2bbc8483d6842b54564c8323fb48de96b9fb6",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/prosqa/pretrain.py"
+      },
+      "packaged_sha256": "98eaeb91b7bc77b52d26a0fab0e2bbc8483d6842b54564c8323fb48de96b9fb6"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/random/__init__.py": {
+      "bytes": 98,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 98,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/random/__init__.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "da2690979b64639096094ee8b0bd0130388430074d71b05d67ffd607c421da41",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/random/__init__.py"
+      },
+      "packaged_sha256": "da2690979b64639096094ee8b0bd0130388430074d71b05d67ffd607c421da41"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/random/dataset.py": {
+      "bytes": 13178,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 13178,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/random/dataset.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "e65f05dcec5c888cddf0d29fef4c4d42f330983e7b8b653b45f2da07d48a3397",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/random/dataset.py"
+      },
+      "packaged_sha256": "e65f05dcec5c888cddf0d29fef4c4d42f330983e7b8b653b45f2da07d48a3397"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/random/generate_datasets.py": {
+      "bytes": 3644,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 3644,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/random/generate_datasets.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "c97ae79ba6b42982b0c25cae48305f26d846b0cb8a8ec7397188ea8a33868171",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/random/generate_datasets.py"
+      },
+      "packaged_sha256": "c97ae79ba6b42982b0c25cae48305f26d846b0cb8a8ec7397188ea8a33868171"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/random/generate_graphs.py": {
+      "bytes": 9422,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 9422,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/random/generate_graphs.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "65ed654c3c016dcd467f925b3b28fe5977e2f71199c9646762a71da37bbac1a2",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/random/generate_graphs.py"
+      },
+      "packaged_sha256": "65ed654c3c016dcd467f925b3b28fe5977e2f71199c9646762a71da37bbac1a2"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/datasets/utils.py": {
+      "bytes": 9453,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 9453,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/datasets/utils.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "f132dec5a8c1d26d7d512b17b9ada4444c3d6e2e5bbb6bd13cd5535df614b862",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/datasets/utils.py"
+      },
+      "packaged_sha256": "f132dec5a8c1d26d7d512b17b9ada4444c3d6e2e5bbb6bd13cd5535df614b862"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/definitions.py": {
+      "bytes": 220,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 220,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/definitions.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "fe555a504e1ae6c773d2d3b65341e234520184bd00a318f1b5efddfd5b7ce4c8",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/definitions.py"
+      },
+      "packaged_sha256": "fe555a504e1ae6c773d2d3b65341e234520184bd00a318f1b5efddfd5b7ce4c8"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/evaluator.py": {
+      "bytes": 17225,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 17225,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/evaluator.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "0b77db63f615f34a3de0585d2ba63df8630c476edbf49d31b3ed8bc87969c24a",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/evaluator.py"
+      },
+      "packaged_sha256": "0b77db63f615f34a3de0585d2ba63df8630c476edbf49d31b3ed8bc87969c24a"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/extract_results.py": {
+      "bytes": 8515,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 8515,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/extract_results.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "f56735b29ab7be6e923faa0b79ff587b7fadc99c2c763f46fa5dea99da1a3c1d",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/extract_results.py"
+      },
+      "packaged_sha256": "f56735b29ab7be6e923faa0b79ff587b7fadc99c2c763f46fa5dea99da1a3c1d"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/models/__init__.py": {
+      "bytes": 56,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 56,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/models/__init__.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "6df64aa96ad2dcb5620b857c2f9602301397022b4d9b12b5f7bac7768ce3c6ce",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/models/__init__.py"
+      },
+      "packaged_sha256": "6df64aa96ad2dcb5620b857c2f9602301397022b4d9b12b5f7bac7768ce3c6ce"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/models/gnns/mpnn.py": {
+      "bytes": 12380,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 12380,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/models/gnns/mpnn.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "c0da0b0735ead2b184854350e62cc47922bad17d694cb6c22165df7490e7294b",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/models/gnns/mpnn.py"
+      },
+      "packaged_sha256": "c0da0b0735ead2b184854350e62cc47922bad17d694cb6c22165df7490e7294b"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/models/transformers/bert_lp.py": {
+      "bytes": 5681,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 5681,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/models/transformers/bert_lp.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "f0be7dc17b53f69212239120030fb4d8a342b9c0537b87d557229f78ccb3400a",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/models/transformers/bert_lp.py"
+      },
+      "packaged_sha256": "f0be7dc17b53f69212239120030fb4d8a342b9c0537b87d557229f78ccb3400a"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/models/transformers/lp_model.py": {
+      "bytes": 16283,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 16283,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/models/transformers/lp_model.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "fb7e68db1bc64d6c92e532067ae904b6d27c9b418846ec003c04a7ea1c38b51f",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/models/transformers/lp_model.py"
+      },
+      "packaged_sha256": "fb7e68db1bc64d6c92e532067ae904b6d27c9b418846ec003c04a7ea1c38b51f"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/models/transformers/stokenizer.py": {
+      "bytes": 2611,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 2611,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/models/transformers/stokenizer.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "d13981386eeb09ee6b27c114bae87840242b53c049b70a3113ef5b3a666833f3",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/models/transformers/stokenizer.py"
+      },
+      "packaged_sha256": "d13981386eeb09ee6b27c114bae87840242b53c049b70a3113ef5b3a666833f3"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/pytest.ini": {
+      "bytes": 91,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 91,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/pytest.ini",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "dcfc7ce9a1001899b9b6793d7ecae6e1bbb63335253d4f1654938206cf81b5fa",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/pytest.ini"
+      },
+      "packaged_sha256": "dcfc7ce9a1001899b9b6793d7ecae6e1bbb63335253d4f1654938206cf81b5fa"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/requirements.txt": {
+      "bytes": 560,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 560,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/requirements.txt",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "6918dd8e2ab97a2d8ff333301fb1a7bc9414336d90b292de339ab45702770590",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/requirements.txt"
+      },
+      "packaged_sha256": "6918dd8e2ab97a2d8ff333301fb1a7bc9414336d90b292de339ab45702770590"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/run_lp.py": {
+      "bytes": 74561,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 74561,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/run_lp.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "89fabc51669b4eba7ad61a08ce2acf6e17fb29d26a01941706c135862225a885",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/run_lp.py"
+      },
+      "packaged_sha256": "89fabc51669b4eba7ad61a08ce2acf6e17fb29d26a01941706c135862225a885"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/run_with_best_gpus.py": {
+      "bytes": 6377,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 6377,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/run_with_best_gpus.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "f4c53f5559ca9cdb82f7d3de0a7bf0931b1164f76dd540560c2034e1a7d82443",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/run_with_best_gpus.py"
+      },
+      "packaged_sha256": "f4c53f5559ca9cdb82f7d3de0a7bf0931b1164f76dd540560c2034e1a7d82443"
+    },
+    "work/vldb_pencil_bridge/upstream_pencil/utils.py": {
+      "bytes": 27760,
+      "lineage": {
+        "archive": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "bytes": 27760,
+        "kind": "unchanged_frozen_allowlist",
+        "member": "vldb_pencil_bridge_v1/upstream_pencil/utils.py",
+        "purpose": "unchanged complete pinned PENCIL bridge source tree; upstream verifier requires every tracked upstream file",
+        "sha256": "44c54264ada82ef0fc9830b546143b0a87ac4c6dca379ce0c0baf6ae2acf3482",
+        "source": "outputs/seal_revision_20261124/preliminary/pencil_bridge_v1_sources.tgz",
+        "target": "work/vldb_pencil_bridge/upstream_pencil/utils.py"
+      },
+      "packaged_sha256": "44c54264ada82ef0fc9830b546143b0a87ac4c6dca379ce0c0baf6ae2acf3482"
+    }
+  }
+}

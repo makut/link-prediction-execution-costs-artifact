@@ -1,0 +1,17 @@
+{
+  "original_source": "work/vldb_public_fresh_peer_v1/audit_fresh_v1.py",
+  "original_sha256": "47064c0686e81348cc5df67c350c36a6bb8e8144c7ccab2d19c580dac4672903",
+  "derived_source": "work/vldb_artifact_v0_5_staging_v1/recheck_fresh_friendster_v1.py",
+  "derived_sha256": "f9a6679e93d4b9c63a81b5616124834f8a7f9af90cadc60ca6ac930128489896",
+  "operational_edits": [
+    "Add argparse import only.",
+    "Remove author workspace globals; all numerical source pins unchanged.",
+    "Add explicit public paths and fresh output outside candidate; no historical path/timestamp spoofing.",
+    "Read the identical retained root launch capture through its explicit evidence path.",
+    "Label this derived local recheck separately from the retained independent peer receipt."
+  ],
+  "scientific_rank_and_equality_checks_modified": false,
+  "original_immutable_source_retained": true,
+  "actual_validation": "PENDING staged candidate recheck",
+  "remote_actions": 0
+}

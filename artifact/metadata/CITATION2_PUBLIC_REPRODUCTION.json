@@ -1,0 +1,96 @@
+{
+  "YT_writes": 0,
+  "all_payload_hashes_equal": true,
+  "claim": "Official public archive produces the same 19 numeric prepared payloads as the original experiment.",
+  "dataset": "ogbl-citation2 release 1; strict_clean prepared variant",
+  "environment_summary": "metadata/evidence/citation2_public_v2/ENVIRONMENT_SUMMARY.json",
+  "historical_expectation": {
+    "historical_false_status_is_not_current_verification_status": true,
+    "kept_immutable": true,
+    "path": "metadata/citation2_prepared_expected.json",
+    "sha256": "be0aa7a553b1d456b3a1be54f137b55ffb880a092ed59dd013ed26bad9d1867f"
+  },
+  "large_files_downloaded_to_Mac": 0,
+  "not_verified_by_this_evidence": [
+    "Friendster full public reconstruction",
+    "model quality rerun",
+    "performance or timing rerun",
+    "durable public publication"
+  ],
+  "official_checksum_scope": "locally measured full official-download SHA256; not a provider-published checksum",
+  "official_download": {
+    "YT_writes": 0,
+    "bytes": 2293454318,
+    "finished_unix": 1795605435.103968,
+    "local_large_files_created": 0,
+    "relay_endpoints_sha256_agree": true,
+    "sha256": "f8502b935ea8f0a7bea5eb130991ca337cd26cad7f231cc9f5546fe076f4be53",
+    "source_kind": "fresh_official_public_download",
+    "started_unix": 1795603618.7666576,
+    "target": "/home/jovyan/seal_revision_20261124/public_source_repro_v1/official/citation-v2-range-v2.zip",
+    "transport": "4 ordered HTTP Range workers -> bounded Mac buffers -> kubectl stdin -> CPU scratch",
+    "url": "https://snap.stanford.edu/ogb/data/linkproppred/citation-v2.zip",
+    "v1_partial_untouched": true
+  },
+  "original_runtime_archive": {
+    "all_93_payloads_plus_manifest_verified_against_collected_archive": true,
+    "bytes": 234576,
+    "file_count": 94,
+    "hashed_payload_entries": 93,
+    "included_in_public_packet": false,
+    "sha256": "aface484919f7f6c7e3ad4945ee6c4784a768df0e552b5b3898ef9d3a35f5e78"
+  },
+  "payload_count": 19,
+  "preparer_source_sha256": {
+    "experiment_configs/seal_revision_2026-11/prepare_citation2.py": "7b2694a38134c3953d43159a96757d6557113b81b9624707a6a8670840266d19",
+    "scripts/convert_graph_csr_to_upper.py": "eb024edf1ae434da1c663ce838f8211e7e5646d92f57ce82d090172f9dd8bc0b",
+    "scripts/prepare_ogb_dataset.py": "f55b46140f3281d779e85ae6f5af956091cf6535fc534bf075b6f34dfb225218",
+    "scripts/transpose_graph_csr.py": "196cafaf4a7d6819b0e36b709526018b4b95c01f9dd9654984aa655fc12e23b2"
+  },
+  "public_citation2_full_reproduction_verified": true,
+  "public_friendster_full_reproduction_verified": false,
+  "published": false,
+  "receipts": {
+    "OFFICIAL_DOWNLOAD_RECEIPT.json": {
+      "bytes": 643,
+      "original_archive_member": "public_run/OFFICIAL_DOWNLOAD_RECEIPT.json",
+      "sha256": "c8ae94fca007ed8bae060a5719f309ff3b58c6cd22a4b25837625d1af9e862ec",
+      "unmodified_copy": true
+    },
+    "ORIGINAL_ARCHIVE_FILE_MANIFEST.json": {
+      "bytes": 15368,
+      "original_archive_member": "SHA256_MANIFEST.json",
+      "sha256": "2c3842ff50bdd1708f9294d19ed3189ef360903a7954546bcea58009636f60f0",
+      "unmodified_copy": true
+    },
+    "PUBLIC_19_PAYLOAD_IDENTITY.json": {
+      "bytes": 4747,
+      "original_archive_member": "public_run/PUBLIC_19_PAYLOAD_IDENTITY.json",
+      "sha256": "6966d477e9d0029c1c8b15564400e9f4499fea0a0356dc5163d94de34c1f4cde",
+      "unmodified_copy": true
+    },
+    "TERMINAL.json": {
+      "bytes": 1506,
+      "original_archive_member": "runtime/TERMINAL.json",
+      "sha256": "5fb96624cac3cdc3a2b838e88b005d379d2b73e8bb052bfd060adf4239105148",
+      "unmodified_copy": true
+    },
+    "collection_receipt.json": {
+      "bytes": 1015,
+      "origin": "independent local collection receipt",
+      "sha256": "64d97dbe535e35383243977f02e03d6df341e6c03fdf9c33735facefc21ebbe5",
+      "unmodified_copy": true
+    },
+    "environment_verification.json": {
+      "bytes": 117,
+      "original_archive_member": "runtime/environment_verification.json",
+      "sha256": "d91c9f94e91817027e5374e43513ad6b7cc0987c17b6f2c4bfb964c35c987d52",
+      "unmodified_copy": true
+    }
+  },
+  "receipts_directory": "metadata/evidence/citation2_public_v2",
+  "schema_version": 1,
+  "status": "verified",
+  "verification_scope": "public source acquisition and exact prepared-input identity only",
+  "verified_on": "2026-11-25"
+}

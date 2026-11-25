@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-25",
+  "environment": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "fixture_cli": {
+    "all_executed_arms_exact": true,
+    "records": 16,
+    "torch_imported": false
+  },
+  "full_scale_reproduction_tested": false,
+  "installed_versions": {
+    "numba": "0.65.0",
+    "numpy": "1.26.4",
+    "ogb": "1.3.6",
+    "pandas": "2.2.3",
+    "psutil": "7.0.0",
+    "pytest": "9.1.1",
+    "scipy": "1.15.3",
+    "torch": "2.9.0",
+    "torch-geometric": "2.7.0"
+  },
+  "platform": "macOS local fixtures; full-scale Linux pinned environment was not recreated locally",
+  "previous_test_portability_issues_resolved": [
+    "Degree fixture now discovers the staged source root rather than importing the dirty project repository.",
+    "CPU geometry tools deliberately require no pre-imported Torch; CPU and quality tests run in separate processes with fixed thread limits."
+  ],
+  "public_sources_downloaded_in_full": false,
+  "python": "3.12.10 (main, May 20 2025, 17:57:11) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "schema_version": 1,
+  "source_snapshot_integrity": "All unadapted selected source files must match their archive/original SHA256; finalizer enforces this.",
+  "status": "small_checks_passed",
+  "suites": [
+    {
+      "files": [
+        "scripts/seal_revision/test_exact_benchmark.py",
+        "scripts/seal_revision/test_dispatch_benchmark_v1.py",
+        "scripts/seal_revision/test_degree_balance_audit_v1.py"
+      ],
+      "scope": "fresh-process CPU exact/dispatch/degree geometry; no Torch import",
+      "seconds": 3.18,
+      "subtests_passed": 2,
+      "tests_passed": 47
+    },
+    {
+      "files": [
+        "artifact_public/test_public_inputs.py",
+        "artifact_public/test_citation2_controller.py",
+        "experiment_configs/seal_revision_2026-11/test_prepare_citation2.py",
+        "experiment_configs/seal_revision_2026-11/test_prepare_friendster.py",
+        "experiment_configs/seal_revision_2026-11/quality_friendster/test_query_protocol.py"
+      ],
+      "scope": "public downloader/guards/controllers; Citation2/Friendster tiny preparation; original query-row evaluation",
+      "seconds": 9.74,
+      "tests_passed": 36
+    }
+  ],
+  "total_subtests_passed": 2,
+  "total_tests_passed": 83,
+  "warnings": [
+    "One installed PyG2.7.0 distributed-module deprecation warning."
+  ]
+}

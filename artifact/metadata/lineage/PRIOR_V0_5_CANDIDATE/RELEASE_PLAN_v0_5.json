@@ -1,0 +1,18 @@
+{
+  "after_all_gates": [
+    "Regenerate final actual-public evidence/coverage from exact independently audited members.",
+    "Review full candidate diff, registry and all upstream/data notices; execute required portable checks.",
+    "Create a fresh v0.5 manifest/archive only in a separately reviewed finalization step.",
+    "Initialize reviewed public source repository and create version tag only after final gates and release authorization.",
+    "Use real published versioned asset URLs in manuscript; never invent URL/DOI."
+  ],
+  "builder_has_no_freeze_tag_publish_API": true,
+  "git_initialized": false,
+  "no_release_actions_executed": true,
+  "proposed_repository": "makut/link-prediction-execution-costs-artifact",
+  "release_URL_or_DOI": null,
+  "remote_configured": false,
+  "repository_created": false,
+  "status": "LOCAL_STAGE_ONLY_NO_PUBLIC_RELEASE",
+  "tag_created": false
+}

@@ -1,0 +1,115 @@
+{
+  "dataset": "ogbl-citation2",
+  "file_endian": "little",
+  "files": [
+    {
+      "bytes": 1499117184,
+      "path": "node_feat.npy",
+      "sha256": "ef2a3c1461b5269e26c5a8f475980fc6531c2eeac9e1fd81097c1b145bac2284"
+    },
+    {
+      "bytes": 11711980,
+      "path": "node_year.npy",
+      "sha256": "48df639b26befc48308444969b814202d0d8e6c1adf0856cc6d1f0133768ffb9"
+    },
+    {
+      "bytes": 8,
+      "path": "num_nodes.txt",
+      "sha256": "ff1799f8bf9bd540c71427feb1bc07bcab1331eec0d2fcb847a8e68395b8e81f"
+    },
+    {
+      "bytes": 1385664,
+      "path": "test_edge.npy",
+      "sha256": "f2104cb99400584716ee1c5955a4685fd1b4dc6e5266df626341e9d84f768b37"
+    },
+    {
+      "bytes": 1385536128,
+      "path": "test_edge_neg.npy",
+      "sha256": "41842a28e13ca3fa8dfc45c1dbf90434a3fd7194dc31334b979d14939c1bd051"
+    },
+    {
+      "bytes": 242814016,
+      "path": "train_csr/edge_ends.bin",
+      "sha256": "d3d8d1e2016675321c1d3d9ae817d2c6dca4a9dd2d5cdbba3e638ea7201057a4"
+    },
+    {
+      "bytes": 23423704,
+      "path": "train_csr/edge_starts.bin",
+      "sha256": "f06070adc368892f8441ea15e691dce400f9d44b6ec3e6e4505134c276c1072d"
+    },
+    {
+      "bytes": 242814016,
+      "path": "train_csr/timestamps.bin",
+      "sha256": "5c5cfd056a116c652fcaa434bccaca180cd05697c3b26051cc42684944c22bc7"
+    },
+    {
+      "bytes": 121551472,
+      "path": "train_directed_csr/edge_ends.bin",
+      "sha256": "08a2b59458557fe0c0ece9e91df47f235a877e09ae6c5389c75cc23eccbabcf5"
+    },
+    {
+      "bytes": 23423704,
+      "path": "train_directed_csr/edge_starts.bin",
+      "sha256": "c267a0fb80a5532456830615aca232bf1a7f86796e237b5916af2445ccec9797"
+    },
+    {
+      "bytes": 121551472,
+      "path": "train_directed_csr/timestamps.bin",
+      "sha256": "ce7e801f8ae638ab7ebd8b615f6ad0ff205c42a9411be4c3d6d7d79c3f46fe28"
+    },
+    {
+      "bytes": 121551472,
+      "path": "train_directed_csr_in/edge_ends.bin",
+      "sha256": "9b06f87e1be73696a9ccab99c11c45b6362f3d7daf1235a18ba0e94317ac805f"
+    },
+    {
+      "bytes": 23423704,
+      "path": "train_directed_csr_in/edge_starts.bin",
+      "sha256": "2e321a921652bf1922aab2352abc8bc9238960886a8314aa79940e48607d9f2d"
+    },
+    {
+      "bytes": 121551472,
+      "path": "train_directed_csr_in/timestamps.bin",
+      "sha256": "10f120e9eca9dba13c824f16d0b643205ee4317aa1941a11206cf598b125d3b0"
+    },
+    {
+      "bytes": 121407012,
+      "path": "train_pairs_csr/edge_ends.bin",
+      "sha256": "a9b2df0120a22c4dd1ab226ccb77ac4304ed17aee08e3a6d1828a4efe1cf98c2"
+    },
+    {
+      "bytes": 23423704,
+      "path": "train_pairs_csr/edge_starts.bin",
+      "sha256": "3d360d90f7bafd0499daee2208e11d6c7d8e05aa4eeb6635ec3f7211ec0b3893"
+    },
+    {
+      "bytes": 121407012,
+      "path": "train_pairs_csr/timestamps.bin",
+      "sha256": "120770e36f5d7af44f66a5f80b231e011adf1a6c6458d2d736995f40d9fe7b63"
+    },
+    {
+      "bytes": 1385664,
+      "path": "valid_edge.npy",
+      "sha256": "5182bffdb22415c0ad8735cfd428aa69083a9cf4eb33303f244967e7958a7812"
+    },
+    {
+      "bytes": 1385536128,
+      "path": "valid_edge_neg.npy",
+      "sha256": "7d0333a5723bc69869f69c78157a96af3ff36f68d88818256d8fb042f614fdf5"
+    }
+  ],
+  "full_public_reproduction_verified": false,
+  "preparer_source_sha256": {
+    "experiment_configs/seal_revision_2026-11/prepare_citation2.py": "7b2694a38134c3953d43159a96757d6557113b81b9624707a6a8670840266d19",
+    "scripts/convert_graph_csr_to_upper.py": "eb024edf1ae434da1c663ce838f8211e7e5646d92f57ce82d090172f9dd8bc0b",
+    "scripts/prepare_ogb_dataset.py": "f55b46140f3281d779e85ae6f5af956091cf6535fc534bf075b6f34dfb225218",
+    "scripts/transpose_graph_csr.py": "196cafaf4a7d6819b0e36b709526018b4b95c01f9dd9654984aa655fc12e23b2"
+  },
+  "recorded_archive_bytes": 3754138412,
+  "recorded_archive_is_not_asserted_equal_to_official_zip": true,
+  "recorded_archive_sha256": "c697e76ab31c8ed00685d065da5169e9c15e34f343c9bb89dd40de5365e6880c",
+  "reference_quality_plan_sha256": "b9bc7e73869c4b2c828f655a92ae92d9e144f60db0b8f73b153b458efb7b8b97",
+  "schema_version": 1,
+  "scope": "19 numeric prepared payloads; generated provenance and wall-clock metadata are not byte-identical targets.",
+  "variant": "strict_clean"
+}

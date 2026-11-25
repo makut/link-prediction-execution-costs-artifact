@@ -1,0 +1,30 @@
+{
+  "E19": "OLD_INSTRUMENTED48_ONLY",
+  "E20_actual_independent_audit": "PASS",
+  "E20_raw_numeric_peer": "PASS",
+  "E21_actual_clean44": {
+    "accepted": true,
+    "audit": {
+      "bytes": 331862,
+      "sha256": "4682eef72971ab64f25d64cf2823f3492602497e36580e001751cf799eb9014f"
+    },
+    "audit_path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/outputs/seal_after_travel_systems_final_20261125/pencil_clean_consumer_v1_actual_independent_audit_v1/audit.json",
+    "numeric_peer": {
+      "bytes": 28150,
+      "sha256": "9ef11d0164a22b7d1ab65eb96fe2be3dabd095defe76158ef98a8b02b9c6dbac"
+    },
+    "numeric_peer_path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_clean_actual_numeric_peer_v1/ACTUAL_RAW_NUMERIC_LIFECYCLE_PEER_v1.json"
+  },
+  "YT_writes": 0,
+  "code_package_sha_recorded_in_external_archive_manifest": true,
+  "fresh_full_7arm_or44job_public_adapter_reruns_claimed": false,
+  "fresh_public_independent_numeric_auditor_exists": false,
+  "git_actions": 0,
+  "old471snapshot_preserved": true,
+  "portable_CPU_generic_source_manifest_sha256": "fe94c5c9138dfdbb6c4d7dd195ab4aa54531dca7db350fbdb73228c5de3304b4",
+  "portable_PENCIL_clean44_source_manifest_sha256": "250f034c2dcd77d4e1bd266f3c01de3ff55f8a6324e1944f141f57c2751352b1",
+  "publication_and_durable_URLs_not_yet_created_at_packaging": true,
+  "remote_actions": 0,
+  "status": "ARTIFACT_V0_5_0_CREATION_RECORD",
+  "v0_4_unchanged": true
+}

@@ -1,0 +1,39 @@
+{
+  "confirmed_by_user": true,
+  "confirmed_unix": 1795599192.211116,
+  "authors": [
+    {
+      "name": "Maksim Utushkin",
+      "affiliation": "AI VK",
+      "email_from_original_manuscript": "mak.utushkin@gmail.com",
+      "corresponding": true,
+      "email": "mak.utushkin@gmail.com",
+      "city": "Moscow",
+      "country": "Russia"
+    },
+    {
+      "name": "Renat Aminov",
+      "affiliation": "AI VK",
+      "email_from_original_manuscript": "kovalorn2@gmail.com",
+      "corresponding": false,
+      "email": "kovalorn2@gmail.com",
+      "city": "Moscow",
+      "country": "Russia"
+    },
+    {
+      "name": "Alexander D’yakonov",
+      "affiliation": "AI VK",
+      "email_from_original_manuscript": "djakonov@mail.ru",
+      "corresponding": false,
+      "email": "djakonov@mail.ru",
+      "city": "Moscow",
+      "country": "Russia"
+    }
+  ],
+  "order_confirmed": true,
+  "affiliations_confirmed": true,
+  "emails_current_not_independently_reconfirmed": false,
+  "emails_confirmed_by_user": true,
+  "city_country_confirmed_by_user": true,
+  "metadata_confirmed_unix": 1795603509.623789
+}

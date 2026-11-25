@@ -1,0 +1,30 @@
+{
+  "all_nested_binary_members_match_public_friendster_reference_sha256": true,
+  "base96_source_files_unchanged": true,
+  "binary_allowlist": [
+    "data/friendster_evaluation_public.tgz"
+  ],
+  "credential_and_private_infrastructure_pattern_findings": [],
+  "date": "2026-11-25",
+  "immutable_frozen_inputs_verified": 206,
+  "large_public_text_allowlist": [
+    "data/friendster_exact_int32_reference.json",
+    "metadata/evidence/E16/dispatch_records.jsonl",
+    "metadata/evidence/E16/dispatch_report.json"
+  ],
+  "nested_binary_members": 8,
+  "no_full_graph_features_wheels_compiled_libraries_or_credentials": true,
+  "no_operational_runtime_archive_included": true,
+  "no_private_vk_raw_ids_graph_queries_evaluation_arrays_or_checkpoints_in_inventory": true,
+  "no_remote_actions_or_full_graph_downloads_by_inventory_builder": true,
+  "planned104_source_data_additions_verified": true,
+  "private_dataset_path_reference_scope": "Historical code/docs mention excluded VK inputs; no corresponding file or raw VK record is included.",
+  "private_dataset_path_references_in_frozen_source_only": [
+    "src/experiment_configs/seal_revision_2026-11/run_pipeline_suite_v4.py",
+    "work/vldb_corrected_native/README.md"
+  ],
+  "public_data_lineage": "Friendster Zenodo5146230 CC-BY-4.0: fixedS/publicE16/publicE17/8evalarrays. Citation2 officialOGB19proof. Friendster3full+23preparedproof.",
+  "schema_version": 1,
+  "scope": "Actual v0.4 candidate file/data allowlist and frozen-source lineage; not merely token-pattern inference.",
+  "utf8_text_files_reviewed": 301
+}

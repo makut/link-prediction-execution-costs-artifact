@@ -1,0 +1,10 @@
+{
+  "bytes": 404147012,
+  "copied_into_candidate": false,
+  "download_url": null,
+  "filename": "lpp_public_quality_evidence_v1.tgz",
+  "manifest_sha256": "9bf816acdce59b0905998adc47437092427cfa8d4c7154da69e5343a8eb15f7d",
+  "publication_status": "not_published",
+  "purpose": "Separate immutable public quality evidence asset",
+  "sha256": "e17cdc9678d00a3f372fc8083741a200a63662226f730f47eeda79f89b4ad3b2"
+}

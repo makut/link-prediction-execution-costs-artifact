@@ -1,0 +1,61 @@
+{
+  "kind": "PUBLIC_GENERIC_CPU7_SOURCE_PACKET_READY_FOR_ROOT_LINUX_PLAN_TINY",
+  "packet": {
+    "path": "work/vldb_artifact_v0_5_portable_v1/public_friendster_cpu_v1_sources.tgz",
+    "bytes": 1799513,
+    "sha256": "875f9f74704fe1d3d1b2cc0a9517e32a5ed7e3011b700cf9c966f93d1dce093d"
+  },
+  "source_manifest": {
+    "bytes": 8223,
+    "sha256": "fe94c5c9138dfdbb6c4d7dd195ab4aa54531dca7db350fbdb73228c5de3304b4"
+  },
+  "payloads": 51,
+  "members": 52,
+  "all_source_readback_hashes_verified": true,
+  "unchanged_original_payloads": 39,
+  "independent_peer": {
+    "path": "work/vldb_public_cpu_portable_peer_v1/INDEPENDENT_PEER_REVIEW.json",
+    "bytes": 4665,
+    "sha256": "eda61e7591bd405daa204c69b614135052b7689188173eb88b9052c8c4980bf3"
+  },
+  "own_tests": {
+    "passed": 24,
+    "seconds": 0.69
+  },
+  "independent_tests": {
+    "passed": 28,
+    "seconds": 0.77
+  },
+  "full_Linux7arm_rerun_claimed": false,
+  "actual_full_graph_jobs": 0,
+  "actual_remote_actions": 0,
+  "YT_writes": 0,
+  "advisories": [
+    "Early default SIGTERM before handler install may retain a conservative stale marker; no child/scientific success inferred.",
+    "Interrupted owned phase may have partial log/guard with no returned exit receipt; controller failure and cleanup retained."
+  ],
+  "Linux_plan_argv": [
+    "PYTHON",
+    "-B",
+    "public_friendster_cpu_v1/run_public_cpu.py",
+    "--python",
+    "PYTHON",
+    "--full-csr",
+    "FULL_CSR_PATH_NOT_OPENED_BY_PLAN",
+    "--wheel-packet",
+    "WHEEL_PACKET_PATH_NOT_OPENED_BY_PLAN",
+    "--out",
+    "FRESH_OUTSIDE_SOURCE",
+    "--source-manifest-sha256",
+    "fe94c5c9138dfdbb6c4d7dd195ab4aa54531dca7db350fbdb73228c5de3304b4"
+  ],
+  "Linux_tiny_argv": [
+    "PYTHON",
+    "-B",
+    "public_friendster_cpu_v1/tiny_native_smoke.py",
+    "--out",
+    "FRESH_TINY_OUTSIDE_SOURCE",
+    "--source-manifest-sha256",
+    "fe94c5c9138dfdbb6c4d7dd195ab4aa54531dca7db350fbdb73228c5de3304b4"
+  ]
+}

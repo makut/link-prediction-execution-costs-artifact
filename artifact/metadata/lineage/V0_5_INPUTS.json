@@ -1,0 +1,48 @@
+{
+  "base_archive": {
+    "bytes": 76637178,
+    "members": 304,
+    "path": "outputs/vldb_submission_2026/lpp_vldb_artifact_v0.4.0.tgz",
+    "prefix": "lpp_vldb_artifact_v0.4.0/",
+    "sha256": "8657a980e7efe1266f30022223c9dffde75882c53c1e55e6b6dd9ec160470404"
+  },
+  "base_payloads": 303,
+  "base_scientific_source_bytes_unchanged": true,
+  "external_assets": {
+    "quality": {
+      "bytes": 404147012,
+      "manifest_sha256": "9bf816acdce59b0905998adc47437092427cfa8d4c7154da69e5343a8eb15f7d",
+      "path": "outputs/vldb_public_quality_evidence_20261125/lpp_public_quality_evidence_v1.tgz",
+      "sha256": "e17cdc9678d00a3f372fc8083741a200a63662226f730f47eeda79f89b4ad3b2"
+    },
+    "systems": {
+      "bytes": 83629661,
+      "manifest_sha256": "2800804cfc2278d399b95a7c1112f05b79e98fe004679466876c7f9185980b2c",
+      "path": "outputs/vldb_public_systems_evidence_20261125/lpp_public_systems_evidence_v1.tgz",
+      "sha256": "48232549089f3295c893bb33f6cea0d1aac4a0ee45b91a2669392c90ae1bfe40"
+    }
+  },
+  "overridden_candidate_metadata_originals_preserved_at": {
+    "MANIFEST.json": "metadata/lineage/BASE_V0_4_MANIFEST.json",
+    "README.md": "metadata/lineage/BASE_V0_4_README.md",
+    "metadata/CANDIDATE_STATUS.json": "metadata/lineage/BASE_V0_4_CANDIDATE_STATUS.json",
+    "metadata/SYSTEMS_FROZEN_INPUTS.json": "metadata/lineage/BASE_V0_4_SYSTEMS_FROZEN_INPUTS.json",
+    "metadata/SYSTEMS_SOURCE_SELECTION.json": "metadata/lineage/BASE_V0_4_SYSTEMS_SOURCE_SELECTION.json"
+  },
+  "source_packets": {
+    "fresh_e7_e12": {
+      "bytes": 124669,
+      "members": 30,
+      "path": "work/vldb_public_fresh_adapters_v1_sources.tgz",
+      "prefix": "",
+      "sha256": "ec47493ce203fb9dbe306062ec2b3c32981f461797f642286aec800894e00a47"
+    },
+    "pencil_v2": {
+      "bytes": 179418,
+      "members": 91,
+      "path": "work/vldb_pencil_public_v2_overlay_candidate.tgz",
+      "prefix": "public_pencil_v2_overlay/",
+      "sha256": "58ffbda6a03a3620fc00c8118191979a098a3193f5dd96b6b56708077325f7c7"
+    }
+  }
+}

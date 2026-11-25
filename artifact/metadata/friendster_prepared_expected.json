@@ -1,0 +1,101 @@
+{
+  "dataset": "Friendster dense Zenodo5146230",
+  "files": {
+    "evaluation/test/source_node.npy": {
+      "bytes": 80128,
+      "sha256": "763d6f4c51e97fb46db5f07e5659ef77d1646ac6100ea357819ecd1459ef35b7"
+    },
+    "evaluation/test/target_node.npy": {
+      "bytes": 80128,
+      "sha256": "20a25380f2a029edeeba598c5a6f02114b324323bb7da8ab29efcbf70ac7f84b"
+    },
+    "evaluation/test/target_node_neg.npy": {
+      "bytes": 40000128,
+      "sha256": "00c1e98d13ed7a02ba8596e3ac51af53992b6aab37d4417ff7713b03710f3f80"
+    },
+    "evaluation/test/warm_query.npy": {
+      "bytes": 10128,
+      "sha256": "62d881f9a4b8968c50cf6106b339458d3569aa63ad4c0104d5ccfa7d62ae3817"
+    },
+    "evaluation/valid/source_node.npy": {
+      "bytes": 80128,
+      "sha256": "b841469189c1a8b23b087aaf9e44bb6d1b7e0a4f9be3c485e86120a31c17c096"
+    },
+    "evaluation/valid/target_node.npy": {
+      "bytes": 80128,
+      "sha256": "fe173eb5114d7b1e36ffaec8fccb42be117953332959eecd7c220177a7ef523a"
+    },
+    "evaluation/valid/target_node_neg.npy": {
+      "bytes": 40000128,
+      "sha256": "64fd69a9ffb44e49096186c91fd308867bbe5bb3feab6e25f092378ff9a0342e"
+    },
+    "evaluation/valid/warm_query.npy": {
+      "bytes": 10128,
+      "sha256": "6027d7098f0463837b94e8c5816d9ac17335f86383c1686e95b8a7d040ff03d4"
+    },
+    "num_nodes.txt": {
+      "bytes": 9,
+      "sha256": "8551541f6f2ef955481af83ef5e6f92c5f206c968d5d9db6a4437efecf767753"
+    },
+    "test_edge.npy": {
+      "bytes": 160128,
+      "sha256": "45cb8535e51603b39156789cfd7d3f7507256c99b564ca4b5989e883248e4006"
+    },
+    "test_edge_neg.npy": {
+      "bytes": 160000128,
+      "sha256": "fd744c38e62b5f34906f8b13419fb8faf111fb0c38acc61e270c8232a8e49ea8"
+    },
+    "test_query_row_ids.npy": {
+      "bytes": 80128,
+      "sha256": "3e7d12429f219ff5b6814ff1948c5b0e771431218bfb55b619b183b1e1264c51"
+    },
+    "train_csr/edge_ends.bin": {
+      "bytes": 11558829672,
+      "sha256": "76f00631a71e991b24de14b6ec1afc8da6838eaba94aea1d1a855640d01f5d4f"
+    },
+    "train_csr/edge_starts.bin": {
+      "bytes": 524866928,
+      "sha256": "ff702472dc7545321165c815e28b8f57e3653c007aadc765045d48976041e63d"
+    },
+    "train_csr/num_nodes.txt": {
+      "bytes": 9,
+      "sha256": "8551541f6f2ef955481af83ef5e6f92c5f206c968d5d9db6a4437efecf767753"
+    },
+    "train_csr/timestamps.bin": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "train_pairs_csr/edge_ends.bin": {
+      "bytes": 5779414840,
+      "sha256": "b2b3c4aaf019d3717022b3f709388c434c5661e352029cf8ea4196759646f4ed"
+    },
+    "train_pairs_csr/edge_starts.bin": {
+      "bytes": 524866928,
+      "sha256": "c6d2258aa6a2c762c6950cf409c479d529595a716400aed01bdb7f9f9610705c"
+    },
+    "train_pairs_csr/num_nodes.txt": {
+      "bytes": 9,
+      "sha256": "8551541f6f2ef955481af83ef5e6f92c5f206c968d5d9db6a4437efecf767753"
+    },
+    "train_pairs_csr/timestamps.bin": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "valid_edge.npy": {
+      "bytes": 160128,
+      "sha256": "9a324aabd7f119856c9d18d4a639e478bab7b7dc165a8bdf89bf7626d70f7286"
+    },
+    "valid_edge_neg.npy": {
+      "bytes": 160000128,
+      "sha256": "27f0f6459b77aca261271cc23dab58508447d1998c0b45cc52d2c3ed51ce5948"
+    },
+    "valid_query_row_ids.npy": {
+      "bytes": 80128,
+      "sha256": "3e7d12429f219ff5b6814ff1948c5b0e771431218bfb55b619b183b1e1264c51"
+    }
+  },
+  "full_public_reproduction_verified": false,
+  "reference_prepared_manifest_sha256": "f9c6ad7d7e1227c410ea7150b61721328829f2ba43436bc42be9d6debaf4f58c",
+  "schema_version": 1,
+  "scope": "All23prepared numeric payloads; exclude changed public provenance carriers and generated metadata."
+}
