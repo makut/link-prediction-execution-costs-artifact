@@ -1,0 +1,22 @@
+{
+  "kind": "EXACT_SEPARATE_PUBLIC_ASSET_REFERENCES_NO_DATA_PAYLOAD_COPY",
+  "assets": {
+    "CPU_PT22_NATIVE_WHEELS": {
+      "suggested_public_filename": "pt22_native_wheels_v1.tgz",
+      "bytes": 15064339,
+      "sha256": "5e9edbdc067325cd0b41b5fb292e2cc7343cc535da87ff3bef720cbf85da38cf",
+      "download_manifest_bytes": 1105,
+      "download_manifest_sha256": "0ad0063fea1bbae0ee7ddff749766450d75e791e13d7316ec199208194e2ac16",
+      "purpose": "exact two official cp310 pt22cu121 sparse/scatter wheels for isolated CPU-only execution; no graph/model payloads"
+    },
+    "RECORDED_CPU_E20_RAW": {
+      "suggested_public_filename": "lpp_public_friendster_cpu_matched_v2_raw.tgz",
+      "bytes": 2121570,
+      "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374",
+      "payload_members": 120,
+      "total_members": 121,
+      "manifest_sha256": "b771c96d427bf996623f9189f49ffff8e54637ded7ab490aa55b5b7f472df11e",
+      "purpose": "immutable recorded E20 raw science/sources; internal runner is provenance, not the generic public execution recipe"
+    }
+  }
+}

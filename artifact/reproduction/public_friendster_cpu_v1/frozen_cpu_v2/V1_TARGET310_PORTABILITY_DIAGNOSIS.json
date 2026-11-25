@@ -1,0 +1,63 @@
+{
+  "observed_unix": 1795630498.170653,
+  "python_AST_version": "3.10",
+  "source_only_no_imports_or_graph_reads": true,
+  "functions": {
+    "scientific_functions_v1.py:original_identity": {
+      "target_native_AST_sha256": "575674117ca6178a047c028e79b8fc45617ac91b6c02576838c615ecc7235e7a",
+      "frozen_local312_AST_sha256": "8527989d39c4d38cfb9816bcdd49c29b8fa351e61b5ef4f2dee46481816b0579",
+      "adding_only_empty_type_params_matches_frozen": true
+    },
+    "scientific_functions_v1.py:verify_same_selection": {
+      "target_native_AST_sha256": "abc1f08dd847bc65cabdd5230e401dd4b9d9c119a4c675b8f9d797033d7e3389",
+      "frozen_local312_AST_sha256": "ccefae36e160a1a556ed08533579194338bf4decef394204c5289ee7ee51c97a",
+      "adding_only_empty_type_params_matches_frozen": true
+    },
+    "scientific_functions_v1.py:one": {
+      "target_native_AST_sha256": "46fc30294e7be97a0fa6d96c7b817b923e36b9809720599c614e9a1ca9869cfa",
+      "frozen_local312_AST_sha256": "b365fddc6b3c3d7a0ffa01c31fd8fa283f3daee6ae9317e289b2e528062d8bc3",
+      "adding_only_empty_type_params_matches_frozen": true
+    },
+    "execution_v1.py:acquire_lock": {
+      "target_native_AST_sha256": "38ebf12a1a110b5148d207c89cee4efb8f5792f82e9cb8adb58309ec9cd5c376",
+      "frozen_local312_AST_sha256": "d4950f71fb06576b9bc9be98307b10ee3e3570e6061f29e59dce41c2ae149ee3",
+      "adding_only_empty_type_params_matches_frozen": true
+    },
+    "execution_v1.py:release_lock": {
+      "target_native_AST_sha256": "f4219a2c452cc396116e12e0fd65ef44b6527336b04176e30757300b0dc730c8",
+      "frozen_local312_AST_sha256": "d535cd498ed7e430afba3f37e47ac0f56874a857f69e43e5fc9a3e9bbedefe75",
+      "adding_only_empty_type_params_matches_frozen": true
+    },
+    "execution_v1.py:cleanup_owned": {
+      "target_native_AST_sha256": "5f30d5e6f89af750f8f56779c4fb8950c10c026df2e5ed13ab0101551ee6da15",
+      "frozen_local312_AST_sha256": "007597ba3bc61567ef9bc825642cdb5dee71541ee63cc2262a713f1d2b23b7af",
+      "adding_only_empty_type_params_matches_frozen": true
+    },
+    "execution_v1.py:guarded_run": {
+      "target_native_AST_sha256": "2c2a571c3556c337ba74853b3e69187dd470520ef62376d798f4696c7df3e656",
+      "frozen_local312_AST_sha256": "d164de5076a5ba386361ec6e5d3d581bdadae910fa17f76a4803e05ea22ba654",
+      "adding_only_empty_type_params_matches_frozen": true
+    }
+  },
+  "results/public_fr_cpu_matched_v1_20261125": {
+    "exists": false
+  },
+  "public_fr_cpu_matched_v1_env": {
+    "exists": false
+  },
+  "public_fr_cpu_matched_v1_wheels": {
+    "exists": false
+  },
+  "public_fr_cpu_matched_v1_data": {
+    "exists": false
+  },
+  "public_fr_cpu_matched_v1_build": {
+    "exists": false
+  },
+  "public_fr_cpu_matched_v1_cache": {
+    "exists": false
+  },
+  "genuine_controller_log_utf8": "Traceback (most recent call last):\n  File \"/home/jovyan/seal_revision_20261124/public_fr_cpu_v1_code/cpu_coordinator_v1.py\", line 243, in <module>\n    if __name__ == '__main__': raise SystemExit(main())\n  File \"/home/jovyan/seal_revision_20261124/public_fr_cpu_v1_code/cpu_coordinator_v1.py\", line 138, in main\n    bindings = verify_sources(); env_layout = environment.layout(base)\n  File \"/home/jovyan/seal_revision_20261124/public_fr_cpu_v1_code/cpu_common_v1.py\", line 98, in verify_sources\n    require(hashlib.sha256(ast.dump(node, include_attributes=False).encode()).hexdigest() == pin, 'original function AST changed')\n  File \"/home/jovyan/seal_revision_20261124/public_fr_cpu_v1_code/cpu_common_v1.py\", line 35, in require\n    if not value: raise RuntimeError(message)\nRuntimeError: original function AST changed\n",
+  "genuine_controller_log_sha256": "0ac17610e5e98c806117534136684927a0c234eaad3319afb383dc054f608187",
+  "locks": []
+}

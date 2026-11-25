@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "all_payload_hashes_equal": true,
+  "payload_count": 3,
+  "files": [
+    {
+      "path": "edge_ends.bin",
+      "bytes": 14448537088,
+      "sha256": "0f74897efa3172252a8371bb0d2c8e0129602475ebb84a863ec1210f9c5e5973"
+    },
+    {
+      "path": "edge_starts.bin",
+      "bytes": 524866928,
+      "sha256": "b6ebf026fa54498f241af834b96b5496b2a1bcbf8be3edea2f4b3a1cf0a674e9"
+    },
+    {
+      "path": "num_nodes.txt",
+      "bytes": 9,
+      "sha256": "8551541f6f2ef955481af83ef5e6f92c5f206c968d5d9db6a4437efecf767753"
+    }
+  ],
+  "scope": "Numeric graph payload identity; generated meta.json times/paths are excluded.",
+  "does_not_claim_equal_generated_timestamps_paths_or_archive_compression": true,
+  "public_source": "https://doi.org/10.5281/zenodo.5146230",
+  "private_infrastructure_required": false
+}

@@ -1,0 +1,10 @@
+{
+  "kind": "ORIGINAL_FUNCTION_AST_IDENTITY",
+  "original_source_sha256": "35b84f8178b5dc6804e7c9ba71859d714640a2e35751710f879d260fd5750617",
+  "functions": {
+    "acquire_lock": "d4950f71fb06576b9bc9be98307b10ee3e3570e6061f29e59dce41c2ae149ee3",
+    "release_lock": "d535cd498ed7e430afba3f37e47ac0f56874a857f69e43e5fc9a3e9bbedefe75",
+    "cleanup_owned": "007597ba3bc61567ef9bc825642cdb5dee71541ee63cc2262a713f1d2b23b7af",
+    "guarded_run": "d164de5076a5ba386361ec6e5d3d581bdadae910fa17f76a4803e05ea22ba654"
+  }
+}

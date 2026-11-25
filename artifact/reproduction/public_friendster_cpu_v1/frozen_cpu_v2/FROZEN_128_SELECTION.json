@@ -1,0 +1,2083 @@
+{
+  "schema_version": 1,
+  "kind": "corrected_native_frozen_replay_v1",
+  "archive": {
+    "original_local_path": "/home/jovyan/seal_revision_20261124/corrected_native_v1/records/friendster_exact_int32.json",
+    "bytes": 9040463,
+    "sha256": "bed119047100f89080081fe638ed60816d0256bfeea9750418668078cdb2d975",
+    "record_count": 768,
+    "stock_index_dtype": "int32"
+  },
+  "graph": {
+    "nodes": 65608366,
+    "stored_entries": 3612134270
+  },
+  "count": 128,
+  "selection_seed": 20261125,
+  "selection_policy": "deterministic round-robin strata selection; original record order retained; no S resampling",
+  "stratum_counts": {
+    "('reference_union', 50, 'twohop_nonedge')": 10,
+    "('reference_union', 50, 'positive')": 10,
+    "('reference_union', 200, 'positive')": 10,
+    "('reference_union', 200, 'twohop_nonedge')": 10,
+    "('production_union', 50, 'twohop_nonedge')": 11,
+    "('production_union', 50, 'positive')": 11,
+    "('production_union', 200, 'twohop_nonedge')": 11,
+    "('production_union', 200, 'positive')": 11,
+    "('per_vertex', 50, 'twohop_nonedge')": 11,
+    "('per_vertex', 50, 'positive')": 11,
+    "('per_vertex', 200, 'twohop_nonedge')": 11,
+    "('per_vertex', 200, 'positive')": 11
+  },
+  "selected": [
+    {
+      "archive_record_index": 5,
+      "node_set_sha256": "0fda028d5c969c841c70209bac54256a0f05d7945bc4a272c8f6dfd9e8f82f66",
+      "canonical_edges_sha256": "ba92d02727f4fe7f7749e584158e698a9e1bfbb2ef50a2c09485d97220cfcfc2",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 22920,
+      "induced_directed_entries": 250,
+      "pair": [
+        48839319,
+        15152177
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 5
+    },
+    {
+      "archive_record_index": 12,
+      "node_set_sha256": "6577b9f50c28dc7ce0c3cf9ee3cc8c32c0f7c1235eb23e326b03feef84df18d2",
+      "canonical_edges_sha256": "4e0f9442e0bae77144b8e0b47b6e5166fefebdb1b6700f5e7b1182ce1de4f0de",
+      "drnl_sha256": "7a734d3fdca62c5948a79cb11fc4657c2e7baf36dd2f15d173e79fa9360743c9",
+      "sum_out_degrees": 30499,
+      "induced_directed_entries": 284,
+      "pair": [
+        1742809,
+        541296
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 12
+    },
+    {
+      "archive_record_index": 21,
+      "node_set_sha256": "3cc393dab7c2e5679dad5593c926e6f354d33972ff2b2fa8e47c936821b99abd",
+      "canonical_edges_sha256": "cc14962b545a7dddaf0383a6dfcc49fc1a6e6cd3f7624c2dbcb451d03189bf58",
+      "drnl_sha256": "5b5db4c59e5caa8f373ec49d7ccad5a10a894bd4551c36d92fb326bed50552ef",
+      "sum_out_degrees": 19216,
+      "induced_directed_entries": 286,
+      "pair": [
+        15281505,
+        12638681
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 21
+    },
+    {
+      "archive_record_index": 22,
+      "node_set_sha256": "2c0949f54ce567a180672e15e7dcbd72c26987f32a026fc16acdce15e4f60862",
+      "canonical_edges_sha256": "4376e71f022c3b9725d41955e096c7370c44f7ea233637d527ab2636b0607d27",
+      "drnl_sha256": "349b8e2442d69bf9dba33c203f6e441216132c64e8e5223b41132bdee2352c5a",
+      "sum_out_degrees": 37778,
+      "induced_directed_entries": 254,
+      "pair": [
+        2310115,
+        7752275
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 22
+    },
+    {
+      "archive_record_index": 30,
+      "node_set_sha256": "7cb609046719846ca6089a9ec8b3a71b391e71067cb90c1207ae1b3490164080",
+      "canonical_edges_sha256": "7cbadb148cc2eb7262e5ba923b5a5debdface3b0eb0bce552570211dc4b2300f",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 37645,
+      "induced_directed_entries": 232,
+      "pair": [
+        26344922,
+        17878075
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 30
+    },
+    {
+      "archive_record_index": 33,
+      "node_set_sha256": "4b048db2701614a8ef70d22ef0a8b681b2b36e5b2e515c73d0e232a7ebfe9951",
+      "canonical_edges_sha256": "e39b8686f5d3d5f9478af9e316073e9f645917355e4b54be682e1f268a89ab02",
+      "drnl_sha256": "e2e4261fe00995140aa61187a8491fe0184023a8f97afe69a5402ce2fa4acaca",
+      "sum_out_degrees": 21759,
+      "induced_directed_entries": 286,
+      "pair": [
+        14922037,
+        20462203
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 33
+    },
+    {
+      "archive_record_index": 34,
+      "node_set_sha256": "09839946a5ea170e11b8dd6d92592889c6c4c10be010383bb3c45151de94cf15",
+      "canonical_edges_sha256": "ee0a0d21a068168f8307b915d117bc62567d23bf627a546379fb6dc4650c5f58",
+      "drnl_sha256": "bcc3c445fbfacf1e927cae7199ef32000359565536a53dfaee5f009f7850c9c9",
+      "sum_out_degrees": 54392,
+      "induced_directed_entries": 256,
+      "pair": [
+        23243959,
+        15686581
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 34
+    },
+    {
+      "archive_record_index": 47,
+      "node_set_sha256": "1b57a1ce18e069821d708685d22d73f08718aa0883730366ad0c85cda697d209",
+      "canonical_edges_sha256": "7acf9e26f90302ff3cecf98c50f32bcec3f0ac230f31baffb9819fe32995dff0",
+      "drnl_sha256": "d420777c7be903e6ae8a4c2732e1f8e1f0a56c6618172b2cdcade112cc79f8c7",
+      "sum_out_degrees": 20041,
+      "induced_directed_entries": 258,
+      "pair": [
+        38691485,
+        16820953
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 47
+    },
+    {
+      "archive_record_index": 50,
+      "node_set_sha256": "87da9d689753de6fbb7bd1a5699ca508e68880492123143ac49b42508efeb222",
+      "canonical_edges_sha256": "b99cf56d9afd717ed01038434b8d02ca7f82163928b3e0c48ac310c345a0f0bb",
+      "drnl_sha256": "0d9eadeb51cf083eee88971d5c708cea5f41c5e2aae55a1ec2199804c95ea70f",
+      "sum_out_degrees": 54035,
+      "induced_directed_entries": 232,
+      "pair": [
+        11199319,
+        13477096
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 50
+    },
+    {
+      "archive_record_index": 61,
+      "node_set_sha256": "a560f82ba9501de58245961f3f268d61ff5898220738f82de2af09d3dceb7bcf",
+      "canonical_edges_sha256": "ec7209aa784397f8ab177e5b007606aace31dad5c67c1b5a10f1a6d813345294",
+      "drnl_sha256": "f8ce53e75113c0aa56aa3e66e375f026662c8113ff0b3d1626d877f5430c3b9f",
+      "sum_out_degrees": 45968,
+      "induced_directed_entries": 236,
+      "pair": [
+        21571057,
+        42884678
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 61
+    },
+    {
+      "archive_record_index": 64,
+      "node_set_sha256": "4a0e2f2888cefb43f2f9c730d82d84c8f566d5d6e79bea09d097343864ce442c",
+      "canonical_edges_sha256": "60cdb40824dbc9c0a80a98dac2612fcbb4145a68078c8c7f2fc5c6dbb77e9239",
+      "drnl_sha256": "0a625c53afaf6d43c521b5a926012c46ba83eedb2b49ed25582b4da35871d017",
+      "sum_out_degrees": 33520,
+      "induced_directed_entries": 222,
+      "pair": [
+        6143492,
+        7913842
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 64
+    },
+    {
+      "archive_record_index": 65,
+      "node_set_sha256": "891b16fc2934b36a9ddaf286b72ba922326aa540d6ded04d53a5dd601b8d4735",
+      "canonical_edges_sha256": "0ccb5f28aeabe08551dcf3542de501cf826b5c2a3eb5c645f5483aa8d17184b0",
+      "drnl_sha256": "040f17da4fe0b3c727729c9a30c664ef66271ce5a4b5420c974fe91ff6ecf861",
+      "sum_out_degrees": 67384,
+      "induced_directed_entries": 252,
+      "pair": [
+        45994894,
+        26395667
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 65
+    },
+    {
+      "archive_record_index": 87,
+      "node_set_sha256": "b82e46f4e4dd3269c9156198eca265512ca7b3430898ed329132819805f1a272",
+      "canonical_edges_sha256": "21e3eb03eae6a0942140a7d7025b9283244cf9d643bdbda7e461fe3ce3626f50",
+      "drnl_sha256": "b2a94ed64e7cd650211ed9b5967d0b3cfc72e1606d5e2fafd73c8c9edfee466e",
+      "sum_out_degrees": 23850,
+      "induced_directed_entries": 214,
+      "pair": [
+        36609891,
+        27656044
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 87
+    },
+    {
+      "archive_record_index": 91,
+      "node_set_sha256": "07b1184ada03a36f8f187ea73d1df46f3f45b38eae9f94c8918bad5ff83c3aa7",
+      "canonical_edges_sha256": "2cb3a0b97a93a5f6e412e12a8cd640a74cced42ece37ed1f0e4f5e68b08afa27",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 33674,
+      "induced_directed_entries": 286,
+      "pair": [
+        51017472,
+        8403602
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 91
+    },
+    {
+      "archive_record_index": 92,
+      "node_set_sha256": "19b6764ff1288e48cd0f46a63b6fbd0ad18ad366fec9ff9e66dbb258fc6a0966",
+      "canonical_edges_sha256": "404d23a412341cc91b557fef724cf57b0f0102bc98a51e9d47c88b8fa897f502",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 27723,
+      "induced_directed_entries": 316,
+      "pair": [
+        50782126,
+        16405608
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 92
+    },
+    {
+      "archive_record_index": 100,
+      "node_set_sha256": "9d0f13f7bcd6ee9cae4753667bf0c5b4624f9bffdb66b16a2e4d23c819ba9c26",
+      "canonical_edges_sha256": "9516bcb10dcd9826de4b188b43cfee0a6ebae78dd2445828a52c68f74a5bf48d",
+      "drnl_sha256": "82ff7918e469e1d9cf3170330c833960cc8e032b3e71f766c21eceb735bb16d8",
+      "sum_out_degrees": 22830,
+      "induced_directed_entries": 246,
+      "pair": [
+        8588675,
+        5944689
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 100
+    },
+    {
+      "archive_record_index": 105,
+      "node_set_sha256": "542dd40191f90572fda09c98bb9d9a3895864264de7e4fab382bb2bad1dafe0f",
+      "canonical_edges_sha256": "dc5ba656cf9a33f7587d821387a670670125fef02c8c2ad74a92bc2fce2b9d2f",
+      "drnl_sha256": "d00c48f34a43c96602fca811204e57d2fc7c5f824cab1c8fdba8feed69fbe32d",
+      "sum_out_degrees": 32067,
+      "induced_directed_entries": 492,
+      "pair": [
+        31108147,
+        43420960
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 105
+    },
+    {
+      "archive_record_index": 106,
+      "node_set_sha256": "a2854c6ec6f2fca8571786963ee355dc7c77c4ca707de57e0bf0ff2d7fd7071e",
+      "canonical_edges_sha256": "3763c222303933e7ba2351d78f019e83b9f84b5ab984eed8b55116a6b5bfa540",
+      "drnl_sha256": "c71a56994cc0868f328e0a164155c8fdba2e5c5d9382b63dc187dc452322ba89",
+      "sum_out_degrees": 14784,
+      "induced_directed_entries": 226,
+      "pair": [
+        12391499,
+        14960283
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 106
+    },
+    {
+      "archive_record_index": 108,
+      "node_set_sha256": "157ac69e3cecc9f58cf96e4bcfdcb5e650d7f1569a6d1bafb8fc46e88182733d",
+      "canonical_edges_sha256": "274f7dc85d1bcf7b819d18f7c2dc897a25d354b7c684f8b5457c16989e242a4a",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 56736,
+      "induced_directed_entries": 226,
+      "pair": [
+        12177890,
+        37886587
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 108
+    },
+    {
+      "archive_record_index": 111,
+      "node_set_sha256": "08ab67205e64a1268c8f16ecdcfe38431efca46989e0f854f570f1a8b4c8ee12",
+      "canonical_edges_sha256": "f80d8fb54bf72683ebdf0e8396eaf0ef053d81274f3d32b2595b19ebe8701d60",
+      "drnl_sha256": "8dfc2292873b8e07cad85271cccc607602bd5e5dfd567779403d406806586558",
+      "sum_out_degrees": 45510,
+      "induced_directed_entries": 254,
+      "pair": [
+        5524972,
+        15087399
+      ],
+      "sampler": "reference_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 111
+    },
+    {
+      "archive_record_index": 130,
+      "node_set_sha256": "c780603465f9efb11da21b29c4411524a22b57dbfaa3fd28084d4c0c1357f952",
+      "canonical_edges_sha256": "820d29fe0e8ff0bc5c67f6e8dcd47c81cd973df3f1149adcdfe7b4b62c8e528e",
+      "drnl_sha256": "558605977afe46a50fea001c3b4255da662ae54fb696f2292e6fb0a398d72e0b",
+      "sum_out_degrees": 375735,
+      "induced_directed_entries": 1702,
+      "pair": [
+        3889497,
+        18020509
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 2
+    },
+    {
+      "archive_record_index": 134,
+      "node_set_sha256": "cf9f122d48becbb07d73e955c0dcd3b03b9a5025cfc29625a17c11242d3d12c6",
+      "canonical_edges_sha256": "a1275a9ccd5da28795a8c914aee7146d2e2ac8a787f6b094ed98f7b2d962468c",
+      "drnl_sha256": "078f56128ca2d196469133e8d6ab18563909b2d20dd37bd82c59179f9667c111",
+      "sum_out_degrees": 288500,
+      "induced_directed_entries": 966,
+      "pair": [
+        11630558,
+        15979077
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 6
+    },
+    {
+      "archive_record_index": 142,
+      "node_set_sha256": "2516790d207c1bba22dd4e73a6494d643a022f0c0cb2cf8bd9d6df88b301ebb3",
+      "canonical_edges_sha256": "51a9249862e3e3670fee2900dca62928d51cd6af0064ec8c4cad27bab7124120",
+      "drnl_sha256": "f71b68f641c9aaecf9416c64e6fb963688675a8171aeed6a4489d05acdf3c360",
+      "sum_out_degrees": 104292,
+      "induced_directed_entries": 1012,
+      "pair": [
+        3039725,
+        6203666
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 14
+    },
+    {
+      "archive_record_index": 146,
+      "node_set_sha256": "1e0b3ab0d271dc17718016d2210bf27008ca6d43d1fdbe8c33dad73912f7c81d",
+      "canonical_edges_sha256": "b3c75ce2c9a075778a35b304ae0ad7059b8af7cd42b1c0ba8034bc4f994a8671",
+      "drnl_sha256": "412632c2ab25bebd19b703402a963ba6e5664e555c38e3ce02a2ba0906dd2024",
+      "sum_out_degrees": 276433,
+      "induced_directed_entries": 1348,
+      "pair": [
+        32691595,
+        11174627
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 18
+    },
+    {
+      "archive_record_index": 149,
+      "node_set_sha256": "e3c936896fd5ec2b3682a90c3873be41475bf07104c99e47e1fe55ce1deab166",
+      "canonical_edges_sha256": "5aad4284674841b97220eb20797cf15c01303166934d1eeb6915622ddf336d4a",
+      "drnl_sha256": "e184df81f95703f81eb00eb57d119efb7b8914713317f2e171cd38fdcae75bd1",
+      "sum_out_degrees": 57602,
+      "induced_directed_entries": 736,
+      "pair": [
+        15281505,
+        12638681
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 21
+    },
+    {
+      "archive_record_index": 151,
+      "node_set_sha256": "c1d558bf2a08d1a50a4a617741f8e4fb9cafb1dfef02c735ba25936a597d8940",
+      "canonical_edges_sha256": "c36785ce4bb21a1d344c5d1b053e2edfadc5c1772e9f536695df07361f639fac",
+      "drnl_sha256": "cd8df4272f802b3ae602b21f4ee76e90d4658bab8e5e0f9b872d7fc343949e2f",
+      "sum_out_degrees": 104312,
+      "induced_directed_entries": 2382,
+      "pair": [
+        16753162,
+        7858455
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 23
+    },
+    {
+      "archive_record_index": 155,
+      "node_set_sha256": "6bad12deb225f596aa22c86ed5f81bafe1ed10be70bb33c62418194c0ca8332d",
+      "canonical_edges_sha256": "8f268d404143a41750c1e0d726e97afdb39e889c021a210efbfadd1fc1037568",
+      "drnl_sha256": "8b66bc581c42e0da11763fa7cc7f3df2aad041fb2db6265ba7eb094a732ce885",
+      "sum_out_degrees": 180621,
+      "induced_directed_entries": 1534,
+      "pair": [
+        35848465,
+        27708789
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 27
+    },
+    {
+      "archive_record_index": 170,
+      "node_set_sha256": "c31d53a6336e2983d793b895e9dcc49ef91c1e440ee9ff66811ff8c7a2f11dea",
+      "canonical_edges_sha256": "766f601318141e103dfece85e8e75dff8d3a547c671c685eb36fbd8ca4bcf0d8",
+      "drnl_sha256": "db47de4399f827cc0584c4f3b8fbe38d3da8f96d6e190567a664500da082c7a6",
+      "sum_out_degrees": 230547,
+      "induced_directed_entries": 1054,
+      "pair": [
+        3096223,
+        19769408
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 42
+    },
+    {
+      "archive_record_index": 181,
+      "node_set_sha256": "d5e351466328335903b8252d086a85f741e54fc316c24f1e85706b5fd210d16a",
+      "canonical_edges_sha256": "3b3d5687ad86840924d2a86b07ff35aa672d0ecc55eaec9f4f2bf81c031b5cc9",
+      "drnl_sha256": "fa9e0bd163116b7baf76b2432517c48f1d054319360edaef70706085b39c38b4",
+      "sum_out_degrees": 151628,
+      "induced_directed_entries": 1724,
+      "pair": [
+        39350302,
+        6831979
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 53
+    },
+    {
+      "archive_record_index": 189,
+      "node_set_sha256": "4d687af704eb973077f2906951bf574a3f0e8bedd85d4f13c67fca3e18355315",
+      "canonical_edges_sha256": "8530b17dbe25cb5de20737438100a82c8bc004ef97c2f291e183b5a5f3b59141",
+      "drnl_sha256": "04e9497887f3aaa6c59b95d5b8c6df7b22e055f1a439a00125ff1872776f4e4c",
+      "sum_out_degrees": 122781,
+      "induced_directed_entries": 586,
+      "pair": [
+        21571057,
+        42884678
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 61
+    },
+    {
+      "archive_record_index": 190,
+      "node_set_sha256": "46cbcbb33cc1ed5945264055d3b12b447090eb1e58aa435f612bd8a84c93ac82",
+      "canonical_edges_sha256": "fb9e3f7e3be0abd2895105a52ba75f413e1b5e9fed6734953a534f86e80e0766",
+      "drnl_sha256": "d4c6ce251c58087a15367dacc2ff85a6ebc45b7ab84d9d2889d54f28ce20c49b",
+      "sum_out_degrees": 166803,
+      "induced_directed_entries": 1108,
+      "pair": [
+        18651480,
+        16509794
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 62
+    },
+    {
+      "archive_record_index": 199,
+      "node_set_sha256": "a324c1f4492181806f058ea8adee1ec27e50081a00e564456d699463f6eca90a",
+      "canonical_edges_sha256": "e6d2c22a308ce3944c1bc39ddf87ff9705932c64c3f286e83f3c83af1819f391",
+      "drnl_sha256": "f8102480c6ba5d07cb8731f2360ca891e568ba540523d84b901eef4ae1b26b04",
+      "sum_out_degrees": 241226,
+      "induced_directed_entries": 2388,
+      "pair": [
+        29943612,
+        24548020
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 71
+    },
+    {
+      "archive_record_index": 207,
+      "node_set_sha256": "047c2140566f456c595867cc847378569473f89b872a4bf99583226e8cb4ff61",
+      "canonical_edges_sha256": "e3f9a147a63763a0df31728f95853524497187eff4a10384b6ee6bc4479eea29",
+      "drnl_sha256": "7f69a2d3bc1d2d40bd5ebef947b058d61633d24254b0193aef5f951da9d4d771",
+      "sum_out_degrees": 252158,
+      "induced_directed_entries": 996,
+      "pair": [
+        23267781,
+        8112443
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 79
+    },
+    {
+      "archive_record_index": 218,
+      "node_set_sha256": "660a18ad3fdae3722708c2c1c11c5de502c3c061ac5935634412af433dbcd867",
+      "canonical_edges_sha256": "dbc97f88a2990724e454180e4cfd59ee0670f8c8787664260159144bc693c525",
+      "drnl_sha256": "01b3853ec16f82d4cd6f0a4084e9a24863b14648c96d8aba947831f59843a3ca",
+      "sum_out_degrees": 46543,
+      "induced_directed_entries": 576,
+      "pair": [
+        6053326,
+        3028834
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 90
+    },
+    {
+      "archive_record_index": 225,
+      "node_set_sha256": "645ac7081a2a51c1380f30f1133e3ae280b527494943b0fd80a36c5ff30539b3",
+      "canonical_edges_sha256": "b560853dcd6e926648fab8989c890fb2e4631148b8ebb82a0b3ed44521506cea",
+      "drnl_sha256": "74fb810db13036697d6f687c061f36611a4afc93578eba34d9bde61a2b1683da",
+      "sum_out_degrees": 85209,
+      "induced_directed_entries": 488,
+      "pair": [
+        18037641,
+        24302087
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 97
+    },
+    {
+      "archive_record_index": 230,
+      "node_set_sha256": "b58d57395f4494c6883579a92280712878d1e7ef5deaeb36ea6cae9981320282",
+      "canonical_edges_sha256": "6540b992ae3d9e851ff1e42a130e0b04c3c0441c4c57bde04ca6e9f0bca52eaa",
+      "drnl_sha256": "5949184d1aedf385506d377a8ad11bac4fba27363e7a845eb6f67793848a61b9",
+      "sum_out_degrees": 169539,
+      "induced_directed_entries": 1558,
+      "pair": [
+        9325071,
+        11856811
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 102
+    },
+    {
+      "archive_record_index": 238,
+      "node_set_sha256": "77559708d801a213b0921ac76625f694e3fd869308122e3d9b6a0f538d2af89e",
+      "canonical_edges_sha256": "c367a363a8d7152f0f30dde0f041926cb746de5942c550002708697356173648",
+      "drnl_sha256": "21935e7c0a95eaf7691e9d839b28d16479387bf67fc23c135493e01eecabd2ca",
+      "sum_out_degrees": 229716,
+      "induced_directed_entries": 926,
+      "pair": [
+        12537700,
+        12902502
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 110
+    },
+    {
+      "archive_record_index": 239,
+      "node_set_sha256": "473d157e79b39e112facc329c432ea70d9ff3ed27f7865bed8da8fc56c24b489",
+      "canonical_edges_sha256": "2f4ad5d20db533e2920c65c8a1348b45f41769eb64753c7a257a6d30c259156d",
+      "drnl_sha256": "d176c573b5a0e203ece18f1a837ea39c26729554d5f77e1872499240ee1fb594",
+      "sum_out_degrees": 155434,
+      "induced_directed_entries": 1142,
+      "pair": [
+        5524972,
+        15087399
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 111
+    },
+    {
+      "archive_record_index": 248,
+      "node_set_sha256": "4a8797c2b033389a9f607c0abcbb458eed96638021eb43ee235be707a5a9369f",
+      "canonical_edges_sha256": "fa8a836f6828e03856f0f6271b139868cd2aef9394cf61df3130d389e9148d3d",
+      "drnl_sha256": "876e88ab9b4beb06b325697c2080fa40b40b87113a48ebfcd2735db113ec1f7f",
+      "sum_out_degrees": 129326,
+      "induced_directed_entries": 1038,
+      "pair": [
+        24778493,
+        42448649
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 120
+    },
+    {
+      "archive_record_index": 251,
+      "node_set_sha256": "779571f9c0677350662f77c5a347018ce73fadbc67d70dfd17d02089b35c053e",
+      "canonical_edges_sha256": "514cc900fc1241ffe2f120f3087699bfb627541682cad4379241dadf4e43f049",
+      "drnl_sha256": "5c3c392df538fae4b037acca643263d422f6e3f668b44709324800506d71c6e2",
+      "sum_out_degrees": 166195,
+      "induced_directed_entries": 1222,
+      "pair": [
+        35974502,
+        3852805
+      ],
+      "sampler": "reference_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 123
+    },
+    {
+      "archive_record_index": 259,
+      "node_set_sha256": "448c2b297fb8ea30177e411ca726c0462559863d01fbea629e9dfda55b58c5f7",
+      "canonical_edges_sha256": "e4bf474c39c1ab751a7d719bf95569fa95826a36c72cd85b352200ecb1ae1ac1",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 39746,
+      "induced_directed_entries": 240,
+      "pair": [
+        41866050,
+        14892626
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 3
+    },
+    {
+      "archive_record_index": 266,
+      "node_set_sha256": "04a2c2bc488aaf5cd5043f70dd8edf4eda8381a8af2f392d612ba5f8860e51dc",
+      "canonical_edges_sha256": "3b958545d066d0b94b7e33369b0d685f80e05d076c202991600b355c5fee9f9b",
+      "drnl_sha256": "1addf6c6c1120ca11c6d1818eeba89c614fc8ddef7d769b8c74f82abb7739bbe",
+      "sum_out_degrees": 81521,
+      "induced_directed_entries": 214,
+      "pair": [
+        31447163,
+        15074586
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 10
+    },
+    {
+      "archive_record_index": 271,
+      "node_set_sha256": "8a28136fd61131641e05224df4f93be5356a1c74572549f273ce84937718fa8f",
+      "canonical_edges_sha256": "7980c5404f89b5c321a4cf3abd86e61ca215a4e493b860e073d47159d1612d74",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 28038,
+      "induced_directed_entries": 216,
+      "pair": [
+        6217645,
+        3977949
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 15
+    },
+    {
+      "archive_record_index": 279,
+      "node_set_sha256": "b86ebf330f7ccb753109aec22ef5d9922f579adbcac8143992389e2983bf4b08",
+      "canonical_edges_sha256": "84309de948e5567a3790c0ad532d907b90f4cdc6744f674c7b60fe04bfccb8ff",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 22898,
+      "induced_directed_entries": 352,
+      "pair": [
+        16753162,
+        7858455
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 23
+    },
+    {
+      "archive_record_index": 282,
+      "node_set_sha256": "0a3dce75ea1761a0242cfc4ebe2e37b7d8416eb820890943d3abe5c362440eb3",
+      "canonical_edges_sha256": "126e9d355d09692dff3994f17a14de9cc295117dcd614fe5a634af9a6d7b78d8",
+      "drnl_sha256": "ba8ae7353b9ed07b928ba7f0bbd51abbcbbdc12108b4af9dbe6de2b019060e1e",
+      "sum_out_degrees": 52927,
+      "induced_directed_entries": 206,
+      "pair": [
+        15586512,
+        7767065
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 26
+    },
+    {
+      "archive_record_index": 287,
+      "node_set_sha256": "ff4972b4bfd06dff243483ea654168e868e0448a1cd518352ce881c3b34023df",
+      "canonical_edges_sha256": "f0d95e9d5db332b7dffd47dc6efc99e218bdb53fb8764473545f687c6e507570",
+      "drnl_sha256": "c56527c390554db10f9b0921974ce8b29cb873ed5b5b7c488583d39f3d544483",
+      "sum_out_degrees": 39756,
+      "induced_directed_entries": 250,
+      "pair": [
+        14630459,
+        25799269
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 31
+    },
+    {
+      "archive_record_index": 293,
+      "node_set_sha256": "30dcd73006f08c394a3c0b779cdb989cdb3966404cea6d10f9a980de7f9f3622",
+      "canonical_edges_sha256": "b86796d96349ace68c9b46bcdeb84bc58a1f90f7f3deb5eda3275c83d5554074",
+      "drnl_sha256": "5e4ad0bcf54bbf32d4329037ce8b43109f664c68a9f12be0019c8a499cbeed7a",
+      "sum_out_degrees": 39255,
+      "induced_directed_entries": 214,
+      "pair": [
+        41854936,
+        31921852
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 37
+    },
+    {
+      "archive_record_index": 298,
+      "node_set_sha256": "117a284e52b04b5f6c757149d45e81f33b2bee3f4b9b42ce792d5ee2f467141c",
+      "canonical_edges_sha256": "e5da73c2b4d0d97114bbdb4623f9355f34e8c91527fb450875823050dba4230d",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 76249,
+      "induced_directed_entries": 220,
+      "pair": [
+        3096223,
+        19769408
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 42
+    },
+    {
+      "archive_record_index": 299,
+      "node_set_sha256": "59687a581aea72c39be505cdff5ec4e4025db3d7dbb0088c5176f6187f611cf8",
+      "canonical_edges_sha256": "802752277b41c358b5acb69c62eb0734a782dd5a12a52cdf7547fa7ac310ac16",
+      "drnl_sha256": "1a7b2640c1b504983dec7e3b9edc5302d8dac5fd804f2883b66ade6994318e08",
+      "sum_out_degrees": 50770,
+      "induced_directed_entries": 218,
+      "pair": [
+        59297345,
+        17829719
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 43
+    },
+    {
+      "archive_record_index": 300,
+      "node_set_sha256": "3e72c77f43191db1dc9b11e08b111e827182415801092ae226d575b0d1f05abe",
+      "canonical_edges_sha256": "5069e028373306b56600e68001854a20f24be662dc4082c1da1487cf09374088",
+      "drnl_sha256": "b21202017b86c1ea9170c18442da5f37e62de629fc738d113e25ec94ca2f48a0",
+      "sum_out_degrees": 46812,
+      "induced_directed_entries": 236,
+      "pair": [
+        1498022,
+        18038464
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 44
+    },
+    {
+      "archive_record_index": 302,
+      "node_set_sha256": "bdd917709a4a9643f7ae70d2a248a8dc5a1b9e2c6f8b04afbc5882c6841e1f79",
+      "canonical_edges_sha256": "9d5f51ed9d79a1ba0ff7202c81f8306445e0c45de44039525ce3273801fc9b0a",
+      "drnl_sha256": "603c8d41f8c937e6250d5cd5385393717945eae9a0a682a810c309502a047807",
+      "sum_out_degrees": 20153,
+      "induced_directed_entries": 378,
+      "pair": [
+        1116860,
+        1200891
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 46
+    },
+    {
+      "archive_record_index": 316,
+      "node_set_sha256": "640a781622ca04e461d43b990c3b6ec9cb2e3d3ef1450292d80f4d013ede975e",
+      "canonical_edges_sha256": "acdcdc00bc1b1c1eb8ad73937ade46f2407d221475ba910c488d0a01e6697dfd",
+      "drnl_sha256": "7fb88522397c8f80403f56fc1e3257dd9f49358d5e8d5400603ade452003d79b",
+      "sum_out_degrees": 25504,
+      "induced_directed_entries": 246,
+      "pair": [
+        13205891,
+        18466837
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 60
+    },
+    {
+      "archive_record_index": 321,
+      "node_set_sha256": "a8de0aea251a0cd34c56eb6e6275f550693934b468f8ddc9e614d14c7159d403",
+      "canonical_edges_sha256": "3f71c2d16e2e61125d1a5c5578e06410b015e7241b238ca4c371ed894cca240e",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 61788,
+      "induced_directed_entries": 270,
+      "pair": [
+        45994894,
+        26395667
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 65
+    },
+    {
+      "archive_record_index": 324,
+      "node_set_sha256": "bc999ddeb6d019b9b1d8a787d5b92d5e2fc8eb4d32b8f0283618b5a78f4057e6",
+      "canonical_edges_sha256": "e9645122ff14471cdcd6b7289177eba80762009b7edd2ff47ddc8df2d4338cab",
+      "drnl_sha256": "8c26efeeb6c9724bb881673d3131387f34e49d82a47238234620786a41a32cb5",
+      "sum_out_degrees": 57100,
+      "induced_directed_entries": 264,
+      "pair": [
+        7265545,
+        12519788
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 68
+    },
+    {
+      "archive_record_index": 325,
+      "node_set_sha256": "af50716099178e6427fe3f63f6ac6638327034686966f4560fbf0a5c46bbe240",
+      "canonical_edges_sha256": "641e50679eb3a314ae126b21e4b38c84945f57de016bbeea5e6b5c9d9df25345",
+      "drnl_sha256": "ddb960b1d582acfe5e016ae4c112fbd620a7dbc83cf04217bd29e3eae596b678",
+      "sum_out_degrees": 33046,
+      "induced_directed_entries": 306,
+      "pair": [
+        47829750,
+        24803790
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 69
+    },
+    {
+      "archive_record_index": 331,
+      "node_set_sha256": "afb1b2ff04c334284ef9e19dac91240d74f7862f732baf561451bb0aa7d10dab",
+      "canonical_edges_sha256": "e1a2910bae6a36a76a9f0ffa22ec7ad16822659b71fdd3c14c3cb8f7b593f513",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 52101,
+      "induced_directed_entries": 210,
+      "pair": [
+        3590562,
+        1780075
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 75
+    },
+    {
+      "archive_record_index": 334,
+      "node_set_sha256": "53c06f244163c9d19696b099235d7ee38b821aed0a8729bd81d9423ff6b393be",
+      "canonical_edges_sha256": "62900e9a72b79eeebcde07be8370838d371c6dd50a8c885b26df387b0d50912a",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 63093,
+      "induced_directed_entries": 200,
+      "pair": [
+        1170172,
+        14514504
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 78
+    },
+    {
+      "archive_record_index": 347,
+      "node_set_sha256": "48de2dd0b08dcc6df8bea6159a687530ef0017d369f21b4295c8c91a5a07aafa",
+      "canonical_edges_sha256": "542a9554023e74cceffc7e6bf876ae3fca3a5ae135de0cb53e055af7994247aa",
+      "drnl_sha256": "7d169d55c10635ff906cbc0590234a957cd69c8fbd8a9db0544b3a0f08141d10",
+      "sum_out_degrees": 35437,
+      "induced_directed_entries": 292,
+      "pair": [
+        51017472,
+        8403602
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 91
+    },
+    {
+      "archive_record_index": 351,
+      "node_set_sha256": "65d1710621877c4d7c346604bac28ae9951ce088ac7aeb4e70c302fc2b326495",
+      "canonical_edges_sha256": "530914ddd4410adff2757f317ce1a6419ea7a1801dda1c88b976963a767fcd0c",
+      "drnl_sha256": "ff7c3fd4bc3e4bddf5ac3998ecdf680403ea24cff2e5f5bda6d0fa8450d61723",
+      "sum_out_degrees": 50514,
+      "induced_directed_entries": 250,
+      "pair": [
+        52828184,
+        30638064
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 95
+    },
+    {
+      "archive_record_index": 364,
+      "node_set_sha256": "7e3163bbe5bad5189e9979984c4afc62b14a9fcddf7e5260af97af149171d10a",
+      "canonical_edges_sha256": "5b8149b367db21f2fc93d05b3a112343b2afeaa1bf6322c919c666879fb8bf79",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 47222,
+      "induced_directed_entries": 234,
+      "pair": [
+        12177890,
+        37886587
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 108
+    },
+    {
+      "archive_record_index": 370,
+      "node_set_sha256": "e2c7c4daa490de37cf1bc9375b7fff93ec011b832f169d31e3f293720edcbf64",
+      "canonical_edges_sha256": "bba9b042b720b110be265cc6ed46953eba167bc5059b4c491ed94d5f0d578a27",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 29144,
+      "induced_directed_entries": 342,
+      "pair": [
+        35685777,
+        10220662
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 114
+    },
+    {
+      "archive_record_index": 382,
+      "node_set_sha256": "26d43dd8a538426b68d45395fef9cb28301f2bfc0232083b827f6e0b85ebacfc",
+      "canonical_edges_sha256": "b395030a34123662da29236bc5d339c1068c38ed96860424dbd839e265f0a228",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 69704,
+      "induced_directed_entries": 210,
+      "pair": [
+        11621967,
+        6215081
+      ],
+      "sampler": "production_union",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 126
+    },
+    {
+      "archive_record_index": 393,
+      "node_set_sha256": "31bdedfed08e57d862294a57fc6363217ebc2615d4b64cc8878b93712a848c67",
+      "canonical_edges_sha256": "1d11e98cd6edb3e557ae8df18912bec1103f0cfb2fd6e987c07a470de05c5209",
+      "drnl_sha256": "d80db56cea30c1397e820f5eb48f1c2e5f6814f102fefea0a8be0a86a8ac93b0",
+      "sum_out_degrees": 156955,
+      "induced_directed_entries": 976,
+      "pair": [
+        59873466,
+        11111774
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 9
+    },
+    {
+      "archive_record_index": 395,
+      "node_set_sha256": "51e962555602829b506102a8b585ec34cb8dde9c869d7f05f1d07382f7e8cc31",
+      "canonical_edges_sha256": "7bc50ea7da3f88fec82394e5cddeee54be1fba2b4002ed243db4a108817e9ddd",
+      "drnl_sha256": "a32179c0e6a4d936fd8a31e01bceb98413e8bcc7b66e63f6e4c4fd46de85aff8",
+      "sum_out_degrees": 56158,
+      "induced_directed_entries": 2686,
+      "pair": [
+        1319923,
+        3102765
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 11
+    },
+    {
+      "archive_record_index": 405,
+      "node_set_sha256": "481a2ae5883dd0f952890d99055ad4e687a903730aa2f53e8057ba7ae1bb5e14",
+      "canonical_edges_sha256": "3c11335aabab19ba22f7bcf64336b1376c8a00f30722b22a868b7cd3fa2c7868",
+      "drnl_sha256": "b1fe92ce8b1afe2dcc07a3f2c1a1af757575aa17dd51136e0cf4fa7d64197865",
+      "sum_out_degrees": 53394,
+      "induced_directed_entries": 774,
+      "pair": [
+        15281505,
+        12638681
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 21
+    },
+    {
+      "archive_record_index": 406,
+      "node_set_sha256": "5bf64b418ae9b7a840b1f5cfd6698bc83b32370e30e69500a71d71148c9378e1",
+      "canonical_edges_sha256": "d2b9fc84f53c1df936e5e7628eaab99ffc1100c71fe7e8a754472421bc671419",
+      "drnl_sha256": "a5ba33d2925a9f9bee7b6cbe49072ecc55ce54932dfddf99a2a56c23d04b51e2",
+      "sum_out_degrees": 128096,
+      "induced_directed_entries": 1506,
+      "pair": [
+        2310115,
+        7752275
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 22
+    },
+    {
+      "archive_record_index": 412,
+      "node_set_sha256": "3160fec062af5ce696d8d91ea3cb53dc149dfad460cabc85bcdcb27181628db1",
+      "canonical_edges_sha256": "48e18166de7d457e635d3232cb4e1dfbc073d078dba5f9cc335f4d4f59869ab8",
+      "drnl_sha256": "9863e91ca55cdd6550ec1080256c3aec2835921f4957d9a7deaedbb37eb05c21",
+      "sum_out_degrees": 43583,
+      "induced_directed_entries": 3234,
+      "pair": [
+        3785951,
+        752686
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 28
+    },
+    {
+      "archive_record_index": 424,
+      "node_set_sha256": "9f45fd3b5ae0352fde2f39cc79271cbde11960a32b2ba542a57c364aebf51e48",
+      "canonical_edges_sha256": "950d32357fc0150cbf210867b66eddcfd36cf0502aa82c4e51dc03c8a90dcd48",
+      "drnl_sha256": "d8f518e47decf907e507eb7a1b9061895402cf105239c2d81b6e63536e0f873c",
+      "sum_out_degrees": 206589,
+      "induced_directed_entries": 1252,
+      "pair": [
+        2706851,
+        2894538
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 40
+    },
+    {
+      "archive_record_index": 425,
+      "node_set_sha256": "f2fc46499077425f4164bce9353aa27baf34ea149857d9945817ad73e1e8d4e2",
+      "canonical_edges_sha256": "1557784ce0ca5a3fc57f564a2cde0558a3de705a99253f01a972634e9987f844",
+      "drnl_sha256": "9d7fe6b1c88a62344f95247878b2862d95a2babd71eb9ace6c9142051551f0b6",
+      "sum_out_degrees": 276657,
+      "induced_directed_entries": 1122,
+      "pair": [
+        8669398,
+        29345796
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 41
+    },
+    {
+      "archive_record_index": 432,
+      "node_set_sha256": "fa1016555d5f199d69114af882b7254aa4d8345aaea04a00463fbe93ed80fad3",
+      "canonical_edges_sha256": "9169620601ba86e049868ebfa67fa03ee7048545dc26b35b868b3842497e767c",
+      "drnl_sha256": "879266bfb2e49eaa50f0aad2b9911275d1dba5b6f10a07d8d5fe638fb84d13d6",
+      "sum_out_degrees": 171152,
+      "induced_directed_entries": 1852,
+      "pair": [
+        25407123,
+        45194301
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 48
+    },
+    {
+      "archive_record_index": 439,
+      "node_set_sha256": "c57f0030fbe3ebff035ddf6f7dc31879aa0d74205227ea4cda83145186bd4b38",
+      "canonical_edges_sha256": "afb0d6124e5203b0bcee2282865fdc2efe960cc1f630f649b1da68fc58758902",
+      "drnl_sha256": "3db78d5504b923f5dfb54c9cc1a627ee42b4605799411a7be246dc804383e009",
+      "sum_out_degrees": 94966,
+      "induced_directed_entries": 1626,
+      "pair": [
+        56361558,
+        1796813
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 55
+    },
+    {
+      "archive_record_index": 441,
+      "node_set_sha256": "1cd313a9033edef0635a88a903e48a78cf7b3c613a31b55f598c9989b3260064",
+      "canonical_edges_sha256": "959020a17b27d686231c9a7e0ff7cf74747590f6046cc03b9e0e2febd8afa558",
+      "drnl_sha256": "81f04cb44c607649c58bc08ab3e25c7b6249e9c6a9413c86640e47283df27279",
+      "sum_out_degrees": 135358,
+      "induced_directed_entries": 1336,
+      "pair": [
+        64667435,
+        28449995
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 57
+    },
+    {
+      "archive_record_index": 442,
+      "node_set_sha256": "a21a9626034dd1a2d9c67ebae18935b1bbf06353751695bd945cbf220a1e6bc3",
+      "canonical_edges_sha256": "c73ffdb16294526a760d2df3c2531365d006f732fc4f14d40cc81f9f95cffb3e",
+      "drnl_sha256": "4235744151e878ad9cfe5b16f3400f4826a410adf1e3a9afd8f2579e2587a7a4",
+      "sum_out_degrees": 200301,
+      "induced_directed_entries": 876,
+      "pair": [
+        12670954,
+        23028204
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 58
+    },
+    {
+      "archive_record_index": 451,
+      "node_set_sha256": "91646a9fbbe94ce4f72f2f367a7ca5ddcbdf21c2e9a5daed734136b923ab996b",
+      "canonical_edges_sha256": "318dffdfeef0ea37e21f523bd3bcb76ba64076dceca24f6a07307005596071a8",
+      "drnl_sha256": "174b8180d7e01e0e07df43338b27350aa6156770f03a26dea80a8063490e5426",
+      "sum_out_degrees": 71699,
+      "induced_directed_entries": 1276,
+      "pair": [
+        38981165,
+        1059258
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 67
+    },
+    {
+      "archive_record_index": 452,
+      "node_set_sha256": "ce70c10e6e37c476259827fa8c33b6bd0853d064613d277b922da3de64341f04",
+      "canonical_edges_sha256": "59759496b258d9edff33e1cc03c1ea4ffdbccd546c717ff374629dd519529518",
+      "drnl_sha256": "ab41eefd4f1867f88c438779c7ae5a8cf77abdd196215a97ba1505f726803dde",
+      "sum_out_degrees": 205543,
+      "induced_directed_entries": 1980,
+      "pair": [
+        7265545,
+        12519788
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 68
+    },
+    {
+      "archive_record_index": 460,
+      "node_set_sha256": "9188537888d8c2e8ffa432b2aaf3049f51368965d6d515d28298146887cfe42f",
+      "canonical_edges_sha256": "c39f920f5712601c2dc9f8dd711464f735a731b4651123501be8cd92527cadba",
+      "drnl_sha256": "fa9e0bd163116b7baf76b2432517c48f1d054319360edaef70706085b39c38b4",
+      "sum_out_degrees": 239457,
+      "induced_directed_entries": 1090,
+      "pair": [
+        8781188,
+        55470479
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 76
+    },
+    {
+      "archive_record_index": 468,
+      "node_set_sha256": "1ce6dbea288d18d36bf35ee4dce070cf23bf8b17ef5dd3bce320a98c4ef005bd",
+      "canonical_edges_sha256": "fad27efaee53c8a1e9d105f10207574a93056c3ba67ccdb173f8a3fd4b6acfd3",
+      "drnl_sha256": "d15756f416abe94a3f2081d87f78aabb30a09a1d01f68f28ea23d4e3f7624419",
+      "sum_out_degrees": 57837,
+      "induced_directed_entries": 1480,
+      "pair": [
+        3082729,
+        20607254
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 84
+    },
+    {
+      "archive_record_index": 473,
+      "node_set_sha256": "9ba2a65753223cf00352826a7eb561500dbc98774d98a7ee0a8022657629cb29",
+      "canonical_edges_sha256": "c22a1e229464df2e0a9d5416e488810188fcaaca85d8cb143c403c6ef57abde1",
+      "drnl_sha256": "49a1d74dc2d5d63003e9fe4ab61f090b439eb5a5b39d9f6570463ed67a44955f",
+      "sum_out_degrees": 138756,
+      "induced_directed_entries": 3108,
+      "pair": [
+        5692395,
+        15836720
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 89
+    },
+    {
+      "archive_record_index": 480,
+      "node_set_sha256": "64e627af7e73fb9f477bd118df9f99ef00c49286598872568aecd13ec131fc65",
+      "canonical_edges_sha256": "cd2b84b5fe259ebcb6129d05d61e3a1a8a9c45eaefe5431811a85559677b4565",
+      "drnl_sha256": "4e4324e7e6c57ca52fe9ecff41cba2afd5ef7e2db0aeb98e9b2f47442ec15538",
+      "sum_out_degrees": 239332,
+      "induced_directed_entries": 1026,
+      "pair": [
+        25419913,
+        11347218
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 96
+    },
+    {
+      "archive_record_index": 482,
+      "node_set_sha256": "42796f372018cfc56614b058619b74cf5f2f7eb0c65e278a500c7d3415393d72",
+      "canonical_edges_sha256": "16e421dbd24edb25a25d8dcd3cd8a296e3715624e85354ef4e5c905ac54f6496",
+      "drnl_sha256": "cd6d8c677bc3dbed971b0c026f1875a2a2afd57ea99755ad93c76aed7d6dab63",
+      "sum_out_degrees": 160509,
+      "induced_directed_entries": 842,
+      "pair": [
+        13350171,
+        2679346
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 98
+    },
+    {
+      "archive_record_index": 485,
+      "node_set_sha256": "fa235131887216ac86b5c9bd4b3df30ce34741869389ca4d1fea775a604d6d48",
+      "canonical_edges_sha256": "1468ba9e964088e9a3c9efffc4701e46726d5cb7e2f0675918f82e339735d39b",
+      "drnl_sha256": "fa9e0bd163116b7baf76b2432517c48f1d054319360edaef70706085b39c38b4",
+      "sum_out_degrees": 295952,
+      "induced_directed_entries": 1080,
+      "pair": [
+        51204474,
+        20718258
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 101
+    },
+    {
+      "archive_record_index": 503,
+      "node_set_sha256": "b8069565d622fcbe79be10acb926f20a82ed6e49a42e41238b66b06fc5915b65",
+      "canonical_edges_sha256": "8b91ad437a7baee2f24ac15e1b7877b5a5368d8f29de42aa7ca2d0a7606da49b",
+      "drnl_sha256": "a5abece3a0964823db956a544964c4dbcf992e644d4ccd36f3c79ea4a9ba42c3",
+      "sum_out_degrees": 112652,
+      "induced_directed_entries": 1182,
+      "pair": [
+        19548120,
+        5952654
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 119
+    },
+    {
+      "archive_record_index": 510,
+      "node_set_sha256": "91daca8f7719a305487252602cfa7af74ee8382a1e44abc8951504d8dd4e00cc",
+      "canonical_edges_sha256": "c1ed457e51c5e95f763509d03f80ae155904e4a056e98157a4915b8634962f61",
+      "drnl_sha256": "d28904c4267369a23d46f93cbfb9b297ca48e15ac043496c88f2501b49969c65",
+      "sum_out_degrees": 195737,
+      "induced_directed_entries": 1094,
+      "pair": [
+        11621967,
+        6215081
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 126
+    },
+    {
+      "archive_record_index": 511,
+      "node_set_sha256": "31b0e5d100b8da18e4ab6fedeb78a768cb1929050eeae4dddf12fd58f3bb1f4d",
+      "canonical_edges_sha256": "880eb515b5a1b3a83267bb5294f9e1b96eab2bf54e14dc5af15b18261bf34ec8",
+      "drnl_sha256": "d9a5bb8b41fd82e5e31c3b883445ce2e378ab0cf459e540089c818485e961b0a",
+      "sum_out_degrees": 152063,
+      "induced_directed_entries": 1004,
+      "pair": [
+        13195995,
+        22020414
+      ],
+      "sampler": "production_union",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 127
+    },
+    {
+      "archive_record_index": 513,
+      "node_set_sha256": "27098b1f60caa7c5a9cd33d37418fb082e2a41546909c514ab7bca2018c854c0",
+      "canonical_edges_sha256": "f977e9ef9bcbb4af1be0a6666eebe59f83c06eca19a0d3794de7c463d7341f21",
+      "drnl_sha256": "f6bf1a8799975363914beb23862f830076592c8531eb25aced291ff14c00eed4",
+      "sum_out_degrees": 20649,
+      "induced_directed_entries": 406,
+      "pair": [
+        63031238,
+        34721882
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 1
+    },
+    {
+      "archive_record_index": 521,
+      "node_set_sha256": "4aa2c1661f25280ef82fc965205bf4b2e90d32dbcdce3d83051389712f28ff7e",
+      "canonical_edges_sha256": "37e6d898bbe9776c12cb47cb03dfabf64f50c625476f10f0c8b9cdc158c21750",
+      "drnl_sha256": "ae379e89da2eb4c75ab8dea21b7f57cfa9808c63ecbd8c2d69987fd8625eb7b4",
+      "sum_out_degrees": 30175,
+      "induced_directed_entries": 184,
+      "pair": [
+        59873466,
+        11111774
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 9
+    },
+    {
+      "archive_record_index": 531,
+      "node_set_sha256": "e491ebcde62e9fcaead338c231a6cc70e28e3287429a032dca329f4485a2b18b",
+      "canonical_edges_sha256": "aee7828d9d58014dae6162232bdd1d8130f7bc0767e40472f9c8afef1872fb79",
+      "drnl_sha256": "9926dc69e0ba8103fb61f16823759654b6959fe26b8547f195459ac2ab6db8a3",
+      "sum_out_degrees": 27099,
+      "induced_directed_entries": 336,
+      "pair": [
+        17257154,
+        16504499
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 19
+    },
+    {
+      "archive_record_index": 534,
+      "node_set_sha256": "52adeefb13dcb19ff3b25d43d8c1864fe86d51f85c1fe16e5f07ed5adf6802bc",
+      "canonical_edges_sha256": "5ec7cafbee7920da23e7506f4e79f63871c54dd648f6c5c5959c2d22445eb4dd",
+      "drnl_sha256": "912786d1fd0050396bcc2ee872cb7923615f8917f4dc805b445d09fbb91fbc53",
+      "sum_out_degrees": 39241,
+      "induced_directed_entries": 296,
+      "pair": [
+        2310115,
+        7752275
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 22
+    },
+    {
+      "archive_record_index": 539,
+      "node_set_sha256": "b3f4a54dbda415e82fe269a2b40ff2ebde02c9d25ee9b77ec6ca08c4a5f9cdcf",
+      "canonical_edges_sha256": "2b8a7e4aed8687897cfcf20920ff53bdfbdc92c6cd213f91787eafbe1bc811a2",
+      "drnl_sha256": "f02fd1c4ed1c7e6369f4504403dccc9b42dcd907bb4d273f3066b6e35188981f",
+      "sum_out_degrees": 40440,
+      "induced_directed_entries": 254,
+      "pair": [
+        35848465,
+        27708789
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 27
+    },
+    {
+      "archive_record_index": 546,
+      "node_set_sha256": "3ba4fbd89b821b1080bc0cd48b2c79b1342e0f4b7a486b281779370be163b44e",
+      "canonical_edges_sha256": "da9357bca25a8c58edd62f0dbe9728d4895e29d3394a021a59c5bb7029c3cd4d",
+      "drnl_sha256": "0adf6cc05872913d875fbb50bf86feb644d768aee0a5e7b191f650217f70cad9",
+      "sum_out_degrees": 65316,
+      "induced_directed_entries": 336,
+      "pair": [
+        23243959,
+        15686581
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 34
+    },
+    {
+      "archive_record_index": 551,
+      "node_set_sha256": "2c191fd716f67f74e84d4dac69808a35a7a1b1bcc7000f2a636f4d161f2b7e29",
+      "canonical_edges_sha256": "5a576bfc113ab759f2eb11bee5fbeebb5cc43fa67c191b3b0b84da67fbdad073",
+      "drnl_sha256": "3997d450151a01939cdc6c6c8ae21a7c267f2d3cba5adf9005c2a9c9c3842479",
+      "sum_out_degrees": 57412,
+      "induced_directed_entries": 254,
+      "pair": [
+        45145410,
+        4739927
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 39
+    },
+    {
+      "archive_record_index": 556,
+      "node_set_sha256": "f048ceb7badf07e1571fcdf99ddd903b5ba468c75b26fa462ae73f5807743578",
+      "canonical_edges_sha256": "78d7403e3185e6b92b87c61e525970f9a62480523472df171dfd4e628d9254df",
+      "drnl_sha256": "ea4b7ff9768d46037fc87d458cc9b667f70a1c987e39317c2f32f1e12850b053",
+      "sum_out_degrees": 45272,
+      "induced_directed_entries": 308,
+      "pair": [
+        1498022,
+        18038464
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 44
+    },
+    {
+      "archive_record_index": 569,
+      "node_set_sha256": "d3640c4db5b92af11ff0c88872bb4970789718391a1d379110f7223cd0c437c3",
+      "canonical_edges_sha256": "355d6d8ba67aff6a8958f597eaa403910003f98f4c7bb45a5994ee22e2a99cfd",
+      "drnl_sha256": "0972a72587b2d7153475e23383f294feb592379c53d64e1ba241b89c00912c0d",
+      "sum_out_degrees": 40129,
+      "induced_directed_entries": 384,
+      "pair": [
+        64667435,
+        28449995
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 57
+    },
+    {
+      "archive_record_index": 570,
+      "node_set_sha256": "a32e4121c7bd538dc3658978a4bf9df7b4e58b10abf2a7b19a383e4af9d6d1db",
+      "canonical_edges_sha256": "74c341bd8cb5ad35be60e644c793deffd6007f856535f36ec9abd82ba1fb22ef",
+      "drnl_sha256": "5023df025f306370c110de70eaa7e63dace564a294ec36159489daa1a743b9fb",
+      "sum_out_degrees": 62252,
+      "induced_directed_entries": 218,
+      "pair": [
+        12670954,
+        23028204
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 58
+    },
+    {
+      "archive_record_index": 573,
+      "node_set_sha256": "1c6ab14a0c383fe7a331c5efbcb4c078896a006251321eda90ab24639c5516f5",
+      "canonical_edges_sha256": "eaa1cd995fa639195a7d585859ca946d41f4b0566570dcb7c4293d3b3bfe3fbf",
+      "drnl_sha256": "99053cd207330e75d8a9405f64f0b20116cd70d6c72a8235b87d0ad7c61ac0f2",
+      "sum_out_degrees": 36129,
+      "induced_directed_entries": 200,
+      "pair": [
+        21571057,
+        42884678
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 61
+    },
+    {
+      "archive_record_index": 584,
+      "node_set_sha256": "6c2d887da80a19fa2b6eddf616ee82c563aecdc723b61fccb4a49024ef90aee2",
+      "canonical_edges_sha256": "20293ae1f20653beb676f21ca4364775114407c5a217695f6f2d98adb95c7d20",
+      "drnl_sha256": "cf761cff4c23035c030edc9bef93233507980357c569e2eca7bdf9fd27052c42",
+      "sum_out_degrees": 54351,
+      "induced_directed_entries": 314,
+      "pair": [
+        24655406,
+        29316528
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 72
+    },
+    {
+      "archive_record_index": 585,
+      "node_set_sha256": "6ca8f51f218e79de54c19f925b4bb971d14e50416882f459929eb8223670f5d3",
+      "canonical_edges_sha256": "82f698d2d7b75ec1fa62403342a902065769f873e2851802c0cee623258abd42",
+      "drnl_sha256": "988a0bf9874f408438c5f19be6d84747f3e3d1f310d0a4fd513c83bfa95c2afa",
+      "sum_out_degrees": 8385,
+      "induced_directed_entries": 248,
+      "pair": [
+        18780362,
+        50950869
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 73
+    },
+    {
+      "archive_record_index": 590,
+      "node_set_sha256": "ff7f68742d7336cbbccfe971907ae7ce047a8056389e47d9f109c9288e78b6ae",
+      "canonical_edges_sha256": "d6079314eee6f0e687f6c66dc5ad18e85e66cb5683e63a55e3241c8ab198b945",
+      "drnl_sha256": "5e9b0fc0e5e1ef0a8c7495e3b5155a5056d2c6ce5cd2669076665be74f63b682",
+      "sum_out_degrees": 55238,
+      "induced_directed_entries": 212,
+      "pair": [
+        1170172,
+        14514504
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 78
+    },
+    {
+      "archive_record_index": 604,
+      "node_set_sha256": "f2309f145f32ad6a669777fabba488e70a5abb562790144dbb818fafad1f5e1f",
+      "canonical_edges_sha256": "f17092a793ae4dfeeeecd5d2e6aba281a0e3fbe0cca95c98997489891bcd9a83",
+      "drnl_sha256": "af85194ae492c6608041efdcfa5debaeb3c52fe57c8517ee4d2e5a1bb471d3f7",
+      "sum_out_degrees": 23275,
+      "induced_directed_entries": 254,
+      "pair": [
+        50782126,
+        16405608
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 92
+    },
+    {
+      "archive_record_index": 608,
+      "node_set_sha256": "8b9af5a8d848442fedc9ad389d8c7a841d68cc9d7843d096a83b1c457f668fde",
+      "canonical_edges_sha256": "fb23818a00e9c452243c4abcfac84a6b32c658b9497700889408dd539d238acb",
+      "drnl_sha256": "0867864a6dd45296d41602dcc9969e4cbb2762f7aed670658479dddd355bb8d8",
+      "sum_out_degrees": 60437,
+      "induced_directed_entries": 240,
+      "pair": [
+        25419913,
+        11347218
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 96
+    },
+    {
+      "archive_record_index": 615,
+      "node_set_sha256": "fdce074e3613a1929c5db9c9f87e9dbd9a889e1609ef7162022632f836b9306d",
+      "canonical_edges_sha256": "0c6a2c86532cbefa59211c83c768f4037ff2f82cde971b00f36290ca1ef87292",
+      "drnl_sha256": "bdee7686c4182fb49047cf730983f2d833719b0e8e8d8610b5056c7a7d8435eb",
+      "sum_out_degrees": 4956,
+      "induced_directed_entries": 208,
+      "pair": [
+        1645382,
+        1645370
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 103
+    },
+    {
+      "archive_record_index": 616,
+      "node_set_sha256": "38ca5faee784f560cc186c12b208a90c9ab82261c6f5a4505cc41bc521df6040",
+      "canonical_edges_sha256": "aa4981e16ac905126d6f37d3aceaabe48eb8db5a4d322f761baea590d3600693",
+      "drnl_sha256": "2cf1dc461a8e785692a9419c0b5b96516c5bf04d092d2ffc9bf25a29d4cac360",
+      "sum_out_degrees": 49835,
+      "induced_directed_entries": 328,
+      "pair": [
+        37054705,
+        52564968
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 104
+    },
+    {
+      "archive_record_index": 619,
+      "node_set_sha256": "175be4f39bfde9bbe5e57f84e7e0f9cb38998dc8112c76ed8a68f020063e475f",
+      "canonical_edges_sha256": "86c464ccb5d7a49b71ee170244c7509f5829982b48b55ef4b4e683b3e500ff1d",
+      "drnl_sha256": "484915513ae5b9b49f5a31c1af56f3b3067d5c28570822918e2b58b2566d4797",
+      "sum_out_degrees": 22988,
+      "induced_directed_entries": 194,
+      "pair": [
+        38879936,
+        2743038
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 107
+    },
+    {
+      "archive_record_index": 632,
+      "node_set_sha256": "5e29b627c681312cc68fd46e014cefcf0e9fd73e7be36eff6dd88ad5a1bfa509",
+      "canonical_edges_sha256": "603bee227534cbec886972710bd54c1d771d5a3f8233bae72bbfba3fa0ba6bc2",
+      "drnl_sha256": "fccc4a617f662e52b43255a1ed3c62de4d6438e80796a0afd8632c325ab3d76d",
+      "sum_out_degrees": 26213,
+      "induced_directed_entries": 444,
+      "pair": [
+        24778493,
+        42448649
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 120
+    },
+    {
+      "archive_record_index": 635,
+      "node_set_sha256": "b156c9e7d4f76b4d3e4d6728147bef0699371044d2f68ca478664255569c63a3",
+      "canonical_edges_sha256": "ed6e29e888b2d2d142d98b228dc6065b6b832169c6fed41005ad7056a4ae057c",
+      "drnl_sha256": "6d92f9b83ce9f6e8380ee8a18ece5e60e47887b2d0ce334f5ef2f37d8f620867",
+      "sum_out_degrees": 47276,
+      "induced_directed_entries": 284,
+      "pair": [
+        35974502,
+        3852805
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "twohop_nonedge",
+      "pair_index": 123
+    },
+    {
+      "archive_record_index": 636,
+      "node_set_sha256": "b5feb846be64ba0ee9f6c5a920d940cb2ac5b7f9e9ca241347d796e3128a80c9",
+      "canonical_edges_sha256": "877e0a04c4722f5fde5a934827b189fa2d4998e2916198b099cb956d801134c1",
+      "drnl_sha256": "7b87b6ceab8d3663e5ee429605373fcd9ad16bf14a7eecd6b04b608945d56c73",
+      "sum_out_degrees": 21349,
+      "induced_directed_entries": 264,
+      "pair": [
+        11626381,
+        7899818
+      ],
+      "sampler": "per_vertex",
+      "cap": 50,
+      "workload": "positive",
+      "pair_index": 124
+    },
+    {
+      "archive_record_index": 641,
+      "node_set_sha256": "1af0b67f65837901f79e6f3628abdbdabbd32ebe504d6d85156a0624001f5307",
+      "canonical_edges_sha256": "92c063d306583509c9ce3c35641ba5af33c41ace1f2a22b38a4fa18ba9b5db0c",
+      "drnl_sha256": "0283734f3e87d7cc139c0544e99371d2071d686296b62bcc9850622ecc048e23",
+      "sum_out_degrees": 64890,
+      "induced_directed_entries": 1160,
+      "pair": [
+        63031238,
+        34721882
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 1
+    },
+    {
+      "archive_record_index": 645,
+      "node_set_sha256": "9d1a822ce7ddbd506269a88ca565d52e82171b14b861b5bf50a4ac70097d30c3",
+      "canonical_edges_sha256": "c9304639e6ce0b531705ccb404639f8c511a567a6579ef444a9c15c86a6cc2fe",
+      "drnl_sha256": "ffe5ffb37a73ca22515ad2ffdd1a8f69a8ce6cf31e9c70638838f495df453b8b",
+      "sum_out_degrees": 57751,
+      "induced_directed_entries": 1072,
+      "pair": [
+        48839319,
+        15152177
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 5
+    },
+    {
+      "archive_record_index": 652,
+      "node_set_sha256": "d55cd04b72774d96d4649867075538ce249cdf65c5377570e61b88386f59290f",
+      "canonical_edges_sha256": "2d335379d7a6718cad9d4b33d084873f8bc2f85633665791085f4392e7c6518a",
+      "drnl_sha256": "ad3f8381b4b629552acd88766d2fcb9e40b9adb83aec9f58fbb8730bf863fa45",
+      "sum_out_degrees": 134543,
+      "induced_directed_entries": 2624,
+      "pair": [
+        1742809,
+        541296
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 12
+    },
+    {
+      "archive_record_index": 657,
+      "node_set_sha256": "4d36e2e4ba06528aa76a145286aa3341b45c500f39500f7b27365f5d85ccad13",
+      "canonical_edges_sha256": "084aaa10c0f97ff5815e22754978d7cfade873c0a9ca29d4d0bb898c668694b7",
+      "drnl_sha256": "798cf22a694571c757769a3b16bc15253d8052311ccf69be4b8b19e417638f98",
+      "sum_out_degrees": 91475,
+      "induced_directed_entries": 622,
+      "pair": [
+        30250975,
+        33372892
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 17
+    },
+    {
+      "archive_record_index": 660,
+      "node_set_sha256": "09b2dcce07f03fdf1665af433cafed63541d3664b6ff57ac480353fe8e65eac2",
+      "canonical_edges_sha256": "6ab3298ddd4a836a5db35bcc9bcdf37f576a35dcf9161c385c43f69a510cbfe4",
+      "drnl_sha256": "7e37311d3846a26d3c4b34b1e2ba5574644e8f67dfb42c1f6e1be6ee86eb2f98",
+      "sum_out_degrees": 133830,
+      "induced_directed_entries": 1234,
+      "pair": [
+        2671737,
+        9273080
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 20
+    },
+    {
+      "archive_record_index": 661,
+      "node_set_sha256": "4f91622dda15a426deb16c849754235af2abf08f961088f56a42867b2bc6ac17",
+      "canonical_edges_sha256": "9ba1471dc6517e211dbef254838b1ae182f3df71909b04a87dd187c1abee0930",
+      "drnl_sha256": "214befd02cc847526f3733ff84bfeb089b0b41d25b745e5549f85f2a7e216eac",
+      "sum_out_degrees": 47665,
+      "induced_directed_entries": 922,
+      "pair": [
+        15281505,
+        12638681
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 21
+    },
+    {
+      "archive_record_index": 664,
+      "node_set_sha256": "e78c0468c2b3a9a6334d48388cf0e160654a462ee351eb54a3715c1e61c1f0fe",
+      "canonical_edges_sha256": "de0fa1b592b64d169074bb7fc818302423e5feeb3f8d894b8de71e2019cd8cef",
+      "drnl_sha256": "42331c233ea4c161e2333d32719e98158fa502c17ba9b41bd684fe67376f8faa",
+      "sum_out_degrees": 131254,
+      "induced_directed_entries": 2292,
+      "pair": [
+        41520182,
+        17865161
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 24
+    },
+    {
+      "archive_record_index": 666,
+      "node_set_sha256": "8e3ef975e7c5b25a9b29de3f8da7569f22707a1c7e094b0160258a4775125d6d",
+      "canonical_edges_sha256": "318aa22a331134a9f5b94f952da2aec4109f8867a48891375080a33644698407",
+      "drnl_sha256": "e3dc0703e4fd74a8bac9ebca7a942602d0ed151dd0958380a9bb03fad62c9c29",
+      "sum_out_degrees": 157852,
+      "induced_directed_entries": 1164,
+      "pair": [
+        15586512,
+        7767065
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 26
+    },
+    {
+      "archive_record_index": 668,
+      "node_set_sha256": "bc87bb7666d1f7a88dadb5c0dfb9e3ea7c1c76828b77763282ed7c5ebbe677f6",
+      "canonical_edges_sha256": "b9c750497af69885bac749456870cbd6b6da3d5c053c44d8bda091ee0888ec4a",
+      "drnl_sha256": "cabfbf8f1565fb3577702086ba0fbbc05a3f841979d8e1fd717235f5eba5588a",
+      "sum_out_degrees": 31852,
+      "induced_directed_entries": 2476,
+      "pair": [
+        3785951,
+        752686
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 28
+    },
+    {
+      "archive_record_index": 672,
+      "node_set_sha256": "58b89844a0d02fbc95e8669d0496629c8442a70c750c2286973362d3416b1389",
+      "canonical_edges_sha256": "6b95ce8636efaf545da7da8ad6d1a90cc864087b461a4a7aae1b8add86631888",
+      "drnl_sha256": "dee98f7949f7a97394c96f068eada3f24f1bc0f3167c52144d19c6bcc76f9a66",
+      "sum_out_degrees": 73942,
+      "induced_directed_entries": 2576,
+      "pair": [
+        2740245,
+        3374341
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 32
+    },
+    {
+      "archive_record_index": 673,
+      "node_set_sha256": "c78b9c7c3c92d9d162294c6fb0bb8949c299a5d7e79bf51d7d511bf2b7a25b34",
+      "canonical_edges_sha256": "74fc263178bff2cbba4ccf223aed420f8d39090a5944ef5fa91d238146d91f6e",
+      "drnl_sha256": "515a25d03d23b767c7c5b8df3d4c3a1968cad93755c52c06eeaad47584a09063",
+      "sum_out_degrees": 43173,
+      "induced_directed_entries": 1030,
+      "pair": [
+        14922037,
+        20462203
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 33
+    },
+    {
+      "archive_record_index": 677,
+      "node_set_sha256": "9671ffc141aa399ced35a04b82d10356c19af58f33dd129571f3ee556b327c88",
+      "canonical_edges_sha256": "08bacbd8ddf7a7aa235f870ef2ddae07d5d43ff7794eef9b58044f2010639ce9",
+      "drnl_sha256": "1cbfddc24255344cbadb860540376ea7091dc6d6df07f4e81876b579b38f31c0",
+      "sum_out_degrees": 81606,
+      "induced_directed_entries": 690,
+      "pair": [
+        41854936,
+        31921852
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 37
+    },
+    {
+      "archive_record_index": 689,
+      "node_set_sha256": "2a1ddd37e2bdfca381283a330dcc8bde0c69629af364cca5d299acd089cba419",
+      "canonical_edges_sha256": "4de19ec3fb65dea886d429d690ee6982ecb06137765dc981db56d5db0b8e257e",
+      "drnl_sha256": "c1313749c20521ea1fcb5c17efb9cbe267fca06bdb8e742d89b93ffd06040c5b",
+      "sum_out_degrees": 78271,
+      "induced_directed_entries": 1624,
+      "pair": [
+        54636779,
+        14533763
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 49
+    },
+    {
+      "archive_record_index": 717,
+      "node_set_sha256": "4c2ce96c451e82d8c9aaf038d1e80387970f5340aa43bcdf67a76c3a0fd99420",
+      "canonical_edges_sha256": "db27c7e7f27e160cead150d8cbe372c1229412ceae1a29638058aa6b8fbc91ce",
+      "drnl_sha256": "0965645b2cf348326e9f537259234b5a2c6fb118508ddded4247831ef4cf243b",
+      "sum_out_degrees": 108608,
+      "induced_directed_entries": 1300,
+      "pair": [
+        60370236,
+        10322070
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 77
+    },
+    {
+      "archive_record_index": 727,
+      "node_set_sha256": "15aabeff2a9eac6e3c38813761b27d3c6a7182ba76d142e99d5b41568caaf08c",
+      "canonical_edges_sha256": "30c6a819de85a00c48a07f49ff1aec3af4556f09d3142538ede8c0c3d415bd8f",
+      "drnl_sha256": "1802ffca710f43908e40e8ef9e255dc341267d50c04022c74e18eae73fe99c4b",
+      "sum_out_degrees": 91688,
+      "induced_directed_entries": 682,
+      "pair": [
+        36609891,
+        27656044
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 87
+    },
+    {
+      "archive_record_index": 748,
+      "node_set_sha256": "3b81fc16e8a44363cc794056c1ba330a85a44c8367e9f6f737249ccd5e63f992",
+      "canonical_edges_sha256": "8fe98c56b52d7a34371e0fadc4cc96a0cfd128a2f07c9bf35c33ea743ef4dcfc",
+      "drnl_sha256": "85da5d19acce3cee56c1e737f2a900148c990d6a2f9394bf873423a6f3c4e345",
+      "sum_out_degrees": 158338,
+      "induced_directed_entries": 1260,
+      "pair": [
+        12177890,
+        37886587
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 108
+    },
+    {
+      "archive_record_index": 749,
+      "node_set_sha256": "37f9820bac0d9ac92125b8ff678e533e0e5f1343dd514119205e483b083d4f29",
+      "canonical_edges_sha256": "58a83568e59cec90f72100d5312e2be11ebd4787fa6d6d6423acfb2a00f1b866",
+      "drnl_sha256": "d5cf081b24b8254d8212b95f81882cd3cf86478d8da9f2854a52dfa49523c885",
+      "sum_out_degrees": 191442,
+      "induced_directed_entries": 1158,
+      "pair": [
+        35064017,
+        20215333
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 109
+    },
+    {
+      "archive_record_index": 756,
+      "node_set_sha256": "05b49cce3341bd13b89511349945d85ea9509491777faa167601859601fb261f",
+      "canonical_edges_sha256": "512baf479cace998d4322a03a8704bca68314dd8dbfbc78d2833391b175e5227",
+      "drnl_sha256": "2a37d668caef0643cdc903eef617ce64e750505d01281a44f7f444d499b28ee7",
+      "sum_out_degrees": 237994,
+      "induced_directed_entries": 1248,
+      "pair": [
+        11111547,
+        11026638
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 116
+    },
+    {
+      "archive_record_index": 758,
+      "node_set_sha256": "62034e39f1c8ff6655ae2df46624d15c5140388e7f08f20db7ef993f59ee9f30",
+      "canonical_edges_sha256": "1803fbc45e4cbb27a3b0263dc129acc28d09b7370978b7b9a70ceea80014ca81",
+      "drnl_sha256": "5eac2fa5eef9bd62cc378ae93163adfcd5b9561f724cb3348c3ce1ccdff87e09",
+      "sum_out_degrees": 140660,
+      "induced_directed_entries": 1520,
+      "pair": [
+        5298354,
+        8889325
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 118
+    },
+    {
+      "archive_record_index": 764,
+      "node_set_sha256": "07254503f8fa38662bc26a26ceaed0d6f07e106fcade8649c8f3fa91ab7d7552",
+      "canonical_edges_sha256": "e1e8e115abb3a24e7cdfe94260de029d6609fbaae5818d17c4597f82f0736e49",
+      "drnl_sha256": "e2582a64e1c85b4eea243bc9bb4f06100da3a4186fef216d9909ac0839df5715",
+      "sum_out_degrees": 98573,
+      "induced_directed_entries": 1778,
+      "pair": [
+        11626381,
+        7899818
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 124
+    },
+    {
+      "archive_record_index": 766,
+      "node_set_sha256": "2521360baf1a89f901af55751dc85519ab2a831632b1b0126034e4c2c66f0fa2",
+      "canonical_edges_sha256": "a5eaef87438f1e79f6be6d4940c51dbd7ed5208909c304a415fd759e83002d6f",
+      "drnl_sha256": "5a1e2b105342057301c6a12c8a20064f510d228b63114a40b9fae4895459c311",
+      "sum_out_degrees": 192271,
+      "induced_directed_entries": 1120,
+      "pair": [
+        11621967,
+        6215081
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "positive",
+      "pair_index": 126
+    },
+    {
+      "archive_record_index": 767,
+      "node_set_sha256": "9bcf746ea89525400eaa86a25495319c0f91b6ddceb0b3944c9054ad1a9dd4a4",
+      "canonical_edges_sha256": "07777613ceaf97aabb3989b2cb98433195355f37c903aaaea4b34ba70b9c977d",
+      "drnl_sha256": "1b3c92210bdd1aff9a66b565a663acbb9a0f702899abf76603ca7525563a89b7",
+      "sum_out_degrees": 140393,
+      "induced_directed_entries": 1192,
+      "pair": [
+        13195995,
+        22020414
+      ],
+      "sampler": "per_vertex",
+      "cap": 200,
+      "workload": "twohop_nonedge",
+      "pair_index": 127
+    }
+  ],
+  "scope": "Existing original ordered S and oracle hashes only. Archive widths repeat S and are not independent workloads."
+}
