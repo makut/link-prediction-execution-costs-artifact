@@ -1,0 +1,150 @@
+{
+  "YT_reads": 0,
+  "YT_writes": 0,
+  "actual_cpu_pod_uid": "2ff5999d-ecc0-4cbf-b675-d2f1b0f8316b",
+  "actual_node": "ml-kub-node108.i",
+  "after_view": {
+    "actual_cpu_pod_uid": "2ff5999d-ecc0-4cbf-b675-d2f1b0f8316b",
+    "actual_node": "ml-kub-node108.i",
+    "hostname": "lpp-cpu-0",
+    "owner": {
+      "exists": false,
+      "expected_start_ticks": 4849017641,
+      "pid": 16686,
+      "quiescent": true
+    },
+    "receipt_sha256": {
+      "public_fr_cpu_matched_v2_build/build_receipt_v1.json": "8d58002090e7eeb006bea25b40905d2f2e26994ee750a2e4b878a6710e206d1b",
+      "public_fr_cpu_matched_v2_launch.json": "3cf55ba34022106265a19f081a9b31e436bae6a217f1e3c89e6c0e1d1963de24",
+      "public_fr_cpu_v2_code/SOURCE_MANIFEST.json": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b",
+      "public_fr_cpu_v2_code/cpu_coordinator_v1.py": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470",
+      "results/public_fr_cpu_matched_v2_20261125/ARCHIVE_READY.json": "49d91acff5b1539cc3543c0166fb6b32a6d5ad43373362192a81bf69bc0b824a",
+      "results/public_fr_cpu_matched_v2_20261125/COMPLETE.json": "f46612e5632aec56a03d893f4108313217841cd812ce2f56bc240a00c2d0f241"
+    },
+    "source_manifest_observed_sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b",
+    "source_observed_sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470",
+    "standalone_library_observed": {
+      "bytes": 22352,
+      "path": "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_build/native_assoc_v1.so",
+      "sha256": "2a8b892a63a84061ec03fc8e7d6c5d616ecb351720a1e4f236cae0374999f967"
+    },
+    "timing_locks": {
+      "ADDITIONAL_TIMING_RUNNING.lock": false,
+      "GPU_SUITE_RUNNING.lock": false,
+      "PIPELINE_SUITE_RUNNING.lock": false
+    }
+  },
+  "all_internal_file_hashes_verified": true,
+  "archive": {
+    "YT_writes": 0,
+    "bytes": 2121570,
+    "files": 120,
+    "manifest_sha256": "b771c96d427bf996623f9189f49ffff8e54637ded7ab490aa55b5b7f472df11e",
+    "path": "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_20261125.tgz",
+    "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374"
+  },
+  "before_view": {
+    "actual_cpu_pod_uid": "2ff5999d-ecc0-4cbf-b675-d2f1b0f8316b",
+    "actual_node": "ml-kub-node108.i",
+    "hostname": "lpp-cpu-0",
+    "owner": {
+      "exists": false,
+      "expected_start_ticks": 4849017641,
+      "pid": 16686,
+      "quiescent": true
+    },
+    "receipt_sha256": {
+      "public_fr_cpu_matched_v2_build/build_receipt_v1.json": "8d58002090e7eeb006bea25b40905d2f2e26994ee750a2e4b878a6710e206d1b",
+      "public_fr_cpu_matched_v2_launch.json": "3cf55ba34022106265a19f081a9b31e436bae6a217f1e3c89e6c0e1d1963de24",
+      "public_fr_cpu_v2_code/SOURCE_MANIFEST.json": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b",
+      "public_fr_cpu_v2_code/cpu_coordinator_v1.py": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470",
+      "results/public_fr_cpu_matched_v2_20261125/ARCHIVE_READY.json": "49d91acff5b1539cc3543c0166fb6b32a6d5ad43373362192a81bf69bc0b824a",
+      "results/public_fr_cpu_matched_v2_20261125/COMPLETE.json": "f46612e5632aec56a03d893f4108313217841cd812ce2f56bc240a00c2d0f241"
+    },
+    "source_manifest_observed_sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b",
+    "source_observed_sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470",
+    "standalone_library_observed": {
+      "bytes": 22352,
+      "path": "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_build/native_assoc_v1.so",
+      "sha256": "2a8b892a63a84061ec03fc8e7d6c5d616ecb351720a1e4f236cae0374999f967"
+    },
+    "timing_locks": {
+      "ADDITIONAL_TIMING_RUNNING.lock": false,
+      "GPU_SUITE_RUNNING.lock": false,
+      "PIPELINE_SUITE_RUNNING.lock": false
+    }
+  },
+  "collected_unix": 1795631884.59308,
+  "collector_source_sha256": "4b754b633517dac6c366404a752ff6d76621fa487a26b9605b48d9807b0913f4",
+  "controller_OS_exit_status": "UNKNOWN; actual quiescence plus genuine final completion is not an OS exit-code receipt",
+  "controller_success": true,
+  "host": "lpp-cpu-0",
+  "kind": "public_fr_cpu_matched_v2_final_readonly_export",
+  "owner": {
+    "exists": false,
+    "expected_start_ticks": 4849017641,
+    "pid": 16686,
+    "quiescent": true
+  },
+  "pod_lifecycle_actions": 0,
+  "remote_mutations": 0,
+  "remote_receipts": {
+    "public_fr_cpu_matched_v2_build/build_receipt_v1.json": {
+      "bytes": 1348,
+      "sha256": "8d58002090e7eeb006bea25b40905d2f2e26994ee750a2e4b878a6710e206d1b"
+    },
+    "public_fr_cpu_matched_v2_launch.json": {
+      "bytes": 948,
+      "sha256": "3cf55ba34022106265a19f081a9b31e436bae6a217f1e3c89e6c0e1d1963de24"
+    },
+    "public_fr_cpu_v2_code/SOURCE_MANIFEST.json": {
+      "bytes": 6623,
+      "sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b"
+    },
+    "public_fr_cpu_v2_code/cpu_coordinator_v1.py": {
+      "bytes": 20323,
+      "sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470"
+    },
+    "results/public_fr_cpu_matched_v2_20261125/ARCHIVE_READY.json": {
+      "bytes": 313,
+      "sha256": "49d91acff5b1539cc3543c0166fb6b32a6d5ad43373362192a81bf69bc0b824a"
+    },
+    "results/public_fr_cpu_matched_v2_20261125/COMPLETE.json": {
+      "bytes": 1016,
+      "sha256": "f46612e5632aec56a03d893f4108313217841cd812ce2f56bc240a00c2d0f241"
+    }
+  },
+  "root_launch_sha256": "3cf55ba34022106265a19f081a9b31e436bae6a217f1e3c89e6c0e1d1963de24",
+  "scientific_success": true,
+  "source_manifest_observed_sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b",
+  "source_observed_sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470",
+  "standalone_library_observed": {
+    "bytes": 22352,
+    "path": "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_build/native_assoc_v1.so",
+    "sha256": "2a8b892a63a84061ec03fc8e7d6c5d616ecb351720a1e4f236cae0374999f967"
+  },
+  "timing_locks": {
+    "ADDITIONAL_TIMING_RUNNING.lock": false,
+    "GPU_SUITE_RUNNING.lock": false,
+    "PIPELINE_SUITE_RUNNING.lock": false
+  },
+  "transport_schema_adaptation": {
+    "kind": "LOSSLESS_GENUINE_SIDECARS_TO_EMBEDDED_VIEWS_V1",
+    "new_observations": 0,
+    "original_inputs": {
+      "export.json": {
+        "bytes": 2822,
+        "sha256": "9efe4d6ac7661f40b02c0ea60b7872fcbd8fbf0d8fb9e10a6e4b64a6c7387c40"
+      },
+      "remote_after.json": {
+        "bytes": 41841,
+        "sha256": "afdb4d38e546a61c631fe3dbee08864794d09421d4d38d4077256fa807bd1a0e"
+      },
+      "remote_before.json": {
+        "bytes": 41840,
+        "sha256": "697681047e8160737f8db5d81f53d31ec33217353fef4e0d94eca7120c93cc8d"
+      }
+    },
+    "scientific_or_timer_changes": 0
+  }
+}

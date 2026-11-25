@@ -1,0 +1,43 @@
+{
+  "argv": [
+    "/home/jovyan/seal_revision_20261124/pencil_clean_controller_v1_code/controller.py",
+    "--execute",
+    "--base",
+    "/home/jovyan/seal_revision_20261124",
+    "--out",
+    "/home/jovyan/seal_revision_20261124/results/pencil_clean_consumer_v1_20261125",
+    "--prepared-root",
+    "/home/jovyan/seal_revision_20261124/data/citation2/prepared",
+    "--validation-root",
+    "/home/jovyan/seal_revision_20261124/clean_validation512",
+    "--python",
+    "/home/jovyan/seal_revision_20261124/pencil_env_v3/bin/python",
+    "--max-hours",
+    "4",
+    "--source-manifest-sha256",
+    "7a6bc09b88ff5ca3edc61588639a6326b1e4d52daf06671830d6e575207cab44",
+    "--source-packet",
+    "/home/jovyan/seal_revision_20261124/pencil_clean_controller_v1_sources.tgz",
+    "--source-packet-sha256",
+    "8cacc3d5c5c61964d8d7b86c4aa21fef648476ef1d8ab415e91678beac13f75c",
+    "--admission",
+    "/home/jovyan/seal_revision_20261124/clean_consumer_root_admission_v1.json",
+    "--admission-sha256",
+    "e6e7347f8cba1d88de10c4683023f7c05b14533c159bb817e6713fbb2f3946da"
+  ],
+  "entrypoint": "/home/jovyan/seal_revision_20261124/pencil_clean_controller_v1_code/controller.py",
+  "hostname": "seal-clean-consumer-20261125-0",
+  "identity": {
+    "pgid": 143,
+    "pid": 143,
+    "ppid": 1,
+    "start_ticks": 530541368,
+    "state": "R"
+  },
+  "kind": "actual_clean_consumer_controller_launch",
+  "root_admission_sha256": "e6e7347f8cba1d88de10c4683023f7c05b14533c159bb817e6713fbb2f3946da",
+  "source_manifest_sha256": "7a6bc09b88ff5ca3edc61588639a6326b1e4d52daf06671830d6e575207cab44",
+  "source_packet_sha256": "8cacc3d5c5c61964d8d7b86c4aa21fef648476ef1d8ab415e91678beac13f75c",
+  "source_sha256": "06ba8024f1f677347aaad715515ed82e44d955fec3b8f53198d4aad2378e1d19",
+  "started_unix": 1795633750.2209892
+}

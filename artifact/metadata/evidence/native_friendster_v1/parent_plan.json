@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "kind": "corrected_native_parent_v1",
+  "replay_plan_sha256": "d2cac5cc0ef136aa0a59466cb9251f2e191e267a09904e373ece78479b55dfb4",
+  "source_hashes": {
+    "native_assoc_v1.cpp": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20",
+    "native_adapter_v1.py": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549",
+    "build_native_v1.py": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6",
+    "fixtures_v1.py": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35",
+    "prepare_replay_v1.py": "676dde1982e7f121b8b8343365d44e4fe0ee160ad3a0fd439d9f795585ce456f",
+    "prepare_native_only_v1.py": "40992a0bb790caaf77194ce568c8c1f88c0040d20a276b8e49beea8837f2e241",
+    "replay_worker_v1.py": "09a628149a8b06baabbb7b551bd98f00f41a8a44b5578ceb7a7d9e659cf147ea",
+    "run_parent_replay_v1.py": "239d499ffff748799207076db782b4f90120dac8f0965d93e7e791a7a77a62b2"
+  },
+  "modes": [
+    "upstream_torch_sparse_direct",
+    "persistent_touched_reset",
+    "reference_full_clear"
+  ],
+  "mode_order_seed": 20261125,
+  "configuration": {
+    "archive": "/home/jovyan/seal_revision_20261124/corrected_native_v1/records/friendster_exact_int32.json",
+    "count": 128,
+    "output_dir": "/home/jovyan/seal_revision_20261124/results/native_controls_v1_20261125/friendster",
+    "execute": true,
+    "native_dir": "/home/jovyan/seal_revision_20261124/native_controls_v1_data/friendster_i64",
+    "library": "/home/jovyan/seal_revision_20261124/corrected_native_v1/linux_build/native_assoc_v1.so",
+    "build_dir": null,
+    "admission_marker": "/home/jovyan/seal_revision_20261124/results/native_controls_v1_20261125/admission.json",
+    "include_upstream": true,
+    "external_helper": "/home/jovyan/seal_revision_20261124/corrected_native_v1/work/vldb_literature/external_operator_benchmark.py",
+    "external_helper_sha256": "525e88c904fd03e10fc617853c8d733e88af90487cbbdd9122ced97962df112c",
+    "prepare_native": true,
+    "graph_path": "/home/jovyan/seal_revision_20261124/data/friendster/full_csr",
+    "conversion_max_native_gib": 28.0,
+    "conversion_timeout_seconds": 1800.0,
+    "max_assoc_gib": 0.5,
+    "max_peak_gib": 48.0,
+    "max_query_neighbors": 20000000,
+    "warmup": 1,
+    "repeats": 3,
+    "timeout_seconds": 3600.0,
+    "order_seed": 20261125
+  },
+  "scope": "Matched standalone compiled full-clear/touched-reset controls; unmodified upstream optional separate arm. Existing S only; no sampler/model/quality claim.",
+  "fairness": "Fresh sequential processes, one worker/arm, one CPU thread, matching input/order/warmups/repeats. Graph conversion/content verification and persistent initialization reported outside timers. No speed claim from plan-only output."
+}

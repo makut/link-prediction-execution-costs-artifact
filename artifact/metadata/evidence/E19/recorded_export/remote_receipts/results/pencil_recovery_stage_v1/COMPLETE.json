@@ -1,0 +1,29 @@
+{
+  "stage_complete": true,
+  "queue_launch": {
+    "pid": 1086,
+    "start_ticks": 529345826,
+    "entrypoint": "/home/jovyan/seal_revision_20261124/pencil_queue_v3_code/pencil_queue_v3.py",
+    "source_sha256": "dda406371cfe9a7d5de8415224930959e970f2b9c948f56d37dca09fffaf68cd",
+    "argv": [
+      "/opt/python/bin/python3",
+      "-u",
+      "/home/jovyan/seal_revision_20261124/pencil_queue_v3_code/pencil_queue_v3.py",
+      "--base",
+      "/home/jovyan/seal_revision_20261124",
+      "--execute",
+      "--max-hours",
+      "10",
+      "--admission-hours",
+      ".25",
+      "--recovery-admission-sha256",
+      "3589dda0795ca201057016fbd771776ea2838c70a902536d29d76e899f228f73"
+    ],
+    "started_unix": 1795621794.7391484,
+    "stdin_dependency": false,
+    "recovery_admission_sha256": "3589dda0795ca201057016fbd771776ea2838c70a902536d29d76e899f228f73",
+    "launcher_source_sha256": "dbe2b17bb4f47434e46dba87ce661565c0ba3e6c0d3fead1b62b958defed94ef"
+  },
+  "launch_receipt_sha256": "46e942a9e2bfa6f441869f15536cb6e2d2fe06d38c1acddacd3f297ecd5e6f62",
+  "YT_writes": 0
+}

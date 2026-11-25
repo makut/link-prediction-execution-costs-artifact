@@ -1,0 +1,18 @@
+{
+  "pid": 466,
+  "start_ticks": 529164982,
+  "entrypoint": "/home/jovyan/seal_revision_20261124/stage_recovered_pencil_v1.py",
+  "source_sha256": "dbe2b17bb4f47434e46dba87ce661565c0ba3e6c0d3fead1b62b958defed94ef",
+  "recovery_admission_sha256": "3589dda0795ca201057016fbd771776ea2838c70a902536d29d76e899f228f73",
+  "argv": [
+    "/opt/python/bin/python3",
+    "-u",
+    "/home/jovyan/seal_revision_20261124/stage_recovered_pencil_v1.py",
+    "--recovery-admission-sha256",
+    "3589dda0795ca201057016fbd771776ea2838c70a902536d29d76e899f228f73"
+  ],
+  "started_unix": 1795619986.2971032,
+  "stdin_dependency": false,
+  "max_input_wait_seconds": 5400,
+  "new_YT_graph_copies": 0
+}

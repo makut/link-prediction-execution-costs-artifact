@@ -1,0 +1,122 @@
+{
+  "kind": "public_fresh_pair_readonly_result_snapshot",
+  "observed_unix": 1795627399.6400194,
+  "controller_quiescence": {
+    "absent": true
+  },
+  "excluded_non_scientific_cache": "numba_cache",
+  "YT_writes": 0,
+  "remote_file_writes": 0,
+  "pod_lifecycle_actions": 0,
+  "files": {
+    "COMPLETE.json": {
+      "bytes": 202,
+      "sha256": "7ec87c1139333c53d1ae825f6f2e04b1c782526874a7229de0d506229558dda7"
+    },
+    "SCIENTIFIC_TERMINAL.json": {
+      "bytes": 230,
+      "sha256": "ba0680a2f6662b9ead7c5c41cd3726d1d61e1d1aab9c3fe2126a93e20e8700a2"
+    },
+    "e12/COMPLETE.json": {
+      "bytes": 828,
+      "sha256": "ad257a8667bc6cdc7bd7f5ef46c63841b9c2c6ddddd79fce8f13df3ebcdb9a28"
+    },
+    "e12/PUBLIC_ADMISSION.json": {
+      "bytes": 12724,
+      "sha256": "c43bb4f49cbc698ef31c808c0a9823112da25d20f3750643a0090431ce10bf9e"
+    },
+    "e12/results/COMPLETE.json": {
+      "bytes": 131,
+      "sha256": "50812b8764574dd01a19c830fe6042873e3468d210b5768a88af2e17806b9286"
+    },
+    "e12/results/midpoint_ranks.npy": {
+      "bytes": 163968,
+      "sha256": "e98d1499d02e078411770b40b11bef9524484891ed8e24c186b4c5d6e3d77d80"
+    },
+    "e12/results/query_ids.npy": {
+      "bytes": 32896,
+      "sha256": "2fec2027475bd6a7e187145204f40107cfa3a3bcd03317f7e0a30a01d059dbd2"
+    },
+    "e12/results/reciprocal_ranks.npy": {
+      "bytes": 163968,
+      "sha256": "1f90de72bdac73fc8bd5e9d8fd1d648c710a537ad5b73caa6a57238a3988cf26"
+    },
+    "e12/results/source_node.npy": {
+      "bytes": 32896,
+      "sha256": "c32297a88f4df4b7e39e8d3b1a4ca8aac5f90e4716fbac8ba933d41bd3763802"
+    },
+    "e12/results/status.json": {
+      "bytes": 6764,
+      "sha256": "0cb81ed5e9f4e9fb80e249a79dbfa24aa4cc1357924e4d8671d5b97b74583ef4"
+    },
+    "e12/results/summary.json": {
+      "bytes": 6764,
+      "sha256": "0cb81ed5e9f4e9fb80e249a79dbfa24aa4cc1357924e4d8671d5b97b74583ef4"
+    },
+    "e12/results/target_node.npy": {
+      "bytes": 32896,
+      "sha256": "89c9972e5ad302f93354e20dba4ffd7d5427f64778871ed3e0226554d01ff20a"
+    },
+    "e12/results/warm_query.npy": {
+      "bytes": 4224,
+      "sha256": "cda034aa25566e0cfb77ffcdae43a388e71d020c5e61dbbf11fa947134558b14"
+    },
+    "e12.exit.json": {
+      "bytes": 114,
+      "sha256": "9de8d0783b539ce0b1920ce67f5bfa4d15e8587516f89658ca6ebc6ca2b00ab6"
+    },
+    "e12.launch.json": {
+      "bytes": 592,
+      "sha256": "70ba80885f539c0710a044dab21b06f52806894623b999484467fd8047ba892a"
+    },
+    "e12.log": {
+      "bytes": 784,
+      "sha256": "404feb1c3ad30912cf219a8bec405420f385758dce4bc3116ce77d6dc53e208b"
+    },
+    "e7/COMPLETE.json": {
+      "bytes": 802,
+      "sha256": "934dcc8e9c2a00ac8870f24bd8a385a361f4aa07df82fc64a0e73908979629e8"
+    },
+    "e7/PUBLIC_ADMISSION.json": {
+      "bytes": 12724,
+      "sha256": "c43bb4f49cbc698ef31c808c0a9823112da25d20f3750643a0090431ce10bf9e"
+    },
+    "e7/results/COMPLETE.json": {
+      "bytes": 131,
+      "sha256": "53cfa7cdafc802e2dd8d5fcfe64f9026af28d3eaab5c85bbe19e17e7b08cf002"
+    },
+    "e7/results/report.json": {
+      "bytes": 1955756,
+      "sha256": "2e223627883ea4e18bcf0795c63443f085cdb2c48d9788dd59cb5bf2e6bf38ae"
+    },
+    "e7/results/status.json": {
+      "bytes": 67,
+      "sha256": "96fb9eedacd546947843f212497f90ffdc5a7c7ab35cdd0e9698469cd92b1ae1"
+    },
+    "e7.exit.json": {
+      "bytes": 114,
+      "sha256": "bf54e72549f5c9f2594da26bc67e63819f4741dbf7f0ee0bdc87674ee7ed21ff"
+    },
+    "e7.launch.json": {
+      "bytes": 589,
+      "sha256": "ef1acdd15217593ec1f09f332a78e6392b99d7ffbc73710a54fb758a46538f3f"
+    },
+    "e7.log": {
+      "bytes": 925,
+      "sha256": "c204bc3b0e0179840104d385b397c5031f1dccc94b3631a01b160bf39b09047c"
+    },
+    "plan.json": {
+      "bytes": 606,
+      "sha256": "629d070d0317232972b25d42c63b98205ccc58fdb767350732c84467c123c604"
+    },
+    "actual_launch.json": {
+      "bytes": 650,
+      "sha256": "8cdf278cd87e23b6ba89f345e3c2df129d13a8d952fd6fb63f88a1a76f961de6"
+    }
+  },
+  "snapshot_sha256": "1f1c96aada974cb373cbba748f58dae6ee76295f8dc0826079ce3b1555433766",
+  "root_actual_launch_sha256": "8cdf278cd87e23b6ba89f345e3c2df129d13a8d952fd6fb63f88a1a76f961de6",
+  "collector_source_sha256": "66d8f0e6ac965b09d224ee628612fd3d8dc7d8c5ed38055709576d8ec125da2c",
+  "numerical_comparison_to_historical": "PENDING_INDEPENDENT_AUDIT",
+  "controller_OS_exit_status": "UNKNOWN; quiescent process plus genuine final completion, not an exit-code receipt"
+}

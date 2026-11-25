@@ -1,0 +1,10 @@
+{
+  "status": "verified_public_projection",
+  "rows": 768,
+  "matches_existing_verified_friendster_rows_and_summary": true,
+  "original_two_graph_analysis_sha256": "4668bf2866a1f8bff201317fd10094c436224be59bc14c97165634fef8c4fc5e",
+  "public_output_sha256": "b4885e166d7a20f2804ffb1b040655c9b5313c4182cba93bf002b20344dfaed4",
+  "private_VK_rows_or_query_IDs_included": false,
+  "new_performance_experiments": 0,
+  "projection_changes": "Only graph filtering and provenance filesystem paths; numerical calculations unchanged."
+}

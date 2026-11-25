@@ -1,0 +1,13 @@
+{
+  "pid": 16479,
+  "returncode": 0,
+  "timed_out": false,
+  "timeout_seconds": 7200,
+  "orphan_cleanup": false,
+  "owned_pgids_signaled": [],
+  "owned_tree_quiescent": true,
+  "guard_abort_reason": null,
+  "guard_policy": "unchanged stable_pss_individual_rss_cgroup90_v3 applied externally to the owned controller tree",
+  "fresh_numba_cache": "/home/jovyan/seal_revision_20261124/results/public_friendster_repro_v1/full_numba_cache",
+  "pythonpath": "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/src"
+}

@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "full_public_Friendster_reproduction_verified": true,
+  "stages": {
+    "full": {
+      "pid": 16479,
+      "returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 7200,
+      "orphan_cleanup": false,
+      "owned_pgids_signaled": [],
+      "owned_tree_quiescent": true,
+      "guard_abort_reason": null,
+      "guard_policy": "unchanged stable_pss_individual_rss_cgroup90_v3 applied externally to the owned controller tree",
+      "fresh_numba_cache": "/home/jovyan/seal_revision_20261124/results/public_friendster_repro_v1/full_numba_cache",
+      "pythonpath": "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/src"
+    },
+    "split": {
+      "pid": 16490,
+      "returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 3600,
+      "orphan_cleanup": false,
+      "owned_pgids_signaled": [],
+      "owned_tree_quiescent": true,
+      "guard_abort_reason": null,
+      "guard_policy": "unchanged stable_pss_individual_rss_cgroup90_v3 applied externally to the owned controller tree",
+      "fresh_numba_cache": "/home/jovyan/seal_revision_20261124/results/public_friendster_repro_v1/split_numba_cache",
+      "pythonpath": "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/src"
+    }
+  },
+  "failure": null,
+  "owned_cleanup": {
+    "owned_tree_quiescent": true,
+    "extra_cleanup_required": false,
+    "owned_groups_signaled": [],
+    "scope": "unchanged private-subtree identity confirmation; no name-based or unrelated signals"
+  },
+  "scientific_workload_finished": true,
+  "runtime_seconds": 2850.954095594585,
+  "YT_writes": 0,
+  "archive_ready_is_separate_commit": true
+}

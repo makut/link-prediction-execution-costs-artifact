@@ -1,0 +1,40 @@
+{
+  "controller_workload_finished": true,
+  "success": true,
+  "public19payloads_verified": true,
+  "failure": null,
+  "stage_exit": {
+    "pid": 16380,
+    "returncode": 0,
+    "timed_out": false,
+    "timeout_seconds": 1800,
+    "orphan_cleanup": false,
+    "owned_pgids_signaled": [],
+    "owned_tree_quiescent": true,
+    "guard_abort_reason": null,
+    "guard_policy": "unchanged stable_pss_individual_rss_cgroup90_v3 applied externally to the owned controller tree",
+    "fresh_numba_cache": "/home/jovyan/seal_revision_20261124/results/public_repro_execution_v2/execution_numba_cache",
+    "pythonpath": "/home/jovyan/seal_revision_20261124/public_source_repro_v1/code"
+  },
+  "owned_cleanup": {
+    "owned_tree_quiescent": true,
+    "extra_cleanup_required": false,
+    "owned_groups_signaled": [],
+    "scope": "unchanged private-subtree identity confirmation; no name-based or unrelated signals"
+  },
+  "controller_identity": {
+    "pid": 16365,
+    "start_ticks": 4846645609,
+    "entrypoint": "/home/jovyan/seal_revision_20261124/public_repro_execution_v2_code/public_repro_execution_v2.py",
+    "source_sha256": "6777fb2ebe1ca974884466ae527feeb531216a7b9e522ad765799a4a197bf59a"
+  },
+  "environment_verification": {
+    "base_unchanged": true,
+    "exact_original_numerical_stack_reused": true,
+    "OGB_ready_before_heavy_work": true
+  },
+  "public_preparation_network_calls": 0,
+  "dependency_network": "none; three exact offline wheels",
+  "YT_writes": 0,
+  "original_v1_preserved": true
+}

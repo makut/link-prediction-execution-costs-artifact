@@ -1,0 +1,16 @@
+{
+  "YT_writes": 0,
+  "error": {
+    "message": "'before_view'",
+    "type": "KeyError"
+  },
+  "graph_model_or_native_library_loads": 0,
+  "kind": "INDEPENDENT_PUBLIC_FULL_FRIENDSTER_MATCHED_CPU_AUDIT_V1",
+  "local_auditor": {
+    "bytes": 55880,
+    "sha256": "6344b592c44b50a17326fca6e2ac14c82da7ec20d01deb9b0554bbcf48be58ea"
+  },
+  "remote_actions": 0,
+  "scientific_evidence_eligible": false,
+  "status": "FAIL_NO_ELIGIBLE_PERFORMANCE_RESULTS"
+}

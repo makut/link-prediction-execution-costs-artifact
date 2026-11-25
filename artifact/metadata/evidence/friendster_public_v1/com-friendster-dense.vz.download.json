@@ -1,0 +1,20 @@
+{
+  "url": "https://zenodo.org/api/records/5146230/files/com-friendster-dense.vz/content",
+  "bytes": 99315813,
+  "sha256": "edbaa6f87a7b8a12fb325ea270c52196d24874051e4bb5b7c75c4f655ab71011",
+  "source_kind": "fresh_official_public_download",
+  "transport": "4 ordered HTTP Range workers -> bounded Mac buffers -> kubectl stdin -> CPU scratch",
+  "relay_endpoints_sha256_agree": true,
+  "local_large_files_created": 0,
+  "YT_writes": 0,
+  "started_unix": 1795610808.7097085,
+  "finished_unix": 1795610836.2952476,
+  "target": "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/inputs/com-friendster-dense.vz",
+  "v1_partial_untouched": true,
+  "md5": "a07ac60fe42f7ab9e50c7224edc6e3c1",
+  "provider_md5": "a07ac60fe42f7ab9e50c7224edc6e3c1",
+  "provider_md5_verified_before_publication": true,
+  "transport_mode": "range",
+  "observed_ETag": null,
+  "ETag_absence_accepted_with_exact_ranges_and_full_provider_MD5": true
+}

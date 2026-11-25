@@ -1,0 +1,7 @@
+{
+  "pid": 22174,
+  "returncode": 0,
+  "timed_out": false,
+  "timeout_seconds": 3600.0,
+  "scope": "Only this fresh-session worker is signaled on timeout or Python interruption; workers do not spawn subprocesses. An external supervisor owns process-group cleanup for abrupt termination of this parent."
+}

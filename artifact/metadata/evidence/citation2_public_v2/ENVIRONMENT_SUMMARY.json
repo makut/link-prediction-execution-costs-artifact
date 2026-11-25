@@ -1,0 +1,33 @@
+{
+  "base_before_and_after_sha256": "32a1300e5dcd5ddcb96ecc33e9ce9ee77df937011438dd8cb17f47249d2106e1",
+  "base_environment_unchanged": true,
+  "base_site_packages_reused": true,
+  "critical_versions": {
+    "numba": "0.58.0",
+    "numpy": "1.24.4",
+    "pandas": "2.2.1",
+    "psutil": "6.0.0",
+    "requests": "2.32.3",
+    "scikit-learn": "1.3.1",
+    "scipy": "1.10.1",
+    "six": "1.16.0",
+    "torch": "2.2.2+cu121",
+    "tqdm": "4.66.4"
+  },
+  "exact_LinkPropPredDataset_import": true,
+  "isolated_after_original_sha256": "4c37423f2f8405e528e5a4382e0bb8bf62fd05f3b840ec42bff4c374662fef72",
+  "isolated_offline_dependency_versions": {
+    "littleutils": "0.2.4",
+    "ogb": "1.3.6",
+    "outdated": "0.2.2"
+  },
+  "ogb_master_csv_sha256": "8c317b29892fa41c021446858a7fc6761c30d0f1af651f7942af8d85799a7054",
+  "ogb_release": "1",
+  "preflight_original_sha256": "4c37423f2f8405e528e5a4382e0bb8bf62fd05f3b840ec42bff4c374662fef72",
+  "python": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+  "schema_version": 1,
+  "scope": "successful Linux CPU public-input preparation only; distinct from the GPU quality environment",
+  "summary_omits_unrelated_packages_and_host_paths": true,
+  "tiny_torch_split_roundtrip": true,
+  "training_or_timing_reproduction_is_not_claimed": true
+}

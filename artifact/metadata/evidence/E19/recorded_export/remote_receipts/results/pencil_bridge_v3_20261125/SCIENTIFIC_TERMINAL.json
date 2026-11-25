@@ -1,0 +1,151 @@
+{
+  "controller_jobs_finished": true,
+  "success": true,
+  "completed_jobs": 48,
+  "failure": null,
+  "crossjob_model_scores": {
+    "status": "pass",
+    "groups": [
+      {
+        "precision": "bf16",
+        "batch": 128,
+        "workers": 0,
+        "mode": "online",
+        "arms": [
+          "torch_sparse_public",
+          "torch_sparse_direct",
+          "compiled_scan_int64",
+          "compiled_pairwise_int64",
+          "compiled_scan_int32",
+          "compiled_pairwise_int32",
+          "cpp_full_clear",
+          "cpp_touched_reset"
+        ],
+        "warmup_and_3repeats_all_model_scores_exact": true,
+        "score_fingerprint": {
+          "kind": "tensor",
+          "dtype": "torch.float32",
+          "shape": [
+            1024
+          ],
+          "stride": [
+            1
+          ],
+          "sha256": "83a969445264ec1eade6dcf743a6b3286b08d4849c8691c529ea775455ce3fbd"
+        }
+      },
+      {
+        "precision": "bf16",
+        "batch": 128,
+        "workers": 1,
+        "mode": "online",
+        "arms": [
+          "torch_sparse_public",
+          "torch_sparse_direct",
+          "compiled_scan_int64",
+          "compiled_pairwise_int64",
+          "compiled_scan_int32",
+          "compiled_pairwise_int32",
+          "cpp_full_clear",
+          "cpp_touched_reset"
+        ],
+        "warmup_and_3repeats_all_model_scores_exact": true,
+        "score_fingerprint": {
+          "kind": "tensor",
+          "dtype": "torch.float32",
+          "shape": [
+            1024
+          ],
+          "stride": [
+            1
+          ],
+          "sha256": "83a969445264ec1eade6dcf743a6b3286b08d4849c8691c529ea775455ce3fbd"
+        }
+      },
+      {
+        "precision": "bf16",
+        "batch": 512,
+        "workers": 0,
+        "mode": "online",
+        "arms": [
+          "torch_sparse_public",
+          "torch_sparse_direct",
+          "compiled_scan_int64",
+          "compiled_pairwise_int64",
+          "compiled_scan_int32",
+          "compiled_pairwise_int32",
+          "cpp_full_clear",
+          "cpp_touched_reset"
+        ],
+        "warmup_and_3repeats_all_model_scores_exact": true,
+        "score_fingerprint": {
+          "kind": "tensor",
+          "dtype": "torch.float32",
+          "shape": [
+            1024
+          ],
+          "stride": [
+            1
+          ],
+          "sha256": "9d527abaf7b38fc9e46104c27bf5bba0ea1501a41b6c4df1dd68b02ab109f5ab"
+        }
+      },
+      {
+        "precision": "bf16",
+        "batch": 512,
+        "workers": 1,
+        "mode": "online",
+        "arms": [
+          "torch_sparse_public",
+          "torch_sparse_direct",
+          "compiled_scan_int64",
+          "compiled_pairwise_int64",
+          "compiled_scan_int32",
+          "compiled_pairwise_int32",
+          "cpp_full_clear",
+          "cpp_touched_reset"
+        ],
+        "warmup_and_3repeats_all_model_scores_exact": true,
+        "score_fingerprint": {
+          "kind": "tensor",
+          "dtype": "torch.float32",
+          "shape": [
+            1024
+          ],
+          "stride": [
+            1
+          ],
+          "sha256": "9d527abaf7b38fc9e46104c27bf5bba0ea1501a41b6c4df1dd68b02ab109f5ab"
+        }
+      },
+      {
+        "precision": "bf16",
+        "batch": 128,
+        "workers": 0,
+        "mode": "replay",
+        "arms": [
+          "torch_sparse_public",
+          "torch_sparse_direct",
+          "cpp_touched_reset",
+          "compiled_pairwise_int32"
+        ],
+        "warmup_and_3repeats_all_model_scores_exact": true,
+        "score_fingerprint": {
+          "kind": "tensor",
+          "dtype": "torch.float32",
+          "shape": [
+            1024
+          ],
+          "stride": [
+            1
+          ],
+          "sha256": "83a969445264ec1eade6dcf743a6b3286b08d4849c8691c529ea775455ce3fbd"
+        }
+      }
+    ],
+    "scope": "1024measured model scores exact within each precision/batch/workers/mode group; shapes are not pooled; no quality metric."
+  },
+  "owned_tree_quiescent": true,
+  "timing_lock_retained": true,
+  "runtime_seconds": 5307.685673458502
+}

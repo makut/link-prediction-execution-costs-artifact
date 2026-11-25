@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "files": {
+    "results/dispatch_v1/records.jsonl": {
+      "bytes": 2451398,
+      "sha256": "79e24fb3b14ef59539d5b8bdb171ab167b10b51e98b043da3a3e199ce4f4be07"
+    },
+    "results/dispatch_v1/status.json": {
+      "bytes": 107,
+      "sha256": "59fdb5784c08efd60f10a9c3cb081280e9590c81ecd6b4b6141dca15067da5e4"
+    },
+    "results/dispatch_v1/report.json": {
+      "bytes": 3992937,
+      "sha256": "9657f9b745863333dfc11c30716854c3f03f46e776ea580c910a657a4674263b"
+    },
+    "results/dispatch_v1/COMPLETE.json": {
+      "bytes": 127,
+      "sha256": "1ddc8ae9c6edfabcd79b58d9e701b0fc70f20a703fafca8636a1a439bd2bfabf"
+    },
+    "results/dispatch_queue_v1/plan.json": {
+      "bytes": 1540,
+      "sha256": "dd1c59a525e822bcf5c10adea5a52a01bbf8e65fc72d5bf586569af89f83bc7c"
+    },
+    "results/dispatch_queue_v1/admission.json": {
+      "bytes": 2516,
+      "sha256": "fab17ac2e8971ba3d630418ef2844403967e8a994f56f9c1dcba69233becbd70"
+    },
+    "results/dispatch_queue_v1/dispatch_exit.json": {
+      "bytes": 87,
+      "sha256": "0c90c74470fd20b7c72c4af87dd6a9b7532ae1c432e7d0760eb21aee72e78087"
+    },
+    "results/dispatch_queue_v1/dispatch.log": {
+      "bytes": 144,
+      "sha256": "c6fdc054caa727a7b32ac723afc2887dcf6ec1998677d2b3192618cf15e07c75"
+    },
+    "results/dispatch_queue_v1/dispatch_summary.json": {
+      "bytes": 2198,
+      "sha256": "509c65710b5c9605e64db5e1f3021f3ea5aa4670915f1e09213346d7e36f47fc"
+    },
+    "results/dispatch_queue_v1/status.json": {
+      "bytes": 122,
+      "sha256": "ec85165a079c507ca32c2a57d32b00284adec4bd806b43fbfd72c98877d148d2"
+    },
+    "sources/dispatch_benchmark_v1.py": {
+      "bytes": 18535,
+      "sha256": "04b8f6ec4bd984387779ae32871d5ed9238401504a1a5d0e0ec836dd5234e876"
+    },
+    "sources/queue_dispatch_v1.py": {
+      "bytes": 16578,
+      "sha256": "d931d8a405c2704f5211621e0be378549af4c28e7d61f3459e4dad36af1c52c5"
+    },
+    "frozen_repo/scripts/seal_revision/exact_benchmark.py": {
+      "bytes": 35079,
+      "sha256": "3ea7075dd80453a61eb42e8e990d21bf153635e6eff2e26379ba21788ad22544"
+    },
+    "frozen_repo/seal/graph_csr_kernels.py": {
+      "bytes": 15019,
+      "sha256": "19f517b874cfebc9f9388f094c17cf91b559936cd36f81976292c76025cfb2c5"
+    },
+    "frozen_repo/seal/graph_csr_extraction.py": {
+      "bytes": 20176,
+      "sha256": "fd1468b141af9d33ed4045f862342e5f145aa4d0eaee73421754832c9831b1cd"
+    },
+    "archived_input/friendster_exact_int32.json": {
+      "bytes": 9040463,
+      "sha256": "bed119047100f89080081fe638ed60816d0256bfeea9750418668078cdb2d975"
+    },
+    "archived_input/friendster_exact_int32_exit.json": {
+      "bytes": 59,
+      "sha256": "1302d83bb6128c3cc714bd29431a9fc089fb68ac95c78e6b4904cd5b5e996ddf"
+    }
+  },
+  "scope": "All dispatch timing results, scientific COMPLETE, sources, archived selected-node input, queue/admission plan. Final upload pointer and queue COMPLETE are separate to avoid circular archive hashes."
+}

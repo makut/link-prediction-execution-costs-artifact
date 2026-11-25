@@ -1,0 +1,163 @@
+{
+  "created_unix": 1795559751.961595,
+  "plan_sha256": "9bfb522c4d8472296c2be0cc4064aca75172002b5975fc58ab0ab5c8f467b135",
+  "jobs": [
+    {
+      "name": "union_seed42",
+      "seed": 42,
+      "variant": "union",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/union_seed42.json",
+      "config_sha256": "0f4d1855069e147abae01baa4d1696aa6d076ce7eaa2a594b69f53091d45214e",
+      "checkpoint": "/home/jovyan/seal_revision_20261124/results/quality_friendster/runs/union_seed42/run1/best_model.pth",
+      "checkpoint_sha256": "3eff9998646af10ad02daa2ff4ed2f91e0af8f81d82bbceb094d4b69d7f50280",
+      "training": {
+        "seed": 42,
+        "steps": 20000,
+        "last_epoch": 1,
+        "best_validation_metric": "ogb_mrr",
+        "best_validation_value": 0.7261092804659124,
+        "test_scored": false
+      },
+      "selection": {
+        "selection_split": "validation",
+        "metric": "ogb_mrr",
+        "value": 0.7261092804659124,
+        "step": 20000,
+        "epoch": 1,
+        "seed": 42
+      },
+      "initial_model_sha256": "0698823cedde08fb10a21e41e560af91e33f930dd59c46818efa8af06a571bef"
+    },
+    {
+      "name": "pv_seed42",
+      "seed": 42,
+      "variant": "pv",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/pv_seed42.json",
+      "config_sha256": "9029e1cca7e862b79f6a94eaf0a501970705e8423a4bd87f82b84bdd3732436b",
+      "checkpoint": "/home/jovyan/seal_revision_20261124/results/quality_friendster/runs/pv_seed42/run1/best_model.pth",
+      "checkpoint_sha256": "540ecb2c3c02902e0b7d248278833ed9458a1b7acf175b833e0be6fcf8babb46",
+      "training": {
+        "seed": 42,
+        "steps": 20000,
+        "last_epoch": 1,
+        "best_validation_metric": "ogb_mrr",
+        "best_validation_value": 0.7734907234478208,
+        "test_scored": false
+      },
+      "selection": {
+        "selection_split": "validation",
+        "metric": "ogb_mrr",
+        "value": 0.7734907234478208,
+        "step": 16000,
+        "epoch": 1,
+        "seed": 42
+      },
+      "initial_model_sha256": "0698823cedde08fb10a21e41e560af91e33f930dd59c46818efa8af06a571bef"
+    },
+    {
+      "name": "pv_seed43",
+      "seed": 43,
+      "variant": "pv",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/pv_seed43.json",
+      "config_sha256": "934609f46dcda91c8e08aab279f8aae73db1aa21ee440b909047fce77ccd7b57",
+      "checkpoint": "/home/jovyan/seal_revision_20261124/results/quality_friendster/runs/pv_seed43/run1/best_model.pth",
+      "checkpoint_sha256": "7db3a7e5dbfb24d3c9fb6d566acf1e4d13f8cc30df64529c7c13b911ae51a363",
+      "training": {
+        "seed": 43,
+        "steps": 20000,
+        "last_epoch": 1,
+        "best_validation_metric": "ogb_mrr",
+        "best_validation_value": 0.7720844533145325,
+        "test_scored": false
+      },
+      "selection": {
+        "selection_split": "validation",
+        "metric": "ogb_mrr",
+        "value": 0.7720844533145325,
+        "step": 16000,
+        "epoch": 1,
+        "seed": 43
+      },
+      "initial_model_sha256": "3d797b8a5edc2ba6a1e0bd837723b47297310d7e78c9c471a01a2f99d594da57"
+    },
+    {
+      "name": "union_seed43",
+      "seed": 43,
+      "variant": "union",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/union_seed43.json",
+      "config_sha256": "48f3c6dddc483b03c6d1d4ab86dab5223d35e37fff6ad60f15e6ed16cac9eef3",
+      "checkpoint": "/home/jovyan/seal_revision_20261124/results/quality_friendster/runs/union_seed43/run1/best_model.pth",
+      "checkpoint_sha256": "6b356094ab56e18d4b1b658a6a9ae8d2bbb6a6d3859b7baf8636831f316f4c21",
+      "training": {
+        "seed": 43,
+        "steps": 20000,
+        "last_epoch": 1,
+        "best_validation_metric": "ogb_mrr",
+        "best_validation_value": 0.7282915916544453,
+        "test_scored": false
+      },
+      "selection": {
+        "selection_split": "validation",
+        "metric": "ogb_mrr",
+        "value": 0.7282915916544453,
+        "step": 20000,
+        "epoch": 1,
+        "seed": 43
+      },
+      "initial_model_sha256": "3d797b8a5edc2ba6a1e0bd837723b47297310d7e78c9c471a01a2f99d594da57"
+    },
+    {
+      "name": "union_seed44",
+      "seed": 44,
+      "variant": "union",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/union_seed44.json",
+      "config_sha256": "84104ffd5173c6e2aecb33c232f5bb9cb354c67ad14add5254f3609d35088c06",
+      "checkpoint": "/home/jovyan/seal_revision_20261124/results/quality_friendster/runs/union_seed44/run1/best_model.pth",
+      "checkpoint_sha256": "71cd8281310b317f6141c34233eea098ed54895eade38ee18219a7111055a979",
+      "training": {
+        "seed": 44,
+        "steps": 20000,
+        "last_epoch": 1,
+        "best_validation_metric": "ogb_mrr",
+        "best_validation_value": 0.7240101693449473,
+        "test_scored": false
+      },
+      "selection": {
+        "selection_split": "validation",
+        "metric": "ogb_mrr",
+        "value": 0.7240101693449473,
+        "step": 14000,
+        "epoch": 1,
+        "seed": 44
+      },
+      "initial_model_sha256": "cd452dc522d65446387eb9b8efba1dd9bbf4e9e4fa9c21a3f4779e9465f1cf59"
+    },
+    {
+      "name": "pv_seed44",
+      "seed": 44,
+      "variant": "pv",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/pv_seed44.json",
+      "config_sha256": "7a5e6ced645470ccefb6712aa7d9a38a007aa63433b2023f948b7ac4a69dadfe",
+      "checkpoint": "/home/jovyan/seal_revision_20261124/results/quality_friendster/runs/pv_seed44/run1/best_model.pth",
+      "checkpoint_sha256": "43c49cb73e5e3f03cf6aa1ed9838538eab5da7d4324997139d5e89f2f828c567",
+      "training": {
+        "seed": 44,
+        "steps": 20000,
+        "last_epoch": 1,
+        "best_validation_metric": "ogb_mrr",
+        "best_validation_value": 0.7717889300341799,
+        "test_scored": false
+      },
+      "selection": {
+        "selection_split": "validation",
+        "metric": "ogb_mrr",
+        "value": 0.7717889300341799,
+        "step": 16000,
+        "epoch": 1,
+        "seed": 44
+      },
+      "initial_model_sha256": "cd452dc522d65446387eb9b8efba1dd9bbf4e9e4fa9c21a3f4779e9465f1cf59"
+    }
+  ],
+  "selection_uses_test": false
+}

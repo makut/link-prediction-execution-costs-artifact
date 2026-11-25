@@ -1,0 +1,49 @@
+{
+  "records": 768,
+  "source_report_sha256": "9657f9b745863333dfc11c30716854c3f03f46e776ea580c910a657a4674263b",
+  "benchmark_complete_sha256": "1ddc8ae9c6edfabcd79b58d9e701b0fc70f20a703fafca8636a1a439bd2bfabf",
+  "scope": "Frozen-S CSR-construction microbenchmark. Production-matched means NumPy routing algebra only; constructors are the same frozen exact helper. Not full SEAL or a GPU pipeline.",
+  "interpretation": "The old18% auto gap belongs to the Python exact harness; actual production is already vectorized. Precomputed route, if present, is a hypothetical lower bound.",
+  "configuration": {
+    "limit": 0,
+    "warmup": 1,
+    "repeats": 5,
+    "seed": 20261124,
+    "auto_ratio": 1.0,
+    "max_neighbors": 20000000,
+    "max_working_set_mib": 4096,
+    "max_pairwise_checks": 20000000,
+    "max_subgraph_nodes": 10000,
+    "include_precomputed_lower_bound": false
+  },
+  "summary": {
+    "records": 768,
+    "auto_route_counts": {
+      "pairwise": 747,
+      "scan": 21
+    },
+    "edge_sum_of_per_record_medians_seconds": {
+      "fixed_pairwise": 3.7963741020000032,
+      "fixed_scan": 5.115349706000001,
+      "exact_python_auto": 4.437171764999995,
+      "production_vectorized_auto": 3.783337724999999
+    },
+    "route_only_sum_of_per_record_medians_seconds": {
+      "exact_python_auto": 0.680525232000001,
+      "production_vectorized_auto": 0.03038350600000001
+    },
+    "python_auto_over_vectorized_auto_sum_ratio": 1.1728193694365459,
+    "hypothetical_lower_bound_included": false,
+    "aggregation": "Sum of per-record medians, not a timed concatenated run; same fixed S and randomized method order."
+  },
+  "input": {
+    "path": "/home/jovyan/seal_revision_20261124/results/cpu/friendster_exact_int32.json",
+    "bytes": 9040463,
+    "sha256": "bed119047100f89080081fe638ed60816d0256bfeea9750418668078cdb2d975"
+  },
+  "source_sha256": {
+    "scripts/seal_revision/exact_benchmark.py": "3ea7075dd80453a61eb42e8e990d21bf153635e6eff2e26379ba21788ad22544",
+    "seal/graph_csr_kernels.py": "19f517b874cfebc9f9388f094c17cf91b559936cd36f81976292c76025cfb2c5",
+    "seal/graph_csr_extraction.py": "fd1468b141af9d33ed4045f862342e5f145aa4d0eaee73421754832c9831b1cd"
+  }
+}

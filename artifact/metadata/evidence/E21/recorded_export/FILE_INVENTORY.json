@@ -1,0 +1,23 @@
+{
+  "archive_separate": true,
+  "files": {
+    "COLLECTION_STARTED.json": {
+      "bytes": 84,
+      "sha256": "b381a043a88782f15727f28f87c7b07956d72233b654e147a252fb0d13334db0"
+    },
+    "export.json": {
+      "bytes": 1064,
+      "sha256": "8d0bede0c42e1674a51afa78ad0c6e04c20d09268a47a0aeafb8fd7926895d8b"
+    },
+    "extraction_manifest.json": {
+      "bytes": 38801,
+      "sha256": "099a3f736ca69e1c13c6c13d4d371ad8c84d87bcb8add5c9dc9448f08e28e740"
+    },
+    "persistence_attribute.json": {
+      "bytes": 1958,
+      "sha256": "c0876a6569be3acb019fabdcad47ec1925bf05c25e9293681efec63b3cd564ba"
+    }
+  },
+  "new_observations": 0,
+  "role": "E21"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "verified",
+  "collected_unix": 1795608072.826451,
+  "public19_payload_identity": true,
+  "original_prepared_payloads_equal_official_source": true,
+  "archive_sha256": "aface484919f7f6c7e3ad4945ee6c4784a768df0e552b5b3898ef9d3a35f5e78",
+  "archive_bytes": 234576,
+  "all94_archive_file_hashes_verified": true,
+  "official_zip_sha256": "f8502b935ea8f0a7bea5eb130991ca337cd26cad7f231cc9f5546fe076f4be53",
+  "base_environment_unchanged": true,
+  "source_preparation_four_hashes": {
+    "experiment_configs/seal_revision_2026-11/prepare_citation2.py": "7b2694a38134c3953d43159a96757d6557113b81b9624707a6a8670840266d19",
+    "scripts/convert_graph_csr_to_upper.py": "eb024edf1ae434da1c663ce838f8211e7e5646d92f57ce82d090172f9dd8bc0b",
+    "scripts/prepare_ogb_dataset.py": "f55b46140f3281d779e85ae6f5af956091cf6535fc534bf075b6f34dfb225218",
+    "scripts/transpose_graph_csr.py": "196cafaf4a7d6819b0e36b709526018b4b95c01f9dd9654984aa655fc12e23b2"
+  },
+  "large_files_downloaded_to_Mac": 0,
+  "YT_writes": 0
+}

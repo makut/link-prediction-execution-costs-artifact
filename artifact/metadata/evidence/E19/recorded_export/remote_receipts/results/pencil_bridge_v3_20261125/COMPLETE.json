@@ -1,0 +1,23 @@
+{
+  "controller_finished": true,
+  "success": true,
+  "scientific_complete": true,
+  "persistence_complete": true,
+  "archive_pointer": {
+    "yt_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/pencil_bridge_v3_20261125.tgz",
+    "bytes": 9966534,
+    "sha256": "7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c",
+    "readback_verified": true,
+    "new_YT_file_nodes": 1
+  },
+  "failure": null,
+  "timing_lock_released": true,
+  "owned_tree_quiescent": true,
+  "controller_identity": {
+    "pid": 1086,
+    "start_ticks": 529345826,
+    "entrypoint": "/home/jovyan/seal_revision_20261124/pencil_queue_v3_code/pencil_queue_v3.py",
+    "source_sha256": "dda406371cfe9a7d5de8415224930959e970f2b9c948f56d37dca09fffaf68cd"
+  },
+  "runtime_seconds": 5325.54830764886
+}

@@ -1,0 +1,58 @@
+{
+  "archive_separate": true,
+  "files": {
+    "TRANSPORT_DERIVATION_MANIFEST.json": {
+      "bytes": 3235,
+      "sha256": "6325aaff04d0754ce1fcbe0d29663bfa4b88d1de71fb0e8d0aa51dc05826d400"
+    },
+    "export.json": {
+      "bytes": 6831,
+      "sha256": "3a54738f505981ad40caac61fc1ad65edfe6d6dac0259960474dfe017d05cbda"
+    },
+    "original_transport/FIRST_FROZEN_AUDIT_FAIL.json": {
+      "bytes": 450,
+      "sha256": "0ea9697cc0531adb531d6520aee720f2b0aedbe60ba08ec9462a0be7197ea44a"
+    },
+    "original_transport/export.json": {
+      "bytes": 2822,
+      "sha256": "9efe4d6ac7661f40b02c0ea60b7872fcbd8fbf0d8fb9e10a6e4b64a6c7387c40"
+    },
+    "original_transport/remote_after.json": {
+      "bytes": 41841,
+      "sha256": "afdb4d38e546a61c631fe3dbee08864794d09421d4d38d4077256fa807bd1a0e"
+    },
+    "original_transport/remote_before.json": {
+      "bytes": 41840,
+      "sha256": "697681047e8160737f8db5d81f53d31ec33217353fef4e0d94eca7120c93cc8d"
+    },
+    "original_transport/root_launch.json": {
+      "bytes": 948,
+      "sha256": "3cf55ba34022106265a19f081a9b31e436bae6a217f1e3c89e6c0e1d1963de24"
+    },
+    "remote_receipts/public_fr_cpu_matched_v2_build/build_receipt_v1.json": {
+      "bytes": 1348,
+      "sha256": "8d58002090e7eeb006bea25b40905d2f2e26994ee750a2e4b878a6710e206d1b"
+    },
+    "remote_receipts/public_fr_cpu_matched_v2_launch.json": {
+      "bytes": 948,
+      "sha256": "3cf55ba34022106265a19f081a9b31e436bae6a217f1e3c89e6c0e1d1963de24"
+    },
+    "remote_receipts/public_fr_cpu_v2_code/SOURCE_MANIFEST.json": {
+      "bytes": 6623,
+      "sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b"
+    },
+    "remote_receipts/public_fr_cpu_v2_code/cpu_coordinator_v1.py": {
+      "bytes": 20323,
+      "sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470"
+    },
+    "remote_receipts/results/public_fr_cpu_matched_v2_20261125/ARCHIVE_READY.json": {
+      "bytes": 313,
+      "sha256": "49d91acff5b1539cc3543c0166fb6b32a6d5ad43373362192a81bf69bc0b824a"
+    },
+    "remote_receipts/results/public_fr_cpu_matched_v2_20261125/COMPLETE.json": {
+      "bytes": 1016,
+      "sha256": "f46612e5632aec56a03d893f4108313217841cd812ce2f56bc240a00c2d0f241"
+    }
+  },
+  "numeric_observations_added": 0
+}

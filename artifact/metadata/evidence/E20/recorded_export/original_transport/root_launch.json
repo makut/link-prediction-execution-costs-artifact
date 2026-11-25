@@ -1,0 +1,26 @@
+{
+  "pid": 16686,
+  "start_ticks": 4849017641,
+  "source_sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470",
+  "entrypoint": "/home/jovyan/seal_revision_20261124/public_fr_cpu_v2_code/cpu_coordinator_v1.py",
+  "argv": [
+    "/opt/python/bin/python3",
+    "-B",
+    "-u",
+    "/home/jovyan/seal_revision_20261124/public_fr_cpu_v2_code/cpu_coordinator_v1.py",
+    "--execute",
+    "--source-manifest-sha256",
+    "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b",
+    "--max-hours",
+    "6"
+  ],
+  "source_packet_sha256": "f79cd610e8f24830b896ed4e8b3a37035ab31d0626349699c3b568ebe69c118f",
+  "source_manifest_sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b",
+  "target310_AST_and_defaultplan_preflights_passed": true,
+  "started_unix": 1795631294.3696544,
+  "host": "lpp-cpu-0",
+  "YT_writes": 0,
+  "GPU_allocations": 0,
+  "CPU_lifecycle_actions": 0,
+  "stdin_dependency": false
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "kind": "corrected_native_conversion_only_v1",
+  "status": "complete",
+  "external_helper_sha256": "525e88c904fd03e10fc617853c8d733e88af90487cbbdd9122ced97962df112c",
+  "graph": {
+    "n": 65608366,
+    "m": 3612134270,
+    "endian": "little",
+    "source_files": [
+      {
+        "path": "/home/jovyan/seal_revision_20261124/data/friendster/full_csr/edge_starts.bin",
+        "bytes": 524866928,
+        "mtime_ns": 1795605154944033840
+      },
+      {
+        "path": "/home/jovyan/seal_revision_20261124/data/friendster/full_csr/edge_ends.bin",
+        "bytes": 14448537088,
+        "mtime_ns": 1795605599032508186
+      }
+    ],
+    "source_storage_bytes": 14973404016,
+    "native_int64_storage_bytes": 29421941096
+  },
+  "estimate": {
+    "source_storage_bytes": 14973404016,
+    "native_int64_storage_bytes": 29421941096,
+    "per_query_assoc_bytes": 524866928,
+    "public_api_global_row_bytes": 0,
+    "conversion_chunk_upper_bytes": 24000000,
+    "conservative_peak_bytes": 46017953864
+  },
+  "scope": "Frozen converter only; no query benchmark, graph sampler, model, GPU or YT operation.",
+  "admission": {
+    "path": "/home/jovyan/seal_revision_20261124/results/native_controls_v1_20261125/admission.json",
+    "sha256": "7f558d4d57eba03d3fbdc7915003398fcf2268472b584fb3713ee4c1c8d2b616",
+    "content": {
+      "complete": true,
+      "scientifically_terminal_main": true,
+      "pipeline_success": true,
+      "pipeline_final_archive": {
+        "snapshot": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/snapshots/pipeline/final_2adb1a1464458aa90ace046f048a78f693587cca1783bdda10d5426ac857fb52.tgz",
+        "sha256": "f6d4ba4801195559f5d308ee298d07123cadf2e03b45638585f00e3d19f98040",
+        "bytes": 214583801,
+        "file_count": 530,
+        "saved_unix": 1795614189.583615,
+        "role": "pipeline",
+        "terminal_marker": "results/PIPELINE_SUITE_COMPLETE.json",
+        "terminal_in_snapshot": true,
+        "terminal_sha256": "2adb1a1464458aa90ace046f048a78f693587cca1783bdda10d5426ac857fb52",
+        "anchor_kind": "final",
+        "anchor_marker": "results/PIPELINE_SUITE_COMPLETE.json",
+        "anchor_sha256": "2adb1a1464458aa90ace046f048a78f693587cca1783bdda10d5426ac857fb52",
+        "persistence_version": 6
+      },
+      "bindings": {
+        "/home/jovyan/seal_revision_20261124/results/recovery_execution_v1/COMPLETE.json": {
+          "bytes": 1026,
+          "sha256": "608e3d796392ca3bff52c738144b220568fe3244d5f03f4b9c5a6d2b99b02c12"
+        },
+        "/home/jovyan/seal_revision_20261124/results/PIPELINE_SUITE_COMPLETE.json": {
+          "bytes": 25825,
+          "sha256": "2adb1a1464458aa90ace046f048a78f693587cca1783bdda10d5426ac857fb52"
+        },
+        "/home/jovyan/seal_revision_20261124/results/recovery_execution_v1/persist_pipeline_final.log": {
+          "bytes": 716,
+          "sha256": "ee6accb6f63cf5127f9247e113e217fe625c041c95dbda543a225e459e4b80a7"
+        },
+        "/home/jovyan/seal_revision_20261124/results/recovery_execution_v1/persist_pipeline_final_exit.json": {
+          "bytes": 176,
+          "sha256": "c4d9b7739fa4ee4a0edc799b0e6b2d2bcacd1d43f6ea55bc851c96e43b2ec283"
+        }
+      },
+      "scope": "Main controller PID257 is absent/zombie with launch identity checked if present; pipeline final persisted; no observed active phase or foreign timing lock."
+    },
+    "scope": "Read-only terminal/lock admission. Root schedules this control after all pipeline/persistence work is quiescent."
+  },
+  "actual_native_fixture": {
+    "status": "pass",
+    "literal_cases": 4,
+    "ordered_raw_edges_and_eids": true,
+    "arbitrary_root_packaging_and_independent_BFS_labels": true
+  },
+  "capacity": {
+    "host_available_bytes": 1960981061632,
+    "cgroup_limit_bytes": 549755813888,
+    "cgroup_current_bytes": 85088911360,
+    "cgroup_available_bytes": 464666902528,
+    "effective_available_bytes": 464666902528
+  },
+  "conversion": {
+    "schema_version": 1,
+    "graph": {
+      "n": 65608366,
+      "m": 3612134270,
+      "endian": "little",
+      "source_files": [
+        {
+          "path": "/home/jovyan/seal_revision_20261124/data/friendster/full_csr/edge_starts.bin",
+          "bytes": 524866928,
+          "mtime_ns": 1795605154944033840
+        },
+        {
+          "path": "/home/jovyan/seal_revision_20261124/data/friendster/full_csr/edge_ends.bin",
+          "bytes": 14448537088,
+          "mtime_ns": 1795605599032508186
+        }
+      ],
+      "source_storage_bytes": 14973404016,
+      "native_int64_storage_bytes": 29421941096
+    },
+    "conversion_seconds": 83.3138858648017,
+    "rowptr_sha256": "28060771441d71ba71877e55c0a48230c54d1b2715dd4edd08042019cf4a7a81",
+    "col_sha256": "012e1d0a907d2eb6b46d72f31be8b3ca722d88432b2c0509162c4ff487f25a5d",
+    "native_dtype": "little-endian int64",
+    "sentinel_added": true
+  },
+  "runtime_native_content_verification": {
+    "status": "pass",
+    "method": "streaming SHA256 of both native payloads outside timers",
+    "seconds": 25.91587350796908,
+    "files": [
+      {
+        "path": "/home/jovyan/seal_revision_20261124/native_controls_v1_data/friendster_i64/rowptr.i8",
+        "bytes": 524866936,
+        "mtime_ns": 1795614230756835293,
+        "sha256": "28060771441d71ba71877e55c0a48230c54d1b2715dd4edd08042019cf4a7a81"
+      },
+      {
+        "path": "/home/jovyan/seal_revision_20261124/native_controls_v1_data/friendster_i64/col.i8",
+        "bytes": 28897074160,
+        "mtime_ns": 1795614308564991971,
+        "sha256": "012e1d0a907d2eb6b46d72f31be8b3ca722d88432b2c0509162c4ff487f25a5d"
+      }
+    ]
+  },
+  "setup_wall_seconds": 109.23159296344966
+}

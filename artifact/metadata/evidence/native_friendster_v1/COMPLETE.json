@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "scientific_terminal": true,
+  "success": true,
+  "terminal_status": "complete",
+  "arms": [
+    {
+      "mode": "upstream_torch_sparse_direct",
+      "eligible": true,
+      "exit": {
+        "pid": 22108,
+        "returncode": 0,
+        "timed_out": false,
+        "timeout_seconds": 3600.0,
+        "scope": "Only this fresh-session worker is signaled on timeout or Python interruption; workers do not spawn subprocesses. An external supervisor owns process-group cleanup for abrupt termination of this parent."
+      },
+      "report_status": "complete",
+      "report_sha256": "6c063b8e64a612a346cbb9b5366e78c3dad2e74fbfe9124018a23733a3466136"
+    },
+    {
+      "mode": "persistent_touched_reset",
+      "eligible": true,
+      "exit": {
+        "pid": 22172,
+        "returncode": 0,
+        "timed_out": false,
+        "timeout_seconds": 3600.0,
+        "scope": "Only this fresh-session worker is signaled on timeout or Python interruption; workers do not spawn subprocesses. An external supervisor owns process-group cleanup for abrupt termination of this parent."
+      },
+      "report_status": "complete",
+      "report_sha256": "4026b844658c62419f29a16cbb9dc1d6e517e4f43f8f43877904b5b223654979"
+    },
+    {
+      "mode": "reference_full_clear",
+      "eligible": true,
+      "exit": {
+        "pid": 22174,
+        "returncode": 0,
+        "timed_out": false,
+        "timeout_seconds": 3600.0,
+        "scope": "Only this fresh-session worker is signaled on timeout or Python interruption; workers do not spawn subprocesses. An external supervisor owns process-group cleanup for abrupt termination of this parent."
+      },
+      "report_status": "complete",
+      "report_sha256": "d22774855273f4d927991b61d746f8fe9af63385ef65ac93de431921bc20af9e"
+    }
+  ],
+  "replay_plan_sha256": "d2cac5cc0ef136aa0a59466cb9251f2e191e267a09904e373ece78479b55dfb4",
+  "runtime_bindings_sha256": "c7d3368d3681cadfebcee5132da32e932a3a7c5d71ce0bceed3048c6bf90bfbe",
+  "no_remote_or_YT_actions": true,
+  "no_performance_advantage_inferred": true
+}

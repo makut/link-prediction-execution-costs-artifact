@@ -1,0 +1,641 @@
+{
+  "kind": "FULL_EXPLICIT_ALLOWLIST_REVIEW_RECORDED_PUBLIC_CPU_E20_RAW_V1",
+  "status": "PASS_PUBLIC_ASSET_CANDIDATE_FOR_ROOT_RELEASE_REVIEW",
+  "asset": {
+    "bytes": 2121570,
+    "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374"
+  },
+  "manifest_sha256": "b771c96d427bf996623f9189f49ffff8e54637ded7ab490aa55b5b7f472df11e",
+  "members": 121,
+  "payloads": 120,
+  "namespaces": {
+    "results": 81,
+    "sources": 39,
+    "MANIFEST": 1
+  },
+  "all_member_hashes_rechecked": true,
+  "all39_source_payloads_match_frozen_CPU_v2": true,
+  "all_scientific_data_scope": "Public fullFriendster only;768E1derived records/frozen128selection and CPU7-arm exact outputs. No private graph/query/model/full graph binaries.",
+  "reviewed_payload_allowlist": {
+    "results/plan.json": {
+      "bytes": 10279,
+      "sha256": "3166794bf8b12618460a217dedd48d211f539edf4456e1f39494e6203f74406c",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/base_environment_before.log": {
+      "bytes": 290,
+      "sha256": "5cd7fd298a1aeaedf02d64043d86986b9357cdc45a55136eb5f0757bbce09d32",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/base_environment_before.guard.jsonl": {
+      "bytes": 1389,
+      "sha256": "ba43bd1acf16847416731ce3d8c990fd7f7bdb985edbf7c01bb03c7a0fc257ba",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/base_environment_before.json": {
+      "bytes": 2461,
+      "sha256": "c6f220dcbe054c1beb6824c09f8c3b37f266f5e4f2a9904b84a6987284d8486b",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/environment_verification.json": {
+      "bytes": 371,
+      "sha256": "a4ddc615661979f9e8660bc648b1ea5cc5ff100cc172102c1ea3a933ffa08e23",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/base_environment_before.exit.json": {
+      "bytes": 315,
+      "sha256": "2cc3f5822d5c06350d1f60bca179021abba2969ab9d1e2989793d37448a2783b",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/stages.json": {
+      "bytes": 5734,
+      "sha256": "30226aa98b3d61789b76b90e9b58c9c6d145b2f7f33696f163efe493223ae34b",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/wheel_extraction.json": {
+      "bytes": 974,
+      "sha256": "bb7126e9d676a387f008a318eaa03986baf1fc3023d6a3e0809037e6ab418b39",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/create_isolated_env.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/create_isolated_env.guard.jsonl": {
+      "bytes": 694,
+      "sha256": "3cda114c022d578ddd08647206840e889f76fe61c69253eec1246d9098cf0ed9",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/create_isolated_env.exit.json": {
+      "bytes": 315,
+      "sha256": "fbd74e5ae51a909f4a069ec87086dffde9686dc2453d578d1968d17ff9e94637",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/base_site_binding.json": {
+      "bytes": 429,
+      "sha256": "78b33944b5d2de583268638d2138d2d4bab38a5034ba27b0309ac1ea8430d9bf",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/install_offline_native.log": {
+      "bytes": 418,
+      "sha256": "f3a14144ea42c028507a9dc6ec50238f9531bec67ded1d467677bef57901f36a",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/install_offline_native.guard.jsonl": {
+      "bytes": 695,
+      "sha256": "e4f04c8b5a0bccb0d3a24387a14beb2dc1bf09bd2ff1b388f9790d4b26b63f78",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/install_offline_native.exit.json": {
+      "bytes": 315,
+      "sha256": "f8f71084dd51434e148aa8d21135a38e3c0c3d711d9d674863037013fd8d1325",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/isolated_environment.log": {
+      "bytes": 292,
+      "sha256": "f9cdbcc9e423525f7cc4efb4ebc982ceb758078e977b86525ad1b866b64f4210",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/isolated_environment.guard.jsonl": {
+      "bytes": 1387,
+      "sha256": "1ba743e01757f27dc087b0823118948e0c8f3d7f98e9abb34e2d6e6be9e5d1f2",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/isolated_environment.json": {
+      "bytes": 13931,
+      "sha256": "0dc3f531ce0c3901512a5d9a3ea1994d29e30800cda8d647337aa563f05889fe",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/isolated_environment.exit.json": {
+      "bytes": 315,
+      "sha256": "2d4f948636fbba77a902f4ad80d530a1b8417ec782df4b5e29eeb4d2f93742f5",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/base_environment_after_install.log": {
+      "bytes": 297,
+      "sha256": "6a94cbbb83db5a3003cbcd87f3fafc9faaae691b8b1c0ff44be1565d66535f49",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/base_environment_after_install.guard.jsonl": {
+      "bytes": 1390,
+      "sha256": "4e7ea09c41ab92491768f66cc208a7f5ff05f1b47f4cf39a7f614088c0056f5f",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/base_environment_after_install.json": {
+      "bytes": 2461,
+      "sha256": "c6f220dcbe054c1beb6824c09f8c3b37f266f5e4f2a9904b84a6987284d8486b",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/SCIENTIFIC_TERMINAL.json": {
+      "bytes": 1071,
+      "sha256": "86bf6e3906cb84ba7a1cedea027cde204cce2caba2767c19a637b2c082513ad6",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/base_environment_after_install.exit.json": {
+      "bytes": 315,
+      "sha256": "b40f42cc9cf6e7e328d095d2eb9df30ec946ae94a4101132713e6fefe5a0b96a",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/environment_admission.json": {
+      "bytes": 371,
+      "sha256": "a4ddc615661979f9e8660bc648b1ea5cc5ff100cc172102c1ea3a933ffa08e23",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/build_standalone_native.log": {
+      "bytes": 1280,
+      "sha256": "1b50fe4bc6f1a9c59384ae325396119b8cf8a1d29ef862217525c8803eced0f7",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/build_standalone_native.guard.jsonl": {
+      "bytes": 695,
+      "sha256": "fee34b6ed4f6980a6359fb7264c4a7387fda23831a3f01f93893e2b79ec14318",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/build_standalone_native.exit.json": {
+      "bytes": 315,
+      "sha256": "b1f9e8ad675e0000766745b0d23b91a2f598f2a28e21efab40e8a175db7288f9",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/full_input_before.log": {
+      "bytes": 61,
+      "sha256": "3f36d6a37ecdbcdc64df4bf35d4f01181999493d02b43d0479b03e1cd7777e2a",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/full_input_before.guard.jsonl": {
+      "bytes": 6253,
+      "sha256": "fdd5b3aa23a0ff0bee2d34ca987200e9940dc7c7992c05dfcc1f45ec313acbba",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/full_input_before.json": {
+      "bytes": 1034,
+      "sha256": "97181a422edd01a1bbc06943cc6e8e8a4c610806d8bd992f552ccd3773360884",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/full_input_before.exit.json": {
+      "bytes": 315,
+      "sha256": "5a45f253d6b0431d6b17cefba6276139575f11314c901be3a8f2b9f111e31ad1",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/host.json": {
+      "bytes": 1219,
+      "sha256": "2069b283060cabcf8ccc3516cde01d7bbc35e34d8c5d55d18f2eff93fa16fea2",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/admission.json": {
+      "bytes": 4453,
+      "sha256": "d7b07d9f329b0698d6697a131accfb3fe332f7476710c9c3c9fee0973949e207",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native_friendster.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/native_friendster.guard.jsonl": {
+      "bytes": 128821,
+      "sha256": "cbffb885d16f1c7aaa4a52872adb516332fe1e92c311248925e3423ff74973ef",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/native_friendster.exit.json": {
+      "bytes": 317,
+      "sha256": "7f7506bb8554f0b1ef22abc58d46689a0092013ffe53e71ced9278701e460b1d",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/scientific_jobs.json": {
+      "bytes": 813,
+      "sha256": "b504be5169d55d2c2e270db1d130a09df01da98312aa33fd139892177e941fed",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/numba32.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/numba32.guard.jsonl": {
+      "bytes": 7031,
+      "sha256": "759d4f20433caece23feb72b9b2454f0644df7f553cbdf49f4a5b03828d2eba5",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/friendster_neighbors32.json": {
+      "bytes": 498189,
+      "sha256": "5b09080c7b3183a17ccbaa2b9a3be66f27d8c07f065c9584651cdc6c06b0cf30",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/numba32.exit.json": {
+      "bytes": 316,
+      "sha256": "c3fc8d73039f0275e5bd4adbceff08cc23d71745f5cf55cd590f5161f6b9a975",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/numba64.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/numba64.guard.jsonl": {
+      "bytes": 19640,
+      "sha256": "f17e6947ee5dd30ac39e8447e3363d98556b65b5909ca61c16a51f9db44f0795",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/friendster_neighbors64.json": {
+      "bytes": 499955,
+      "sha256": "930bc5bcee5a1f95ae295726600fe55a7d33e4cb9e53b653cdfc43c270a06e40",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/numba64.exit.json": {
+      "bytes": 316,
+      "sha256": "7c86b300c49179cf6ffc3472d5badd2b028a61f567297a5a14fb0a64dc71ba61",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/full_input_after.log": {
+      "bytes": 61,
+      "sha256": "3f36d6a37ecdbcdc64df4bf35d4f01181999493d02b43d0479b03e1cd7777e2a",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/full_input_after.guard.jsonl": {
+      "bytes": 6251,
+      "sha256": "9adde5e5c19ef2938c898ed05ad67b5ef372840a47fbf0aec2dc45dee957979c",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/full_input_after.json": {
+      "bytes": 1034,
+      "sha256": "97181a422edd01a1bbc06943cc6e8e8a4c610806d8bd992f552ccd3773360884",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/full_input_after.exit.json": {
+      "bytes": 315,
+      "sha256": "a7c75bdbe1902dbc817c7c8effaea54561e706e75e794bec20e7c01bbb2f2264",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/isolated_environment_after.log": {
+      "bytes": 298,
+      "sha256": "7363848e7463993e99922efc6563bbc00613519ed0a647e1f4d14fd3b5fe7bd4",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/isolated_environment_after.guard.jsonl": {
+      "bytes": 1390,
+      "sha256": "7f0617302065fe16b4ac0a5d8035061b5c122d2048be30bd0a2cb398ac36f8c0",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/isolated_environment_after.json": {
+      "bytes": 13931,
+      "sha256": "0dc3f531ce0c3901512a5d9a3ea1994d29e30800cda8d647337aa563f05889fe",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/isolated_environment_after.exit.json": {
+      "bytes": 315,
+      "sha256": "33db5d78fb544c00adecd1655b245d9477e3db262e4c8f5948a8aac6bb1d4fad",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/base_environment_after.log": {
+      "bytes": 289,
+      "sha256": "707275ac34e4751ac040c9bdd39332f93a565081dc820439a45cf81333b67e3f",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/base_environment_after.guard.jsonl": {
+      "bytes": 1389,
+      "sha256": "2137d23930a11557e447098b48c8aca283055ad3fbbe5bd6876c943010a14113",
+      "review_class": "bounded_actual_resource_guard_observations"
+    },
+    "results/base_environment_after.json": {
+      "bytes": 2461,
+      "sha256": "c6f220dcbe054c1beb6824c09f8c3b37f266f5e4f2a9904b84a6987284d8486b",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/base_environment_after.exit.json": {
+      "bytes": 315,
+      "sha256": "806d3475e1f1aa1f4ad878441dfc229d24f8caaf5c502eb3f4e4c6b0a0ba37e5",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/replay_plan.json": {
+      "bytes": 74240,
+      "sha256": "ea6187fe6ccae1c157b98e89831c8d614cee0d1469c47bb252ca4df19ec99e66",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/parent_plan.json": {
+      "bytes": 2781,
+      "sha256": "312ab3faaa7fc9313f5c3c8d5c2c031bc7d45b60c1008db11c790ce01d2c515c",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/admission.json": {
+      "bytes": 5195,
+      "sha256": "2290a0df9f54064abe892b6016773b72ab0922d6dc26af6aa6ae5b6d7517cf11",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/runtime_bindings.json": {
+      "bytes": 2017,
+      "sha256": "ce6a29c5ad462f6ea82306db98910face26304050cca701333425a53bd42f8be",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/upstream_native_admission.log": {
+      "bytes": 166,
+      "sha256": "e7a088f3d20b58c43731c6cc63f4db49bdf672675f8c379e1614b0e4822ec5b6",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/native/upstream_native_admission.json": {
+      "bytes": 12477,
+      "sha256": "53b82b495e01db6be162ca8a780c97ddb718b653a2977a5f8eaa7f89b7a014a8",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/upstream_native_admission_exit.json": {
+      "bytes": 302,
+      "sha256": "b6b63cb4c248de183f79c13bf403ea51ebc8d98021e672964fa55d06b3d97deb",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/conversion_command.json": {
+      "bytes": 1190,
+      "sha256": "a60f203f2bd0e4043bedb2962b2244c8e48d0b3ead002a215233db137066672a",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/native_conversion.log": {
+      "bytes": 152,
+      "sha256": "0f8f7184008a9b92a29ba10f9c73bed8353bd076affbb6f4dec045357343a68c",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/native/native_conversion_receipt.json": {
+      "bytes": 8991,
+      "sha256": "5e4d08b717f7157608ad334f3f5390feca6c5fefb27b260b4ebb0c3e25543043",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/native_conversion_exit.json": {
+      "bytes": 305,
+      "sha256": "2f456579be6cc6c35a0d986df8035f24d0bc2460ff92ea280850606cfa7dcd9e",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/status.json": {
+      "bytes": 45,
+      "sha256": "3772acd0aa984ad33f235026b38cdf36992798d98c7cec3d98d33a42e40977b7",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/upstream_torch_sparse_direct.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/native/upstream_torch_sparse_direct.json": {
+      "bytes": 130729,
+      "sha256": "d14929784c4b93a7515b57c2a16ee16e815208fed10e11e9d48848c13680ec1c",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/upstream_torch_sparse_direct_exit.json": {
+      "bytes": 305,
+      "sha256": "72c93f74d0b596ecb4a732aa4698da5cf3c15dacf758ac5bc4b49763af9bd4b5",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/arm_results.json": {
+      "bytes": 1699,
+      "sha256": "8fd9728869920e54eb1a0b468c2537bbb6b9da84c21ee1cae76b8b492d297872",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/persistent_touched_reset.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/native/persistent_touched_reset.json": {
+      "bytes": 131355,
+      "sha256": "5018c316b6a9d9baab5c6cf83fc1c5d17592fbec435044a0515645fce5df88d5",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/persistent_touched_reset_exit.json": {
+      "bytes": 305,
+      "sha256": "1e467fcd65ec0df5f178a3369f1e15d6e57bda87a411df1f7164a46ba63c770d",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/reference_full_clear.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review_class": "whole_actual_setup_science_stdout_no_network_install"
+    },
+    "results/native/reference_full_clear.json": {
+      "bytes": 129638,
+      "sha256": "3aae86a789466f0b1db71cac885a3e2f1c3d3cd00068b43a02bb9f8b43d6527d",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/reference_full_clear_exit.json": {
+      "bytes": 305,
+      "sha256": "fcf54c6a244ec81af7301145038a15b0ca3329291cd4f477614dd1910e1edb06",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "results/native/COMPLETE.json": {
+      "bytes": 2071,
+      "sha256": "71f6e890e0fe7d4c2ae5cce52bf004af6abf10fb4380f6207cd0fe2029a20f5d",
+      "review_class": "public_Friendster_actual_science_environment_lifecycle_receipt"
+    },
+    "sources/FROZEN_128_SELECTION.json": {
+      "bytes": 74238,
+      "sha256": "d2cac5cc0ef136aa0a59466cb9251f2e191e267a09904e373ece78479b55dfb4",
+      "review_class": "public_Friendster_derived_fixed_S_data_CC_BY_4"
+    },
+    "sources/FULL_INPUT_IDENTITY.json": {
+      "bytes": 835,
+      "sha256": "bf5c26208d7cd46cb2be24e0d1faa9c8236cd57177647b5471f7cfae67b6a0ac",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/LICENSE": {
+      "bytes": 1073,
+      "sha256": "5096961eb53321c0dd8d8b6eeb978cd3e4a58256f1ab706558500d618ffe26ca",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/PORTABLE_AST_PINS.json": {
+      "bytes": 2974,
+      "sha256": "f6d2d5808788005598e933132abf972fe1dc8526bfb07a5bba459f0fa8c9d349",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/README.md": {
+      "bytes": 8991,
+      "sha256": "02c44cd3af3274465bc23be6e7d6f81173c6a483b02c451c62225a30b246db0d",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/V1_TARGET310_PORTABILITY_DIAGNOSIS.json": {
+      "bytes": 3731,
+      "sha256": "4f6ca9ea53cc2cb513285dce9b5e7c4df21a2d4ec70cef20ab20a542532a85e2",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/cpu_common_v1.py": {
+      "bytes": 10346,
+      "sha256": "fd2f0873239221d20c73cc8356c6bfe124cb17078ba0b0730c7d48bb5a76bbe8",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/cpu_coordinator_v1.py": {
+      "bytes": 20323,
+      "sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/cpu_environment_v1.py": {
+      "bytes": 22228,
+      "sha256": "72c286c92e473200e7de50f37a5f2575795b905388404bc14ccc38957e1eff8f",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/cpu_input_v1.py": {
+      "bytes": 853,
+      "sha256": "c270a13e5038ded35fc18ecfbf1981b00cb5422d58ccaddb6b6a4b80568965ed",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/cpu_worker_v1.py": {
+      "bytes": 8141,
+      "sha256": "aa07786f148b0ade804c41640e5eb2832694c009317888e544192c00a50f4337",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/execution_v1.py": {
+      "bytes": 2903,
+      "sha256": "b8a920aff0ae32a1915da33efcf413dd82115c950807d624bf9f097b34cb05ef",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/execution_v1.py.lineage.json": {
+      "bytes": 516,
+      "sha256": "43e1009149a21139ea36d6aa6b14355ec50694771171e56aa5b40d86b4a06693",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/original/external_operator_benchmark.py": {
+      "bytes": 29476,
+      "sha256": "525e88c904fd03e10fc617853c8d733e88af90487cbbdd9122ced97962df112c",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/original/native/build_native_v1.py": {
+      "bytes": 2341,
+      "sha256": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/original/native/fixtures_v1.py": {
+      "bytes": 1254,
+      "sha256": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/original/native/native_adapter_v1.py": {
+      "bytes": 8499,
+      "sha256": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/original/native/native_assoc_v1.cpp": {
+      "bytes": 7987,
+      "sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/original/native/prepare_native_only_v1.py": {
+      "bytes": 3506,
+      "sha256": "40992a0bb790caaf77194ce568c8c1f88c0040d20a276b8e49beea8837f2e241",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/original/native/prepare_replay_v1.py": {
+      "bytes": 5719,
+      "sha256": "676dde1982e7f121b8b8343365d44e4fe0ee160ad3a0fd439d9f795585ce456f",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/original/native/replay_worker_v1.py": {
+      "bytes": 12872,
+      "sha256": "09a628149a8b06baabbb7b551bd98f00f41a8a44b5578ceb7a7d9e659cf147ea",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/original/native/run_parent_replay_v1.py": {
+      "bytes": 12295,
+      "sha256": "239d499ffff748799207076db782b4f90120dac8f0965d93e7e791a7a77a62b2",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/portable_ast_probe.py": {
+      "bytes": 1074,
+      "sha256": "e1c6203efa4e817dedcd8612cc28af656b3dcb09934981f19b14b236a1a6ed37",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/portable_ast_v1.py": {
+      "bytes": 1475,
+      "sha256": "749f8b3f538c0befbc0e0c15d700695cb53f8f7642901b281d445c51c2e01d3e",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/records/friendster_exact_int32.json": {
+      "bytes": 9040463,
+      "sha256": "bed119047100f89080081fe638ed60816d0256bfeea9750418668078cdb2d975",
+      "review_class": "public_Friendster_derived_fixed_S_data_CC_BY_4"
+    },
+    "sources/scientific_functions_v1.py": {
+      "bytes": 2580,
+      "sha256": "d989c604231257e6f3355a642abaeed29587d277d7fdb0d960eaeac29a968443",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/scientific_functions_v1.py.lineage.json": {
+      "bytes": 433,
+      "sha256": "1a10638d34572a676338d1b4bce22187657f3482781c7d2e8b05737ca6404c1a",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/scientific_repo/scripts/seal_revision/exact_benchmark.py": {
+      "bytes": 35079,
+      "sha256": "3ea7075dd80453a61eb42e8e990d21bf153635e6eff2e26379ba21788ad22544",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/scientific_repo/seal/__init__.py": {
+      "bytes": 24,
+      "sha256": "05c21a366b8fe1b60ab07ee6ef4cc5675059d91f624b4fc7fac9c6acabbe3545",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/scientific_repo/seal/graph_csr_kernels.py": {
+      "bytes": 15019,
+      "sha256": "19f517b874cfebc9f9388f094c17cf91b559936cd36f81976292c76025cfb2c5",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/test_ast_portability_v1.py": {
+      "bytes": 4974,
+      "sha256": "bee92e7454495484bc5f5afd90c7d6b78b754d7cc845545bf523407e15cead9b",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/test_cpu_core_v1.py": {
+      "bytes": 14491,
+      "sha256": "12dec23e3f936af088a0e685878ac317c2850b55fce3f97b5ad4b15bfe74025e",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/test_cpu_environment_v1.py": {
+      "bytes": 10590,
+      "sha256": "ebc3f6b3985213d4c3d117719c0bcc1ab930ba69fe4f40d1c2e0775c4ebeea7d",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/third_party/memory_guard_v3.py": {
+      "bytes": 36012,
+      "sha256": "e5bc616b518c17d6804c72f376872155514b902b490f43639526680ca5a516c8",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/third_party/native_notices/pytorch_sparse_LICENSE": {
+      "bytes": 1086,
+      "sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486",
+      "review_class": "preserved_upstream_MIT_notice_source_pin"
+    },
+    "sources/third_party/native_notices/saint_cpu.cpp.upstream.txt": {
+      "bytes": 1459,
+      "sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c",
+      "review_class": "preserved_upstream_MIT_notice_source_pin"
+    },
+    "sources/third_party/native_notices/upstream_pin.json": {
+      "bytes": 1437,
+      "sha256": "d2a5e21560926f462155b95e4e2d51056094298aa1ced75d4856c663726c3943",
+      "review_class": "preserved_upstream_MIT_notice_source_pin"
+    },
+    "sources/third_party/owned_supervision_v3.py": {
+      "bytes": 26702,
+      "sha256": "ec07bddc13f69cbbc1c5ba63a3ede390cfea254bcc02b811422338f5b9604aaf",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "sources/SOURCE_MANIFEST.json": {
+      "bytes": 6623,
+      "sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b",
+      "review_class": "approved_project_MIT_or_unchanged_provenance_source"
+    },
+    "MANIFEST.json": {
+      "bytes": 18942,
+      "sha256": "b771c96d427bf996623f9189f49ffff8e54637ded7ab490aa55b5b7f472df11e",
+      "review_class": "whole_raw_manifest"
+    }
+  },
+  "license_attribution": [
+    "Own code MIT already user approved; preserve sources/LICENSE.",
+    "Upstream torch_sparse MIT notice and source/git pins preserved byte-for-byte.",
+    "Derived public Friendster node/query sets: PerFuchs denseFriendster2021 DOI10.5281/zenodo.5146230 CC-BY-4.0; original network Yang/LeskovecICDM2012. Sidecar notice accompanies unchanged raw archive."
+  ],
+  "provenance_disclosures": [
+    "Historical source/runner paths, hostname/bootID/PID/native library hashes and runtime metadata remain as genuine provenance.",
+    "Only two SOURCE files mention VK text: historical generic owned_supervision_v3.py and its tiny test; no VK non-source payload or industrial data is present.",
+    "Internal runner main functions are recorded source provenance; use separate generic public CPU7 runner to execute fresh runs."
+  ],
+  "secret_review_scope": "Root narrow literal pattern scan found zero hits on121members. Explicit content/type/source allowlist review above is additional; no credential/env token value is present in the reviewed schema/log/source payloads.",
+  "root_pattern_scan": "work/vldb_clean_consumer_deploy_v1/CPU_RAW_PUBLIC_CANDIDATE_PATTERN_SCAN_v1.json",
+  "external_publication_performed": false,
+  "remote_actions": 0,
+  "YT_writes": 0
+}

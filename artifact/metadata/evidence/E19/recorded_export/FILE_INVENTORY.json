@@ -1,0 +1,59 @@
+{
+  "archive_separate": true,
+  "files": {
+    "export.json": {
+      "bytes": 3536,
+      "sha256": "748086b73d3ffa9602d27e36eafb75dc93d7d2d3859428dbce50e946fc49a187"
+    },
+    "extraction_manifest.json": {
+      "bytes": 50056,
+      "sha256": "0cbcc147d3bf8c44581c11cd2c8208f9ed8eedf56d534a67d35935af89dbd5c8"
+    },
+    "remote_receipts/RECOVERY_ADMISSION.json": {
+      "bytes": 2333,
+      "sha256": "3589dda0795ca201057016fbd771776ea2838c70a902536d29d76e899f228f73"
+    },
+    "remote_receipts/pencil_queue_v3_launch.json": {
+      "bytes": 876,
+      "sha256": "46e942a9e2bfa6f441869f15536cb6e2d2fe06d38c1acddacd3f297ecd5e6f62"
+    },
+    "remote_receipts/results/pencil_bridge_v3_20261125/COMPLETE.json": {
+      "bytes": 808,
+      "sha256": "1f8e1d6f2de8c5f6bb365d8dbe7eacdac930954cf801ab2889f9f1df98caa5df"
+    },
+    "remote_receipts/results/pencil_bridge_v3_20261125/SCIENTIFIC_TERMINAL.json": {
+      "bytes": 4094,
+      "sha256": "a0c074fd960719f6615d324e70d8b68227a620e06d592aab73aa242b4a32e6a8"
+    },
+    "remote_receipts/results/pencil_bridge_v3_20261125/archive_local_receipt.json": {
+      "bytes": 233,
+      "sha256": "687cc2ac7fd37c5e40bf0697b3b5f0ae39d6cb12a32e4e4819e5971d3f4d418c"
+    },
+    "remote_receipts/results/pencil_bridge_v3_20261125/archive_pointer.json": {
+      "bytes": 272,
+      "sha256": "6ebe93c8a708a6b06000032698932407fad84443cf1b8cc924f5a19e8e13d0a3"
+    },
+    "remote_receipts/results/pencil_bridge_v3_20261125/persistence.exit.json": {
+      "bytes": 326,
+      "sha256": "ecbf5d9a153e1231af9b31564cdcf942cd655454c8138387ca2761ec15653e3f"
+    },
+    "remote_receipts/results/pencil_bridge_v3_20261125/plan.json": {
+      "bytes": 142481,
+      "sha256": "5c519596554ffb51adf35cafd7f4d167e8ec30c2cdd1ea28e85c6336dbe2ee90"
+    },
+    "remote_receipts/results/pencil_recovery_stage_v1/COMPLETE.json": {
+      "bytes": 1083,
+      "sha256": "e78c2594b09d0e9c6aa8ba5ab3e024767bf8b74ba8e88acf186164d84f334dcd"
+    },
+    "remote_receipts/stage_recovered_pencil_v1_launch.json": {
+      "bytes": 680,
+      "sha256": "f8756391b392bab514c4843a60538b50c693aa4c4edb36febe05636622e9ef1a"
+    },
+    "remote_receipts_manifest.json": {
+      "bytes": 1816,
+      "sha256": "5a7fb5946bd4808063acf307d2c2675be262bbab77ecc9edd610a4b796cecd37"
+    }
+  },
+  "new_observations": 0,
+  "role": "E19"
+}

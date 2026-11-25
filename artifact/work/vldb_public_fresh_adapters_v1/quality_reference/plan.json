@@ -1,0 +1,566 @@
+{
+  "created_unix": 1795539746.098333,
+  "protocol": {
+    "dataset": "friendster_colleague_80_10_10",
+    "split_seed": 20261102,
+    "threshold_train": 14757470836727281938,
+    "threshold_validation": 16602285075010369541,
+    "num_nodes": 65608366,
+    "expected_train_entries": 2889707416,
+    "expected_canonical_positive_entries": 1444853708,
+    "original_queries_per_split": 10000,
+    "negatives_per_query": 1000,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "validation_query_count": 512,
+    "test_query_count": 4096,
+    "validation_subset_seed": 20261124,
+    "test_subset_seed": 20261125,
+    "eval_extraction_seed": 20261126,
+    "eval_candidate_order_seed": 20261127,
+    "sortpool_k": 370,
+    "epochs": 1,
+    "max_steps": 20000,
+    "eval_every_steps": 2000,
+    "batch_size": 128,
+    "num_workers": 16,
+    "learning_rate": 0.0001,
+    "num_hops": 2,
+    "max_nodes_per_hop": 200,
+    "per_vertex_oversample": 1.5,
+    "selection_metric": "custom_sampled_mrr",
+    "implementation_metric_alias": "ogb_mrr"
+  },
+  "graph_root": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/train_csr",
+  "pairs_root": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/train_pairs_csr",
+  "graph_input_stats": {
+    "/home/jovyan/seal_revision_20261124/data/friendster/prepared/train_csr/edge_starts.bin": {
+      "bytes": 524866928,
+      "mtime_ns": 1795538251866242898
+    },
+    "/home/jovyan/seal_revision_20261124/data/friendster/prepared/train_csr/edge_ends.bin": {
+      "bytes": 11558829672,
+      "mtime_ns": 1795538258482110713
+    },
+    "/home/jovyan/seal_revision_20261124/data/friendster/prepared/train_pairs_csr/edge_starts.bin": {
+      "bytes": 524866928,
+      "mtime_ns": 1795538251866242898
+    },
+    "/home/jovyan/seal_revision_20261124/data/friendster/prepared/train_pairs_csr/edge_ends.bin": {
+      "bytes": 5779414840,
+      "mtime_ns": 1795538258482110713
+    }
+  },
+  "dataset_provenance": {
+    "path": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/manifest.json",
+    "sha256": "f9c6ad7d7e1227c410ea7150b61721328829f2ba43436bc42be9d6debaf4f58c",
+    "content": {
+      "schema_version": 1,
+      "dataset": "friendster",
+      "variant": "exact_colleague_80_10_10",
+      "file_endian": "little",
+      "features": false,
+      "num_nodes": 65608366,
+      "seed": 20261102,
+      "threshold_train": 14757470836727281938,
+      "threshold_validation": 16602285075010369541,
+      "train_stored_entries": 2889707416,
+      "train_undirected_edges": 1444853708,
+      "train_isolated_nodes": 3004466,
+      "split_metadata": {
+        "seed": 20261102,
+        "num_nodes": 65608366,
+        "original_stored_entries": 3612134270,
+        "train_stored_entries": 2889707416,
+        "train_undirected_edges": 1444853708,
+        "validation_undirected_edges": 180606713,
+        "test_undirected_edges": 180606714,
+        "threshold_train": 14757470836727281938,
+        "threshold_validation": 16602285075010369541,
+        "queries_per_split": 10000,
+        "negatives_per_query": 1000,
+        "train_isolated_nodes": 3004466,
+        "file_endian": "little",
+        "split": "exact80/10/10unique undirected edges; paired directions share label",
+        "evaluation": "fixed uniform heldout-edge subsample;1000distinct uniform non-neighbors from original full graph; averaged tie ranks; cosine",
+        "valid": {
+          "query_count": 10000,
+          "warm_queries": 9911,
+          "cold_queries": 89
+        },
+        "test": {
+          "query_count": 10000,
+          "warm_queries": 9909,
+          "cold_queries": 91
+        }
+      },
+      "source_graph": {
+        "full_graph_path": "/home/jovyan/seal_revision_20261124/data/friendster/full_csr",
+        "download_manifest_sha256": "01acd57ad42e852c62039979270d2b1cffaebb883ab88dda00d84baa64fd9203",
+        "historical_source_revisions_equal": true,
+        "files": {
+          "meta.json": {
+            "bytes": 1240,
+            "sha256": "5d82d78741f035725d460fec852d69f40f4543afdfc8d2012fe930905814ef07",
+            "source": "//home/ucp-research/projects/graph_baselines/friendster/csr/meta.json",
+            "revision": 1853823850575783,
+            "mtime_ns": 1795538228017720093
+          },
+          "num_nodes.txt": {
+            "bytes": 9,
+            "sha256": "8551541f6f2ef955481af83ef5e6f92c5f206c968d5d9db6a4437efecf767753",
+            "source": "//home/ucp-research/projects/graph_baselines/friendster/csr/num_nodes.txt",
+            "revision": 1853819554955354,
+            "mtime_ns": 1795538226891742623
+          },
+          "edge_starts.bin": {
+            "bytes": 524866928,
+            "sha256": "b6ebf026fa54498f241af834b96b5496b2a1bcbf8be3edea2f4b3a1cf0a674e9",
+            "source": "//home/ucp-research/projects/graph_baselines/friendster/csr/edge_starts.bin",
+            "revision": 1853819555221672,
+            "mtime_ns": 1795537538959483014
+          },
+          "edge_ends.bin": {
+            "bytes": 14448537088,
+            "sha256": "0f74897efa3172252a8371bb0d2c8e0129602475ebb84a863ec1210f9c5e5973",
+            "source": "//home/ucp-research/projects/graph_baselines/friendster/csr/edge_ends.bin",
+            "revision": 1853823849725186,
+            "mtime_ns": 1795538224303794408
+          }
+        }
+      },
+      "reference_manifest_sha256": "8df41e2f06c2c7356b9b54e3e260451f1140703de87fc971cbbee5d2e5877c56",
+      "eval_bundle_sha256": "2d0b5dc8cdb5dd5c05b01e505a0186ae4f47615a1425a9cedc64ff3991430dde",
+      "historical_hash_source_sha256": "37b9a778038007e099dbe7b7f6e94ff0ad1e02f44ef0f088d7a5299d2d148939",
+      "preparer_sha256": "0f0d0a4255d585bdec80268c26b156781438d41fd667eb4bb4f2cad9e35b60c7",
+      "python": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+      "numpy": "1.24.4",
+      "numba": "0.58.0",
+      "numba_threads": 32,
+      "evaluation": {
+        "layout": "original_query_row",
+        "latest_series_arrays_sha256_equal": true,
+        "locations": {
+          "valid": "evaluation/valid",
+          "test": "evaluation/test"
+        },
+        "query_id": "original archived row index 0..9999; retain all rows including repeated source IDs",
+        "group_statistics": {
+          "valid": {
+            "query_rows": 10000,
+            "negatives_per_query": 1000,
+            "unique_sources": 9995,
+            "repeated_source_ids": 5,
+            "max_source_multiplicity": 2,
+            "query_id_definition": "original archived row index, 0..query_rows-1",
+            "source_group_evaluator_compatible": false
+          },
+          "test": {
+            "query_rows": 10000,
+            "negatives_per_query": 1000,
+            "unique_sources": 9995,
+            "repeated_source_ids": 5,
+            "max_source_multiplicity": 2,
+            "query_id_definition": "original archived row index, 0..query_rows-1",
+            "source_group_evaluator_compatible": false
+          }
+        },
+        "checks": {
+          "valid": {
+            "queries": 10000,
+            "negative_occurrences_checked": 10000000,
+            "positive_in_full_both_orientations": true,
+            "positive_absent_train_both_orientations": true,
+            "correct_hash_partition": true,
+            "negatives_are_full_graph_nonneighbors_both_orientations": true,
+            "no_negative_self": true,
+            "unique_negatives_per_query": true,
+            "exact_archived_negative_generator_reproduced": true,
+            "negative_distribution": "historical splitmix64 counter proposals modulo N, rejection of self/full neighbors/repeats; not a new IID claim",
+            "warm_queries": 9911,
+            "cold_queries": 89
+          },
+          "test": {
+            "queries": 10000,
+            "negative_occurrences_checked": 10000000,
+            "positive_in_full_both_orientations": true,
+            "positive_absent_train_both_orientations": true,
+            "correct_hash_partition": true,
+            "negatives_are_full_graph_nonneighbors_both_orientations": true,
+            "no_negative_self": true,
+            "unique_negatives_per_query": true,
+            "exact_archived_negative_generator_reproduced": true,
+            "negative_distribution": "historical splitmix64 counter proposals modulo N, rejection of self/full neighbors/repeats; not a new IID claim",
+            "warm_queries": 9909,
+            "cold_queries": 91
+          }
+        },
+        "source_group_evaluator_forbidden": true,
+        "flat_files_scope": "byte-preserving candidate rows for adapters; do NOT merge/group by source ID"
+      },
+      "all_heldout_exclusion": "construction keeps iff splitmix64(canonical_edge_key xor seed) <= threshold_train, hence excludes every heldout edge in both orientations; all provided queries independently checked",
+      "timestamps": "omitted; original full graph timestamps are zero and neither sampler uses them",
+      "files": {
+        "BUNDLE_MANIFEST.json": {
+          "bytes": 10964,
+          "sha256": "677ede8aa8958ce08907a76e860f304bdb8eddae77b21ae055e9c56b80735b63"
+        },
+        "evaluation/test/source_node.npy": {
+          "bytes": 80128,
+          "sha256": "763d6f4c51e97fb46db5f07e5659ef77d1646ac6100ea357819ecd1459ef35b7"
+        },
+        "evaluation/test/target_node.npy": {
+          "bytes": 80128,
+          "sha256": "20a25380f2a029edeeba598c5a6f02114b324323bb7da8ab29efcbf70ac7f84b"
+        },
+        "evaluation/test/target_node_neg.npy": {
+          "bytes": 40000128,
+          "sha256": "00c1e98d13ed7a02ba8596e3ac51af53992b6aab37d4417ff7713b03710f3f80"
+        },
+        "evaluation/test/warm_query.npy": {
+          "bytes": 10128,
+          "sha256": "62d881f9a4b8968c50cf6106b339458d3569aa63ad4c0104d5ccfa7d62ae3817"
+        },
+        "evaluation/valid/source_node.npy": {
+          "bytes": 80128,
+          "sha256": "b841469189c1a8b23b087aaf9e44bb6d1b7e0a4f9be3c485e86120a31c17c096"
+        },
+        "evaluation/valid/target_node.npy": {
+          "bytes": 80128,
+          "sha256": "fe173eb5114d7b1e36ffaec8fccb42be117953332959eecd7c220177a7ef523a"
+        },
+        "evaluation/valid/target_node_neg.npy": {
+          "bytes": 40000128,
+          "sha256": "64fd69a9ffb44e49096186c91fd308867bbe5bb3feab6e25f092378ff9a0342e"
+        },
+        "evaluation/valid/warm_query.npy": {
+          "bytes": 10128,
+          "sha256": "6027d7098f0463837b94e8c5816d9ac17335f86383c1686e95b8a7d040ff03d4"
+        },
+        "num_nodes.txt": {
+          "bytes": 9,
+          "sha256": "8551541f6f2ef955481af83ef5e6f92c5f206c968d5d9db6a4437efecf767753"
+        },
+        "provenance/bootstrap_exit_status_latest.txt": {
+          "bytes": 2,
+          "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+        },
+        "provenance/bootstrap_latest.sh": {
+          "bytes": 1997,
+          "sha256": "fc330d5dbee66d9dac7149a68cce693476235de1a7a72ca936e189c87ca78d91"
+        },
+        "provenance/bootstrap_stage_latest.json": {
+          "bytes": 65,
+          "sha256": "56100ee9a22b6d5419eb2916b73de4be3036e8c9f07a56597fcd9b2273539f8a"
+        },
+        "provenance/data_validation_latest.json": {
+          "bytes": 482,
+          "sha256": "d04f0dc7e54a620986d77ef90ff52fff3845c91dccee038583d8112134182ae2"
+        },
+        "provenance/prepare_historical.py": {
+          "bytes": 13153,
+          "sha256": "37b9a778038007e099dbe7b7f6e94ff0ad1e02f44ef0f088d7a5299d2d148939"
+        },
+        "provenance/validate_reference.py": {
+          "bytes": 1762,
+          "sha256": "9648c47790548695ab202657ee944946923abd35456920e27c4262ec30567b80"
+        },
+        "reference_manifest.json": {
+          "bytes": 2698,
+          "sha256": "8df41e2f06c2c7356b9b54e3e260451f1140703de87fc971cbbee5d2e5877c56"
+        },
+        "test_edge.npy": {
+          "bytes": 160128,
+          "sha256": "45cb8535e51603b39156789cfd7d3f7507256c99b564ca4b5989e883248e4006"
+        },
+        "test_edge_neg.npy": {
+          "bytes": 160000128,
+          "sha256": "fd744c38e62b5f34906f8b13419fb8faf111fb0c38acc61e270c8232a8e49ea8"
+        },
+        "test_query_row_ids.npy": {
+          "bytes": 80128,
+          "sha256": "3e7d12429f219ff5b6814ff1948c5b0e771431218bfb55b619b183b1e1264c51"
+        },
+        "train_csr/edge_ends.bin": {
+          "bytes": 11558829672,
+          "sha256": "76f00631a71e991b24de14b6ec1afc8da6838eaba94aea1d1a855640d01f5d4f"
+        },
+        "train_csr/edge_starts.bin": {
+          "bytes": 524866928,
+          "sha256": "ff702472dc7545321165c815e28b8f57e3653c007aadc765045d48976041e63d"
+        },
+        "train_csr/num_nodes.txt": {
+          "bytes": 9,
+          "sha256": "8551541f6f2ef955481af83ef5e6f92c5f206c968d5d9db6a4437efecf767753"
+        },
+        "train_csr/timestamps.bin": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "train_pairs_csr/edge_ends.bin": {
+          "bytes": 5779414840,
+          "sha256": "b2b3c4aaf019d3717022b3f709388c434c5661e352029cf8ea4196759646f4ed"
+        },
+        "train_pairs_csr/edge_starts.bin": {
+          "bytes": 524866928,
+          "sha256": "c6d2258aa6a2c762c6950cf409c479d529595a716400aed01bdb7f9f9610705c"
+        },
+        "train_pairs_csr/num_nodes.txt": {
+          "bytes": 9,
+          "sha256": "8551541f6f2ef955481af83ef5e6f92c5f206c968d5d9db6a4437efecf767753"
+        },
+        "train_pairs_csr/timestamps.bin": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "valid_edge.npy": {
+          "bytes": 160128,
+          "sha256": "9a324aabd7f119856c9d18d4a639e478bab7b7dc165a8bdf89bf7626d70f7286"
+        },
+        "valid_edge_neg.npy": {
+          "bytes": 160000128,
+          "sha256": "27f0f6459b77aca261271cc23dab58508447d1998c0b45cc52d2c3ed51ce5948"
+        },
+        "valid_query_row_ids.npy": {
+          "bytes": 80128,
+          "sha256": "3e7d12429f219ff5b6814ff1948c5b0e771431218bfb55b619b183b1e1264c51"
+        }
+      },
+      "timings": [
+        {
+          "stage": "pass1_counts_and_prefix",
+          "seconds": 5.521721987053752,
+          "peak_rss_bytes": 16195125248
+        },
+        {
+          "stage": "pass2_fill",
+          "seconds": 16.248846400529146,
+          "peak_rss_bytes": 33534504960
+        },
+        {
+          "stage": "all_queries_and_flat_files",
+          "seconds": 8.098873131908476,
+          "peak_rss_bytes": 36442021888
+        },
+        {
+          "stage": "output_hashes",
+          "seconds": 15.678108045831323,
+          "peak_rss_bytes": 36442021888
+        }
+      ],
+      "memory": {
+        "peak_rss_bytes": 36442021888
+      },
+      "completed_unix": 1795538293.364851
+    }
+  },
+  "subsets": {
+    "val": {
+      "split": "valid",
+      "selection_unit": "original query row, including repeated source IDs",
+      "subset_seed": 20261124,
+      "candidate_order_seed": 20261127,
+      "query_count": 512,
+      "original_query_count": 10000,
+      "unique_source_count": 512,
+      "original_unique_source_count": 9995,
+      "negatives_per_query": 1000,
+      "all_provided_negatives_retained": true,
+      "query_id_definition": "zero-based row in colleague evaluation source_node/target_node/target_node_neg arrays",
+      "inputs": {
+        "source_node": {
+          "path": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/evaluation/valid/source_node.npy",
+          "sha256": "b841469189c1a8b23b087aaf9e44bb6d1b7e0a4f9be3c485e86120a31c17c096"
+        },
+        "target_node": {
+          "path": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/evaluation/valid/target_node.npy",
+          "sha256": "fe173eb5114d7b1e36ffaec8fccb42be117953332959eecd7c220177a7ef523a"
+        },
+        "target_node_neg": {
+          "path": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/evaluation/valid/target_node_neg.npy",
+          "sha256": "64fd69a9ffb44e49096186c91fd308867bbe5bb3feab6e25f092378ff9a0342e"
+        },
+        "warm_query": {
+          "path": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/evaluation/valid/warm_query.npy",
+          "sha256": "6027d7098f0463837b94e8c5816d9ac17335f86383c1686e95b8a7d040ff03d4"
+        }
+      },
+      "outputs": {
+        "positive": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/valid_edge.npy",
+          "sha256": "62e73be691d3059fd1832bcb87028e2ba0b3bd31428d43011d7f414fb6179412"
+        },
+        "negative": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/valid_edge_neg.npy",
+          "sha256": "2b94e3ec891df672529413a306834931757ce9318b4014551b87eda5d6d39e18"
+        },
+        "query_ids": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/valid_query_ids.npy",
+          "sha256": "0b6bc4345150c5963db09b14ac90d773fbe37306f2510badf79dd5ffc95813a8"
+        },
+        "warm_query": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/valid_warm_query.npy",
+          "sha256": "fd14d58d24ffd497fe4e88994bc1ccc4cc288351784e71128df78b25349b2c09"
+        }
+      },
+      "metric": "custom_sampled_mrr",
+      "is_official_ogb_benchmark": false
+    },
+    "test": {
+      "split": "test",
+      "selection_unit": "original query row, including repeated source IDs",
+      "subset_seed": 20261125,
+      "candidate_order_seed": 20261127,
+      "query_count": 4096,
+      "original_query_count": 10000,
+      "unique_source_count": 4095,
+      "original_unique_source_count": 9995,
+      "negatives_per_query": 1000,
+      "all_provided_negatives_retained": true,
+      "query_id_definition": "zero-based row in colleague evaluation source_node/target_node/target_node_neg arrays",
+      "inputs": {
+        "source_node": {
+          "path": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/evaluation/test/source_node.npy",
+          "sha256": "763d6f4c51e97fb46db5f07e5659ef77d1646ac6100ea357819ecd1459ef35b7"
+        },
+        "target_node": {
+          "path": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/evaluation/test/target_node.npy",
+          "sha256": "20a25380f2a029edeeba598c5a6f02114b324323bb7da8ab29efcbf70ac7f84b"
+        },
+        "target_node_neg": {
+          "path": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/evaluation/test/target_node_neg.npy",
+          "sha256": "00c1e98d13ed7a02ba8596e3ac51af53992b6aab37d4417ff7713b03710f3f80"
+        },
+        "warm_query": {
+          "path": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/evaluation/test/warm_query.npy",
+          "sha256": "62d881f9a4b8968c50cf6106b339458d3569aa63ad4c0104d5ccfa7d62ae3817"
+        }
+      },
+      "outputs": {
+        "positive": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/test_edge.npy",
+          "sha256": "ca94f194648ea48de09ede643bf57a3828d38564a37fb5a5b27db37301389ea8"
+        },
+        "negative": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/test_edge_neg.npy",
+          "sha256": "d9a7d3dae79d2bf9d15c9fd47719b52c047de8bd6a960538bd51595eb7c70712"
+        },
+        "query_ids": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/test_query_ids.npy",
+          "sha256": "2fec2027475bd6a7e187145204f40107cfa3a3bcd03317f7e0a30a01d059dbd2"
+        },
+        "warm_query": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/test_warm_query.npy",
+          "sha256": "cda034aa25566e0cfb77ffcdae43a388e71d020c5e61dbbf11fa947134558b14"
+        }
+      },
+      "metric": "custom_sampled_mrr",
+      "is_official_ogb_benchmark": false
+    }
+  },
+  "jobs": [
+    {
+      "name": "union_seed42",
+      "seed": 42,
+      "variant": "union",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/union_seed42.json",
+      "config_sha256": "0f4d1855069e147abae01baa4d1696aa6d076ce7eaa2a594b69f53091d45214e"
+    },
+    {
+      "name": "pv_seed42",
+      "seed": 42,
+      "variant": "pv",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/pv_seed42.json",
+      "config_sha256": "9029e1cca7e862b79f6a94eaf0a501970705e8423a4bd87f82b84bdd3732436b"
+    },
+    {
+      "name": "pv_seed43",
+      "seed": 43,
+      "variant": "pv",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/pv_seed43.json",
+      "config_sha256": "934609f46dcda91c8e08aab279f8aae73db1aa21ee440b909047fce77ccd7b57"
+    },
+    {
+      "name": "union_seed43",
+      "seed": 43,
+      "variant": "union",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/union_seed43.json",
+      "config_sha256": "48f3c6dddc483b03c6d1d4ab86dab5223d35e37fff6ad60f15e6ed16cac9eef3"
+    },
+    {
+      "name": "union_seed44",
+      "seed": 44,
+      "variant": "union",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/union_seed44.json",
+      "config_sha256": "84104ffd5173c6e2aecb33c232f5bb9cb354c67ad14add5254f3609d35088c06"
+    },
+    {
+      "name": "pv_seed44",
+      "seed": 44,
+      "variant": "pv",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality_friendster/configs/pv_seed44.json",
+      "config_sha256": "7a5e6ced645470ccefb6712aa7d9a38a007aa63433b2023f948b7ac4a69dadfe"
+    }
+  ],
+  "code": {
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/__init__.py": "90abaad225d35e7243b2d289a350d63a1553e4da0de6b77ac0004836413e74fe",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/batch_transforms.py": "0ff0c67da6ac402b5740ac9118025c448d2643f576e346b193379723f2dd2871",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/batch_types.py": "bf735168edfc87cd2b778762f5e1a34294d56372ee17f387dc7b89721953c60c",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/collators.py": "89e0f4008487042c3f4fb2327dde842b33935dc9a1501a6a7b1ee4c0d41b59fb",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/config.py": "dbeaf8c5be1c5448c49da0824ce9a82ac1371919af6dc4261e2acf77b45565a4",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/dataset_config.py": "5f6d054b735d20157228ddf253450be38c57a7ba513c07e85fccd5b068533e49",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/distributed_utils.py": "3a067359a7ec5cef60936ff3be82619d648a7ecf4a4d5a517881498a7a16ddfd",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/eval_data.py": "4d32282f91714b36ac0db22097327d041320be63a24aecd3a624f2fc8e96b205",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/iterable.py": "1418b772ab3794962890a8f2aaa019d9d56d64176ca32221d195955d44eb95ae",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/loaders.py": "a83a43becac365b54eb056c2750063fa9c36adb7bd17265fe958999b9e17be38",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/losses.py": "9391b939304dffe6c5661923a78e1d312f41b4e3a5137165f48595bf1f51da1c",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/metrics.py": "3af925c9d3c884cdd25557dfb916e5492b47d6391f8021f87dab9ef9dc67fb48",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/negative_sampling.py": "162c374bee13555ee3fb04581d25c16ce726321bf81a17c3639a3ec217212be6",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/node_sampling.py": "2a59974483703cf4aa73c459af9d8343d8f3df00ef9a2a0afa05c49f4f124c0f",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/positive_edges.py": "f213012330ea8d0ff526030289e05b65c8c38f03b40d31f0a420a2f565a52b10",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/training_utils.py": "1782a124276572d472db9ff99b761973c10fb0208f3b01cc787c3ce399d96e20",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/utils.py": "1f190cd1f91b3cccbe9687fcb5a03ba9174a72b4443ae93587c196570a6a8efb",
+    "/home/jovyan/seal_revision_20261124/code/experiment_configs/seal_revision_2026-11/quality/prepare_sources.py": "22bab8d5689144432186332a9401d966e24567aecb6d5c2cfe3cb1d80a30dfec",
+    "/home/jovyan/seal_revision_20261124/code/experiment_configs/seal_revision_2026-11/quality/runner.py": "dd07d766cddebe46b186384a21f7d0e3fa55b0f01ee5e577eb8b0c0495530bd0",
+    "/home/jovyan/seal_revision_20261124/code/experiment_configs/seal_revision_2026-11/quality/test_prepare_sources.py": "84ec2a4a8ad480c27053730ef32aa1cd2138a5905dedef9560bb2ca1e9cdd29c",
+    "/home/jovyan/seal_revision_20261124/code/experiment_configs/seal_revision_2026-11/quality_friendster/query_data.py": "bfbabf329439f1c5726e0f7d141fbe97a4e064ce9bf33a1ddb46b06fe28cd1cf",
+    "/home/jovyan/seal_revision_20261124/code/experiment_configs/seal_revision_2026-11/quality_friendster/runner.py": "208c2602b69ba8a56eb34d1e57aa4ed5ede40957603b003b5fc370e100b77e8b",
+    "/home/jovyan/seal_revision_20261124/code/experiment_configs/seal_revision_2026-11/quality_friendster/test_query_protocol.py": "c39026f8b4d1d07166c591afa10592b622609ea4ec35ac2a8396a01d7e8b4e04",
+    "/home/jovyan/seal_revision_20261124/code/experiment_configs/seal_revision_2026-11/quality_friendster/train_entry.py": "5b6baa11e206eb51651aa7173c5cd3c2eb4537d6fb952b4735de725950da211c",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/__init__.py": "dabf51f8480a0cbbb715eccb6a040de7ab7a7762704d732dc9d032b6eb11a2d8",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/graph.py": "5f3a1f3156ebfe75ddc01d282423384dfa52ba35ba6a1745e3723735eeb9e9e2",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/io_utils.py": "4cbfd1de20525b6d705ded4832f07e59ae910626a5784c0a72cf8b9799889d74",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/large_int32.py": "8bbe63d97cc150f5cd634a8572e8517f73867d64b11ea9ce3941d4c9ea6f4756",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/large_int64_raw.py": "1cdfa9335a84461359c99ea3ba8e38c75219287874fa0e6248050a27e3f63a99",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/serializer.py": "b67ac9a00d3d08aa62501bce4fbf4d90af264c07c19372db1c78160fb280e50e",
+    "/home/jovyan/seal_revision_20261124/code/seal/__init__.py": "05c21a366b8fe1b60ab07ee6ef4cc5675059d91f624b4fc7fac9c6acabbe3545",
+    "/home/jovyan/seal_revision_20261124/code/seal/config.py": "679df5f55e53908388d706b45ea98c1223807e65f2039d3d5619f443aa79c123",
+    "/home/jovyan/seal_revision_20261124/code/seal/data_bridge.py": "cd7b340aea21fd839ef6eac9fc86f19a23956a5c759ef527189ffb2d03278853",
+    "/home/jovyan/seal_revision_20261124/code/seal/graph_csr_dataset.py": "43d1e164e06f1e494712a10e90812c9e3757d640889872995c13d8bfc91e0767",
+    "/home/jovyan/seal_revision_20261124/code/seal/graph_csr_extraction.py": "fd1468b141af9d33ed4045f862342e5f145aa4d0eaee73421754832c9831b1cd",
+    "/home/jovyan/seal_revision_20261124/code/seal/graph_csr_kernels.py": "19f517b874cfebc9f9388f094c17cf91b559936cd36f81976292c76025cfb2c5",
+    "/home/jovyan/seal_revision_20261124/code/seal/models.py": "3e613bb9596a5efbc310589bc12a26ec18c2d2d50b110d2a542585a8e43deac9",
+    "/home/jovyan/seal_revision_20261124/code/seal/ogb_metrics.py": "33ab7bc8f1d30e8836b1e0c051061bf46d0bd9e56bf67fa0d098bc4cd6718f87",
+    "/home/jovyan/seal_revision_20261124/code/seal/reproducibility.py": "8168a7f3a19f14bf39f0dc0bdc6235377b0b4a1b7832056d0d314fc491fd1639",
+    "/home/jovyan/seal_revision_20261124/code/seal/scoring.py": "748b6c0625e72f2de8e78cfadb1bc360d14ecc52e0d111ae337bb0cf8e7c82e0",
+    "/home/jovyan/seal_revision_20261124/code/seal/seal_link_pred.py": "35f6410aaf2df98709a162153d45da69e23feb8ef691d4a47b16d9f410ef66ff",
+    "/home/jovyan/seal_revision_20261124/code/seal/utils.py": "f8a1221f1e72453a25fe4eeb7ac42dd0b07e3a0d62ceafc2f5e05c4191adefc5"
+  },
+  "metric_name": "custom_sampled_mrr",
+  "implementation_metric_alias": "ogb_mrr",
+  "is_official_ogb_benchmark": false,
+  "ranking_unit": "original query row; repeated source IDs remain separate",
+  "positive_sampling": {
+    "source": "train_pairs_csr canonical u<v",
+    "subset_fraction": null,
+    "epoch": 0,
+    "order": "existing seeded coprime-stride iterator, same paired prefix",
+    "positive_examples_per_full_batch": 64,
+    "expected_graph_examples_per_job": 2560000,
+    "expected_positive_examples_per_job": 1280000
+  },
+  "test_access_policy": "all six validation-selected checkpoints jointly frozen before test model scoring"
+}

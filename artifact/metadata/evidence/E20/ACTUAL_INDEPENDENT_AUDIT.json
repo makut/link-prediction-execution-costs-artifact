@@ -1,0 +1,376 @@
+{
+  "YT_writes": 0,
+  "archive": {
+    "YT_writes": 0,
+    "bytes": 2121570,
+    "files": 120,
+    "manifest_sha256": "b771c96d427bf996623f9189f49ffff8e54637ded7ab490aa55b5b7f472df11e",
+    "path": "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_20261125.tgz",
+    "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374"
+  },
+  "denominator": {
+    "existing_ordered_sets": 128,
+    "fixed_numba_methods": [
+      "scan",
+      "pairwise"
+    ],
+    "native_arms": 3,
+    "ordered_rows_cols_original_eids_oracles": "independent immutable historical E18; three component hashes per case, not repetitions",
+    "physical_numba_widths": [
+      32,
+      64
+    ],
+    "repetitions_per_case": 3,
+    "selection_independently_recomputed": true,
+    "warmup": 1
+  },
+  "direct_host_evidence": "Coordinator+both NumBa workers; standalone/upstream native subprocess workers inherit the owned unchanged local parent execution and have no direct per-worker boot receipt.",
+  "graph_model_or_native_library_loads": 0,
+  "guard_rows": {
+    "base_environment_after": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 2
+    },
+    "base_environment_after_install": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 2
+    },
+    "base_environment_before": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 2
+    },
+    "build_standalone_native": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 1
+    },
+    "create_isolated_env": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 1
+    },
+    "full_input_after": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 9
+    },
+    "full_input_before": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 9
+    },
+    "install_offline_native": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 1
+    },
+    "isolated_environment": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 2
+    },
+    "isolated_environment_after": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 2
+    },
+    "native_friendster": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 183
+    },
+    "numba32": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 10
+    },
+    "numba64": {
+      "final_sampling_errors": 0,
+      "valid_decision_rows": 28
+    }
+  },
+  "host": {
+    "boot_id": "004b9f1b-ff73-4f91-a214-171d590617d6",
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "cpu_models": [
+      "Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz"
+    ],
+    "hostname": "lpp-cpu-0"
+  },
+  "inventory": {
+    "manifest": {
+      "bytes": 18942,
+      "sha256": "b771c96d427bf996623f9189f49ffff8e54637ded7ab490aa55b5b7f472df11e"
+    },
+    "payload_files": 120,
+    "raw_bytes_including_manifest": 11209413,
+    "result_files": 81,
+    "source_files": 39
+  },
+  "kind": "INDEPENDENT_PUBLIC_FULL_FRIENDSTER_MATCHED_CPU_AUDIT_V1",
+  "local_auditor": {
+    "bytes": 55880,
+    "sha256": "6344b592c44b50a17326fca6e2ac14c82da7ec20d01deb9b0554bbcf48be58ea"
+  },
+  "ratios_of_sums_per_case_medians": {
+    "native_reference_full_clear_over_native_persistent_touched_reset": {
+      "edge_plus_drnl_seconds": 38.44645086871701,
+      "edge_seconds": 106.54617684140828
+    },
+    "native_upstream_torch_sparse_direct_over_native_persistent_touched_reset": {
+      "edge_plus_drnl_seconds": 41.22448656872804,
+      "edge_seconds": 114.37515716957724
+    },
+    "numba32_pairwise_over_native_persistent_touched_reset": {
+      "edge_plus_drnl_seconds": 2.799736525622396,
+      "edge_seconds": 6.330059197296118
+    },
+    "numba32_scan_over_native_persistent_touched_reset": {
+      "edge_plus_drnl_seconds": 3.508587066858252,
+      "edge_seconds": 8.330698608975116
+    },
+    "numba64_pairwise_over_native_persistent_touched_reset": {
+      "edge_plus_drnl_seconds": 2.8370597740877876,
+      "edge_seconds": 6.459133478684318
+    },
+    "numba64_scan_over_native_persistent_touched_reset": {
+      "edge_plus_drnl_seconds": 3.502703774678642,
+      "edge_seconds": 8.338848688920102
+    }
+  },
+  "raw_recomputed_summaries": {
+    "native_persistent_touched_reset": {
+      "native_content_verification_outside_query_timer_seconds": 35.441551610827446,
+      "records": 128,
+      "state_initialization_outside_query_timer": {
+        "assoc_bytes_during_each_call": 524866928,
+        "initialization_policy": "once per worker",
+        "initialization_seconds": 0.08544941246509552,
+        "library": "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_build/native_assoc_v1.so",
+        "library_sha256": "2a8b892a63a84061ec03fc8e7d6c5d616ecb351720a1e4f236cae0374999f967",
+        "mode": "persistent_touched_reset",
+        "nodes": 65608366,
+        "owner_pid": 16842,
+        "persistent_assoc_bytes_per_worker": 524866928,
+        "scope": "Initialization is outside query timers. Persistent 8N map is not free or shared between workers.",
+        "stored_entries": 3612134270,
+        "version": "persistent_assoc_touched_reset_v1"
+      },
+      "sum_per_case_medians_seconds": {
+        "drnl_seconds": 0.18147429823875427,
+        "edge_plus_drnl_seconds": 0.28194282203912735,
+        "edge_seconds": 0.09987583011388779,
+        "raw_operator_seconds": 0.05525815486907959
+      }
+    },
+    "native_reference_full_clear": {
+      "native_content_verification_outside_query_timer_seconds": 35.55729856342077,
+      "records": 128,
+      "state_initialization_outside_query_timer": {
+        "assoc_bytes_during_each_call": 524866928,
+        "initialization_policy": "full-N allocation/init inside every native call",
+        "initialization_seconds": 2.6717782020568848e-05,
+        "library": "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_build/native_assoc_v1.so",
+        "library_sha256": "2a8b892a63a84061ec03fc8e7d6c5d616ecb351720a1e4f236cae0374999f967",
+        "mode": "reference_full_clear",
+        "nodes": 65608366,
+        "owner_pid": 16844,
+        "persistent_assoc_bytes_per_worker": 0,
+        "scope": "Initialization is outside query timers. Persistent 8N map is not free or shared between workers.",
+        "stored_entries": 3612134270,
+        "version": "persistent_assoc_touched_reset_v1"
+      },
+      "sum_per_case_medians_seconds": {
+        "drnl_seconds": 0.19783027470111847,
+        "edge_plus_drnl_seconds": 10.839700855314732,
+        "edge_seconds": 10.641387857496738,
+        "raw_operator_seconds": 10.570418804883957
+      }
+    },
+    "native_upstream_torch_sparse_direct": {
+      "native_content_verification_outside_query_timer_seconds": 36.121727995574474,
+      "records": 128,
+      "state_initialization_outside_query_timer": {
+        "assoc_bytes_during_each_call": 524866928,
+        "persistent_assoc_bytes_per_worker": 0,
+        "policy": "unmodified upstream full-N association allocation/init inside each call"
+      },
+      "sum_per_case_medians_seconds": {
+        "drnl_seconds": 0.19991960376501083,
+        "edge_plus_drnl_seconds": 11.622948080301285,
+        "edge_seconds": 11.42331376671791,
+        "raw_operator_seconds": 11.356857135891914
+      }
+    },
+    "numba32_pairwise": {
+      "records": 128,
+      "setup_seconds_excluded": 4.3958425521850586e-07,
+      "sum_per_case_medians_seconds": {
+        "drnl_seconds": 0.157113703,
+        "edge_plus_drnl_seconds": 0.789365617,
+        "edge_seconds": 0.632219917
+      }
+    },
+    "numba32_scan": {
+      "records": 128,
+      "setup_seconds_excluded": 4.3958425521850586e-07,
+      "sum_per_case_medians_seconds": {
+        "drnl_seconds": 0.156954615,
+        "edge_plus_drnl_seconds": 0.989220939,
+        "edge_seconds": 0.832035439
+      }
+    },
+    "numba64_pairwise": {
+      "records": 128,
+      "setup_seconds_excluded": 34.844318866729736,
+      "sum_per_case_medians_seconds": {
+        "drnl_seconds": 0.154709514,
+        "edge_plus_drnl_seconds": 0.799888639,
+        "edge_seconds": 0.645111318
+      }
+    },
+    "numba64_scan": {
+      "records": 128,
+      "setup_seconds_excluded": 34.844318866729736,
+      "sum_per_case_medians_seconds": {
+        "drnl_seconds": 0.154789575,
+        "edge_plus_drnl_seconds": 0.987562187,
+        "edge_seconds": 0.832849435
+      }
+    }
+  },
+  "remote_actions": 0,
+  "scientific_evidence_eligible": true,
+  "scope": [
+    "Public fullFriendster only; no two-graph, quality, sampler or training claim.",
+    "Query edge and edge+DRNL boundaries only; setup/conversion/JIT/warmup/persistent state initialization/content hashes outside query timers.",
+    "Controller OS exit code is not inferred from completion; genuine final receipt and observed same-owner quiescence are checked.",
+    "Numba method order records are checked against insertion order; its pinned original NumPy PRNG source is retained, without importing numeric libraries in this auditor."
+  ],
+  "source_manifest_sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b",
+  "source_packet": {
+    "bytes": 1781157,
+    "sha256": "f79cd610e8f24830b896ed4e8b3a37035ab31d0626349699c3b568ebe69c118f"
+  },
+  "status": "PASS_ACTUAL_PUBLIC_CPU_MATCHED_RESULTS"
+}

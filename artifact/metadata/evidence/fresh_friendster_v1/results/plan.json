@@ -1,0 +1,18 @@
+{
+  "pid": 16556,
+  "start_ticks": 4848604272,
+  "source_sha256": "02a2fa581834b02dca095c43ea4f6ff0e1bef939257d8c6a09840ee9728019a5",
+  "started_unix": 1795627160.7191505,
+  "host": "lpp-cpu-0",
+  "YT_writes": 0,
+  "adapter_manifest_sha256": "0b8f02b09b60ff3c6116087de4bf7748b3109b6611776d8b1cb2b0e3724700a3",
+  "prepared_root": "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/new_data/prepared",
+  "experiments": [
+    "e7",
+    "e12"
+  ],
+  "per_job_timeout_seconds": 4200,
+  "scientific_parameters_changed": false,
+  "performance_comparison_claim": false,
+  "CPU_lifecycle_actions": 0
+}

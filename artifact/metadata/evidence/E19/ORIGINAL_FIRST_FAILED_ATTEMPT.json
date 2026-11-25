@@ -1,0 +1,24 @@
+{
+  "status": "finished_exactly_once",
+  "started_unix": 1795627184.638696,
+  "command": [
+    "/Users/m.utushkin/.pyenv/versions/3.12.10/bin/python3",
+    "-B",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_pencil_final_audit_v3/audit_pencil_v3_v1.py",
+    "--export",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/outputs/seal_after_travel_systems_final_20261125/pencil_bridge_v3_final_readonly_v1",
+    "--output",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/outputs/seal_after_travel_systems_final_20261125/pencil_bridge_v3_independent_audit_actual_v1",
+    "--root-launch",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_gpu_recovery/pencil_queue_v3_launch.json"
+  ],
+  "auditor_source_manifest_sha256": "22822f198620846ca0db4b6f71e74da1ff3229d65438eeec87f6a842e717313c",
+  "export_sha256": "748086b73d3ffa9602d27e36eafb75dc93d7d2d3859428dbce50e946fc49a187",
+  "root_launch_sha256": "46e942a9e2bfa6f441869f15536cb6e2d2fe06d38c1acddacd3f297ecd5e6f62",
+  "output": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/outputs/seal_after_travel_systems_final_20261125/pencil_bridge_v3_independent_audit_actual_v1",
+  "remote_actions": 0,
+  "finished_unix": 1795627185.211742,
+  "returncode": 2,
+  "stdout": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_pencil_final_actual_audit_attempt_v1.stdout.txt",
+  "stderr": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_pencil_final_actual_audit_attempt_v1.stderr.txt"
+}

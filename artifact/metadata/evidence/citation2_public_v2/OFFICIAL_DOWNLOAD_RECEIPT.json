@@ -1,0 +1,14 @@
+{
+  "url": "https://snap.stanford.edu/ogb/data/linkproppred/citation-v2.zip",
+  "bytes": 2293454318,
+  "sha256": "f8502b935ea8f0a7bea5eb130991ca337cd26cad7f231cc9f5546fe076f4be53",
+  "source_kind": "fresh_official_public_download",
+  "transport": "4 ordered HTTP Range workers -> bounded Mac buffers -> kubectl stdin -> CPU scratch",
+  "relay_endpoints_sha256_agree": true,
+  "local_large_files_created": 0,
+  "YT_writes": 0,
+  "started_unix": 1795603618.7666576,
+  "finished_unix": 1795605435.103968,
+  "target": "/home/jovyan/seal_revision_20261124/public_source_repro_v1/official/citation-v2-range-v2.zip",
+  "v1_partial_untouched": true
+}

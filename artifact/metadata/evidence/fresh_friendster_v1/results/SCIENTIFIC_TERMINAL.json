@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "experiments": [
+    "e7",
+    "e12"
+  ],
+  "original_scientific_functions_retained": true,
+  "new_public_path_admission": true,
+  "new_performance_comparison": false,
+  "finished_unix": 1795627280.860069
+}

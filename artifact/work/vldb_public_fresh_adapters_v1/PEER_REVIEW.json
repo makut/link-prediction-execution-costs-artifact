@@ -1,0 +1,18 @@
+{
+  "status": "INDEPENDENT_CRITICAL_PEER_PASS",
+  "reviewers": [
+    "/root/venues_literature",
+    "/root/artifact_reproducibility",
+    "/root"
+  ],
+  "tests_independently_passed": 10,
+  "own_tests_passed": 10,
+  "source_sha256": {
+    "admission.py": "429f4e5c3bc1f934c570abdb7ceffd069c9cae78b6982e4f10346a688940208a",
+    "run_public.py": "fd075f82c1d59eaa7d85dabc89c14a54100bdeae240a6df70bf04f19670732d3"
+  },
+  "review_scope": "Whole23numeric identity, frozen exactcohorts, immutable small quality provenance, original numerical functions/guards, replaced operational callbacks only, failure restoration, read-only mmap and fresh cache/output.",
+  "nonblocking_note": "Admission.stable rechecks numerical stat continuity, original small evidence and3helpers;2original sources are initially checked and staged immutable. Additional final2source rehash deferred explicitly by root for this stage.",
+  "actual_fullscale_run": "PENDING_ROOT_CPU_STAGING_AND_ADMISSION",
+  "no_remote_actions_by_developer": true
+}

@@ -1,0 +1,256 @@
+{
+  "derived_job_names": [
+    "guard_refusal",
+    "gpu_fixture",
+    "citation2_manifest",
+    "citation2_reference_union_stock_workers1",
+    "citation2_reference_union_corrected_workers1",
+    "citation2_production_union_workers1",
+    "citation2_production_pv_workers1",
+    "citation2_reference_union_compiled_workers1",
+    "citation2_reference_union_stock_workers8",
+    "citation2_reference_union_corrected_workers8",
+    "citation2_production_union_workers8",
+    "citation2_production_pv_workers8",
+    "citation2_reference_union_compiled_workers8",
+    "friendster_manifest",
+    "friendster_reference_union_stock_workers1",
+    "friendster_reference_union_corrected_workers1",
+    "friendster_production_union_workers1",
+    "friendster_production_pv_workers1",
+    "friendster_reference_union_compiled_workers1",
+    "friendster_reference_union_stock_workers8",
+    "friendster_reference_union_corrected_workers8",
+    "friendster_production_union_workers8",
+    "friendster_production_pv_workers8",
+    "friendster_reference_union_compiled_workers8",
+    "vk_manifest",
+    "vk_reference_union_stock_workers1",
+    "vk_reference_union_corrected_workers1",
+    "vk_production_union_workers1",
+    "vk_production_pv_workers1",
+    "vk_reference_union_compiled_workers1",
+    "vk_reference_union_stock_workers8",
+    "vk_reference_union_corrected_workers8",
+    "vk_production_union_workers8",
+    "vk_production_pv_workers8",
+    "vk_reference_union_compiled_workers8"
+  ],
+  "failure_semantics": {
+    "auditor_requires_exact_job_name_grid_35_and_18_matched_prefix_comparisons": true,
+    "do_not_trust_status_or_terminal_success_alone": true,
+    "expected_refusal": "guard_refusal fixture uses absurd1000000GiB requestedGPU budget; must exit nonzero with one failed run and GPU preflight refused log",
+    "outer_phase": "main recovery pipeline exit must be clean/quiescent and agree with scientific terminal; final persisted archive must bind same terminal SHA",
+    "scientific_timing_eligible": "status complete AND returncode0 AND abort_reason null AND finite positive wall denominator/counts/protocol/source/input/hardware gates all pass",
+    "source_caveat": "pipeline_benchmark_v4.run_isolated lines572-575 can merge statuscomplete child result with non-null abort_reason; independent auditor must reject that case",
+    "suite": "required smoke/manifest precondition failure stops suite; real timing failures retained and independent arms continue; terminal successFalse for failure/mismatch"
+  },
+  "frozen_source_bindings": {
+    "experiment_configs/seal_revision_2026-11/run_pipeline_suite_v4.py": {
+      "bytes": 29003,
+      "sha256": "9a9cd290da365bef9108dc421b445c60e728ff24b948aea6593d6a3a515b83e9"
+    },
+    "scripts/seal_revision/exact_benchmark.py": {
+      "bytes": 35079,
+      "sha256": "3ea7075dd80453a61eb42e8e990d21bf153635e6eff2e26379ba21788ad22544"
+    },
+    "scripts/seal_revision/memory_benchmark.py": {
+      "bytes": 24847,
+      "sha256": "34176d3b751cf4a9e2c79cb1326c4d5515d41622faae097f7cb3c6273b4b3251"
+    },
+    "scripts/seal_revision/pipeline_benchmark_v4.py": {
+      "bytes": 41843,
+      "sha256": "6e531fd941ac0d6068ffe2c97ab87015b5eab678b610c9107a95bc234e503be9"
+    },
+    "seal/graph_csr_extraction.py": {
+      "bytes": 20176,
+      "sha256": "fd1468b141af9d33ed4045f862342e5f145aa4d0eaee73421754832c9831b1cd"
+    },
+    "seal/graph_csr_kernels.py": {
+      "bytes": 15019,
+      "sha256": "19f517b874cfebc9f9388f094c17cf91b559936cd36f81976292c76025cfb2c5"
+    },
+    "seal/models.py": {
+      "bytes": 11634,
+      "sha256": "3e613bb9596a5efbc310589bc12a26ec18c2d2d50b110d2a542585a8e43deac9"
+    },
+    "seal/reproducibility.py": {
+      "bytes": 2235,
+      "sha256": "8168a7f3a19f14bf39f0dc0bdc6235377b0b4a1b7832056d0d314fc491fd1639"
+    },
+    "seal/utils.py": {
+      "bytes": 3771,
+      "sha256": "f8a1221f1e72453a25fe4eeb7ac42dd0b07e3a0d62ceafc2f5e05c4191adefc5"
+    }
+  },
+  "grid": {
+    "arms": [
+      "reference_union_stock",
+      "reference_union_corrected",
+      "production_union",
+      "production_pv",
+      "reference_union_compiled"
+    ],
+    "audit_jobs_are_not_additional_execution_jobs": true,
+    "batch_size": 32,
+    "datasets": [
+      "citation2",
+      "friendster",
+      "vk"
+    ],
+    "fixture_job_kinds": [
+      "expected_gpu_refusal",
+      "gpu_smoke"
+    ],
+    "fixture_jobs": 2,
+    "fixture_reference_pair_audits_separate_from_18": 3,
+    "job_count": 35,
+    "manifest_jobs": 3,
+    "saved_prefix_audits": 18,
+    "timing_jobs": 30,
+    "workers": [
+      1,
+      8
+    ]
+  },
+  "line_references": {
+    "benchmark_budget": "64-92",
+    "benchmark_failure_merge": "534-575",
+    "benchmark_manifest": "113-174",
+    "benchmark_prefix": "292-345",
+    "benchmark_training": "369-506",
+    "suite_comparisons": "418-442",
+    "suite_plan": "65-124",
+    "suite_terminal": "445-506",
+    "suite_validation": "334-416"
+  },
+  "manifest": {
+    "citation2_positive_graph": "strict_clean train_pairs_csr",
+    "columns": [
+      "src",
+      "dst",
+      "label"
+    ],
+    "friendster_graph": "full_csr; not quality train split",
+    "negative_sampling": "uniform endpoint pairs; reject self and existing TRAIN edges; no future/held-out filtering",
+    "positive_occurrences": 4000,
+    "positive_sampling": "uniform adjacency occurrences with replacement; repeated queries allowed",
+    "rows": 8000,
+    "seed": 20261124,
+    "shape": [
+      8000,
+      3
+    ],
+    "vk_graph": "train_csr"
+  },
+  "prefix_audit": {
+    "compare": [
+      "ordered audit list index/pair/label/node SHA/canonical-edge SHA/DRNL SHA",
+      "initial_model_state_sha256",
+      "manifest_sha256"
+    ],
+    "comparisons_per_graph_worker": 3,
+    "does_not_verify": [
+      "all 3200 measured subgraphs independently",
+      "equal final model weights",
+      "equal production union or PV sampling law",
+      "ranking quality",
+      "time-to-quality"
+    ],
+    "graph_worker_configurations": 6,
+    "pairs_per_comparison": 32,
+    "query_indices": "0..31, wholly inside excluded warmup prefix0..255",
+    "reference_arms": [
+      "reference_union_stock",
+      "reference_union_corrected",
+      "reference_union_compiled"
+    ]
+  },
+  "protocol": {
+    "arms": [
+      "reference_union_stock",
+      "reference_union_corrected",
+      "production_union",
+      "production_pv",
+      "reference_union_compiled"
+    ],
+    "batch_size": 32,
+    "cap": 200,
+    "cpu_memory_budget_gib": 180,
+    "failure_policy": "retain failed/guarded arms and continue independent real-data arms; fatal preconditions stop suite",
+    "gpu_memory_budget_gib": 24,
+    "gpu_policy": "first permitted whole H100 UUID mapped to cuda:0; all permitted GPUs idle before each owned GPU job",
+    "hops": 2,
+    "manifest_rows": 8000,
+    "max_neighbors": 20000000,
+    "model": "DGCNN k281 hidden32 layers3 max_z1000 Adam1e-4 features=false",
+    "n_positives": 4000,
+    "negative_kind": "uniform",
+    "prefetch_factor": 1,
+    "protocol_version": 4,
+    "reference_bridge_arm": "reference_union_compiled",
+    "routing_version": "production_matched_vectorized_selected_degree_once_v4_reference_bridge",
+    "scenario_timeout_seconds": 3600,
+    "seed": 20261124,
+    "steps": 100,
+    "stock_index_dtype": "auto",
+    "warmup_steps": 8,
+    "workers": [
+      1,
+      8
+    ]
+  },
+  "protocol_sha256": "59f63afc636281e0572b397893a9765217c670b3fed6bc96fb8909cb8039bc3f",
+  "public_subset_projection": {
+    "datasets": [
+      "citation2",
+      "friendster"
+    ],
+    "fixture_jobs": 2,
+    "manifest_jobs": 2,
+    "note": "A public runner must explicitly filter the frozen job grid and rewrite filesystem paths only; the original suite hardcodes VK and historical quality/persistence gates.",
+    "saved_prefix_audits": 12,
+    "timing_jobs": 20,
+    "total_jobs": 24
+  },
+  "schema_version": 1,
+  "source_archive": {
+    "bytes": 27599,
+    "path": "work/seal_runs_20261124/pipeline_extension_v4.tgz",
+    "sha256": "925d16a4eed4acb18b11b12a639267e53dcf4f10b080e0e448f85dda85cd2f81"
+  },
+  "status": "SOURCE_DERIVED_CONTRACT_ONLY_NOT_A_RESULT_AUDIT",
+  "timing_denominator": {
+    "batch_size": 32,
+    "excludes": "source/graph acquisition, manifest preparation, graph setup, first-batch setup/JIT, 256 warmup graphs, post-window reporting/worker teardown",
+    "includes": "sampling, induction, DRNL, graph packaging/collation, loading/IPC, H2D, BCE forward/backward/Adam steps within steady wall window",
+    "measured_graphs": 3200,
+    "measured_steps": 100,
+    "prefetch_boundary_fraction": {
+      "workers1": 0.01,
+      "workers8": 0.08
+    },
+    "prefetch_factor": 1,
+    "same_iterator_crosses_warmup_and_measured_boundaries": true,
+    "service_sums_overlap_workers_prefetch_and_GPU_not_additive_to_wall_time": true,
+    "throughput": "3200 / steady_seconds, with CUDA synchronize at both measured boundaries",
+    "unmeasured_prefetch_tail": true,
+    "warmup_graphs_excluded": 256,
+    "warmup_steps": 8
+  },
+  "width_and_device": {
+    "allocator_budget_gib": 24,
+    "budget_is_not_min_of_24_and_available": true,
+    "budget_scope": "Torch allocator, excludes context/library/direct-CUDA and external-process allocations",
+    "full_graph_offset_width_not_used_as_temporary_width": true,
+    "gpu": "one whole H100 UUID; no MIG/DDP; selected UUID exposed as cuda:0",
+    "graph_consumers": "DataLoader spawn with lazy read-only mmap, workers1/8 plus parent; one Torch thread",
+    "idle_policy": "all permitted GPUs must have zero compute apps for two consecutive observations before each GPU job",
+    "preflight": "refuse if requested24GiB exceeds physical total or80%of currently free device memory; configure allocator cap before model allocation",
+    "required_stock_measured_width_counts": {
+      "int32": 3200
+    },
+    "reserved_peak_gib_max": 24,
+    "stock_policy": "auto: int32 if max(N, selected-row nnz)<=2**31-1; otherwise int64"
+  }
+}

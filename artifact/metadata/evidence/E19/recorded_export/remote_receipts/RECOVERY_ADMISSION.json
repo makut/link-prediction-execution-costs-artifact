@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "kind": "pencil_v3_recovery_admission",
+  "base": "/home/jovyan/seal_revision_20261124",
+  "replacement_hostname": "seal-revision-20261124-0",
+  "replacement_pod_uid": "744d2947-0aac-466a-a612-fb54f6a7209e",
+  "replacement_node": "ml-kub-node807.i",
+  "owned_statefulset_uid": "d4d331d4-cfda-4a8a-86e4-d935474f4c5b",
+  "old_environment": {
+    "pod_absent": true,
+    "statefulset_replicas": 0,
+    "root_confirmed": true,
+    "source_observation": "after_travel_cluster_lifecycle.json before guarded rescale",
+    "old_controller_final_cleanup": "UNKNOWN"
+  },
+  "prior_archives": [
+    {
+      "role": "pipeline",
+      "yt_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/snapshots/pipeline/final_2adb1a1464458aa90ace046f048a78f693587cca1783bdda10d5426ac857fb52.tgz",
+      "bytes": 214583801,
+      "sha256": "f6d4ba4801195559f5d308ee298d07123cadf2e03b45638585f00e3d19f98040",
+      "all_internal_hashes_verified": true,
+      "scientific_success": true,
+      "root_recovery_receipt_sha256": "cdfcd89242b8609d4c9b606db27b600dcf78d210c716135c9f2a4048858b6794"
+    },
+    {
+      "role": "native",
+      "yt_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/native_controls_v1_20261125.tgz",
+      "bytes": 3963486,
+      "sha256": "5aa52038eb3045e253b9cddd1ac03afc7022a0b7c5fa5f46be03803bc77ec8f6",
+      "all_internal_hashes_verified": true,
+      "scientific_success": true,
+      "root_recovery_receipt_sha256": "470e6c5699920d29c6d7348c9fa7d3b29203ded7f305ae03e5b44ef19e4d6c67"
+    },
+    {
+      "role": "pencil_failed_v2",
+      "yt_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/pencil_bridge_v2_20261125.tgz",
+      "bytes": 41358,
+      "sha256": "2fe86c308b98a1de4f2eb6feab7ba0af02ae86ec2217b301400f26b3bfde15ad",
+      "all_internal_hashes_verified": true,
+      "scientific_success": false,
+      "root_recovery_receipt_sha256": "9a7fb71cd3bd85515803a0c8c7edf505b1679660d8c9996437925c00aa877c70",
+      "completed_jobs": 0
+    }
+  ],
+  "created_unix": 1795619909.188237,
+  "scope": "Root-verified immutable prior archives; old pod deleted; no synthetic legacy COMPLETE/PID files. Science outcomes use archived terminal and per-job evidence; old outer controller lifecycle and lock release remain UNKNOWN."
+}

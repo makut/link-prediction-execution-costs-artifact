@@ -1,0 +1,20 @@
+{
+  "adapter_sha256": "fd075f82c1d59eaa7d85dabc89c14a54100bdeae240a6df70bf04f19670732d3",
+  "admission_sha256": "c43bb4f49cbc698ef31c808c0a9823112da25d20f3750643a0090431ce10bf9e",
+  "completed_unix": 1795627280.5271413,
+  "experiment": "e12",
+  "historical_source_or_metadata_modified": false,
+  "model_loaded": false,
+  "new_method_claim": false,
+  "new_public_admission": true,
+  "original_science_source_sha256": "dc59aabf813abaf0b34c816199e9fe3edad59e2402856ddd73fd6207c0043104",
+  "query_selection_changed": false,
+  "remote_actions": 0,
+  "replaced_operational_gates": [
+    "verify_test_gate",
+    "load_inputs"
+  ],
+  "results_directory": "/home/jovyan/seal_revision_20261124/results/public_fresh_adapters_v1_20261125/e12/results",
+  "scientific_parameters_changed": false,
+  "status": "PUBLIC_FRESH_SCIENCE_COMPLETE"
+}

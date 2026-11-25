@@ -1,0 +1,35 @@
+{
+  "status": "LOCAL_COMPLETE_FROZEN_PUBLIC_COHORT_IDENTITY_PASS",
+  "cohorts": {
+    "valid": {
+      "queries": 512,
+      "negatives_per_query": 1000,
+      "all_original_cohort_NPY_sha256": {
+        "query_ids": "0b6bc4345150c5963db09b14ac90d773fbe37306f2510badf79dd5ffc95813a8",
+        "positive": "62e73be691d3059fd1832bcb87028e2ba0b3bd31428d43011d7f414fb6179412",
+        "warm_query": "fd14d58d24ffd497fe4e88994bc1ccc4cc288351784e71128df78b25349b2c09",
+        "negative": "2b94e3ec891df672529413a306834931757ce9318b4014551b87eda5d6d39e18"
+      },
+      "exact_original_seed_selection": true,
+      "all4_public_eval_payloads_verified": true
+    },
+    "test": {
+      "queries": 4096,
+      "negatives_per_query": 1000,
+      "all_original_cohort_NPY_sha256": {
+        "query_ids": "2fec2027475bd6a7e187145204f40107cfa3a3bcd03317f7e0a30a01d059dbd2",
+        "positive": "ca94f194648ea48de09ede643bf57a3828d38564a37fb5a5b27db37301389ea8",
+        "warm_query": "cda034aa25566e0cfb77ffcdae43a388e71d020c5e61dbbf11fa947134558b14",
+        "negative": "d9a7d3dae79d2bf9d15c9fd47719b52c047de8bd6a960538bd51595eb7c70712"
+      },
+      "exact_original_seed_selection": true,
+      "all4_public_eval_payloads_verified": true
+    }
+  },
+  "full_graph_reads": 0,
+  "model_or_score_reads": 0,
+  "candidate_negative_files_created": 0,
+  "new_scoring_or_measurements": 0,
+  "largest_input_array_bytes": 40000000,
+  "seconds": 0.44474124908447266
+}

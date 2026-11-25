@@ -1,0 +1,73 @@
+{
+  "role": "pencil",
+  "pointer": {
+    "yt_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/pencil_bridge_v3_20261125.tgz",
+    "bytes": 9966534,
+    "sha256": "7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c",
+    "readback_verified": true,
+    "new_YT_file_nodes": 1
+  },
+  "receipt": {
+    "path": "results/pencil_bridge_v3/SCIENTIFIC_TERMINAL.json",
+    "sha256": "a0c074fd960719f6615d324e70d8b68227a620e06d592aab73aa242b4a32e6a8"
+  },
+  "scientific_success": true,
+  "controller_success": true,
+  "archive_metadata": {
+    "bytes": 9966534,
+    "sha256": "7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c",
+    "files": 247,
+    "raw_bytes": 21597392,
+    "manifest_sha256": "11ea76955ca5890bf8a0bef71395c3c69d0fb0844ce7fa2a18827bcafc1ada29"
+  },
+  "download": {
+    "bytes": 9966534,
+    "sha256": "7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c",
+    "file_count": 248
+  },
+  "yt_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/pencil_bridge_v3_20261125.tgz",
+  "actual_launch": {
+    "path": "pencil_queue_v3_launch.json",
+    "sha256": "46e942a9e2bfa6f441869f15536cb6e2d2fe06d38c1acddacd3f297ecd5e6f62",
+    "bytes": 876,
+    "pid": 1086,
+    "start_ticks": 529345826,
+    "source_sha256": "dda406371cfe9a7d5de8415224930959e970f2b9c948f56d37dca09fffaf68cd"
+  },
+  "launch_pin_scope": "genuine_fixed_root_stager_and_actual_receipt_hash",
+  "auxiliary_monitor_status": "not_requested_for_role",
+  "root_recovery_admission_sha256": "3589dda0795ca201057016fbd771776ea2838c70a902536d29d76e899f228f73",
+  "replacement_pod_uid": "744d2947-0aac-466a-a612-fb54f6a7209e",
+  "status": "verified_existing_persisted_archive",
+  "snapshot": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/outputs/seal_after_travel_systems_final_20261125/pencil_bridge_v3_final_readonly_v1/final_snapshot.tgz",
+  "extracted": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/outputs/seal_after_travel_systems_final_20261125/pencil_bridge_v3_final_readonly_v1/extracted",
+  "verified_unix": 1795627145.314514,
+  "remote_archive_created": false,
+  "backup_calls": 0,
+  "YT_writes": 0,
+  "pod_lifecycle_mutations": 0,
+  "all_internal_manifest_files_verified": true,
+  "disk_policy": {
+    "total_output_budget_bytes": 402653184,
+    "minimum_free_reserve_bytes": 1073741824,
+    "no_legacy_pipeline_role": true
+  },
+  "remote_receipts_manifest_sha256": "5a7fb5946bd4808063acf307d2c2675be262bbab77ecc9edd610a4b796cecd37",
+  "collector_runtime": {
+    "collector_source_sha256": "7efa352f3a35c6a00cd0322bde7298dcda75a2d49b40d0bcb555f1e33ddecd8f",
+    "frozen_legacy_source_sha256": "e1e4285e323ffcfd8d8397fc9d92c6be47c775ab74a219c174dbbaa8b9098006",
+    "frozen_core_source_sha256": "2b9ba87d0fff434766d5108e353c8b59c734c58e6aa1a81de27fd5cb9685ef1b",
+    "remote_reader_sha256": "ff930c966df1c992f9a44652af8eb7973300b5a655d5212065f81ef0bc12d35b",
+    "python": "3.12.10 (main, May 20 2025, 17:57:11) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "executable": "/Users/m.utushkin/.pyenv/versions/3.12.10/bin/python3",
+    "remote_stdlib_only_interpreter_flags": [
+      "-I",
+      "-B",
+      "-S"
+    ],
+    "namespace": "m-utushkin",
+    "context": "tele.corp.mail.ru-k8s_ml_MNTINFRA_3322",
+    "credential_policy": "Existing tsh status before every read-only kubectl call; no login/SSO/retry on auth failure.",
+    "environment_scope": "No environment or credentials dump; fixed Kube/YT proxy routes from pinned core and explicit reader only."
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "kind": "INDEPENDENT_ACTUAL_PUBLIC_FRESH_E7_E12_NUMERIC_CLOSURE",
+  "status": "PASS",
+  "observed_unix": 1795627840.554102,
+  "auditor_sha256": "47064c0686e81348cc5df67c350c36a6bb8e8144c7ccab2d19c580dac4672903",
+  "collection_receipt_sha256": "9044ca766cf8629eff74a707a68e7c447ee8cd11d2525bdae33526d04520501f",
+  "all26_collected_file_hashes_verified": true,
+  "genuine_completion_and_child_exits_verified": true,
+  "outer_controller_OS_exit_status": "UNKNOWN; quiescent process plus genuine final completion, not an exit-code receipt",
+  "historical_raw_asset_sha256": "48232549089f3295c893bb33f6cea0d1aac4a0ee45b91a2669392c90ae1bfe40",
+  "historical_raw_manifest_sha256": "2800804cfc2278d399b95a7c1112f05b79e98fe004679466876c7f9185980b2c",
+  "actual23_numeric_payloads_total_bytes": 18788800187,
+  "both_jobs_full23_numeric_SHA_and_exact_frozen_cohorts_admitted": true,
+  "E7": {
+    "all512_records_all_three_controls_exact": true,
+    "all_summaries_exact": true,
+    "validation_IDs_and_positive_pairs_exact": true,
+    "scientific_parameters_and_source_exact": true,
+    "summary": {
+      "h2_cap": {
+        "provided_query_rows": 512,
+        "complete_queries": 512,
+        "guarded_queries": 0,
+        "deadline_unprocessed_queries": 0,
+        "failure_unprocessed_queries": 0,
+        "induction_guarded_queries": 0,
+        "node_identity_queries": 355,
+        "structural_metric_queries": 512,
+        "hop1_cap_binding_fraction_among_complete": 0.75390625,
+        "discarded_hop1_retained_at_hop2_total": 255,
+        "global_node_jaccard": {
+          "n": 512,
+          "mean": 0.997535476958089,
+          "median": 1.0
+        },
+        "global_undirected_edge_jaccard": {
+          "n": 512,
+          "mean": 0.9955687344423538,
+          "median": 1.0
+        },
+        "drnl_disagreement_fraction": {
+          "n": 512,
+          "mean": 0.0025090061383343364,
+          "median": 0.0
+        }
+      },
+      "h1_cap": {
+        "provided_query_rows": 512,
+        "complete_queries": 512,
+        "guarded_queries": 0,
+        "deadline_unprocessed_queries": 0,
+        "failure_unprocessed_queries": 0,
+        "induction_guarded_queries": 0,
+        "node_identity_queries": 512,
+        "structural_metric_queries": 512,
+        "hop1_cap_binding_fraction_among_complete": 0.75390625,
+        "discarded_hop1_retained_at_hop2_total": 0,
+        "global_node_jaccard": {
+          "n": 512,
+          "mean": 1.0,
+          "median": 1.0
+        },
+        "global_undirected_edge_jaccard": {
+          "n": 512,
+          "mean": 1.0,
+          "median": 1.0
+        },
+        "drnl_disagreement_fraction": {
+          "n": 512,
+          "mean": 0.0,
+          "median": 0.0
+        }
+      },
+      "h2_no_cap": {
+        "provided_query_rows": 512,
+        "complete_queries": 511,
+        "guarded_queries": 1,
+        "deadline_unprocessed_queries": 0,
+        "failure_unprocessed_queries": 0,
+        "induction_guarded_queries": 510,
+        "node_identity_queries": 511,
+        "structural_metric_queries": 1,
+        "hop1_cap_binding_fraction_among_complete": 0.0,
+        "discarded_hop1_retained_at_hop2_total": 0,
+        "global_node_jaccard": {
+          "n": 1,
+          "mean": 1.0,
+          "median": 1.0
+        },
+        "global_undirected_edge_jaccard": {
+          "n": 1,
+          "mean": 1.0,
+          "median": 1.0
+        },
+        "drnl_disagreement_fraction": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0
+        }
+      }
+    },
+    "hop1_cap_binding": {
+      "measured_from": "h1_cap control, avoiding conditioning on second-hop completion",
+      "provided_queries": 512,
+      "known_queries": 512,
+      "binding_queries": 386,
+      "unknown_queries": 0,
+      "percent_among_known": 75.390625
+    },
+    "allowed_operational_differences": [
+      "configuration",
+      "graph_input_stats",
+      "input_sha256",
+      "wall_seconds_budget_accounting_only"
+    ]
+  },
+  "E12": {
+    "arrays": {
+      "midpoint_ranks.npy": {
+        "bytes": 163968,
+        "sha256": "e98d1499d02e078411770b40b11bef9524484891ed8e24c186b4c5d6e3d77d80",
+        "shape": [
+          4096,
+          5
+        ],
+        "dtype": "float64",
+        "bytes_and_all_values_identical_to_historical": true
+      },
+      "reciprocal_ranks.npy": {
+        "bytes": 163968,
+        "sha256": "1f90de72bdac73fc8bd5e9d8fd1d648c710a537ad5b73caa6a57238a3988cf26",
+        "shape": [
+          4096,
+          5
+        ],
+        "dtype": "float64",
+        "bytes_and_all_values_identical_to_historical": true
+      },
+      "query_ids.npy": {
+        "bytes": 32896,
+        "sha256": "2fec2027475bd6a7e187145204f40107cfa3a3bcd03317f7e0a30a01d059dbd2",
+        "shape": [
+          4096
+        ],
+        "dtype": "int64",
+        "bytes_and_all_values_identical_to_historical": true
+      },
+      "source_node.npy": {
+        "bytes": 32896,
+        "sha256": "c32297a88f4df4b7e39e8d3b1a4ca8aac5f90e4716fbac8ba933d41bd3763802",
+        "shape": [
+          4096
+        ],
+        "dtype": "int64",
+        "bytes_and_all_values_identical_to_historical": true
+      },
+      "target_node.npy": {
+        "bytes": 32896,
+        "sha256": "89c9972e5ad302f93354e20dba4ffd7d5427f64778871ed3e0226554d01ff20a",
+        "shape": [
+          4096
+        ],
+        "dtype": "int64",
+        "bytes_and_all_values_identical_to_historical": true
+      },
+      "warm_query.npy": {
+        "bytes": 4224,
+        "sha256": "cda034aa25566e0cfb77ffcdae43a388e71d020c5e61dbbf11fa947134558b14",
+        "shape": [
+          4096
+        ],
+        "dtype": "bool",
+        "bytes_and_all_values_identical_to_historical": true
+      }
+    },
+    "all20480_midpoint_and_reciprocal_ranks_exact": true,
+    "metrics_recomputed_from_all_ranks_exact": {
+      "degree_only": {
+        "mrr": 0.0906971775104021,
+        "hits_at_10": 0.193603515625,
+        "warm_queries": 4052,
+        "warm_mrr": 0.09152204473114513,
+        "cold_queries": 44,
+        "cold_mrr": 0.014734405272885337
+      },
+      "preferential_attachment": {
+        "mrr": 0.09055439643069725,
+        "hits_at_10": 0.193115234375,
+        "warm_queries": 4052,
+        "warm_mrr": 0.09152204473114513,
+        "cold_queries": 44,
+        "cold_mrr": 0.0014427847621795665
+      },
+      "common_neighbors": {
+        "mrr": 0.6413173454150963,
+        "hits_at_10": 0.704345703125,
+        "warm_queries": 4052,
+        "warm_mrr": 0.6482596387435882,
+        "cold_queries": 44,
+        "cold_mrr": 0.001995241618534979
+      },
+      "adamic_adar": {
+        "mrr": 0.6588328678238431,
+        "hits_at_10": 0.70458984375,
+        "warm_queries": 4052,
+        "warm_mrr": 0.6659653593226175,
+        "cold_queries": 44,
+        "cold_mrr": 0.001995241618534979
+      },
+      "resource_allocation": {
+        "mrr": 0.6555823097881288,
+        "hits_at_10": 0.70458984375,
+        "warm_queries": 4052,
+        "warm_mrr": 0.6626795040130702,
+        "cold_queries": 44,
+        "cold_mrr": 0.001995241618534979
+      }
+    },
+    "positive_pairs_exact_to_frozen_quality": true,
+    "all_other_scientific_fields_exact": true,
+    "allowed_operational_differences": [
+      "gate",
+      "memory",
+      "output_directory",
+      "provenance",
+      "selection",
+      "timings",
+      "total_seconds"
+    ]
+  },
+  "scope": "Successful fresh public numerical reproduction, without a new performance comparison. All local reads bounded to4MiB buffers/small arrays; no graph/model/full-score load, remote actions, source changes or historical metadata edits."
+}

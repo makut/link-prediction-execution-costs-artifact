@@ -1,0 +1,27 @@
+{
+  "kind": "ACTUAL_LOCAL_RECORDED_E19_RELOCATION_COMMAND",
+  "argv": [
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_pencil_bridge/.venv/bin/python",
+    "-B",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_recorded_e19_adapter_roundtrip_v1/unrelated relocated package \u03b1 with spaces/tools/recorded_pencil_e19_v1/audit_recorded_e19.py",
+    "--source-root",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_recorded_e19_adapter_roundtrip_v1/unrelated relocated package \u03b1 with spaces",
+    "--export",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_recorded_e19_adapter_roundtrip_v1/materialized genuine E19 \u03b2",
+    "--output",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_recorded_e19_adapter_roundtrip_v1/fresh archival audit \u03b3",
+    "--root-launch",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_recorded_e19_adapter_roundtrip_v1/unrelated relocated package \u03b1 with spaces/metadata/evidence/E19/ROOT_LAUNCH.json"
+  ],
+  "started_unix": 1795636483.026735,
+  "source_manifest_sha256": "84a0ddc48fa9cfa59b538186341e5108337d1977c16cfdf3fda3c2bf56cd94f6",
+  "recorded_sources_and_data_hardlinked_without_changes": true,
+  "remote_actions": 0,
+  "new_scientific_jobs": 0,
+  "returncode": 0,
+  "finished_unix": 1795636483.644616,
+  "recorded_scientific_checks_exact_original": true,
+  "audit_json_sha256": "ccbe4d18eb243aded1c413256df9adfc8ffb9f70e26a5a7da0711fc049c920c9",
+  "relocation_receipt_sha256": "dfa52b12834bd8fba3e903e9a61f71ae420b167329aa99e0763c536d1e1ecfec",
+  "completed_archival_jobs": 48
+}

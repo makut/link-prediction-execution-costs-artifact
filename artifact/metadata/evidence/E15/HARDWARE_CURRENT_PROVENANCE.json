@@ -1,0 +1,76 @@
+{
+  "observed_unix": 1795609183.298054,
+  "read_only": true,
+  "method": "Read CPU model/cgroup limits, package metadata and already frozen pipeline hardware; no Torch import or GPU allocation",
+  "pods": {
+    "seal-revision-20261124-0": {
+      "observed_unix": 1795609183.2580462,
+      "hostname": "seal-revision-20261124-0",
+      "python": "3.10.12",
+      "cpu_model": "Intel(R) Xeon(R) Platinum 8480+",
+      "affinity_count": 193,
+      "packages": {
+        "torch": "2.5.0+cu121",
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch-geometric": "2.7.0",
+        "torch-sparse": "0.6.18",
+        "ogb": "1.3.6"
+      },
+      "cgroup": {
+        "memory.max": "549755813888",
+        "cpu.max": "5400000 100000",
+        "cpuset.cpus.effective": "0-1,17-112,129-223"
+      },
+      "frozen_pipeline_hardware": {
+        "permitted_inventory": [
+          {
+            "index": 0,
+            "uuid": "GPU-fed98880-976e-8b86-6b0f-607c246fea2f",
+            "name": "NVIDIA H100 80GB HBM3",
+            "memory_total_mib": 81559,
+            "driver_version": "535.183.06"
+          },
+          {
+            "index": 1,
+            "uuid": "GPU-31e71637-8daa-b902-2079-9a833df0966a",
+            "name": "NVIDIA H100 80GB HBM3",
+            "memory_total_mib": 81559,
+            "driver_version": "535.183.06"
+          }
+        ],
+        "target": {
+          "index": 0,
+          "uuid": "GPU-fed98880-976e-8b86-6b0f-607c246fea2f",
+          "name": "NVIDIA H100 80GB HBM3",
+          "memory_total_mib": 81559,
+          "driver_version": "535.183.06"
+        },
+        "original_cuda_visible_devices": null,
+        "gpu_mapping": "target UUID exposed as the sole CUDA device, cuda:0"
+      }
+    },
+    "lpp-cpu-0": {
+      "observed_unix": 1795609182.527884,
+      "hostname": "lpp-cpu-0",
+      "python": "3.10.12",
+      "cpu_model": "Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz",
+      "affinity_count": 128,
+      "packages": {
+        "torch": "2.2.2+cu121",
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch-geometric": null,
+        "torch-sparse": null,
+        "ogb": null
+      },
+      "cgroup": {
+        "memory.max": "274877906944",
+        "cpu.max": "6400000 100000",
+        "cpuset.cpus.effective": "0-127"
+      }
+    }
+  }
+}

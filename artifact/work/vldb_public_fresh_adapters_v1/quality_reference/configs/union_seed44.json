@@ -1,0 +1,80 @@
+{
+  "dataset": {
+    "num_nodes": 65608366,
+    "graph_csr_root": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/train_csr",
+    "pairs_graph_csr_root": "/home/jovyan/seal_revision_20261124/data/friendster/prepared/train_pairs_csr",
+    "split_root": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets",
+    "valid_edge_path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/valid_edge.npy",
+    "valid_edge_neg_path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/valid_edge_neg.npy",
+    "test_edge_path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/test_edge.npy",
+    "test_edge_neg_path": "/home/jovyan/seal_revision_20261124/results/quality_friendster/subsets/test_edge_neg.npy",
+    "graph_csr_file_endian": "little",
+    "graph_csr_allow_non_native": false,
+    "graph_csr_use_mmap": true,
+    "split_use_mmap": true,
+    "has_self_loops": false
+  },
+  "train_loader": {
+    "batch_size": 128,
+    "seed": 44,
+    "num_workers": 16,
+    "positive_edges": {
+      "pairs_are_canonical": true
+    },
+    "negative_sampling": {
+      "name": "uniform",
+      "neg_per_pos": 1,
+      "seed": 44,
+      "reject_self_loops": true,
+      "extra_kwargs": {
+        "mutate": "dst"
+      }
+    }
+  },
+  "seal": {
+    "num_hops": 2,
+    "node_label": "drnl",
+    "ratio_per_hop": 1.0,
+    "max_nodes_per_hop": 200,
+    "per_vertex_oversample": 1.5,
+    "graph_csr_use_per_vertex_sampling": false,
+    "graph_csr_use_pairwise_subgraph": true,
+    "directed": false
+  },
+  "model": {
+    "name": "DGCNN",
+    "hidden_channels": 32,
+    "num_layers": 3,
+    "sortpool_k": 370,
+    "max_z": 1000,
+    "use_feature": false,
+    "use_edge_weight": false,
+    "train_node_embedding": false
+  },
+  "training": {
+    "seed": 44,
+    "lr": 0.0001,
+    "runs": 1,
+    "epochs": 1,
+    "max_steps": 20000,
+    "eval_every_steps": 2000,
+    "eval_every_epoch": false,
+    "checkpoint_metric": "ogb_mrr",
+    "checkpoint_metric_mode": "max",
+    "early_stopping_patience": null,
+    "skip_final_test": true,
+    "require_test_checkpoint": true
+  },
+  "runtime": {
+    "val_num_workers": 16,
+    "max_val_batches": null,
+    "max_test_batches": null,
+    "eval_seed": 20261126,
+    "citation2_ogb_metrics": true,
+    "citation2_negatives_per_source": 1000,
+    "dump_test_scores": false
+  },
+  "output": {
+    "dir": "/home/jovyan/seal_revision_20261124/results/quality_friendster/runs/union_seed44"
+  }
+}

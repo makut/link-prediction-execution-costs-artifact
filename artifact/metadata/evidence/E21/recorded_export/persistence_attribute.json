@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "kind": "lpp_clean_consumer_persistence_v1",
+  "archive_sha256": "708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0",
+  "archive_bytes": 10230546,
+  "scientific_terminal_sha256": "affae5beb376fc56e256aee5e8a52fcf32f861389ddcec091ed566ab36670ff6",
+  "canonical_receipt_json": "{\"all_planned_science_job_exits_clean\":true,\"archive\":{\"bytes\":10230546,\"sha256\":\"708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0\"},\"completed_jobs\":44,\"controller_source_sha256\":\"06ba8024f1f677347aaad715515ed82e44d955fec3b8f53198d4aad2378e1d19\",\"launch_sha256\":\"e064dbfcc7b7a64967dfc96d2d658daf379e6116f6dac63aba5de1e8bbc9a3fc\",\"outer_final_pid_exit\":\"UNKNOWN\",\"planned_jobs\":44,\"pod_uid\":\"46ed92d5-ecce-4013-a9db-95c36910e41c\",\"readback\":{\"bytes\":10230546,\"sha256\":\"708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0\",\"verified_unix\":1795635127.4350526},\"root_admission_sha256\":\"e6e7347f8cba1d88de10c4683023f7c05b14533c159bb817e6713fbb2f3946da\",\"scientific_success\":true,\"scientific_terminal_sha256\":\"affae5beb376fc56e256aee5e8a52fcf32f861389ddcec091ed566ab36670ff6\",\"scope\":\"All pre-publication scientific/setup phase exits are in the tar; the publisher child exit is recorded later locally. This post-readback attribute is outside the tar hash; outer final controller PID exit remains UNKNOWN.\",\"source_manifest_sha256\":\"7a6bc09b88ff5ca3edc61588639a6326b1e4d52daf06671830d6e575207cab44\",\"source_packet_sha256\":\"8cacc3d5c5c61964d8d7b86c4aa21fef648476ef1d8ab415e91678beac13f75c\",\"statefulset_uid\":\"2838ed60-b2e7-4237-88b0-9f28a7f4be05\",\"stop_requested_at_context_creation\":false,\"target\":\"//home/ucp-research/projects/graph_baselines/seal_revision_20261124/pencil_clean_consumer_v1_20261125.tgz\"}",
+  "canonical_receipt_sha256": "1417b85bbed59528f66467ef35d2384dd2709c12057047ff9a8a4e2de8f2c9a4",
+  "outer_final_pid_exit": "UNKNOWN"
+}

@@ -1,0 +1,172 @@
+{
+  "status": "complete",
+  "split": "test",
+  "methods": [
+    "degree_only",
+    "preferential_attachment",
+    "common_neighbors",
+    "adamic_adar",
+    "resource_allocation"
+  ],
+  "gate": {
+    "kind": "NEW_PUBLIC_NUMERIC_IDENTITY_ADMISSION",
+    "original_plan_sha256": "9bfb522c4d8472296c2be0cc4064aca75172002b5975fc58ab0ab5c8f467b135",
+    "original_freeze_sha256": "471e93af838f6d6a81681b46e4c31b4ce6fdfe5bbd4479196409ac45ea929e6c",
+    "quality_manifest_sha256": "9bf816acdce59b0905998adc47437092427cfa8d4c7154da69e5343a8eb15f7d",
+    "checkpoint_identity_scope": "Original6 checkpoint SHA declarations bound to immutable full public quality manifest; model bytes not loaded or required for structural scoring.",
+    "full_numeric_payloads_verified": 23,
+    "fixed_validation_queries": 512,
+    "fixed_test_queries": 4096,
+    "no_original_metadata_or_mtime_changes": true
+  },
+  "selection": {
+    "selection": "exact_frozen_quality_query_rows",
+    "path": "/home/jovyan/seal_revision_20261124/public_fresh_adapters_v1_code/quality_reference/subsets/test_query_ids.npy",
+    "sha256": "2fec2027475bd6a7e187145204f40107cfa3a3bcd03317f7e0a30a01d059dbd2",
+    "matches_quality_subset": true
+  },
+  "queries": 4096,
+  "negatives_per_query": 1000,
+  "max_operations": 20000000000,
+  "memory_guard": {
+    "conservative_bytes": 14276199912,
+    "budget_bytes": 193273528320,
+    "graph_mmap_included_at_full_logical_size": true,
+    "runtime_reserve_bytes": 2147483648
+  },
+  "provenance": {
+    "prepared_manifest_sha256": "9c3d4e5d4a3c9b1d5c3e7212e743aeb9887f887907b8fc48fbf519612b39f756",
+    "query_files": {
+      "source_node": {
+        "path": "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/new_data/prepared/evaluation/test/source_node.npy",
+        "sha256": "763d6f4c51e97fb46db5f07e5659ef77d1646ac6100ea357819ecd1459ef35b7",
+        "bytes": 80128
+      },
+      "target_node": {
+        "path": "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/new_data/prepared/evaluation/test/target_node.npy",
+        "sha256": "20a25380f2a029edeeba598c5a6f02114b324323bb7da8ab29efcbf70ac7f84b",
+        "bytes": 80128
+      },
+      "target_node_neg": {
+        "path": "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/new_data/prepared/evaluation/test/target_node_neg.npy",
+        "sha256": "00c1e98d13ed7a02ba8596e3ac51af53992b6aab37d4417ff7713b03710f3f80",
+        "bytes": 40000128
+      },
+      "warm_query": {
+        "path": "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/new_data/prepared/evaluation/test/warm_query.npy",
+        "sha256": "62d881f9a4b8968c50cf6106b339458d3569aa63ad4c0104d5ccfa7d62ae3817",
+        "bytes": 10128
+      }
+    },
+    "graph": {
+      "path": "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/new_data/prepared/train_csr",
+      "nodes": 65608366,
+      "stored_entries": 2889707416,
+      "logical_csr_bytes": 12083696600,
+      "offset_dtype": "int64",
+      "index_dtype": "int32",
+      "mapping": "read-only mmap",
+      "identity_scope": "New public admission full23 numeric-file SHA, then actual stat continuity; no historical timestamp requirement."
+    }
+  },
+  "processed_queries": 4096,
+  "timings": {
+    "gate_and_input_validation_seconds": 0.05930227041244507,
+    "operation_preflight_seconds": 2.7287223413586617,
+    "scoring_seconds_including_first_kernel_compilation": 10.301455713808537
+  },
+  "comparison_scope": "simple degree/structural controls; no training/HPO and no modern SOTA claim",
+  "estimated_search_steps_upper_bound": 606457020,
+  "actual_search_steps": 560291523,
+  "memory": {
+    "peak_rss_bytes": 12242001920,
+    "current_rss_bytes": 12242001920
+  },
+  "metrics": {
+    "degree_only": {
+      "mrr": 0.0906971775104021,
+      "hits_at_10": 0.193603515625,
+      "warm_queries": 4052,
+      "warm_mrr": 0.09152204473114513,
+      "cold_queries": 44,
+      "cold_mrr": 0.014734405272885337
+    },
+    "preferential_attachment": {
+      "mrr": 0.09055439643069725,
+      "hits_at_10": 0.193115234375,
+      "warm_queries": 4052,
+      "warm_mrr": 0.09152204473114513,
+      "cold_queries": 44,
+      "cold_mrr": 0.0014427847621795665
+    },
+    "common_neighbors": {
+      "mrr": 0.6413173454150963,
+      "hits_at_10": 0.704345703125,
+      "warm_queries": 4052,
+      "warm_mrr": 0.6482596387435882,
+      "cold_queries": 44,
+      "cold_mrr": 0.001995241618534979
+    },
+    "adamic_adar": {
+      "mrr": 0.6588328678238431,
+      "hits_at_10": 0.70458984375,
+      "warm_queries": 4052,
+      "warm_mrr": 0.6659653593226175,
+      "cold_queries": 44,
+      "cold_mrr": 0.001995241618534979
+    },
+    "resource_allocation": {
+      "mrr": 0.6555823097881288,
+      "hits_at_10": 0.70458984375,
+      "warm_queries": 4052,
+      "warm_mrr": 0.6626795040130702,
+      "cold_queries": 44,
+      "cold_mrr": 0.001995241618534979
+    }
+  },
+  "total_seconds": 13.252599403262138,
+  "source_rows": 4096,
+  "unique_sources": 4095,
+  "tie_policy": "rank=1+#negative_scores>positive+0.5*#negative_scores==positive; exact float64 comparison, no rounding",
+  "operation_definition": "one merge iteration, one binary-search iteration, or final binary membership check; excludes row-degree lookup, math/log and bookkeeping",
+  "code_sha256": "dc59aabf813abaf0b34c816199e9fe3edad59e2402856ddd73fd6207c0043104",
+  "python": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+  "numpy": "1.24.4",
+  "numba": "0.58.0",
+  "numba_threads": 8,
+  "torch_imported": false,
+  "methods_definitions": {
+    "degree_only": "degree(dst)",
+    "preferential_attachment": "degree(src)*degree(dst)",
+    "common_neighbors": "|N(src) intersection N(dst)|",
+    "adamic_adar": "sum 1/log(degree(common))",
+    "resource_allocation": "sum 1/degree(common)"
+  },
+  "output_directory": "/home/jovyan/seal_revision_20261124/results/public_fresh_adapters_v1_20261125/e12/results",
+  "outputs": {
+    "midpoint_ranks.npy": {
+      "bytes": 163968,
+      "sha256": "e98d1499d02e078411770b40b11bef9524484891ed8e24c186b4c5d6e3d77d80"
+    },
+    "reciprocal_ranks.npy": {
+      "bytes": 163968,
+      "sha256": "1f90de72bdac73fc8bd5e9d8fd1d648c710a537ad5b73caa6a57238a3988cf26"
+    },
+    "query_ids.npy": {
+      "bytes": 32896,
+      "sha256": "2fec2027475bd6a7e187145204f40107cfa3a3bcd03317f7e0a30a01d059dbd2"
+    },
+    "source_node.npy": {
+      "bytes": 32896,
+      "sha256": "c32297a88f4df4b7e39e8d3b1a4ca8aac5f90e4716fbac8ba933d41bd3763802"
+    },
+    "target_node.npy": {
+      "bytes": 32896,
+      "sha256": "89c9972e5ad302f93354e20dba4ffd7d5427f64778871ed3e0226554d01ff20a"
+    },
+    "warm_query.npy": {
+      "bytes": 4224,
+      "sha256": "cda034aa25566e0cfb77ffcdae43a388e71d020c5e61dbbf11fa947134558b14"
+    }
+  }
+}

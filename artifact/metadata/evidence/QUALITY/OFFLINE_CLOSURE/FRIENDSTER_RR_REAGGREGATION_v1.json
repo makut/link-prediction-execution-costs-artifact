@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "dataset": "friendster",
+  "rows": [
+    {
+      "name": "union_seed42",
+      "mrr": 0.7002151396952403
+    },
+    {
+      "name": "union_seed43",
+      "mrr": 0.7082867974609635
+    },
+    {
+      "name": "union_seed44",
+      "mrr": 0.7023946119466962
+    },
+    {
+      "name": "pv_seed42",
+      "mrr": 0.7558514882455154
+    },
+    {
+      "name": "pv_seed43",
+      "mrr": 0.7549132167260304
+    },
+    {
+      "name": "pv_seed44",
+      "mrr": 0.7591243405594593
+    }
+  ],
+  "aggregates": {
+    "union": {
+      "mean": 0.7036321830343,
+      "sample_sd": 0.004175715677508995,
+      "seed_mrr": [
+        0.7002151396952403,
+        0.7082867974609635,
+        0.7023946119466962
+      ]
+    },
+    "pv": {
+      "mean": 0.7566296818436684,
+      "sample_sd": 0.0022107871770645346,
+      "seed_mrr": [
+        0.7558514882455154,
+        0.7549132167260304,
+        0.7591243405594593
+      ]
+    },
+    "paired_difference": {
+      "mean": 0.0529974988093684,
+      "sample_sd": 0.005544534327617058,
+      "seed_differences": [
+        0.055636348550275105,
+        0.04662641926506694,
+        0.05672972861276315
+      ]
+    }
+  },
+  "used_files": {
+    "friendster/results/quality_friendster/runs/union_seed42/run1/query_rr.npy": {
+      "bytes": 32896,
+      "sha256": "cca4c24cef2d774bbb7f419b3950a9a52374b65c8910f69c29c81325d8eb5656"
+    },
+    "friendster/results/quality_friendster/runs/union_seed42/run1/test_metrics.json": {
+      "bytes": 761,
+      "sha256": "349eb873c77d452aea2ee83af8ed448a46e0c1abec3a920c9aaa45f55b14d9b9"
+    },
+    "friendster/results/quality_friendster/runs/union_seed43/run1/query_rr.npy": {
+      "bytes": 32896,
+      "sha256": "8e40bb1c5693545968d516a80186f5124afcf8b32d6db9626b8a32b688a5729e"
+    },
+    "friendster/results/quality_friendster/runs/union_seed43/run1/test_metrics.json": {
+      "bytes": 776,
+      "sha256": "93b616898e3bef6a20b3ba9bfcd56ef14e47f1fdd057397706680586389c3345"
+    },
+    "friendster/results/quality_friendster/runs/union_seed44/run1/query_rr.npy": {
+      "bytes": 32896,
+      "sha256": "238f08ba9b06228a1ef0fe76f0c9c95694198a3314a968f32c4bb8ed23debd98"
+    },
+    "friendster/results/quality_friendster/runs/union_seed44/run1/test_metrics.json": {
+      "bytes": 766,
+      "sha256": "80a08fa5f55c5619e2060555b3146fe59786af79e78812b4c3a37445fc740f48"
+    },
+    "friendster/results/quality_friendster/runs/pv_seed42/run1/query_rr.npy": {
+      "bytes": 32896,
+      "sha256": "9156ff28a69d320d028dde3c221787f4aef0736cac7f2865e6572cc37783c134"
+    },
+    "friendster/results/quality_friendster/runs/pv_seed42/run1/test_metrics.json": {
+      "bytes": 766,
+      "sha256": "658136225b24a95c5480fb4e791bd8a3457e2a956b54d86fc75c92f06517e429"
+    },
+    "friendster/results/quality_friendster/runs/pv_seed43/run1/query_rr.npy": {
+      "bytes": 32896,
+      "sha256": "591275f6223800658dc2ed97dc777c8ae357d7b0cc318dbdb5341280c5ff237a"
+    },
+    "friendster/results/quality_friendster/runs/pv_seed43/run1/test_metrics.json": {
+      "bytes": 775,
+      "sha256": "24e8b8b720b2ca6004063a8d0a98e04d46665bb12b95b2ee8170d10c1bade886"
+    },
+    "friendster/results/quality_friendster/runs/pv_seed44/run1/query_rr.npy": {
+      "bytes": 32896,
+      "sha256": "dc7b0f52de92153799f3322e00ba868e5ec34dbdeb7a2c4a98ff317a2343f1ee"
+    },
+    "friendster/results/quality_friendster/runs/pv_seed44/run1/test_metrics.json": {
+      "bytes": 767,
+      "sha256": "4ef15ee52dc179b60b54012abf9d5655807019efe42797c877f50258d5294eb0"
+    }
+  },
+  "new_measurements": 0,
+  "models_loaded": 0,
+  "graphs_loaded": 0
+}

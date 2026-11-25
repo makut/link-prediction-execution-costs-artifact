@@ -1,0 +1,27 @@
+{
+  "controller_finished": true,
+  "controller_identity": {
+    "kind": "public_fr_cpu_matched_v2_20261125",
+    "pid": 16686,
+    "start_ticks": 4849017641,
+    "entrypoint": "/home/jovyan/seal_revision_20261124/public_fr_cpu_v2_code/cpu_coordinator_v1.py",
+    "source_sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470",
+    "source_manifest_sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b"
+  },
+  "scientific_complete": true,
+  "success": true,
+  "failure": null,
+  "owned_tree_quiescent": true,
+  "timing_lock_released": true,
+  "local_archive": {
+    "path": "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_20261125.tgz",
+    "bytes": 2121570,
+    "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374",
+    "files": 120,
+    "manifest_sha256": "b771c96d427bf996623f9189f49ffff8e54637ded7ab490aa55b5b7f472df11e",
+    "YT_writes": 0
+  },
+  "YT_writes": 0,
+  "base_package_installs": 0,
+  "GPU_or_pod_lifecycle_actions": 0
+}

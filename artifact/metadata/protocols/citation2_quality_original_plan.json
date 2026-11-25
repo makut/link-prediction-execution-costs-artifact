@@ -1,0 +1,2427 @@
+{
+  "created_unix": 1795536526.835204,
+  "protocol": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_subset_seed": 123,
+    "train_subset_fraction": 0.02,
+    "validation_source_count": 512,
+    "test_source_count": 4096,
+    "validation_subset_seed": 20261124,
+    "test_subset_seed": 20261125,
+    "eval_extraction_seed": 20261126,
+    "negatives_per_source": 1000,
+    "sortpool_k": 281,
+    "epochs": 10,
+    "batch_size": 32,
+    "num_workers": 16,
+    "learning_rate": 0.0001,
+    "num_hops": 2,
+    "max_nodes_per_hop": 200,
+    "per_vertex_oversample": 1.5,
+    "selection_metric": "ogb_mrr"
+  },
+  "graph_root": "/home/jovyan/seal_revision_20261124/data/citation2/prepared/train_csr",
+  "pairs_root": "/home/jovyan/seal_revision_20261124/data/citation2/prepared/train_directed_csr",
+  "dataset_provenance": {
+    "path": "/home/jovyan/seal_revision_20261124/data/citation2/prepared/manifest.json",
+    "sha256": "fbd7659f558513d570032ae1582517a33d5c1389fad006c7db482273cb816885",
+    "content": {
+      "variant": "strict_clean",
+      "source_zip": {
+        "path": "/home/jovyan/seal_revision_20261124/data/citation2/citation-v2.zip",
+        "bytes": 3754138412,
+        "sha256": "c697e76ab31c8ed00685d065da5169e9c15e34f343c9bb89dd40de5365e6880c",
+        "download_manifest_sha256": "337ffba7963eecfc79bf616cb9f9e2407374bbae1c6f4df1c324d5509179647f",
+        "download_manifest": {
+          "/home/jovyan/seal_revision_20261124/data/citation2/citation-v2.zip": {
+            "source": "//home/ai-test/renat.aminov/citations2/raw/ogbl_citations2.zip",
+            "revision": 1787269036510706,
+            "bytes": 3754138412,
+            "sha256": "c697e76ab31c8ed00685d065da5169e9c15e34f343c9bb89dd40de5365e6880c",
+            "seconds": 392.2359662055969
+          }
+        }
+      },
+      "code_provenance": {
+        "python": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+        "numpy": "1.24.4",
+        "source_sha256": {
+          "experiment_configs/seal_revision_2026-11/prepare_citation2.py": "7b2694a38134c3953d43159a96757d6557113b81b9624707a6a8670840266d19",
+          "scripts/prepare_ogb_dataset.py": "f55b46140f3281d779e85ae6f5af956091cf6535fc534bf075b6f34dfb225218",
+          "scripts/transpose_graph_csr.py": "196cafaf4a7d6819b0e36b709526018b4b95c01f9dd9654984aa655fc12e23b2",
+          "scripts/convert_graph_csr_to_upper.py": "eb024edf1ae434da1c663ce838f8211e7e5646d92f57ce82d090172f9dd8bc0b"
+        }
+      },
+      "original_variant": "/home/jovyan/seal_revision_20261124/data/citation2/prepared_original",
+      "original_manifest_sha256": "7ade95ef0c1173105f8a40b8131e42d6bf0869858648fbbb9149de53ae631c9c",
+      "quality_dataset": true,
+      "file_endian": "little",
+      "expected_reverse_collisions": 129,
+      "historical_symmetric_overlap": {
+        "valid": {
+          "queries": 86596,
+          "forward": 62,
+          "reverse": 62,
+          "collisions": [
+            {
+              "source": 1295563,
+              "target": 830787,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 178471,
+              "target": 756812,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 553373,
+              "target": 1216880,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2758972,
+              "target": 555110,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2493065,
+              "target": 267214,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 554797,
+              "target": 523245,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2128620,
+              "target": 1687175,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2586513,
+              "target": 297423,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1309731,
+              "target": 1017894,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 15605,
+              "target": 143101,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2589156,
+              "target": 2469223,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2412592,
+              "target": 1637530,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 944653,
+              "target": 912908,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1416259,
+              "target": 2414277,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 859366,
+              "target": 2915416,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1781398,
+              "target": 622981,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 32202,
+              "target": 2701974,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2153735,
+              "target": 527861,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 770998,
+              "target": 850436,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 489563,
+              "target": 2662068,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1057244,
+              "target": 243510,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 964001,
+              "target": 462293,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 400608,
+              "target": 2496507,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1151939,
+              "target": 2307036,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1244228,
+              "target": 1203682,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1246330,
+              "target": 956330,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1520912,
+              "target": 356241,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1248665,
+              "target": 389166,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1706770,
+              "target": 1932506,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1160889,
+              "target": 1821495,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2261123,
+              "target": 825979,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2534011,
+              "target": 1455224,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1347735,
+              "target": 1480163,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2356163,
+              "target": 233106,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 51563,
+              "target": 281046,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 883938,
+              "target": 847685,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1623592,
+              "target": 1566155,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 697284,
+              "target": 1509172,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 983112,
+              "target": 2020974,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 235893,
+              "target": 170566,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1355998,
+              "target": 2063676,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1447388,
+              "target": 2036763,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2454867,
+              "target": 459089,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 892185,
+              "target": 764033,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1906189,
+              "target": 78641,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 611074,
+              "target": 720821,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 708756,
+              "target": 2665543,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2002667,
+              "target": 1986665,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2190304,
+              "target": 2858904,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1824261,
+              "target": 631320,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2645057,
+              "target": 2400576,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 715905,
+              "target": 371145,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2736486,
+              "target": 2053306,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2287862,
+              "target": 496291,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1647405,
+              "target": 1501762,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1923920,
+              "target": 2913676,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2475380,
+              "target": 1825278,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 261207,
+              "target": 944653,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1470927,
+              "target": 1667286,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2921659,
+              "target": 879939,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2747569,
+              "target": 384920,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 87149,
+              "target": 293165,
+              "present_orientations": [
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        "test": {
+          "queries": 86596,
+          "forward": 67,
+          "reverse": 67,
+          "collisions": [
+            {
+              "source": 828327,
+              "target": 778504,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1113134,
+              "target": 1927753,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2118893,
+              "target": 301479,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1479014,
+              "target": 39555,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 178766,
+              "target": 954080,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 363792,
+              "target": 1264289,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1937919,
+              "target": 1611436,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 365881,
+              "target": 310771,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 183949,
+              "target": 2855294,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1578504,
+              "target": 1493115,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1213773,
+              "target": 1303900,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1124732,
+              "target": 1853393,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 466563,
+              "target": 2595704,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 193096,
+              "target": 2300840,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 286128,
+              "target": 1346052,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1862526,
+              "target": 930894,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 755080,
+              "target": 857869,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 290691,
+              "target": 2474400,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 763019,
+              "target": 474464,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 669945,
+              "target": 1097388,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2868673,
+              "target": 352185,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2148685,
+              "target": 2547831,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2692134,
+              "target": 2882723,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2243549,
+              "target": 2589926,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2696843,
+              "target": 1162764,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 398417,
+              "target": 325819,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2247886,
+              "target": 403187,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 962622,
+              "target": 1568686,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 41101,
+              "target": 875157,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2527380,
+              "target": 871569,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 498217,
+              "target": 2878874,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1159838,
+              "target": 2139648,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2073799,
+              "target": 1875065,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2167334,
+              "target": 2758681,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2622542,
+              "target": 2240124,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2261024,
+              "target": 1232776,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2533938,
+              "target": 14715,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 321581,
+              "target": 2873963,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1166489,
+              "target": 1021946,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2266316,
+              "target": 587940,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1443099,
+              "target": 1460707,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 56249,
+              "target": 2762980,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 793597,
+              "target": 2807571,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 606880,
+              "target": 539229,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 607996,
+              "target": 980906,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1359713,
+              "target": 2478664,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1269724,
+              "target": 1065927,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2548663,
+              "target": 921914,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 64638,
+              "target": 2039465,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 153223,
+              "target": 2912055,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2549567,
+              "target": 2885281,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2817231,
+              "target": 1253365,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2002667,
+              "target": 2069567,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1911640,
+              "target": 2537715,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1455224,
+              "target": 2814686,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 67412,
+              "target": 1952762,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2373523,
+              "target": 1552795,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 431044,
+              "target": 1509437,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2374008,
+              "target": 2534845,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 997365,
+              "target": 211851,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 1097388,
+              "target": 723996,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 164023,
+              "target": 1906572,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 441544,
+              "target": 1156838,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2015642,
+              "target": 858700,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2296448,
+              "target": 41041,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 2657174,
+              "target": 595655,
+              "present_orientations": [
+                0,
+                1
+              ]
+            },
+            {
+              "source": 175516,
+              "target": 2237078,
+              "present_orientations": [
+                0,
+                1
+              ]
+            }
+          ]
+        }
+      },
+      "historical_directed_overlap": {
+        "valid": {
+          "queries": 86596,
+          "forward": 0,
+          "reverse": 62,
+          "collisions": [
+            {
+              "source": 1295563,
+              "target": 830787,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 178471,
+              "target": 756812,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 553373,
+              "target": 1216880,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2758972,
+              "target": 555110,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2493065,
+              "target": 267214,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 554797,
+              "target": 523245,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2128620,
+              "target": 1687175,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2586513,
+              "target": 297423,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1309731,
+              "target": 1017894,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 15605,
+              "target": 143101,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2589156,
+              "target": 2469223,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2412592,
+              "target": 1637530,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 944653,
+              "target": 912908,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1416259,
+              "target": 2414277,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 859366,
+              "target": 2915416,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1781398,
+              "target": 622981,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 32202,
+              "target": 2701974,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2153735,
+              "target": 527861,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 770998,
+              "target": 850436,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 489563,
+              "target": 2662068,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1057244,
+              "target": 243510,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 964001,
+              "target": 462293,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 400608,
+              "target": 2496507,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1151939,
+              "target": 2307036,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1244228,
+              "target": 1203682,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1246330,
+              "target": 956330,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1520912,
+              "target": 356241,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1248665,
+              "target": 389166,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1706770,
+              "target": 1932506,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1160889,
+              "target": 1821495,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2261123,
+              "target": 825979,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2534011,
+              "target": 1455224,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1347735,
+              "target": 1480163,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2356163,
+              "target": 233106,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 51563,
+              "target": 281046,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 883938,
+              "target": 847685,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1623592,
+              "target": 1566155,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 697284,
+              "target": 1509172,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 983112,
+              "target": 2020974,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 235893,
+              "target": 170566,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1355998,
+              "target": 2063676,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1447388,
+              "target": 2036763,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2454867,
+              "target": 459089,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 892185,
+              "target": 764033,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1906189,
+              "target": 78641,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 611074,
+              "target": 720821,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 708756,
+              "target": 2665543,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2002667,
+              "target": 1986665,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2190304,
+              "target": 2858904,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1824261,
+              "target": 631320,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2645057,
+              "target": 2400576,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 715905,
+              "target": 371145,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2736486,
+              "target": 2053306,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2287862,
+              "target": 496291,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1647405,
+              "target": 1501762,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1923920,
+              "target": 2913676,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2475380,
+              "target": 1825278,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 261207,
+              "target": 944653,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1470927,
+              "target": 1667286,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2921659,
+              "target": 879939,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2747569,
+              "target": 384920,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 87149,
+              "target": 293165,
+              "present_orientations": [
+                1
+              ]
+            }
+          ]
+        },
+        "test": {
+          "queries": 86596,
+          "forward": 0,
+          "reverse": 67,
+          "collisions": [
+            {
+              "source": 828327,
+              "target": 778504,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1113134,
+              "target": 1927753,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2118893,
+              "target": 301479,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1479014,
+              "target": 39555,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 178766,
+              "target": 954080,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 363792,
+              "target": 1264289,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1937919,
+              "target": 1611436,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 365881,
+              "target": 310771,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 183949,
+              "target": 2855294,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1578504,
+              "target": 1493115,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1213773,
+              "target": 1303900,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1124732,
+              "target": 1853393,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 466563,
+              "target": 2595704,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 193096,
+              "target": 2300840,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 286128,
+              "target": 1346052,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1862526,
+              "target": 930894,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 755080,
+              "target": 857869,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 290691,
+              "target": 2474400,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 763019,
+              "target": 474464,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 669945,
+              "target": 1097388,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2868673,
+              "target": 352185,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2148685,
+              "target": 2547831,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2692134,
+              "target": 2882723,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2243549,
+              "target": 2589926,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2696843,
+              "target": 1162764,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 398417,
+              "target": 325819,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2247886,
+              "target": 403187,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 962622,
+              "target": 1568686,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 41101,
+              "target": 875157,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2527380,
+              "target": 871569,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 498217,
+              "target": 2878874,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1159838,
+              "target": 2139648,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2073799,
+              "target": 1875065,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2167334,
+              "target": 2758681,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2622542,
+              "target": 2240124,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2261024,
+              "target": 1232776,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2533938,
+              "target": 14715,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 321581,
+              "target": 2873963,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1166489,
+              "target": 1021946,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2266316,
+              "target": 587940,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1443099,
+              "target": 1460707,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 56249,
+              "target": 2762980,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 793597,
+              "target": 2807571,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 606880,
+              "target": 539229,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 607996,
+              "target": 980906,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1359713,
+              "target": 2478664,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1269724,
+              "target": 1065927,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2548663,
+              "target": 921914,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 64638,
+              "target": 2039465,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 153223,
+              "target": 2912055,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2549567,
+              "target": 2885281,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2817231,
+              "target": 1253365,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2002667,
+              "target": 2069567,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1911640,
+              "target": 2537715,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1455224,
+              "target": 2814686,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 67412,
+              "target": 1952762,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2373523,
+              "target": 1552795,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 431044,
+              "target": 1509437,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2374008,
+              "target": 2534845,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 997365,
+              "target": 211851,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 1097388,
+              "target": 723996,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 164023,
+              "target": 1906572,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 441544,
+              "target": 1156838,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2015642,
+              "target": 858700,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2296448,
+              "target": 41041,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 2657174,
+              "target": 595655,
+              "present_orientations": [
+                1
+              ]
+            },
+            {
+              "source": 175516,
+              "target": 2237078,
+              "present_orientations": [
+                1
+              ]
+            }
+          ]
+        }
+      },
+      "filter_symmetric": {
+        "nodes": 2927963,
+        "original_entries": 60703760,
+        "removed_entries": 258,
+        "clean_entries": 60703502,
+        "timestamps_preserved": true,
+        "chunk_edges": 2000000
+      },
+      "filter_directed": {
+        "nodes": 2927963,
+        "original_entries": 30387995,
+        "removed_entries": 129,
+        "clean_entries": 30387866,
+        "timestamps_preserved": true,
+        "chunk_edges": 2000000
+      },
+      "transpose": {
+        "num_nodes": 2927963,
+        "num_edges": 30387866,
+        "elapsed_s": 6.372578382492065
+      },
+      "clean_heldout_audits": {
+        "train_csr": {
+          "valid": {
+            "queries": 86596,
+            "forward": 0,
+            "reverse": 0,
+            "collisions": []
+          },
+          "test": {
+            "queries": 86596,
+            "forward": 0,
+            "reverse": 0,
+            "collisions": []
+          }
+        },
+        "train_directed_csr": {
+          "valid": {
+            "queries": 86596,
+            "forward": 0,
+            "reverse": 0,
+            "collisions": []
+          },
+          "test": {
+            "queries": 86596,
+            "forward": 0,
+            "reverse": 0,
+            "collisions": []
+          }
+        },
+        "train_directed_csr_in": {
+          "valid": {
+            "queries": 86596,
+            "forward": 0,
+            "reverse": 0,
+            "collisions": []
+          },
+          "test": {
+            "queries": 86596,
+            "forward": 0,
+            "reverse": 0,
+            "collisions": []
+          }
+        },
+        "train_pairs_csr": {
+          "valid": {
+            "queries": 86596,
+            "forward": 0,
+            "reverse": 0,
+            "collisions": []
+          },
+          "test": {
+            "queries": 86596,
+            "forward": 0,
+            "reverse": 0,
+            "collisions": []
+          }
+        }
+      },
+      "official_splits": "unchanged positive and all 1000 negative candidate rows; byte-identical files linked/copied from prepared_original",
+      "official_artifact_validation": {
+        "nodes": 2927963,
+        "feature_shape": [
+          2927963,
+          128
+        ],
+        "feature_dtype": "float32",
+        "splits": {
+          "valid": {
+            "queries": 86596,
+            "negatives_per_query": 1000,
+            "source_group_alignment_verified": true,
+            "unique_positive_sources": 86596
+          },
+          "test": {
+            "queries": 86596,
+            "negatives_per_query": 1000,
+            "source_group_alignment_verified": true,
+            "unique_positive_sources": 86596
+          }
+        }
+      },
+      "feature_policy": "original float32 node features and node years preserved",
+      "positive_training_source": "train_directed_csr; destination-only negative corruption",
+      "timings": [
+        {
+          "stage": "filter_symmetric",
+          "seconds": 0.5035081813111901,
+          "peak_rss_bytes": 11161092096,
+          "current_rss_bytes": 3689701376
+        },
+        {
+          "stage": "filter_directed",
+          "seconds": 0.25186006259173155,
+          "peak_rss_bytes": 11161092096,
+          "current_rss_bytes": 3689701376
+        },
+        {
+          "stage": "clean_transpose",
+          "seconds": 6.378429431468248,
+          "peak_rss_bytes": 11161092096,
+          "current_rss_bytes": 3689701376
+        },
+        {
+          "stage": "clean_canonical_pairs",
+          "seconds": 0.7627808395773172,
+          "peak_rss_bytes": 11161092096,
+          "current_rss_bytes": 3689701376
+        },
+        {
+          "stage": "verify_clean_no_heldout",
+          "seconds": 9.30576978251338,
+          "peak_rss_bytes": 11161092096,
+          "current_rss_bytes": 3689701376
+        }
+      ],
+      "memory": {
+        "peak_rss_bytes": 11161092096,
+        "current_rss_bytes": 3689701376
+      },
+      "contract_version": 1,
+      "files": [
+        {
+          "path": "node_feat.npy",
+          "bytes": 1499117184,
+          "sha256": "ef2a3c1461b5269e26c5a8f475980fc6531c2eeac9e1fd81097c1b145bac2284"
+        },
+        {
+          "path": "node_year.npy",
+          "bytes": 11711980,
+          "sha256": "48df639b26befc48308444969b814202d0d8e6c1adf0856cc6d1f0133768ffb9"
+        },
+        {
+          "path": "num_nodes.txt",
+          "bytes": 8,
+          "sha256": "ff1799f8bf9bd540c71427feb1bc07bcab1331eec0d2fcb847a8e68395b8e81f"
+        },
+        {
+          "path": "test_edge.npy",
+          "bytes": 1385664,
+          "sha256": "f2104cb99400584716ee1c5955a4685fd1b4dc6e5266df626341e9d84f768b37"
+        },
+        {
+          "path": "test_edge_neg.npy",
+          "bytes": 1385536128,
+          "sha256": "41842a28e13ca3fa8dfc45c1dbf90434a3fd7194dc31334b979d14939c1bd051"
+        },
+        {
+          "path": "train_csr/edge_ends.bin",
+          "bytes": 242814016,
+          "sha256": "d3d8d1e2016675321c1d3d9ae817d2c6dca4a9dd2d5cdbba3e638ea7201057a4"
+        },
+        {
+          "path": "train_csr/edge_starts.bin",
+          "bytes": 23423704,
+          "sha256": "f06070adc368892f8441ea15e691dce400f9d44b6ec3e6e4505134c276c1072d"
+        },
+        {
+          "path": "train_csr/timestamps.bin",
+          "bytes": 242814016,
+          "sha256": "5c5cfd056a116c652fcaa434bccaca180cd05697c3b26051cc42684944c22bc7"
+        },
+        {
+          "path": "train_directed_csr/edge_ends.bin",
+          "bytes": 121551472,
+          "sha256": "08a2b59458557fe0c0ece9e91df47f235a877e09ae6c5389c75cc23eccbabcf5"
+        },
+        {
+          "path": "train_directed_csr/edge_starts.bin",
+          "bytes": 23423704,
+          "sha256": "c267a0fb80a5532456830615aca232bf1a7f86796e237b5916af2445ccec9797"
+        },
+        {
+          "path": "train_directed_csr/timestamps.bin",
+          "bytes": 121551472,
+          "sha256": "ce7e801f8ae638ab7ebd8b615f6ad0ff205c42a9411be4c3d6d7d79c3f46fe28"
+        },
+        {
+          "path": "train_directed_csr_in/edge_ends.bin",
+          "bytes": 121551472,
+          "sha256": "9b06f87e1be73696a9ccab99c11c45b6362f3d7daf1235a18ba0e94317ac805f"
+        },
+        {
+          "path": "train_directed_csr_in/edge_starts.bin",
+          "bytes": 23423704,
+          "sha256": "2e321a921652bf1922aab2352abc8bc9238960886a8314aa79940e48607d9f2d"
+        },
+        {
+          "path": "train_directed_csr_in/timestamps.bin",
+          "bytes": 121551472,
+          "sha256": "10f120e9eca9dba13c824f16d0b643205ee4317aa1941a11206cf598b125d3b0"
+        },
+        {
+          "path": "train_pairs_csr/edge_ends.bin",
+          "bytes": 121407012,
+          "sha256": "a9b2df0120a22c4dd1ab226ccb77ac4304ed17aee08e3a6d1828a4efe1cf98c2"
+        },
+        {
+          "path": "train_pairs_csr/edge_starts.bin",
+          "bytes": 23423704,
+          "sha256": "3d360d90f7bafd0499daee2208e11d6c7d8e05aa4eeb6635ec3f7211ec0b3893"
+        },
+        {
+          "path": "train_pairs_csr/timestamps.bin",
+          "bytes": 121407012,
+          "sha256": "120770e36f5d7af44f66a5f80b231e011adf1a6c6458d2d736995f40d9fe7b63"
+        },
+        {
+          "path": "valid_edge.npy",
+          "bytes": 1385664,
+          "sha256": "5182bffdb22415c0ad8735cfd428aa69083a9cf4eb33303f244967e7958a7812"
+        },
+        {
+          "path": "valid_edge_neg.npy",
+          "bytes": 1385536128,
+          "sha256": "7d0333a5723bc69869f69c78157a96af3ff36f68d88818256d8fb042f614fdf5"
+        }
+      ],
+      "completed_unix": 1795536479.1809063
+    }
+  },
+  "subsets": {
+    "val": {
+      "split": "valid",
+      "subset_seed": 20261124,
+      "selection": "uniform source IDs without replacement",
+      "source_count": 512,
+      "original_source_count": 86596,
+      "positive_rows": 512,
+      "negative_rows": 512000,
+      "negatives_per_source": 1000,
+      "all_provided_negatives_retained": true,
+      "inputs": {
+        "positive": {
+          "path": "/home/jovyan/seal_revision_20261124/data/citation2/prepared/valid_edge.npy",
+          "sha256": "5182bffdb22415c0ad8735cfd428aa69083a9cf4eb33303f244967e7958a7812"
+        },
+        "negative": {
+          "path": "/home/jovyan/seal_revision_20261124/data/citation2/prepared/valid_edge_neg.npy",
+          "sha256": "7d0333a5723bc69869f69c78157a96af3ff36f68d88818256d8fb042f614fdf5"
+        }
+      },
+      "outputs": {
+        "positive": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality/subsets/valid_edge.npy",
+          "sha256": "8d969a4421583440d3c01b21fbe4e667542ba554c08f6445a70a38d5d82311ec"
+        },
+        "negative": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality/subsets/valid_edge_neg.npy",
+          "sha256": "d94569a6d7347287ee270b3821d42d00b51b4ae3ec4574a087d4b45f7531f63c"
+        },
+        "sources": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality/subsets/valid_sources.npy",
+          "sha256": "2e6fa8036a00f711ebef66a10e3c90199c2364a75bb210a7417f5d2950d0cd3f"
+        }
+      }
+    },
+    "test": {
+      "split": "test",
+      "subset_seed": 20261125,
+      "selection": "uniform source IDs without replacement",
+      "source_count": 4096,
+      "original_source_count": 86596,
+      "positive_rows": 4096,
+      "negative_rows": 4096000,
+      "negatives_per_source": 1000,
+      "all_provided_negatives_retained": true,
+      "inputs": {
+        "positive": {
+          "path": "/home/jovyan/seal_revision_20261124/data/citation2/prepared/test_edge.npy",
+          "sha256": "f2104cb99400584716ee1c5955a4685fd1b4dc6e5266df626341e9d84f768b37"
+        },
+        "negative": {
+          "path": "/home/jovyan/seal_revision_20261124/data/citation2/prepared/test_edge_neg.npy",
+          "sha256": "41842a28e13ca3fa8dfc45c1dbf90434a3fd7194dc31334b979d14939c1bd051"
+        }
+      },
+      "outputs": {
+        "positive": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality/subsets/test_edge.npy",
+          "sha256": "a9798147a31c84b4572d8a323f397b0a0c77acabb4287fde73942c27cd135be9"
+        },
+        "negative": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality/subsets/test_edge_neg.npy",
+          "sha256": "990a1300165e50fdef8eba3f73866c17b5fee47832370e09e2f2dfe721611828"
+        },
+        "sources": {
+          "path": "/home/jovyan/seal_revision_20261124/results/quality/subsets/test_sources.npy",
+          "sha256": "ca75b60d5151cf2b4af962ea3291033a11cf3c49f5a7f62e524394aa0e70f851"
+        }
+      }
+    }
+  },
+  "jobs": [
+    {
+      "name": "union_seed42",
+      "seed": 42,
+      "variant": "union",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality/configs/union_seed42.json",
+      "config_sha256": "feec292cea67f17aba42dae43ee5c479cca70d6228dd8ed6563f8758c6cb9427"
+    },
+    {
+      "name": "pv_seed42",
+      "seed": 42,
+      "variant": "pv",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality/configs/pv_seed42.json",
+      "config_sha256": "8af713626b93113cc2353b8d4827dc039648615f7843b1ae3d04e9b8c4d130ca"
+    },
+    {
+      "name": "pv_seed43",
+      "seed": 43,
+      "variant": "pv",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality/configs/pv_seed43.json",
+      "config_sha256": "5f2ccc389e37964308e0901c967ad5eb0924b816a080d1533f3476b3ac4e467b"
+    },
+    {
+      "name": "union_seed43",
+      "seed": 43,
+      "variant": "union",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality/configs/union_seed43.json",
+      "config_sha256": "913a3ed7ddf9fdd16e28c9d9c6461d9c0d71c81a1cb06e7dd9200a0cd5cd32f3"
+    },
+    {
+      "name": "union_seed44",
+      "seed": 44,
+      "variant": "union",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality/configs/union_seed44.json",
+      "config_sha256": "5d6bb7492bd52fb8955042c467f1f5792c847912a66858f5b688f59f37ecf568"
+    },
+    {
+      "name": "pv_seed44",
+      "seed": 44,
+      "variant": "pv",
+      "config": "/home/jovyan/seal_revision_20261124/results/quality/configs/pv_seed44.json",
+      "config_sha256": "964afed0ec26c1bec1495206378fef3ed764b9d336f65070a742df1a4d0c627c"
+    }
+  ],
+  "runner_sha256": "dd07d766cddebe46b186384a21f7d0e3fa55b0f01ee5e577eb8b0c0495530bd0",
+  "code": {
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/__init__.py": "90abaad225d35e7243b2d289a350d63a1553e4da0de6b77ac0004836413e74fe",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/batch_transforms.py": "0ff0c67da6ac402b5740ac9118025c448d2643f576e346b193379723f2dd2871",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/batch_types.py": "bf735168edfc87cd2b778762f5e1a34294d56372ee17f387dc7b89721953c60c",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/collators.py": "89e0f4008487042c3f4fb2327dde842b33935dc9a1501a6a7b1ee4c0d41b59fb",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/config.py": "dbeaf8c5be1c5448c49da0824ce9a82ac1371919af6dc4261e2acf77b45565a4",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/dataset_config.py": "5f6d054b735d20157228ddf253450be38c57a7ba513c07e85fccd5b068533e49",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/distributed_utils.py": "3a067359a7ec5cef60936ff3be82619d648a7ecf4a4d5a517881498a7a16ddfd",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/eval_data.py": "4d32282f91714b36ac0db22097327d041320be63a24aecd3a624f2fc8e96b205",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/iterable.py": "1418b772ab3794962890a8f2aaa019d9d56d64176ca32221d195955d44eb95ae",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/loaders.py": "a83a43becac365b54eb056c2750063fa9c36adb7bd17265fe958999b9e17be38",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/losses.py": "9391b939304dffe6c5661923a78e1d312f41b4e3a5137165f48595bf1f51da1c",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/metrics.py": "3af925c9d3c884cdd25557dfb916e5492b47d6391f8021f87dab9ef9dc67fb48",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/negative_sampling.py": "162c374bee13555ee3fb04581d25c16ce726321bf81a17c3639a3ec217212be6",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/node_sampling.py": "2a59974483703cf4aa73c459af9d8343d8f3df00ef9a2a0afa05c49f4f124c0f",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/positive_edges.py": "f213012330ea8d0ff526030289e05b65c8c38f03b40d31f0a420a2f565a52b10",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/training_utils.py": "1782a124276572d472db9ff99b761973c10fb0208f3b01cc787c3ce399d96e20",
+    "/home/jovyan/seal_revision_20261124/code/dataset_utils/utils.py": "1f190cd1f91b3cccbe9687fcb5a03ba9174a72b4443ae93587c196570a6a8efb",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/__init__.py": "dabf51f8480a0cbbb715eccb6a040de7ab7a7762704d732dc9d032b6eb11a2d8",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/graph.py": "5f3a1f3156ebfe75ddc01d282423384dfa52ba35ba6a1745e3723735eeb9e9e2",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/io_utils.py": "4cbfd1de20525b6d705ded4832f07e59ae910626a5784c0a72cf8b9799889d74",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/large_int32.py": "8bbe63d97cc150f5cd634a8572e8517f73867d64b11ea9ce3941d4c9ea6f4756",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/large_int64_raw.py": "1cdfa9335a84461359c99ea3ba8e38c75219287874fa0e6248050a27e3f63a99",
+    "/home/jovyan/seal_revision_20261124/code/graph_csr/serializer.py": "b67ac9a00d3d08aa62501bce4fbf4d90af264c07c19372db1c78160fb280e50e",
+    "/home/jovyan/seal_revision_20261124/code/seal/__init__.py": "05c21a366b8fe1b60ab07ee6ef4cc5675059d91f624b4fc7fac9c6acabbe3545",
+    "/home/jovyan/seal_revision_20261124/code/seal/config.py": "679df5f55e53908388d706b45ea98c1223807e65f2039d3d5619f443aa79c123",
+    "/home/jovyan/seal_revision_20261124/code/seal/data_bridge.py": "cd7b340aea21fd839ef6eac9fc86f19a23956a5c759ef527189ffb2d03278853",
+    "/home/jovyan/seal_revision_20261124/code/seal/graph_csr_dataset.py": "43d1e164e06f1e494712a10e90812c9e3757d640889872995c13d8bfc91e0767",
+    "/home/jovyan/seal_revision_20261124/code/seal/graph_csr_extraction.py": "fd1468b141af9d33ed4045f862342e5f145aa4d0eaee73421754832c9831b1cd",
+    "/home/jovyan/seal_revision_20261124/code/seal/graph_csr_kernels.py": "19f517b874cfebc9f9388f094c17cf91b559936cd36f81976292c76025cfb2c5",
+    "/home/jovyan/seal_revision_20261124/code/seal/models.py": "3e613bb9596a5efbc310589bc12a26ec18c2d2d50b110d2a542585a8e43deac9",
+    "/home/jovyan/seal_revision_20261124/code/seal/ogb_metrics.py": "33ab7bc8f1d30e8836b1e0c051061bf46d0bd9e56bf67fa0d098bc4cd6718f87",
+    "/home/jovyan/seal_revision_20261124/code/seal/reproducibility.py": "8168a7f3a19f14bf39f0dc0bdc6235377b0b4a1b7832056d0d314fc491fd1639",
+    "/home/jovyan/seal_revision_20261124/code/seal/scoring.py": "748b6c0625e72f2de8e78cfadb1bc360d14ecc52e0d111ae337bb0cf8e7c82e0",
+    "/home/jovyan/seal_revision_20261124/code/seal/seal_link_pred.py": "35f6410aaf2df98709a162153d45da69e23feb8ef691d4a47b16d9f410ef66ff",
+    "/home/jovyan/seal_revision_20261124/code/seal/utils.py": "f8a1221f1e72453a25fe4eeb7ac42dd0b07e3a0d62ceafc2f5e05c4191adefc5"
+  },
+  "test_access_policy": "score only after all validation-selected checkpoints are frozen"
+}

@@ -1,0 +1,79 @@
+{
+  "YT_writes": 0,
+  "audits_executed": 0,
+  "derivative_export": {
+    "bytes": 6831,
+    "sha256": "3a54738f505981ad40caac61fc1ad65edfe6d6dac0259960474dfe017d05cbda"
+  },
+  "genuine_receipts_unchanged": {
+    "public_fr_cpu_matched_v2_build/build_receipt_v1.json": {
+      "bytes": 1348,
+      "sha256": "8d58002090e7eeb006bea25b40905d2f2e26994ee750a2e4b878a6710e206d1b"
+    },
+    "public_fr_cpu_matched_v2_launch.json": {
+      "bytes": 948,
+      "sha256": "3cf55ba34022106265a19f081a9b31e436bae6a217f1e3c89e6c0e1d1963de24"
+    },
+    "public_fr_cpu_v2_code/SOURCE_MANIFEST.json": {
+      "bytes": 6623,
+      "sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b"
+    },
+    "public_fr_cpu_v2_code/cpu_coordinator_v1.py": {
+      "bytes": 20323,
+      "sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470"
+    },
+    "results/public_fr_cpu_matched_v2_20261125/ARCHIVE_READY.json": {
+      "bytes": 313,
+      "sha256": "49d91acff5b1539cc3543c0166fb6b32a6d5ad43373362192a81bf69bc0b824a"
+    },
+    "results/public_fr_cpu_matched_v2_20261125/COMPLETE.json": {
+      "bytes": 1016,
+      "sha256": "f46612e5632aec56a03d893f4108313217841cd812ce2f56bc240a00c2d0f241"
+    }
+  },
+  "kind": "ROOT_AUTHORIZED_LOSSLESS_TRANSPORT_DERIVATION_V1",
+  "local_adapter": {
+    "bytes": 10774,
+    "sha256": "67a4420402c17d21e5dd69e0239752fc70242c033aed1b519adb00420d1b0464"
+  },
+  "mapping": {
+    "actual_cpu_pod_uid/actual_node": "copied only if present in each genuine sidecar",
+    "hostname": "raw observed host",
+    "owner/timing_locks/standalone_library_observed": "copied observations only",
+    "receipt_sha256": "SHA256 of exactly matched decoded six genuine raw receipt bytes",
+    "source_manifest_observed_sha256": "SHA256 of actual decoded source manifest bytes",
+    "source_observed_sha256": "SHA256 of actual decoded coordinator bytes"
+  },
+  "meaning": "Transport schema only; no new observations, science, timers, gates or result eligibility inferred.",
+  "new_observations": 0,
+  "original_directory": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/outputs/seal_after_travel_systems_final_20261125/public_fr_cpu_matched_v2_final_readonly_v1",
+  "original_inputs": {
+    "export.json": {
+      "bytes": 2822,
+      "sha256": "9efe4d6ac7661f40b02c0ea60b7872fcbd8fbf0d8fb9e10a6e4b64a6c7387c40"
+    },
+    "remote_after.json": {
+      "bytes": 41841,
+      "sha256": "afdb4d38e546a61c631fe3dbee08864794d09421d4d38d4077256fa807bd1a0e"
+    },
+    "remote_before.json": {
+      "bytes": 41840,
+      "sha256": "697681047e8160737f8db5d81f53d31ec33217353fef4e0d94eca7120c93cc8d"
+    }
+  },
+  "preserved_first_failure": {
+    "bytes": 450,
+    "sha256": "0ea9697cc0531adb531d6520aee720f2b0aedbe60ba08ec9462a0be7197ea44a"
+  },
+  "remote_actions": 0,
+  "root_launch": {
+    "bytes": 948,
+    "sha256": "3cf55ba34022106265a19f081a9b31e436bae6a217f1e3c89e6c0e1d1963de24"
+  },
+  "scientific_or_timer_changes": 0,
+  "storage": "hardlinks for byte-identical original archive/receipts/raw-sidecars/launch/failure; new derivative export+manifest only",
+  "whole_archive_unchanged": {
+    "bytes": 2121570,
+    "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374"
+  }
+}

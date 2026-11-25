@@ -1,0 +1,72 @@
+{
+  "ready": {
+    "controller_finished": true,
+    "success": true,
+    "archive": {
+      "bytes": 87144,
+      "sha256": "746b073f4cc722304d9e13af5bbee754134b49dd2bc3959e8297e70cb400e114",
+      "member_count": 59,
+      "internal_manifest_sha256": "96424fba7e31d408b4a7d584e8bd888a966eb8f81fd415e7a94dff551ab6bc00",
+      "all_members_complete_not_truncated": true,
+      "YT_writes": 0
+    },
+    "runtime_archive": "/home/jovyan/seal_revision_20261124/results/public_friendster_repro_v1.tgz",
+    "terminal_sha256": "9552f9af8bd59965876f90cca46ed6feb98d0d2556e18e6e7b5fc0db91d84d8e",
+    "failure": null,
+    "public_preparation_lock_released": true,
+    "finished_unix": 1795611325.5578055
+  },
+  "observed_unix": 1795612604.2527623,
+  "export_COMPLETE.json": {
+    "archive_pointer": {
+      "all_internal_manifest_files_verified": true,
+      "archive": "/home/jovyan/seal_revision_20261124/results/public_friendster_repro_v1.tgz",
+      "bytes": 87144,
+      "complete_sha256": "0ff43cc3114ccdf44916b64691322e319e8ca62c53850c859b10afc2ad704df7",
+      "existing_identical_node_reused": false,
+      "full_numeric_payloads": 3,
+      "member_count": 59,
+      "new_YT_file_nodes": 1,
+      "original_controller_pid": 16430,
+      "original_controller_source_sha256": "1118f21dda74798f0d5e0e50e79175fdadfad3e854d65c0561307dcbbc9f5001",
+      "original_controller_start_ticks": 4846735635,
+      "prepared_numeric_payloads": 23,
+      "readback_verified": true,
+      "ready_sha256": "65f28c261369b6496b8391ce1e271560a026fe5bf6f6fba3c7b6381fe4235d67",
+      "sha256": "746b073f4cc722304d9e13af5bbee754134b49dd2bc3959e8297e70cb400e114",
+      "terminal_sha256": "9552f9af8bd59965876f90cca46ed6feb98d0d2556e18e6e7b5fc0db91d84d8e",
+      "yt_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/public_friendster_repro_v1_final.tgz"
+    },
+    "controller_finished": true,
+    "existing_runtime_archive_repacked": false,
+    "graph_reads_or_copies": 0,
+    "owned_upload_quiescent": true,
+    "success": true
+  },
+  "export_archive_pointer.json": {
+    "all_internal_manifest_files_verified": true,
+    "archive": "/home/jovyan/seal_revision_20261124/results/public_friendster_repro_v1.tgz",
+    "bytes": 87144,
+    "complete_sha256": "0ff43cc3114ccdf44916b64691322e319e8ca62c53850c859b10afc2ad704df7",
+    "existing_identical_node_reused": false,
+    "full_numeric_payloads": 3,
+    "member_count": 59,
+    "new_YT_file_nodes": 1,
+    "original_controller_pid": 16430,
+    "original_controller_source_sha256": "1118f21dda74798f0d5e0e50e79175fdadfad3e854d65c0561307dcbbc9f5001",
+    "original_controller_start_ticks": 4846735635,
+    "prepared_numeric_payloads": 23,
+    "readback_verified": true,
+    "ready_sha256": "65f28c261369b6496b8391ce1e271560a026fe5bf6f6fba3c7b6381fe4235d67",
+    "sha256": "746b073f4cc722304d9e13af5bbee754134b49dd2bc3959e8297e70cb400e114",
+    "terminal_sha256": "9552f9af8bd59965876f90cca46ed6feb98d0d2556e18e6e7b5fc0db91d84d8e",
+    "yt_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/public_friendster_repro_v1_final.tgz"
+  },
+  "status": "verified",
+  "all59_runtime_member_hashes_verified": true,
+  "full3_numeric_payloads_byte_identical": true,
+  "prepared23_numeric_payloads_byte_identical": true,
+  "archive_sha256": "746b073f4cc722304d9e13af5bbee754134b49dd2bc3959e8297e70cb400e114",
+  "YT_writes_by_collector": 0,
+  "collected_unix": 1795612604.391623
+}

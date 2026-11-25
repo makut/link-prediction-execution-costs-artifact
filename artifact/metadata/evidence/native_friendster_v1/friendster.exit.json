@@ -1,0 +1,11 @@
+{
+  "pid": 22042,
+  "returncode": 0,
+  "timed_out": false,
+  "timeout_seconds": 13000,
+  "orphan_cleanup": false,
+  "owned_pgids_signaled": [],
+  "owned_tree_quiescent": true,
+  "guard_abort_reason": null,
+  "guard_policy": "unchanged stable_pss_individual_rss_cgroup90_v3 externally sampled at2s;180GiB; CPU-only"
+}

@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/opt/python/bin/python3",
+    "-B",
+    "/home/jovyan/seal_revision_20261124/public_fresh_adapters_v1_code/run_public.py",
+    "--experiment",
+    "e7",
+    "--prepared-root",
+    "/home/jovyan/seal_revision_20261124/public_friendster_repro_v1/new_data/prepared",
+    "--out",
+    "/home/jovyan/seal_revision_20261124/results/public_fresh_adapters_v1_20261125/e7",
+    "--execute"
+  ],
+  "pid": 16557,
+  "start_ticks": 4848604276,
+  "started_unix": 1795627160.7270005,
+  "stdout": "/home/jovyan/seal_revision_20261124/results/public_fresh_adapters_v1_20261125/e7.log"
+}

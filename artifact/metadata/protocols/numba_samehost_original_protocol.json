@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "kind": "numba_samehost_frozen_S_followup_v1",
+  "status": "PREPARED_ONLY_NO_REMOTE_EXECUTION_NO_MEASURED_RESULTS",
+  "datasets": ["friendster", "vk"],
+  "sequential_jobs": ["friendster_neighbors32", "friendster_neighbors64", "vk_neighbors32", "vk_neighbors64"],
+  "cases_per_job": 128,
+  "selection_seed": 20261125,
+  "selection": "Unchanged prepare_replay_v1.choose128 from exact pinned original768record archive; all scientific selection fields must match preceding native replay_plan.json.",
+  "methods": ["scan", "pairwise"],
+  "entrypoint": "frozen exact.production_induced with fixed mode only",
+  "timer": "frozen exact.measure, same target-removed local CSR and separately DRNL",
+  "method_order": "randomized within query with np.default_rng(20261125+original_archive_record_index)",
+  "warmup": 1,
+  "timed_repetitions": 3,
+  "widths": {
+    "32": "Original GraphCSR int64 starts/int32 neighbors, lazy read-only mmap",
+    "64": "Existing native int64 rowptr[:-1] view/int64 col, existing successful conversion receipt and manifest, both actual payload SHA256 verified before timers"
+  },
+  "host": "Same existing GPU-host CPU Intel Xeon Platinum8480+; CPU-only worker, one thread",
+  "max_query_neighbors": 20000000,
+  "max_local_workspace_gib": 6,
+  "max_pairwise_checks": 20000000,
+  "memory_guard": "Unchanged external V3 guard180GiB, sampled2s with PSS/individualRSS/cgroup90 rules",
+  "admission": "After PENCILv2 final persisted archive and exact launch/source/PID/start identity quiescence, plus unchanged old native/main durable/quiescent gates, no active scientific phase/foreign timing locks; exclusive ADDITIONAL_TIMING_RUNNING.lock held throughout fourworkers and onefinal persistence",
+  "budgets": {"total_hours_including_admission_max": 12, "admission_hours_max": 8, "worker_seconds_max": 1800, "persistence_seconds_max": 600, "compressed_final_archive_mib_max": 32},
+  "forbidden": ["new graph download/copy/conversion", "new S sampling", "new kernel or selector", "auto routing/timer", "training or quality claim", "old CPU6338/native8480 timing ratio", "overwrite/retry archive", "edit frozen running sources"],
+  "failure_policy": "All failed/guarded workers and unavailable64conversion are retained as ineligible; continue independent jobs only after owned-tree quiescence. Scientific success requires all4complete exact jobs.",
+  "YT": "One new fixed result archive node after alltimed jobs, transaction+SHAreadback; source packet staged by root without new input objects."
+}

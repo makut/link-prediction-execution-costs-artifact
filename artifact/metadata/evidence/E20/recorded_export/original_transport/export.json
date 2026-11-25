@@ -1,0 +1,69 @@
+{
+  "kind": "public_fr_cpu_matched_v2_final_readonly_export",
+  "archive": {
+    "path": "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_20261125.tgz",
+    "bytes": 2121570,
+    "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374",
+    "files": 120,
+    "manifest_sha256": "b771c96d427bf996623f9189f49ffff8e54637ded7ab490aa55b5b7f472df11e",
+    "YT_writes": 0
+  },
+  "remote_receipts": {
+    "public_fr_cpu_matched_v2_launch.json": {
+      "bytes": 948,
+      "sha256": "3cf55ba34022106265a19f081a9b31e436bae6a217f1e3c89e6c0e1d1963de24"
+    },
+    "results/public_fr_cpu_matched_v2_20261125/COMPLETE.json": {
+      "bytes": 1016,
+      "sha256": "f46612e5632aec56a03d893f4108313217841cd812ce2f56bc240a00c2d0f241"
+    },
+    "results/public_fr_cpu_matched_v2_20261125/ARCHIVE_READY.json": {
+      "bytes": 313,
+      "sha256": "49d91acff5b1539cc3543c0166fb6b32a6d5ad43373362192a81bf69bc0b824a"
+    },
+    "public_fr_cpu_v2_code/SOURCE_MANIFEST.json": {
+      "bytes": 6623,
+      "sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b"
+    },
+    "public_fr_cpu_v2_code/cpu_coordinator_v1.py": {
+      "bytes": 20323,
+      "sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470"
+    },
+    "public_fr_cpu_matched_v2_build/build_receipt_v1.json": {
+      "bytes": 1348,
+      "sha256": "8d58002090e7eeb006bea25b40905d2f2e26994ee750a2e4b878a6710e206d1b"
+    }
+  },
+  "source_observed_sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470",
+  "source_manifest_observed_sha256": "48e6dffd615ca7555826846d63dfa2aa2caf72d46d337736de10ac3c10891e1b",
+  "root_launch_sha256": "3cf55ba34022106265a19f081a9b31e436bae6a217f1e3c89e6c0e1d1963de24",
+  "owner": {
+    "pid": 16686,
+    "expected_start_ticks": 4849017641,
+    "exists": false,
+    "quiescent": true
+  },
+  "timing_locks": {
+    "GPU_SUITE_RUNNING.lock": false,
+    "PIPELINE_SUITE_RUNNING.lock": false,
+    "ADDITIONAL_TIMING_RUNNING.lock": false
+  },
+  "actual_cpu_pod_uid": "2ff5999d-ecc0-4cbf-b675-d2f1b0f8316b",
+  "host": "lpp-cpu-0",
+  "actual_node": "ml-kub-node108.i",
+  "standalone_library_observed": {
+    "path": "/home/jovyan/seal_revision_20261124/public_fr_cpu_matched_v2_build/native_assoc_v1.so",
+    "bytes": 22352,
+    "sha256": "2a8b892a63a84061ec03fc8e7d6c5d616ecb351720a1e4f236cae0374999f967"
+  },
+  "scientific_success": true,
+  "controller_success": true,
+  "all_internal_file_hashes_verified": true,
+  "collector_source_sha256": "4b754b633517dac6c366404a752ff6d76621fa487a26b9605b48d9807b0913f4",
+  "YT_reads": 0,
+  "YT_writes": 0,
+  "remote_mutations": 0,
+  "pod_lifecycle_actions": 0,
+  "controller_OS_exit_status": "UNKNOWN; actual quiescence plus genuine final completion is not an OS exit-code receipt",
+  "collected_unix": 1795631884.59308
+}

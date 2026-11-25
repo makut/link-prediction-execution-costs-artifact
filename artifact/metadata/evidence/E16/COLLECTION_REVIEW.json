@@ -1,0 +1,15 @@
+{
+  "source_archive_sha256": "700b4c9d72ec902c7b7f58f05bcf331d1cfd82dc65e6f0be30a6cf49c7b39401",
+  "original_archive_members": 18,
+  "all17payload_hashes_plus_manifest_verified": true,
+  "unmodified_public_allowlist": {
+    "results/dispatch_v1/report.json": "metadata/evidence/E16/dispatch_report.json",
+    "results/dispatch_v1/records.jsonl": "metadata/evidence/E16/dispatch_records.jsonl",
+    "results/dispatch_v1/COMPLETE.json": "metadata/evidence/E16/dispatch_COMPLETE.json",
+    "results/dispatch_queue_v1/dispatch_summary.json": "metadata/evidence/E16/dispatch_summary.json",
+    "results/dispatch_queue_v1/dispatch_exit.json": "metadata/evidence/E16/dispatch_exit.json",
+    "SHA256_MANIFEST.json": "metadata/evidence/E16/ORIGINAL_ARCHIVE_MANIFEST.json"
+  },
+  "no_remote_actions_by_packaging_agent": true,
+  "raw_report_expected_sha256": "9657f9b745863333dfc11c30716854c3f03f46e776ea580c910a657a4674263b"
+}

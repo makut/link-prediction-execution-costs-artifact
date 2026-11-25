@@ -1,0 +1,22 @@
+{
+  "status": "verified_existing_persisted_archive",
+  "role": "pencil_clean_consumer",
+  "all_internal_manifest_files_verified": true,
+  "remote_archive_created": false,
+  "backup_calls": 0,
+  "YT_writes": 0,
+  "pod_lifecycle_mutations": 0,
+  "yt_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/pencil_clean_consumer_v1_20261125.tgz",
+  "attribute_name": "lpp_clean_consumer_persistence_v1",
+  "archive": {
+    "bytes": 10230546,
+    "sha256": "708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0"
+  },
+  "attribute_canonical_json_sha256": "d217447621042f3038fe6c7be461e28ef62defb08d491e5649d92ed7c9976ab8",
+  "scientific_success": true,
+  "collected_unix": 1795635211.954318,
+  "collector_source_sha256": "b87dab2d39d7e39e22c3513ce325c5fe450556898cc1ad8e5e3eea30ec03c51c",
+  "outer_final_pid_exit": "UNKNOWN",
+  "root_admission_sha256": "e6e7347f8cba1d88de10c4683023f7c05b14533c159bb817e6713fbb2f3946da",
+  "independently_observed_root_launch_sha256": "e064dbfcc7b7a64967dfc96d2d658daf379e6116f6dac63aba5de1e8bbc9a3fc"
+}

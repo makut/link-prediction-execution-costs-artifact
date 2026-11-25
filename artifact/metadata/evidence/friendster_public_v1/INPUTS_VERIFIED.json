@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "all_public_inputs_verified": true,
+  "files": {
+    "com-friendster-dense.ez": {
+      "sha256": "54f2c11d02827ade76e8b91d07a9814a3095028acf53db51141a9a0533b51a2a",
+      "md5": "81896fdbaccd0f41608ffc9065433c7f",
+      "bytes": 6572926076,
+      "url": "https://zenodo.org/api/records/5146230/files/com-friendster-dense.ez/content",
+      "provider_md5": "81896fdbaccd0f41608ffc9065433c7f",
+      "actual_full_file_rehashed": true
+    },
+    "com-friendster-dense.vz": {
+      "sha256": "edbaa6f87a7b8a12fb325ea270c52196d24874051e4bb5b7c75c4f655ab71011",
+      "md5": "a07ac60fe42f7ab9e50c7224edc6e3c1",
+      "bytes": 99315813,
+      "url": "https://zenodo.org/api/records/5146230/files/com-friendster-dense.vz/content",
+      "provider_md5": "a07ac60fe42f7ab9e50c7224edc6e3c1",
+      "actual_full_file_rehashed": true
+    },
+    "com-friendster-dense.properties": {
+      "sha256": "384d7ac8e7800c89541327b8194b3e5bc3346598c60385c244e927bf4d28dd6b",
+      "md5": "72388acdf5c735aff65d23359370dcf9",
+      "bytes": 1178,
+      "url": "https://zenodo.org/api/records/5146230/files/com-friendster-dense.properties/content",
+      "provider_md5": "72388acdf5c735aff65d23359370dcf9",
+      "actual_full_file_rehashed": true
+    }
+  }
+}

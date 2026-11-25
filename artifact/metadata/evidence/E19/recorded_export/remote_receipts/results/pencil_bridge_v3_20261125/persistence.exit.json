@@ -1,0 +1,12 @@
+{
+  "pid": 5399,
+  "returncode": 0,
+  "timed_out": false,
+  "timeout_seconds": 600,
+  "orphan_cleanup": false,
+  "owned_pgids_signaled": [],
+  "owned_tree_quiescent": true,
+  "guard_abort_reason": null,
+  "guard_policy": "unchanged stable_pss_individual_rss_cgroup90_v3 sampled2s;180GiB",
+  "exactly_one_visible_gpu": false
+}

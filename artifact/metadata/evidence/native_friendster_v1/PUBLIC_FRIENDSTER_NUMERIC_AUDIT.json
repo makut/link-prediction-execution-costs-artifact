@@ -1,0 +1,355 @@
+{
+  "schema_version": 3,
+  "status": "PASS_RECOVERED_NATIVE_SCIENTIFIC_AUDIT_LIFECYCLE_UNKNOWN",
+  "created_unix": 1795619996.607163,
+  "transport": {
+    "mode": "recovered_immutable_YT_archive_pod_absent",
+    "archive": {
+      "bytes": 3963486,
+      "sha256": "5aa52038eb3045e253b9cddd1ac03afc7022a0b7c5fa5f46be03803bc77ec8f6"
+    },
+    "manifest_sha256": "fbe8c86c862c7ef8b6ff7cbb34e74e59c8abc05e4a26a6319b569ea8e41eaa3a",
+    "file_count": 94,
+    "raw_payload_bytes": 20777163,
+    "all_archive_manifest_extracted_hashes_verified": true,
+    "lifecycle": {
+      "pod_observed_absent": true,
+      "outside_controller_COMPLETE_available": false,
+      "controller_clean_final_exit": "UNKNOWN",
+      "controller_final_lock_release": "UNKNOWN",
+      "scientific_worker_completion": "AUDIT_ARCHIVED_SCIENTIFIC_TERMINAL_AND_PER_JOB_EXITS"
+    }
+  },
+  "audit_sources_sha256": {
+    "audit_native_controls_final_v2.py": "d3b3a04f20040155e0cb4ae01e3372234bbc8714cb41ed67a522320190c09b4c",
+    "audit_native_controls_final_v1.py": "9606b70c3ea07dce086fb6d9b0add01450b324c99b6e3d513dc1e6118148cf4e",
+    "verify_recovered_archive_v1.py": "3bb93b37322c24182b4fd232c655572715f821fe4627287a7cf7b280c779755b",
+    "audit_native_controls_final_v3.py": "174baf43742886159c17ccc22afa944f3de9cad1fd90f57ad5bb8f75b941eb58"
+  },
+  "aggregation": "Sums of per-record medians and medians of paired per-record ratios; descriptive repeated-cache controls, not timed concatenation or independent confidence intervals.",
+  "limitations": [
+    "The archived SCIENTIFIC_TERMINAL proves completed guarded scientific workers; the lost outside controller COMPLETE, final clean exit and timing-lock release remain UNKNOWN.",
+    "Pod absence is observed after the run and does not establish prior clean controller shutdown.",
+    "All three arms use the same native int64 CSR and128 original frozen ordered S; no Numba or crosshost6338/8480 speed ratios.",
+    "Actual giant native arrays are not locally available; archived successful full SHA verification and metadata are cross-bound independently, not rehashed here.",
+    "Conversion/full-payload verification/persistent8N initialization are separate setup costs; no training, quality or time-to-quality claim."
+  ],
+  "graphs": [
+    {
+      "graph": "friendster",
+      "records": 128,
+      "width": "int64 native CSR for all three arms",
+      "stratum_counts": {
+        "('reference_union', 50, 'twohop_nonedge')": 10,
+        "('reference_union', 50, 'positive')": 10,
+        "('reference_union', 200, 'positive')": 10,
+        "('reference_union', 200, 'twohop_nonedge')": 10,
+        "('production_union', 50, 'twohop_nonedge')": 11,
+        "('production_union', 50, 'positive')": 11,
+        "('production_union', 200, 'twohop_nonedge')": 11,
+        "('production_union', 200, 'positive')": 11,
+        "('per_vertex', 50, 'twohop_nonedge')": 11,
+        "('per_vertex', 50, 'positive')": 11,
+        "('per_vertex', 200, 'twohop_nonedge')": 11,
+        "('per_vertex', 200, 'positive')": 11
+      },
+      "all_384_record_outputs_exact_and_ordered_hashes_equal": true,
+      "native_payload_files": [
+        {
+          "path": "/home/jovyan/seal_revision_20261124/native_controls_v1_data/friendster_i64/rowptr.i8",
+          "bytes": 524866936,
+          "mtime_ns": 1795614230756835293,
+          "sha256": "28060771441d71ba71877e55c0a48230c54d1b2715dd4edd08042019cf4a7a81"
+        },
+        {
+          "path": "/home/jovyan/seal_revision_20261124/native_controls_v1_data/friendster_i64/col.i8",
+          "bytes": 28897074160,
+          "mtime_ns": 1795614308564991971,
+          "sha256": "012e1d0a907d2eb6b46d72f31be8b3ca722d88432b2c0509162c4ff487f25a5d"
+        }
+      ],
+      "association_bytes_per_persistent_worker": 524866928,
+      "arms": {
+        "reference_full_clear": {
+          "sum_record_medians_seconds": {
+            "raw_operator_seconds": 9.980773221701384,
+            "edge_seconds": 10.052204697392881,
+            "drnl_seconds": 0.15519116446375847
+          },
+          "state_initialization": {
+            "version": "persistent_assoc_touched_reset_v1",
+            "mode": "reference_full_clear",
+            "nodes": 65608366,
+            "stored_entries": 3612134270,
+            "owner_pid": 22174,
+            "initialization_seconds": 1.0248273611068726e-05,
+            "persistent_assoc_bytes_per_worker": 0,
+            "assoc_bytes_during_each_call": 524866928,
+            "initialization_policy": "full-N allocation/init inside every native call",
+            "library": "/home/jovyan/seal_revision_20261124/corrected_native_v1/linux_build/native_assoc_v1.so",
+            "library_sha256": "2a8b892a63a84061ec03fc8e7d6c5d616ecb351720a1e4f236cae0374999f967",
+            "scope": "Initialization is outside query timers. Persistent 8N map is not free or shared between workers."
+          },
+          "content_verification_seconds": 24.921581463888288,
+          "memory_before_state_init": {
+            "ru_maxrss_bytes": 75317248,
+            "rss_bytes": 70463488,
+            "pss_bytes": 54922240,
+            "shared_clean_bytes": 23355392,
+            "shared_dirty_bytes": 0,
+            "private_clean_bytes": 2428928,
+            "private_dirty_bytes": 44679168
+          },
+          "memory_after_state_init": {
+            "ru_maxrss_bytes": 75317248,
+            "rss_bytes": 70463488,
+            "pss_bytes": 54922240,
+            "shared_clean_bytes": 23355392,
+            "shared_dirty_bytes": 0,
+            "private_clean_bytes": 2428928,
+            "private_dirty_bytes": 44679168
+          }
+        },
+        "persistent_touched_reset": {
+          "sum_record_medians_seconds": {
+            "raw_operator_seconds": 0.06280997954308987,
+            "edge_seconds": 0.10019801743328571,
+            "drnl_seconds": 0.1360110081732273
+          },
+          "state_initialization": {
+            "version": "persistent_assoc_touched_reset_v1",
+            "mode": "persistent_touched_reset",
+            "nodes": 65608366,
+            "stored_entries": 3612134270,
+            "owner_pid": 22172,
+            "initialization_seconds": 0.08266865741461515,
+            "persistent_assoc_bytes_per_worker": 524866928,
+            "assoc_bytes_during_each_call": 524866928,
+            "initialization_policy": "once per worker",
+            "library": "/home/jovyan/seal_revision_20261124/corrected_native_v1/linux_build/native_assoc_v1.so",
+            "library_sha256": "2a8b892a63a84061ec03fc8e7d6c5d616ecb351720a1e4f236cae0374999f967",
+            "scope": "Initialization is outside query timers. Persistent 8N map is not free or shared between workers."
+          },
+          "content_verification_seconds": 24.729552726261318,
+          "memory_before_state_init": {
+            "ru_maxrss_bytes": 74788864,
+            "rss_bytes": 69812224,
+            "pss_bytes": 54462464,
+            "shared_clean_bytes": 23277568,
+            "shared_dirty_bytes": 0,
+            "private_clean_bytes": 1847296,
+            "private_dirty_bytes": 44687360
+          },
+          "memory_after_state_init": {
+            "ru_maxrss_bytes": 594460672,
+            "rss_bytes": 594681856,
+            "pss_bytes": 579332096,
+            "shared_clean_bytes": 23277568,
+            "shared_dirty_bytes": 0,
+            "private_clean_bytes": 1847296,
+            "private_dirty_bytes": 569556992
+          }
+        },
+        "upstream_torch_sparse_direct": {
+          "sum_record_medians_seconds": {
+            "raw_operator_seconds": 10.272930447943509,
+            "edge_seconds": 10.331917327828705,
+            "drnl_seconds": 0.15228583477437496
+          },
+          "state_initialization": {
+            "persistent_assoc_bytes_per_worker": 0,
+            "assoc_bytes_during_each_call": 524866928,
+            "policy": "unmodified upstream full-N association allocation/init inside each call"
+          },
+          "content_verification_seconds": 24.835912180133164,
+          "memory_before_state_init": {
+            "ru_maxrss_bytes": 428466176,
+            "rss_bytes": 428589056,
+            "pss_bytes": 411738112,
+            "shared_clean_bytes": 24719360,
+            "shared_dirty_bytes": 0,
+            "private_clean_bytes": 160546816,
+            "private_dirty_bytes": 243322880
+          },
+          "memory_after_state_init": {
+            "ru_maxrss_bytes": 428466176,
+            "rss_bytes": 428589056,
+            "pss_bytes": 411738112,
+            "shared_clean_bytes": 24719360,
+            "shared_dirty_bytes": 0,
+            "private_clean_bytes": 160546816,
+            "private_dirty_bytes": 243322880
+          }
+        }
+      },
+      "descriptive_comparisons": {
+        "reference_full_clear_over_persistent": {
+          "raw_operator_seconds": {
+            "ratio_of_sums": 158.90425843641964,
+            "median_paired_record_ratio": 236.58049519088837
+          },
+          "edge_seconds": {
+            "ratio_of_sums": 100.32338917370181,
+            "median_paired_record_ratio": 130.7306988709628
+          }
+        },
+        "upstream_torch_sparse_direct_over_persistent": {
+          "raw_operator_seconds": {
+            "ratio_of_sums": 163.55570440674822,
+            "median_paired_record_ratio": 245.21061353978268
+          },
+          "edge_seconds": {
+            "ratio_of_sums": 103.11498762645627,
+            "median_paired_record_ratio": 132.56486931596135
+          }
+        }
+      },
+      "conversion_receipt": {
+        "schema_version": 1,
+        "kind": "corrected_native_conversion_only_v1",
+        "status": "complete",
+        "external_helper_sha256": "525e88c904fd03e10fc617853c8d733e88af90487cbbdd9122ced97962df112c",
+        "graph": {
+          "n": 65608366,
+          "m": 3612134270,
+          "endian": "little",
+          "source_files": [
+            {
+              "path": "/home/jovyan/seal_revision_20261124/data/friendster/full_csr/edge_starts.bin",
+              "bytes": 524866928,
+              "mtime_ns": 1795605154944033840
+            },
+            {
+              "path": "/home/jovyan/seal_revision_20261124/data/friendster/full_csr/edge_ends.bin",
+              "bytes": 14448537088,
+              "mtime_ns": 1795605599032508186
+            }
+          ],
+          "source_storage_bytes": 14973404016,
+          "native_int64_storage_bytes": 29421941096
+        },
+        "estimate": {
+          "source_storage_bytes": 14973404016,
+          "native_int64_storage_bytes": 29421941096,
+          "per_query_assoc_bytes": 524866928,
+          "public_api_global_row_bytes": 0,
+          "conversion_chunk_upper_bytes": 24000000,
+          "conservative_peak_bytes": 46017953864
+        },
+        "scope": "Frozen converter only; no query benchmark, graph sampler, model, GPU or YT operation.",
+        "admission": {
+          "path": "/home/jovyan/seal_revision_20261124/results/native_controls_v1_20261125/admission.json",
+          "sha256": "7f558d4d57eba03d3fbdc7915003398fcf2268472b584fb3713ee4c1c8d2b616",
+          "content": {
+            "complete": true,
+            "scientifically_terminal_main": true,
+            "pipeline_success": true,
+            "pipeline_final_archive": {
+              "snapshot": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/snapshots/pipeline/final_2adb1a1464458aa90ace046f048a78f693587cca1783bdda10d5426ac857fb52.tgz",
+              "sha256": "f6d4ba4801195559f5d308ee298d07123cadf2e03b45638585f00e3d19f98040",
+              "bytes": 214583801,
+              "file_count": 530,
+              "saved_unix": 1795614189.583615,
+              "role": "pipeline",
+              "terminal_marker": "results/PIPELINE_SUITE_COMPLETE.json",
+              "terminal_in_snapshot": true,
+              "terminal_sha256": "2adb1a1464458aa90ace046f048a78f693587cca1783bdda10d5426ac857fb52",
+              "anchor_kind": "final",
+              "anchor_marker": "results/PIPELINE_SUITE_COMPLETE.json",
+              "anchor_sha256": "2adb1a1464458aa90ace046f048a78f693587cca1783bdda10d5426ac857fb52",
+              "persistence_version": 6
+            },
+            "bindings": {
+              "/home/jovyan/seal_revision_20261124/results/recovery_execution_v1/COMPLETE.json": {
+                "bytes": 1026,
+                "sha256": "608e3d796392ca3bff52c738144b220568fe3244d5f03f4b9c5a6d2b99b02c12"
+              },
+              "/home/jovyan/seal_revision_20261124/results/PIPELINE_SUITE_COMPLETE.json": {
+                "bytes": 25825,
+                "sha256": "2adb1a1464458aa90ace046f048a78f693587cca1783bdda10d5426ac857fb52"
+              },
+              "/home/jovyan/seal_revision_20261124/results/recovery_execution_v1/persist_pipeline_final.log": {
+                "bytes": 716,
+                "sha256": "ee6accb6f63cf5127f9247e113e217fe625c041c95dbda543a225e459e4b80a7"
+              },
+              "/home/jovyan/seal_revision_20261124/results/recovery_execution_v1/persist_pipeline_final_exit.json": {
+                "bytes": 176,
+                "sha256": "c4d9b7739fa4ee4a0edc799b0e6b2d2bcacd1d43f6ea55bc851c96e43b2ec283"
+              }
+            },
+            "scope": "Main controller PID257 is absent/zombie with launch identity checked if present; pipeline final persisted; no observed active phase or foreign timing lock."
+          },
+          "scope": "Read-only terminal/lock admission. Root schedules this control after all pipeline/persistence work is quiescent."
+        },
+        "actual_native_fixture": {
+          "status": "pass",
+          "literal_cases": 4,
+          "ordered_raw_edges_and_eids": true,
+          "arbitrary_root_packaging_and_independent_BFS_labels": true
+        },
+        "capacity": {
+          "host_available_bytes": 1960981061632,
+          "cgroup_limit_bytes": 549755813888,
+          "cgroup_current_bytes": 85088911360,
+          "cgroup_available_bytes": 464666902528,
+          "effective_available_bytes": 464666902528
+        },
+        "conversion": {
+          "schema_version": 1,
+          "graph": {
+            "n": 65608366,
+            "m": 3612134270,
+            "endian": "little",
+            "source_files": [
+              {
+                "path": "/home/jovyan/seal_revision_20261124/data/friendster/full_csr/edge_starts.bin",
+                "bytes": 524866928,
+                "mtime_ns": 1795605154944033840
+              },
+              {
+                "path": "/home/jovyan/seal_revision_20261124/data/friendster/full_csr/edge_ends.bin",
+                "bytes": 14448537088,
+                "mtime_ns": 1795605599032508186
+              }
+            ],
+            "source_storage_bytes": 14973404016,
+            "native_int64_storage_bytes": 29421941096
+          },
+          "conversion_seconds": 83.3138858648017,
+          "rowptr_sha256": "28060771441d71ba71877e55c0a48230c54d1b2715dd4edd08042019cf4a7a81",
+          "col_sha256": "012e1d0a907d2eb6b46d72f31be8b3ca722d88432b2c0509162c4ff487f25a5d",
+          "native_dtype": "little-endian int64",
+          "sentinel_added": true
+        },
+        "runtime_native_content_verification": {
+          "status": "pass",
+          "method": "streaming SHA256 of both native payloads outside timers",
+          "seconds": 25.91587350796908,
+          "files": [
+            {
+              "path": "/home/jovyan/seal_revision_20261124/native_controls_v1_data/friendster_i64/rowptr.i8",
+              "bytes": 524866936,
+              "mtime_ns": 1795614230756835293,
+              "sha256": "28060771441d71ba71877e55c0a48230c54d1b2715dd4edd08042019cf4a7a81"
+            },
+            {
+              "path": "/home/jovyan/seal_revision_20261124/native_controls_v1_data/friendster_i64/col.i8",
+              "bytes": 28897074160,
+              "mtime_ns": 1795614308564991971,
+              "sha256": "012e1d0a907d2eb6b46d72f31be8b3ca722d88432b2c0509162c4ff487f25a5d"
+            }
+          ]
+        },
+        "setup_wall_seconds": 109.23159296344966
+      },
+      "conversion_and_worker_source_crosschecks": "PASS",
+      "actual_source_and_runtime_binding_crosschecks": {
+        "actual_archived_sources_verified": 9,
+        "runtime_bindings_verified": 12,
+        "scope": "Full source byte hashes and exact recorded12bindings; actual giant native arrays and library binary are not present locally."
+      }
+    }
+  ],
+  "scope": "Explicit publicFriendster projection of independently audited nativev3 report; VK graph rows/terminal stages excluded.",
+  "original_full_audit_sha256": "1f608ada6a2119bf531bdd242b17ea79dd710ee54b8c6c7eba1f5ab1398e5f75"
+}

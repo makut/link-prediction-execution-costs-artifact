@@ -1,0 +1,835 @@
+{
+  "kind": "INDEPENDENT_ACTUAL_PENCIL_NUMERIC_AND_POSTHOC_PEER",
+  "status": "PASS",
+  "observed_unix": 1795628027.445035,
+  "auditor_sha256": "3083a1faadeeade5251f191880dd43c97c101c4431e93e0824f6975604e4e332",
+  "actual_derived_audit_sha256": "ec3d25768c1c9dd3b444b84ee3420521053472d007c567c383b0abcf612f5ec4",
+  "posthoc_sha256": "4c8e02acc815172a865e9c49ee6ba5ed38e81e7838f6699575a192be3241d99e",
+  "all36_raw_medians_QPS_and_within_group_ratios_recomputed": true,
+  "all5_separate_groups_all4_sweep_score_fingerprints_exact": true,
+  "posthoc_all20_workers0_rows_all80_sweep_residuals_exact": true,
+  "posthoc_all36_setup_initialization_and_wall_induction_rows_exact": true,
+  "native_setup_seconds": {
+    "min": 8.709314184263349,
+    "median": 8.906699132174253,
+    "max": 9.43083711527288
+  },
+  "matrix": [
+    {
+      "job": "bench_online_bf16_b128_w0_torch_sparse_public",
+      "mode": "online",
+      "batch": 128,
+      "workers": 0,
+      "arm": "torch_sparse_public",
+      "measured_seconds": [
+        25.555550578050315,
+        33.70264181680977,
+        33.0611086608842
+      ],
+      "median_seconds": 33.0611086608842,
+      "queries_per_second": 30.972948018876682,
+      "median_induction_p50_seconds": 0.002625501,
+      "measured_max_over_min": 1.318799284479396,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.0,
+        "torch_sparse_direct": 0.8888546279279517,
+        "cpp_touched_reset": 0.6057485926367254
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w0_torch_sparse_direct",
+      "mode": "online",
+      "batch": 128,
+      "workers": 0,
+      "arm": "torch_sparse_direct",
+      "measured_seconds": [
+        34.84430386219174,
+        26.56689526233822,
+        29.386519437655807
+      ],
+      "median_seconds": 29.386519437655807,
+      "queries_per_second": 34.845909607377635,
+      "median_induction_p50_seconds": 0.001625319,
+      "measured_max_over_min": 1.3115685336249185,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.1250433632000592,
+        "torch_sparse_direct": 1.0,
+        "cpp_touched_reset": 0.6814934339137242
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w0_compiled_scan_int64",
+      "mode": "online",
+      "batch": 128,
+      "workers": 0,
+      "arm": "compiled_scan_int64",
+      "measured_seconds": [
+        21.41633679252118,
+        39.38296861760318,
+        31.644882132299244
+      ],
+      "median_seconds": 31.644882132299244,
+      "queries_per_second": 32.35910298919475,
+      "median_induction_p50_seconds": 0.0002112995,
+      "measured_max_over_min": 1.8389218006394141,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.0447537305610453,
+        "torch_sparse_direct": 0.9286341884541773,
+        "cpp_touched_reset": 0.6328581019393218
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w0_compiled_pairwise_int64",
+      "mode": "online",
+      "batch": 128,
+      "workers": 0,
+      "arm": "compiled_pairwise_int64",
+      "measured_seconds": [
+        21.22377290856093,
+        20.905046420171857,
+        34.097916485741735
+      ],
+      "median_seconds": 21.22377290856093,
+      "queries_per_second": 48.24778348372518,
+      "median_induction_p50_seconds": 0.0002099035,
+      "measured_max_over_min": 1.631085423127294,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.5577394652365744,
+        "torch_sparse_direct": 1.3846039327815418,
+        "cpp_touched_reset": 0.9435984887617401
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w0_compiled_scan_int32",
+      "mode": "online",
+      "batch": 128,
+      "workers": 0,
+      "arm": "compiled_scan_int32",
+      "measured_seconds": [
+        18.998224184848368,
+        18.536116554401815,
+        36.34556859731674
+      ],
+      "median_seconds": 18.998224184848368,
+      "queries_per_second": 53.899774528225095,
+      "median_induction_p50_seconds": 0.00020414549999999999,
+      "measured_max_over_min": 1.9607973704009578,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.740220998510555,
+        "torch_sparse_direct": 1.5468034881435078,
+        "cpp_touched_reset": 1.0541364207246458
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w0_compiled_pairwise_int32",
+      "mode": "online",
+      "batch": 128,
+      "workers": 0,
+      "arm": "compiled_pairwise_int32",
+      "measured_seconds": [
+        21.90597915928811,
+        21.19663158711046,
+        34.03698278963566
+      ],
+      "median_seconds": 21.90597915928811,
+      "queries_per_second": 46.7452284398721,
+      "median_induction_p50_seconds": 0.000224931,
+      "measured_max_over_min": 1.6057731932432762,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.5092276140902987,
+        "torch_sparse_direct": 1.3414839493808228,
+        "cpp_touched_reset": 0.9142125032036814
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w0_cpp_full_clear",
+      "mode": "online",
+      "batch": 128,
+      "workers": 0,
+      "arm": "cpp_full_clear",
+      "measured_seconds": [
+        29.955822641029954,
+        40.01160741318017,
+        37.99934805370867
+      ],
+      "median_seconds": 37.99934805370867,
+      "queries_per_second": 26.947830751008354,
+      "median_induction_p50_seconds": 0.0020848884999999998,
+      "measured_max_over_min": 1.335687151464737,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 0.8700441021818397,
+        "torch_sparse_direct": 0.7733427267257479,
+        "cpp_touched_reset": 0.5270279904285328
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w0_cpp_touched_reset",
+      "mode": "online",
+      "batch": 128,
+      "workers": 0,
+      "arm": "cpp_touched_reset",
+      "measured_seconds": [
+        20.026720042340457,
+        19.51730659417808,
+        33.41326929908246
+      ],
+      "median_seconds": 20.026720042340457,
+      "queries_per_second": 51.13168795664297,
+      "median_induction_p50_seconds": 0.000152589,
+      "measured_max_over_min": 1.7119815758312409,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.6508498940908178,
+        "torch_sparse_direct": 1.4673655683769922,
+        "cpp_touched_reset": 1.0
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w1_torch_sparse_public",
+      "mode": "online",
+      "batch": 128,
+      "workers": 1,
+      "arm": "torch_sparse_public",
+      "measured_seconds": [
+        33.89783827215433,
+        34.37185439094901,
+        31.833403965458274
+      ],
+      "median_seconds": 33.89783827215433,
+      "queries_per_second": 30.20841599923419,
+      "median_induction_p50_seconds": 0.0027125555,
+      "measured_max_over_min": 1.07974172125121,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.0,
+        "torch_sparse_direct": 0.9098885671437547,
+        "cpp_touched_reset": 0.8829090578160531
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w1_torch_sparse_direct",
+      "mode": "online",
+      "batch": 128,
+      "workers": 1,
+      "arm": "torch_sparse_direct",
+      "measured_seconds": [
+        29.778654876165092,
+        30.843255494721234,
+        32.12722931616008
+      ],
+      "median_seconds": 30.843255494721234,
+      "queries_per_second": 33.200127015621156,
+      "median_induction_p50_seconds": 0.0021315415,
+      "measured_max_over_min": 1.0788677141315337,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.0990356798735426,
+        "torch_sparse_direct": 1.0,
+        "cpp_touched_reset": 0.9703485566233749
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w1_compiled_scan_int64",
+      "mode": "online",
+      "batch": 128,
+      "workers": 1,
+      "arm": "compiled_scan_int64",
+      "measured_seconds": [
+        26.554959140717983,
+        28.302937506698072,
+        25.597442812286317
+      ],
+      "median_seconds": 26.554959140717983,
+      "queries_per_second": 38.56153551484295,
+      "median_induction_p50_seconds": 0.000204005,
+      "measured_max_over_min": 1.1056939442838862,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.2765163031328925,
+        "torch_sparse_direct": 1.1614875899932304,
+        "cpp_touched_reset": 1.1270478064858933
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w1_compiled_pairwise_int64",
+      "mode": "online",
+      "batch": 128,
+      "workers": 1,
+      "arm": "compiled_pairwise_int64",
+      "measured_seconds": [
+        28.891214437782764,
+        26.5391415823251,
+        33.9071029657498
+      ],
+      "median_seconds": 28.891214437782764,
+      "queries_per_second": 35.443300668623124,
+      "median_induction_p50_seconds": 0.000220401,
+      "measured_max_over_min": 1.277626213363725,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.173292259664381,
+        "torch_sparse_direct": 1.0675652129868818,
+        "cpp_touched_reset": 1.0359103635231466
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w1_compiled_scan_int32",
+      "mode": "online",
+      "batch": 128,
+      "workers": 1,
+      "arm": "compiled_scan_int32",
+      "measured_seconds": [
+        29.274076560512185,
+        29.20964824501425,
+        26.07883455697447
+      ],
+      "median_seconds": 29.20964824501425,
+      "queries_per_second": 35.05690966938587,
+      "median_induction_p50_seconds": 0.0002149635,
+      "measured_max_over_min": 1.1225224231764293,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.1605014202093413,
+        "torch_sparse_direct": 1.0559269744025699,
+        "cpp_touched_reset": 1.024617215511221
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w1_compiled_pairwise_int32",
+      "mode": "online",
+      "batch": 128,
+      "workers": 1,
+      "arm": "compiled_pairwise_int32",
+      "measured_seconds": [
+        37.59571479912847,
+        29.348727902397513,
+        34.13858192041516
+      ],
+      "median_seconds": 34.13858192041516,
+      "queries_per_second": 29.995387693231606,
+      "median_induction_p50_seconds": 0.00025417699999999996,
+      "measured_max_over_min": 1.2809998076971936,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 0.9929480477888021,
+        "torch_sparse_direct": 0.9034720764507416,
+        "cpp_touched_reset": 0.8766828253335005
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w1_cpp_full_clear",
+      "mode": "online",
+      "batch": 128,
+      "workers": 1,
+      "arm": "cpp_full_clear",
+      "measured_seconds": [
+        32.27449444308877,
+        30.206844659522176,
+        30.674683842808008
+      ],
+      "median_seconds": 30.674683842808008,
+      "queries_per_second": 33.38257715213867,
+      "median_induction_p50_seconds": 0.001711887,
+      "measured_max_over_min": 1.0684497108808353,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.1050753920028429,
+        "torch_sparse_direct": 1.0054954650152899,
+        "cpp_touched_reset": 0.9756810731689356
+      }
+    },
+    {
+      "job": "bench_online_bf16_b128_w1_cpp_touched_reset",
+      "mode": "online",
+      "batch": 128,
+      "workers": 1,
+      "arm": "cpp_touched_reset",
+      "measured_seconds": [
+        29.928708450868726,
+        32.98399296961725,
+        27.30480208992958
+      ],
+      "median_seconds": 29.928708450868726,
+      "queries_per_second": 34.21464049078526,
+      "median_induction_p50_seconds": 0.0001999785,
+      "measured_max_over_min": 1.2079923839397553,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.1326194823208415,
+        "torch_sparse_direct": 1.0305575178880118,
+        "cpp_touched_reset": 1.0
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w0_torch_sparse_public",
+      "mode": "online",
+      "batch": 512,
+      "workers": 0,
+      "arm": "torch_sparse_public",
+      "measured_seconds": [
+        37.08344995137304,
+        27.38605663459748,
+        29.044534754008055
+      ],
+      "median_seconds": 29.044534754008055,
+      "queries_per_second": 35.2562025411232,
+      "median_induction_p50_seconds": 0.0016264040000000001,
+      "measured_max_over_min": 1.354099659040528,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.0,
+        "torch_sparse_direct": 1.403950449398484,
+        "cpp_touched_reset": 0.9803929711768752
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w0_torch_sparse_direct",
+      "mode": "online",
+      "batch": 512,
+      "workers": 0,
+      "arm": "torch_sparse_direct",
+      "measured_seconds": [
+        40.848261156119406,
+        40.7770876204595,
+        33.211857786402106
+      ],
+      "median_seconds": 40.7770876204595,
+      "queries_per_second": 25.112141640204296,
+      "median_induction_p50_seconds": 0.002868628,
+      "measured_max_over_min": 1.2299300273664264,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 0.7122758502114126,
+        "torch_sparse_direct": 1.0,
+        "cpp_touched_reset": 0.6983102370863017
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w0_compiled_scan_int64",
+      "mode": "online",
+      "batch": 512,
+      "workers": 0,
+      "arm": "compiled_scan_int64",
+      "measured_seconds": [
+        24.195951097644866,
+        31.184717735275626,
+        35.85621650610119
+      ],
+      "median_seconds": 31.184717735275626,
+      "queries_per_second": 32.836596716784406,
+      "median_induction_p50_seconds": 0.000208057,
+      "measured_max_over_min": 1.4819097774417014,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 0.9313707759218666,
+        "torch_sparse_direct": 1.3075984194121195,
+        "cpp_touched_reset": 0.9131093622733505
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w0_compiled_pairwise_int64",
+      "mode": "online",
+      "batch": 512,
+      "workers": 0,
+      "arm": "compiled_pairwise_int64",
+      "measured_seconds": [
+        31.593189407140017,
+        24.85260744858533,
+        22.993487814441323
+      ],
+      "median_seconds": 24.85260744858533,
+      "queries_per_second": 41.20292014101275,
+      "median_induction_p50_seconds": 0.0002105055,
+      "measured_max_over_min": 1.3740059647365699,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.1686715292990852,
+        "torch_sparse_direct": 1.6407569187586644,
+        "cpp_touched_reset": 1.1457573529393525
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w0_compiled_scan_int32",
+      "mode": "online",
+      "batch": 512,
+      "workers": 0,
+      "arm": "compiled_scan_int32",
+      "measured_seconds": [
+        43.48573498148471,
+        28.515573875047266,
+        30.89481836464256
+      ],
+      "median_seconds": 30.89481836464256,
+      "queries_per_second": 33.14471662898372,
+      "median_induction_p50_seconds": 0.000227418,
+      "measured_max_over_min": 1.5249819334527641,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 0.9401102285569009,
+        "torch_sparse_direct": 1.3198681778665724,
+        "cpp_touched_reset": 0.9216774602086713
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w0_compiled_pairwise_int32",
+      "mode": "online",
+      "batch": 512,
+      "workers": 0,
+      "arm": "compiled_pairwise_int32",
+      "measured_seconds": [
+        33.86109380796552,
+        22.939314987510443,
+        23.944347286596894
+      ],
+      "median_seconds": 23.944347286596894,
+      "queries_per_second": 42.76583478110489,
+      "median_induction_p50_seconds": 0.0002300195,
+      "measured_max_over_min": 1.4761161711411852,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.2130017329921556,
+        "torch_sparse_direct": 1.702994328155477,
+        "cpp_touched_reset": 1.189218373050878
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w0_cpp_full_clear",
+      "mode": "online",
+      "batch": 512,
+      "workers": 0,
+      "arm": "cpp_full_clear",
+      "measured_seconds": [
+        38.59973147790879,
+        40.8627463420853,
+        39.026135488413274
+      ],
+      "median_seconds": 39.026135488413274,
+      "queries_per_second": 26.238826550069813,
+      "median_induction_p50_seconds": 0.00216261,
+      "measured_max_over_min": 1.0586277359331286,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 0.7442329195682539,
+        "torch_sparse_direct": 1.0448661418849958,
+        "cpp_touched_reset": 0.7296407232631608
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w0_cpp_touched_reset",
+      "mode": "online",
+      "batch": 512,
+      "workers": 0,
+      "arm": "cpp_touched_reset",
+      "measured_seconds": [
+        22.402986985631287,
+        28.475057723931968,
+        29.224644436500967
+      ],
+      "median_seconds": 28.475057723931968,
+      "queries_per_second": 35.96129672247777,
+      "median_induction_p50_seconds": 0.0001795855,
+      "measured_max_over_min": 1.3044976750307857,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.0199991527882828,
+        "torch_sparse_direct": 1.4320282689431825,
+        "cpp_touched_reset": 1.0
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w1_torch_sparse_public",
+      "mode": "online",
+      "batch": 512,
+      "workers": 1,
+      "arm": "torch_sparse_public",
+      "measured_seconds": [
+        33.89211584161967,
+        32.18317752331495,
+        30.509552280418575
+      ],
+      "median_seconds": 32.18317752331495,
+      "queries_per_second": 31.817865071221384,
+      "median_induction_p50_seconds": 0.002602137,
+      "measured_max_over_min": 1.1108690003088662,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.0,
+        "torch_sparse_direct": 1.0246878199988976,
+        "cpp_touched_reset": 0.9204293538299376
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w1_torch_sparse_direct",
+      "mode": "online",
+      "batch": 512,
+      "workers": 1,
+      "arm": "torch_sparse_direct",
+      "measured_seconds": [
+        32.97771001700312,
+        32.95337388757616,
+        36.23070060275495
+      ],
+      "median_seconds": 32.97771001700312,
+      "queries_per_second": 31.0512767403204,
+      "median_induction_p50_seconds": 0.002797487,
+      "measured_max_over_min": 1.0994534497851336,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 0.9759069840422968,
+        "torch_sparse_direct": 1.0,
+        "cpp_touched_reset": 0.8982534347201745
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w1_compiled_scan_int64",
+      "mode": "online",
+      "batch": 512,
+      "workers": 1,
+      "arm": "compiled_scan_int64",
+      "measured_seconds": [
+        21.120114768855274,
+        23.102792196907103,
+        22.38204267434776
+      ],
+      "median_seconds": 22.38204267434776,
+      "queries_per_second": 45.750962720378276,
+      "median_induction_p50_seconds": 0.0001929285,
+      "measured_max_over_min": 1.0938762620256013,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.437901713957518,
+        "torch_sparse_direct": 1.4734003726478075,
+        "cpp_touched_reset": 1.3234869454488782
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w1_compiled_pairwise_int64",
+      "mode": "online",
+      "batch": 512,
+      "workers": 1,
+      "arm": "compiled_pairwise_int64",
+      "measured_seconds": [
+        34.57861971575767,
+        27.664542264305055,
+        28.016270462423563
+      ],
+      "median_seconds": 28.016270462423563,
+      "queries_per_second": 36.55018969685583,
+      "median_induction_p50_seconds": 0.0002251935,
+      "measured_max_over_min": 1.2499256046023104,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.148731683129637,
+        "torch_sparse_direct": 1.1770913641497722,
+        "cpp_touched_reset": 1.0573263608269885
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w1_compiled_scan_int32",
+      "mode": "online",
+      "batch": 512,
+      "workers": 1,
+      "arm": "compiled_scan_int32",
+      "measured_seconds": [
+        35.63453045859933,
+        27.151267268694937,
+        27.32017024513334
+      ],
+      "median_seconds": 27.32017024513334,
+      "queries_per_second": 37.481464822951075,
+      "median_induction_p50_seconds": 0.0002112185,
+      "measured_max_over_min": 1.3124444655180234,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.178000621319257,
+        "torch_sparse_direct": 1.2070828886169764,
+        "cpp_touched_reset": 1.0842663506921488
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w1_compiled_pairwise_int32",
+      "mode": "online",
+      "batch": 512,
+      "workers": 1,
+      "arm": "compiled_pairwise_int32",
+      "measured_seconds": [
+        32.2681157598272,
+        32.66268198750913,
+        37.47597460541874
+      ],
+      "median_seconds": 32.66268198750913,
+      "queries_per_second": 31.35076294076519,
+      "median_induction_p50_seconds": 0.00024827,
+      "measured_max_over_min": 1.1613933358970767,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 0.9853195011855563,
+        "torch_sparse_direct": 1.009644891672229,
+        "cpp_touched_reset": 0.906916991792258
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w1_cpp_full_clear",
+      "mode": "online",
+      "batch": 512,
+      "workers": 1,
+      "arm": "cpp_full_clear",
+      "measured_seconds": [
+        26.79608199559152,
+        33.05172068066895,
+        25.794747444801033
+      ],
+      "median_seconds": 26.79608199559152,
+      "queries_per_second": 38.214541968055926,
+      "median_induction_p50_seconds": 0.0012865045000000001,
+      "measured_max_over_min": 1.2813353087250547,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.2010404180958139,
+        "torch_sparse_direct": 1.2306914877491641,
+        "cpp_touched_reset": 1.105472855951568
+      }
+    },
+    {
+      "job": "bench_online_bf16_b512_w1_cpp_touched_reset",
+      "mode": "online",
+      "batch": 512,
+      "workers": 1,
+      "arm": "cpp_touched_reset",
+      "measured_seconds": [
+        29.622341291978955,
+        25.325355106964707,
+        31.390056459233165
+      ],
+      "median_seconds": 29.622341291978955,
+      "queries_per_second": 34.56850320866688,
+      "median_induction_p50_seconds": 0.00019783300000000001,
+      "measured_max_over_min": 1.239471522774447,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.086449487773251,
+        "torch_sparse_direct": 1.1132715571652914,
+        "cpp_touched_reset": 1.0
+      }
+    },
+    {
+      "job": "bench_replay_bf16_b128_w0_torch_sparse_public",
+      "mode": "replay",
+      "batch": 128,
+      "workers": 0,
+      "arm": "torch_sparse_public",
+      "measured_seconds": [
+        29.421293486841023,
+        40.81435795221478,
+        39.29546129144728
+      ],
+      "median_seconds": 39.29546129144728,
+      "queries_per_second": 26.058989164300133,
+      "median_induction_p50_seconds": 0.002803172,
+      "measured_max_over_min": 1.3872387347779056,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.0,
+        "torch_sparse_direct": 0.733657505480947,
+        "cpp_touched_reset": 0.6844587745693173
+      }
+    },
+    {
+      "job": "bench_replay_bf16_b128_w0_torch_sparse_direct",
+      "mode": "replay",
+      "batch": 128,
+      "workers": 0,
+      "arm": "torch_sparse_direct",
+      "measured_seconds": [
+        23.21400332916528,
+        38.496573152020574,
+        28.829410107806325
+      ],
+      "median_seconds": 28.829410107806325,
+      "queries_per_second": 35.51928382061224,
+      "median_induction_p50_seconds": 0.0016004585,
+      "measured_max_over_min": 1.658334092838472,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.3630338305398415,
+        "torch_sparse_direct": 1.0,
+        "cpp_touched_reset": 0.9329404653478224
+      }
+    },
+    {
+      "job": "bench_replay_bf16_b128_w0_cpp_touched_reset",
+      "mode": "replay",
+      "batch": 128,
+      "workers": 0,
+      "arm": "cpp_touched_reset",
+      "measured_seconds": [
+        20.044383507221937,
+        26.896123281680048,
+        29.314368125982583
+      ],
+      "median_seconds": 26.896123281680048,
+      "queries_per_second": 38.07240133738845,
+      "median_induction_p50_seconds": 0.000185592,
+      "measured_max_over_min": 1.4624729224234159,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.4610083720955014,
+        "torch_sparse_direct": 1.0718797577583647,
+        "cpp_touched_reset": 1.0
+      }
+    },
+    {
+      "job": "bench_replay_bf16_b128_w0_compiled_pairwise_int32",
+      "mode": "replay",
+      "batch": 128,
+      "workers": 0,
+      "arm": "compiled_pairwise_int32",
+      "measured_seconds": [
+        27.710834776051342,
+        21.462055699899793,
+        31.16764767561108
+      ],
+      "median_seconds": 27.710834776051342,
+      "queries_per_second": 36.95305494315083,
+      "median_induction_p50_seconds": 0.00024285099999999998,
+      "measured_max_over_min": 1.4522209853251198,
+      "ratios_of_median_wall_time": {
+        "torch_sparse_public": 1.4180540430852617,
+        "torch_sparse_direct": 1.0403659918871044,
+        "cpp_touched_reset": 0.9705995326032041
+      }
+    }
+  ],
+  "group_summaries": [
+    {
+      "mode": "online",
+      "batch": 128,
+      "workers": 0,
+      "measured_unattributed_fraction": {
+        "median": 0.9229218463425122,
+        "min": 0.8573987088922913,
+        "max": 0.9493113612226799
+      },
+      "maximum_measured_sweep_max_over_min": 1.9607973704009578
+    },
+    {
+      "mode": "online",
+      "batch": 128,
+      "workers": 1,
+      "measured_unattributed_fraction": null,
+      "maximum_measured_sweep_max_over_min": 1.2809998076971936
+    },
+    {
+      "mode": "online",
+      "batch": 512,
+      "workers": 0,
+      "measured_unattributed_fraction": {
+        "median": 0.9310203335785656,
+        "min": 0.8848707940709668,
+        "max": 0.950749751464288
+      },
+      "maximum_measured_sweep_max_over_min": 1.5249819334527641
+    },
+    {
+      "mode": "online",
+      "batch": 512,
+      "workers": 1,
+      "measured_unattributed_fraction": null,
+      "maximum_measured_sweep_max_over_min": 1.3124444655180234
+    },
+    {
+      "mode": "replay",
+      "batch": 128,
+      "workers": 0,
+      "measured_unattributed_fraction": {
+        "median": 0.9142054601156537,
+        "min": 0.8822538622514099,
+        "max": 0.9483881720763302
+      },
+      "maximum_measured_sweep_max_over_min": 1.658334092838472
+    }
+  ],
+  "scientific_interpretation": [
+    "Measured wall throughput is dominated by unattributed overhead in workers0; the residual combines per-query smaps instrumentation, RNG/validation, loader/Python and other costs. It is not a causal smaps-only measurement.",
+    "Substantial sweep variability and changing arm order across configurations support no universal physical-operator winner or clean-consumer headline.",
+    "Random frozen10,397,185-parameter model and1024query systems cohort establish no trained ranking quality/training comparison.",
+    "All native int64 CSR/COO/value representations remain resident in every arm. Setup and persistent-map initialization lie outside steady-state query timers; no PENCIL memory-saving claim.",
+    "Sampler/induction are nested in raw_data; they cannot be added to raw_data. No worker1 CPU/GPU overlap decomposition is inferred.",
+    "First frozen audit failure and explicit narrow REPLAY timer correction remain part of the record."
+  ],
+  "new_scientific_runs": 0,
+  "remote_actions": 0,
+  "blockers_to_numerical_acceptance": []
+}

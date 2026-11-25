@@ -1,0 +1,1426 @@
+{
+  "schema_version": 1,
+  "status": "PASS_RECOVERED_V4_SCIENTIFIC_AUDIT_LIFECYCLE_UNKNOWN",
+  "created_unix": 1795619813.163401,
+  "source_contract_sha256": "4f498f6f2dd9b91ec8c84c85c1a844a251c2ac3ac6cca3412f0e261eb9c5fa32",
+  "protocol_sha256": "59f63afc636281e0572b397893a9765217c670b3fed6bc96fb8909cb8039bc3f",
+  "reported_scientific_success": true,
+  "global_rejections": [],
+  "hardware": {
+    "permitted_inventory": [
+      {
+        "index": 0,
+        "uuid": "GPU-fed98880-976e-8b86-6b0f-607c246fea2f",
+        "name": "NVIDIA H100 80GB HBM3",
+        "memory_total_mib": 81559,
+        "driver_version": "535.183.06"
+      },
+      {
+        "index": 1,
+        "uuid": "GPU-31e71637-8daa-b902-2079-9a833df0966a",
+        "name": "NVIDIA H100 80GB HBM3",
+        "memory_total_mib": 81559,
+        "driver_version": "535.183.06"
+      }
+    ],
+    "target": {
+      "index": 0,
+      "uuid": "GPU-fed98880-976e-8b86-6b0f-607c246fea2f",
+      "name": "NVIDIA H100 80GB HBM3",
+      "memory_total_mib": 81559,
+      "driver_version": "535.183.06"
+    },
+    "original_cuda_visible_devices": null,
+    "gpu_mapping": "target UUID exposed as the sole CUDA device, cuda:0"
+  },
+  "fixture_reference_comparisons": [
+    {
+      "reference_arm": "reference_union_stock",
+      "candidate_arm": "reference_union_corrected",
+      "matched": true,
+      "audited_pairs": 2
+    },
+    {
+      "reference_arm": "reference_union_stock",
+      "candidate_arm": "reference_union_compiled",
+      "matched": true,
+      "audited_pairs": 2
+    },
+    {
+      "reference_arm": "reference_union_corrected",
+      "candidate_arm": "reference_union_compiled",
+      "matched": true,
+      "audited_pairs": 2
+    }
+  ],
+  "interpretation_limits": [
+    "A source-derived audit is independent of suite success flags, but still relies on persisted execution/provenance receipts.",
+    "Input graph proof is archived header/stat/download/preparation metadata; billion-edge payloads were not rehashed locally.",
+    "Saved-prefix equality covers32queries0..31 in excluded warmup0..255; it does not independently verify all3200measured subgraphs or final model equality.",
+    "3200graphs/steady wall includes sampling/induction/DRNL/packaging/IPC/H2D/BCEforward-backward/Adam; excludes setup/JIT and256warmup graphs.",
+    "Worker service sums overlap workers, prefetch and GPU; never add them to steady wall time.",
+    "Workers1/8 have finite-window prefetch boundary fractions.01/.08; parent is additional.",
+    "Torch24GiB is an allocator cap, not physical-device or whole-system memory limit.",
+    "Production union/PV comparisons change visited/sampling laws; no quality preservation or time-to-quality inference.",
+    "This short features-disabled training harness has no validation and is not full upstream SEAL-OGB timing."
+  ],
+  "original_full_audit_sha256": "f1d456eb045f2146a10c2f5a4bf52d5922d2c24e61df4faf40fccee70680bceb",
+  "scope": "Public Citation2/Friendster aggregate projection only, not complete original raw result archive or evidence of fresh public-adapter execution.",
+  "provenance": {
+    "mode": "immutable_YT_recovery_pod_gone",
+    "archive": {
+      "bytes": 214583801,
+      "sha256": "f6d4ba4801195559f5d308ee298d07123cadf2e03b45638585f00e3d19f98040"
+    },
+    "all_archive_files_verified": 530,
+    "projected_text_files_verified": 490,
+    "full_uncompressed_bytes": 659782818,
+    "lifecycle": {
+      "pod_observed_absent": true,
+      "outer_controller_COMPLETE_available": false,
+      "outer_controller_clean_final_exit": "UNKNOWN",
+      "outer_controller_final_lock_release": "UNKNOWN"
+    }
+  },
+  "jobs": [
+    {
+      "name": "guard_refusal",
+      "kind": "expected_gpu_refusal",
+      "dataset": null,
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "expected_guard_refusal",
+      "job_returncode": 1,
+      "classification": "expected_refusal_never_a_timing"
+    },
+    {
+      "name": "citation2_manifest",
+      "kind": "manifest",
+      "dataset": "citation2",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "classification": "manifest_preparation"
+    },
+    {
+      "name": "citation2_reference_union_stock_workers1",
+      "kind": "pipeline",
+      "dataset": "citation2",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 1,
+      "arm": "reference_union_stock",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 37.68076636828482,
+      "graphs_per_second": 84.9239627645519,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.138671875,
+      "stock_temporary_width": {
+        "int32": 3200
+      },
+      "worker_service_seconds_sum": {
+        "sampling": 18.34259763173759,
+        "induction": 13.174759317189455,
+        "drnl": 4.011109007522464,
+        "construct": 1.2407806031405926
+      }
+    },
+    {
+      "name": "citation2_reference_union_corrected_workers1",
+      "kind": "pipeline",
+      "dataset": "citation2",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 1,
+      "arm": "reference_union_corrected",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 41.60190312191844,
+      "graphs_per_second": 76.91955799767351,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.138671875,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 18.06950493901968,
+        "induction": 17.515153476037085,
+        "drnl": 3.92096727527678,
+        "construct": 1.2134600607678294
+      }
+    },
+    {
+      "name": "citation2_production_union_workers1",
+      "kind": "pipeline",
+      "dataset": "citation2",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 1,
+      "arm": "production_union",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 16.3340693898499,
+      "graphs_per_second": 195.90953874534787,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.138671875,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 3.2094108629971743,
+        "induction": 6.864040756598115,
+        "drnl": 3.980824451893568,
+        "construct": 1.2221835823729634
+      }
+    },
+    {
+      "name": "citation2_production_pv_workers1",
+      "kind": "pipeline",
+      "dataset": "citation2",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 1,
+      "arm": "production_pv",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 13.965588243678212,
+      "graphs_per_second": 229.13463752223547,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.154296875,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 0.8355618733912706,
+        "induction": 7.35192964784801,
+        "drnl": 3.7470335494726896,
+        "construct": 1.2662200015038252
+      }
+    },
+    {
+      "name": "citation2_reference_union_compiled_workers1",
+      "kind": "pipeline",
+      "dataset": "citation2",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 1,
+      "arm": "reference_union_compiled",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 30.280919522047043,
+      "graphs_per_second": 105.67710791180342,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.138671875,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 17.660219776444137,
+        "induction": 6.778385382145643,
+        "drnl": 3.8095452887937427,
+        "construct": 1.1586711155250669
+      }
+    },
+    {
+      "name": "citation2_reference_union_stock_workers8",
+      "kind": "pipeline",
+      "dataset": "citation2",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 8,
+      "arm": "reference_union_stock",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 5.013515598140657,
+      "graphs_per_second": 638.2746672189015,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.138671875,
+      "stock_temporary_width": {
+        "int32": 3200
+      },
+      "worker_service_seconds_sum": {
+        "sampling": 17.9890988310799,
+        "induction": 13.443985706195235,
+        "drnl": 4.039308511652052,
+        "construct": 1.2596289925277233
+      }
+    },
+    {
+      "name": "citation2_reference_union_corrected_workers8",
+      "kind": "pipeline",
+      "dataset": "citation2",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 8,
+      "arm": "reference_union_corrected",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 5.435726568102837,
+      "graphs_per_second": 588.6977499526537,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.138671875,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 17.801165296696126,
+        "induction": 17.459552405402064,
+        "drnl": 3.8311817664653063,
+        "construct": 1.1858068639412522
+      }
+    },
+    {
+      "name": "citation2_production_union_workers8",
+      "kind": "pipeline",
+      "dataset": "citation2",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 8,
+      "arm": "production_union",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 2.140828436240554,
+      "graphs_per_second": 1494.7484561721471,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.140625,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 3.238631760701537,
+        "induction": 6.882236983627081,
+        "drnl": 3.968001440167427,
+        "construct": 1.2113490449264646
+      }
+    },
+    {
+      "name": "citation2_production_pv_workers8",
+      "kind": "pipeline",
+      "dataset": "citation2",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 8,
+      "arm": "production_pv",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 1.9029236249625683,
+      "graphs_per_second": 1681.6229290668175,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.154296875,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 0.8692391887307167,
+        "induction": 7.4870600290596485,
+        "drnl": 3.8930960409343243,
+        "construct": 1.3204442141577601
+      }
+    },
+    {
+      "name": "citation2_reference_union_compiled_workers8",
+      "kind": "pipeline",
+      "dataset": "citation2",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 8,
+      "arm": "reference_union_compiled",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 4.030945260077715,
+      "graphs_per_second": 793.8584608659025,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.138671875,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 17.61503444146365,
+        "induction": 6.741496208123863,
+        "drnl": 3.8267249008640647,
+        "construct": 1.1728949630632997
+      }
+    },
+    {
+      "name": "friendster_manifest",
+      "kind": "manifest",
+      "dataset": "friendster",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "classification": "manifest_preparation"
+    },
+    {
+      "name": "friendster_reference_union_stock_workers1",
+      "kind": "pipeline",
+      "dataset": "friendster",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 1,
+      "arm": "reference_union_stock",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 735.4459671974182,
+      "graphs_per_second": 4.351101430597706,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.115234375,
+      "stock_temporary_width": {
+        "int32": 3200
+      },
+      "worker_service_seconds_sum": {
+        "sampling": 139.67718431074172,
+        "induction": 586.9361469522119,
+        "drnl": 5.405177874490619,
+        "construct": 1.6797304023057222
+      }
+    },
+    {
+      "name": "friendster_reference_union_corrected_workers1",
+      "kind": "pipeline",
+      "dataset": "friendster",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 1,
+      "arm": "reference_union_corrected",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 203.14591692574322,
+      "graphs_per_second": 15.752224058580067,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.115234375,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 163.6512605799362,
+        "induction": 28.977738332003355,
+        "drnl": 4.393916507251561,
+        "construct": 1.3059491738677025
+      }
+    },
+    {
+      "name": "friendster_production_union_workers1",
+      "kind": "pipeline",
+      "dataset": "friendster",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 1,
+      "arm": "production_union",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 47.6806297712028,
+      "graphs_per_second": 67.11320750911457,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.115234375,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 15.938538827933371,
+        "induction": 22.479895713739097,
+        "drnl": 4.0210713390260935,
+        "construct": 1.141673388890922
+      }
+    },
+    {
+      "name": "friendster_production_pv_workers1",
+      "kind": "pipeline",
+      "dataset": "friendster",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 1,
+      "arm": "production_pv",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 41.32553569879383,
+      "graphs_per_second": 77.43396294541921,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.13671875,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 1.3578958632424474,
+        "induction": 21.141875192523003,
+        "drnl": 4.1884365901350975,
+        "construct": 1.26790661085397
+      }
+    },
+    {
+      "name": "friendster_reference_union_compiled_workers1",
+      "kind": "pipeline",
+      "dataset": "friendster",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 1,
+      "arm": "reference_union_compiled",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 176.7951782317832,
+      "graphs_per_second": 18.100041143682745,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.115234375,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 144.50541597791016,
+        "induction": 22.739821351133287,
+        "drnl": 4.260620213113725,
+        "construct": 1.2454340821132064
+      }
+    },
+    {
+      "name": "friendster_reference_union_stock_workers8",
+      "kind": "pipeline",
+      "dataset": "friendster",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 8,
+      "arm": "reference_union_stock",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 67.45314542483538,
+      "graphs_per_second": 47.44033773140846,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.115234375,
+      "stock_temporary_width": {
+        "int32": 3200
+      },
+      "worker_service_seconds_sum": {
+        "sampling": 115.39580753818154,
+        "induction": 387.7429354628548,
+        "drnl": 5.007437237538397,
+        "construct": 1.54457032866776
+      }
+    },
+    {
+      "name": "friendster_reference_union_corrected_workers8",
+      "kind": "pipeline",
+      "dataset": "friendster",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 8,
+      "arm": "reference_union_corrected",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 19.685045410878956,
+      "graphs_per_second": 162.55995011479718,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.115234375,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 107.67090282775462,
+        "induction": 30.599541501142085,
+        "drnl": 4.074305738322437,
+        "construct": 1.2094569187611341
+      }
+    },
+    {
+      "name": "friendster_production_union_workers8",
+      "kind": "pipeline",
+      "dataset": "friendster",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 8,
+      "arm": "production_union",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 6.12916124984622,
+      "graphs_per_second": 522.0942751474009,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.1171875,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 15.666252372786403,
+        "induction": 24.031947942450643,
+        "drnl": 4.077418068423867,
+        "construct": 1.1666530994698405
+      }
+    },
+    {
+      "name": "friendster_production_pv_workers8",
+      "kind": "pipeline",
+      "dataset": "friendster",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 8,
+      "arm": "production_pv",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 4.076353024691343,
+      "graphs_per_second": 785.0154244779377,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.13671875,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 2.0876028360798955,
+        "induction": 22.025806687772274,
+        "drnl": 4.00154170487076,
+        "construct": 1.2032200181856751
+      }
+    },
+    {
+      "name": "friendster_reference_union_compiled_workers8",
+      "kind": "pipeline",
+      "dataset": "friendster",
+      "eligible": true,
+      "rejection_reasons": [],
+      "record_status": "complete",
+      "job_returncode": 0,
+      "workers": 8,
+      "arm": "reference_union_compiled",
+      "run_status": "complete",
+      "abort_reason": null,
+      "child_returncode": 0,
+      "steady_seconds": 19.883798647671938,
+      "graphs_per_second": 160.9350434844937,
+      "measured_graphs": 3200,
+      "allocator_reserved_peak_gib": 0.115234375,
+      "stock_temporary_width": {},
+      "worker_service_seconds_sum": {
+        "sampling": 110.73085473384708,
+        "induction": 24.412043161690235,
+        "drnl": 4.4035393903031945,
+        "construct": 1.3171120481565595
+      }
+    }
+  ],
+  "reference_prefix_comparisons": [
+    {
+      "dataset": "citation2",
+      "workers": 1,
+      "reference_arm": "reference_union_stock",
+      "candidate_arm": "reference_union_corrected",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    },
+    {
+      "dataset": "citation2",
+      "workers": 1,
+      "reference_arm": "reference_union_stock",
+      "candidate_arm": "reference_union_compiled",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    },
+    {
+      "dataset": "citation2",
+      "workers": 1,
+      "reference_arm": "reference_union_corrected",
+      "candidate_arm": "reference_union_compiled",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    },
+    {
+      "dataset": "citation2",
+      "workers": 8,
+      "reference_arm": "reference_union_stock",
+      "candidate_arm": "reference_union_corrected",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    },
+    {
+      "dataset": "citation2",
+      "workers": 8,
+      "reference_arm": "reference_union_stock",
+      "candidate_arm": "reference_union_compiled",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    },
+    {
+      "dataset": "citation2",
+      "workers": 8,
+      "reference_arm": "reference_union_corrected",
+      "candidate_arm": "reference_union_compiled",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    },
+    {
+      "dataset": "friendster",
+      "workers": 1,
+      "reference_arm": "reference_union_stock",
+      "candidate_arm": "reference_union_corrected",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    },
+    {
+      "dataset": "friendster",
+      "workers": 1,
+      "reference_arm": "reference_union_stock",
+      "candidate_arm": "reference_union_compiled",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    },
+    {
+      "dataset": "friendster",
+      "workers": 1,
+      "reference_arm": "reference_union_corrected",
+      "candidate_arm": "reference_union_compiled",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    },
+    {
+      "dataset": "friendster",
+      "workers": 8,
+      "reference_arm": "reference_union_stock",
+      "candidate_arm": "reference_union_corrected",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    },
+    {
+      "dataset": "friendster",
+      "workers": 8,
+      "reference_arm": "reference_union_stock",
+      "candidate_arm": "reference_union_compiled",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    },
+    {
+      "dataset": "friendster",
+      "workers": 8,
+      "reference_arm": "reference_union_corrected",
+      "candidate_arm": "reference_union_compiled",
+      "status": "matched",
+      "audited_pairs": 32,
+      "query_indices": "0..31 entirely inside excluded warmup0..255"
+    }
+  ],
+  "ratios": [
+    {
+      "dataset": "citation2",
+      "workers": 1,
+      "from_arm": "reference_union_stock",
+      "to_arm": "reference_union_corrected",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 37.68076636828482,
+      "to_seconds": 41.60190312191844,
+      "speedup": 0.9057462168943968,
+      "from_graphs_per_second": 84.9239627645519,
+      "to_graphs_per_second": 76.91955799767351
+    },
+    {
+      "dataset": "citation2",
+      "workers": 1,
+      "from_arm": "reference_union_stock",
+      "to_arm": "reference_union_compiled",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 37.68076636828482,
+      "to_seconds": 30.280919522047043,
+      "speedup": 1.244373254281465,
+      "from_graphs_per_second": 84.9239627645519,
+      "to_graphs_per_second": 105.67710791180342
+    },
+    {
+      "dataset": "citation2",
+      "workers": 1,
+      "from_arm": "reference_union_corrected",
+      "to_arm": "reference_union_compiled",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 41.60190312191844,
+      "to_seconds": 30.280919522047043,
+      "speedup": 1.373865251734802,
+      "from_graphs_per_second": 76.91955799767351,
+      "to_graphs_per_second": 105.67710791180342
+    },
+    {
+      "dataset": "citation2",
+      "workers": 1,
+      "from_arm": "reference_union_stock",
+      "to_arm": "production_union",
+      "law": "changed_visited_sampling_law",
+      "eligible": true,
+      "from_seconds": 37.68076636828482,
+      "to_seconds": 16.3340693898499,
+      "speedup": 2.3068817371193426,
+      "from_graphs_per_second": 84.9239627645519,
+      "to_graphs_per_second": 195.90953874534787
+    },
+    {
+      "dataset": "citation2",
+      "workers": 1,
+      "from_arm": "production_union",
+      "to_arm": "production_pv",
+      "law": "changed_endpoint_sampling_budget_and_law",
+      "eligible": true,
+      "from_seconds": 16.3340693898499,
+      "to_seconds": 13.965588243678212,
+      "speedup": 1.1695940840332184,
+      "from_graphs_per_second": 195.90953874534787,
+      "to_graphs_per_second": 229.13463752223547
+    },
+    {
+      "dataset": "citation2",
+      "workers": 8,
+      "from_arm": "reference_union_stock",
+      "to_arm": "reference_union_corrected",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 5.013515598140657,
+      "to_seconds": 5.435726568102837,
+      "speedup": 0.9223266724931054,
+      "from_graphs_per_second": 638.2746672189015,
+      "to_graphs_per_second": 588.6977499526537
+    },
+    {
+      "dataset": "citation2",
+      "workers": 8,
+      "from_arm": "reference_union_stock",
+      "to_arm": "reference_union_compiled",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 5.013515598140657,
+      "to_seconds": 4.030945260077715,
+      "speedup": 1.2437568050834802,
+      "from_graphs_per_second": 638.2746672189015,
+      "to_graphs_per_second": 793.8584608659025
+    },
+    {
+      "dataset": "citation2",
+      "workers": 8,
+      "from_arm": "reference_union_corrected",
+      "to_arm": "reference_union_compiled",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 5.435726568102837,
+      "to_seconds": 4.030945260077715,
+      "speedup": 1.3484992272006289,
+      "from_graphs_per_second": 588.6977499526537,
+      "to_graphs_per_second": 793.8584608659025
+    },
+    {
+      "dataset": "citation2",
+      "workers": 8,
+      "from_arm": "reference_union_stock",
+      "to_arm": "production_union",
+      "law": "changed_visited_sampling_law",
+      "eligible": true,
+      "from_seconds": 5.013515598140657,
+      "to_seconds": 2.140828436240554,
+      "speedup": 2.3418577188486647,
+      "from_graphs_per_second": 638.2746672189015,
+      "to_graphs_per_second": 1494.7484561721471
+    },
+    {
+      "dataset": "citation2",
+      "workers": 8,
+      "from_arm": "production_union",
+      "to_arm": "production_pv",
+      "law": "changed_endpoint_sampling_budget_and_law",
+      "eligible": true,
+      "from_seconds": 2.140828436240554,
+      "to_seconds": 1.9029236249625683,
+      "speedup": 1.125020682993867,
+      "from_graphs_per_second": 1494.7484561721471,
+      "to_graphs_per_second": 1681.6229290668175
+    },
+    {
+      "dataset": "friendster",
+      "workers": 1,
+      "from_arm": "reference_union_stock",
+      "to_arm": "reference_union_corrected",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 735.4459671974182,
+      "to_seconds": 203.14591692574322,
+      "speedup": 3.620284268210268,
+      "from_graphs_per_second": 4.351101430597706,
+      "to_graphs_per_second": 15.752224058580067
+    },
+    {
+      "dataset": "friendster",
+      "workers": 1,
+      "from_arm": "reference_union_stock",
+      "to_arm": "reference_union_compiled",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 735.4459671974182,
+      "to_seconds": 176.7951782317832,
+      "speedup": 4.159875707884006,
+      "from_graphs_per_second": 4.351101430597706,
+      "to_graphs_per_second": 18.100041143682745
+    },
+    {
+      "dataset": "friendster",
+      "workers": 1,
+      "from_arm": "reference_union_corrected",
+      "to_arm": "reference_union_compiled",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 203.14591692574322,
+      "to_seconds": 176.7951782317832,
+      "speedup": 1.1490467045397217,
+      "from_graphs_per_second": 15.752224058580067,
+      "to_graphs_per_second": 18.100041143682745
+    },
+    {
+      "dataset": "friendster",
+      "workers": 1,
+      "from_arm": "reference_union_stock",
+      "to_arm": "production_union",
+      "law": "changed_visited_sampling_law",
+      "eligible": true,
+      "from_seconds": 735.4459671974182,
+      "to_seconds": 47.6806297712028,
+      "speedup": 15.424418065081813,
+      "from_graphs_per_second": 4.351101430597706,
+      "to_graphs_per_second": 67.11320750911457
+    },
+    {
+      "dataset": "friendster",
+      "workers": 1,
+      "from_arm": "production_union",
+      "to_arm": "production_pv",
+      "law": "changed_endpoint_sampling_budget_and_law",
+      "eligible": true,
+      "from_seconds": 47.6806297712028,
+      "to_seconds": 41.32553569879383,
+      "speedup": 1.1537812871617406,
+      "from_graphs_per_second": 67.11320750911457,
+      "to_graphs_per_second": 77.43396294541921
+    },
+    {
+      "dataset": "friendster",
+      "workers": 8,
+      "from_arm": "reference_union_stock",
+      "to_arm": "reference_union_corrected",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 67.45314542483538,
+      "to_seconds": 19.685045410878956,
+      "speedup": 3.4266187360460623,
+      "from_graphs_per_second": 47.44033773140846,
+      "to_graphs_per_second": 162.55995011479718
+    },
+    {
+      "dataset": "friendster",
+      "workers": 8,
+      "from_arm": "reference_union_stock",
+      "to_arm": "reference_union_compiled",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 67.45314542483538,
+      "to_seconds": 19.883798647671938,
+      "speedup": 3.3923671537849245,
+      "from_graphs_per_second": 47.44033773140846,
+      "to_graphs_per_second": 160.9350434844937
+    },
+    {
+      "dataset": "friendster",
+      "workers": 8,
+      "from_arm": "reference_union_corrected",
+      "to_arm": "reference_union_compiled",
+      "law": "same_reference_sampling_law",
+      "eligible": true,
+      "from_seconds": 19.685045410878956,
+      "to_seconds": 19.883798647671938,
+      "speedup": 0.9900042622481368,
+      "from_graphs_per_second": 162.55995011479718,
+      "to_graphs_per_second": 160.9350434844937
+    },
+    {
+      "dataset": "friendster",
+      "workers": 8,
+      "from_arm": "reference_union_stock",
+      "to_arm": "production_union",
+      "law": "changed_visited_sampling_law",
+      "eligible": true,
+      "from_seconds": 67.45314542483538,
+      "to_seconds": 6.12916124984622,
+      "speedup": 11.005281583434892,
+      "from_graphs_per_second": 47.44033773140846,
+      "to_graphs_per_second": 522.0942751474009
+    },
+    {
+      "dataset": "friendster",
+      "workers": 8,
+      "from_arm": "production_union",
+      "to_arm": "production_pv",
+      "law": "changed_endpoint_sampling_budget_and_law",
+      "eligible": true,
+      "from_seconds": 6.12916124984622,
+      "to_seconds": 4.076353024691343,
+      "speedup": 1.5035894125755491,
+      "from_graphs_per_second": 522.0942751474009,
+      "to_graphs_per_second": 785.0154244779377
+    }
+  ],
+  "environment_signatures": {
+    "citation2_reference_union_stock_workers1": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "citation2_reference_union_corrected_workers1": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "citation2_production_union_workers1": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "citation2_production_pv_workers1": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "citation2_reference_union_compiled_workers1": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "citation2_reference_union_stock_workers8": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "citation2_reference_union_corrected_workers8": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "citation2_production_union_workers8": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "citation2_production_pv_workers8": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "citation2_reference_union_compiled_workers8": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "friendster_reference_union_stock_workers1": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "friendster_reference_union_corrected_workers1": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "friendster_production_union_workers1": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "friendster_production_pv_workers1": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "friendster_reference_union_compiled_workers1": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "friendster_reference_union_stock_workers8": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "friendster_reference_union_corrected_workers8": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "friendster_production_union_workers8": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "friendster_production_pv_workers8": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    },
+    "friendster_reference_union_compiled_workers8": {
+      "runtime_versions": {
+        "numpy": "1.24.4",
+        "scipy": "1.10.1",
+        "numba": "0.58.0",
+        "torch": "2.5.0+cu121",
+        "torch-geometric": "2.7.0"
+      },
+      "host": {
+        "hostname": "seal-revision-20261124-0",
+        "platform": "Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.35",
+        "cpu_affinity_count": 193
+      },
+      "device": {
+        "name": "NVIDIA H100 80GB HBM3",
+        "torch_version": "2.5.0+cu121",
+        "cuda_runtime": "12.1",
+        "training_parallelism": "one GPU, no DDP"
+      },
+      "initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+    }
+  },
+  "public_counts": {
+    "timing_jobs": 20,
+    "matched_prefix_comparisons": 12,
+    "original_full_suite_jobs": 35,
+    "original_full_suite_timings": 30,
+    "original_full_suite_prefix_comparisons": 18
+  }
+}
