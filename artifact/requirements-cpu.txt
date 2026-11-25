@@ -1,0 +1,9 @@
+# Original CPU numerical versions. Use Python 3.10.12 on Linux.
+numpy==1.24.4
+scipy==1.10.1
+numba==0.58.0
+pandas==2.2.1
+# Utility/test version pins below are the artifact recipe, not a claim about
+# an unrecorded package in the original image.
+psutil==6.1.0
+pytest==8.3.5
