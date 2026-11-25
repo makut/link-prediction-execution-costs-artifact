@@ -1,0 +1,109 @@
+{
+  "dataset": "Friendster dense Zenodo 5146230",
+  "evaluation_files": {
+    "evaluation/test/source_node.npy": {
+      "bytes": 80128,
+      "sha256": "763d6f4c51e97fb46db5f07e5659ef77d1646ac6100ea357819ecd1459ef35b7"
+    },
+    "evaluation/test/target_node.npy": {
+      "bytes": 80128,
+      "sha256": "20a25380f2a029edeeba598c5a6f02114b324323bb7da8ab29efcbf70ac7f84b"
+    },
+    "evaluation/test/target_node_neg.npy": {
+      "bytes": 40000128,
+      "sha256": "00c1e98d13ed7a02ba8596e3ac51af53992b6aab37d4417ff7713b03710f3f80"
+    },
+    "evaluation/test/warm_query.npy": {
+      "bytes": 10128,
+      "sha256": "62d881f9a4b8968c50cf6106b339458d3569aa63ad4c0104d5ccfa7d62ae3817"
+    },
+    "evaluation/valid/source_node.npy": {
+      "bytes": 80128,
+      "sha256": "b841469189c1a8b23b087aaf9e44bb6d1b7e0a4f9be3c485e86120a31c17c096"
+    },
+    "evaluation/valid/target_node.npy": {
+      "bytes": 80128,
+      "sha256": "fe173eb5114d7b1e36ffaec8fccb42be117953332959eecd7c220177a7ef523a"
+    },
+    "evaluation/valid/target_node_neg.npy": {
+      "bytes": 40000128,
+      "sha256": "64fd69a9ffb44e49096186c91fd308867bbe5bb3feab6e25f092378ff9a0342e"
+    },
+    "evaluation/valid/warm_query.npy": {
+      "bytes": 10128,
+      "sha256": "6027d7098f0463837b94e8c5816d9ac17335f86383c1686e95b8a7d040ff03d4"
+    }
+  },
+  "historical_evaluation_arrays_sha256_equal": true,
+  "historical_generator_sha256": "37b9a778038007e099dbe7b7f6e94ff0ad1e02f44ef0f088d7a5299d2d148939",
+  "historical_reference_sha256": "8df41e2f06c2c7356b9b54e3e260451f1140703de87fc971cbbee5d2e5877c56",
+  "license": "CC-BY-4.0",
+  "protocol": "Original query row; 1000 distinct full-graph non-neighbors; midpoint tie rank. Do not group repeated source IDs.",
+  "query_integrity": {
+    "test": {
+      "all_negative_rows_unique": true,
+      "cold_queries": 91,
+      "duplicate_query_pair_rows": 0,
+      "max_source_multiplicity": 2,
+      "negatives_dtype": "int32",
+      "negatives_shape": [
+        10000,
+        1000
+      ],
+      "no_negative_equals_source": true,
+      "per_query_group_id_required": true,
+      "query_rows": 10000,
+      "repeated_source_ids": 5,
+      "rows_with_repeated_source": 10,
+      "unique_source_ids": 9995,
+      "warm_queries": 9909
+    },
+    "valid": {
+      "all_negative_rows_unique": true,
+      "cold_queries": 89,
+      "duplicate_query_pair_rows": 0,
+      "max_source_multiplicity": 2,
+      "negatives_dtype": "int32",
+      "negatives_shape": [
+        10000,
+        1000
+      ],
+      "no_negative_equals_source": true,
+      "per_query_group_id_required": true,
+      "query_rows": 10000,
+      "repeated_source_ids": 5,
+      "rows_with_repeated_source": 10,
+      "unique_source_ids": 9995,
+      "warm_queries": 9911
+    }
+  },
+  "schema_version": 1,
+  "source_doi": "10.5281/zenodo.5146230",
+  "split_metadata": {
+    "evaluation": "fixed uniform heldout-edge subsample;1000distinct uniform non-neighbors from original full graph; averaged tie ranks; cosine",
+    "file_endian": "little",
+    "negatives_per_query": 1000,
+    "num_nodes": 65608366,
+    "original_stored_entries": 3612134270,
+    "queries_per_split": 10000,
+    "seed": 20261102,
+    "split": "exact80/10/10unique undirected edges; paired directions share label",
+    "test": {
+      "cold_queries": 91,
+      "query_count": 10000,
+      "warm_queries": 9909
+    },
+    "test_undirected_edges": 180606714,
+    "threshold_train": 14757470836727281938,
+    "threshold_validation": 16602285075010369541,
+    "train_isolated_nodes": 3004466,
+    "train_stored_entries": 2889707416,
+    "train_undirected_edges": 1444853708,
+    "valid": {
+      "cold_queries": 89,
+      "query_count": 10000,
+      "warm_queries": 9911
+    },
+    "validation_undirected_edges": 180606713
+  }
+}
