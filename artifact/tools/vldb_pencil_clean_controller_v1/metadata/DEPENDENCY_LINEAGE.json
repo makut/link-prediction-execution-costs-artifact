@@ -1,0 +1,29 @@
+{
+  "kind": "new_internal_operational_controller_source_lineage",
+  "clean_driver_candidate_packet_sha256": "819ee4fa742d182bbda1bcdf3e3e606e77597e0e261e0feb861261b62179734b",
+  "clean_driver_candidate_manifest_sha256": "6a29dea78718a31e525cb9cfc5b4868251da74dab553fe45dda02e0337a697a7",
+  "old_frozen_sources_modified": false,
+  "generic_supervision": "Exact0.4 public extraction of five reviewed V3 generic functions, no legacy PID or two-graph admission scanner",
+  "memory_guard": "Exact unchanged stable_pss_individual_rss_cgroup90_v3 decision implementation; coordinator parameter96GiB",
+  "runtime_probe": "Exact original V3 probe, used base mode only with a new supplied-platform/HF/GPU adapter; no historical venv/route requirement",
+  "runtime_lineage": "whole source bytes/SHA only; no Python-version-dependent AST dump hash check",
+  "files": {
+    "third_party/owned_supervision.py": {
+      "bytes": 4913,
+      "sha256": "fcf494937da9be0d09b8e25f8e55d0f16cfd7970e103b91e61506135d9da74a6"
+    },
+    "third_party/memory_guard_v3.py": {
+      "bytes": 36012,
+      "sha256": "e5bc616b518c17d6804c72f376872155514b902b490f43639526680ca5a516c8"
+    },
+    "third_party/runtime_probe_original_v3.py": {
+      "bytes": 5098,
+      "sha256": "896d7d6088666a22c0af932ee83f27edf9108c6ebf5bad4f643d284322f789ce"
+    },
+    "metadata/citation2_prepared_expected.json": {
+      "bytes": 4215,
+      "sha256": "be0aa7a553b1d456b3a1be54f137b55ffb880a092ed59dd013ed26bad9d1867f"
+    }
+  },
+  "active_hardware": "oneH10080Single27CPU205GiB request/256GiB limit,guard96; A100placement was unstarted and is not a scientific run"
+}

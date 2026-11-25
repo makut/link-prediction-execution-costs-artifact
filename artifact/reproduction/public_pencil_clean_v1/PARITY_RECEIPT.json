@@ -1,0 +1,24 @@
+{
+  "actual_GPU_model_graph_execution": false,
+  "actual_data_opened": false,
+  "all53_upstream_files_whole_bytes_exact": true,
+  "cpp_whole_source_bytes_unchanged": {
+    "build_native_v1.py": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6",
+    "native_adapter_v1.py": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549",
+    "native_assoc_v1.cpp": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20"
+  },
+  "exact44_scientific_job_dictionaries_equal": true,
+  "frozen_controller_source_sha256": "06ba8024f1f677347aaad715515ed82e44d955fec3b8f53198d4aad2378e1d19",
+  "kind": "INDEPENDENT_GENERIC44_PLAN_AND_SOURCE_PARITY_NOT_AN_ACTUAL_SCIENCE_RUN",
+  "online_benchmarks": 32,
+  "path_normalization": "Only frozen bridge source prefix replaced by portable bridge prefix. Input/output/venv paths supplied independently with spaces/Unicode; all remaining argv/defaults/arms/precisions/batches/workers/modes/seeds unchanged.",
+  "portable_matrix_source_sha256": "3dccdc155be4cb261a43cfd828b3148dc3b7d42a6c93072aded3b9e4c6dc7832",
+  "portable_run_source_sha256": "aaff6353da88fd1f052a7f52b19b66f281f02e39a4ed227386e1ebcf43fbb258",
+  "remote_calls": 0,
+  "replay_benchmarks": 0,
+  "science_jobs": 44,
+  "semantic_audits": 9,
+  "unchanged_clean_driver_sha256": "4e18bc251ab3bc793004330a89b97bcf9b5f7cb634946e8307b3341c17c92d49",
+  "upstream_commit": "2d32e29dbed533288d9d758138e07547a0a7d8a9",
+  "upstream_modified_files": []
+}

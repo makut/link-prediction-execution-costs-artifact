@@ -1,0 +1,6 @@
+# Only additions for the already prepared CPU/GPU environment. Do not replace
+# its Torch/CUDA, NumPy, SciPy, Numba, PyG or torch-sparse installations.
+transformers==4.46.2
+wandb==0.18.7
+rich==14.2.0
+tqdm==4.67.1

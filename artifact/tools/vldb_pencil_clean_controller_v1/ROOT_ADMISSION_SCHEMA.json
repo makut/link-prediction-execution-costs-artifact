@@ -1,0 +1,26 @@
+{
+  "kind": "SCHEMA_ONLY_NOT_AN_ACTUAL_ADMISSION",
+  "required_fields": {
+    "kind": "PENCIL_CLEAN_CONSUMER_V1_ROOT_ADMISSION",
+    "authorized_to_execute": "literal true only after root approval",
+    "fresh_owned_statefulset": "literal true based on root observation",
+    "namespace": "m-utushkin",
+    "pod_name": "seal-clean-consumer-20261125-0",
+    "statefulset_name": "seal-clean-consumer-20261125",
+    "pod_uid": "actual observed UUID",
+    "statefulset_uid": "actual observed UUID",
+    "hostname": "seal-clean-consumer-20261125-0",
+    "observed_unix": "root observation within1hour of launch",
+    "base": "/home/jovyan/seal_revision_20261124",
+    "image": "actual root-observed image identity",
+    "source_manifest_sha256": "actual frozen controller manifest SHA",
+    "source_packet_sha256": "actual staged packet SHA",
+    "gpu_count": 1,
+    "gpu_name_contains": "H100",
+    "cpu_request": 27,
+    "memory_request_gib": 205,
+    "pod_memory_limit_gib": 256,
+    "owned_tree_guard_gib": 96
+  },
+  "independent_anchor": "CLI --admission-sha256 plus root-observed actual launch; no schema value is an actual admission"
+}

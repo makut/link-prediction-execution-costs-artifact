@@ -1,0 +1,15 @@
+Native execution target declared by root, not a result from this source package:
+Python 3.10.12, Torch 2.5.0+cu121, torch-sparse 0.6.18, PyG 2.7,
+NumPy 1.24.4. Existing SciPy/Numba and a C++17 compiler are prerequisites.
+Never install upstream_pencil/requirements.txt into this environment.
+
+Local source/consumer validation environment:
+Python 3.12.10, Torch 2.9.0, PyG 2.7.0, NumPy 1.26.4, Numba 0.65.0,
+SciPy 1.15.3, Transformers 4.46.2, wandb 0.18.7, rich 14.2.0,
+tqdm 4.67.1. torch-sparse was absent. Actual PENCIL source/model and compiled
+Numba/C++ operators executed with an explicitly labelled sparse API simulator.
+This is not evidence of native Torch 2.5/CUDA compatibility or native speed.
+
+The driver records installed package versions, all torch-sparse shared-library
+SHA256 hashes, saint.py Git blob and SHA256, thread policy and full setup memory.
+An audit must be rerun whenever the recorded execution environment changes.

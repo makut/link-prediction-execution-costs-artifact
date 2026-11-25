@@ -1,0 +1,6 @@
+{
+  "original_queue_sha256": "dda406371cfe9a7d5de8415224930959e970f2b9c948f56d37dca09fffaf68cd",
+  "validate_job_function_body_unchanged": true,
+  "validate_job_AST_sha256": "b331c8c29048a47055327474d12af0409c4843fc8471643bdcdae5613c2aef94",
+  "crossjob_delta": "Remove only supplemental4REPLAY group expectation; all4ONLINE groups andall8arms/all4sweeps still exact. Error text reflects4groups."
+}

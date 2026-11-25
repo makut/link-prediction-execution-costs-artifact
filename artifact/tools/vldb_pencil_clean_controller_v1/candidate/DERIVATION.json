@@ -1,0 +1,51 @@
+{
+  "kind": "new_clean_consumer_instrumentation_candidate_not_scientific_run",
+  "original_packet_sha256": "56954a16a9d45d66783a82961fe82cffe4144aad5b3bef382ce2d05ed724d26c",
+  "original_driver_sha256": "6167f42f3add94e50b12397d5403c17142d5749b50570576329ed597de75e07d",
+  "new_driver_sha256": "4e18bc251ab3bc793004330a89b97bcf9b5f7cb634946e8307b3341c17c92d49",
+  "changed_original_functions": [
+    "verify_audit_receipt",
+    "benchmark",
+    "parser",
+    "PipelineDataset.__getitem__"
+  ],
+  "new_functions": [
+    "measure_query_memory",
+    "memory_measurement_policy",
+    "summarize_worker_memory"
+  ],
+  "all_other_original_function_ASTs_unchanged": true,
+  "unchanged_original_function_AST_sha256": {
+    "verify_cpp_artifacts": "4fc0c6ebe22e456866bdda59528bb0bb0fd9f175372faf8219e7fff7e9a10409",
+    "audit_environment": "d38ae87caca5e0de5161df1346a5837a9fc945792713983a2b1bc0c4d3f12fbd",
+    "verify_payload_binding": "c7a9c32e9d3131ae8dc9b28f27ef74dbdebdce5f260a98870a1bec31804d8a4f",
+    "public_estimate": "0ba0cf93b47f3b6a38cfbd7367f36d88d091569b969c4b55aa8fdb15dd49d9a1",
+    "preflight": "4f7f720638acc09f063581663b1dac923b665125296e012ce9b2b568e805ce8a",
+    "raw_fingerprint": "84169ef02c68ed2dc4b739542b304c5685cc5d3c0e97b565c589a9c10487f8b7",
+    "setup": "883afa5e3e78f3739dcbb010de92ffff332b0fecf56f5d10699fb975441b6c44",
+    "runtime": "f234697a903c10875f9f1370696c1973ed9ba67271936ea7ed6b9d59b3707384",
+    "capture": "99caa3c149e18325df9a8c02a9e67f074861e8652c1081a6c6c43fb6571754f8",
+    "load_bound_trace": "123ec6a8ae8bcf84da5c4925eadef539af51f3831869ea0593e17c93bd56ff67",
+    "compare_trace": "fd5ac35ebfe5c9539c53cda26f413e372904f1da9cf97d6783932d7862b3c8ef",
+    "audit": "a2473ae4d44a85836c658c53e37e621bedb4df411d0c324e22efca113d293620",
+    "source_files": "e10ac96ea55524a9475a5da13ddd711088d8eddadca406ddb33997122ad578cb",
+    "validate_output_paths": "1117f440c5683e08f070061841a298428c0888f56ad86ed05766c9acb03a17a3",
+    "main": "50d3692c246f8f3a87dc5943e0805585a8588257bba5f2f964fd725e011776e8",
+    "PipelineDataset.__init__": "55e09e94a25dae50fd3418af08fb1fe8ac3dc9ab27d157f4ab0f706cb966f96f",
+    "PipelineDataset.__len__": "352ba1ae66b0020a6e695c68d48a08f5e86c05e8a165dac735588cdf74936a67",
+    "PipelineCollator.__init__": "a99ad1767e9f2498289e29b6e9e6a60e5cec852a07a67a46d56fbd2226860659",
+    "PipelineCollator.__call__": "da696c0b7b16bfd2f680e031a20515029d79077b56d946548efe15190600b808"
+  },
+  "runtime_sampler_model_upstream_native_kernels": "whole bytes unchanged; see metadata/FROZEN_PRODUCER_INPUTS.json",
+  "guard_algorithm": "unchanged copied helpers; controller must bind explicit budget below declared podlimit",
+  "execution_authorized": false,
+  "remote_actions": 0,
+  "new_scientific_measurements": 0,
+  "tests": {
+    "combined_cases_passed": 65,
+    "combined_duration_seconds": 6.44,
+    "additional_actual_disabled_tiny_online_pipeline_case_passed": 1,
+    "additional_duration_seconds": 2.71,
+    "scope": "Local CPU tiny fixtures, actual BERT/PENCIL and actual tiny compiled C++/Numba; sparse API simulator explicitly labeled; no target native sparse/CUDA/fullcohort validation"
+  }
+}

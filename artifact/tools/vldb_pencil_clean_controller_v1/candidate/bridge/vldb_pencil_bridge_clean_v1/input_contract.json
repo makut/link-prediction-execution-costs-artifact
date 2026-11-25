@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "scope": "Original frozen strict-clean citation2 SEAL validation input contract; no test data accessed",
+  "n": 2927963,
+  "m": 60703502,
+  "feature_shape": [
+    2927963,
+    128
+  ],
+  "feature_dtype": "float32",
+  "validation_sources": 512,
+  "negatives_per_source": 1000,
+  "validation_subset_seed": 20261124,
+  "eval_extraction_seed": 20261126,
+  "source_quality_plan_sha256": "b9bc7e73869c4b2c828f655a92ae92d9e144f60db0b8f73b153b458efb7b8b97",
+  "payloads": {
+    "graph_starts": {
+      "path": "train_csr/edge_starts.bin",
+      "bytes": 23423704,
+      "sha256": "f06070adc368892f8441ea15e691dce400f9d44b6ec3e6e4505134c276c1072d"
+    },
+    "graph_columns": {
+      "path": "train_csr/edge_ends.bin",
+      "bytes": 242814016,
+      "sha256": "d3d8d1e2016675321c1d3d9ae817d2c6dca4a9dd2d5cdbba3e638ea7201057a4"
+    },
+    "features": {
+      "path": "node_feat.npy",
+      "bytes": 1499117184,
+      "sha256": "ef2a3c1461b5269e26c5a8f475980fc6531c2eeac9e1fd81097c1b145bac2284"
+    },
+    "valid_positive": {
+      "sha256": "8d969a4421583440d3c01b21fbe4e667542ba554c08f6445a70a38d5d82311ec"
+    },
+    "valid_negative": {
+      "sha256": "d94569a6d7347287ee270b3821d42d00b51b4ae3ec4574a087d4b45f7531f63c"
+    }
+  }
+}

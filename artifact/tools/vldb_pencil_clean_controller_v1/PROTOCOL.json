@@ -1,0 +1,94 @@
+{
+  "kind": "NEW_LOCAL_CLEAN_CONSUMER_CONTROLLER_V1_CANDIDATE",
+  "execution_authorized_by_source_preparation": false,
+  "root_admission_required": true,
+  "active_hardware": {
+    "pod": "seal-clean-consumer-20261125-0",
+    "statefulset": "seal-clean-consumer-20261125",
+    "namespace": "m-utushkin",
+    "accelerator": "oneH10080Single",
+    "cpu_request": 27,
+    "memory_request_gib": 205,
+    "pod_memory_limit_gib": 256,
+    "owned_tree_guard_gib": 96
+  },
+  "supersedes_inherited_candidate_text": {
+    "active_hardware_contract": "Inherited H100 label is consistent. Planned A100 pods were unstarted/unschedulable; no A100 scientific data or execution is claimed. Active root-reviewed contract is oneH10080Single27CPU205GiB request/256GiB limit,96GiB owned guard."
+  },
+  "scientific_jobs": 44,
+  "throughput_jobs": 32,
+  "semantic_audits": 9,
+  "all8arms_all4batch_worker_configs": true,
+  "modes": [
+    "online"
+  ],
+  "batch_sizes": [
+    128,
+    512
+  ],
+  "workers": [
+    0,
+    1
+  ],
+  "precision": "bf16",
+  "queries": 1024,
+  "warmup_full_sweeps": 1,
+  "measured_full_sweeps": 3,
+  "query_memory": "disabled",
+  "max_total_hours_including_phases": 4,
+  "finalization_reserve_seconds": 600,
+  "per_scientific_phase_timeout_seconds": 1800,
+  "SIGTERM": {
+    "scientific_work_stops": true,
+    "owned_child_cleanup_seconds": 10,
+    "first_stop_finalization_budget_seconds": 110,
+    "pod_grace_seconds": 120,
+    "subsequent_signals_not_ignored": true,
+    "persistence_child_deadline_seconds": 60,
+    "outer_self_exit_claim": "UNKNOWN",
+    "first_stop_during_local_finalization": "record stop+110s deadline and finish only existing local archive/one publisher; no active child exists, no repack, repeated stops raise"
+  },
+  "resource_bounds": {
+    "stream_hash_buffer_bytes": 4194304,
+    "stdout_log_max_bytes": 4194304,
+    "guard_log_max_bytes": 8388608,
+    "whole_output_including_caches_max_bytes": 536870912,
+    "coarse_evidence_archive_max_bytes": 402653184,
+    "scratch_reserve_bytes": 1073741824,
+    "no_truncation": true
+  },
+  "input_admission": {
+    "publicC2_whole_numeric_files": 19,
+    "numeric_bytes": 5593015516,
+    "frozen_validation_sources": 512,
+    "negatives_per_source": 1000,
+    "full_payload_sha_required": true,
+    "data_fetch": false,
+    "legacy_recovery_or_old_PID_gate": false,
+    "native_CPP_build": "fresh local pinned source build"
+  },
+  "persistence": {
+    "target": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/pencil_clean_consumer_v1_20261125.tgz",
+    "file_nodes": 1,
+    "file_writes": 1,
+    "file_overwrite": false,
+    "readback_full_SHA": true,
+    "attribute": "lpp_clean_consumer_persistence_v1",
+    "attribute_writes": 1,
+    "attribute_max_bytes": 32768,
+    "attribute_readback": "exact canonical JSON and SHA, outside tar hash; root collector binds attribute JSON SHA",
+    "outer_final_PID_exit": "UNKNOWN"
+  },
+  "forbidden_actions": [
+    "KubernetesAPI",
+    "selfrelease",
+    "pod restart",
+    "login/SSO",
+    "environment installation",
+    "wheel writes",
+    "data fetching",
+    "second YT node or file overwrite"
+  ],
+  "next_step": "independent source/plan/tests review; root may later admit actual execution after stop intent and availability are resolved",
+  "future_final_auditor": "separate new44job/disabledworkerNone auditor after controller freeze; oldV3core unchanged"
+}

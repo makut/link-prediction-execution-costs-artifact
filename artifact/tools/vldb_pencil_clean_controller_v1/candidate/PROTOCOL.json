@@ -1,0 +1,77 @@
+{
+  "kind": "NEW_CLEAN_CONSUMER_CONTROL_CANDIDATE_NO_EXECUTION",
+  "selection_fixed_before_any_new_clean_results": true,
+  "scientific_jobs": 44,
+  "semantic_audits": 9,
+  "throughput_jobs": 32,
+  "modes": [
+    "online"
+  ],
+  "arms": [
+    "torch_sparse_public",
+    "torch_sparse_direct",
+    "compiled_scan_int64",
+    "compiled_pairwise_int64",
+    "compiled_scan_int32",
+    "compiled_pairwise_int32",
+    "cpp_full_clear",
+    "cpp_touched_reset"
+  ],
+  "benchmark_precision": "bf16",
+  "audit_precisions": [
+    "fp32",
+    "bf16"
+  ],
+  "batches": [
+    128,
+    512
+  ],
+  "workers": [
+    0,
+    1
+  ],
+  "queries_per_sweep": 1024,
+  "warmup_full_sweeps": 1,
+  "measured_full_sweeps": 3,
+  "query_memory": "disabled",
+  "model_seed": 42,
+  "eval_extraction_seed": 20261126,
+  "GPU_target": "one visible H100 per job",
+  "required_guard": {
+    "owned_tree_budget_gib": "explicit plan parameter, fixed for all jobs",
+    "source": "unchanged third_party/memory_guard_v3.py plus unchanged reviewed_supervision_v3.py",
+    "policy": "unchanged stable_pss_individual_rss_cgroup90_v3 sampled2s; budget explicitly chosen to fit pod memory limit",
+    "per_job_timeout_seconds": 1800,
+    "old_failed_runs_or_pods_reused": false,
+    "hardware_example": {
+      "GPU": "oneA10080Single",
+      "CPU_request": 17,
+      "memory_request_gib": 98,
+      "memory_limit_gib": 122,
+      "owned_tree_budget_gib": 96,
+      "status": "candidate example; root reviews documented validrow and availability; no deployment"
+    }
+  },
+  "memory_scope": {
+    "inline_per_query_memory": "disabled; no memory() in PipelineDataset __getitem__",
+    "worker_pss_and_rss": "None/unobserved, no fakezero",
+    "parent_memory": "actual before/after each sweep outside wall; not truepeak",
+    "external_owned_tree_guard": "required and unchanged; separate evidence not injectedbydriver"
+  },
+  "fresh_semantic_admission": "new tiny/real traces; all8arms eval/train raw slots/stored values/wrapped/collated inputs and FP32/BF16 model gates; matching fresh source+memorymode audit before each benchmark",
+  "scores": "complete1024ordered scores exact in all8arms/all4sweeps within each of4batch/workers groups; no cross-shape pooling",
+  "source_changes": "only newcopy pencil_bridge.py instrumentation and explicitCLI/receipt schema; allsampler/runtime/model/upstream/C++ kernels unchanged",
+  "interpretation": [
+    "randomfrozenmodel inference systems control; no quality/training/SOTA result",
+    "residual ofoldinstrumentedrun is not purememorytime or causal effect",
+    "newcontrol is separate, no subtraction/correction ofoldwall times",
+    "native setup and fullpayloadhashing remainoutside sweeptimers",
+    "allnative representationsresident; no memorysavingclaim",
+    "no posthoc configuration or fastestarm selection; all4configs/all8arms required",
+    "A different host or accelerator forbids a causal V3-to-new wall-time ratio; new measurements compare arms only within the new fixed hardware matrix."
+  ],
+  "execution_authorized": false,
+  "remote_actions": 0,
+  "persistence_policy": "rootonly; atmostonecoarsefinalarchive; no new perjobYT nodes; wheels readonly",
+  "original_frozen_sources_modified": false
+}
