@@ -1,0 +1,25 @@
+{
+  "status": "verified_persisted_failure_diagnostic_only",
+  "archive_sha256": "2fe86c308b98a1de4f2eb6feab7ba0af02ae86ec2217b301400f26b3bfde15ad",
+  "archive_bytes": 41358,
+  "all27_member_hashes_and_extracted_bytes_verified": true,
+  "frozen_v2_plan_source_and_exact48_job_contract": "pass",
+  "scientific_success": false,
+  "completed_jobs": 0,
+  "failure": {
+    "type": "RuntimeError",
+    "message": "operator torchvision::nms does not exist"
+  },
+  "failed_phase": "tiny_capture",
+  "failure_before_native_setup": true,
+  "torch": "2.5.0+cu121",
+  "installed_torchvision": "0.17.2+cu121",
+  "guard_abort_reason": null,
+  "timed_out": false,
+  "returncode": 2,
+  "phase_owned_tree_quiescent": true,
+  "outside_controller_terminal": "unavailable_after_original_pod_deleted; no clean final controller/lock inference",
+  "base_post_environment": "not reached; no before==after claim",
+  "scientific_throughput_quality_result": null,
+  "repair_candidate": "NEW bridge V2 + recovery queue V3: pinned graph-only optional vision policy before BERT imports; no base/upstream/Torch mutation"
+}

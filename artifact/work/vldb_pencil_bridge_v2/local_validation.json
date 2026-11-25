@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "bridge_tests": 32,
+  "bridge_skipped": 0,
+  "bridge_duration_seconds": 3.336,
+  "queue_tests": 48,
+  "queue_duration_seconds": 0.87,
+  "policy_unit_tests": 13,
+  "actual_poisoned_vision_BertEncoder_regression": "pass",
+  "local_native_torch_sparse": "simulated sparse API; actual BERT/wrapper/Numba/C++ executed",
+  "remote_actions_by_author": 0
+}

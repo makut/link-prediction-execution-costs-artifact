@@ -1,0 +1,32 @@
+{
+  "upstream": {
+    "repository": "https://github.com/rusty1s/pytorch_sparse",
+    "tag": "0.6.18",
+    "commit": "7d22892fb47626d2c5b0171769d44bdc8edd606c",
+    "license": "MIT",
+    "cpu_source_git_blob": "21a13be8067e66ef4d6f9ae57f98407332f31929",
+    "wrapper_git_blob": "440455853e0309b00376cbe9ad25d7226cfa5e0e"
+  },
+  "validation": {
+    "local_harness_tests": 22,
+    "peer_review": "PASS /root/project_audit read-only 2026-11-25",
+    "actual_native_extension": "NOT RUN locally; package absent. Mandatory automatic native admission before full graph."
+  },
+  "not_claimed": [
+    "Native runtime measurements",
+    "Native C++ correctness smoke on local Mac",
+    "Model quality superiority",
+    "Training speedup or time-to-quality",
+    "Original PENCIL paper wheel/build version"
+  ],
+  "pencil_source_audit_sha256": "4712a3923cacc16019443cc13cbc06359daad58e85c5bc1742d218938ef5f4df",
+  "upstream_license_sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486",
+  "exact_cpu_source": {
+    "bytes": 1459,
+    "git_blob": "21a13be8067e66ef4d6f9ae57f98407332f31929",
+    "sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c",
+    "local_cached_bytes": 1460,
+    "local_cached_sha256": "0339c51d1d928efeb2f85ec9c66862af6d39178239c8cc042a3c2491f05351dc",
+    "restoration": "Removed exactly one final newline from cached text; resulting bytes match pinned upstream Git blob."
+  }
+}

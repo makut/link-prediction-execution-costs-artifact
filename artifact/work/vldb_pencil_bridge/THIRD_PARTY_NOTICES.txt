@@ -1,0 +1,25 @@
+PENCIL
+  Repository: https://github.com/quang-truong/pencil
+  Commit: 2d32e29dbed533288d9d758138e07547a0a7d8a9
+  Full unchanged tracked source is included in upstream_pencil/.
+  Apache License 2.0: upstream_pencil/LICENSE.
+  Existing source copyright notices are preserved, including Meta notices.
+  No upstream NOTICE file exists at the pinned commit.
+  Every tracked file is verified by upstream_manifest.json before runtime use.
+
+Corrected native control
+  corrected_native/ is an exact subset of the independently reviewed standalone
+  control source bundle; COPIED_CORE_MANIFEST.json records every copied SHA256.
+  The control is adapted from the torch-sparse 0.6.18 saint_cpu.cpp operator.
+  MIT license: corrected_native/third_party/pytorch_sparse_LICENSE.
+  Original upstream source and exact source pin are preserved in third_party/.
+
+BERT configuration only
+  bert_config/config.json originates from google-bert/bert-base-uncased.
+  No pretrained weights are included or downloaded.
+  bert_config/source.json records the primary URL, SHA256, model-card URL/SHA256
+  and verified Apache-2.0 declaration. The PENCIL Apache-2.0 license text is also
+  the standard full Apache-2.0 text for reference.
+
+No new license is assigned to the user's new bridge code by this package.
+Publication/reuse rights for that code remain an author decision.

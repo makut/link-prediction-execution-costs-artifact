@@ -1,0 +1,33 @@
+{
+  "status": "READY_FOR_CONTROLLED_NATIVE_SMOKE",
+  "local_tests": 22,
+  "peer_review": "PASS",
+  "actual_extension_local": "NOT RUN; package absent; automatically mandatory before conversion",
+  "files": [
+    {
+      "path": "external_operator_benchmark.py",
+      "bytes": 29476,
+      "sha256": "525e88c904fd03e10fc617853c8d733e88af90487cbbdd9122ced97962df112c"
+    },
+    {
+      "path": "test_external_operator_benchmark.py",
+      "bytes": 14756,
+      "sha256": "1eb4d44760ae142ca3a962c55301a4bb1ca53815d752110274e57e2cd487812a"
+    },
+    {
+      "path": "external_operator_v1_README.txt",
+      "bytes": 4840,
+      "sha256": "4c8d3e73aae6831cbce7b5b25a43ff4d122e256b988b0effeaa542be480aa1f7"
+    },
+    {
+      "path": "external_operator_v1_pin.json",
+      "bytes": 803,
+      "sha256": "5bcb751d4f1bfab317a7a5726e0c7344b09a712a32be23197e2ffcae3574d921"
+    }
+  ],
+  "bundle": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/outputs/seal_revision_20261124/preliminary/external_operator_v1_sources.tgz",
+    "bytes": 14918,
+    "sha256": "b4bb7b21f2995d6d3d564a94e9213760c1ca69785a3544c5bad434c3b8fc3d59"
+  }
+}

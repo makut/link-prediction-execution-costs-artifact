@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "status": "pass",
+  "tests": 31,
+  "source_sha256": {
+    "pencil_queue_v2.py": "f38d75eccc9ee14209fa148fa8f1eac9f5a2f2ca4327caef564cb797266ae8ca",
+    "runtime_probe_v2.py": "d0727c28d0339fc8fc0dbd531f331a888b7066437f7e46e2bcf0e7e667714b78",
+    "test_pencil_queue_v2.py": "0bb13318e5ae737fed91c4d4b474073af4353db471c8c537b6ba2da3226a8ccc"
+  },
+  "python310_syntax": "PASS",
+  "python": "3.12.10 (main, May 20 2025, 17:57:11) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "peer_review": "Independent read-only PASS; independently31testsPASS including actual nested no-pip venv route/shadow test",
+  "scope": "Local tests/synthetic full protocol plus actual local nested venvs with dummy modules. No GPU/Kubernetes/YT/deployment/remote action. Frozen V1 trees and embedded bridge algorithms remain unchanged.",
+  "version2_environment_fix": "Plain existing base paths in .pth after newvenv creation, before offline pip; bound route/cfg/base origins/native binaries; base and isolated pre/post snapshots; no sitecustomize/base pip edits.",
+  "scientific_protocol_jobs": 48,
+  "same_matched_wheel_archive_sha256": "885ba0ca7b68bee01ab01c134ffa97ba2120509c7def677d1e8d0e7f7d92ee30"
+}

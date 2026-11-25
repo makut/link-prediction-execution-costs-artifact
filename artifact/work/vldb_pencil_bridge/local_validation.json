@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "test_count": 32,
+  "elapsed_seconds": 3.426,
+  "command": "WANDB_MODE=disabled python -m unittest discover -s . -p test_*.py -q",
+  "log_sha256": "a7d243cb93a0dcb225de9b47491edcbd7106a1c70f9536d001dd5c8ccdf55701",
+  "source_files": {
+    "bridge_core.py": "72cbda711e0b53402f2117dbf41a39656cf7300428b9450c8fbf970f97c1e5ae",
+    "pencil_runtime.py": "0e0028b148d47338333f83286e3eb492076526a0cd410f5c622eee0872f9df7b",
+    "pencil_bridge.py": "c777021e421fbe0e8c1a11cb06df43b264a6aa156f4ca89c7b49e4edf10a6b11",
+    "test_bridge_core.py": "9685208b1ffd4775fd49dd2467aec86d89427d209d0ac3cef198ca474c27de95",
+    "test_pencil_adapter.py": "3c611c644381e06f3792ac486c917977f18caf62b94996561c869c358caf831b",
+    "input_contract.json": "9eb90a67ca5b2e3d5dcbcb80421c32e53278e5714f7fd15a9d076d50fca6b0e6",
+    "upstream_manifest.json": "6020d2bc7c2290cf251e751b97a841202c1904a3dd4e89f5521abda876e0598e",
+    "bert_config/config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+    "bert_config/source.json": "317a1a6b801ad377cd1bdf399d29175e71727098ae85a8e54f8538d458e30e03"
+  },
+  "python310_syntax": "pass: five bridge/test modules",
+  "python": "3.12.10 (main, May 20 2025, 17:57:11) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "software_versions": {
+    "numpy": "1.26.4",
+    "numba": "0.65.0",
+    "scipy": "1.15.3",
+    "torch": "2.9.0",
+    "torch-geometric": "2.7.0",
+    "transformers": "4.46.2",
+    "wandb": "0.18.7",
+    "rich": "14.2.0",
+    "tqdm": "4.67.1"
+  },
+  "actual_native_torch_sparse_execution": false,
+  "scope": "Actual pinned PENCIL dataset/mask/wrapper/collator/tiny BERT, Numba kernels and compiled C++ controls execute. Local sparse API is an independent oracle simulator because torch-sparse is absent. Native destination admission remains required. No real cohort/performance/quality result.",
+  "peer_review": {
+    "status": "pass",
+    "kind": "independent read-only static review",
+    "reviewer": "project_audit agent",
+    "closed_findings": [
+      "native/software/thread audit receipt binding",
+      "batch/worker/seed/tolerance binding",
+      "immutable source/input/trace output protection before any status write",
+      "C++ reviewed adapter/source/build receipt binding",
+      "persistent worker cleanup",
+      "instrumented timing and retained-memory scope disclosure"
+    ]
+  }
+}

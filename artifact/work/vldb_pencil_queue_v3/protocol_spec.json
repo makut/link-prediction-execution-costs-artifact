@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "name": "PENCIL bridge bounded recovery queue v3",
+  "cohort": {
+    "split": "frozen citation2 validation",
+    "positive_queries": 512,
+    "negative_rule": "candidate index0 from each original1000-negative source group after full-group verification",
+    "negative_queries": 512,
+    "total_queries": 1024,
+    "test_data": false
+  },
+  "scientific_jobs": 48,
+  "job_kinds": {
+    "capture": 2,
+    "audit": 9,
+    "preflight": 1,
+    "benchmark": 36
+  },
+  "native_tiny_cases": 7,
+  "real_semantic_audits": {
+    "count": 8,
+    "precisions": [
+      "fp32",
+      "bf16"
+    ],
+    "batches": [
+      128,
+      512
+    ],
+    "declared_workers": [
+      0,
+      1
+    ],
+    "arms": [
+      "torch_sparse_public",
+      "torch_sparse_direct",
+      "compiled_scan_int64",
+      "compiled_pairwise_int64",
+      "compiled_scan_int32",
+      "compiled_pairwise_int32",
+      "cpp_full_clear",
+      "cpp_touched_reset"
+    ],
+    "wrappers": [
+      "eval",
+      "training native randperm"
+    ],
+    "model": "unchanged pinned BERTLP3x512,8heads,FFN2048,adjacency_row,features128early; random frozen seed42",
+    "logit_max_abs_tolerance": 0,
+    "worker_note": "Semantic audit executes sequentially in main process; declared worker setting is bound for subsequent measured loader admission."
+  },
+  "primary_throughput": {
+    "mode": "online",
+    "precision": "bf16",
+    "batches": [
+      128,
+      512
+    ],
+    "workers": [
+      0,
+      1
+    ],
+    "arms": [
+      "torch_sparse_public",
+      "torch_sparse_direct",
+      "compiled_scan_int64",
+      "compiled_pairwise_int64",
+      "compiled_scan_int32",
+      "compiled_pairwise_int32",
+      "cpp_full_clear",
+      "cpp_touched_reset"
+    ],
+    "jobs": 32,
+    "warmup_sweeps": 1,
+    "timed_repetitions": 3
+  },
+  "supplemental_throughput": {
+    "mode": "replay",
+    "precision": "bf16",
+    "batch": 128,
+    "workers": 0,
+    "arms": [
+      "torch_sparse_public",
+      "torch_sparse_direct",
+      "cpp_touched_reset",
+      "compiled_pairwise_int32"
+    ],
+    "jobs": 4,
+    "warmup_sweeps": 1,
+    "timed_repetitions": 3
+  },
+  "model_score_gate": "Ordered complete1024-score fingerprint must match all8arms/four sweeps within each primary configuration and all4arms/four sweeps within supplemental configuration; do not pool shapes/precisions/workers/modes. Any disagreement makes logical success false.",
+  "admission": [
+    "Explicit root-pinned RECOVERY_ADMISSION.json with original immutable pipeline/native/small failed PENCIL archive identities and unchanged scientific failure outcome",
+    "Root confirmed original pod absent and old StatefulSet replicas0; actual fresh replacement hostname matches receipt",
+    "No active observed native/pipeline/main/model job and no foreign original GPU/PIPELINE/ADDITIONAL timing lock",
+    "Atomic exclusive ADDITIONAL_TIMING_RUNNING.lock followed by full receipt/hostname/process/lock recheck"
+  ],
+  "environment": "V3 preserves V2 explicit plainpath .pth after venv create and before offline pip; existing before-probe base sites only; isolated site priority retained; base numerical/native origins and pre/post snapshots exact; no base pip/sitecustomize.",
+  "budgets": {
+    "total_hours_including_wait": 12,
+    "maximum_wait_hours": 8,
+    "per_job_seconds": 1800,
+    "external_memory_guard_gib": 180,
+    "sample_period_seconds": 2,
+    "guard_policy": "unchanged reviewed V3 stable complete tree PSS, individual RSS lower bound, unknown-own-PSS cgroup90 safety threshold; never sum RSS as unique memory",
+    "final_persistence_reserve_seconds": 1200,
+    "final_archive_mib": 128,
+    "raw_archive_payload_mib": 120,
+    "single_whole_rawfile_mib": 32
+  },
+  "scope": "Instrumented systems throughput includes S verification, per-query smaps/memory, IPC and model score copy. All native global representations remain resident; no memory saving, training, HPO, MRR, SOTA, or quality claim.",
+  "persistence": {
+    "yt_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/pencil_bridge_v3_20261125.tgz",
+    "new_file_nodes": 1,
+    "coarse_final_archive_only": true,
+    "readback_sha256_verified": true,
+    "include": "All whole raw outputs including verbose audit/batch fingerprints, guarded exits/logs, sampled guard logs, complete tiny/real cohort trace and protocol/source/binary hashes. No truncation or selective dropping.",
+    "exclude": "Source/wheel YT objects, full graph payloads, environment trees, model checkpoints, training or quality outputs."
+  },
+  "ready_for_root_review_only": true,
+  "no_remote_deploy_or_launch_by_authoring_agent": true,
+  "version2_environment_fix": {
+    "base_prefix": "/opt/python",
+    "python_base_prefix": "/usr",
+    "new_venv": "pencil_env_v3",
+    "route_file": "lib/python3.10/site-packages/pencil_base_site_v3.pth",
+    "code_executed_by_pth": false,
+    "route_before_offline_pip": true,
+    "pre_and_post_base_and_isolated_probes": true,
+    "version1_preserved": true,
+    "version2_preserved": true
+  },
+  "version3_compatibility": {
+    "policy": "graph_only_transformers_optional_vision_v2",
+    "transformers": "4.46.2",
+    "import_utils_sha256": "9d7f63effbd7c8dcfe69e7f34cae0d164db9cca2d5f4d887405ae0f3e2ba455a",
+    "unused_torchvision_discovery_disabled_before_BERT_import": true,
+    "upstream_files_changed": 0,
+    "base_packages_changed": 0,
+    "fake_operators_registered": 0,
+    "all_job_policy_receipts_equal_isolated_probe": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "baseline_actual_transformers_import_reproduces_exact_nms_failure": true,
+  "fixed_actual_transformers_bert_forward": {
+    "status": "pass",
+    "actual_transformers_bert_forward_shape": [
+      2,
+      7,
+      32
+    ],
+    "receipt": {
+      "version": "graph_only_transformers_optional_vision_v2",
+      "transformers_version": "4.46.2",
+      "import_utils_origin": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_pencil_bridge/.venv/lib/python3.12/site-packages/transformers/utils/import_utils.py",
+      "import_utils_sha256": "9d7f63effbd7c8dcfe69e7f34cae0d164db9cca2d5f4d887405ae0f3e2ba455a",
+      "policy_source_sha256": "1e3a247eee760a69dbe65ffaa15b0948d5a88068462779555edf83a77902d28f",
+      "installed_torchvision_version": "0.17.2+cu121",
+      "torchvision_available_before": true,
+      "torchvision_available_for_graph_worker": false,
+      "torchvision_imported": false,
+      "upstream_source_modified": false,
+      "base_package_modified": false,
+      "fake_operator_registered": false,
+      "scope": "Only unused optional vision discovery in pinned Transformers; graph sampler, sparse operator, BERT parameters/forward, precision and input tensors unchanged."
+    },
+    "torch": "2.9.0"
+  },
+  "scope": "Local CPU Torch2.9 regression with actual Transformers4.46.2 and intentionally failing optional torchvision; not actual Linux native Torch2.5 sparse admission."
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/config.json",
+  "sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+  "bytes": 570,
+  "usage": "Config only; no pretrained weights",
+  "model_card_url": "https://huggingface.co/google-bert/bert-base-uncased/raw/main/README.md",
+  "model_card_sha256": "9187b6018ea0010d884e78e098e328faa1b88b301570d0cce606bb35e4067e17",
+  "license": "Apache-2.0",
+  "license_evidence": "Model card YAML: license: apache-2.0"
+}

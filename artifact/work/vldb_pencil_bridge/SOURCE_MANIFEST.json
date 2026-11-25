@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "kind": "pencil_bridge_v1_source_manifest",
+  "scope": "Source-only PENCIL consumer bridge, no datasets/traces/results/checkpoints/binaries/caches/venv/git metadata. Manifest excludes itself.",
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 11671,
+      "sha256": "5105c33f00af906f2a51098d303002e11f7fcffc8da428363f7da29bb9ce13cd"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 1348,
+      "sha256": "5d145de2273a2f9b8d2ad2c7658de76adf39a2d243a5d2055e0d478cf6d9fe96"
+    },
+    {
+      "path": "bert_config/config.json",
+      "bytes": 570,
+      "sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20"
+    },
+    {
+      "path": "bert_config/source.json",
+      "bytes": 513,
+      "sha256": "317a1a6b801ad377cd1bdf399d29175e71727098ae85a8e54f8538d458e30e03"
+    },
+    {
+      "path": "bridge_core.py",
+      "bytes": 22551,
+      "sha256": "72cbda711e0b53402f2117dbf41a39656cf7300428b9450c8fbf970f97c1e5ae"
+    },
+    {
+      "path": "constraints-linux-cp310.txt",
+      "bytes": 791,
+      "sha256": "d5b8562c8742dfee0e10aff7f59806bc9910fef12a7eece27f008f1311ea1232"
+    },
+    {
+      "path": "corrected_native/COPIED_CORE_MANIFEST.json",
+      "bytes": 1507,
+      "sha256": "5ca2ef855f02915dcfb02a96d336c2c7518314518511b81a90ae7b8f8e5fa61c"
+    },
+    {
+      "path": "corrected_native/build_native_v1.py",
+      "bytes": 2341,
+      "sha256": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6"
+    },
+    {
+      "path": "corrected_native/fixtures_v1.py",
+      "bytes": 1254,
+      "sha256": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35"
+    },
+    {
+      "path": "corrected_native/native_adapter_v1.py",
+      "bytes": 8499,
+      "sha256": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549"
+    },
+    {
+      "path": "corrected_native/native_assoc_v1.cpp",
+      "bytes": 7987,
+      "sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20"
+    },
+    {
+      "path": "corrected_native/test_native_v1.py",
+      "bytes": 5060,
+      "sha256": "6f8337ef0b58908ba9cb02cc2d99dc49d495740d433315c27d0e3e3ae71f185f"
+    },
+    {
+      "path": "corrected_native/third_party/pytorch_sparse_LICENSE",
+      "bytes": 1086,
+      "sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486"
+    },
+    {
+      "path": "corrected_native/third_party/saint_cpu.cpp.upstream.txt",
+      "bytes": 1459,
+      "sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c"
+    },
+    {
+      "path": "corrected_native/third_party/upstream_pin.json",
+      "bytes": 1437,
+      "sha256": "d2a5e21560926f462155b95e4e2d51056094298aa1ced75d4856c663726c3943"
+    },
+    {
+      "path": "environment-target.txt",
+      "bytes": 940,
+      "sha256": "95d8d160cd87728e23a1f54d16c8ec520ca02da80127853930c3f29b3d52ebcb"
+    },
+    {
+      "path": "input_contract.json",
+      "bytes": 1252,
+      "sha256": "9eb90a67ca5b2e3d5dcbcb80421c32e53278e5714f7fd15a9d076d50fca6b0e6"
+    },
+    {
+      "path": "local_validation.json",
+      "bytes": 2436,
+      "sha256": "d56ce6b6f2ebe061e0e9972ee63c508ee7ca12358b1e47f2ed6c52e84937c8a4"
+    },
+    {
+      "path": "pencil_bridge.py",
+      "bytes": 40828,
+      "sha256": "c777021e421fbe0e8c1a11cb06df43b264a6aa156f4ca89c7b49e4edf10a6b11"
+    },
+    {
+      "path": "pencil_runtime.py",
+      "bytes": 22783,
+      "sha256": "0e0028b148d47338333f83286e3eb492076526a0cd410f5c622eee0872f9df7b"
+    },
+    {
+      "path": "requirements-extras.txt",
+      "bytes": 213,
+      "sha256": "5b77774b324b1391b259a5209ee442f0dfd8220fe991c887c681632c93ac039d"
+    },
+    {
+      "path": "test_bridge_core.py",
+      "bytes": 12395,
+      "sha256": "9685208b1ffd4775fd49dd2467aec86d89427d209d0ac3cef198ca474c27de95"
+    },
+    {
+      "path": "test_pencil_adapter.py",
+      "bytes": 18745,
+      "sha256": "3c611c644381e06f3792ac486c917977f18caf62b94996561c869c358caf831b"
+    },
+    {
+      "path": "upstream_manifest.json",
+      "bytes": 11974,
+      "sha256": "6020d2bc7c2290cf251e751b97a841202c1904a3dd4e89f5521abda876e0598e"
+    },
+    {
+      "path": "upstream_pencil/.gitignore",
+      "bytes": 248,
+      "sha256": "0dd8ba1693824f9418a0d424a82511a06f694c1182f03760ff17daa69f98ca69"
+    },
+    {
+      "path": "upstream_pencil/.project-root",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream_pencil/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "upstream_pencil/README.md",
+      "bytes": 2674,
+      "sha256": "81031dc632c77928b96f8f9eef21ca67d33e8157d5ad31a11c21213baa44faf5"
+    },
+    {
+      "path": "upstream_pencil/args/official/citeseer_bert.yaml",
+      "bytes": 1080,
+      "sha256": "957ae24e13177ad14df85c46bdf2ea643904cb9fecf0225a1dad4c23b90aec0d"
+    },
+    {
+      "path": "upstream_pencil/args/official/cora_bert.yaml",
+      "bytes": 1075,
+      "sha256": "c21d7af21131b8317278b7eba4f07313603eb06a31ccbe76046e8cccfd9077e6"
+    },
+    {
+      "path": "upstream_pencil/args/official/heart_citeseer_bert.yaml",
+      "bytes": 1086,
+      "sha256": "ccaebf889118e4c3f4f3b7a4fc46a145b469b115328c5df958bd74728ee35c07"
+    },
+    {
+      "path": "upstream_pencil/args/official/heart_cora_bert.yaml",
+      "bytes": 1081,
+      "sha256": "e08558cb0cd2c3b26cb89808bd0d65bbc5ae793cef65a5d7c8716836ea8142eb"
+    },
+    {
+      "path": "upstream_pencil/args/official/heart_ogbl_citation2_bert.yaml",
+      "bytes": 1121,
+      "sha256": "33749d66c6d066459913c506dac0cd79919634554b9cc9a94168e557fc18d0d7"
+    },
+    {
+      "path": "upstream_pencil/args/official/heart_ogbl_collab_bert.yaml",
+      "bytes": 1119,
+      "sha256": "e488a5273dd9545b0adff0e9b665ee7e672a2da891daf40ac6c1f8856177de08"
+    },
+    {
+      "path": "upstream_pencil/args/official/heart_ogbl_ddi_bert.yaml",
+      "bytes": 1123,
+      "sha256": "34c7de69b1b46c07804c4ed33fbf8f058770597d97a59e762d37978e3d1f857f"
+    },
+    {
+      "path": "upstream_pencil/args/official/heart_ogbl_ppa_bert.yaml",
+      "bytes": 1118,
+      "sha256": "4096647a5b742e5abbb47ae6dece2d66e4243542d52fcabca40fdccb29a6c2ab"
+    },
+    {
+      "path": "upstream_pencil/args/official/heart_pubmed_bert.yaml",
+      "bytes": 1078,
+      "sha256": "150f7d1b2a486bdf9a9a28c72d8bb3422829a680e3fab282fa572878f0841ad5"
+    },
+    {
+      "path": "upstream_pencil/args/official/heuristic_bert.yaml",
+      "bytes": 1126,
+      "sha256": "74fb69f08ab39cd8b80d64df17f6bc92390c9682c1cb169c66dd34ba22ab1f1d"
+    },
+    {
+      "path": "upstream_pencil/args/official/heuristic_gat.yaml",
+      "bytes": 910,
+      "sha256": "4826bff0604c2899a26902499d6c409062b286cbd6491e7f7856cb2614ce2b2c"
+    },
+    {
+      "path": "upstream_pencil/args/official/heuristic_gcn.yaml",
+      "bytes": 910,
+      "sha256": "fc0df8489768bd0b75bc3dd2f4411ea08646a48e703c57c09fc027844e0906b5"
+    },
+    {
+      "path": "upstream_pencil/args/official/heuristic_sage.yaml",
+      "bytes": 912,
+      "sha256": "ac6adaf6c445a82bc4ca2e86012e40a83373da6cea9ca15d2ff78a15494f7cab"
+    },
+    {
+      "path": "upstream_pencil/args/official/ogbl_citation2_bert.yaml",
+      "bytes": 1121,
+      "sha256": "33749d66c6d066459913c506dac0cd79919634554b9cc9a94168e557fc18d0d7"
+    },
+    {
+      "path": "upstream_pencil/args/official/ogbl_collab_bert.yaml",
+      "bytes": 1119,
+      "sha256": "e488a5273dd9545b0adff0e9b665ee7e672a2da891daf40ac6c1f8856177de08"
+    },
+    {
+      "path": "upstream_pencil/args/official/ogbl_ppa_bert.yaml",
+      "bytes": 1118,
+      "sha256": "4096647a5b742e5abbb47ae6dece2d66e4243542d52fcabca40fdccb29a6c2ab"
+    },
+    {
+      "path": "upstream_pencil/args/official/pubmed_bert.yaml",
+      "bytes": 1077,
+      "sha256": "ace2e651d018737d75c08fca77dc6776ee699e424772699315bf327c449709a4"
+    },
+    {
+      "path": "upstream_pencil/conftest.py",
+      "bytes": 758,
+      "sha256": "c0feca51d11f31697647b4f91480d197a009e8d045d38b0b49d0083c0cde12fd"
+    },
+    {
+      "path": "upstream_pencil/datasets/__init__.py",
+      "bytes": 2341,
+      "sha256": "37a33dc93e47a0f972e16696941333c0c67aeda1f83977ac51c9405d1b2b4a83"
+    },
+    {
+      "path": "upstream_pencil/datasets/collator.py",
+      "bytes": 12389,
+      "sha256": "14e9750aab33462d762a49d76a3a38cefcbb83e4bc8cac881c8bd17da4ced64b"
+    },
+    {
+      "path": "upstream_pencil/datasets/dataset_map.py",
+      "bytes": 49525,
+      "sha256": "d77f06a5efd62158c5655abe648f24fe93856f8929fbab8fdbd2ed6297aae22f"
+    },
+    {
+      "path": "upstream_pencil/datasets/dataset_wrapper.py",
+      "bytes": 33782,
+      "sha256": "138bcf848cddd1276daa7515bfe7cf1d2d6058d777239b36e18132c0b7d61843"
+    },
+    {
+      "path": "upstream_pencil/datasets/gnn_collator.py",
+      "bytes": 3374,
+      "sha256": "a1841a1a964b9305a6e36697b154f9d7df53d72fbc81d55ff7d1db947fa2fb3a"
+    },
+    {
+      "path": "upstream_pencil/datasets/heuristics.py",
+      "bytes": 11386,
+      "sha256": "45d438701cbd92454a6057f55f7c35f87aed54fc380150abd357f707b568b585"
+    },
+    {
+      "path": "upstream_pencil/datasets/ogbl/__init__.py",
+      "bytes": 35,
+      "sha256": "7aceb499a9d8dc5065907259ccbe82820ae3f9173a4f3ecb20343804b579c48b"
+    },
+    {
+      "path": "upstream_pencil/datasets/ogbl/dataset.py",
+      "bytes": 31451,
+      "sha256": "aef51de4e3cb887efd99cae566fd3507fe2ef68626e15f3326b6701e06ecf348"
+    },
+    {
+      "path": "upstream_pencil/datasets/planetoid/__init__.py",
+      "bytes": 41,
+      "sha256": "57d26b387a38fc4599cf267ee2be8b1c8df3cb3a43e78feaeb961f01e4faa929"
+    },
+    {
+      "path": "upstream_pencil/datasets/planetoid/dataset.py",
+      "bytes": 9520,
+      "sha256": "fec9ed57372a40e06fdeef3c70e2e7449a2d69a0d798b68117cd1dc25e3e8f98"
+    },
+    {
+      "path": "upstream_pencil/datasets/prosqa/__init__.py",
+      "bytes": 266,
+      "sha256": "a5211cf64d5840d65b981becc7aa2b373546a8b29406368e3ba88ea94c836a19"
+    },
+    {
+      "path": "upstream_pencil/datasets/prosqa/dataset.py",
+      "bytes": 22790,
+      "sha256": "80bd7a6e1d70013c93f3716d4c00a0c351c940c9bb6bcf745da4d37b465d9939"
+    },
+    {
+      "path": "upstream_pencil/datasets/prosqa/pretrain.py",
+      "bytes": 9856,
+      "sha256": "98eaeb91b7bc77b52d26a0fab0e2bbc8483d6842b54564c8323fb48de96b9fb6"
+    },
+    {
+      "path": "upstream_pencil/datasets/random/__init__.py",
+      "bytes": 98,
+      "sha256": "da2690979b64639096094ee8b0bd0130388430074d71b05d67ffd607c421da41"
+    },
+    {
+      "path": "upstream_pencil/datasets/random/dataset.py",
+      "bytes": 13178,
+      "sha256": "e65f05dcec5c888cddf0d29fef4c4d42f330983e7b8b653b45f2da07d48a3397"
+    },
+    {
+      "path": "upstream_pencil/datasets/random/generate_datasets.py",
+      "bytes": 3644,
+      "sha256": "c97ae79ba6b42982b0c25cae48305f26d846b0cb8a8ec7397188ea8a33868171"
+    },
+    {
+      "path": "upstream_pencil/datasets/random/generate_graphs.py",
+      "bytes": 9422,
+      "sha256": "65ed654c3c016dcd467f925b3b28fe5977e2f71199c9646762a71da37bbac1a2"
+    },
+    {
+      "path": "upstream_pencil/datasets/utils.py",
+      "bytes": 9453,
+      "sha256": "f132dec5a8c1d26d7d512b17b9ada4444c3d6e2e5bbb6bd13cd5535df614b862"
+    },
+    {
+      "path": "upstream_pencil/definitions.py",
+      "bytes": 220,
+      "sha256": "fe555a504e1ae6c773d2d3b65341e234520184bd00a318f1b5efddfd5b7ce4c8"
+    },
+    {
+      "path": "upstream_pencil/evaluator.py",
+      "bytes": 17225,
+      "sha256": "0b77db63f615f34a3de0585d2ba63df8630c476edbf49d31b3ed8bc87969c24a"
+    },
+    {
+      "path": "upstream_pencil/extract_results.py",
+      "bytes": 8515,
+      "sha256": "f56735b29ab7be6e923faa0b79ff587b7fadc99c2c763f46fa5dea99da1a3c1d"
+    },
+    {
+      "path": "upstream_pencil/models/__init__.py",
+      "bytes": 56,
+      "sha256": "6df64aa96ad2dcb5620b857c2f9602301397022b4d9b12b5f7bac7768ce3c6ce"
+    },
+    {
+      "path": "upstream_pencil/models/gnns/mpnn.py",
+      "bytes": 12380,
+      "sha256": "c0da0b0735ead2b184854350e62cc47922bad17d694cb6c22165df7490e7294b"
+    },
+    {
+      "path": "upstream_pencil/models/transformers/bert_lp.py",
+      "bytes": 5681,
+      "sha256": "f0be7dc17b53f69212239120030fb4d8a342b9c0537b87d557229f78ccb3400a"
+    },
+    {
+      "path": "upstream_pencil/models/transformers/lp_model.py",
+      "bytes": 16283,
+      "sha256": "fb7e68db1bc64d6c92e532067ae904b6d27c9b418846ec003c04a7ea1c38b51f"
+    },
+    {
+      "path": "upstream_pencil/models/transformers/stokenizer.py",
+      "bytes": 2611,
+      "sha256": "d13981386eeb09ee6b27c114bae87840242b53c049b70a3113ef5b3a666833f3"
+    },
+    {
+      "path": "upstream_pencil/pytest.ini",
+      "bytes": 91,
+      "sha256": "dcfc7ce9a1001899b9b6793d7ecae6e1bbb63335253d4f1654938206cf81b5fa"
+    },
+    {
+      "path": "upstream_pencil/requirements.txt",
+      "bytes": 560,
+      "sha256": "6918dd8e2ab97a2d8ff333301fb1a7bc9414336d90b292de339ab45702770590"
+    },
+    {
+      "path": "upstream_pencil/run_lp.py",
+      "bytes": 74561,
+      "sha256": "89fabc51669b4eba7ad61a08ce2acf6e17fb29d26a01941706c135862225a885"
+    },
+    {
+      "path": "upstream_pencil/run_with_best_gpus.py",
+      "bytes": 6377,
+      "sha256": "f4c53f5559ca9cdb82f7d3de0a7bf0931b1164f76dd540560c2034e1a7d82443"
+    },
+    {
+      "path": "upstream_pencil/utils.py",
+      "bytes": 27760,
+      "sha256": "44c54264ada82ef0fc9830b546143b0a87ac4c6dca379ce0c0baf6ae2acf3482"
+    }
+  ],
+  "tracked_upstream_files": 53
+}
