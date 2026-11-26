@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/facebookresearch/SEAL_OGB",
+  "commit": "ea01ef509df1a90bc246e4e9828e192eeec4289c",
+  "url": "https://raw.githubusercontent.com/facebookresearch/SEAL_OGB/ea01ef509df1a90bc246e4e9828e192eeec4289c/LICENSE",
+  "bytes": 1086,
+  "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+  "scope": "upstream license located for Facebook-copyright source headers; exact legacy derivation review still pending"
+}

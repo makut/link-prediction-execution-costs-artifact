@@ -1,71 +1,70 @@
-Independent E25 ENVv4 helper — source only; no completed ENVv4 archive audited.
+E25 v6 independent offline audit of one genuine eight-application block
 
-After the root collector obtains and independently hashes a genuine completed
-ENVv4 raw archive, use a fresh output path:
+This directory is source preparation. No genuine v6 archive has been audited
+by this preparation and no scientific result or figure is generated here.
+Final producer and lean wrapper pins are frozen in audit_block_v6.py. Each
+actual allocation supplies its own root-bound platform proof; its SHA is not
+fixed in the global protocol. The independent CPU decoder is byte-identical
+to the separately reviewed role-aware v5 module.
 
-python3 -B work/vldb_native_lifecycle_20261126/audit_env_v4/audit_e25_env_v4.py \
-  --archive ACTUAL_COMPLETED_ENV_V4_TGZ \
-  --archive-sha256 ROOT_COLLECTED_WHOLE_SHA256 \
-  --output NEW_ACTUAL_ENV_V4_AUDIT.json
+After genuine completion and independent root collection:
 
-Only stdlib and adjacent independent_env.py/independent_disk.py are imported.
-Producer code and recorded paths are never imported/opened. Archive reading
-remains bounded, streaming and without extraction. Every member and the whole
-archive are rehashed. ENVv1/v2/v3 helpers remain unchanged.
+python3 -B audit_block_v6.py --archive ACTUAL_BLOCK_RAW.tgz \
+  --archive-sha256 INDEPENDENT_WHOLE_ARCHIVE_SHA \
+  --root-collection ACTUAL_ROOT_COLLECTION.json \
+  --root-collection-sha256 INDEPENDENT_ROOT_COLLECTION_SHA \
+  --output FRESH_ACTUAL_BLOCK_AUDIT.json
 
-All24 grid/order/clock/statistics/input/PSS rules are retained. The grid, stats,
-raw PSS eligibility, command-boundary labels and tiny H100 qualification
-functions are AST-identical to v3. independent_env.py is byte-identical to v3.
-The CPU policy remains fixed27_env_v3. Raw PSS before/after membership and phase
-eligibility are independently rederived. The frozen headline is each run's
-maximum across ALL eligible phases, then the range of all three observed run
-maxima per configuration. CPU/disk incompleteness never filters PSS samples;
-missing evidence remains explicitly unobserved. A hard failure prevents a
-successful complete-cohort audit rather than selecting a favorable subset.
+The root collection must use kind ROOT_E25_V6_ACTUAL_BLOCK_COLLECTION, bind
+the original actual launch, Pod/StatefulSet UIDs, source/platform hashes, the
+wrapper PID/start, actual zombie kernel exit 0, exact producer-exit object,
+outer_complete successful wrapper terminal and its exact archive/member facts,
+post-exit owned quiescence, available timing lock and absent active marker.
+collection.archive.file means the canonical remote recorded wrapper out path
+plus /block_raw.tgz. This recorded path is never opened on the laptop. Root
+independently transfers/hashes the archive and supplies both input SHAs.
 
-The v4 CPU predeclaration contains observed package/core/NUMA fields but does
-not serialize complete sibling lists. These available fields are compared to
-the admission contract; no independent full-sibling comparison is claimed.
+The stdlib reader streams every member without extracting files. Caps are
+128 MiB compressed, 400 MiB decompressed tar including headers, 384 MiB summed
+payload, 32 MiB per member, 4096 regular members, 64 MiB retained JSON including
+the external receipt, 1 MiB per PSS/CPU JSONL line and 4 KiB per disk line.
+Every member and the whole archive are rehashed. No graph/cache/native library
+payload, recorded graph path, producer module, ML library, GPU, cluster or
+network is accessed by the auditor. Metadata fixtures separately execute only
+the pure frozen config declaration, not a controller or summary helper.
 
-ENVv3 independently reconstructs PID/TID/cgroup stability and named reasons
-from full before/after identity tables and per-TID affinity brackets. Every
-boundary attempt and all original command/app/worker and tiny qualification
-gates are checked. Exact absolute boundary start and actual sleep durations
-were not serialized; declared elapsed/parameters remain source-pinned receipts
-bounded by raw attempt-span consistency. Scans are sampled and non-atomic,
-without continuous/exclusive CPU placement or interference guarantees.
+Admission requires exactly the selected original global repetition and its
+eight original-order jobs, four same-source H100 qualification consumers,
+all actual app waits 0 and normal worker close receipts, no known hard guard
+failure, source-bound whole FR3 input identity, archived pair-workload hash,
+host/boot/software/GPU identity, full configs/paths, and ordered actual clocks.
+Native promotion and post-exit integrity/cleanup are checked. Original producer
+and wrapper terminal records must agree with independently reconstructed facts.
 
-ENVv4 adds independent original/nested storage-admission hashes, actual PVC
-UID/volumeName plus Pod mount/subPath/owned-file probes, Linux dev_t decoding,
-runtime recorded-device/readwrite/available-byte/inode checks, latest sampled
-output inventory and independently regenerated outer controller_guard_proof.
-Direct PV claimRef was not visible to root. Successful project/root-layer
-owned-file write/fsync/readback/unlink probes do not establish global node
-health or explain the historical stop/readonly episode.
+Four raw paired configuration rows and four compiled/native ratios are
+recomputed from original parent/checkpoint/shutdown clocks. A block is one
+observation per arm/configuration: it has no three-repetition statistics.
+global24_complete is always false in a single-block audit. All three separately
+complete blocks are required for a later complete-24 aggregate; failed or
+partial attempts never contribute. The failed v4 capsule is a reference only
+here; root preserves its bytes once in the final aggregate.
 
-disk_observations.jsonl is streamed with an8MiB file and4096-byte complete-line
-cap. Every raw row must retain the same admitted output path/device, ordered
-clocks, at least4GiB available bytes, writable mount and positive available
-inodes where totals are exposed. Initial80GiB/64K thresholds apply only to the
-separate initial admission. Raw statvfs block components were not serialized,
-so recorded byte availability is threshold-checked, not independently rebuilt
-from block arithmetic. The latest <=4096-byte inventory must bind the final
-disk row, retain vanished-entry counts, and observe at most2GiB nonruntime
-output. This sampled non-atomic cap is not an instantaneous quota/reservation.
-Any new raw controller failure receipt, or nonnull COMPLETE guard latch, fails
-the complete audit. The protocol, original full disk history and latest
-inventory hashes are retained in the independent result.
+Consumed input/prefix digest equality is checked across arms, worker counts
+and horizons, including all short 576 inputs versus the long prefix. This is
+source-bound serialized equality, not independent tensor/PyG/graph rehashing.
+Included input-hash observer time is bounded, not independently re-timed or
+subtracted. No new predictive-quality claim is made.
 
-The prior1168934-byte ENVv3 capsule is independently identified by whole SHA
-and its pinned local-preservation receipt. It contains v2 once and v1 nested
-inside v2. It is never expanded, and no old timing becomes a new24 metric
-input. The two locally observed completions are not recovered raw job metrics
-or proof of actual OS exit0.
+Every raw CPU bracket, task/leader mask, resource projection and own boundary
+attempt is checked. External masks may be nonempty subsets of declared 27;
+own controller/application/worker boundary leader masks must remain exact 27.
+Unknown CPU observations remain explicit and never filter PSS. PSS is
+independently aggregated over all complete/stable/same-phase eligible phases;
+missing eligible observations remain unknown, never zero. Every PSS/error
+sample clock is checked against its actual application lifetime. These are
+sampled non-atomic app-tree PSS maxima, not full-resident memory requirements.
+Recorded disk thresholds and inventory are checked; raw statvfs block
+multiplication was not serialized and is not independently reconstructed.
 
-Report keys environment_v4 and storage_v4 identify the new cohort. No results,
-mock scientific observations or archive audits were generated during source
-preparation. This helper does not check live PID/lock/YT state or final outer/
-YT publication, recompute full graph/PyG bytes, launch experiments, or infer
-population speedups. New times are instrumented application wall, including
-input/resource/ENV/disk observation and native promotion/fsync costs; common
-whole-input hashing, native build and post-exit verification remain outside.
+Source readiness and metadata tests certify neither a successful experiment
+nor root's live/future OS, storage, collection or persistence observations.

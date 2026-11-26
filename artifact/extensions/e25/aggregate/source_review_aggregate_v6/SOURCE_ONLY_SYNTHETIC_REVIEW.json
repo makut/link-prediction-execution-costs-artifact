@@ -1,0 +1,22 @@
+{
+  "actual_experiments_cluster_GPU_YT_calls": 0,
+  "actual_raw_archives_or_measurements_read": 0,
+  "cases": {
+    "all_missing_PSS_not_zero": true,
+    "complete_PSS_range_retained": true,
+    "cross_block_stream_change_rejected": true,
+    "descriptive_SD_of_pairs_correct": true,
+    "duplicate_PodUID_rejected": true,
+    "duplicate_actual_block_ID_rejected": true,
+    "duplicate_job_rejected": true,
+    "duplicate_raw_archive_rejected": true,
+    "incorrect_paired_ratio_rejected": true,
+    "median_of_pairs_not_ratio_of_medians": true,
+    "missing_block_rejected": true,
+    "partial_PSS_None_and_coverage_preserved": true
+  },
+  "kind": "SOURCE_ONLY_SYNTHETIC_AGGREGATOR_REVIEW",
+  "scope": "Synthetic metadata only; no completed actual block or complete24 cohort was verified.",
+  "serialized_scientific_aggregate_reports": 0,
+  "status": "PASS_SYNTHETIC_METADATA_CHECKS"
+}

@@ -1,53 +1,71 @@
 {
   "actions": {
     "cluster_network_YT_calls": 0,
-    "experiments_executed": 0,
-    "producer_source_edits": 0,
-    "tests_executed": 0
+    "imports_or_tests_or_experiments_executed": 0,
+    "producer_source_edits": 0
   },
-  "conditions": [
-    "Regenerate and freeze PROTOCOL.json/SOURCE_MANIFEST/archive for this exact source pair; historical P2 delta receipt still pins earlier common.py and is not the final package manifest.",
-    "Outer binding must validate actual PVC mount device and identity against ROOT_STORAGE_AMENDMENT.json; controller records device but does not itself compare it to admitted PVC.",
-    "Actual target qualification and later complete fresh 24-job audit are separate required gates. This peer does not authorize or certify science results."
-  ],
-  "findings": [],
-  "kind": "ENV_V4_FINAL_DISK_GUARD_P2_DELTA_INDEPENDENT_SOURCE_PEER",
-  "resolved_finding": {
-    "finding": "Atomic rename of normal output temporary paths could falsely latch an inventory failure.",
-    "prior_peer_sha256": "23bf56b34342f04517ef5a644ab9bfd3a50a5eff5671bce0e49ec07c957eeb74",
-    "resolution": "Single lstat per observed entry; only FileNotFoundError is skipped and counted. Observed bytes remain accumulated and a real cap negative still latches even when a neighbor vanishes. Bounded latest receipt explicitly marks non-atomic inventory completeness.",
-    "severity": "P2"
-  },
-  "reviewed": {
-    "disk_history_bounded_8MiB_rows_4KiB_fsynced": true,
-    "focused_fixture_execution": "Producer reports PASS; independent reviewer did not run tests.",
-    "focused_fixture_source_reviewed_tests": 10,
-    "hard_guard_outside_transient_PSS_handler": true,
-    "latch_before_throttle": true,
-    "python310_static_AST": "PASS",
-    "read_only_low_bytes_reported_zero_inodes_hard": true,
-    "receipt_failure_preserves_latch": true,
-    "scientific_AST_unchanged_from_v3": [
+  "checks": {
+    "AST_identical_controller_functions": [
       "configs",
-      "summarize",
+      "check",
+      "disk_observation",
+      "command",
       "validate",
       "native_postcheck_and_cleanup",
-      "admission"
+      "environment_guard"
     ],
-    "storage_declaration_actual_admission_sha256": "d3e1d4feb0c519eaf6a7f21d5f9847df5a3523efc8840cd1a3fb00c6b82da026",
-    "storage_declaration_exact_actual_amendment_sha256": "27b1cd73151fbe27592bdde318532f38593d877477478e2ddf1b066ef7b3b668",
-    "unreported_inodes_not_assumed_exhausted": true
+    "actual_dynamic_platform_original_JSON_and_wholeSHA_copied_into_plan_and_terminal": true,
+    "all3_complete_blocks_required_no_failed_partial_prior_pooling": true,
+    "exact41payload_inventory42regular_tar_members_raw583117": true,
+    "fixed27_envelope_with_own_exact_boundary_and_PSS_no_unknown_selection_retained": true,
+    "global24_random_order_created_before_exact8_global_repetition_filter": true,
+    "metadata_fixture_tests": "Producer reports4 PASS; independent reviewer did not execute tests",
+    "only4_declared_v5_payloads_changed": [
+      "PROTOCOL.json",
+      "README.txt",
+      "common.py",
+      "run_lifecycle.py"
+    ],
+    "original_global_r1_r2_r3_jobnames_preserved": true,
+    "other37_scientific_ENV_native_supervision_payloads_identical_v5": true,
+    "perblock4_consumed_stream_comparisons_2_worker_cross576_and_all8_prefix_agreement": true,
+    "perblock_fresh_output_Num\u00adba_cache_qualification_may_warm_no_coldclaim": true,
+    "platform_Pod_STS_host_boot_CPU27_quota_memory_topology_PVC_mount_image_GPU_bound_before_apps": true,
+    "preblock40GiB_and_runtime4GiB_not_conflated": true,
+    "producer3900_outer4200_operational_caps_not_completion_guarantees": true,
+    "summary4_horizon_worker_rows_two_raw_arm_values_4_withinblock_ratios_8PSS_no_fake3rep_stats": true
   },
-  "reviewer": "reviewer_eab",
-  "source_pins": {
-    "common.py": {
-      "bytes": 7450,
-      "sha256": "8f9057f3789461404a3644190be3cf51bfae49fec14deb0b3defcc33f4778c87"
+  "findings": [],
+  "kind": "E25_V6_PROSPECTIVE_ALLOCATION_BLOCK_SOURCE_INDEPENDENT_PEER",
+  "limits": [
+    "No actual platform, GPU qualification, block execution or measured outcome is certified by source readiness.",
+    "Global source has no concrete actual platform SHA; each block must receive a genuine fresh root actual proof and exact wholeSHA.",
+    "Root independently collects/audits each complete8 block and observes wrapper actual OSexit0 before release; only all3 complete blocks can form global24.",
+    "The blocks are fresh allocation blocks, not a statistical-independence claim; absolute cross-block ranges disclose actual platform/cache variation."
+  ],
+  "pins": {
+    "archive": {
+      "bytes": 186183,
+      "sha256": "241aad9ac3a6407db361465251154cf2fc15e7c03092963a51b1be01465cacb0"
     },
-    "run_lifecycle.py": {
-      "bytes": 32895,
-      "sha256": "9a20c1e0e5c44953eb546e3610b2954fb29e619f6acc2198a3817951657ea330"
+    "common": {
+      "bytes": 9935,
+      "sha256": "5c44c8247ffc736e5ebf351babfb288acf7b49eb1ed5a04989ed07424f96ed9f"
+    },
+    "controller": {
+      "bytes": 40447,
+      "sha256": "602e4e919e102bb797271bfe17cbd96681553787a782bbd847996a9a21ae973f"
+    },
+    "manifest": {
+      "bytes": 6307,
+      "sha256": "3fd8783173e4a850018d860459881aafd1dd49e8d4cda101eb273641e47af086"
+    },
+    "source_ready": {
+      "bytes": 2425,
+      "sha256": "ce20d3012e63235fb3b7facaaf403f8bc8f4b6a93b699666776ef427e53cf827"
     }
   },
-  "status": "PASS_NARROW_SOURCE_DELTA_PENDING_PACKAGE_FREEZE_AND_TARGET_QUALIFICATION"
+  "protocol_sha256": "e89b371089bd01f71579fdc00ec06004373bb549542658cc223914759f392e18",
+  "reviewer": "reviewer_eab",
+  "status": "PASS_FROZEN_SOURCE_ONLY_BEFORE_ACTUAL_PLATFORM_QUALIFICATION_OR_BLOCK_LAUNCH"
 }

@@ -1,0 +1,11 @@
+{
+  "kind": "E25_PSS_REPORTING_RULE_BEFORE_NUMERIC_OUTCOME_INSPECTION",
+  "decided_unix": 1795702433.3740401,
+  "basis": "Source-known PSS schema and independent editorial proposal; root has inspected only live phase/completion counters, not E25 numeric timing/PSS reports.",
+  "per_run_headline": "Maximum tree_pss_bytes over ALL external samples with phase_publication_eligible true, retaining phase/time and eligible count; no selection of only steady state.",
+  "per_configuration_headline": "Range of the three per-run observed sampled maxima for each horizon/worker/arm. Keep all three values and maximum phases in table data.",
+  "missing": "No eligible sample means unobserved; never substitute zero, another phase, RSS sum, logical bytes, or a completed prior run.",
+  "language": "Sampled application-process-tree PSS maxima. Not a full-resident representation footprint, memory requirement, simultaneous atomic peak, population uncertainty or cgroup charge.",
+  "secondary": "Phase-specific maxima and counts may be shown separately; promotion/setup included in headline if eligible.",
+  "changes_to_timing_protocol_source_or_job_order": false
+}

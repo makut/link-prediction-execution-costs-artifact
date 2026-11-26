@@ -35,11 +35,22 @@ def configs(args):
 
 def plan(args):
  verify_sources()
- return {'kind':'E25_FRIENDSTER_TWO_ARM_LIFECYCLE_ENV_V2','execute':args.execute,'protocol':PROTOCOL,
+ path=args.platform_admission_json.resolve();require(path.is_file()and not path.is_symlink()and path.stat().st_size<=32<<20,'bounded regular actual platform proof required')
+ require(isinstance(args.platform_admission_sha256,str)and len(args.platform_admission_sha256)==64
+  and set(args.platform_admission_sha256)<=set('0123456789abcdef')and sha(path)==args.platform_admission_sha256,'root-bound whole platform proof SHA required')
+ proof=read(path);require(proof['kind']=='E25_V6_ACTUAL_BLOCK_PLATFORM_ADMISSION'and type(proof['block'])is int and proof['block']==args.repetition_block
+  and proof['actual_scientific_jobs_started']==0,'actual platform proof must precede this exact selected block')
+ chosen=proof['cpu_affinity'];require(isinstance(chosen,list)and len(chosen)==27 and all(type(v)is int and v>=0 for v in chosen)
+  and chosen==sorted(set(chosen)),'actual declared27 CPU pool required')
+ global_jobs=configs(args);jobs=[job for job in global_jobs if job['repetition']==args.repetition_block]
+ require(len(jobs)==8,'exact eight original-order jobs for one global repetition required')
+ return {'kind':'E25_V6_PROSPECTIVE_REPETITION_BLOCK','execute':args.execute,'protocol':PROTOCOL,
   'protocol_sha256':hashlib.sha256(json.dumps(PROTOCOL,sort_keys=True).encode()).hexdigest(),
   'source_manifest_sha256':sha(HERE/'SOURCE_MANIFEST.json'),'friendster_root':str(args.friendster_root),
   'out':str(args.out),'coordination_dir':str(args.coordination_dir),'max_hours':args.max_hours,
-  'jobs':configs(args),'environment_policy':environment.POLICY,'selected_cpu_affinity':environment.selected(),
+  'repetition_block':args.repetition_block,'global_protocol_jobs':24,'global_job_order':[job['name']for job in global_jobs],
+  'jobs':jobs,'environment_policy':environment.POLICY,'selected_cpu_affinity':chosen,
+  'platform_admission':{'source_path':str(path),'bytes':path.stat().st_size,'sha256':args.platform_admission_sha256,'proof':proof},
   'no_periodic_YT_writes':True,'graph_or_model_reads_in_plan':0}
 
 class Controller:
@@ -53,6 +64,7 @@ class Controller:
    PYTHONDONTWRITEBYTECODE='1',PYTHONNOUSERSITE='1',NUMBA_CACHE_DIR=str(args.out/'shared_numba_cache'),WANDB_MODE='disabled',HF_HUB_OFFLINE='1')
   self.hardware=None;self.snapshots={};self.last_disk_check=0.;self.environment=None;self.environment_failed=False
   self.controller_guard_failure=None;self.last_disk_observation=None
+  self.platform=self.plan['platform_admission']['proof']
  def environment_guard(self,label):
   require(self.environment is not None,'ENVv2 admission must precede guards')
   try:observed=environment.guard(self.environment,label,self.args.out/'ENVIRONMENT_FAILURE.json')
@@ -126,6 +138,8 @@ class Controller:
   h=self.helpers;inventory=h.permitted_inventory(h.parse_inventory(h.nvidia_query('--query-gpu=index,uuid,name,memory.total,driver_version')),self.env)
   target=h.select_target(inventory,self.env);hardware={'permitted_inventory':inventory,'target':target}
   require(self.hardware is None or self.hardware==hardware,'GPU/driver inventory changed');self.hardware=hardware
+  expected=self.platform['gpu'];require(target['uuid']==expected['uuid']and target['name']==expected['name']
+   and target['memory_total_mib']==expected['memory_total_mib']and target['driver_version']==expected['driver'],'actual block GPU differs from predeclared platform')
   observations=[]
   for index in range(2):
    self.check();apps=h.parse_compute_apps(h.nvidia_query('--query-compute-apps=gpu_uuid,pid,process_name,used_gpu_memory'))
@@ -136,6 +150,12 @@ class Controller:
  def admission(self):
   require(sys.platform.startswith('linux')and sys.version_info[:2]==(3,10)and platform.machine()=='x86_64','real target Linuxx86_64Python3.10 required')
   self.environment=environment.admit(self.plan['selected_cpu_affinity'],failure_path=self.args.out/'ENVIRONMENT_FAILURE.json');self.env.update(environment.exported(self.environment))
+  self.platform_guard()
+  source=Path(self.plan['platform_admission']['source_path']);target=self.args.out/'PLATFORM_ADMISSION.json'
+  require(sha(source)==self.plan['platform_admission']['sha256'],'actual platform proof changed before admission copy')
+  with source.open('rb')as incoming,target.open('xb')as outgoing:
+   shutil.copyfileobj(incoming,outgoing,1<<20);outgoing.flush();os.fsync(outgoing.fileno())
+  require(sha(target)==self.plan['platform_admission']['sha256'],'exact original platform proof copy differs')
   for job in self.plan['jobs']:job['config']['environment_contract']=self.environment
   save(self.args.out/'plan.json',self.plan)
   save(self.args.out/'ENVIRONMENT_ADMISSION.json',{'status':'PASS','policy':environment.POLICY,
@@ -152,6 +172,44 @@ class Controller:
   save(self.args.out/'input_identity.json',{'whole_hashes':True,'files':self.snapshots})
   shutil.copyfile(HERE/'workloads/friendster_pairs.npy',self.args.out/'friendster_pairs.npy')
   require(sha(self.args.out/'friendster_pairs.npy')==WORKLOAD_SHA,'original public workload changed')
+ def platform_guard(self):
+  p=self.platform;base=Path(p['base']);storage=p['storage'];resources=self.environment['resources']
+  require(p['kind']=='E25_V6_ACTUAL_BLOCK_PLATFORM_ADMISSION'and p['block']==self.plan['repetition_block']
+   and p['actual_scientific_jobs_started']==p['YT_writes']==p['statefulset_actions']==0,'fresh exact-block platform proof required')
+  require(os.environ.get('POD_UID')==p['pod_uid']and platform.node()==p['hostname']
+   and Path('/proc/sys/kernel/random/boot_id').read_text().strip()==p['boot_id'],'actual block Pod/host/boot differs')
+  require(p['cpu_max']==resources['cpu_max']=='2700000 100000'and p['memory_max']==resources['memory_max']=='274877906944'
+   and p['cpu_affinity']==self.environment['chosen_cpu_affinity']==sorted(os.sched_getaffinity(0))
+   and p['topology']==self.environment['topology'],'actual block CPU/quota/memory/topology differs')
+  require(all(isinstance(p[k],str)and p[k]for k in('pod_uid','sts_uid','hostname','boot_id','node','image_digest'))
+   and p['image_digest'].find('sha256:')>=0,'root-bound block identity/image metadata required')
+  binding=p['kubernetes_binding'];require(all(binding[k]==p[k]for k in('pod_uid','sts_uid','hostname','node','image_digest'))
+   and all(binding[k]==storage[k]for k in('PVC_name','PVC_uid','volume_name','subPath')),'root Kubernetes/PVC identity binding differs')
+  require(base.resolve()==base and base.is_dir()and not base.is_symlink(),'canonical actual block BASE required')
+  for value in(HERE,self.args.friendster_root,self.args.out,self.args.coordination_dir,Path(self.plan['platform_admission']['source_path'])):
+   require(value.is_relative_to(base)and value.resolve()==value,'source/input/output/proof/coordination must share actual BASE')
+   while not value.exists():value=value.parent
+   require(value.stat().st_dev==storage['device'],'block path is on another storage device')
+  for key in('TMPDIR','TMP','TEMP','XDG_CACHE_HOME','TORCH_HOME'):
+   require(key in self.env,'root must declare persistent temp/cache paths');value=Path(self.env[key])
+   require(value.is_relative_to(base)and value.resolve()==value,'temporary/cache path must remain under admitted BASE')
+   while not value.exists():value=value.parent
+   require(value.stat().st_dev==storage['device'],'temporary/cache path is on another device')
+  mount=[]
+  for line in environment.text('/proc/self/mountinfo').splitlines():
+   left,right=line.split(' - ',1);a,z=left.split(),right.split()
+   if environment.unescape(a[4])==str(base):mount.append({'root':environment.unescape(a[3]),'mount_point':environment.unescape(a[4]),
+    'major_minor':a[2],'filesystem':z[0],'source':environment.unescape(z[1]),'options':a[5].split(','),'super_options':z[2].split(',')})
+  require(len(mount)==1 and mount[0]==storage['mount']and mount[0]['root']=='/'+storage['subPath']
+   and'rw'in mount[0]['options']and'ro'not in mount[0]['options']and'ro'not in mount[0]['super_options'],'actual block project mount differs')
+  capacity=os.statvfs(base);require(base.stat().st_dev==storage['device']and not bool(capacity.f_flag&os.ST_RDONLY)
+   and capacity.f_bavail*capacity.f_frsize>=40*GIB and(capacity.f_files==0 or capacity.f_favail>0),'actual preblock40GiB/readwrite/inodes required')
+  require(storage['mount_readonly']is False and storage['bytes_available']>=40*GIB
+   and(storage['inodes_total']==0 or storage['inodes_available']>0)and storage['write_fsync_readback_unlink']is True,'root actual PVC probe/capacity proof required')
+  root_layer=p['root_layer'];require(root_layer['mount_readonly']is False and root_layer['bytes_available']>=4*GIB
+   and root_layer['write_fsync_readback_unlink']is True,'root actual writable-layer probe/reserve proof required')
+  actual_root=os.statvfs('/home/jovyan');require(not bool(actual_root.f_flag&os.ST_RDONLY)
+   and actual_root.f_bavail*actual_root.f_frsize>=4*GIB,'actual preblock root-layer readwrite/reserve differs')
  def assert_inputs(self):
   verify_sources();self.check()
   self.environment_guard('assert_inputs')
@@ -257,7 +315,6 @@ class Controller:
   else:require(r['native_promotion']is None and all(w['initialization_count']==0 for w in workers),'compiled must not allocate native state')
   return r
  def summarize(self,reports):
-  import statistics
   metrics={};pss=[]
   for record in self.records:
    r=reports[record['name']];values={'launch_to_first_batch_ready_seconds':r['launch_to_first_batch_ready_seconds'],
@@ -272,22 +329,23 @@ class Controller:
      phase=sample['phase_before'];entry=phases.setdefault(phase,{'eligible_samples':0,'max_sampled_tree_pss_bytes':0})
      entry['eligible_samples']+=1;entry['max_sampled_tree_pss_bytes']=max(entry['max_sampled_tree_pss_bytes'],sample['tree_pss_bytes'])
    pss.append({'name':record['name'],'phases':phases,'scope':'Stable complete process-tree samples only, sampled non-atomic maxima; no total RSS sum, cache subtraction or full-resident claim.'})
-  def stats(values):return {'values':values,'mean':statistics.mean(values),'sample_sd':statistics.stdev(values),
-   'median':statistics.median(values),'minimum':min(values),'maximum':max(values)}
-  rows=[];ratios=[]
+  rows=[];ratios=[];rep=self.plan['repetition_block']
+  require(len(self.records)==len(reports)==8,'all eight original block apps required')
   for horizon in HORIZONS:
    for w in(1,8):
-    byarm={}
+    arms={}
     for arm in ARMS:
-     chosen=sorted((r for r in self.records if r['horizon']==horizon and r['workers']==w and r['arm']==arm),key=lambda r:r['repetition'])
-     require([r['repetition']for r in chosen]==[1,2,3],'all3 fresh lifecycle process repetitions required')
-     byarm[arm]={key:[metrics[r['name']][key]for r in chosen]for key in metrics[chosen[0]['name']]}
-     rows.append({'horizon':horizon,'workers':w,'arm':arm,'metrics':{key:stats(value)for key,value in byarm[arm].items()}})
-    ratios.append({'horizon':horizon,'workers':w,'numerator':ARMS[0],'denominator':ARMS[1],
-     'metrics':{key:stats([a/b for a,b in zip(byarm[ARMS[0]][key],byarm[ARMS[1]][key])])for key in byarm[ARMS[0]]},
-     'scope':'paired same-horizon/worker/repetition descriptive ratios;>1 means shorter observed native lifetime for this metric, not a population speedup.'})
-  return {'status':'complete','jobs':24,'rows':rows,'paired_compiled_over_native':ratios,'sampled_PSS':pss,
-   'scope':'Actual short and long jobs genuinely terminate; interior synchronized prefixes are not independent lifetimes. Intervals are observed directly, never assembled by adding overlapping worker service timers; no historical E23 timing equivalence.'}
+     chosen=[r for r in self.records if r['horizon']==horizon and r['workers']==w and r['arm']==arm and r['repetition']==rep]
+     require(len(chosen)==1,'one actual observation per block configuration/arm required')
+     record=chosen[0];arms[arm]={'name':record['name'],'metrics':metrics[record['name']]}
+    rows.append({'horizon':horizon,'workers':w,'repetition':rep,'arms':arms})
+    ratios.append({'horizon':horizon,'workers':w,'repetition':rep,'numerator':ARMS[0],'denominator':ARMS[1],
+     'metrics':{key:arms[ARMS[0]]['metrics'][key]/arms[ARMS[1]]['metrics'][key]for key in arms[ARMS[0]]['metrics']},
+     'scope':'One paired ratio within this actual allocation block only; no three-repetition statistics or cross-allocation causal speedup.'})
+  return {'kind':'E25_V6_SINGLE_REPETITION_BLOCK_RAW_SUMMARY','status':'complete','jobs':8,'global_protocol_jobs':24,
+   'repetition_block':rep,'platform_admission_sha256':self.plan['platform_admission']['sha256'],
+   'rows':rows,'paired_compiled_over_native':ratios,'sampled_PSS':pss,
+   'scope':'Four horizon/worker rows, two raw arm observations each, one paired ratio per metric. All three independently complete blocks are required for24; no partial or prior failed cohort pooling. Original actual lifetimes/checkpoints/PSS semantics retained.'}
  def run(self):
   a=self.args;a.out.mkdir();self.supervisor.enable_subreaper();lock=None;active=None;token=None;success=False;failure=None
   def interrupted(sig,frame):raise KeyboardInterrupt('E25 controller signal '+str(sig))
@@ -297,7 +355,7 @@ class Controller:
    a.coordination_dir.mkdir(parents=True,exist_ok=True);lockpath=a.coordination_dir/'PUBLIC_SYSTEMS_RUNNING.lock'
    require(not lockpath.is_symlink(),'timing lock must not be symlink');lock=lockpath.open('a+');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
    active=a.coordination_dir/'PUBLIC_SYSTEMS_ACTIVE.json';require(not os.path.lexists(active),'unknown predecessor active marker preserved')
-   token={'pid':os.getpid(),'start_ticks':identity(os.getpid())['start_ticks'],'nonce':uuid.uuid4().hex,'source_manifest_sha256':self.plan['source_manifest_sha256']}
+   token={'pid':os.getpid(),'start_ticks':identity(os.getpid())['start_ticks'],'nonce':uuid.uuid4().hex,'source_manifest_sha256':self.plan['source_manifest_sha256'],'repetition_block':self.plan['repetition_block']}
    with active.open('x')as stream:json.dump(token,stream)
    save(a.out/'plan.json',self.plan);self.status('admission');self.admission();self.status('build_native')
    self.command('build_native',[sys.executable,'-B',str(HERE/'native_core/build_native_v1.py'),'--output-dir',str(a.out/'build')],HERE,180)
@@ -330,25 +388,32 @@ class Controller:
     reports[job['name']]=r;self.records.append({'name':job['name'],'horizon':job['horizon'],'arm':job['arm'],'workers':job['workers'],'repetition':job['repetition'],
      'report_sha256':sha(folder/'report.json'),'exit':outcome,'GPU_idle_observations':idle})
     save(a.out/'job_records.json',self.records)
-   comparisons=[]
+   comparisons=[];rep=self.plan['repetition_block']
    for horizon in HORIZONS:
     for w in(1,8):
-     for rep in(1,2,3):
-      pair=[j for j in self.plan['jobs']if j['horizon']==horizon and j['workers']==w and j['repetition']==rep]
-      left,right=[reports[j['name']]for j in sorted(pair,key=lambda j:ARMS.index(j['arm']))]
-      require(left['input_stream_sha256']==right['input_stream_sha256']and left['excluded_warmup_prefix_audits']==right['excluded_warmup_prefix_audits']
-       and left['semantic_input_prefixes']==right['semantic_input_prefixes'],'all consumed inputs/checkpoint prefixes must match across physical routes')
-      comparisons.append({'horizon':horizon,'workers':w,'repetition':rep,'consumed_graphs':HORIZONS[horizon]['consumed_graphs'],
-       'all_consumed_inputs_exact':True,'stream_sha256':left['input_stream_sha256']})
+     pair=[j for j in self.plan['jobs']if j['horizon']==horizon and j['workers']==w and j['repetition']==rep]
+     require(len(pair)==2,'exact two-arm pair in selected block required')
+     left,right=[reports[j['name']]for j in sorted(pair,key=lambda j:ARMS.index(j['arm']))]
+     require(left['input_stream_sha256']==right['input_stream_sha256']and left['excluded_warmup_prefix_audits']==right['excluded_warmup_prefix_audits']
+      and left['semantic_input_prefixes']==right['semantic_input_prefixes'],'all consumed inputs/checkpoint prefixes must match across physical routes')
+     comparisons.append({'horizon':horizon,'workers':w,'repetition':rep,'consumed_graphs':HORIZONS[horizon]['consumed_graphs'],
+      'all_consumed_inputs_exact':True,'stream_sha256':left['input_stream_sha256']})
     require(len({r['input_stream_sha256']for r in reports.values()if r['config']['horizon']==horizon})==1,'same full input stream required within every horizon')
-   short=next(r for r in reports.values()if r['config']['horizon']=='short320')
-   long=next(r for r in reports.values()if r['config']['horizon']=='long6400')
-   require(len({r['semantic_input_prefixes']['576']for r in reports.values()})==1
-    and short['input_stream_sha256']==long['semantic_input_prefixes']['576'],'short final must match long prefix576 across all apps')
-   cross={'consumed_input_graphs':576,'short_final_stream_sha256':short['input_stream_sha256'],
-    'long_prefix_stream_sha256':long['semantic_input_prefixes']['576'],'all_arms_workers_repetitions_exact':True}
+   cross_workers=[]
+   for w in(1,8):
+    short=[r for r in reports.values()if r['config']['horizon']=='short320'and r['config']['num_workers']==w]
+    long=[r for r in reports.values()if r['config']['horizon']=='long6400'and r['config']['num_workers']==w]
+    require(len(short)==len(long)==2 and len({r['semantic_input_prefixes']['576']for r in short+long})==1
+     and short[0]['input_stream_sha256']==long[0]['semantic_input_prefixes']['576'],'worker-specific exact cross-horizon576 prefix required')
+    cross_workers.append({'workers':w,'repetition':rep,'consumed_input_graphs':576,'short_final_stream_sha256':short[0]['input_stream_sha256'],
+     'long_prefix_stream_sha256':long[0]['semantic_input_prefixes']['576'],'all_block_arms_horizons_exact':True})
+   require(len({r['semantic_input_prefixes']['576']for r in reports.values()})==1,'same576 prefix across all eight block apps required')
+   cross={'consumed_input_graphs':576,'short_final_stream_sha256':cross_workers[0]['short_final_stream_sha256'],
+    'long_prefix_stream_sha256':cross_workers[0]['long_prefix_stream_sha256'],'all_arms_workers_in_block_exact':True,'repetition_block':rep}
    self.assert_inputs();save(a.out/'scientific_summary.json',self.summarize(reports))
-   save(a.out/'SCIENTIFIC_TERMINAL.json',{'success':True,'jobs':24,'stream_comparisons':comparisons,'cross_horizon_input_prefix576':cross,'records':self.records,
+   save(a.out/'SCIENTIFIC_TERMINAL.json',{'success':True,'jobs':8,'global_protocol_jobs':24,'repetition_block':rep,
+    'platform_admission_sha256':self.plan['platform_admission']['sha256'],'platform_admission_file':'PLATFORM_ADMISSION.json',
+    'stream_comparisons':comparisons,'cross_horizon_input_prefix576':cross,'cross_horizon_worker_comparisons':cross_workers,'records':self.records,
     'scope':PROTOCOL['scope'],'timing_protocol':PROTOCOL['timing'],'no_new_quality_claim':True,'YT_writes':0})
    success=True
   except BaseException as error:
@@ -361,11 +426,13 @@ class Controller:
     while time.monotonic()<until and self.supervisor.owned_groups(os.getpid()):time.sleep(.1)
    quiet=not self.supervisor.owned_groups(os.getpid());owned=active is not None and active.is_file()and read(active)==token
    save(a.out/'COMPLETE.json',{'success':success and quiet and owned,'controller_finished':True,'owned_tree_quiescent':quiet,
+    'repetition_block':self.plan['repetition_block'],'global_protocol_jobs':24,
+    'platform_admission_sha256':self.plan['platform_admission']['sha256'],'platform_admission_file':'PLATFORM_ADMISSION.json',
     'environment_policy':environment.POLICY,'environment_guard_success':self.environment is not None and not self.environment_failed,
     'environment_admission_sha256':sha(a.out/'ENVIRONMENT_ADMISSION.json')if(a.out/'ENVIRONMENT_ADMISSION.json').is_file()else None,
     'failure':failure,'controller_guard_failure':self.controller_guard_failure,'records':self.records,'controller_identity':token,'source_manifest_sha256':self.plan['source_manifest_sha256'],
     'elapsed_seconds':a.max_hours*3600-(self.deadline-time.monotonic()),'YT_writes':0,'statefulset_actions':0,
-    'scope':'This terminal precedes own future OS exit and lock.close; root must separately observe actual exit/quiescence/lock availability.'})
+    'scope':'One prospective8-app block only; all three complete blocks required for24. This terminal precedes own future OS exit/lock.close; actual exit/quiescence/lock proof remains separate.'})
    if quiet and owned:active.unlink()
    if lock is not None:lock.close()
    self.status('complete'if success and quiet and owned else'failed',completed_jobs=len(self.records),failure=failure)
@@ -374,9 +441,9 @@ class Controller:
 
 def main():
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--friendster-root',type=Path,required=True);parser.add_argument('--out',type=Path,required=True)
- parser.add_argument('--coordination-dir',type=Path,required=True);parser.add_argument('--max-hours',type=float,default=4);parser.add_argument('--source-manifest-sha256');parser.add_argument('--execute',action='store_true')
+ parser.add_argument('--coordination-dir',type=Path,required=True);parser.add_argument('--max-hours',type=float,default=3900/3600);parser.add_argument('--repetition-block',type=int,choices=(1,2,3),required=True);parser.add_argument('--platform-admission-json',type=Path,required=True);parser.add_argument('--platform-admission-sha256',required=True);parser.add_argument('--source-manifest-sha256');parser.add_argument('--execute',action='store_true')
  a=parser.parse_args();a.friendster_root=a.friendster_root.resolve();a.out=a.out.resolve();a.coordination_dir=a.coordination_dir.resolve()
- require(math.isfinite(a.max_hours)and 0<a.max_hours<=4,'positive maximum4hours required');require(not os.path.lexists(a.out),'fresh output required')
+ require(math.isfinite(a.max_hours)and 0<a.max_hours<=3900/3600,'positive maximum65minutes per block required');require(not os.path.lexists(a.out),'fresh output required')
  for p in(HERE,a.friendster_root):require(not a.out.is_relative_to(p)and not p.is_relative_to(a.out),'source/input/output trees must be disjoint')
  require(not any(a.coordination_dir.is_relative_to(p)for p in(HERE,a.friendster_root,a.out)),'coordination outside source/input/output trees required')
  definition=plan(a);print(json.dumps(definition,indent=2),flush=True)

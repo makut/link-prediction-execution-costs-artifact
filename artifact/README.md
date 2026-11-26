@@ -1,5 +1,7 @@
 # Reproducing the SEAL-style execution study
 
+The `science-revision-e25` branch prepares a separate matched application-lifetime study. Its [E25 source and offline verification](extensions/e25/README.md) are included; all three actual allocation blocks and the complete 24-application aggregate are still required. This source preparation does not change the published v0.6.0 release.
+
 This artifact accompanies **Execution Costs and Sampling Semantics in SEAL-Style Link Prediction**. It separates exact local induction, representation memory/sharing, consumer execution and sampling-law sensitivity.
 
 The v0.6.0 payload includes verified E22 Citation2 CPU evidence, actual E23 repeated pipeline windows and the E24 descriptive matched-cohort reanalysis. Source-only checks remain separate modes. The six published v0.5.0 companion assets retain their exact bytes and URLs.

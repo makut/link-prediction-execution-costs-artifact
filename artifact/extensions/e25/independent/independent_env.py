@@ -1,4 +1,4 @@
-"""Independent bounded interpretation of E25 ENVv3 recorded observations.
+"""Independent bounded interpretation of E25 ENVv5 recorded observations.
 
 No producer code or recorded filesystem path is imported/opened. Resource/mask
 predicates and PID/TID/cgroup stability are recomputed from full raw brackets.
@@ -6,14 +6,14 @@ Boundary absolute start and actual sleep durations remain source-pinned receipts
 """
 import json
 
-POLICY='fixed27_env_v3'
+POLICY='fixed27_env_v5'
 QUOTA='2700000 100000'
 MEMORY='274877906944'
 PREDICATES={'resource_observation_readable','same_hostname','same_boot_id','same_cgroup_identity',
  'same_visible_quota_hierarchy','same_exact_cpu_quota','same_memory_limit','same_cpu_weight',
  'same_effective_mems','chosen_cpus_still_allowed','chosen_cpus_still_online',
- 'stable_process_cgroups_exact','stable_process_leader_masks_exact','observed_thread_masks_within_chosen',
- 'observed_process_PID_starts_exact','observed_TID_starts_exact','observed_process_cgroups_exact','observed_process_leader_masks_exact'}
+ 'stable_process_cgroups_exact','stable_process_leader_masks_within_chosen','observed_thread_masks_within_chosen',
+ 'observed_process_PID_starts_exact','observed_TID_starts_exact','observed_process_cgroups_exact','observed_process_leader_masks_within_chosen'}
 PROJECTION=('cgroup','cpu_max','cpu_weight','visible_quota_hierarchy','memory_max','ambient_mems','hostname','boot_id')
 RESOURCE_KEYS=set(PROJECTION)|{'cpu_stat','ambient_cpu_pool','online_cpus'}
 
@@ -120,7 +120,7 @@ class Facts:
  def __init__(self):
   self.count=self.transient=self.complete=self.incomplete=self.boundaries=self.boundary_attempts=0
   self.projections={};self.pools={};self.pool_flags={};self.online=None;self.allowed=None
-  self.thread_union=set();self.leaders=set();self.cgroups=set();self.pid_intersection=None;self.starts={};self.labels={};self.first=None;self.last=None
+  self.thread_union=set();self.leaders=set();self.boundary_leaders=set();self.cgroups=set();self.pid_intersection=None;self.starts={};self.labels={};self.first=None;self.last=None
   self.stable_processes=self.unstable_processes=self.recorded_tasks=0;self.max_attempts=0;self.max_elapsed=0.0
  def raw(self,value,boundary_owners=None):
   need(self.count+self.transient<262144,'raw observation count cap')
@@ -157,6 +157,7 @@ class Facts:
    need(len(rows)==len(boundary_owners)==1,'own boundary needs one fixed owner');r=rows[0];owner=boundary_owners[0]
    need(r['pid']==owner['pid']and r['expected']==owner['start_ticks']and r['before']==r['after']==owner['start_ticks'],
     'boundary required PID/start not completely observed or changed')
+   if r['leader']is not None:self.boundary_leaders.add(tuple(r['leader']))
    need(all(set(r['reasons'])<=ANCILLARY_REASONS for r in rows),'only ancillary task churn may precede final boundary PASS')
   return rows
  def ingest(self,value,boundary=False):
@@ -189,7 +190,8 @@ class Facts:
   need(all(v==expected for v in self.projections.values()),'raw hostname/boot/cgroup/quota/hierarchy/weight/mems drift')
   if self.count:need(chosen<=self.allowed and chosen<=self.online,'chosen CPU disappeared from observed allowed/online set')
   need(all(flags=={list(pool)!=contract['resources']['ambient_cpu_pool']}for pool,flags in self.pool_flags.items()),'ambient pool change flag differs from raw pool')
-  need(self.thread_union<=chosen and all(set(m)==chosen for m in self.leaders),'observed thread widening or leader exact-mask violation')
+  need(self.thread_union<=chosen and all(bool(m)and set(m)<=chosen for m in self.leaders),'external observed task/leader mask must remain a nonempty chosen-pool subset')
+  need(all(set(m)==chosen for m in self.boundary_leaders),'own boundary leader must retain the exact declared27 mask')
   need(all(c=='0::'+expected['cgroup']['membership']for c in self.cgroups),'any observed cgroup mismatch cannot heal')
   if identity is not None and self.count:
    pid,tick=identity;need(pid in self.pid_intersection,'required root PID missing in a CPU observation')
@@ -197,12 +199,14 @@ class Facts:
   if interval is not None and self.first is not None:need(interval[0]<=self.first<=self.last<=interval[1],'complete CPU observation brackets outside actual lifetime')
   return {'status':'RECORDED_CPU_OBSERVATIONS_CHECKED'if self.count else'CPU_UNOBSERVED','raw_observations':self.count,
    'independently_complete_process_scans':self.complete,'independently_incomplete_process_scans':self.incomplete,'transient_tree_unobserved':self.transient,
+   'observed_process_leader_mask_variants':[list(v)for v in sorted(self.leaders)],
+   'own_boundary_leader_mask_variants':[list(v)for v in sorted(self.boundary_leaders)],
    'recorded_stable_processes':self.stable_processes,'recorded_unstable_processes':self.unstable_processes,'recorded_tasks':self.recorded_tasks,
    'resource_invariant_variants':len(self.projections),'ambient_pool_variants':[{'cpu_affinity':list(v),'observations':n}for v,n in sorted(self.pools.items())],
    'first_observed_ns':self.first,'last_bracket_ns':self.last,'boundary_receipts_checked':self.boundaries,'all_boundary_attempts_checked':self.boundary_attempts,
    'maximum_boundary_attempts':self.max_attempts,'maximum_declared_boundary_elapsed_seconds':self.max_elapsed,
    'masks_resources_PID_TID_cgroup_stability_independently_recomputed':bool(self.count),'exact_boundary_wall_start_and_sleep_durations_independently_recomputed':False,
-   'scope':'Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.'}
+   'scope':'Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.'}
 
 def boundary(value,contract,owner=None,interval=None,label=None):
  need(bounded_string(value.get('label'))and(label is None or value['label']==label),'original own-boundary role label')

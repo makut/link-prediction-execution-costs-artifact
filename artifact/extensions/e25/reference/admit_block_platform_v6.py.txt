@@ -1,0 +1,122 @@
+#!/usr/bin/env python3
+"""Root-owned, bounded actual platform observation; run inside the selected Pod.
+
+No experiment, token access, network write, or lifecycle action. The only writes
+are two tiny, fsynced, verified temporary probes, removed before returning.
+Kubernetes identities are supplied by the root's fresh read-only API observation.
+"""
+import hashlib
+import json
+import os
+from pathlib import Path
+import socket
+import subprocess
+import sys
+import time
+import uuid
+
+BASE = Path('/home/jovyan/seal_native_lifecycle_20261126')
+SUBPATH = 'lpp_seal_e25_20261126_pvc_01'
+PVC_UID = 'cfd8708a-cd0b-4cd9-914c-a860abf63ef5'
+
+
+def small(path):
+    with Path(path).open() as stream:
+        result = stream.read(65537)
+    assert len(result) <= 65536
+    return result.strip()
+
+
+def probe(directory):
+    assert directory.resolve() == directory and directory.is_dir()
+    target = directory / ('.e25_admission_' + uuid.uuid4().hex)
+    payload = os.urandom(128)
+    with target.open('xb') as stream:
+        stream.write(payload)
+        stream.flush()
+        os.fsync(stream.fileno())
+    assert target.read_bytes() == payload
+    target.unlink()
+    fd = os.open(directory, os.O_RDONLY)
+    try:
+        os.fsync(fd)
+    finally:
+        os.close(fd)
+    return True
+
+
+def main():
+    block = int(sys.argv[1])
+    k = json.loads(sys.argv[2])
+    assert block in (1, 2, 3) and os.getuid() == 0
+    assert k['pod_uid'] == os.environ['POD_UID']
+    assert k['hostname'] == socket.gethostname()
+    assert k['sts_uid'] == '33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0'
+    assert k['PVC_uid'] == PVC_UID and k['PVC_name'] == 'claim-vk-b'
+    assert k['volume_name'] == 'pvc-' + PVC_UID and k['subPath'] == SUBPATH
+    assert BASE.resolve() == BASE and not BASE.is_symlink()
+    owner = json.loads(small(BASE / 'PROJECT_OWNER.json'))
+    assert owner['project'] == 'lpp' and owner['experiment'] == 'E25'
+    assert owner['claim'] == k['PVC_name'] and owner['claim_uid'] == PVC_UID
+    assert owner['run_id'] == 'e25_pvc_20261126_01'
+    mask = sorted(os.sched_getaffinity(0))
+    assert len(mask) == 27, 'Guaranteed allocation must expose the full selected pool before qualification'
+    assert small('/sys/fs/cgroup/cpu.max') == '2700000 100000'
+    assert small('/sys/fs/cgroup/memory.max') == '274877906944'
+    assert small('/proc/self/cgroup') == '0::/'
+    gpu_raw = subprocess.run(['nvidia-smi', '--query-gpu=uuid,name,memory.total,driver_version',
+        '--format=csv,noheader,nounits'], capture_output=True, text=True, check=True, timeout=20).stdout
+    gpu_rows = [r.split(',') for r in gpu_raw.strip().splitlines()]
+    assert len(gpu_rows) == 1 and len(gpu_rows[0]) == 4
+    gpu_uuid, gpu_name, gpu_memory, driver = [s.strip() for s in gpu_rows[0]]
+    assert 'H100' in gpu_name and int(gpu_memory) >= 79000
+    busy = subprocess.run(['nvidia-smi', '--query-compute-apps=pid', '--format=csv,noheader,nounits'],
+        capture_output=True, text=True, check=True, timeout=20).stdout.strip()
+    assert not busy, 'No overlap with existing CUDA consumers'
+    mount = []
+    for line in small('/proc/self/mountinfo').splitlines():
+        left, right = line.split(' - ', 1)
+        a, z = left.split(), right.split()
+        if a[4] == str(BASE):
+            mount.append(dict(root=a[3], mount_point=a[4], major_minor=a[2],
+                filesystem=z[0], source=z[1], options=a[5].split(','), super_options=z[2].split(',')))
+    assert len(mount) == 1 and mount[0]['root'] == '/' + SUBPATH
+    assert 'rw' in mount[0]['options'] and 'ro' not in mount[0]['super_options']
+    before = os.statvfs(BASE)
+    assert not (before.f_flag & os.ST_RDONLY)
+    assert before.f_bavail * before.f_frsize >= 40 * 2**30
+    assert before.f_files == 0 or before.f_favail > 0
+    assert probe(BASE)
+    root_dir = Path('/home/jovyan')
+    root_fs = os.statvfs(root_dir)
+    assert not (root_fs.f_flag & os.ST_RDONLY) and root_fs.f_bavail * root_fs.f_frsize >= 4 * 2**30
+    assert probe(root_dir)
+    after = os.statvfs(BASE)
+    assert after.f_bavail * after.f_frsize >= 40 * 2**30
+    topology = []
+    for cpu in mask:
+        root = Path('/sys/devices/system/cpu') / ('cpu' + str(cpu))
+        top = root / 'topology'
+        topology.append(dict(cpu=cpu, physical_package_id=small(top / 'physical_package_id'),
+            core_id=small(top / 'core_id'), thread_siblings_list=small(top / 'thread_siblings_list'),
+            numa_nodes=sorted(p.name for p in root.glob('node[0-9]*'))))
+    proof = dict(kind='E25_V6_ACTUAL_BLOCK_PLATFORM_ADMISSION', block=block,
+        observed_unix=time.time(), actual_scientific_jobs_started=0, base=str(BASE),
+        pod_uid=k['pod_uid'], sts_uid=k['sts_uid'], hostname=k['hostname'],
+        boot_id=small('/proc/sys/kernel/random/boot_id'), node=k['node'], image_digest=k['image_digest'],
+        gpu=dict(uuid=gpu_uuid, name=gpu_name, memory_total_mib=int(gpu_memory), driver=driver),
+        cpu_affinity=mask, cpu_max=small('/sys/fs/cgroup/cpu.max'), memory_max=small('/sys/fs/cgroup/memory.max'),
+        topology=topology, storage=dict(PVC_name=k['PVC_name'], PVC_uid=PVC_UID,
+            volume_name=k['volume_name'], subPath=SUBPATH, device=BASE.stat().st_dev,
+            mount=mount[0], mount_readonly=False, bytes_available=after.f_bavail * after.f_frsize,
+            inodes_available=after.f_favail, inodes_total=after.f_files, write_fsync_readback_unlink=True),
+        root_layer=dict(mount_readonly=False, bytes_available=root_fs.f_bavail * root_fs.f_frsize,
+            write_fsync_readback_unlink=True), kubernetes_binding=k,
+        scope='Exact fresh root API UID/PVC/image binding plus local mount, resource, idle GPU and owned-file probes. Sampled admission, no capacity reservation, continuous health, exclusive cores or bandwidth claim.',
+        root_admission_source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        YT_writes=0, statefulset_actions=0)
+    print(json.dumps(proof, sort_keys=True, allow_nan=False))
+
+
+if __name__ == '__main__':
+    main()

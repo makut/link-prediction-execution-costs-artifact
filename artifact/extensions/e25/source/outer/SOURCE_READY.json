@@ -1,0 +1,29 @@
+{
+  "YT_calls": 0,
+  "actual_platform_or_scientific_blocks_observed": 0,
+  "actual_target_or_qualification_claim": false,
+  "all_three_blocks_required": true,
+  "block_jobs": 8,
+  "cluster_calls": 0,
+  "files": {
+    "README.txt": {
+      "bytes": 2495,
+      "sha256": "0e250a72b37cb95e8c82e70ec7020fa666c618738ae6e235462b58aec9d905e2"
+    },
+    "run_block.py": {
+      "bytes": 34499,
+      "sha256": "072575b15555a83f223e15643b869874f9a5e4f83172c06e0f4f5d032bdae4c9"
+    }
+  },
+  "global_cohort_jobs": 24,
+  "kind": "E25_V6_MINIMAL_BLOCK_ENVELOPE_SOURCE_READY",
+  "outer_max_seconds": 4200,
+  "platform_schema": "E25_V6_ACTUAL_BLOCK_PLATFORM_ADMISSION",
+  "producer_manifest_sha256": "3fd8783173e4a850018d860459881aafd1dd49e8d4cda101eb273641e47af086",
+  "producer_max_seconds": 3900,
+  "protocol_sha256": "e89b371089bd01f71579fdc00ec06004373bb549542658cc223914759f392e18",
+  "ready_for_allocation": true,
+  "source_or_tests_executed": false,
+  "source_review": "Root inspected all envelope source and interfaces; independent producer source/archive peer a2faadde. Static AST only by source preparer.",
+  "status": "SOURCE_READY_FOR_ROOT_PLATFORM_ADMISSION"
+}

@@ -1,0 +1,44 @@
+{
+  "actions": {
+    "actual_data_or_platform_read": 0,
+    "cluster_YT_network_calls": 0,
+    "code_or_publication_edits": 0,
+    "wrapper_or_producer_imports_or_execution": 0
+  },
+  "checks": {
+    "PSS_row_AST_exact_after_need_to_require_rename": true,
+    "actual_child_PID_start_clean_wait_quiescence_before_validation": true,
+    "actual_root_layer_mount_readonly_and_probes_schema_aligned": true,
+    "borrowed_v4_archive_cleanup_successful_exit_source_packet_AST_exact": true,
+    "complete_exact_original_eight_job_grid_source_input_model_consumption_worker_close_gates": true,
+    "dynamic_platform_JSON_wholeSHA_block_Pod_boot_CPU_quota_memory_topology_GPU_mount_capacity_binding": true,
+    "fsync_local_archive_and_directory_before_local_receipt": true,
+    "full_bounded_text_raw_source_and_proof_archive_whole_member_hash_checks": true,
+    "incomplete_single_block_never_promoted_to_complete_global24": true,
+    "local_Python310_AST": true,
+    "no_YT_network_API_release_automatic_retry": true,
+    "producer_v6_CLI_and_plan_complete_terminal_platform_fieldnames_match": true,
+    "recorded_disk_and_recomputed_PSS_no_CPU_unknown_filtering": true,
+    "source_input_output_disjoint_and_owned_timing_lock": true,
+    "strict_frozen_source_self_readiness_and_explicit_execute_gate": true,
+    "withinblock_stream_and_cross576_no_fake_three_rep_statistics": true
+  },
+  "findings": [],
+  "kind": "E25_V6_LEAN_WRAPPER_NARROW_INDEPENDENT_SOURCE_PEER",
+  "limits": [
+    "Narrow source review only, not actual experiment or numerical audit. Later independent aggregate must validate all three complete blocks and platform disclosures.",
+    "Wrapper terminal predates own OS exit; root must observe actual wrapper exit0/owned quiescence/lock and preserve verified archive before release.",
+    "Recorded image/PVC/API identities are root-attested; no container-only proof of remote control-plane identity is claimed.",
+    "PSS is sampled/non-atomic, no RSS sum/full-residency/capacity-reservation or causal cross-allocation claim."
+  ],
+  "reviewer": "project_audit",
+  "source_ready": {
+    "bytes": 1163,
+    "sha256": "88b06c57d7de42c062fbd2ea76cd268999d3bbabe8bbd31130a9ec79dfa5a785"
+  },
+  "status": "PASS_SOURCE_ONLY_ACTUAL_PLATFORM_AND_BLOCK_RESULTS_NOT_CERTIFIED",
+  "wrapper": {
+    "bytes": 34499,
+    "sha256": "072575b15555a83f223e15643b869874f9a5e4f83172c06e0f4f5d032bdae4c9"
+  }
+}

@@ -1,59 +1,56 @@
 {
-  "AST_identical_to_v3": [
-    "grid",
-    "stats",
-    "pss_row",
-    "environment_job_labels",
-    "environment_qualification"
-  ],
-  "CLI_help": "PASS",
-  "CPU_policy": "fixed27_env_v3",
-  "PSS_scope": "Same all-eligible-phase per-run maximum and three-observed-run range; CPU/disk unknown never filters PSS samples. Complete-cohort hard failure forbids success, rather than selecting favorable observations.",
   "Python310_AST": "PASS",
-  "actual_ENV_v4_raw_audits_performed": 0,
-  "cluster_network_YT_actions": 0,
-  "controller_guard_policy": "latched_disk_guard_v4",
-  "execution_scope": "Static AST, source comparisons and CLI help only. No actual archive audit, mock scientific data, producer import, GPU, network, YT, staging, launch or publication.",
+  "actual_archive_audits_performed": 0,
+  "actual_plot_runs": 0,
+  "aggregate_digest_exports": [
+    "source_bound_consumed_input_streams",
+    "source_bound_semantic_prefixes_by_horizon"
+  ],
+  "all_three_complete_blocks_required": true,
+  "binding_state": "FROZEN_PRODUCER_WRAPPER_DYNAMIC_ACTUAL_PLATFORM",
+  "block_jobs": 8,
+  "cluster_GPU_network_YT_actions": 0,
   "files": {
     "README.txt": {
-      "bytes": 4467,
-      "sha256": "123cff4df7530c08a5d68b348e411ccf0446034a3614c3200350d9aae6e5b57f"
+      "bytes": 4375,
+      "sha256": "9f4ce5704340ee9b61f064a09a175cba9a19977cc1ff2c5629c527225a822993"
     },
-    "audit_e25_env_v4.py": {
-      "bytes": 48679,
-      "sha256": "44b11d6a684be138487b5b1f5112ad14cbc4ea5809a08821f5061b28f9091393"
-    },
-    "independent_disk.py": {
-      "bytes": 4348,
-      "sha256": "1112282c70e706864e6d916b03ced0a13d1e7d5e8aee58cb228e22cc32e62233"
+    "audit_block_v6.py": {
+      "bytes": 65614,
+      "sha256": "b50f69169d8149d090913dcedf5a15aea8ed6d397650a276f432e1781b41deb5"
     },
     "independent_env.py": {
-      "bytes": 19250,
-      "sha256": "5c1b51876e591f9798551043064fdc1fa892d4bd6705bc9d84c7a0d99ab107fe"
+      "bytes": 19810,
+      "sha256": "96959b28102ea112538783843b1fe50634a733fac7d19ee77eeff54732ed7c27"
     }
   },
-  "independent_env_module_byte_identical_to_v3": true,
-  "kind": "E25_ENV_V4_INDEPENDENT_RAW_AUDIT_HELPER_SOURCE_ONLY",
-  "new_scientific_data_synthesized": false,
-  "new_scientific_tests_or_experiments": 0,
-  "prior_capsule": {
-    "bytes": 1168934,
-    "scope": "Whole SHA/local-preservation receipt only. No expansion, old timing reads/pooling, recovered partial job metrics or OS-exit0 claim.",
-    "sha256": "34d1dbc0aba48f3ce72b766a655f48ee42b857edf70a7d19415d12aa90490d39"
+  "focused_metadata_fixtures": {
+    "passed": 15,
+    "scope": "Pure metadata, isolated frozen config-declaration, synthetic root launch/archive/exit-frame fixtures only; no actual audit() invocation, scientific metrics, actual audit report, graph, model, experiment or cluster action.",
+    "source": {
+      "bytes": 12571,
+      "sha256": "de1d15ee53a24ec3a7b92c7a5b543de2502372c905299249ea700484221c75a6"
+    },
+    "tests": 15
   },
-  "producer_modules_imported": false,
-  "protocol_sha256": "ff42b44bf17ff54d9994731543fbb3d73caaabb56c7150f576e208ad6c3f1fc2",
-  "required_inputs": "Genuine completed ENVv4 raw archive, root-independent whole SHA and fresh output path. No extraction/recorded-path opening.",
-  "scientific_audit_body_AST_identical_to_v3_after_only_disk_signature_call_and_report_fields_removed": true,
-  "source_manifest_sha256": "82f93337ba4b4333cc319b610f6bad1ad24c5f9edf1c79731ae6127eed94c005",
+  "global24_complete": false,
+  "independent_environment_byte_identical_to_v5": true,
+  "kind": "E25_V6_EIGHT_APP_BLOCK_INDEPENDENT_AUDITOR_SOURCE_READY",
+  "producer_manifest_sha256": "3fd8783173e4a850018d860459881aafd1dd49e8d4cda101eb273641e47af086",
+  "protocol_sha256": "e89b371089bd01f71579fdc00ec06004373bb549542658cc223914759f392e18",
+  "scope": "Bounded offline source-bound eight-app reconstruction only. No independently rehashed tensor/graph payloads; no actual launch, collection, OS-exit or persistence observation by source preparation.",
   "source_peer": {
-    "bytes": 4303,
-    "filename": "INDEPENDENT_SOURCE_PEER.json",
-    "remaining_material_findings": 0,
-    "sha256": "cc84acaffd81f1134adccfe023ff908b329d540451d42e548858e4296d118381"
+    "bytes": 5000,
+    "file": "INDEPENDENT_SOURCE_PEER.json",
+    "sha256": "2e48863c3ab208e5827bbc08691d4f8a3e4e90bee94e9ca04a655be9930cfc2b",
+    "status": "PASS_SOURCE_ONLY"
   },
-  "status": "SOURCE_PEER_PASS_AWAITING_GENUINE_COMPLETED_ENV_V4_ARCHIVE",
-  "storage_scope": "Original/nested actual admission; Bound PVC UID/volumeName + Pod subPath/mount/device/owned-file probes; direct PV claimRef was not visible. Runtime4GiB/positive exposed inodes separate from initial80GiB/64K admission. Recorded byte thresholds checked; raw statvfs block arithmetic not serialized. Latest inventory is sampled/non-atomic; no capacity reservation or continuous/global health claim.",
-  "unchanged_pre_outcome_PSS_rule_sha256": "47b8a0f24c4ec3f386a8b8ba29f6d52a2c3af54ea46b3f2389f6483914bb0a90",
-  "v1_v2_v3_helpers_unchanged": true
+  "status": "SOURCE_READY_FOR_ROOT_ACTUAL_BLOCK_AUDIT",
+  "unchanged_v5_AST": [
+    "grid",
+    "pss_row",
+    "environment_job_labels"
+  ],
+  "wrapper_ready_sha256": "88b06c57d7de42c062fbd2ea76cd268999d3bbabe8bbd31130a9ec79dfa5a785",
+  "wrapper_sha256": "072575b15555a83f223e15643b869874f9a5e4f83172c06e0f4f5d032bdae4c9"
 }

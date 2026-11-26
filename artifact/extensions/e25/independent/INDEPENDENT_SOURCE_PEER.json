@@ -1,88 +1,81 @@
 {
   "actions": {
+    "auditor_or_producer_source_mutations": 0,
     "cluster_network_YT_calls": 0,
     "imports_or_helpers_executed": 0,
-    "producer_mutations": 0,
-    "staging_publication_manuscript_actions": 0,
-    "tests_fixtures_or_actual_audits": 0
+    "outcome_metrics_read": 0,
+    "tests_or_actual_audits_executed": 0
   },
   "checks": {
-    "AST_exact_v3_functions": [
-      "grid",
-      "stats",
-      "pss_row",
-      "environment_job_labels",
-      "environment_qualification"
-    ],
-    "CPU_and_disk_unknown_do_not_filter_PSS_eligibility": true,
-    "Linux_dev_t_major_minor_formula_matches_admitted259_19": true,
-    "actual_PVC_UID_volumeName_subPath_owned_write_scope_retained": true,
-    "all_declared_source_pins_exact": true,
-    "all_recorded_disk_rows_schema_ordered_clocks_constant_path_device_capacity_RW_exposed_inodes_independently_checked": true,
-    "disk_history_nonempty8MiB_complete4096B_lines_streamed_hashed": true,
-    "frozen_packet_protocol_model_and_PSS_rule_pins_match": true,
-    "full_cohort_hard_fail_instead_of_favorable_PSS_selection": true,
-    "independent_env_byte_identical_v3": true,
-    "initial80GiB_64Ki_distinct_from_runtime4GiB_positive_exposed_inode": true,
-    "latest_inventory4KiB_final_disk_clock_nonatomic_byte_cap_vanished_counter_checked": true,
-    "new_cohort_environment_v4_storage_v4_report_keys": true,
-    "no_full_statvfs_block_arithmetic_PV_claimRef_global_or_continuous_health_claim": true,
-    "nonnull_controller_latch_or_any_raw_guard_marker_rejects_full_audit": true,
-    "original_and_nested27b1_storage_d3e1_admission_bind_via_frozen_protocol": true,
-    "original_outer_guard_proof_reconstructed_from_raw_rows_and_whole_file_hashes": true,
-    "prior_capsule_whole_SHA_only_never_expanded_or_pooled": true,
-    "python310_AST_files": 3,
-    "streaming_archive_no_extraction_or_recorded_path_opening": true,
-    "v4_CPU_predeclaration_schema_matches_actual_observed_package_core_NUMA_fields_only": true,
-    "whole_archive128MiB_members32MiB_count4096_raw384MiB_tar400MiB_retainedJSON64MiB_caps_preserved": true,
-    "whole_audit_AST_exact_after_only_declared_disk_wiring_and_output_keys_removed": true
+    "actual_child_wait0_and_full8_app_waits_normal_worker_close_required": true,
+    "actual_original_wrapper_Z_kernel0_required_absence_does_not_imply_wait0": true,
+    "actual_root_launch_argv_block_options_platform_paths_and_dynamic_UID_hash_frame_match_writers": true,
+    "all_PSS_and_sampling_error_clocks_streamed_strictly_ordered_within_actual_lifetime": true,
+    "bounded_streaming_no_extraction_recorded_path_access_or_producer_import": true,
+    "dynamic_actual_preblock40GiB_RW_PVC_probe_separate_from_runtime4GiB_positive_exposed_inode": true,
+    "external_nonempty_subset_and_own_boundary_exact27_separately_enforced_even_declaredPASS": true,
+    "four_raw_paired_rows_four_withinblock_ratios_eight_observations_no_fake_three_rep_stats": true,
+    "global24_always_false_single_block_all3complete_required_prior_capsule_reference_only": true,
+    "grid_pss_row_environment_job_labels_AST_identical_v5": true,
+    "independent_ENV_role_aware_module_byte_identical_v5": true,
+    "known_outer_failure_partial_or_archive_contradiction_rejected": true,
+    "ordered_nonoverlapping_app_support_native_posthash_cleanup_lifetimes_checked": true,
+    "original_FR3_whole_hash_receipts_pair_workload_whole_member_host_boot_Python_versions_GPU_driver_bound": true,
+    "original_full24_order_filtered_to_exact8_global_rep_with_complete_config_defaults_paths": true,
+    "outer_terminal_archive_size_SHA_manifest_count_rawbytes_and_caps_rederived_from_loaded_members": true,
+    "python310_static_AST_main_module_and_fixture_source": "PASS",
+    "raw_CPU_PID_TID_cgroup_brackets_and_all_boundary_attempts_checked": true,
+    "raw_PSS_membership_phase_eligibility_all_phase_maxima_recomputed_without_CPU_disk_selection": true,
+    "raw_disk_first_last_latest_inventory_and_finalstatus_bound_to_actual_producer_lifetime": true,
+    "recorded_archive_path_remote_out_plus_block_raw_tgz_never_opened_as_local_recorded_path": true,
+    "source_bound_stream_and_full_semantic_prefix_maps_exported_for_future_crossblock_gate": true,
+    "source_packet_and_wrapper_complete_exact_archived_inventories_pinned": true,
+    "wrapper_terminal_PSS_disk_stream_and_report_maps_match_independent_reconstruction": true
   },
   "findings": [],
-  "kind": "ENV_V4_INDEPENDENT_RAW_AUDITOR_STATIC_SOURCE_PEER",
-  "limits": [
-    "Static source/AST review only; no auditor/helper/fixture/CLI invocation, source module import or experiment performed by this reviewer.",
-    "Producer reports CLI help PASS; this reviewer did not invoke it.",
-    "No genuine completed ENVv4 raw archive has been audited by this peer. Final actual source/archive collection and independent raw invocation remain separate gates.",
-    "Root predeclaration does not serialize complete sibling lists; only available package/core/NUMA projection is compared.",
-    "Available-byte thresholds derive from serialized producer byte observations; raw statvfs block counters were not serialized, so block arithmetic is explicitly not independently recomputed.",
-    "Auditor does not independently prove final outer OS exit/live lock/YT state or final outer publication, nor recompute full graph/PyG bytes; these remain separate collection/provenance gates."
-  ],
-  "reference_pins": {
-    "outer_contract": {
-      "bytes": 6198,
-      "sha256": "dafc7b08eb3671d779394a485028220e11a1913890cb7fd4d9abac9cc0b007c5"
-    },
-    "outer_manifest": {
-      "bytes": 2335,
-      "sha256": "26be09b499fe3ee5c3ef05f59053d2c0bf974fe2e03c0b0977fc593f81150bd2"
-    },
-    "producer_manifest": {
-      "bytes": 6293,
-      "sha256": "82f93337ba4b4333cc319b610f6bad1ad24c5f9edf1c79731ae6127eed94c005"
-    }
+  "frozen_reference_pins": {
+    "PACKET_SHA": "3fd8783173e4a850018d860459881aafd1dd49e8d4cda101eb273641e47af086",
+    "PROTOCOL_SHA": "e89b371089bd01f71579fdc00ec06004373bb549542658cc223914759f392e18",
+    "PSS_RULE_SHA": "47b8a0f24c4ec3f386a8b8ba29f6d52a2c3af54ea46b3f2389f6483914bb0a90",
+    "WRAPPER_READY_SHA": "88b06c57d7de42c062fbd2ea76cd268999d3bbabe8bbd31130a9ec79dfa5a785",
+    "WRAPPER_SHA": "072575b15555a83f223e15643b869874f9a5e4f83172c06e0f4f5d032bdae4c9"
   },
+  "kind": "E25_V6_EIGHT_APP_BLOCK_AUDITOR_INDEPENDENT_STATIC_SOURCE_PEER",
+  "limits": [
+    "Static source/schema/lineage peer only. No genuine archived data, metric, experiment, live target or resource observation was read or certified.",
+    "Original consumed tensor/graph hashes remain source-bound serialized equality evidence; tensor and graph bytes are not independently regenerated/rehashed.",
+    "Raw statvfs block counters and exact boundary absolute start/sleeps were not serialized; claims remain limited accordingly.",
+    "Root API/PVC/OS-exit/collection fields are independently bound as recorded root evidence; this offline source peer makes no live OS or cluster observation.",
+    "A single successful future audit establishes only one complete8 block; all3 separate blocks and cross-block digest/platform/statistical gates remain required before aggregate24 claims."
+  ],
+  "resolved_review_findings": [
+    "Corrected stale80GiB_64Ki admission scope to v6 initial40GiB_positive exposed inodes",
+    "Added explicit known original outer_complete failure/success and full archive binding",
+    "Bound first_last disk and latest inventory clocks through finalstatus to actual producer wait"
+  ],
   "reviewer": "reviewer_eab",
   "source_pins": {
     "README.txt": {
-      "bytes": 4467,
-      "sha256": "123cff4df7530c08a5d68b348e411ccf0446034a3614c3200350d9aae6e5b57f"
+      "bytes": 4375,
+      "sha256": "9f4ce5704340ee9b61f064a09a175cba9a19977cc1ff2c5629c527225a822993"
     },
-    "audit_e25_env_v4.py": {
-      "bytes": 48679,
-      "sha256": "44b11d6a684be138487b5b1f5112ad14cbc4ea5809a08821f5061b28f9091393"
-    },
-    "independent_disk.py": {
-      "bytes": 4348,
-      "sha256": "1112282c70e706864e6d916b03ced0a13d1e7d5e8aee58cb228e22cc32e62233"
+    "audit_block_v6.py": {
+      "bytes": 65614,
+      "sha256": "b50f69169d8149d090913dcedf5a15aea8ed6d397650a276f432e1781b41deb5"
     },
     "independent_env.py": {
-      "bytes": 19250,
-      "sha256": "5c1b51876e591f9798551043064fdc1fa892d4bd6705bc9d84c7a0d99ab107fe"
+      "bytes": 19810,
+      "sha256": "96959b28102ea112538783843b1fe50634a733fac7d19ee77eeff54732ed7c27"
     }
   },
-  "source_ready": {
-    "bytes": 2855,
-    "sha256": "c59560f9a7ae4817999ad6155aa2767bfa17e80c440ed4f1cd90e62df7c1645d"
-  },
-  "status": "PASS_SOURCE_ONLY_NO_GENUINE_ENV_V4_ARCHIVE_AUDITED"
+  "status": "PASS_SOURCE_ONLY_NO_ACTUAL_BLOCK_ARCHIVE_AUDITED",
+  "validation_scope": {
+    "actual_archive_audits_performed": 0,
+    "fixture_source_reviewed": {
+      "bytes": 12571,
+      "sha256": "de1d15ee53a24ec3a7b92c7a5b543de2502372c905299249ea700484221c75a6"
+    },
+    "producer_reports_pure_metadata_fixture_tests_passed": 15,
+    "reviewer_tests_or_fixtures_executed": 0
+  }
 }

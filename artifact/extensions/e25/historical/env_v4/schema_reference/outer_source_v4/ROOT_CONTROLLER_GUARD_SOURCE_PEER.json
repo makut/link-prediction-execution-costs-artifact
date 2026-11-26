@@ -1,0 +1,53 @@
+{
+  "actions": {
+    "cluster_network_YT_calls": 0,
+    "experiments_executed": 0,
+    "producer_source_edits": 0,
+    "tests_executed": 0
+  },
+  "conditions": [
+    "Regenerate and freeze PROTOCOL.json/SOURCE_MANIFEST/archive for this exact source pair; historical P2 delta receipt still pins earlier common.py and is not the final package manifest.",
+    "Outer binding must validate actual PVC mount device and identity against ROOT_STORAGE_AMENDMENT.json; controller records device but does not itself compare it to admitted PVC.",
+    "Actual target qualification and later complete fresh 24-job audit are separate required gates. This peer does not authorize or certify science results."
+  ],
+  "findings": [],
+  "kind": "ENV_V4_FINAL_DISK_GUARD_P2_DELTA_INDEPENDENT_SOURCE_PEER",
+  "resolved_finding": {
+    "finding": "Atomic rename of normal output temporary paths could falsely latch an inventory failure.",
+    "prior_peer_sha256": "23bf56b34342f04517ef5a644ab9bfd3a50a5eff5671bce0e49ec07c957eeb74",
+    "resolution": "Single lstat per observed entry; only FileNotFoundError is skipped and counted. Observed bytes remain accumulated and a real cap negative still latches even when a neighbor vanishes. Bounded latest receipt explicitly marks non-atomic inventory completeness.",
+    "severity": "P2"
+  },
+  "reviewed": {
+    "disk_history_bounded_8MiB_rows_4KiB_fsynced": true,
+    "focused_fixture_execution": "Producer reports PASS; independent reviewer did not run tests.",
+    "focused_fixture_source_reviewed_tests": 10,
+    "hard_guard_outside_transient_PSS_handler": true,
+    "latch_before_throttle": true,
+    "python310_static_AST": "PASS",
+    "read_only_low_bytes_reported_zero_inodes_hard": true,
+    "receipt_failure_preserves_latch": true,
+    "scientific_AST_unchanged_from_v3": [
+      "configs",
+      "summarize",
+      "validate",
+      "native_postcheck_and_cleanup",
+      "admission"
+    ],
+    "storage_declaration_actual_admission_sha256": "d3e1d4feb0c519eaf6a7f21d5f9847df5a3523efc8840cd1a3fb00c6b82da026",
+    "storage_declaration_exact_actual_amendment_sha256": "27b1cd73151fbe27592bdde318532f38593d877477478e2ddf1b066ef7b3b668",
+    "unreported_inodes_not_assumed_exhausted": true
+  },
+  "reviewer": "reviewer_eab",
+  "source_pins": {
+    "common.py": {
+      "bytes": 7450,
+      "sha256": "8f9057f3789461404a3644190be3cf51bfae49fec14deb0b3defcc33f4778c87"
+    },
+    "run_lifecycle.py": {
+      "bytes": 32895,
+      "sha256": "9a20c1e0e5c44953eb546e3610b2954fb29e619f6acc2198a3817951657ea330"
+    }
+  },
+  "status": "PASS_NARROW_SOURCE_DELTA_PENDING_PACKAGE_FREEZE_AND_TARGET_QUALIFICATION"
+}

@@ -1,4 +1,4 @@
-"""ENVv3: fixed27 mask, full task brackets and bounded boundary-only rescans.
+"""ENVv5: fixed27 envelope, exact owner boundaries and full task brackets.
 
 Linux scientific gates fail closed. Portable Mac CPU1 qualification reports an
 explicit unsupported status and supplies no evidence about target placement.
@@ -9,7 +9,7 @@ from common import require,save,identity
 
 COUNT=27
 QUOTA='2700000 100000'
-POLICY='fixed27_env_v3'
+POLICY='fixed27_env_v5'
 BOUNDARY_ATTEMPTS=8
 BOUNDARY_WALL_SECONDS=0.5
 BOUNDARY_PAUSE_SECONDS=0.01
@@ -147,12 +147,12 @@ def observe(contract,owners=None):
    'chosen_cpus_still_allowed':set(chosen)<=set(resource['ambient_cpu_pool']),
    'chosen_cpus_still_online':set(chosen)<=set(resource['online_cpus']),
    'stable_process_cgroups_exact':all(p['cgroup_membership']=='0::'+base['cgroup']['membership']for p in stable),
-   'stable_process_leader_masks_exact':all(p['leader_mask']==chosen for p in stable),
+   'stable_process_leader_masks_within_chosen':all(bool(p['leader_mask'])and set(p['leader_mask'])<=set(chosen)for p in stable),
    'observed_thread_masks_within_chosen':all(row['cpu_affinity']and set(row['cpu_affinity'])<=set(chosen)for p in processes for row in p['brackets']['task_affinity_observations']if row['cpu_affinity']is not None),
    'observed_process_PID_starts_exact':all(p['process_identity_exact']is not False for p in processes),
    'observed_TID_starts_exact':all(p['task_identities_exact']is True for p in processes),
    'observed_process_cgroups_exact':all(value=='0::'+base['cgroup']['membership']for p in processes for value in(p['brackets']['cgroup_before'],p['brackets']['cgroup_after'])if value is not None),
-   'observed_process_leader_masks_exact':all(p['leader_mask']==chosen for p in processes if p['leader_mask']is not None)}
+   'observed_process_leader_masks_within_chosen':all(bool(p['leader_mask'])and set(p['leader_mask'])<=set(chosen)for p in processes if p['leader_mask']is not None)}
   result.update(resources=resource,processes=processes,predicates=predicates,
    process_scan_complete_stable=len(stable)==len(processes),
    ambient_pool_changed=resource['ambient_cpu_pool']!=base['ambient_cpu_pool'])

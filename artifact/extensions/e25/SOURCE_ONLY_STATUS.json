@@ -1,0 +1,27 @@
+{
+  "actual_block_archives_included": 0,
+  "actual_block_audits_included": 0,
+  "actual_complete24_aggregates_included": 0,
+  "actual_root_collection_sidecars_included": 0,
+  "admission_helper_proof_binding": "root-attested exact source hash; no actual proof read by staging preparer",
+  "current_entry_point": "v6",
+  "future_evidence_gate": "Only after genuine collection, independent per-block and complete24 audits, and data/credential allowlist review.",
+  "historical_env_v4": {
+    "byte_preserved_files": 77,
+    "path": "historical/env_v4",
+    "scope": "Archived original source/preflight/schema/provenance only; original path examples historical, not active v6 CLI."
+  },
+  "kind": "E25_V6_SOURCE_INTEGRATION_CANDIDATE",
+  "python310_AST_all_python_sources": "PASS",
+  "repo_commit_push_release_actions": 0,
+  "results_pending": true,
+  "scientific_figures_included": 0,
+  "stage_outcome_or_actual_proof_reads": 0,
+  "staged_offline_CLI_help": "PASS auditor and aggregator",
+  "staged_synthetic_metadata_checks": {
+    "actual_outcome_reads": 0,
+    "cases": 12,
+    "passed": 12,
+    "serialized_actual_scientific_reports": 0
+  }
+}

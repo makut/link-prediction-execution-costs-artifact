@@ -1,0 +1,49 @@
+{
+  "CPU_policy": "fixed27_env_v5",
+  "Python310_AST": "PASS",
+  "actual_scientific_jobs_started": 0,
+  "archive": {
+    "bytes": 186183,
+    "filename": "e25_native_lifecycle_source_env_v6.tgz",
+    "sha256": "241aad9ac3a6407db361465251154cf2fc15e7c03092963a51b1be01465cacb0",
+    "tar_prefix": "e25_native_lifecycle_packet_v6"
+  },
+  "archive_regular_members": 42,
+  "canonical_protocol_sha256": "e89b371089bd01f71579fdc00ec06004373bb549542658cc223914759f392e18",
+  "changed_v5_payloads": [
+    "PROTOCOL.json",
+    "README.txt",
+    "common.py",
+    "run_lifecycle.py"
+  ],
+  "cluster_YT_calls": 0,
+  "focused_tests": {
+    "passed": 4,
+    "scope": "Plan-only metadata fixtures; original global-order partition, wrong/boolean block and changed whole proof SHA checks. No graph/model/GPU/process/cluster action.",
+    "source": {
+      "bytes": 3888,
+      "sha256": "2cf3e88572f89cc68e28a4d1ddd81dce1f2600b14b9aa56334c6c4f8727ea032"
+    }
+  },
+  "kind": "E25_V6_PROSPECTIVE_BLOCK_PRODUCER_SOURCE_READY",
+  "limits": {
+    "outer_block_seconds": 4200,
+    "preblock_free_bytes": 42949672960,
+    "producer_block_seconds": 3900,
+    "runtime_free_bytes": 4294967296
+  },
+  "next": "Independent final package delta review, then root actual allocation/admission/staging only against these exact pins. Actual block/aggregate audits are separate and have not been performed.",
+  "payloads": 41,
+  "platform": "Dynamic E25_V6_ACTUAL_BLOCK_PLATFORM_ADMISSION bytes+SHA supplied by root; no actual platform hash in global protocol. Source matches definitive admit_block_platform_v6.py schema and copied proof file.",
+  "protocol": "Global24, three prospective actual allocations of8 preserving original r1/r2/r3 order. All three complete required; only within-block paired ratios; raw four configuration rows, no fake3rep summaries. OS/PVC retained; fresh Numba/output per block.",
+  "raw_payload_bytes": 583117,
+  "science_and_PSS_preserved": "configs/command/validate/native-postcheck/check/disk-observation/env AST unchanged; all numerical/model/sampler/native/supervisor/worker sources byte-identical.",
+  "source_manifest": {
+    "bytes": 6307,
+    "sha256": "3fd8783173e4a850018d860459881aafd1dd49e8d4cda101eb273641e47af086"
+  },
+  "status": "LOGIC_PEER_AND_FOCUSED_CHECKS_PASS_PACKAGE_DELTA_PEER_PENDING",
+  "unchanged_v5_payloads": 37,
+  "v5_whole_manifest_payloads_unchanged": true,
+  "whole_archive_roundtrip": "PASS"
+}

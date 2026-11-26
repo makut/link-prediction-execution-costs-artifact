@@ -1,0 +1,46 @@
+{
+  "source_bundle_sha256": "31e375317b275db50d34ddc3629f389a569eb7134975e5f25f8ae76a81e05f98",
+  "subset": "Only corrected native operator core, build, tests and third-party license; no FR/VK replay controllers/plans",
+  "files": [
+    {
+      "path": "native_assoc_v1.cpp",
+      "bytes": 7987,
+      "sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20"
+    },
+    {
+      "path": "native_adapter_v1.py",
+      "bytes": 8499,
+      "sha256": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549"
+    },
+    {
+      "path": "build_native_v1.py",
+      "bytes": 2341,
+      "sha256": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6"
+    },
+    {
+      "path": "fixtures_v1.py",
+      "bytes": 1254,
+      "sha256": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35"
+    },
+    {
+      "path": "test_native_v1.py",
+      "bytes": 5060,
+      "sha256": "6f8337ef0b58908ba9cb02cc2d99dc49d495740d433315c27d0e3e3ae71f185f"
+    },
+    {
+      "path": "third_party/pytorch_sparse_LICENSE",
+      "bytes": 1086,
+      "sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486"
+    },
+    {
+      "path": "third_party/saint_cpu.cpp.upstream.txt",
+      "bytes": 1459,
+      "sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c"
+    },
+    {
+      "path": "third_party/upstream_pin.json",
+      "bytes": 1437,
+      "sha256": "d2a5e21560926f462155b95e4e2d51056094298aa1ced75d4856c663726c3943"
+    }
+  ]
+}

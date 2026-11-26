@@ -1,23 +1,38 @@
 {
+  "allocation_blocks": {
+    "applications_per_block": 8,
+    "blocks": [
+      1,
+      2,
+      3
+    ],
+    "completion": "All three independently complete8-app blocks required for global24 aggregate. Timed-out/failed blocks remain failed and are never salvaged, appended or pooled with earlier cohorts; no automatic retry.",
+    "deadline": "Producer3900s/outer4200s caps are admission/failure limits, not a speed or completion guarantee",
+    "global_applications": 24,
+    "platform": "Fresh actual allocation and root platform proof per block; Pod/GPU/CPU pool fixed within a block and allowed to differ between blocks",
+    "selection": "--repetition-block selects the original global repetition in the original full24 randomized order; original r1/r2/r3 names and all within-block pairs retained",
+    "statistics": "Four horizon/worker configuration rows per block, two raw arm values each; paired ratios only within block. No fake three-repetition summaries in a single block.",
+    "version": "prospective_three_allocations_v6"
+  },
   "arms": [
     "reference_union_compiled",
     "reference_union_native_persistent"
   ],
   "batch_size": 32,
-  "cache": "OS cache and shared on-disk Numba cache retained; no prefault, eviction or cold-cache claim",
+  "cache": "Fresh output and Numba cache for each allocation block; shared within that block including qualification. OS/PVC caches retained, not cleared; no prefault, eviction or cold-cache claim",
   "cap": 200,
   "controller_guard_amendment": {
     "disk_limits": "4GiB live reserve and2GiB non-runtime cap on the actual admitted output backing filesystem; no reservation or node eviction-threshold guarantee",
     "disk_observer": "At actual approximately2s controller checks, bounded fsynced JSONL records statvfs bytes/inodes available and readonly flag on output backing filesystem;8MiB history cap; observer cost included without subtraction",
     "hard_negatives": "Controller deadline/environment/disk/output errors latch once, persist a bounded failure receipt when storage permits, and abort owned processes independently of transient PSS sampling errors; no throttle or successful sample clears them",
     "output_observer": "Non-atomic sampled output-byte cap, not instantaneous quota; one lstat per entry, vanished entries skipped and counted in bounded latest inventory receipt; observed bytes and known negatives never heal",
-    "scope": "Fresh complete24 only; no partial-attempt pooling",
+    "scope": "Fresh complete8-app blocks only; all three complete global repetitions required for24, no partial-attempt pooling",
     "storage_admission": {
-      "actual_admission_sha256": "d3e1d4feb0c519eaf6a7f21d5f9847df5a3523efc8840cd1a3fb00c6b82da026",
-      "artifact": "ROOT_STORAGE_AMENDMENT.json",
-      "binding": "Separate outer-bound actual platform amendment; no science launch from this protocol reference alone",
-      "scope": "All source/graph/results/native/temp/cache paths under the actual write-proven BASE PVC subdirectory. Fresh whole24 only; storage placement can affect timing and is disclosed. No causal ratio to failed attempts or E23, cold-cache, continuous/exclusive bandwidth or disk reservation claim.",
-      "sha256": "27b1cd73151fbe27592bdde318532f38593d877477478e2ddf1b066ef7b3b668"
+      "binding": "Separate actual root proof JSON and whole SHA supplied by --platform-admission-json/--platform-admission-sha256, bound in each selected block plan and copied byte-exactly; no actual platform hash in this global protocol",
+      "preblock_minimum_bytes_available": 42949672960,
+      "runtime_minimum_bytes_available": 4294967296,
+      "schema_kind": "E25_V6_ACTUAL_BLOCK_PLATFORM_ADMISSION",
+      "scope": "Actual Pod/host/boot/GPU/CPU pool/quota/memory/topology and root-bound PVC/image metadata fixed within each block. Source/graph/results/native/temp/cache use admitted project mount. Storage placement can affect timing; no reservation or continuous/exclusive health/bandwidth claim."
     },
     "version": "latched_disk_guard_v4"
   },
@@ -34,15 +49,23 @@
       "pause_seconds": 0.01,
       "wall_budget_scope": "From before own identity read through terminal decision; a scan returning after deadline cannot PASS. OS I/O can overrun before failure is reported; not a hard real-time cancellation guarantee."
     },
-    "cohort": "fresh full24 restart and fresh output/Numba cache; aborted v1/v2 attempts kept separately, never pooled or appended",
-    "invariants": "same host/boot/cgroup identity and memory limit; chosen CPUs remain in effective cpuset and online; process leaders exact chosen mask; runtime thread masks nonempty subsets; all widening or quota change aborts",
+    "cohort": "Three prospectively specified fresh8-app allocation blocks cover the original global24 grid; fresh output/Numba cache per block, no failed/partial-cohort pooling",
+    "invariants": "same host/boot/cgroup identity and memory limit; chosen CPUs remain in effective cpuset and online; externally observed process leaders and runtime threads have nonempty subset masks; own controller/app/worker boundary leaders retain exact chosen mask; any observed empty/outside mask or quota change aborts",
+    "leader_envelope_amendment": {
+      "claims": "Fixed27 CPU envelope plus exact owner boundary gates; not exact27 for every external descendant leader at every sample or continuous/exclusive placement",
+      "cohort": "All prior failed cohorts remain diagnostic only; prospectively chosen three fresh8-app blocks, fresh output/Numba cache per block, all24 required for aggregate, no failed-cohort pooling",
+      "motivation": "Separate aborted ENVv4 cohort observed one new single-task descendant leader at[141]inside chosen27 during worker startup; all other observed masks/resources valid. Runtime startup is a plausible explanation, not a proven OpenMP mechanism or outside-envelope escape.",
+      "no_healing": "Every observed empty/outside task/leader mask remains an immediate hard negative even in unstable scans; no extra retry, repin, affinity mutation or science/supervision/order change",
+      "scope": "External descendant-tree observations admit nonempty leader subsets inside chosen27; all own boundary scans still require the exact27 leader mask and unchanged PID/start/cgroup",
+      "version": "external_leader_containment_v5"
+    },
     "limits": "shared27CPU time quota and27logical CPU mask are not exclusive physical cores, absence of contention, bandwidth reservation, or continuous observation",
     "logical_cpu_count": 27,
     "mutation": "one controller affinity pin before admission; children inherit; app/worker guards never repin",
     "observer": "read-only named-predicate boundary guards plus complete before/after PID/TID/cgroup brackets in CPU/PSS observations approximately every2s; metadata work included, no subtraction; ambient pool changes outside chosen mask recorded",
     "quota": "exact cpu.max2700000 100000",
     "selection": "highest27 currently allowed online logical CPU IDs, chosen once before admission/build/qualification; optional root-bound E25_EXPECTED_CPU_AFFINITY pins the same exact list for prelaunch qualification and controller",
-    "version": "fixed27_env_v3"
+    "version": "fixed27_env_v5"
   },
   "gpu_allocator_gib": 24,
   "hops": 2,
@@ -72,12 +95,13 @@
   },
   "input_equality": "typed/shaped ordered CPU PyG batch stream SHA and exact query indices for every consumed graph; short576 must equal long prefix576; hash time included without subtraction",
   "long_semantic_prefix576": "full input SHA snapshot only; no added CUDA sync or timing checkpoint",
-  "max_hours": 4,
+  "max_block_seconds": 3900,
   "max_job_seconds": 2400,
   "model": "unchanged featureless DGCNN32/3/k281/maxz1000 Adam1e-4",
-  "name": "friendster_native_lifecycle_checkpointed_env_v3",
+  "name": "friendster_native_lifecycle_prospective_allocation_blocks_v6",
   "native": "unchanged standalone persistent NativeCSR and pack_local; no PENCIL NativeGraph/Facade or sampler",
   "order_seed": 20261126,
+  "outer_block_seconds": 4200,
   "prefetch_factor": 1,
   "repetitions": 3,
   "sampler_seconds": 2,

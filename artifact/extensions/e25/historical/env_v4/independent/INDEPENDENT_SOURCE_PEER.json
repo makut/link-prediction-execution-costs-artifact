@@ -1,0 +1,88 @@
+{
+  "actions": {
+    "cluster_network_YT_calls": 0,
+    "imports_or_helpers_executed": 0,
+    "producer_mutations": 0,
+    "staging_publication_manuscript_actions": 0,
+    "tests_fixtures_or_actual_audits": 0
+  },
+  "checks": {
+    "AST_exact_v3_functions": [
+      "grid",
+      "stats",
+      "pss_row",
+      "environment_job_labels",
+      "environment_qualification"
+    ],
+    "CPU_and_disk_unknown_do_not_filter_PSS_eligibility": true,
+    "Linux_dev_t_major_minor_formula_matches_admitted259_19": true,
+    "actual_PVC_UID_volumeName_subPath_owned_write_scope_retained": true,
+    "all_declared_source_pins_exact": true,
+    "all_recorded_disk_rows_schema_ordered_clocks_constant_path_device_capacity_RW_exposed_inodes_independently_checked": true,
+    "disk_history_nonempty8MiB_complete4096B_lines_streamed_hashed": true,
+    "frozen_packet_protocol_model_and_PSS_rule_pins_match": true,
+    "full_cohort_hard_fail_instead_of_favorable_PSS_selection": true,
+    "independent_env_byte_identical_v3": true,
+    "initial80GiB_64Ki_distinct_from_runtime4GiB_positive_exposed_inode": true,
+    "latest_inventory4KiB_final_disk_clock_nonatomic_byte_cap_vanished_counter_checked": true,
+    "new_cohort_environment_v4_storage_v4_report_keys": true,
+    "no_full_statvfs_block_arithmetic_PV_claimRef_global_or_continuous_health_claim": true,
+    "nonnull_controller_latch_or_any_raw_guard_marker_rejects_full_audit": true,
+    "original_and_nested27b1_storage_d3e1_admission_bind_via_frozen_protocol": true,
+    "original_outer_guard_proof_reconstructed_from_raw_rows_and_whole_file_hashes": true,
+    "prior_capsule_whole_SHA_only_never_expanded_or_pooled": true,
+    "python310_AST_files": 3,
+    "streaming_archive_no_extraction_or_recorded_path_opening": true,
+    "v4_CPU_predeclaration_schema_matches_actual_observed_package_core_NUMA_fields_only": true,
+    "whole_archive128MiB_members32MiB_count4096_raw384MiB_tar400MiB_retainedJSON64MiB_caps_preserved": true,
+    "whole_audit_AST_exact_after_only_declared_disk_wiring_and_output_keys_removed": true
+  },
+  "findings": [],
+  "kind": "ENV_V4_INDEPENDENT_RAW_AUDITOR_STATIC_SOURCE_PEER",
+  "limits": [
+    "Static source/AST review only; no auditor/helper/fixture/CLI invocation, source module import or experiment performed by this reviewer.",
+    "Producer reports CLI help PASS; this reviewer did not invoke it.",
+    "No genuine completed ENVv4 raw archive has been audited by this peer. Final actual source/archive collection and independent raw invocation remain separate gates.",
+    "Root predeclaration does not serialize complete sibling lists; only available package/core/NUMA projection is compared.",
+    "Available-byte thresholds derive from serialized producer byte observations; raw statvfs block counters were not serialized, so block arithmetic is explicitly not independently recomputed.",
+    "Auditor does not independently prove final outer OS exit/live lock/YT state or final outer publication, nor recompute full graph/PyG bytes; these remain separate collection/provenance gates."
+  ],
+  "reference_pins": {
+    "outer_contract": {
+      "bytes": 6198,
+      "sha256": "dafc7b08eb3671d779394a485028220e11a1913890cb7fd4d9abac9cc0b007c5"
+    },
+    "outer_manifest": {
+      "bytes": 2335,
+      "sha256": "26be09b499fe3ee5c3ef05f59053d2c0bf974fe2e03c0b0977fc593f81150bd2"
+    },
+    "producer_manifest": {
+      "bytes": 6293,
+      "sha256": "82f93337ba4b4333cc319b610f6bad1ad24c5f9edf1c79731ae6127eed94c005"
+    }
+  },
+  "reviewer": "reviewer_eab",
+  "source_pins": {
+    "README.txt": {
+      "bytes": 4467,
+      "sha256": "123cff4df7530c08a5d68b348e411ccf0446034a3614c3200350d9aae6e5b57f"
+    },
+    "audit_e25_env_v4.py": {
+      "bytes": 48679,
+      "sha256": "44b11d6a684be138487b5b1f5112ad14cbc4ea5809a08821f5061b28f9091393"
+    },
+    "independent_disk.py": {
+      "bytes": 4348,
+      "sha256": "1112282c70e706864e6d916b03ced0a13d1e7d5e8aee58cb228e22cc32e62233"
+    },
+    "independent_env.py": {
+      "bytes": 19250,
+      "sha256": "5c1b51876e591f9798551043064fdc1fa892d4bd6705bc9d84c7a0d99ab107fe"
+    }
+  },
+  "source_ready": {
+    "bytes": 2855,
+    "sha256": "c59560f9a7ae4817999ad6155aa2767bfa17e80c440ed4f1cd90e62df7c1645d"
+  },
+  "status": "PASS_SOURCE_ONLY_NO_GENUINE_ENV_V4_ARCHIVE_AUDITED"
+}

@@ -5,12 +5,12 @@
       "sha256": "5096961eb53321c0dd8d8b6eeb978cd3e4a58256f1ab706558500d618ffe26ca"
     },
     "PROTOCOL.json": {
-      "bytes": 5879,
-      "sha256": "96b1d5371dc107e8ee93beacc2c458b7d2fad36aebf178b8c7f64be8bfdb8615"
+      "bytes": 8488,
+      "sha256": "88e889be2cac5c8360228ab9181792a4620f9edc3a93014fb66ce49aa697fe98"
     },
     "README.txt": {
-      "bytes": 10617,
-      "sha256": "e2cd621dcabb86aa3cdac4fc4aeeba05ec3f1e3354f9c8647f3597f7c97cc735"
+      "bytes": 4846,
+      "sha256": "fdaf35f23a0920ab09947408a054020e30b441eab9b9adea3d32d8aaf2ff13c7"
     },
     "SOURCE_PINS.json": {
       "bytes": 5341,
@@ -21,16 +21,16 @@
       "sha256": "905d62a9678c84f283c2bb3a1cf36c1afd832b782765e0259198296d5e2d950e"
     },
     "common.py": {
-      "bytes": 7450,
-      "sha256": "8f9057f3789461404a3644190be3cf51bfae49fec14deb0b3defcc33f4778c87"
+      "bytes": 9935,
+      "sha256": "5c44c8247ffc736e5ebf351babfb288acf7b49eb1ed5a04989ed07424f96ed9f"
     },
     "dataset.py": {
       "bytes": 5972,
       "sha256": "ef3030f5d583cfbd75ebb324754461b60bd78f688d467e0bc716be056fcfbfff"
     },
     "environment.py": {
-      "bytes": 17489,
-      "sha256": "b6776db74f6944cd9d45b0eaf4a1cdc1191cc2719eec0be164312ec148a0e837"
+      "bytes": 17572,
+      "sha256": "cb37cf0e4a36b2750120a274910b57b5eb553a4f8d3f37bdecc71168d8720486"
     },
     "frozen_src/experiment_configs/seal_revision_2026-11/run_pipeline_suite_v4.py": {
       "bytes": 29003,
@@ -129,8 +129,8 @@
       "sha256": "5f0475a0b5b22ebb139b4d0ca534488c2ecb3ce6a2d892e81e3eb08e6b552f5c"
     },
     "run_lifecycle.py": {
-      "bytes": 32895,
-      "sha256": "9a20c1e0e5c44953eb546e3610b2954fb29e619f6acc2198a3817951657ea330"
+      "bytes": 40447,
+      "sha256": "602e4e919e102bb797271bfe17cbd96681553787a782bbd847996a9a21ae973f"
     },
     "support/owned_supervision.py": {
       "bytes": 4913,
@@ -165,5 +165,5 @@
       "sha256": "340e61cdd1eb8d329d52be164f919480e6a41feb4c620852df0393c2e9a192f0"
     }
   },
-  "kind": "E25_PREPARED_SOURCE_INVENTORY_ENV_V4"
+  "kind": "E25_PREPARED_SOURCE_INVENTORY_V6_PROSPECTIVE_BLOCKS"
 }
