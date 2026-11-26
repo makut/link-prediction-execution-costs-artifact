@@ -1,6 +1,6 @@
 {
   "current_gates": "metadata/V0_6_GATES.json",
-  "file_count": 1254,
+  "file_count": 1257,
   "files": {
     "CITATION.cff": {
       "bytes": 747,
@@ -718,14 +718,19 @@
       "sha256": "d37d9459580abf25bace71d24bd9ac6da0d3b484443c83b27d880bce8ae23e86"
     },
     "extensions/e25/DATA_ATTRIBUTION.md": {
-      "bytes": 1072,
+      "bytes": 1302,
       "lineage": "v0_7_source_preparation_results_pending",
-      "sha256": "28d702608ecdd4739184832092ea93bebc75d1f3f721e6c5fc37e2ee40c58b33"
+      "sha256": "0ef3a39bd970afe0b4c273ccb955766bd4d5fc6e429501b65b074af2b7458740"
     },
     "extensions/e25/LICENSE": {
       "bytes": 1073,
       "lineage": "v0_7_source_preparation_results_pending",
       "sha256": "5096961eb53321c0dd8d8b6eeb978cd3e4a58256f1ab706558500d618ffe26ca"
+    },
+    "extensions/e25/OFFLINE_VERIFICATION.txt": {
+      "bytes": 3814,
+      "lineage": "v0_7_recorded_verifier_source_preparation_results_pending",
+      "sha256": "057cff7105268ca293e9c6ee447b15648d6f6e6ead32a8c1175fa0c6c5cfa9b2"
     },
     "extensions/e25/PSS_REPORTING_DECISION_PRE_OUTCOME.json": {
       "bytes": 1157,
@@ -733,14 +738,14 @@
       "sha256": "47b8a0f24c4ec3f386a8b8ba29f6d52a2c3af54ea46b3f2389f6483914bb0a90"
     },
     "extensions/e25/PUBLIC_SOURCE_ALLOWLIST_REVIEW.json": {
-      "bytes": 2480,
+      "bytes": 4006,
       "lineage": "v0_7_source_preparation_results_pending",
-      "sha256": "b07df148ac59d9c44a55fb16c63852a940779d3ab2ddafb5f0d6ec6fb7b62598"
+      "sha256": "59b71c6bf037d287acc0513884e6145416451246d228747d3a78cfe0499e7f03"
     },
     "extensions/e25/README.md": {
-      "bytes": 10088,
+      "bytes": 11573,
       "lineage": "v0_7_source_preparation_results_pending",
-      "sha256": "fa36bb0f9238c6771c64c2fadf1ca0f78ca5d691432678a59ba24778165d29d3"
+      "sha256": "7af3ca7f9854f43851d97113b6b4fb6691a50585c905486a6774dbfb042ef622"
     },
     "extensions/e25/RELOCATION_LINEAGE.json": {
       "bytes": 14085,
@@ -753,9 +758,9 @@
       "sha256": "5bd28a266ae76240bb8f1783d8c1203636e26b025977b970885da9217f1499cc"
     },
     "extensions/e25/SOURCE_STAGE_MANIFEST.json": {
-      "bytes": 25558,
+      "bytes": 26069,
       "lineage": "v0_7_source_preparation_results_pending",
-      "sha256": "5f03383dc9e0d8d4d1d76ca3b456db7ffcfebf0925ffafa72240b4829039b80d"
+      "sha256": "11ebc0c5c8ebf96c25719da42492e032b8a8f6c5e54cf25816359c6013d505ce"
     },
     "extensions/e25/THIRD_PARTY.md": {
       "bytes": 3718,
@@ -1192,6 +1197,11 @@
       "lineage": "v0_7_source_preparation_results_pending",
       "sha256": "e38afb6b4f0a828eba839c3d10555d4ebb68988d61391a3e03f9447b903ca32e"
     },
+    "extensions/e25/reference/PUBLIC_VERIFY_ENTRYPOINT_SOURCE_REVIEW.json": {
+      "bytes": 1963,
+      "lineage": "v0_7_recorded_verifier_source_preparation_results_pending",
+      "sha256": "57009814f4d448b7c6ec19697dfd31671f7cd87f3aece9fbd094b09cb95533b5"
+    },
     "extensions/e25/reference/README.txt": {
       "bytes": 972,
       "lineage": "v0_7_source_preparation_results_pending",
@@ -1446,6 +1456,11 @@
       "bytes": 186183,
       "lineage": "v0_7_source_preparation_results_pending",
       "sha256": "241aad9ac3a6407db361465251154cf2fc15e7c03092963a51b1be01465cacb0"
+    },
+    "extensions/e25/verify_recorded_v6.py": {
+      "bytes": 7167,
+      "lineage": "v0_7_recorded_verifier_source_preparation_results_pending",
+      "sha256": "655f6db01b91b05c8507c9215646c72abac44e6ec598d79da86b131218895928"
     },
     "metadata/AUTHORS.json": {
       "bytes": 1107,

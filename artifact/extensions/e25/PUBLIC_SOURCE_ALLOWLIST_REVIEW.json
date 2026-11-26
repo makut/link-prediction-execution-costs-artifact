@@ -1,6 +1,9 @@
 {
   "actual_experimental_result_reads": 0,
   "actual_result_placeholders_added": 0,
+  "all_current_extension_payloads_rehashed": 148,
+  "archived_historical_env_v4_tree_unchanged": true,
+  "authorized_repository_source_edits": true,
   "binary_allowlist": {
     "historical/env_v4/source/packet/workloads/friendster_pairs.npy": {
       "bytes": 192128,
@@ -24,8 +27,10 @@
     "private_key",
     "cloud_access_key",
     "github_token",
+    "gitlab_token",
     "literal_bearer",
-    "literal_credential_assignment",
+    "quoted_credential_assignment",
+    "unquoted_shell_credential",
     "URL_embedded_password"
   ],
   "exact_frozen_v6_copies_preserved": 62,
@@ -33,20 +38,50 @@
     "PUBLIC_SOURCE_ALLOWLIST_REVIEW.json",
     "SOURCE_STAGE_MANIFEST.json"
   ],
-  "historical_existing_repo_tree_unchanged": true,
   "historical_files_preserved_byte_for_byte": 77,
   "historical_source_inventory_sha256": "b549aad246966ebbf29095aa86c8135b0b3d711dad97c812cc713350b90e2229",
-  "kind": "E25_V6_WITH_ENV_V4_HISTORY_PUBLIC_SOURCE_ALLOWLIST_REVIEW",
-  "manifest": {
-    "bytes": 25558,
-    "sha256": "5f03383dc9e0d8d4d1d76ca3b456db7ffcfebf0925ffafa72240b4829039b80d"
+  "inherited_unchanged_source_allowlist": {
+    "bytes": 2480,
+    "sha256": "b07df148ac59d9c44a55fb16c63852a940779d3ab2ddafb5f0d6ec6fb7b62598"
   },
-  "network_cluster_archive_build_repository_commit_publication_actions": 0,
+  "kind": "E25_V6_RECORDED_ENTRYPOINT_REPO_SOURCE_INTEGRATION_ALLOWLIST",
+  "manifest": {
+    "bytes": 26069,
+    "sha256": "11ebc0c5c8ebf96c25719da42492e032b8a8f6c5e54cf25816359c6013d505ce"
+  },
+  "network_cluster_archive_build_publication_actions": 0,
+  "new_source_and_docs_checked": {
+    "DATA_ATTRIBUTION.md": {
+      "bytes": 1302,
+      "sha256": "0ef3a39bd970afe0b4c273ccb955766bd4d5fc6e429501b65b074af2b7458740"
+    },
+    "OFFLINE_VERIFICATION.txt": {
+      "bytes": 3814,
+      "sha256": "057cff7105268ca293e9c6ee447b15648d6f6e6ead32a8c1175fa0c6c5cfa9b2"
+    },
+    "README.md": {
+      "bytes": 11573,
+      "sha256": "7af3ca7f9854f43851d97113b6b4fb6691a50585c905486a6774dbfb042ef622"
+    },
+    "reference/PUBLIC_VERIFY_ENTRYPOINT_SOURCE_REVIEW.json": {
+      "bytes": 1963,
+      "sha256": "57009814f4d448b7c6ec19697dfd31671f7cd87f3aece9fbd094b09cb95533b5"
+    },
+    "verify_recorded_v6.py": {
+      "bytes": 7167,
+      "sha256": "655f6db01b91b05c8507c9215646c72abac44e6ec598d79da86b131218895928"
+    }
+  },
   "python310_AST": "PASS",
+  "real_catalog_or_actual_E25_reads": 0,
+  "repository_commit_push_actions": 0,
   "results_pending": true,
   "retained_nonsecret_scope": "Exact frozen source and archived author preflight/schema/provenance paths/hosts/PID/UUID/image literals; token interfaces without literal credential values. No new actual experimental evidence files read or included.",
+  "review_scope": "Current entrypoint source/docs integration only: literal credential checks on five named new/updated texts, exact-source hashes and all source-extension payload hashes. Unchanged source credential allowlist scope inherited by exact hash. No recorded data or scientific outcome reads.",
   "routing_review": "Only root README v6 commands are current. Historical README source/protocol/maxhours4/audit_v4/independent_disk/schema/figure/collection path examples retain original bytes and original-layout meaning, explicitly retired as active v6 instructions by root README.",
-  "status": "PASS_SOURCE_ONLY_NONSECRET_ALLOWLIST_NO_PUBLICATION",
+  "source_helper_or_test_execution": 0,
+  "status": "PASS_NEW_SOURCE_PATTERN_CHECKS_NO_ACTUAL_EXECUTION",
+  "unchanged_frozen_payloads_preserved": true,
   "v6_base_allowlist_review": {
     "bytes": 3229,
     "sha256": "aba6b2efe8dd23ddcda44a2ac3e4a4791c435ab2e65a2f4b4b35f0aa5a08c098"

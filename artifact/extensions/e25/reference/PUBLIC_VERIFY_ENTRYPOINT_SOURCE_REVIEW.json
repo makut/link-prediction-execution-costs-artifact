@@ -1,0 +1,38 @@
+{
+  "kind": "PUBLIC_RECORDED_V6_ENTRYPOINT_SOURCE_ONLY_REVIEW",
+  "status": "PASS_STATIC_SOURCE_ONLY_GENUINE_ALL3_ROUNDTRIP_PENDING",
+  "source": {
+    "file": "verify_recorded_v6.py",
+    "bytes": 7167,
+    "lines": 116,
+    "sha256": "655f6db01b91b05c8507c9215646c72abac44e6ec598d79da86b131218895928"
+  },
+  "README": {
+    "file": "README.txt",
+    "bytes": 3814,
+    "sha256": "057cff7105268ca293e9c6ee447b15648d6f6e6ead32a8c1175fa0c6c5cfa9b2"
+  },
+  "independent_static_peer": {
+    "reviewer": "/root/reviewer_eab",
+    "status": "PASS",
+    "findings": [],
+    "scope": "Exact candidate and README statically compared with auditor b50f6916 and aggregator 8159c9ce interfaces; Python3.10 AST parse only. No imports/execution or actual-input reads."
+  },
+  "verified_source_properties": [
+    "All three actual input whole pins, source pins and original PASS8/PASS24 metadata precede fresh output creation",
+    "Catalog has no arbitrary path fields and uses fixed canonical recorded paths",
+    "Existing exact public stdlib auditor, adjacent environment decoder and aggregator are reused unchanged",
+    "Children use -B -S with PYTHONPATH removed and normal adjacent module imports",
+    "Fresh per-block ACTUAL_AUDIT.json basenames preserve aggregator output determinism",
+    "Each fresh audit and final aggregate must match published whole bytes/SHA",
+    "Catalog and payload authority is the externally verified complete code archive"
+  ],
+  "actions": {
+    "candidate_or_scientific_helper_execution": 0,
+    "actual_catalog_or_block3_or_result_reads": 0,
+    "catalog_or_result_placeholders_created": 0,
+    "new_experiments_network_cluster_ML_graph_model_access": 0,
+    "frozen_source_repository_or_publication_changes": 0
+  },
+  "scope": "Prepared source only. Root must create RECORDED_IDENTITIES.json from genuine complete24 evidence, then perform a genuine all-three-block public-layout roundtrip before claiming operational verification."
+}

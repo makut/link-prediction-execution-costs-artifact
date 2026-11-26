@@ -1,0 +1,68 @@
+E25 v6 public recorded-verification entrypoint — source candidate only
+
+No catalog, block3 evidence, recorded-result placeholder, audit result or
+aggregate is supplied by this candidate. Root creates the real catalog only
+after all three actual blocks and their independent aggregate are complete.
+The entrypoint has been prepared for static/AST review only; a genuine all-three
+public-layout roundtrip remains required before advertising it as verified.
+
+Trust boundary
+
+First verify the complete public code archive using the externally published
+release SHA256, then unpack it into an unchanged artifact directory. The code
+archive must include the real extensions/e25/recorded/RECORDED_IDENTITIES.json
+and its recorded payloads. That externally anchored catalog is the authority
+for payload identities; an unchecked downloaded catalog or archive's own
+self-manifest is not an independent trust anchor. Source pins for the exact
+existing auditor, adjacent independent_env.py and aggregator are fixed in the
+entrypoint. It reuses those scripts rather than implementing scientific logic.
+
+One command (Python3.10+ standard library; no packages or GPU)
+
+Set ARTIFACT to the absolute canonical artifact directory and E25_FRESH_OUT to
+a new directory name outside it, whose parent already exists. Once the real
+catalog and all three recorded blocks are published:
+
+python3 -B -S /path/to/verify_recorded_v6.py \
+  --artifact "$ARTIFACT" --out "$E25_FRESH_OUT"
+
+When included at extensions/e25/verify_recorded_v6.py, use that exact script path.
+The children also use -B -S, no PYTHONPATH or user site, and normal script-directory
+imports for the adjacent independent_env.py. They run from the fresh output
+directory and access only public recorded evidence and included stdlib tools.
+No network, cluster, full graph/model load or new measurement occurs.
+
+Exact RECORDED_IDENTITIES.json schema
+
+The root object has exactly these ten keys:
+  kind: E25_V6_RECORDED_IDENTITIES
+  status: PASS_COMPLETE_THREE_BLOCKS_24_APPS
+  global24_complete: true
+  jobs: integer24
+  blocks: integer3
+  source_hashes: the four exact producer/protocol/wrapper/readiness pins used
+                 by the actual aggregate and the verifier's PINS constant
+  block1, block2, block3: each has exactly archive, root_collection and audit
+  aggregate: the exact whole identity of recorded/ACTUAL_AGGREGATE.json
+
+Every archive/root_collection/audit/aggregate identity is an object containing
+exactly bytes (positive integer) and sha256 (64 lowercase hexadecimal digits).
+No catalog pathname fields are accepted. The fixed paths under extensions/e25/
+recorded/ are block1/, block2/ and block3/, each containing block_raw.tgz,
+ROOT_COLLECTION.json and ACTUAL_AUDIT.json, plus ACTUAL_AGGREGATE.json and the
+catalog itself at the recorded root. Do not use pending/synthetic values.
+
+All three input identities, original PASS8 audits, PASS24 aggregate and source
+pins are checked before the fresh output directory is created. Each existing
+auditor then regenerates blockN/ACTUAL_AUDIT.json and must match the published
+whole bytes/SHA. Retaining that basename is necessary because the existing
+aggregator records path.name. The existing aggregator regenerates
+ACTUAL_AGGREGATE.json and must also match exactly. Only then is
+VERIFICATION_RECEIPT.json written. Any mismatch stops, retains partial fresh
+outputs for diagnosis, and never overwrites the original artifact.
+
+This strict byte check includes the scripts' JSON serialization and descriptive
+floating-point output; it does not silently relax numerical/version differences.
+The genuine public-layout validation must record its Python version. Offline
+recorded verification does not establish new platform performance, live resource
+state, predictor quality or a portable execution deployment.

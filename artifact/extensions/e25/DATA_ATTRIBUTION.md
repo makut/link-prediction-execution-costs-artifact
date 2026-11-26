@@ -1,10 +1,14 @@
 # Public data attribution
 
-The only standalone data payload in this source addition is
-`source/packet/workloads/friendster_pairs.npy`: 192,128 bytes, SHA256
+The data exception in this extension is the small public Friendster query
+workload, including `source/packet/workloads/friendster_pairs.npy`:
+192,128 bytes, SHA256
 `340e61cdd1eb8d329d52be164f919480e6a41feb4c620852df0393c2e9a192f0`.
-It is the small public Friendster query workload, not the graph, a restricted
-industrial split, a checkpoint or a predictive-quality result.
+This notice covers every identical copy in the current and historical source
+trees, source archives, recorded experiment archives, and excluded failed-attempt
+diagnostics, including copies inside nested prior diagnostic archives.
+The workload is not the graph, a restricted industrial split, a checkpoint or a
+predictive-quality result.
 
 Source: Per Fuchs, *Com-Friendster Dataset Densely Relabelled* (2021),
 DOI [10.5281/zenodo.5146230](https://doi.org/10.5281/zenodo.5146230),

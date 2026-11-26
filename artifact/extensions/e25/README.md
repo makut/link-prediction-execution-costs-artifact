@@ -61,6 +61,33 @@ differences between allocations are disclosed. Source readiness, tiny
 qualification, one completed block and a verified complete24 cohort are separate
 states. Failed or partial historical attempts supply no timing observations.
 
+### Prepared one-command recorded verifier
+
+`verify_recorded_v6.py` and [OFFLINE_VERIFICATION.txt](OFFLINE_VERIFICATION.txt)
+provide a single entry point to the existing standard-library block auditor and
+three-block aggregator. This is prepared source with static review only. The real
+recorded catalog, all three genuine blocks and a genuine public-layout roundtrip
+remain pending; this source preparation creates no catalog or result placeholders
+and establishes no operational verification or complete-24 result.
+
+After verifying the complete published code archive with its externally supplied
+release SHA256, and once its real recorded catalog and all three input sets are
+included, set `ARTIFACT` to the absolute canonical artifact directory and
+`E25_FRESH_OUT` to a new directory outside it whose parent already exists:
+
+```sh
+python3 -B -S "$ARTIFACT/extensions/e25/verify_recorded_v6.py" \
+  --artifact "$ARTIFACT" --out "$E25_FRESH_OUT"
+```
+
+The prepared helper checks the fixed catalog/input/source identities and original
+PASS8/PASS24 metadata before creating fresh output, then requires regenerated
+audits and aggregate to match the cataloged bytes and SHA256 values. The exact
+catalog schema and trust boundary are documented in `OFFLINE_VERIFICATION.txt`.
+The reviewed source record is `reference/PUBLIC_VERIFY_ENTRYPOINT_SOURCE_REVIEW.json`;
+a genuine all-three-block roundtrip must still be performed before claiming this
+entry point works on the released evidence.
+
 ### Offline audit of a recorded block
 
 Use Python 3.10+ and the standard library. No GPU, graph download, ML packages,

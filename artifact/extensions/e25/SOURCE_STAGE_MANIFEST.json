@@ -9,20 +9,24 @@
       "sha256": "d37d9459580abf25bace71d24bd9ac6da0d3b484443c83b27d880bce8ae23e86"
     },
     "DATA_ATTRIBUTION.md": {
-      "bytes": 1072,
-      "sha256": "28d702608ecdd4739184832092ea93bebc75d1f3f721e6c5fc37e2ee40c58b33"
+      "bytes": 1302,
+      "sha256": "0ef3a39bd970afe0b4c273ccb955766bd4d5fc6e429501b65b074af2b7458740"
     },
     "LICENSE": {
       "bytes": 1073,
       "sha256": "5096961eb53321c0dd8d8b6eeb978cd3e4a58256f1ab706558500d618ffe26ca"
+    },
+    "OFFLINE_VERIFICATION.txt": {
+      "bytes": 3814,
+      "sha256": "057cff7105268ca293e9c6ee447b15648d6f6e6ead32a8c1175fa0c6c5cfa9b2"
     },
     "PSS_REPORTING_DECISION_PRE_OUTCOME.json": {
       "bytes": 1157,
       "sha256": "47b8a0f24c4ec3f386a8b8ba29f6d52a2c3af54ea46b3f2389f6483914bb0a90"
     },
     "README.md": {
-      "bytes": 10088,
-      "sha256": "fa36bb0f9238c6771c64c2fadf1ca0f78ca5d691432678a59ba24778165d29d3"
+      "bytes": 11573,
+      "sha256": "7af3ca7f9854f43851d97113b6b4fb6691a50585c905486a6774dbfb042ef622"
     },
     "RELOCATION_LINEAGE.json": {
       "bytes": 14085,
@@ -380,6 +384,10 @@
       "bytes": 4601,
       "sha256": "e38afb6b4f0a828eba839c3d10555d4ebb68988d61391a3e03f9447b903ca32e"
     },
+    "reference/PUBLIC_VERIFY_ENTRYPOINT_SOURCE_REVIEW.json": {
+      "bytes": 1963,
+      "sha256": "57009814f4d448b7c6ec19697dfd31671f7cd87f3aece9fbd094b09cb95533b5"
+    },
     "reference/README.txt": {
       "bytes": 972,
       "sha256": "b33b39fe7aa99af59e42d4589936905aecf12d7b5babf6b17a351f566d21c149"
@@ -583,13 +591,17 @@
     "source_archives/e25_native_lifecycle_source_env_v6.tgz": {
       "bytes": 186183,
       "sha256": "241aad9ac3a6407db361465251154cf2fc15e7c03092963a51b1be01465cacb0"
+    },
+    "verify_recorded_v6.py": {
+      "bytes": 7167,
+      "sha256": "655f6db01b91b05c8507c9215646c72abac44e6ec598d79da86b131218895928"
     }
   },
-  "files_count": 145,
+  "files_count": 148,
   "historical_env_v4_file_count": 77,
   "historical_env_v4_inventory_sha256": "b549aad246966ebbf29095aa86c8135b0b3d711dad97c812cc713350b90e2229",
-  "kind": "E25_V6_INTEGRATION_CANDIDATE_SOURCE_STAGE_MANIFEST",
+  "kind": "E25_V6_SOURCE_PREPARATION_MANIFEST_WITH_RECORDED_VERIFIER",
   "results_pending": true,
-  "scope": "V6 root source entrypoint plus whole byte-preserved old ENV v4 source/provenance tree; no actual scientific results or placeholders.",
-  "total_bytes": 2110079
+  "scope": "Prepared v6 sources/docs and byte-preserved ENV v4 history only. Real catalog, all3 evidence, recorded roundtrip and results remain pending; no actual results or placeholders.",
+  "total_bytes": 2124738
 }
