@@ -1,0 +1,58 @@
+{
+  "kind": "V0_6_0_CURRENT_RECORDED_EVIDENCE_GATES",
+  "version": "0.6.0",
+  "created_utc": "2026-11-26T12:07:34.937974+00:00",
+  "stage": "LOCAL_PAYLOAD_FINALIZED_ARCHIVE_AND_RELEASE_OWNED_BY_ROOT",
+  "previous_head": "f5debf4da9def519c2e44f5db4b87cb94bcfa7c2",
+  "E22": {
+    "status": "PASS",
+    "archive": "extensions/e22/recorded/citation2_cpu_matched_v1_20261126.tgz",
+    "archive_identity": {
+      "bytes": 570654,
+      "sha256": "363e25fe48e11792e53b00f37eef567c9da7f766cb1af7175c89fe69f973a61f"
+    },
+    "independent_audit": "extensions/e22/recorded/E22_RESULT_AUDIT.json",
+    "independent_audit_identity": {
+      "bytes": 7930,
+      "sha256": "784305adcb5f5ef1aee4f21094c34c29209e1fa15c11e860e435d5129ff4d75d"
+    }
+  },
+  "E23": {
+    "status": "PASS",
+    "recorded_binding": "extensions/e23/recorded/RECORDED_RESULT.json",
+    "raw_archive_identity": {
+      "bytes": 1496841,
+      "sha256": "41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073"
+    },
+    "independent_verification_identity": {
+      "bytes": 11293,
+      "sha256": "05df01523202eac6222af5dda30dc0fdc37838be223fe494042f0a98cc65e1ba"
+    },
+    "independent_numeric_peer_status": "PASS_ACTUAL_RAW_NUMERICAL_AUDIT",
+    "independent_numeric_peer_identity": {
+      "bytes": 34412,
+      "sha256": "ce067507dea8088ff0f2a2712d266f565f93259616de4999b0b4f176e503cc9a"
+    },
+    "actual_outer_source_sha256": "e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e",
+    "declared_jobs": 40,
+    "real_timing_jobs": 36,
+    "process_windows_per_configuration": 3,
+    "prefix_comparisons": 36,
+    "audited_queries_per_timing": 32
+  },
+  "E24": {
+    "status": "PASS_DESCRIPTIVE_POSTHOC",
+    "evidence": "extensions/e24/MANIFEST.json",
+    "evidence_manifest_identity": {
+      "bytes": 2412,
+      "sha256": "3e2321637921bd4db50f635d9214ab386fa7d8fbd2c1a5006b4c97d773fa763e"
+    },
+    "new_experiment": false,
+    "threshold_fitted": false
+  },
+  "immutable_companions": "metadata/COMPANION_ASSETS_V0_5.json",
+  "historical_creation_records_preserved": true,
+  "public_release_performed_by_this_stage": false,
+  "fresh_full_public_E22_replay_claimed": false,
+  "manuscript_copied": false
+}

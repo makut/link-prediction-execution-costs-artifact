@@ -1,0 +1,64 @@
+{
+  "E23_actual_platform_bound": true,
+  "E23_actual_verifier_status": "PASS",
+  "E23_all_three_values_retained": true,
+  "E23_final_outer_receipts_bound": true,
+  "E23_included_raw": {
+    "bytes": 1496841,
+    "sha256": "41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073"
+  },
+  "E23_independent_numeric_status": "PASS_ACTUAL_RAW_NUMERICAL_AUDIT",
+  "all_current_tree_files_rehashed_equal_archive": true,
+  "archive_members_independently_rehashed": 1108,
+  "archive_prefix": "artifact/",
+  "artifact_payloads_excluding_manifest": 1107,
+  "branch": "science-revision-e22-e23",
+  "checked_utc": "2026-11-26T12:17:22.372937+00:00",
+  "code_archive": {
+    "bytes": 85260158,
+    "sha256": "c9e26c90cffde59c34b1bb9c665e1f7ee3fb2904a0fd5aa3374b340c6bc087a2"
+  },
+  "current_E22_E23_E24_objects_bound": true,
+  "explicit_strip_components_1_matches_prefix": true,
+  "extension_catalogs_match_current_archive_bytes": true,
+  "git_or_shared_repo_edits": 0,
+  "global_manifest": {
+    "bytes": 275817,
+    "sha256": "fdc32bcdc2eb4f6eaffca34628965e83dec745ddf7076061edfb958f5cf9eaee"
+  },
+  "historical_E10_E17_preserved_separately": true,
+  "kind": "INDEPENDENT_READ_ONLY_V0_6_PREPUBLICATION_PEER",
+  "limitations": [
+    "No old companion payload was read or downloaded; immutable identities are compared with the already verified v0.5 publication receipt.",
+    "No benchmark, numeric verifier, unit test, model/graph/native module or plotting command was executed; actual E23 science is bound to the existing independent PASS receipts."
+  ],
+  "local_markdown_targets_checked": 23,
+  "mapped_command_source_paths_checked": 28,
+  "must_fix": [],
+  "network_or_publication_actions": 0,
+  "new_code_catalog_and_checksums_exact": true,
+  "new_experiments_or_tests": 0,
+  "observed_head": "9f1dd6498819224963cd269a48270eaa6c43455d",
+  "old_companion_content_bytes_read": 0,
+  "raw_payload_bytes": 118739490,
+  "remaining_root_actions": [
+    "Commit the pending current docs/catalog/checksum tree before tagging/publishing v0.6.0.",
+    "Root performs the actual new release and subsequent bounded public URL/new-asset readback check; this local peer is not that publication receipt."
+  ],
+  "root_SHA256SUMS": {
+    "bytes": 707,
+    "sha256": "d804cdbbbcb008af79cd01975c7ae08dd9818dfea9016fc90dffe29310960c6a"
+  },
+  "root_catalog": {
+    "bytes": 3332,
+    "sha256": "c45b889ea0207a9ddc41b5db716cd397022d23c7856356a36cf0bca77b1fb0bc"
+  },
+  "root_external_catalog_not_self_embedded": true,
+  "root_readme": {
+    "bytes": 5971,
+    "sha256": "f9f942ed8e22c4b4f07a43cb889e0809e35bb4d27d9ff2d39449791f7e379662"
+  },
+  "scope": "Local prepublication archive/tree/catalog/UX/identity checks only; no assertion of live v0.6 URL existence.",
+  "six_old_companion_URL_bytes_SHA_reused_exactly": true,
+  "status": "PASS"
+}

@@ -1,51 +1,120 @@
-# Link prediction artifact v0.5.0
+# Reproducing the SEAL-style execution study
 
-This package contains the completed independently verified E19, E20 and E21
-studies, exact public evidence references and portable reproduction commands.
-The previous471-payload v0.5 snapshot and immutable v0.4 are preserved. Original
-metadata replaced here is retained under metadata/lineage/PRIOR_V0_5_CANDIDATE/.
-External assets are identified by filename and whole SHA256 in the catalog.
-Publishing/uploading this package is a separate action from creating its bytes.
+This artifact accompanies **Execution Costs and Sampling Semantics in SEAL-Style Link Prediction**. It separates exact local induction, representation memory/sharing, consumer execution and sampling-law sensitivity.
 
-PUBLIC_OBJECT_COMMANDS.json maps all13 current manuscript objects to exact
-inputs, aggregation rules and CLI commands. PUBLIC_COMMANDS.txt maps public
-data preparation, recorded-byte verification,
-and fresh generic execution to their respective objects. Reproduction sources
-under reproduction/ accept ordinary local paths and supplied environments;
-CPU and clean PENCIL coordinate through one shared timing lock/active marker.
-Their scientific sources remain unchanged. Actual Linux tiny receipts establish
-only the declared small portability gates, not full public-run performance.
-Fresh public runs have producer validation; the frozen historical independent
-auditors require recorded root provenance and do not accept arbitrary local tars.
-The separate recorded Friendster score checker independently reranks all6
-original float32 NPZs, binds their original query/candidate cohort and reproduces
-all saved RR bytes under a256MiB peak limit. It performs archival arithmetic;
-checkpoint TAR bytes are discarded without model deserialization/materialization.
+The v0.6.0 payload includes verified E22 Citation2 CPU evidence, actual E23 repeated pipeline windows and the E24 descriptive matched-cohort reanalysis. Source-only checks remain separate modes. The six published v0.5.0 companion assets retain their exact bytes and URLs.
 
-E19 is the completed independently verified OLD instrumented48-job consumer
-diagnostic. E20 is the completed independently verified seven-arm matched public
-Friendster CPU study. E21 is the completed independently verified NEW44-job,
-32ONLINE clean-consumer study with disabled per-query memory. Their original
-raw archives, true root anchors, frozen independent auditors and numeric peers
-are retained separately. These studies/assets are never relabelled or pooled. Query,
-setup/conversion, output format, thread/affinity and memory-observation limits
-remain necessary when interpreting the tables.
+## Choose a workflow
 
-Historical README_v0_3_BASE.md, SYSTEMS_REPRODUCTION.md and
-PUBLIC_PENCIL_V2_CANDIDATE.md retain their original bytes and earlier statuses.
-Those earlier pending/matched-not-included statements describe past snapshots;
-they are superseded by this README, PUBLIC_COMMANDS.txt and the current catalog.
-The exact prior471-payload snapshot inventory and replaced metadata are kept
-under metadata/lineage/PRIOR_V0_5_CANDIDATE/; the original work candidate is untouched.
+| Goal | What it establishes | Resources |
+|---|---|---|
+| Recorded verification | Integrity and arithmetic of saved observations | Selected evidence; no full graph/GPU |
+| E23 source check | Runner/source/workload identities | Python 3.10+ standard library |
+| Public preparation | Declared numeric input identities | Provider downloads and suitable Linux RAM/disk |
+| Fresh replay | New observations on your machine | Prepared inputs and the experiment's CPU/GPU stack |
 
-Large raw quality/systems/CPU/old48/new44 evidence and the exact CPU two-wheel
-packet are separate immutable assets described in metadata/EXTERNAL_ASSETS.json.
-No graph is bundled or loaded by this stage; original public data/code notices
-are preserved. CPU raw attribution is provided as an external sidecar without
-changing the original121-member archive. The artifact's global license applies
-to own code; upstream Apache-2.0/MIT and dataset CC-BY-4.0/ODC-BY terms remain.
+Set absolute `ARTIFACT` (the `artifact/` directory in a clone, or the unpacked code-archive root), `ASSETS`, `DATA` and `RESULTS` paths. Create result directories outside source/input trees and use new receipt names. [PUBLIC_COMMANDS.txt](PUBLIC_COMMANDS.txt) supplies base recipes; extensions cover additions.
 
-metadata/V0_5_GATES.json records the exact accepted science/source bindings and
-creation-time publication state. An external archive manifest records this
-package's whole SHA256. Neither archived verification nor tiny portability
-checks count as full fresh seven-arm/44-job performance reproductions.
+## Verify recorded results
+
+E22 needs only Python 3.10+ standard library and its bundled evidence:
+
+```sh
+python3 -B "$ARTIFACT/extensions/e22/verify_e22.py" \
+  --output "$RESULTS/E22_OFFLINE_VERIFICATION.json"
+```
+
+It streams Citation2 evidence, checks source/input/exit bindings and recomputes seven timing rows, without graph/model/native-library loads or external access.
+
+For base results, select the needed archives from the [companion asset identities](metadata/COMPANION_ASSETS_V0_5.json), which lists all six immutable v0.5.0 URLs and complete SHA256 values. Check each downloaded file before use; for example:
+
+```sh
+printf '%s  %s\n' \
+  'e17cdc9678d00a3f372fc8083741a200a63662226f730f47eeda79f89b4ad3b2' \
+  "$ASSETS/lpp_public_quality_evidence_v1.tgz" | shasum -a256 -c -
+```
+
+Linux `sha256sum -c -` is an alternative. [PUBLIC_OBJECT_COMMANDS.json](PUBLIC_OBJECT_COMMANDS.json) maps the paper tables/figures to inputs and aggregation; [PUBLIC_COMMANDS.txt](PUBLIC_COMMANDS.txt) supplies their recorded systems, quality, CPU and PENCIL checks. Quality checks stream scores without loading models; recipes identify separate Python 3.12/NumPy analysis requirements.
+
+### Matched cost regimes (E24)
+
+This posthoc analysis uses the existing E20 Friendster archive (2.1 MB) and included E22 Citation2 archive (0.57 MB). It adds no experiment. Recompute with Python 3.10+ standard library:
+
+```sh
+python3 -B "$ARTIFACT/extensions/e24/publicanalyze_cost_regimes.py" \
+  --friendster-archive "$ASSETS/lpp_public_friendster_cpu_matched_v2_raw.tgz" \
+  --citation2-archive "$ARTIFACT/extensions/e22/recorded/citation2_cpu_matched_v1_20261126.tgz" \
+  --output "$RESULTS/matched_cost_regimes.json"
+```
+
+Plot that output; the checked rendering uses Python 3.12.10 and Matplotlib 3.10.3:
+
+```sh
+python3 -B "$ARTIFACT/extensions/e24/plot_matched_cost_regimes.py" \
+  --input "$RESULTS/matched_cost_regimes.json" \
+  --out "$RESULTS/matched_cost_regimes_figure"
+```
+
+All 256 cases retain separate cohorts and the frozen unweighted proxy; no fitted threshold, CI or routing-cost measurement is added. [E24 instructions](extensions/e24/README.md) describe identities and numeric peer checks.
+
+### E23 source-only check
+
+```sh
+python3 -B "$ARTIFACT/extensions/e23/verify_e23.py" \
+  --output "$RESULTS/E23_SOURCE_ONLY.json"
+```
+
+Without an archive, this checks the packet, scientific pins, small workloads and declared job order. It produces **SOURCE_ONLY**, not an actual-result PASS.
+
+### E23 recorded-result verification
+
+The actual raw archive and separate final outer receipts are included. Run with Python 3.10+ standard library; the exact identities are recorded in `extensions/e23/recorded/RECORDED_RESULT.json`:
+
+```sh
+python3 -B "$ARTIFACT/extensions/e23/verify_e23.py" --archive "$ARTIFACT/extensions/e23/recorded/pipeline_repeats_e23_20261126_final_v1.tgz" --archive-sha256 "41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073" --outer-source-sha256 "e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e" --outer-complete "$ARTIFACT/extensions/e23/recorded/outer_COMPLETE.json" --archive-pointer "$ARTIFACT/extensions/e23/recorded/archive_pointer.json" --output "$RESULTS/e23_recorded_verified.json"
+```
+
+This independently verifies all 40 declared gates, 36 real timing jobs, 12 rows of three windows, 12 groups of ratios paired by repetition block, and 36 comparisons of the 32-query excluded warmup prefix. Actual child wait/quiescence and post-exit flock receipts are checked. The included final outer and persistence receipts are separate from the raw archive. All three values in every row are retained. A separate Decimal numerical peer and its stdlib source are included. These audits do not independently regenerate every measured graph or execute live network/process observations.
+
+## Prepare public data
+
+Providers are [Friendster dense, Zenodo 5146230](https://zenodo.org/records/5146230) and [OGB Citation2](https://snap.stanford.edu/ogb/data/linkproppred/citation-v2.zip). Graphs are not bundled. Use [PUBLIC_COMMANDS.txt](PUBLIC_COMMANDS.txt) for acquisition, dependencies, preparation and numeric identity checks.
+
+Citation2's `reproduce_citation2` command prints a plan by default; `--execute` downloads, prepares and verifies all nineteen numeric payloads. Use its unique run's `dataset/prepared` root. `prepared_original` is a different graph. Friendster acquisition/full-CSR commands have plan/execute modes; its legacy held-out-clean builder executes immediately, as marked in the recipe.
+
+| Replay | Prepared inputs |
+|---|---|
+| Friendster CPU (E20) | Full Friendster node count and two CSR arrays |
+| Citation2 CPU (E22) | Strict-clean Citation2 `train_csr` arrays |
+| Pipeline repeats (E23) | Full Friendster and strict-clean Citation2 prepared root; eight files pinned |
+| Clean PENCIL (E21) | Strict-clean Citation2 and declared validation-only subset |
+
+## Run a fresh replay
+
+Use fresh outputs and one shared `TIMING_COORDINATION` directory for cooperating timing workloads. Plans precede `--execute`; failures/partial outputs are retained.
+
+| Experiment | Stack | Instructions |
+|---|---|---|
+| E20 Friendster / E22 Citation2 CPU | Linux x86_64 Python 3.10, Torch 2.2.2+cu121, exact native wheel packet, C++17 | [E20](reproduction/public_friendster_cpu_v1/README.txt), [E22](extensions/e22/README.md) |
+| E21 clean PENCIL | Python 3.10, Torch 2.5.0+cu121, PyG 2.7.0, declared extras and GPU admission | [Consumer replay](reproduction/public_pencil_clean_v1/README.txt) |
+| E23 pipeline repeats | Original Torch 2.5/PyG stack and one idle whole H100 | [Pipeline replay](extensions/e23/README.md) |
+
+E22's practical plan command is:
+
+```sh
+"$CPU_PY" "$ARTIFACT/extensions/e22/fresh/run_public_cpu.py" \
+  --python "$CPU_PY" --train-csr "$C2_TRAIN_CSR" \
+  --wheel-packet "$ASSETS/pt22_native_wheels_v1.tgz" --out "$E22_OUT" \
+  --coordination-dir "$TIMING_COORDINATION" \
+  --source-manifest-sha256 "7b406e3e3909f64ebcdd2a3b1cb8b9dd2763b6c44ebc8e791b21d1699e62b2bb"
+```
+
+Add `--execute` for new timing measurements. It uses an isolated environment for the exact CPU wheels; the base stays unchanged. CPU Torch 2.2 and model Torch 2.5 stacks remain distinct.
+
+E23 records three fresh benchmark/training-process repetitions of stock/local/compiled induction on each public graph with one/eight loader workers. The runtime/workload/model seed stays fixed; shared OS/Numba caches are retained. Each window measures 3,200 graphs after 256 excluded warmup graphs. Report descriptive process/window variation, not independent data/quality-seed uncertainty or a population confidence interval.
+
+## Interpretation and terms
+
+Operator time, setup/conversion, private workspace, process PSS, consumer sweeps and sampled MRR keep separate protocols. The PENCIL model is random and frozen; warmup-prefix equality does not verify every measured graph. These measurements do not establish time-to-quality or universal predictor superiority.
+
+The six companions retain their bytes and v0.5.0 URLs in [companion asset identities](metadata/COMPANION_ASSETS_V0_5.json). Historical lineage remains in `metadata/lineage/`; E22/E23/E24 retain separate catalogs. The code archive whole SHA is supplied by the external release checksum/catalog; it is not self-embedded here. Own code is [MIT licensed](LICENSE); third-party/data terms remain in their notices. [CITATION.cff](CITATION.cff) identifies authors, without implying conference acceptance.

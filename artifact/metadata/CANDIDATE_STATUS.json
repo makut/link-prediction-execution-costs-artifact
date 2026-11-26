@@ -1,11 +1,11 @@
 {
-  "E19_actual_independently_closed": true,
-  "E20_actual_independently_closed": true,
-  "E21_actual_independently_closed": true,
-  "creation_record": "metadata/V0_5_GATES.json",
-  "creation_role": "reviewed_local_release_package",
-  "parent471snapshot_unchanged": true,
-  "publication_state_at_creation": "not_published",
-  "publisher_action_is_separate": true,
-  "version": "0.5.0"
+  "version": "0.6.0",
+  "creation_role": "CURRENT_LOCAL_RELEASE_PAYLOAD",
+  "publication_state_at_creation": "NOT_YET_PUBLISHED_V0_6",
+  "published_base": "v0.5.0",
+  "creation_record": "metadata/V0_6_GATES.json",
+  "E22_actual_independently_closed": true,
+  "E23_actual_independently_closed": true,
+  "E24_descriptive_posthoc_closed": true,
+  "publisher_action_is_separate": true
 }

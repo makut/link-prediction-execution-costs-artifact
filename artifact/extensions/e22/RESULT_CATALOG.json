@@ -1,6 +1,6 @@
 {
   "kind": "E22_SEPARATE_PUBLIC_EXTENSION_RESULT_CATALOG_V1",
-  "publication_status": "LOCAL_REVIEW_CANDIDATE_NOT_PUBLISHED",
+  "publication_status": "INCLUDED_IN_V0_6_0_LOCAL_RELEASE_PAYLOAD",
   "does_not_modify_v0_5_0": true,
   "selected_payloads": {
     "LICENSE": {
@@ -12,8 +12,8 @@
       "sha256": "899f12ce2f36e41728e4a63513a87d4dc68975b507993f6736f9fb049ba90d51"
     },
     "README.md": {
-      "bytes": 8590,
-      "sha256": "ba5a0aad8c6096cdeb99d5418fbfdc6f370ea40b0955775760e77cf931693f99"
+      "bytes": 8561,
+      "sha256": "40c8d4015d9ba8115cbd91eb2d280a70edf9a309f3aded41a8ac383a79a91351"
     },
     "fresh/ADAPTER_LINEAGE.json": {
       "bytes": 2738,
@@ -816,5 +816,5 @@
       "sha256": "5e9edbdc067325cd0b41b5fb292e2cc7343cc535da87ff3bef720cbf85da38cf"
     }
   },
-  "excluded": "E23 has no reviewed result in this extension and is not claimed. No graphs, weights, environment or native build products are packaged."
+  "excluded": "E23 results belong to the separate sibling E23 extension. No graph arrays, model weights or native build products are included here."
 }

@@ -1,4 +1,4 @@
-Public per-object commands for artifact v0.5.0
+Public per-object commands for artifact v0.6.0
 
 Use a Linux compute host for full graph preparation/runs. Large graph inputs are
 never included in source/evidence assets or required on a laptop. Set absolute
@@ -171,3 +171,17 @@ Small target smoke (after timing windows, no full data/model experiment):
   # Root's clean PENCIL target smoke receipts separately cover Linux3.10/H100,
   # source plan, actual platform probe, C++ build and7query/all8arm/bothwrapper
   # tinyBERT gates. These are tiny portability results, not full44 reruns.
+
+
+V0.6 RECORDED EXTENSIONS (new output names; base recipes above remain unchanged)
+Set ARTIFACT to artifact/ in a clone or the unpacked artifact-only archive root.
+Exact six companion URLs/SHA: metadata/COMPANION_ASSETS_V0_5.json.
+Recorded verification is separate from fresh replay.
+
+python3 -B "$ARTIFACT/extensions/e22/verify_e22.py" --output "$RESULTS/e22_recorded_verified.json"
+
+python3 -B "$ARTIFACT/extensions/e23/verify_e23.py" --archive "$ARTIFACT/extensions/e23/recorded/pipeline_repeats_e23_20261126_final_v1.tgz" --archive-sha256 "41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073" --outer-source-sha256 "e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e" --outer-complete "$ARTIFACT/extensions/e23/recorded/outer_COMPLETE.json" --archive-pointer "$ARTIFACT/extensions/e23/recorded/archive_pointer.json" --output "$RESULTS/e23_recorded_verified.json"
+
+python3 -B "$ARTIFACT/extensions/e24/publicanalyze_cost_regimes.py" --friendster-archive "$ASSETS/lpp_public_friendster_cpu_matched_v2_raw.tgz" --citation2-archive "$ARTIFACT/extensions/e22/recorded/citation2_cpu_matched_v1_20261126.tgz" --output "$RESULTS/matched_cost_regimes_recorded.json"
+
+python3 -B "$ARTIFACT/extensions/e24/plot_matched_cost_regimes.py" --input "$RESULTS/matched_cost_regimes_recorded.json" --out "$RESULTS/matched_cost_regimes_figures"

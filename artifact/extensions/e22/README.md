@@ -1,9 +1,6 @@
 # E22: public Citation2 matched CPU extension
 
-This separate extension adds the recorded seven-arm Citation2 CPU control to
-the public SEAL-style execution study. It is a local publication candidate;
-the already published v0.5.0 code/tag/assets are unchanged. E23 pipeline-repeat
-results are not included or claimed here.
+This E22 directory contains the independently verified seven-arm Citation2 CPU control. It is included in the v0.6.0 revision; published v0.5.0 code/tag/assets remain unchanged. E23 pipeline repetitions are documented separately under `../e23/`.
 
 ## Verify the recorded result without scientific dependencies
 

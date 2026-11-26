@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Research artifact; own code MIT. See the external asset catalog for exact evidence files."
-title: "Execution Costs and Sampling Semantics in Subgraph-Based Link Prediction"
+title: "Execution Costs and Sampling Semantics in SEAL-Style Link Prediction"
 type: software
 license: MIT
 authors:
@@ -21,4 +21,4 @@ contact:
     given-names: Maksim
     affiliation: AI VK, Moscow, Russia
     email: mak.utushkin@gmail.com
-version: 0.5.0
+version: 0.6.0

@@ -1,0 +1,44 @@
+{
+  "version": "0.5.0",
+  "source_archive_sha256": "1d775a10ba4d35ccb317219feebbd342411793d7e7d2c9e298873a130058f8ad",
+  "files": [
+    {
+      "release_filename": "lpp_vldb_artifact_v0.5.0.tgz",
+      "bytes": 82619965,
+      "sha256": "1d775a10ba4d35ccb317219feebbd342411793d7e7d2c9e298873a130058f8ad"
+    },
+    {
+      "release_filename": "lpp_public_quality_evidence_v1.tgz",
+      "bytes": 404147012,
+      "sha256": "e17cdc9678d00a3f372fc8083741a200a63662226f730f47eeda79f89b4ad3b2"
+    },
+    {
+      "release_filename": "lpp_public_systems_evidence_v1.tgz",
+      "bytes": 83629661,
+      "sha256": "48232549089f3295c893bb33f6cea0d1aac4a0ee45b91a2669392c90ae1bfe40"
+    },
+    {
+      "release_filename": "lpp_public_friendster_cpu_matched_v2_raw.tgz",
+      "bytes": 2121570,
+      "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374"
+    },
+    {
+      "release_filename": "pt22_native_wheels_v1.tgz",
+      "bytes": 15064339,
+      "sha256": "5e9edbdc067325cd0b41b5fb292e2cc7343cc535da87ff3bef720cbf85da38cf"
+    },
+    {
+      "release_filename": "lpp_public_pencil_instrumented48_raw.tgz",
+      "bytes": 9966534,
+      "sha256": "7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c"
+    },
+    {
+      "release_filename": "lpp_public_pencil_clean44_raw.tgz",
+      "bytes": 10230546,
+      "sha256": "708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0"
+    }
+  ],
+  "total_bytes": 607779627,
+  "graphs_included": false,
+  "final_independent_peer_sha256": "58d786b1852bd18529498b0ebc65aa5671d598f3b279c8c32db1acf864bf43ca"
+}

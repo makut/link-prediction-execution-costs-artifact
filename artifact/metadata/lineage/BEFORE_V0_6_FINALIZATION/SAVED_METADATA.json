@@ -1,0 +1,63 @@
+{
+  "kind": "BEFORE_V0_6_ACTIVE_METADATA_PRESERVED",
+  "created_utc": "2026-11-26T12:07:34.937974+00:00",
+  "original_head": "f5debf4da9def519c2e44f5db4b87cb94bcfa7c2",
+  "files": {
+    "CITATION.cff": {
+      "bytes": 747,
+      "sha256": "e5eec9c5a0d18a0cf574a77726eaa9659eee530bd6fc0dd6ca650fba8953cb13"
+    },
+    "README.md": {
+      "bytes": 2964,
+      "sha256": "ba2720978e92b266953cbc21a264228bd37584ff7812bcc42e976b972f14bf6a"
+    },
+    "artifact/CITATION.cff": {
+      "bytes": 751,
+      "sha256": "417ff22317b6055393a3a8af9fadc410dbb11bb1f8baca9084ef278e7e8f6752"
+    },
+    "artifact/MANIFEST.json": {
+      "bytes": 239340,
+      "sha256": "19164d3d8305d30dfcf5e007dfc39cb07fd5b49b3e2a60ab70632cab1e88b159"
+    },
+    "artifact/PACKAGING_NOTES.md": {
+      "bytes": 1750,
+      "sha256": "96031d03921abf19d31ea397cd6f438aa2b754bf2d47fa0d5c5910bc8ec1019b"
+    },
+    "artifact/PUBLIC_COMMANDS.txt": {
+      "bytes": 11868,
+      "sha256": "3e87088db8855aa4e207447dbbb17d7789e8bc3f9b77e8956238e1f579e3347c"
+    },
+    "artifact/PUBLIC_OBJECT_COMMANDS.json": {
+      "bytes": 19778,
+      "sha256": "e65b950e270698108291bd86516e4c0e0a3ceb2209e6fd9063d5f9321386892b"
+    },
+    "artifact/README.md": {
+      "bytes": 3415,
+      "sha256": "266b6036cd6ba20a1c349f6a9c9aabbb5a7c6d6933cda3f3513f7fab508cd19a"
+    },
+    "artifact/extensions/e22/README.md": {
+      "bytes": 8590,
+      "sha256": "ba5a0aad8c6096cdeb99d5418fbfdc6f370ea40b0955775760e77cf931693f99"
+    },
+    "artifact/extensions/e22/RESULT_CATALOG.json": {
+      "bytes": 34159,
+      "sha256": "d966885eda66dbb66c7656f80478d52334b42694cbd244a87d9797e2e3f3ea61"
+    },
+    "artifact/extensions/e23/EXTENSION_CATALOG.json": {
+      "bytes": 6994,
+      "sha256": "c006340f00262f9a7cc6419f9c0b78635f8817eb7d2fda1c5cf54f7407eb2c06"
+    },
+    "artifact/extensions/e23/README.md": {
+      "bytes": 9923,
+      "sha256": "e0fcda884013409db6e20944bc5f0d4d48673bbe0bfb066dbb5338d2bd580f2e"
+    },
+    "artifact/metadata/CANDIDATE_STATUS.json": {
+      "bytes": 387,
+      "sha256": "3021e7acaacd27f970e871649722b3c6fd3de4eecbe4e9cf6fe9f3f770e902dd"
+    },
+    "artifact/metadata/PUBLICATION_STATUS.json": {
+      "bytes": 2263,
+      "sha256": "f249a834be548bafa61b45ffe698f8925612506138c8309456f1984edf0afc8c"
+    }
+  }
+}

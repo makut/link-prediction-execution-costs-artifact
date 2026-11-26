@@ -1,3 +1,9 @@
+# Current v0.6.0 packaging scope
+
+The published v0.5.0 release and six companion assets remain immutable. The current v0.6.0 payload adds independently verified E22/E23 recorded evidence and E24 posthoc analysis. Original creation records and overwritten active metadata are preserved under `metadata/lineage/BEFORE_V0_6_FINALIZATION/`. The current complete inventory is `MANIFEST.json`; whole code-archive SHA and publication receipts remain external to avoid a self-checksum cycle. Git/archive/release actions are separate from this metadata stage.
+
+## Historical packaging/license record
+
 # Candidate packaging and license scope
 
 The user approved MIT for the authors’ own code on 25 November 2026. This includes
