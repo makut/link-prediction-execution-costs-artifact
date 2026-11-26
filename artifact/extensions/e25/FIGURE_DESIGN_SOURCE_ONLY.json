@@ -1,0 +1,73 @@
+{
+  "CLI": "python3 -B plot_e25_env_v4_lifecycle.py --input ACTUAL_ENV_V4_AUDIT.json --input-sha256 INDEPENDENT_WHOLE_AUDIT_SHA256 --out NEW_FIGURE_DIRECTORY",
+  "PSS_rule": "Unchanged47b8 all eligible phases per-run sampled app-tree maximum; range of3 observed run maxima. CPU/disk unknown never filters PSS; no eligible sample is unobserved, never zero.",
+  "Python310_AST": "PASS_STATIC_ONLY_NO_SCRIPT_EXECUTION",
+  "actions": {
+    "actual_data_read": 0,
+    "cluster_YT_network_calls": 0,
+    "figures_or_PDFs_generated": 0,
+    "mock_data_generated": 0,
+    "publication_or_candidate_changes": 0,
+    "source_or_plot_executions": 0
+  },
+  "caption_draft": "Instrumented Friendster application wall at 320 and 6,400 measured graphs after 256 warmup graphs. Stacks partition mean launch-to-recorded-wait wall into four disjoint intervals; markers retain all three totals and diamonds show mean \u00b1 sample SD. Full consumed-input hashing, resource/affinity/disk observations, metadata fsync and fresh native promotion/fsync on the admitted PVC are included. Common input audits, C++ build and post-exit native verification are outside applications. Prefetch overlaps training and shutdown and is not a separate additive segment. Storage placement can affect timings; no production-throughput, time-to-quality, population crossover or causal ratio to E23/failed attempts is inferred.",
+  "earlier_stop_scope": "Known hard-guard propagation bug fixed; cause of external replica-zero stop, including disk-full/scaler causation, remains unknown.",
+  "exact_accounting": "Recover unique integer elapsed ns within0.01ns JSON roundtrip tolerance. Each run integer partition sums exactly; mean intervals use rational ns/3 and exactly sum to mean total. Floating rendering uses strict rounding tolerance; TABLEDATA retains integer endpoints/intervals and rational fractions.",
+  "future_outputs": [
+    "e25_env_v4_actual_lifecycle_partition.png",
+    "e25_env_v4_actual_lifecycle_partition.pdf",
+    "e25_env_v4_actual_lifecycle_partition.svg",
+    "TABLEDATA.json",
+    "FIGURE_MANIFEST.json"
+  ],
+  "input_contract": {
+    "auditor_sha256": "44b11d6a684be138487b5b1f5112ad14cbc4ea5809a08821f5061b28f9091393",
+    "canonical_protocol_sha256": "ff42b44bf17ff54d9994731543fbb3d73caaabb56c7150f576e208ad6c3f1fc2",
+    "extra_gates": "Whole independently known audit SHA; exact environment_v4 mask/24 app guards/4 tiny qualification consumers, storage_v4 original admission+raw disk+null controller latch+latest sampled inventory; all 3 process values in all 8 groups; source-only schema refused before Matplotlib import.",
+    "independent_disk_sha256": "1112282c70e706864e6d916b03ced0a13d1e7d5e8aee58cb228e22cc32e62233",
+    "independent_env_sha256": "5c1b51876e591f9798551043064fdc1fa892d4bd6705bc9d84c7a0d99ab107fe",
+    "kind": "INDEPENDENT_ACTUAL_E25_ENV_V4_RAW_NUMERICAL_PSS_BRACKETS_AND_DISK_PEER",
+    "prior_capsule": {
+      "bytes": 1168934,
+      "scope": "Available local observations/source preservation only; no recovered partial metrics/actual OS exit0. Failed v2/v1 remain nested once; no expansion/pooling.",
+      "sha256": "34d1dbc0aba48f3ce72b766a655f48ee42b857edf70a7d19415d12aa90490d39"
+    },
+    "source_manifest_sha256": "82f93337ba4b4333cc319b610f6bad1ad24c5f9edf1c79731ae6127eed94c005",
+    "status": "PASS_ACTUAL_RAW_E25_ENV_V4_AUDIT"
+  },
+  "kind": "E25_ENV_V4_LIFECYCLE_FIGURE_SOURCE_AND_SCHEMA_DESIGN_NOT_RENDERED",
+  "nonoverlapping_partition": [
+    "Launch to trained 32",
+    "Trained32 to warmup 256",
+    "Warmup 256 to final checkpoint",
+    "Final checkpoint to actual wait"
+  ],
+  "platform_context": {
+    "CPU_policy": "fixed27_env_v3",
+    "NUMA_mems": "0",
+    "actual_storage_admission_sha256": "d3e1d4feb0c519eaf6a7f21d5f9847df5a3523efc8840cd1a3fb00c6b82da026",
+    "cpu_mask": "26-38,137-150",
+    "cpu_request_limit": 27,
+    "exact_proof_path": "schema_reference/outer_source_v4/ROOT_STORAGE_AMENDMENT.json",
+    "logical_CPUs": 27,
+    "memory_request_limit_GiB": 256,
+    "observed_physical_cores": 14,
+    "scope": "Recorded pre-science PVC/image/CPU/write-test facts only; no current liveness, completed cohort, exclusive cores/bandwidth, disk reservation or continuous/global health claim.",
+    "storage_amendment_sha256": "27b1cd73151fbe27592bdde318532f38593d877477478e2ddf1b066ef7b3b668"
+  },
+  "script": {
+    "bytes": 19241,
+    "filename": "plot_e25_env_v4_lifecycle.py",
+    "sha256": "ed6b00c45e1c953b413736aeeb260118b44e71c1950fb415bd880b68a1d3b92d"
+  },
+  "status": "SOURCE_ONLY_AWAITING_GENUINE_COMPLETE_ENV_V4_AUDIT",
+  "use_gate": "Genuine completed raw collection and independent audit, then actual figure visual/layout review before any manuscript/release integration. Root owns methods; no methods copied.",
+  "visual_design": {
+    "bars": 8,
+    "individual_total_markers": 24,
+    "panels": "W1 and W8; linear common y scale",
+    "repetition_offsets": "Fixed categorical offsets, no interpolation or crossover fit",
+    "statistics": "Mean plus sample SD of 3 fresh processes, not CI/population uncertainty",
+    "style": "Colorblind-friendly stages, DejaVu Sans 8 pt, vector PDF/SVG and 360 dpi PNG after genuine audit only"
+  }
+}

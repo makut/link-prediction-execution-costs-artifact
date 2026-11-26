@@ -1,0 +1,71 @@
+{
+  "actual_child_exits": [
+    {
+      "actual_wait_returned": true,
+      "launch_monotonic_ns": 5386090031580880,
+      "pid": 1770,
+      "returncode": 0,
+      "wait_returned_monotonic_ns": 5386099557371351
+    },
+    {
+      "actual_wait_returned": true,
+      "launch_monotonic_ns": 5386099644480791,
+      "pid": 1905,
+      "returncode": 0,
+      "wait_returned_monotonic_ns": 5386107919528027
+    }
+  ],
+  "actual_consumers": 2,
+  "chosen_cpu_affinity": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150
+  ],
+  "comparisons": [
+    {
+      "all_actual_consumed_inputs_exact": true,
+      "consumed_graphs": 6,
+      "stream_sha256": "72b4e141053443760979d36ef039bd435e7c2a9edc404c5e1c9411edf27b3f42",
+      "workers": 1
+    }
+  ],
+  "device": "cpu",
+  "environment_policy": "fixed27_env_v3",
+  "environment_target_proof": true,
+  "initial_model_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e",
+  "native_library": {
+    "bytes": 22352,
+    "sha256": "2a8b892a63a84061ec03fc8e7d6c5d616ecb351720a1e4f236cae0374999f967"
+  },
+  "new_full_Friendster_science": false,
+  "scope": "Actual tiny consumer qualification only. CPU1 smoke is not Linux/H100 scientific evidence; CUDA8 uses enough batches to deliver input from every worker.",
+  "source_manifest_sha256": "82f93337ba4b4333cc319b610f6bad1ad24c5f9edf1c79731ae6127eed94c005",
+  "success": true,
+  "workers": [
+    1
+  ]
+}

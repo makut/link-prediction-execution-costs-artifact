@@ -1,0 +1,68 @@
+{
+  "files": {
+    "CONTRACT.json": {
+      "bytes": 6198,
+      "sha256": "dafc7b08eb3671d779394a485028220e11a1913890cb7fd4d9abac9cc0b007c5"
+    },
+    "LICENSE": {
+      "bytes": 1073,
+      "sha256": "5096961eb53321c0dd8d8b6eeb978cd3e4a58256f1ab706558500d618ffe26ca"
+    },
+    "LINEAGE.json": {
+      "bytes": 1683,
+      "sha256": "da55282c42d132cac0f0480f93b72d8620d028e9aa3533205f69c04dee09a9e4"
+    },
+    "PRIOR_ABORTED_PRESERVATION_RECEIPT.json": {
+      "bytes": 681,
+      "sha256": "1be3f8271557922460b64993e6a03a3bbf3ecbc7ab8b76bcd40eac90768418ee"
+    },
+    "README.txt": {
+      "bytes": 8006,
+      "sha256": "ac3e59bc081454e54bbc5c924da6e19ccd007196cd5f6ea90a5093c0e40e0947"
+    },
+    "ROOT_ACTUAL_PRELAUNCH_ADMISSION.json": {
+      "bytes": 36024,
+      "sha256": "becc9ed327ebb3da53ad0bc55db4a6fa6a2d791e0bdadab9fc5f631b0f7be1fc"
+    },
+    "ROOT_CONTROLLER_GUARD_SOURCE_PEER.json": {
+      "bytes": 2636,
+      "sha256": "ec0812c805d45f5468b63abffc8b1acecb374dee9a29632ee27e186f7d286d9d"
+    },
+    "ROOT_CPU_PREDECLARATION.json": {
+      "bytes": 4575,
+      "sha256": "adc5e659b08f4e3dc246d295e415c522997fa80bd903190582ee422c68910d32"
+    },
+    "ROOT_CPU_QUALIFIED.json": {
+      "bytes": 1590,
+      "sha256": "210c1af60bed9cd693b73805a96613f7e389c18248aae74fef6546f3abab7630"
+    },
+    "ROOT_H100_QUALIFIED.json": {
+      "bytes": 2177,
+      "sha256": "782609828563a754cfab00fbefc18513667cc97665e7d60e3e15641f1da5c30c"
+    },
+    "ROOT_PRODUCER_SOURCE_PEER.json": {
+      "bytes": 1845,
+      "sha256": "6a3b6279dfc2f719b4be4b54f0d50b51321ac2796418db0b6ad90b0c53ad923b"
+    },
+    "ROOT_STORAGE_ACTUAL_ADMISSION.json": {
+      "bytes": 9885,
+      "sha256": "d3e1d4feb0c519eaf6a7f21d5f9847df5a3523efc8840cd1a3fb00c6b82da026"
+    },
+    "ROOT_STORAGE_AMENDMENT.json": {
+      "bytes": 14041,
+      "sha256": "27b1cd73151fbe27592bdde318532f38593d877477478e2ddf1b066ef7b3b668"
+    },
+    "launch_outer_e25.py": {
+      "bytes": 2444,
+      "sha256": "059c089f64b2e0ca876d3662594869de1fbb389c5e93085550580ce24a60efd7"
+    },
+    "outer_e25.py": {
+      "bytes": 79154,
+      "sha256": "1d0232f271fa50afab3268919deaeb34f86d84a80aab2dd19e546fd9ad119189"
+    },
+    "test_wrapper_lifecycle.py": {
+      "bytes": 5592,
+      "sha256": "f1c39ac98bc7dc034d9cd43678c1f7b16f805638c56b144542bbe038a0a4f741"
+    }
+  }
+}

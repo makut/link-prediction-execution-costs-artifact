@@ -1,0 +1,19 @@
+{
+  "kind": "ENV_V3_AVAILABLE_LOCAL_EVIDENCE_PRESERVATION_RECEIPT",
+  "created_unix": 1795712377.339565,
+  "archive": "E25_ENV_V3_EXTERNAL_STOP_DIAGNOSTIC_v1.tgz",
+  "bytes": 1168934,
+  "sha256": "34d1dbc0aba48f3ce72b766a655f48ee42b857edf70a7d19415d12aa90490d39",
+  "members": 81,
+  "raw_payload_bytes": 1762608,
+  "all_available_selected_member_hashes_verified": true,
+  "local_fsync": true,
+  "full24_success": false,
+  "raw_partial_job_metrics_preserved": false,
+  "observed_completed_jobs_only": 2,
+  "actual_OS_exit0_proven": false,
+  "prior_failed_env_v2_capsule_nested_once": true,
+  "prior_failed_v1_nested_inside_v2": true,
+  "no_graph_payloads": true,
+  "YT_writes": 0
+}

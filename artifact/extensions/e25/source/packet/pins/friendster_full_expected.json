@@ -1,0 +1,22 @@
+{
+  "dataset": "Friendster dense Zenodo 5146230",
+  "files": {
+    "edge_ends.bin": {
+      "bytes": 14448537088,
+      "sha256": "0f74897efa3172252a8371bb0d2c8e0129602475ebb84a863ec1210f9c5e5973"
+    },
+    "edge_starts.bin": {
+      "bytes": 524866928,
+      "sha256": "b6ebf026fa54498f241af834b96b5496b2a1bcbf8be3edea2f4b3a1cf0a674e9"
+    },
+    "num_nodes.txt": {
+      "bytes": 9,
+      "sha256": "8551541f6f2ef955481af83ef5e6f92c5f206c968d5d9db6a4437efecf767753"
+    }
+  },
+  "full_public_reproduction_verified": false,
+  "num_nodes": 65608366,
+  "schema_version": 1,
+  "scope": "Numeric graph payload identity; generated meta.json times/paths are excluded.",
+  "stored_entries": 3612134270
+}

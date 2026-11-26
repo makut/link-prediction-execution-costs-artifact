@@ -1,0 +1,95 @@
+{
+  "arms": [
+    "reference_union_compiled",
+    "reference_union_native_persistent"
+  ],
+  "batch_size": 32,
+  "cache": "OS cache and shared on-disk Numba cache retained; no prefault, eviction or cold-cache claim",
+  "cap": 200,
+  "controller_guard_amendment": {
+    "disk_limits": "4GiB live reserve and2GiB non-runtime cap on the actual admitted output backing filesystem; no reservation or node eviction-threshold guarantee",
+    "disk_observer": "At actual approximately2s controller checks, bounded fsynced JSONL records statvfs bytes/inodes available and readonly flag on output backing filesystem;8MiB history cap; observer cost included without subtraction",
+    "hard_negatives": "Controller deadline/environment/disk/output errors latch once, persist a bounded failure receipt when storage permits, and abort owned processes independently of transient PSS sampling errors; no throttle or successful sample clears them",
+    "output_observer": "Non-atomic sampled output-byte cap, not instantaneous quota; one lstat per entry, vanished entries skipped and counted in bounded latest inventory receipt; observed bytes and known negatives never heal",
+    "scope": "Fresh complete24 only; no partial-attempt pooling",
+    "storage_admission": {
+      "actual_admission_sha256": "d3e1d4feb0c519eaf6a7f21d5f9847df5a3523efc8840cd1a3fb00c6b82da026",
+      "artifact": "ROOT_STORAGE_AMENDMENT.json",
+      "binding": "Separate outer-bound actual platform amendment; no science launch from this protocol reference alone",
+      "scope": "All source/graph/results/native/temp/cache paths under the actual write-proven BASE PVC subdirectory. Fresh whole24 only; storage placement can affect timing and is disclosed. No causal ratio to failed attempts or E23, cold-cache, continuous/exclusive bandwidth or disk reservation claim.",
+      "sha256": "27b1cd73151fbe27592bdde318532f38593d877477478e2ddf1b066ef7b3b668"
+    },
+    "version": "latched_disk_guard_v4"
+  },
+  "cpu_memory_gib": 180,
+  "datasets": [
+    "friendster"
+  ],
+  "environment_policy": {
+    "boundary_rescan": {
+      "eligibility": "Only ancillary task membership/observation churn with known unchanged own PID/start, exact leader mask, known exact cgroup and every observable hard predicate true; eventual fully stable PASS required within both caps",
+      "failure": "Any observed resource/mask/PID/TID/cgroup negative fails immediately without another attempt; budget exhaustion fails; no repin or repair; all attempts retained, not just final PASS",
+      "max_attempts": 8,
+      "max_wall_seconds": 0.5,
+      "pause_seconds": 0.01,
+      "wall_budget_scope": "From before own identity read through terminal decision; a scan returning after deadline cannot PASS. OS I/O can overrun before failure is reported; not a hard real-time cancellation guarantee."
+    },
+    "cohort": "fresh full24 restart and fresh output/Numba cache; aborted v1/v2 attempts kept separately, never pooled or appended",
+    "invariants": "same host/boot/cgroup identity and memory limit; chosen CPUs remain in effective cpuset and online; process leaders exact chosen mask; runtime thread masks nonempty subsets; all widening or quota change aborts",
+    "limits": "shared27CPU time quota and27logical CPU mask are not exclusive physical cores, absence of contention, bandwidth reservation, or continuous observation",
+    "logical_cpu_count": 27,
+    "mutation": "one controller affinity pin before admission; children inherit; app/worker guards never repin",
+    "observer": "read-only named-predicate boundary guards plus complete before/after PID/TID/cgroup brackets in CPU/PSS observations approximately every2s; metadata work included, no subtraction; ambient pool changes outside chosen mask recorded",
+    "quota": "exact cpu.max2700000 100000",
+    "selection": "highest27 currently allowed online logical CPU IDs, chosen once before admission/build/qualification; optional root-bound E25_EXPECTED_CPU_AFFINITY pins the same exact list for prelaunch qualification and controller",
+    "version": "fixed27_env_v3"
+  },
+  "gpu_allocator_gib": 24,
+  "hops": 2,
+  "horizons": {
+    "long6400": {
+      "checkpoints": [
+        32,
+        256,
+        1280,
+        3456,
+        6656
+      ],
+      "consumed_graphs": 6656,
+      "measured_graphs": 6400,
+      "steps": 200
+    },
+    "short320": {
+      "checkpoints": [
+        32,
+        256,
+        576
+      ],
+      "consumed_graphs": 576,
+      "measured_graphs": 320,
+      "steps": 10
+    }
+  },
+  "input_equality": "typed/shaped ordered CPU PyG batch stream SHA and exact query indices for every consumed graph; short576 must equal long prefix576; hash time included without subtraction",
+  "long_semantic_prefix576": "full input SHA snapshot only; no added CUDA sync or timing checkpoint",
+  "max_hours": 4,
+  "max_job_seconds": 2400,
+  "model": "unchanged featureless DGCNN32/3/k281/maxz1000 Adam1e-4",
+  "name": "friendster_native_lifecycle_checkpointed_env_v3",
+  "native": "unchanged standalone persistent NativeCSR and pack_local; no PENCIL NativeGraph/Facade or sampler",
+  "order_seed": 20261126,
+  "prefetch_factor": 1,
+  "repetitions": 3,
+  "sampler_seconds": 2,
+  "sampling": "unchanged reference_union, original pair_seed and ordered S",
+  "scope": "two physical induction routes within one reference-sampling DGCNN consumer; no quality, full-upstream or population inference",
+  "seed": 20261124,
+  "setup": "worker_init only sets Torch threads; lazy arm-specific setup, natural first-use compiled JIT/cache load and fresh native promotion/state initialization inside app clock",
+  "timing": "common checkpoint-synchronized E25; each short/long job genuinely terminates; interior synchronized prefixes are not independently terminated lifetimes or original E23 windows",
+  "timing_jobs": 24,
+  "warmup_steps": 8,
+  "workers": [
+    1,
+    8
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "actions": {
+    "cluster_network_YT_calls": 0,
+    "producer_mutations": 0,
+    "tests_or_experiments_executed": 0
+  },
+  "canonical_protocol_sha256": "ff42b44bf17ff54d9994731543fbb3d73caaabb56c7150f576e208ad6c3f1fc2",
+  "checks": {
+    "controller_and_common_exact_previously_reviewed_pair": true,
+    "exact_manifest_and_whole_regular_inventory": true,
+    "gzip_mtime_zero": true,
+    "only_v3_changed_payloads": [
+      "PROTOCOL.json",
+      "common.py",
+      "run_lifecycle.py"
+    ],
+    "protocol_json_equals_statically_reconstructed_common_literal": true,
+    "python310_AST_files": 22,
+    "raw_payload_bytes_including_manifest": 576145,
+    "safe_unique_regular_members_only": true,
+    "source_payloads": 41,
+    "tar_prefix": "e25_native_lifecycle_packet_v4",
+    "tar_regular_members": 42,
+    "unchanged_v3_payloads": 38,
+    "v3_payload_inventory_preserved": true,
+    "whole_archive_member_bytes_match_frozen_source": true
+  },
+  "findings": [],
+  "kind": "ENV_V4_FROZEN_PRODUCER_METADATA_ARCHIVE_INDEPENDENT_SOURCE_PEER",
+  "limits": [
+    "Source-only package validation; no import of producer modules, fixture/test/experiment execution, actual H100 qualification, cluster call or staging.",
+    "Runtime storage/CPU/Pod identity, qualification and later complete24 raw audit remain separate gates."
+  ],
+  "pins": {
+    "SOURCE_MANIFEST.json": {
+      "bytes": 6293,
+      "sha256": "82f93337ba4b4333cc319b610f6bad1ad24c5f9edf1c79731ae6127eed94c005"
+    },
+    "SOURCE_READY_ENV_V4.json": {
+      "bytes": 2722,
+      "sha256": "bb5bf18d8bbc099faaa1b445cd8006046ce6fa6839733f0777bfa6d2a67aeea0"
+    },
+    "archive": {
+      "bytes": 184956,
+      "sha256": "992c1c742ba2b4f336f4f8c4ecadb94e57e0c22dba6a923f36577d8cc4711bf6"
+    }
+  },
+  "reviewer": "reviewer_eab",
+  "status": "PASS_SOURCE_PACKAGE_CONSISTENCY_ONLY"
+}

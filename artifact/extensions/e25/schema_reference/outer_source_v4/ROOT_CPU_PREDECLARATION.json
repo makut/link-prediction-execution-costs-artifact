@@ -1,0 +1,296 @@
+{
+  "boot_id": "ed7e98ea-3913-4ee1-9402-b098cfd8db9b",
+  "cgroup": {
+    "cpu.max": "2700000 100000",
+    "cpu.weight": "1055",
+    "cpuset.cpus.effective": "26-38,137-150",
+    "cpuset.mems.effective": "0",
+    "memory.max": "274877906944"
+  },
+  "cpu_affinity": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150
+  ],
+  "cpu_topology": [
+    {
+      "core": 26,
+      "logical_cpu": 26,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 27,
+      "logical_cpu": 27,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 28,
+      "logical_cpu": 28,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 29,
+      "logical_cpu": 29,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 30,
+      "logical_cpu": 30,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 31,
+      "logical_cpu": 31,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 32,
+      "logical_cpu": 32,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 33,
+      "logical_cpu": 33,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 34,
+      "logical_cpu": 34,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 35,
+      "logical_cpu": 35,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 36,
+      "logical_cpu": 36,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 37,
+      "logical_cpu": 37,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 38,
+      "logical_cpu": 38,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 25,
+      "logical_cpu": 137,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 26,
+      "logical_cpu": 138,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 27,
+      "logical_cpu": 139,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 28,
+      "logical_cpu": 140,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 29,
+      "logical_cpu": 141,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 30,
+      "logical_cpu": 142,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 31,
+      "logical_cpu": 143,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 32,
+      "logical_cpu": 144,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 33,
+      "logical_cpu": 145,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 34,
+      "logical_cpu": 146,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 35,
+      "logical_cpu": 147,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 36,
+      "logical_cpu": 148,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 37,
+      "logical_cpu": 149,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    },
+    {
+      "core": 38,
+      "logical_cpu": 150,
+      "numa_nodes": [
+        0
+      ],
+      "package": 0
+    }
+  ],
+  "created_unix": 1795713508.928768,
+  "kind": "ENV_V4_CPU_MASK_PREDECLARATION_BEFORE_ANY_SCIENTIFIC_OUTCOME",
+  "logical_cpus": 27,
+  "physical_cores": 14,
+  "pod_uid": "eaab0c83-9d9a-466e-bf1d-b955e0c04e0d",
+  "scientific_jobs_started": 0,
+  "selected_cpu_affinity": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150
+  ],
+  "selection": "ExactalreadyassignedGuaranteed27mask observedbeforedata/science, noperformanceoutcomes used; noaffinityrepair",
+  "source_actual_storage_admission_sha256": "d3e1d4feb0c519eaf6a7f21d5f9847df5a3523efc8840cd1a3fb00c6b82da026",
+  "statefulset_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0",
+  "storage_amendment_sha256": "27b1cd73151fbe27592bdde318532f38593d877477478e2ddf1b066ef7b3b668"
+}

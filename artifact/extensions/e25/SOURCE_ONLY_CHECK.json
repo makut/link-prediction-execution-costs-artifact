@@ -1,0 +1,32 @@
+{
+  "Python310_AST": "PASS_STATIC_ONLY",
+  "actual_data_reads": 0,
+  "allowlist": {
+    "bytes": 25961,
+    "sha256": "7eb02dd1cdfacce8aed848d383e6c9016852f2403969d42da6f3c30267923388"
+  },
+  "arithmetic_helpers_AST_identical_to_v3": true,
+  "audit_v4_three_modules_and_cc84_source_peer_exact": true,
+  "catalog": {
+    "bytes": 13370,
+    "sha256": "8488d3e90de84e0d24e0e7837a3cc923dbd08f57a34790e96a65c6c4ddc69ac5"
+  },
+  "cluster_YT_network_calls": 0,
+  "credential_pattern_hits": 0,
+  "exact_ROOT_STORAGE_AMENDMENT_and_original_actual_admission_copied": true,
+  "figures_generated": 0,
+  "frozen_outer_all16_payloads_and_manifest_exact": true,
+  "frozen_packet_all_payloads_and_archive_roundtrip_exact": true,
+  "genuine_audit_gate_before_Matplotlib_import": true,
+  "kind": "E25_ENV_V4_SOURCE_ONLY_STAGE_CHECK",
+  "methods_copied_or_changed": false,
+  "mock_data_generated": false,
+  "payload_bytes": 1075334,
+  "payloads": 74,
+  "prior_capsule_scope": "No standalone diagnostic archive copy, expansion, raw partial metric/OS exit inference or old timing pooling.",
+  "publication_or_manuscript_changes": 0,
+  "script_imports_or_executions": 0,
+  "status": "SOURCE_ONLY_STATIC_CHECK_PASS_INDEPENDENT_SOURCE_PEER_PENDING",
+  "unchanged_PSS_rule_sha256": "47b8a0f24c4ec3f386a8b8ba29f6d52a2c3af54ea46b3f2389f6483914bb0a90",
+  "v3_stage_complete_payload_inventory_unchanged": true
+}

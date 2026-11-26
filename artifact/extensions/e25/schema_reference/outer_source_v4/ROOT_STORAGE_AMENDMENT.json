@@ -1,0 +1,487 @@
+{
+  "PVC_claim_name": "claim-vk-b",
+  "PVC_claim_uid": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+  "PV_volume_name": "pvc-cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+  "RAM_shared_memory_limit_GiB": 32,
+  "YT_writes": 0,
+  "actual_admission": {
+    "GPU_busy_apps": [],
+    "PVC_write_probe": {
+      "bytes": 3840,
+      "directory_fsync": true,
+      "sha256": "b12a411fb3d40ef1dbe87db3028654c8ac9e1d366299ee6a9ae429d3cc5ee3d5",
+      "write_fsync_readback_and_unlink": true
+    },
+    "YT_writes": 0,
+    "actual_scientific_jobs_started": 0,
+    "after": {
+      "bytes_available": 86092836864,
+      "bytes_total": 210236297216,
+      "device": 66323,
+      "inodes_available": 13107014,
+      "inodes_total": 13107200,
+      "mount_readonly": false
+    },
+    "all_relevant_mounts": [
+      {
+        "filesystem": "overlay",
+        "major_minor": "0:654",
+        "mount_id": 6736,
+        "mount_options": "rw,relatime",
+        "mount_point": "/",
+        "parent_mount_id": 6453,
+        "root": "/",
+        "source": "overlay",
+        "super_options": "rw,lowerdir=3874/fs:3873/fs:3872/fs:3871/fs:3870/fs:3869/fs:3868/fs:3867/fs:3866/fs:3865/fs:3864/fs:3863/fs:3862/fs:3861/fs:3860/fs:3859/fs:3858/fs:3857/fs:3856/fs:3855/fs:3854/fs:3853/fs:3852/fs:3851/fs:3850/fs:3849/fs:3848/fs:3847/fs:3846/fs:3845/fs:3844/fs:3843/fs:3842/fs:3841/fs:3840/fs:3839/fs:3838/fs:3837/fs:3836/fs:3835/fs:3834/fs:3833/fs:3832/fs:3831/fs:3830/fs:3829/fs:3828/fs:3827/fs:3826/fs:3825/fs:3824/fs:3823/fs:3822/fs:3821/fs:3820/fs:3819/fs:3818/fs:3817/fs:3816/fs:3815/fs:3814/fs:3813/fs:3812/fs:3811/fs:1383/fs:1382/fs:1381/fs:1380/fs:1379/fs:1378/fs:1377/fs:1376/fs:1375/fs:1374/fs:1373/fs:1372/fs:1371/fs:1370/fs:1369/fs:1368/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/6553/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/6553/work"
+      },
+      {
+        "filesystem": "ext4",
+        "major_minor": "259:19",
+        "mount_id": 6749,
+        "mount_options": "rw,relatime",
+        "mount_point": "/home/jovyan/seal_native_lifecycle_20261126",
+        "parent_mount_id": 6736,
+        "root": "/lpp_seal_e25_20261126_pvc_01",
+        "source": "/dev/nvme10n1",
+        "super_options": "rw,stripe=32"
+      }
+    ],
+    "base": "/home/jovyan/seal_native_lifecycle_20261126",
+    "before": {
+      "bytes_available": 86092836864,
+      "bytes_total": 210236297216,
+      "device": 66323,
+      "inodes_available": 13107014,
+      "inodes_total": 13107200,
+      "mount_readonly": false
+    },
+    "boot_id": "ed7e98ea-3913-4ee1-9402-b098cfd8db9b",
+    "cgroup": {
+      "cpu.max": "2700000 100000",
+      "cpu.weight": "1055",
+      "cpuset.cpus.effective": "26-38,137-150",
+      "cpuset.mems.effective": "0",
+      "memory.max": "274877906944"
+    },
+    "cpu_affinity": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150
+    ],
+    "cpu_physical_cores": 14,
+    "cpu_topology": [
+      {
+        "core": 26,
+        "logical_cpu": 26,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 27,
+        "logical_cpu": 27,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 28,
+        "logical_cpu": 28,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 29,
+        "logical_cpu": 29,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 30,
+        "logical_cpu": 30,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 31,
+        "logical_cpu": 31,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 32,
+        "logical_cpu": 32,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 33,
+        "logical_cpu": 33,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 34,
+        "logical_cpu": 34,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 35,
+        "logical_cpu": 35,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 36,
+        "logical_cpu": 36,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 37,
+        "logical_cpu": 37,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 38,
+        "logical_cpu": 38,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 25,
+        "logical_cpu": 137,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 26,
+        "logical_cpu": 138,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 27,
+        "logical_cpu": 139,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 28,
+        "logical_cpu": 140,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 29,
+        "logical_cpu": 141,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 30,
+        "logical_cpu": 142,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 31,
+        "logical_cpu": 143,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 32,
+        "logical_cpu": 144,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 33,
+        "logical_cpu": 145,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 34,
+        "logical_cpu": 146,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 35,
+        "logical_cpu": 147,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 36,
+        "logical_cpu": 148,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 37,
+        "logical_cpu": 149,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      },
+      {
+        "core": 38,
+        "logical_cpu": 150,
+        "numa_nodes": [
+          0
+        ],
+        "package": 0
+      }
+    ],
+    "expected_storage_device": 66323,
+    "gpu_inventory": [
+      "GPU-31e71637-8daa-b902-2079-9a833df0966a, NVIDIA H100 80GB HBM3, 81559, 535.183.06"
+    ],
+    "initial_init_receipt": {
+      "data": {
+        "PVC_claim": "claim-vk-b",
+        "PVC_claim_uid_root_expected": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+        "available_bytes": 86092857344,
+        "device": 66323,
+        "free_inodes": 13107019,
+        "observed_unix": 1795713299.1659865,
+        "pod_uid": "eaab0c83-9d9a-466e-bf1d-b955e0c04e0d",
+        "readonly": false,
+        "subdirectory": "lpp_seal_e25_20261126_pvc_01",
+        "total_bytes": 210236297216,
+        "uid": 0
+      },
+      "path": "/home/jovyan/seal_native_lifecycle_20261126/PVC_PREFLIGHT_eaab0c83-9d9a-466e-bf1d-b955e0c04e0d.json",
+      "sha256": "d84a85116605eef3f08db67efd1abce740b97bb37baac24e4b6016bc1211b1cc"
+    },
+    "kind": "ROOT_ACTUAL_PVC_STORAGE_ADMISSION_V4",
+    "kubernetes": {
+      "PVC_claim": "claim-vk-b",
+      "PVC_uid": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+      "PV_binding_scope": "Current Bound PVC UID/volumeName + actual Pod claim/subPath/mount/device/owned-directory proof; get PV forbidden.",
+      "PV_claimRef_directly_visible": false,
+      "PV_volume_name": "pvc-cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+      "image_id": "registry-gitlab.corp.mail.ru/platforma-adm/ml/registry/ucp-research/gnn-verse@sha256:2c0d776d47eb7d3b763f5a42c70d51bff2ba6b1f9cb1f01b4adbad76b658cbb1",
+      "namespace": "m-utushkin",
+      "node": "ml-kub-node807.i",
+      "nominal_capacity": {
+        "storage": "200Gi"
+      },
+      "pod": "seal-native-pvc-20261126-0",
+      "pod_uid": "eaab0c83-9d9a-466e-bf1d-b955e0c04e0d",
+      "qos": "Guaranteed",
+      "restarts": 0,
+      "statefulset": "seal-native-pvc-20261126",
+      "statefulset_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0",
+      "storage_class": "openebs-remote-multi-dc"
+    },
+    "large_payloads_on_PVC": true,
+    "limitations": [
+      "Actual successful owned-file writes do not establish that every node filesystem is healthy. Historical node807 readonly condition is recorded separately; stop cause remains unknown.",
+      "PVC selected-node SPB annotation did not prevent this actual successful node807 mount; it is not treated as a hard data-center binding.",
+      "No continuous/exclusive bandwidth or disk reservation assertion; subsequent disk observations and guards are sampled."
+    ],
+    "mount": {
+      "filesystem": "ext4",
+      "major_minor": "259:19",
+      "mount_id": 6749,
+      "mount_options": "rw,relatime",
+      "mount_point": "/home/jovyan/seal_native_lifecycle_20261126",
+      "parent_mount_id": 6736,
+      "root": "/lpp_seal_e25_20261126_pvc_01",
+      "source": "/dev/nvme10n1",
+      "super_options": "rw,stripe=32"
+    },
+    "observed_unix": 1795713408.6882966,
+    "project_owner": {
+      "claim": "claim-vk-b",
+      "claim_uid": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+      "experiment": "E25",
+      "project": "lpp",
+      "run_id": "e25_pvc_20261126_01",
+      "scope": "Only this new project directory is owned; no sibling data is accessed or changed."
+    },
+    "project_owner_sha256": "829fb4504e6f90c436241aef9312bfcff2970347100bac0cad1e0cd9aafc871a",
+    "root_layer_filesystem": {
+      "bytes_available": 570503471104,
+      "bytes_total": 1917965504512,
+      "device": 2097294,
+      "inodes_available": 181018511,
+      "inodes_total": 187392768,
+      "mount_readonly": false
+    },
+    "root_layer_write_probe": {
+      "bytes": 3840,
+      "directory_fsync": true,
+      "sha256": "b12a411fb3d40ef1dbe87db3028654c8ac9e1d366299ee6a9ae429d3cc5ee3d5",
+      "write_fsync_readback_and_unlink": true
+    },
+    "status": "PASS_ACTUAL_MOUNT_AND_OWN_DIRECTORY_ONLY",
+    "temporary_and_cache_environment": {
+      "TEMP": "/home/jovyan/seal_native_lifecycle_20261126/tmp",
+      "TMP": "/home/jovyan/seal_native_lifecycle_20261126/tmp",
+      "TMPDIR": "/home/jovyan/seal_native_lifecycle_20261126/tmp",
+      "TORCH_HOME": "/home/jovyan/seal_native_lifecycle_20261126/cache/torch",
+      "XDG_CACHE_HOME": "/home/jovyan/seal_native_lifecycle_20261126/cache"
+    }
+  },
+  "actual_admission_sha256": "d3e1d4feb0c519eaf6a7f21d5f9847df5a3523efc8840cd1a3fb00c6b82da026",
+  "all_source_graph_results_native_and_temp_cache_paths_under_BASE": true,
+  "base": "/home/jovyan/seal_native_lifecycle_20261126",
+  "boot_id": "ed7e98ea-3913-4ee1-9402-b098cfd8db9b",
+  "compact_graph_payload_bytes": 14973404025,
+  "cpu_affinity": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150
+  ],
+  "cpu_physical_cores": 14,
+  "created_unix": 1795713508.9283588,
+  "expected_storage_device": 66323,
+  "gpu_uuid": "GPU-31e71637-8daa-b902-2079-9a833df0966a",
+  "initial_free_bytes": 86092836864,
+  "initial_free_threshold_bytes": 85899345920,
+  "initial_inode_threshold": 65536,
+  "initial_inodes_available": 13107014,
+  "kind": "E25_ENV_V4_PREDECLARED_STORAGE_PLATFORM_AMENDMENT",
+  "live_free_threshold_bytes": 4294967296,
+  "max_nonruntime_science_outputs_bytes": 2147483648,
+  "mount": {
+    "filesystem": "ext4",
+    "major_minor": "259:19",
+    "mount_id": 6749,
+    "mount_options": "rw,relatime",
+    "mount_point": "/home/jovyan/seal_native_lifecycle_20261126",
+    "parent_mount_id": 6736,
+    "root": "/lpp_seal_e25_20261126_pvc_01",
+    "source": "/dev/nvme10n1",
+    "super_options": "rw,stripe=32"
+  },
+  "node": "ml-kub-node807.i",
+  "nominal_capacity_GiB": 200,
+  "one_native_copy_bytes": 29421941096,
+  "pod_name": "seal-native-pvc-20261126-0",
+  "pod_uid": "eaab0c83-9d9a-466e-bf1d-b955e0c04e0d",
+  "project_subdirectory": "lpp_seal_e25_20261126_pvc_01",
+  "root_ephemeral_storage_limit_GiB": 4,
+  "root_provenance_limits": [
+    "Actual successful owned-file writes do not establish that every node filesystem is healthy. Historical node807 readonly condition is recorded separately; stop cause remains unknown.",
+    "PVC selected-node SPB annotation did not prevent this actual successful node807 mount; it is not treated as a hard data-center binding.",
+    "No continuous/exclusive bandwidth or disk reservation assertion; subsequent disk observations and guards are sampled."
+  ],
+  "run_id": "E25_ENV_V4_PVC_20261126_01",
+  "science_protocol_scope": [
+    "Freshwhole24applications, samearms/order/horizons/sampler/query/model/inputhash/PSSheadline; no partial pooling.",
+    "Includesnewdisk-guard observation/fsync cost in instrumented application wall; stronger hard-negative guard than priorattempts.",
+    "Nativefreshint64conversion/fsync/mmap operate on this PVC; storage placement can affect timing and must be disclosed.",
+    "No causal ratio to E23 or failedV1/ENVv2/ENVv3; no cold-cache/continuous/exclusivebandwidth claim.",
+    "Commonwholeinputhash/C++build/postexitnativeverification remainoutside individualapplicationclocks."
+  ],
+  "scientific_jobs_started": 0,
+  "statefulset_name": "seal-native-pvc-20261126",
+  "statefulset_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0",
+  "status": "FROZEN_ACTUAL_PLATFORM_BEFORE_QUALIFICATION_AND_FULL_SCIENCE",
+  "storage_class": "openebs-remote-multi-dc"
+}

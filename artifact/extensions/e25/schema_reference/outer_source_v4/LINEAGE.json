@@ -1,0 +1,23 @@
+{
+  "CPU_environment_policy_unchanged": "fixed27_env_v3",
+  "actual_platform_amendment_sha256": "27b1cd73151fbe27592bdde318532f38593d877477478e2ddf1b066ef7b3b668",
+  "actual_proof_scope": "Bound PVC UID/volumeName and actual new Pod mount/subPath/probes; PV object direct claimRef was forbidden. Node807 is not excluded after this new actual owned-filesystem proof; historical condition and unknown prior stop cause retained.",
+  "actual_storage_admission_sha256": "d3e1d4feb0c519eaf6a7f21d5f9847df5a3523efc8840cd1a3fb00c6b82da026",
+  "change_scope": "New v4 paths/pins/persistent-storage admission and strict controller disk guard receipts, plus latest local-evidence capsule. Core numerical grid, science comparison, archive/persistence and owned supervisor/launcher semantics retained.",
+  "kind": "E25_ENV_V4_OUTER_TEMPLATE_LINEAGE",
+  "no_launch_or_staging_or_cluster_or_public_actions": true,
+  "only_latest_prior_capsule": {
+    "bytes": 1168934,
+    "full24_success": false,
+    "sha256": "34d1dbc0aba48f3ce72b766a655f48ee42b857edf70a7d19415d12aa90490d39",
+    "v1_nested_inside_v2": true,
+    "v2_nested_once": true,
+    "v3_actual_OS_exit0_proven": false,
+    "v3_raw_partial_metrics_preserved": false
+  },
+  "prior_v3_outer_manifest_sha256": "b451512e32ac829f4fe13f6451ba53af03cbf3259c9f9f171a257965e1afa6aa",
+  "prior_v3_outer_source_sha256": "780aafb193b633e42bdab69154247c500328358c5808c3a267df1b051e21cb5f",
+  "producer_frozen_manifest_sha256": "82f93337ba4b4333cc319b610f6bad1ad24c5f9edf1c79731ae6127eed94c005",
+  "producer_frozen_protocol_sha256": "ff42b44bf17ff54d9994731543fbb3d73caaabb56c7150f576e208ad6c3f1fc2",
+  "status": "SOURCE_ONLY_UNFROZEN_UNLAUNCHABLE"
+}

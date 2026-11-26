@@ -1,0 +1,59 @@
+{
+  "AST_identical_to_v3": [
+    "grid",
+    "stats",
+    "pss_row",
+    "environment_job_labels",
+    "environment_qualification"
+  ],
+  "CLI_help": "PASS",
+  "CPU_policy": "fixed27_env_v3",
+  "PSS_scope": "Same all-eligible-phase per-run maximum and three-observed-run range; CPU/disk unknown never filters PSS samples. Complete-cohort hard failure forbids success, rather than selecting favorable observations.",
+  "Python310_AST": "PASS",
+  "actual_ENV_v4_raw_audits_performed": 0,
+  "cluster_network_YT_actions": 0,
+  "controller_guard_policy": "latched_disk_guard_v4",
+  "execution_scope": "Static AST, source comparisons and CLI help only. No actual archive audit, mock scientific data, producer import, GPU, network, YT, staging, launch or publication.",
+  "files": {
+    "README.txt": {
+      "bytes": 4467,
+      "sha256": "123cff4df7530c08a5d68b348e411ccf0446034a3614c3200350d9aae6e5b57f"
+    },
+    "audit_e25_env_v4.py": {
+      "bytes": 48679,
+      "sha256": "44b11d6a684be138487b5b1f5112ad14cbc4ea5809a08821f5061b28f9091393"
+    },
+    "independent_disk.py": {
+      "bytes": 4348,
+      "sha256": "1112282c70e706864e6d916b03ced0a13d1e7d5e8aee58cb228e22cc32e62233"
+    },
+    "independent_env.py": {
+      "bytes": 19250,
+      "sha256": "5c1b51876e591f9798551043064fdc1fa892d4bd6705bc9d84c7a0d99ab107fe"
+    }
+  },
+  "independent_env_module_byte_identical_to_v3": true,
+  "kind": "E25_ENV_V4_INDEPENDENT_RAW_AUDIT_HELPER_SOURCE_ONLY",
+  "new_scientific_data_synthesized": false,
+  "new_scientific_tests_or_experiments": 0,
+  "prior_capsule": {
+    "bytes": 1168934,
+    "scope": "Whole SHA/local-preservation receipt only. No expansion, old timing reads/pooling, recovered partial job metrics or OS-exit0 claim.",
+    "sha256": "34d1dbc0aba48f3ce72b766a655f48ee42b857edf70a7d19415d12aa90490d39"
+  },
+  "producer_modules_imported": false,
+  "protocol_sha256": "ff42b44bf17ff54d9994731543fbb3d73caaabb56c7150f576e208ad6c3f1fc2",
+  "required_inputs": "Genuine completed ENVv4 raw archive, root-independent whole SHA and fresh output path. No extraction/recorded-path opening.",
+  "scientific_audit_body_AST_identical_to_v3_after_only_disk_signature_call_and_report_fields_removed": true,
+  "source_manifest_sha256": "82f93337ba4b4333cc319b610f6bad1ad24c5f9edf1c79731ae6127eed94c005",
+  "source_peer": {
+    "bytes": 4303,
+    "filename": "INDEPENDENT_SOURCE_PEER.json",
+    "remaining_material_findings": 0,
+    "sha256": "cc84acaffd81f1134adccfe023ff908b329d540451d42e548858e4296d118381"
+  },
+  "status": "SOURCE_PEER_PASS_AWAITING_GENUINE_COMPLETED_ENV_V4_ARCHIVE",
+  "storage_scope": "Original/nested actual admission; Bound PVC UID/volumeName + Pod subPath/mount/device/owned-file probes; direct PV claimRef was not visible. Runtime4GiB/positive exposed inodes separate from initial80GiB/64K admission. Recorded byte thresholds checked; raw statvfs block arithmetic not serialized. Latest inventory is sampled/non-atomic; no capacity reservation or continuous/global health claim.",
+  "unchanged_pre_outcome_PSS_rule_sha256": "47b8a0f24c4ec3f386a8b8ba29f6d52a2c3af54ea46b3f2389f6483914bb0a90",
+  "v1_v2_v3_helpers_unchanged": true
+}
