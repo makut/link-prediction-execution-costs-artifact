@@ -1,0 +1,68 @@
+{
+  "kind": "E24_PUBLIC_POSTHOC_AND_FIGURE_PACKAGE",
+  "created_unix": 1795690643.624467,
+  "files": {
+    "ADAPTER_LINEAGE.json": {
+      "bytes": 1555,
+      "sha256": "ef03b03946ba9144962a64ff5a30f268268af0b146737224e2e60dc4db06dc42"
+    },
+    "LICENSE": {
+      "bytes": 1073,
+      "sha256": "5096961eb53321c0dd8d8b6eeb978cd3e4a58256f1ab706558500d618ffe26ca"
+    },
+    "PUBLIC_REPLAY_CHECK.json": {
+      "bytes": 1234,
+      "sha256": "5b9b83ff35edd5e9442fd45dc2f6a53aaa2043e28a3234b1e411229604fe0ab1"
+    },
+    "README.md": {
+      "bytes": 3690,
+      "sha256": "2b3e0e9b5dd315aef8ea109aa6ef1c500c6dd0de3017aaeb257075d65d4511a4"
+    },
+    "figure/FIGURE_MANIFEST.json": {
+      "bytes": 3445,
+      "sha256": "f1a084790aa8e69748505867bf3e57885b1cdaf7f68d880dfb6ebb39fc24d18f"
+    },
+    "figure/matched_cost_regimes.pdf": {
+      "bytes": 19848,
+      "sha256": "e9b186e5f8d24727fa63993a790a0cd91f9dd01c69154067cdaf05a5c4eb3d7d"
+    },
+    "figure/matched_cost_regimes.png": {
+      "bytes": 90469,
+      "sha256": "0dde4b11745628fbb43f82fcca27734be8e151b224dc72d9e3dbd75bb1e7c828"
+    },
+    "figure/matched_cost_regimes.svg": {
+      "bytes": 44936,
+      "sha256": "065366fcee17e3c9f773030de56eb648eea59af0bf8123363c70967c16d85d98"
+    },
+    "lineage/original_analysis.py": {
+      "bytes": 13371,
+      "sha256": "8ee0c52d8214fd969999f768edc652fe099b2eefd0073df31f241c71dad3d855"
+    },
+    "plot_matched_cost_regimes.py": {
+      "bytes": 7783,
+      "sha256": "12d6c8d4819a229fab558204f4978006af088e1c2597e791bb7f1a7da2513e1b"
+    },
+    "publicanalyze_cost_regimes.py": {
+      "bytes": 14128,
+      "sha256": "17d52e7e79dd5474571f0e4d11acef0bd8cccb2cc0410ebf2f8d20bf07274125"
+    },
+    "recorded/INDEPENDENT_NUMERIC_PEER.json": {
+      "bytes": 5688,
+      "sha256": "cd310f28d1760b0064c1a9326e50290b586d98b4e47bdb37ac94532fffbd06b8"
+    },
+    "recorded/ORIGINAL_FIGURE_QA.json": {
+      "bytes": 1607,
+      "sha256": "77cd240a02f101fd40342d2bc9b0ec088db31ff10636d75015ab53287c9a762d"
+    },
+    "recorded/derived_cost_regimes.json": {
+      "bytes": 268620,
+      "sha256": "b1b11f37c34ed138058ff9a8f6903a8882e7e23d79c96b0991c72a9e1f888087"
+    }
+  },
+  "new_experiments": 0,
+  "input_raw_archives_pinned": true,
+  "numeric_peer": "PASS",
+  "public_offline_replay_all256_cases": "PASS",
+  "new_public_plot_PNG_identical_to_verified_candidate": true,
+  "manifest_excludes_itself": true
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "MATCHED_COST_REGIME_CANDIDATE_RENDER_QA_RECEIPT",
+  "status": "READY_FOR_PARENT_AND_PENDING_DATA_PEER_DECISION",
+  "input_sha256": "b1b11f37c34ed138058ff9a8f6903a8882e7e23d79c96b0991c72a9e1f888087",
+  "script_sha256": "5fdadaa37a156fd573cba1c82c0b7d6a7a5315c8f69874f2eb6d9b03b34980b3",
+  "manifest_sha256": "3f384c16ef0c7b40981b6c83a51f616e09d50a31ec97297901cbb2f68eac27e7",
+  "figure_outputs": {
+    "png": {
+      "bytes": 90469,
+      "sha256": "0dde4b11745628fbb43f82fcca27734be8e151b224dc72d9e3dbd75bb1e7c828"
+    },
+    "pdf": {
+      "bytes": 19848,
+      "sha256": "81c19ca6c5f95e5a50f0fdc8e699524955266fa0cc7d311ce3120cfef65604e0"
+    },
+    "svg": {
+      "bytes": 44936,
+      "sha256": "94ffb8fd1aabcccaf0e1a157172c1e8c5ddfe4141084b54fc29b39296a70894c"
+    }
+  },
+  "coverage": {
+    "input_cases": 256,
+    "plotted_cases": 256,
+    "omitted_cases": 0,
+    "unique_dataset_record_keys": 256,
+    "group_counts": {
+      "Friendster_E20/cap50": 64,
+      "Citation2_strict_clean_E22/cap50": 64,
+      "Friendster_E20/cap200": 64,
+      "Citation2_strict_clean_E22/cap200": 64
+    },
+    "all_centers_inside_axis_limits": true,
+    "all_text_within_canvas": true
+  },
+  "render_QA": "PASS visualPNG plus standalonePDF rendered with pdftoppm",
+  "canonical_figure_LaTeX_repo_v0_5_changes": 0,
+  "new_measurements_or_fits": 0,
+  "new_package_installs": 0,
+  "actual_plot_environment": {
+    "python": "/Users/m.utushkin/.pyenv/versions/3.12.10/bin/python3",
+    "matplotlib": "3.10.3",
+    "width_inches": 3.4,
+    "height_inches": 2.25,
+    "font_points": 8,
+    "png_dpi": 360
+  }
+}

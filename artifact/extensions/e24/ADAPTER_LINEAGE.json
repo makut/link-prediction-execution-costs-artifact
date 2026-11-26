@@ -1,0 +1,45 @@
+{
+  "kind": "PUBLIC_E24_OPERATIONAL_RAW_TAR_INPUT_ADAPTER",
+  "original_script": {
+    "filename": "analyze_cost_regimes.py",
+    "bytes": 13371,
+    "sha256": "8ee0c52d8214fd969999f768edc652fe099b2eefd0073df31f241c71dad3d855"
+  },
+  "public_script": {
+    "filename": "publicanalyze_cost_regimes.py",
+    "bytes": 14128,
+    "sha256": "17d52e7e79dd5474571f0e4d11acef0bd8cccb2cc0410ebf2f8d20bf07274125"
+  },
+  "unchanged_scientific_functions": {
+    "median3": {
+      "sha256": "b82a2d5d4f73d8a533aa7df33d6be2a8e2a18e978ea91fc6ac59c2db544fc87c",
+      "bytes": 242,
+      "byte_identical": true
+    },
+    "ranks": {
+      "sha256": "c0fc3d4a820357d4be6e072956369333b5a4246e17dd7151d5e13d76b8dcfb90",
+      "bytes": 529,
+      "byte_identical": true
+    },
+    "spearman": {
+      "sha256": "2436cd06d32d4a8b8ba1fd966ef37fe7443398efdc4c6fda5b7e7cd86ed6a983",
+      "bytes": 425,
+      "byte_identical": true
+    },
+    "analyze": {
+      "sha256": "999e6007188f753234a98ce4aab329ce40312e90dadb528ca18d2ba36f35a418",
+      "bytes": 5603,
+      "byte_identical": true
+    }
+  },
+  "changes": [
+    "Require explicit local Friendster and Citation2 raw archive paths; no ROOT or author/workspace/extracted defaults.",
+    "Stream only the exact E22 report/geometry/selection/MANIFEST members and bind them to the existing raw archive SHA and member pins.",
+    "Include the E22 raw archive identity in provenance."
+  ],
+  "scientific_or_metric_changes": 0,
+  "threshold_fits": 0,
+  "new_experiments": 0,
+  "new_tests": 0,
+  "cluster_network_YT_actions": 0
+}

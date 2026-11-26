@@ -1,0 +1,144 @@
+{
+  "canonical_repo_or_manuscript_changes": 0,
+  "checked_utc": "2026-11-26T10:51:55.115730+00:00",
+  "cluster_network_YT_actions": 0,
+  "cross_dataset_pooling": false,
+  "datasets": [
+    {
+      "better_constant_over_proxy": 1.0155270625822048,
+      "dataset": "Friendster_E20",
+      "distinct_ordered_sets": 128,
+      "distinct_physical_pairs": 90,
+      "exact_sums_seconds": {
+        "always_pairwise": "0.632219917",
+        "always_scan": "0.832035439",
+        "frozen_proxy": "0.62255349",
+        "hindsight_best": "0.616459278"
+      },
+      "factors_baseline_time_over_policy_time": {
+        "frozen_proxy": {
+          "always_pairwise": 1.0155270625822048,
+          "always_scan": 1.3364882734815284
+        },
+        "hindsight_best": {
+          "always_pairwise": 1.025566391102317,
+          "always_scan": 1.3497005701648308
+        }
+      },
+      "fixed_proxy_choices": {
+        "pairwise": 123,
+        "scan": 5
+      },
+      "geometry_records_available": 768,
+      "matched_cases_verified": 128,
+      "numba32_raw_edge_values_consumed": 768,
+      "old_geometry_archive_timing_values_consumed": 0,
+      "ordered_node_hashes_recomputed": 128,
+      "proxy_over_hindsight": 1.0098858306095606,
+      "proxy_strict_matches": 116,
+      "proxy_strict_total": 128,
+      "proxy_time_reduction_vs_better_constant_percent": 1.528965908867436,
+      "ratio_rank_ties": {
+        "Ds_over_Q": {
+          "cases_in_tied_groups": 0,
+          "tied_value_groups": 0
+        },
+        "scan_over_pair": {
+          "cases_in_tied_groups": 0,
+          "tied_value_groups": 0
+        }
+      },
+      "selected_geometry_archive_indices": 128,
+      "spearman": 0.9898084142098517,
+      "wins": {
+        "pairwise": 111,
+        "scan": 17,
+        "tie": 0
+      }
+    },
+    {
+      "better_constant_over_proxy": 1.0473700907083263,
+      "dataset": "Citation2_strict_clean_E22",
+      "distinct_ordered_sets": 126,
+      "distinct_physical_pairs": 80,
+      "exact_sums_seconds": {
+        "always_pairwise": "0.227607254",
+        "always_scan": "0.17432585",
+        "frozen_proxy": "0.166441501",
+        "hindsight_best": "0.166221036"
+      },
+      "factors_baseline_time_over_policy_time": {
+        "frozen_proxy": {
+          "always_pairwise": 1.3674909961308268,
+          "always_scan": 1.0473700907083263
+        },
+        "hindsight_best": {
+          "always_pairwise": 1.369304749129346,
+          "always_scan": 1.04875925571779
+        }
+      },
+      "fixed_proxy_choices": {
+        "pairwise": 48,
+        "scan": 80
+      },
+      "geometry_records_available": 128,
+      "matched_cases_verified": 128,
+      "numba32_raw_edge_values_consumed": 768,
+      "old_geometry_archive_timing_values_consumed": 0,
+      "ordered_node_hashes_recomputed": 128,
+      "proxy_over_hindsight": 1.001326336336876,
+      "proxy_strict_matches": 116,
+      "proxy_strict_total": 128,
+      "proxy_time_reduction_vs_better_constant_percent": 4.522765269752019,
+      "ratio_rank_ties": {
+        "Ds_over_Q": {
+          "cases_in_tied_groups": 4,
+          "tied_value_groups": 2
+        },
+        "scan_over_pair": {
+          "cases_in_tied_groups": 0,
+          "tied_value_groups": 0
+        }
+      },
+      "selected_geometry_archive_indices": 128,
+      "spearman": 0.9306758454185843,
+      "wins": {
+        "pairwise": 58,
+        "scan": 70,
+        "tie": 0
+      }
+    }
+  ],
+  "graph_arrays_models_native_libraries_loaded": 0,
+  "interpretation": "The per-case winning plan and aggregate better constant policy differ between these cohorts. The fixed alpha=1 proxy agrees with 116/128 strict winners on each, but only modestly improves on the better graph-specific constant policy. These are descriptive hypothetical sums of existing measured medians, with no dispatcher/feature-computation overhead measurement.",
+  "kind": "INDEPENDENT_BOUNDED_MATCHED128_COST_REGIME_NUMERIC_PEER",
+  "limitations": [
+    "Ds is independently joined and cross-checked across frozen geometry, selection and matched timing records; it is not regenerated from a full graph because graph arrays are not loaded.",
+    "No historical768/E17 timings enter the Friendster128 calculation; only selected archived node sets and saved degree sums are used.",
+    "No pooling, independent-query inference, population confidence interval, p-value, quality, complete-SEAL or end-to-end speedup claim."
+  ],
+  "method": "Independent inline stdlib calculation; analyzer was read but never imported, executed, or called. Raw Numba32 timing medians use exact fractions; ordered nodes are independently packed as little-endian int64 and SHA256-hashed. Spearman midranks use direct lower/equal counts, independent of analyzer sort/group ranking.",
+  "must_fix": [],
+  "new_experiments": 0,
+  "reviewed_files": {
+    "ANALYSIS_READY.json": {
+      "bytes": 833,
+      "sha256": "576e7ecfff9f57115ca09a1c9547bf3b549d194d8f8c7399bc3c0b19029442bd"
+    },
+    "README.md": {
+      "bytes": 3281,
+      "sha256": "a7c14d9d4f93f4df2aef5e9ea4bdb58f5990a4f11756d59f41523f015edb423f"
+    },
+    "analyze_cost_regimes.py": {
+      "bytes": 13371,
+      "sha256": "8ee0c52d8214fd969999f768edc652fe099b2eefd0073df31f241c71dad3d855"
+    },
+    "derived_cost_regimes.json": {
+      "bytes": 268620,
+      "sha256": "b1b11f37c34ed138058ff9a8f6903a8882e7e23d79c96b0991c72a9e1f888087"
+    }
+  },
+  "source_identity_scope": "Whole published E20 archive SHA/size and only three selected member identities; exact pinned E22 timing/geometry/selection member SHA/size. This is not a repeated seven-arm audit or source test suite.",
+  "status": "PASS",
+  "threshold_fitting_or_search": false
+}

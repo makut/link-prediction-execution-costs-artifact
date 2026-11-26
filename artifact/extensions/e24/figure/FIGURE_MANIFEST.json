@@ -1,0 +1,109 @@
+{
+  "kind": "MATCHED128_TWO_DATASET_SCIENTIFIC_FIGURE",
+  "status": "RENDERED_FROM_RECORDED_OBSERVATIONS",
+  "input": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_publication_candidate_v0_5/repository/artifact/extensions/e24/recorded/derived_cost_regimes.json",
+    "bytes": 268620,
+    "sha256": "b1b11f37c34ed138058ff9a8f6903a8882e7e23d79c96b0991c72a9e1f888087"
+  },
+  "script": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_publication_candidate_v0_5/repository/artifact/extensions/e24/plot_matched_cost_regimes.py",
+    "sha256": "12d6c8d4819a229fab558204f4978006af088e1c2597e791bb7f1a7da2513e1b"
+  },
+  "render": {
+    "python": "/Users/m.utushkin/.pyenv/versions/3.12.10/bin/python3",
+    "matplotlib": "3.10.3",
+    "width_inches": 3.4,
+    "height_inches": 2.25,
+    "font_points": 8,
+    "png_dpi": 360
+  },
+  "semantics": {
+    "x": "Ds/Q",
+    "y": "median scan edge time / median pairwise edge time",
+    "both_axes": "logarithmic",
+    "vertical_line": 1,
+    "horizontal_line": 1,
+    "proxy_alpha": 1,
+    "threshold_fit": false,
+    "fitted_curve": false,
+    "confidence_intervals": false,
+    "jitter": false,
+    "opacity": 1.0
+  },
+  "coverage": {
+    "input_cases": 256,
+    "plotted_cases": 256,
+    "omitted_cases": 0,
+    "unique_dataset_record_keys": 256,
+    "group_counts": {
+      "Friendster_E20/cap50": 64,
+      "Citation2_strict_clean_E22/cap50": 64,
+      "Friendster_E20/cap200": 64,
+      "Citation2_strict_clean_E22/cap200": 64
+    },
+    "all_centers_inside_axis_limits": true,
+    "all_text_within_canvas": true
+  },
+  "summaries_copied_from_input": [
+    {
+      "dataset": "Friendster_E20",
+      "cases": 128,
+      "wins": {
+        "pairwise": 111,
+        "scan": 17,
+        "tie": 0
+      },
+      "spearman": 0.9898084142098517,
+      "frozen_proxy_agreement": {
+        "exact_ties": 0,
+        "strict_fraction": 0.90625,
+        "strict_matches": 116,
+        "strict_mismatches": 12,
+        "strict_total": 128,
+        "tie_compatible_fraction": 0.90625
+      },
+      "best_constant_over_proxy": 1.0155270625822048
+    },
+    {
+      "dataset": "Citation2_strict_clean_E22",
+      "cases": 128,
+      "wins": {
+        "pairwise": 58,
+        "scan": 70,
+        "tie": 0
+      },
+      "spearman": 0.9306758454185843,
+      "frozen_proxy_agreement": {
+        "exact_ties": 0,
+        "strict_fraction": 0.90625,
+        "strict_matches": 116,
+        "strict_mismatches": 12,
+        "strict_total": 128,
+        "tie_compatible_fraction": 0.90625
+      },
+      "best_constant_over_proxy": 1.0473700907083263
+    }
+  ],
+  "limits": [
+    "Posthoc fixed-cohort repeated-cache observations; no population confidence interval.",
+    "Datasets retain separate cohorts; query pairs and two Citation2 ordered sets repeat.",
+    "Policy factors reuse per-case medians and exclude dispatch overhead."
+  ],
+  "outputs": {
+    "png": {
+      "bytes": 90469,
+      "sha256": "0dde4b11745628fbb43f82fcca27734be8e151b224dc72d9e3dbd75bb1e7c828"
+    },
+    "pdf": {
+      "bytes": 19848,
+      "sha256": "e9b186e5f8d24727fa63993a790a0cd91f9dd01c69154067cdaf05a5c4eb3d7d"
+    },
+    "svg": {
+      "bytes": 44936,
+      "sha256": "065366fcee17e3c9f773030de56eb648eea59af0bf8123363c70967c16d85d98"
+    }
+  },
+  "canonical_figures_LaTeX_repo_or_published_v0_5_modified": false,
+  "visual_QA": "LOCAL_VISUAL_INSPECTION_REQUIRED_FOR_NEW_RENDER"
+}
