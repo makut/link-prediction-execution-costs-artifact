@@ -1,0 +1,22 @@
+{
+  "kind": "SYNTHETIC_E23_VALIDATOR_FOCUSED_CHECK_ONLY",
+  "status": "PASS",
+  "checked_utc": "2026-11-26T10:15:27.320858+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "-v",
+    "test_verify_e23.py"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 0.11845875019207597,
+  "tests": 6,
+  "test_output": "test_independent_arithmetic_and_pair_before_aggregation (test_verify_e23.VerifierChecks.test_independent_arithmetic_and_pair_before_aggregation) ... ok\ntest_json_nonfinite_duplicates_and_paths_refused (test_verify_e23.VerifierChecks.test_json_nonfinite_duplicates_and_paths_refused) ... ok\ntest_one_report_protocol_and_meaningful_mutation_refusals (test_verify_e23.VerifierChecks.test_one_report_protocol_and_meaningful_mutation_refusals) ... ok\ntest_small_archive_hash_binding_and_tamper_detection (test_verify_e23.VerifierChecks.test_small_archive_hash_binding_and_tamper_detection)\nByte-level test archive has no E23 result/report structure. ... ok\ntest_source_grid_and_latin_balance (test_verify_e23.VerifierChecks.test_source_grid_and_latin_balance) ... ok\ntest_strict_exit_rejects_bool_abort_or_cleanup (test_verify_e23.VerifierChecks.test_strict_exit_rejects_bool_abort_or_cleanup) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.054s\n\nOK\n",
+  "synthetic_reports_written": 0,
+  "scientific_results_generated": 0,
+  "source_test_suites_rerun": 0,
+  "network_cluster_GPU_actions": 0,
+  "scope": "One synthetic report in memory, arithmetic/schema failures, and a temporary byte-level archive without scientific report fields."
+}

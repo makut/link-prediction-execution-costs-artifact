@@ -1,0 +1,106 @@
+{
+  "actual_E23_scientific_result_verified": false,
+  "actual_existing_H100_fixture_schema_check": {
+    "actual_full_E23_grid_verified": false,
+    "actual_three_run_fixture_only": true,
+    "identity": {
+      "bytes": 1152,
+      "sha256": "a7323ae568b0a2497487c9d304198db6081511d3bdc1fffbdd43ccbb97698a3f"
+    },
+    "receipt": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_science_revision_20261126/E23_VERIFIER_ACTUAL_FIXTURE_SCHEMA.json"
+  },
+  "archive_and_source_schema": {
+    "notes": [
+      "Matches frozen outerattempt2 archive namespaces and complete packet/outer/bootstrap source inventories. Actual collect_files includes every bootstrap source manifest payload and its manifest, in addition to the eight bootstrap receipts and actual launch.",
+      "Manual TarInfo packing uses regular file members and PAX path metadata for long paths. Verifier admits only canonical path-only PAX metadata, rejects traversal/absolute/duplicate/symlink members, and performs no extraction.",
+      "Whole compressed identity, every whole member SHA/size and internal manifest, full source trees, eight used input hash/stat attestations and original public workloads are checked.",
+      "Bounds retain at most96MiB raw JSON/NPY metadata; payloads384MiB plus16MiB tar/header allowance, compressed128MiB,4096members,32MiB/member; JSONL is incremental with1MiB line cap. These are byte caps, not a claimed process-RSS cap.",
+      "Only six known small workload NPY paths are admitted, including both tiny fixture files required by actual V4 output."
+    ],
+    "status": "PASS"
+  },
+  "catalog_payloads_checked": 42,
+  "expected_refusal_and_scientific_gates": {
+    "notes": [
+      "The sole nonzero allowed gate is the declared impossible1000000GiB GPU-capacity fixture with exact fixture/arm/device/seed/worker/batch configuration and a GPU preflight refused log. It must remain unguarded, untimed-out, quiescent and without orphan cleanup/signals.",
+      "All other39jobs require actual integer exit0 and successful original status/resource/source/runtime gates; complete strings cannot override exits or aborts.",
+      "Three-arm fixture CUDA/H100/model/allocator/window schemas and actual owned child exit accepted in a separate read-only check of the existing real H100 qualification; this is not a full E23 archive PASS.",
+      "All36real windows retain measured3200graphs,100steps, excluded256graphs, original manifest/model/seed and worker/arm binding; seven runtime source hashes are exact.",
+      "Warmup-prefix comparisons bind32original query pairs/labels and node/edge/DRNL/model hashes per block. They are explicitly not an independent audit of all measured graphs."
+    ],
+    "status": "PASS"
+  },
+  "immutable_runner_packet_manifest": {
+    "bytes": 4937,
+    "sha256": "16b14211782d5c7c765e52ec36a533131e3bf559633229da19a874cdfb28c68f"
+  },
+  "independent_reaggregation": {
+    "notes": [
+      "Declared seeds independently regenerate12randomized blocks and cyclic Latin arm order with40ordered gates.",
+      "All36positive finite steady times are retained as three ordered observations in each of12dataset/worker/arm rows.",
+      "Mean/sampleSD/median/min/max use elementary arithmetic independently of benchmark/runner imports.",
+      "Each of12ratio groups divides corresponding repeat/block observations before mean/median/sampleSD aggregation. No ratio-of-aggregate replacement.",
+      "All36three-way pair comparisons and exact summary fields are checked against independently recomputed values; reporting remains descriptive, without p-values or population confidence intervals."
+    ],
+    "status": "PASS"
+  },
+  "kind": "INDEPENDENT_E23_PUBLIC_VERIFIER_SOURCE_PREPUBLISH_REVIEW",
+  "lifecycle": {
+    "notes": [
+      "Runner COMPLETE alone is insufficient. The archived outer receipts must prove actual wait0, child PID/start/source binding, no timeout/orphan cleanup/signals, observed absent/zombie quiescence, and exclusive flock acquisition/release after actual child exit.",
+      "Actual outer detached launch and controller identity are bound to the expected outer source/manifest, output, host/Unix UID and honestly root-attested Pod/STS identities.",
+      "Final outer COMPLETE and readback-verified single-file/single-chunk persistence pointer are created after this archive. They remain optional external inputs, and final_outer_completion_and_YT_persistence_checked stays false when absent.",
+      "When external receipts are supplied, both are required and bound to the exact raw archive and sole recorded persistence path. This validates recorded receipts, not a live YT readback or new outer PID observation."
+    ],
+    "status": "PASS_WITH_EXPLICIT_POST_ARCHIVE_SCOPE"
+  },
+  "must_fix": [],
+  "outer_schema_source_byte_identical_to_frozen_attempt2": true,
+  "outer_schema_source_identity": {
+    "bytes": 31579,
+    "sha256": "e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e"
+  },
+  "reviewed_catalog": {
+    "bytes": 6994,
+    "sha256": "c006340f00262f9a7cc6419f9c0b78635f8817eb7d2fda1c5cf54f7407eb2c06"
+  },
+  "reviewed_package": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_e23_public_extension_20261126",
+  "reviewed_readme": {
+    "bytes": 9923,
+    "sha256": "e0fcda884013409db6e20944bc5f0d4d48673bbe0bfb066dbb5338d2bd580f2e"
+  },
+  "reviewed_source_only_ready": {
+    "bytes": 2401,
+    "sha256": "77eda796e9492ef050e7da9048304233a8b14a0b214b601b2df9a6c76dd206f0"
+  },
+  "reviewed_sources_edited": false,
+  "reviewed_unix": 1795688642.2847319,
+  "reviewed_verifier": {
+    "bytes": 47826,
+    "sha256": "5b87d392dbe91349b5114021e26bfac4cb2b5b5f4f1b25f1d350f1dc3a684556"
+  },
+  "runner_source_payloads_byte_identical": 31,
+  "source_vs_result_status": {
+    "notes": [
+      "No archive means SOURCE_ONLY and actual_scientific_results_verified=false; actual-only arguments without an archive are refused.",
+      "Actual verification requires a supplied genuine archive and independently supplied whole archive and outer-source SHA256 pins. Missing source/report/job/lifecycle members raise failure; no successful full-grid fallback or synthetic actual result is generated.",
+      "Catalog/readiness/README explicitly state source-only, no actual E23 scientific result, and no full replay execution or publication."
+    ],
+    "status": "PASS"
+  },
+  "status": "PASS_SOURCE_ONLY_PREPUBLISH_NO_ACTUAL_GRID_RESULT_CLAIM",
+  "stdlib_imports": [
+    "argparse",
+    "ast",
+    "gzip",
+    "hashlib",
+    "json",
+    "math",
+    "pathlib",
+    "random",
+    "struct",
+    "sys",
+    "tarfile"
+  ],
+  "work_performed": "Read-only source/README/schema/diff/catalog inspection and exact file hashes, plus one targeted offline schema check on the already collected real H100 tiny qualification. No source-only/focused test suite rerun, no full actual archive verifier run, no numeric import, no new science/GPU/network/cluster/YT action."
+}

@@ -1,0 +1,94 @@
+{
+  "frozen_sources": {
+    "frozen_src/experiment_configs/seal_revision_2026-11/run_pipeline_suite_v4.py": {
+      "sha256": "9a9cd290da365bef9108dc421b445c60e728ff24b948aea6593d6a3a515b83e9",
+      "bytes": 29003,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/experiment_configs/seal_revision_2026-11/run_pipeline_suite_v4.py"
+    },
+    "frozen_src/scripts/seal_revision/pipeline_benchmark_v4.py": {
+      "sha256": "6e531fd941ac0d6068ffe2c97ab87015b5eab678b610c9107a95bc234e503be9",
+      "bytes": 41843,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/scripts/seal_revision/pipeline_benchmark_v4.py"
+    },
+    "frozen_src/scripts/seal_revision/exact_benchmark.py": {
+      "sha256": "3ea7075dd80453a61eb42e8e990d21bf153635e6eff2e26379ba21788ad22544",
+      "bytes": 35079,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/scripts/seal_revision/exact_benchmark.py"
+    },
+    "frozen_src/scripts/seal_revision/memory_benchmark.py": {
+      "sha256": "34176d3b751cf4a9e2c79cb1326c4d5515d41622faae097f7cb3c6273b4b3251",
+      "bytes": 24847,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/scripts/seal_revision/memory_benchmark.py"
+    },
+    "frozen_src/scripts/seal_revision/memory_benchmark_v3.py": {
+      "sha256": "e5bc616b518c17d6804c72f376872155514b902b490f43639526680ca5a516c8",
+      "bytes": 36012,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/scripts/seal_revision/memory_benchmark_v3.py"
+    },
+    "frozen_src/seal/__init__.py": {
+      "sha256": "05c21a366b8fe1b60ab07ee6ef4cc5675059d91f624b4fc7fac9c6acabbe3545",
+      "bytes": 24,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/seal/__init__.py"
+    },
+    "frozen_src/seal/graph_csr_kernels.py": {
+      "sha256": "19f517b874cfebc9f9388f094c17cf91b559936cd36f81976292c76025cfb2c5",
+      "bytes": 15019,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/seal/graph_csr_kernels.py"
+    },
+    "frozen_src/seal/graph_csr_extraction.py": {
+      "sha256": "fd1468b141af9d33ed4045f862342e5f145aa4d0eaee73421754832c9831b1cd",
+      "bytes": 20176,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/seal/graph_csr_extraction.py"
+    },
+    "frozen_src/seal/models.py": {
+      "sha256": "3e613bb9596a5efbc310589bc12a26ec18c2d2d50b110d2a542585a8e43deac9",
+      "bytes": 11634,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/seal/models.py"
+    },
+    "frozen_src/seal/utils.py": {
+      "sha256": "f8a1221f1e72453a25fe4eeb7ac42dd0b07e3a0d62ceafc2f5e05c4191adefc5",
+      "bytes": 3771,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/seal/utils.py"
+    },
+    "frozen_src/seal/reproducibility.py": {
+      "sha256": "8168a7f3a19f14bf39f0dc0bdc6235377b0b4a1b7832056d0d314fc491fd1639",
+      "bytes": 2235,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/seal/reproducibility.py"
+    },
+    "support/owned_supervision.py": {
+      "sha256": "fcf494937da9be0d09b8e25f8e55d0f16cfd7970e103b91e61506135d9da74a6",
+      "bytes": 4913,
+      "frozen_original_path": "work/vldb_artifact_v0_5_final_candidate_v2/src/artifact_public/owned_supervision.py"
+    }
+  },
+  "workloads": {
+    "citation2": {
+      "path": "workloads/citation2_pairs.npy",
+      "bytes": 192128,
+      "sha256": "648332c22cb6a25825e8487e2e82e39e2cb5dc53c8890cb3acb71b6324d7b750",
+      "rows": 8000,
+      "positive_occurrences": 4000,
+      "original_public_asset_member": "lpp_public_systems_evidence_v1/E10/manifests/citation2_pairs.npy"
+    },
+    "friendster": {
+      "path": "workloads/friendster_pairs.npy",
+      "bytes": 192128,
+      "sha256": "340e61cdd1eb8d329d52be164f919480e6a41feb4c620852df0393c2e9a192f0",
+      "rows": 8000,
+      "positive_occurrences": 4000,
+      "original_public_asset_member": "lpp_public_systems_evidence_v1/E10/manifests/friendster_pairs.npy"
+    }
+  },
+  "original_public_asset": {
+    "path": "outputs/vldb_public_systems_evidence_20261125/lpp_public_systems_evidence_v1.tgz",
+    "sha256": "48232549089f3295c893bb33f6cea0d1aac4a0ee45b91a2669392c90ae1bfe40"
+  },
+  "original_runtime_versions": {
+    "numpy": "1.24.4",
+    "scipy": "1.10.1",
+    "numba": "0.58.0",
+    "torch": "2.5.0+cu121",
+    "torch-geometric": "2.7.0"
+  },
+  "original_initial_model_state_sha256": "f88254079fe6c152b4c0153c857a63516348353d578f918622e7f6719559618e"
+}

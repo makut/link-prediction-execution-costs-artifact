@@ -1,0 +1,20 @@
+{
+  "kind": "E23_ACTUAL_OUTER_V2_SCHEMA_REFERENCE_ONLY",
+  "not_a_public_launch_packet": true,
+  "outer_manifest": {
+    "bytes": 1131,
+    "sha256": "4866da69fc47626483aeebc68f0665d2e409444532edfe1100bed026336b2ccd"
+  },
+  "reference_files": {
+    "outer_e23.py": {
+      "bytes": 31579,
+      "sha256": "e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e"
+    },
+    "launch_outer_e23.py": {
+      "bytes": 2226,
+      "sha256": "9d02436659558a1c0875b2baceb029a4c649efec5a2a0e850a3dccc743a7908b"
+    }
+  },
+  "operational_contract_intentionally_not_copied": true,
+  "reason": "Archive and actual wait/quiescence/flock schema reference; the public runner directly uses caller-provided paths and does not need author-host/YT deployment."
+}

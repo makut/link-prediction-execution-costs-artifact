@@ -1,0 +1,24 @@
+{
+  "kind": "ACTUAL_EXISTING_LINUX_H100_TINY_QUALIFICATION_VERIFIER_SCHEMA_CHECK_ONLY",
+  "status": "PASS",
+  "checked_unix": 1795688488.948565,
+  "actual_raw_archive": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_science_revision_20261126/e23_actual_cuda_preflight_v1_small.tgz",
+    "bytes": 7745,
+    "sha256": "50d06cd5626118414483b7e1ff3150eb376bf1c749c054192f39f7955774c722"
+  },
+  "verifier": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_e23_public_extension_20261126/verify_e23.py",
+    "bytes": 47826,
+    "sha256": "5b87d392dbe91349b5114021e26bfac4cb2b5b5f4f1b25f1d350f1dc3a684556"
+  },
+  "three_actual_fixture_run_schemas_accepted": true,
+  "actual_owned_child_exit_accepted": true,
+  "fixture_NPY_rows": 128,
+  "fixture_NPY_bytes": 3200,
+  "actual_E23_scientific_grid_verified": false,
+  "full_archive_verifier_executed": false,
+  "new_scientific_or_cluster_YT_GPU_actions": 0,
+  "larger_or_focused_suites_rerun": 0,
+  "scope": "Read-only offline schema validation of the already collected real three-arm tiny H100 qualification. No full E23 actual PASS is implied."
+}

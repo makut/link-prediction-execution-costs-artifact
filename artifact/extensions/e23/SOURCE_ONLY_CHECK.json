@@ -1,0 +1,21 @@
+{
+  "actual_scientific_results_verified": false,
+  "expected_descriptive_rows": 12,
+  "expected_paired_ratio_groups": 12,
+  "expected_prefix_comparisons": 36,
+  "fresh_Linux_GPU_replay_performed": false,
+  "graph_model_GPU_network_cluster_actions": 0,
+  "immutable_packet_payloads": 31,
+  "numerical_or_benchmark_modules_imported": false,
+  "packet_manifest_sha256": "16b14211782d5c7c765e52ec36a533131e3bf559633229da19a874cdfb28c68f",
+  "protocol_jobs": 40,
+  "public_workload_rows": {
+    "citation2": 8000,
+    "friendster": 8000
+  },
+  "randomized_blocks": 12,
+  "semantic_protocol_sha256": "6587e2055c5a77f4ffbe075fd7d70a6fcf648ad075e4d4cb8aa6574ae54061a1",
+  "source_python310_grammar": true,
+  "status": "SOURCE_ONLY",
+  "timing_jobs": 36
+}
