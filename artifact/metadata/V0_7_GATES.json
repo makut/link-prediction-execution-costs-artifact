@@ -1,0 +1,103 @@
+{
+  "E25": {
+    "CPU_marketing_SKU_observed": false,
+    "aggregate": {
+      "bytes": 90386,
+      "file": "extensions/e25/recorded/ACTUAL_AGGREGATE.json",
+      "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057"
+    },
+    "blocks": 3,
+    "catalog": {
+      "bytes": 1913,
+      "file": "extensions/e25/recorded/RECORDED_IDENTITIES.json",
+      "sha256": "931c6351e67e2454d53054503bcdc5bec93162b9935c7739bf950d9ff60dc6ce"
+    },
+    "declared_logical_CPU_pool": 27,
+    "failed_attempts_in_measurements": false,
+    "figure": {
+      "independent_data_peer": {
+        "bytes": 3659,
+        "file": "extensions/e25/figure/INDEPENDENT_ACTUAL_FIGURE_DATA_PEER.json",
+        "sha256": "391b6d6f08559524d70901598798ddbb95013edddc16511fc115af6af40ab002"
+      },
+      "manifest": {
+        "bytes": 3484,
+        "file": "extensions/e25/figure/FIGURE_MANIFEST.json",
+        "sha256": "343d98627b48ee49b6eb868f5234df0ac4873b970816d57acbb8f873a8fad114"
+      },
+      "visual_QA": "PASS_ROOT_ACTUAL_FIGURE_INSPECTION"
+    },
+    "frozen_source_hashes": {
+      "protocol_sha256": "e89b371089bd01f71579fdc00ec06004373bb549542658cc223914759f392e18",
+      "source_manifest_sha256": "3fd8783173e4a850018d860459881aafd1dd49e8d4cda101eb273641e47af086",
+      "wrapper_ready_sha256": "88b06c57d7de42c062fbd2ea76cd268999d3bbabe8bbd31130a9ec79dfa5a785",
+      "wrapper_sha256": "072575b15555a83f223e15643b869874f9a5e4f83172c06e0f4f5d032bdae4c9"
+    },
+    "genuine_public_layout_roundtrip": {
+      "all_four_outputs_byte_identical": true,
+      "helper_receipt": {
+        "bytes": 440,
+        "file": "extensions/e25/recorded/OFFLINE_VERIFICATION_RECEIPT.json",
+        "sha256": "c6a8b1a5614b2081afd4d8b87923f8453cf7008e1d4f055f13ea43b99172d7f3"
+      },
+      "python": "3.12.10",
+      "root_receipt": {
+        "bytes": 3672,
+        "file": "extensions/e25/recorded/OFFLINE_ROUNDTRIP_ROOT_RECEIPT.json",
+        "sha256": "a2ef5cb6e1e96018e59049042d2fb3a95e3e78da72463df3f0238197d8e01445"
+      },
+      "status": "PASS_ACTUAL_PUBLIC_LAYOUT_E25_V6_ALL3_OFFLINE_ROUNDTRIP"
+    },
+    "independent_aggregate_peer": {
+      "bytes": 124244,
+      "file": "extensions/e25/recorded/INDEPENDENT_AGGREGATE_PEER.json",
+      "sha256": "f219f60a5ecc4e9ebff4fa0b7a5e5eba459d64ad5399aa7cf059669f4e24e0dc"
+    },
+    "interpretation_peer": {
+      "bytes": 7686,
+      "file": "extensions/e25/recorded/E25_FINAL24_INTERPRETATION_PEER.json",
+      "sha256": "e87fb04254911e1b9834bffca25c18da1b83fd0b2a4909ae07537e56db3b9c36"
+    },
+    "latest_failed_capsule": {
+      "bytes": 2697876,
+      "file": "extensions/e25/recorded/excluded/E25_ENV_V4_FAILED_DIAGNOSTIC_v1.tgz",
+      "older_priors_nested_once": true,
+      "sha256": "5a470ea09dcfef2c754273dcb9d63288739b7c779799952e5f24a853b25c2365",
+      "standalone_copies": 1,
+      "status": "FAILED_EXCLUDED_FROM_SCIENCE"
+    },
+    "observed_physical_core_identities": 14,
+    "real_applications": 24,
+    "scope": "Within-block pairs and descriptive allocation variation. Same recorded node, different block1 CPU pool from matching blocks2/3; not independent machines/data/model seeds. Source-bound consumed-input digests, not regenerated tensor bytes.",
+    "status": "PASS_COMPLETE_THREE_BLOCKS_24_APPS"
+  },
+  "archive_creation_or_release_performed": false,
+  "conference_acceptance_claimed": false,
+  "immutable_companions": "metadata/COMPANION_ASSETS_V0_5.json",
+  "kind": "V0_7_0_CURRENT_RECORDED_EVIDENCE_GATES",
+  "previous_head": "3699c30adc0d97f5f506776d91fb41cb2102e6d0",
+  "prior_evidence_gates": {
+    "bytes": 2202,
+    "file": "metadata/V0_6_GATES.json",
+    "scope": "E22/E23/E24 gates and prior creation state retained unchanged.",
+    "sha256": "d60009236db9a147e7da3cd5714a7430608e948b5d428478319829af466c470f"
+  },
+  "prior_lineage_files_unchanged": true,
+  "prior_metadata_identities": {
+    "CITATION.cff": {
+      "bytes": 747,
+      "sha256": "fb6fc7e1ef3e71d16e23f10ac9a25c702d35b59fded1de018cd8e201a90a25a4"
+    },
+    "metadata/CANDIDATE_STATUS.json": {
+      "bytes": 385,
+      "sha256": "51842c0c4a9714f3f66211d3da1a10d236dca9f74a53ef9c4a18606204c902c3"
+    },
+    "metadata/PUBLICATION_STATUS.json": {
+      "bytes": 1312,
+      "sha256": "ab6d0a5caa62046a8a7fe81f16b1a5325aa7b2446b0d8cc822510bbe85112cc1"
+    }
+  },
+  "root_code_archive_hash_and_asset_catalog_are_external": true,
+  "stage": "LOCAL_ACTUAL_PAYLOAD_CLOSED_ARCHIVE_AND_PUBLICATION_PENDING",
+  "version": "0.7.0"
+}

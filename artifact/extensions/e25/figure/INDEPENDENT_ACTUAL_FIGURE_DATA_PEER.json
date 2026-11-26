@@ -1,0 +1,106 @@
+{
+  "coverage": {
+    "TABLEDATA_configuration_rows": 8,
+    "checks": 383,
+    "configuration_rows": 8,
+    "paired_table_rows": 4,
+    "raw_checkpoint_or_wait_values_exactly_checked": 84,
+    "summary_point_rows": 28,
+    "summary_scalar_values_exactly_checked": 112
+  },
+  "discrepancies": [],
+  "endpoint_roles": {
+    "actual_wait_is_separate_from_final_cuda_checkpoint": true,
+    "all_within_original_actual24": true,
+    "long_actual_wait_consumed_graphs": 6656,
+    "long_timed576_present": false,
+    "long_timed_consumed_graph_counts": [
+      32,
+      256,
+      1280,
+      3456,
+      6656
+    ],
+    "short_actual_wait_consumed_graphs": 576
+  },
+  "figure_data_inputs": {
+    "FIGURE_MANIFEST.json": {
+      "bytes": 3181,
+      "sha256": "edbf18c29b9813cc82a78206cd84cc5af77934d73d793b2d28538d74a2e6b0d7"
+    },
+    "TABLEDATA.json": {
+      "bytes": 89208,
+      "sha256": "6070ee8bb57e5cc177bd75598ee4bd7c56a40897830cdbf68f75bb0d59821a29"
+    },
+    "configuration_summary.csv": {
+      "bytes": 1952,
+      "sha256": "68c0ace9e907ba8323c101f50a660e94c99bf083a1f22ad83c886372e2ffabca"
+    },
+    "plot_points.csv": {
+      "bytes": 5915,
+      "sha256": "ef62e675fed7fe8e062a2717a195cd682cf21156b61a56dbaf68a4d73e5b6806"
+    },
+    "summary_table.tex": {
+      "bytes": 849,
+      "sha256": "605e889543ee548c4a12eeab3ef4d4990d19e4948b484a796ede3ee4cdbe75be"
+    }
+  },
+  "independent_aggregate_peer": {
+    "sha256": "f219f60a5ecc4e9ebff4fa0b7a5e5eba459d64ad5399aa7cf059669f4e24e0dc",
+    "status": "PASS"
+  },
+  "input_aggregate": {
+    "bytes": 90386,
+    "file": "ACTUAL_AGGREGATE.json",
+    "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057"
+  },
+  "kind": "E25_V6_INDEPENDENT_ACTUAL_FIGURE_DATA_PEER",
+  "limits": [
+    "This peer checked data/metadata roles and manifest declarations; root visual inspection remains separate. No pixel or source-code rendering audit was performed.",
+    "Source-bound consumed tensor digests remain serialized attestations; no tensor regeneration or independent tensor-byte rehash claim.",
+    "PSS values are ranges of sampled non-atomic partial-residency application maxima; missing observations remain unobserved.",
+    "This figure validation is not a new scientific experiment, time-to-quality measurement or universal native cost claim."
+  ],
+  "plot_source_declared_sha256": "effd6c2591490b4d4c395153788120f07152c461cbaec660f79f6a871d946af8",
+  "rounded_table_rows_verified": [
+    [
+      "320",
+      "1",
+      "34.1 [33.2, 35.2]",
+      "308 [300, 320]",
+      "0.111 [0.11, 0.111]",
+      "9.99--10.2",
+      "41.9--42"
+    ],
+    [
+      "320",
+      "8",
+      "15.9 [15.7, 16.1]",
+      "299 [294, 302]",
+      "0.0533 [0.0521, 0.0547]",
+      "12.8--14.2",
+      "41.9--41.9"
+    ],
+    [
+      "6400",
+      "1",
+      "295 [294, 298]",
+      "586 [586, 588]",
+      "0.504 [0.499, 0.508]",
+      "15.8--15.8",
+      "43.1--43.1"
+    ],
+    [
+      "6400",
+      "8",
+      "52.3 [50, 52.4]",
+      "332 [313, 337]",
+      "0.157 [0.155, 0.16]",
+      "18.4--18.5",
+      "49.1--49.1"
+    ]
+  ],
+  "rounding": "TeX time/paired-ratio cells are median [minimum,maximum] at three significant digits; PSS ranges convert exact observed bytes to GiB and use three significant digits. Ratios come from within-block pairing before aggregation.",
+  "scope": "Generated figure data validation only, against the already independently checked genuine complete24 aggregate. No raw archive rescans, frozen auditor or plotting implementation reads, graph/ML imports, new framework tests, cluster/network actions, source edits or image manipulations.",
+  "status": "PASS"
+}

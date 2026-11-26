@@ -1,0 +1,12 @@
+{
+  "PVC_retained": true,
+  "YT_writes": 0,
+  "block": 2,
+  "kind": "ROOT_E25_V6_BLOCK_ALLOCATION_RELEASE_OBSERVATION",
+  "matching_pods": [],
+  "observed_unix": 1795726637.312942,
+  "old_pod_absent": true,
+  "owned_GPU_reservation_absent": true,
+  "replicas": 0,
+  "statefulset_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0"
+}

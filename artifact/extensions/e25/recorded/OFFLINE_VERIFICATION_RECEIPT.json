@@ -1,0 +1,15 @@
+{
+  "actual_new_experiments_GPU_graph_model_network_cluster_YT_actions": 0,
+  "aggregate": {
+    "bytes": 90386,
+    "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057"
+  },
+  "all_audits_byte_identical": true,
+  "blocks": 3,
+  "catalog": {
+    "bytes": 1913,
+    "sha256": "931c6351e67e2454d53054503bcdc5bec93162b9935c7739bf950d9ff60dc6ce"
+  },
+  "jobs": 24,
+  "status": "PASS_RECORDED_E25_V6_OFFLINE_ROUNDTRIP"
+}

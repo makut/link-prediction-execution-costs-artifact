@@ -1,6 +1,6 @@
 # Reproducing the SEAL-style execution study
 
-The `science-revision-e25` branch prepares a separate matched application-lifetime study. Its [E25 source and offline verification](extensions/e25/README.md) are included; all three actual allocation blocks and the complete 24-application aggregate are still required. This source preparation does not change the published v0.6.0 release.
+The v0.7.0 payload adds the actual E25 matched application-lifetime study: three complete allocation blocks, 24 source-bound applications, original raw/provenance/audits and a verified complete-cohort aggregate. [E25 instructions](extensions/e25/README.md) separate recorded verification, rendering and the author-bound fresh-execution boundary. Prior releases and the six immutable companion assets retain their bytes and URLs; whole code-archive identities are supplied by the external release catalog.
 
 This artifact accompanies **Execution Costs and Sampling Semantics in SEAL-Style Link Prediction**. It separates exact local induction, representation memory/sharing, consumer execution and sampling-law sensitivity.
 
@@ -37,6 +37,39 @@ printf '%s  %s\n' \
 ```
 
 Linux `sha256sum -c -` is an alternative. [PUBLIC_OBJECT_COMMANDS.json](PUBLIC_OBJECT_COMMANDS.json) maps the paper tables/figures to inputs and aggregation; [PUBLIC_COMMANDS.txt](PUBLIC_COMMANDS.txt) supplies their recorded systems, quality, CPU and PENCIL checks. Quality checks stream scores without loading models; recipes identify separate Python 3.12/NumPy analysis requirements.
+
+### E25 recorded application lifetimes
+
+The actual catalog and all three block inputs are bundled. After checking the
+complete code archive against its external release SHA256, run the existing
+standard-library verifier with a fresh directory outside the artifact:
+
+```sh
+python3 -B -S "$ARTIFACT/extensions/e25/verify_recorded_v6.py" \
+  --artifact "$ARTIFACT" --out "$RESULTS/e25_recorded_verified"
+```
+
+It regenerates all three audits and the aggregate and requires their exact
+cataloged whole identities. The genuine Python 3.12.10 public-layout roundtrip passed with all three audits
+and the aggregate byte-identical; its helper/root receipts are included.
+The actual aggregate SHA256 is
+`2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057`.
+Rendering is separate; `E25_PLOT_PY` denotes Python 3.12.10 with Matplotlib 3.10.3:
+
+```sh
+"$E25_PLOT_PY" -B "$ARTIFACT/extensions/e25/figure/plot_aggregate_v6.py" \
+  --aggregate "$ARTIFACT/extensions/e25/recorded/ACTUAL_AGGREGATE.json" \
+  --aggregate-sha256 "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057" \
+  --out "$RESULTS/e25_figure"
+```
+
+The separate short/long applications and long synchronized checkpoints retain
+different timing boundaries; there is no long timed checkpoint at 576. Min/max
+across allocations is descriptive, with within-block paired ratios and retained
+OS/PVC caches. Sampled all-phase PSS is not full-resident memory. The observed
+27-logical-CPU pool spans 14 physical-core identities; CPU marketing SKU was not
+recorded. [E25 details](extensions/e25/README.md) state the instrumentation,
+file-backed native-promotion cost and honest external-replay limits.
 
 ### Matched cost regimes (E24)
 
@@ -89,6 +122,7 @@ Citation2's `reproduce_citation2` command prints a plan by default; `--execute` 
 | Friendster CPU (E20) | Full Friendster node count and two CSR arrays |
 | Citation2 CPU (E22) | Strict-clean Citation2 `train_csr` arrays |
 | Pipeline repeats (E23) | Full Friendster and strict-clean Citation2 prepared root; eight files pinned |
+| Application lifetimes (E25) | Full public Friendster compact CSR; no quality split |
 | Clean PENCIL (E21) | Strict-clean Citation2 and declared validation-only subset |
 
 ## Run a fresh replay
@@ -100,6 +134,7 @@ Use fresh outputs and one shared `TIMING_COORDINATION` directory for cooperating
 | E20 Friendster / E22 Citation2 CPU | Linux x86_64 Python 3.10, Torch 2.2.2+cu121, exact native wheel packet, C++17 | [E20](reproduction/public_friendster_cpu_v1/README.txt), [E22](extensions/e22/README.md) |
 | E21 clean PENCIL | Python 3.10, Torch 2.5.0+cu121, PyG 2.7.0, declared extras and GPU admission | [Consumer replay](reproduction/public_pencil_clean_v1/README.txt) |
 | E23 pipeline repeats | Original Torch 2.5/PyG stack and one idle whole H100 | [Pipeline replay](extensions/e23/README.md) |
+| E25 application lifetimes | Frozen author-bound deployment; another operator needs a reviewed actual-platform binding | [Recorded study and replay limits](extensions/e25/README.md) |
 
 E22's practical plan command is:
 
@@ -119,4 +154,4 @@ E23 records three fresh benchmark/training-process repetitions of stock/local/co
 
 Operator time, setup/conversion, private workspace, process PSS, consumer sweeps and sampled MRR keep separate protocols. The PENCIL model is random and frozen; warmup-prefix equality does not verify every measured graph. These measurements do not establish time-to-quality or universal predictor superiority.
 
-The six companions retain their bytes and v0.5.0 URLs in [companion asset identities](metadata/COMPANION_ASSETS_V0_5.json). Historical lineage remains in `metadata/lineage/`; E22/E23/E24 retain separate catalogs. The code archive whole SHA is supplied by the external release checksum/catalog; it is not self-embedded here. Own code is [MIT licensed](LICENSE); third-party/data terms remain in their notices. [CITATION.cff](CITATION.cff) identifies authors, without implying conference acceptance.
+The six companions retain their bytes and v0.5.0 URLs in [companion asset identities](metadata/COMPANION_ASSETS_V0_5.json). Historical lineage remains in `metadata/lineage/`; E22/E23/E24/E25 retain separate catalogs. The code archive whole SHA is supplied by the external release checksum/catalog; it is not self-embedded here. Own code is [MIT licensed](LICENSE); third-party/data terms remain in their notices. [CITATION.cff](CITATION.cff) identifies authors, without implying conference acceptance.

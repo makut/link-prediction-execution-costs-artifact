@@ -1,203 +1,185 @@
-# E25 v6: source and offline verification
+# E25 v6: recorded Friendster application lifetimes
 
-**Results pending.** This addition contains frozen source, source reviews and
-synthetic metadata checks. It contains no actual v6 block archive, root collection
-sidecar, per-block audit, complete-24 aggregate, scientific figure or new timing
-result. Source readiness and synthetic checks establish no experiment outcome.
-The v4 tree remains archived source and author-deployment provenance;
-this v6 entry point supplies the v6 offline CLI.
+**Recorded PASS: 24 applications in three complete allocation blocks.** This
+extension includes the original raw archives, post-archive root collection
+sidecars, three independently reconstructed eight-application audits, the actual
+complete-cohort aggregate and its figure. Source readiness, tiny qualifications
+and synthetic checks remain separate historical preparation records.
 
-This is the v6 source entry point for `artifact/extensions/e25/`. The source,
-notices and source reviews are prepared; actual v6 results remain pending.
-`COPY_LINEAGE.json` records the exact v6 source-copy origins;
-`RELOCATION_LINEAGE.json` records the byte-preserved v4 relocation and this
-README revision. `SOURCE_STAGE_MANIFEST.json` catalogs the full current tree.
+| Recorded object | Bytes | SHA256 |
+|---|---:|---|
+| `recorded/RECORDED_IDENTITIES.json` | 1,913 | `931c6351e67e2454d53054503bcdc5bec93162b9935c7739bf950d9ff60dc6ce` |
+| `recorded/ACTUAL_AGGREGATE.json` | 90,386 | `2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057` |
 
-## Archived ENV v4 source and provenance
+[EXTENSION_CATALOG.json](EXTENSION_CATALOG.json) indexes the current extension;
+`SOURCE_STAGE_MANIFEST.json` records its payload identities.
+The catalog pins each block's `block_raw.tgz`, `ROOT_COLLECTION.json` and
+`ACTUAL_AUDIT.json`. The included aggregate reports
+`PASS_COMPLETE_THREE_BLOCKS_24_APPS`; no failed or partial attempt supplies an
+observation. Root collection records bind actual launch, subsequent wrapper
+kernel exit 0, owned-tree quiescence, source/platform hashes and lock/marker
+observations. The raw archives precede their wrapper's own exit and cannot alone
+supply that later proof. These are recorded observations, not current liveness.
 
-`historical/env_v4/` preserves the entire previous E25 extension tree byte for
-byte, including its source archives, notices, auditor, source reviews and
-original author preflight/qualification/schema records. These are historical
-source/provenance materials, not a completed v6 result or an active v6 entry point.
-They contribute no application timings to the new three-block cohort.
+## One-command recorded verification
 
-The archived README and source comments retain their original path examples,
-including `$ARTIFACT/extensions/e25/source/packet/run_lifecycle.py` and
-`$ARTIFACT/extensions/e25/independent/audit_e25_env_v4.py`. Those examples refer
-to the original v4 directory layout before relocation. They must not be followed
-against the current v6 root. The archived v4 four-hour single-cohort CLI, source/protocol
-hashes, v4 auditor with `independent_disk.py`, original platform snapshots and
-future v4 figure/collection instructions apply only to that archived version.
-Relative links inside the preserved documents also retain their original layout
-meaning; their bytes have not been rewritten to turn v4 into a new replay path.
-Use the v6 offline audit and aggregation commands below. The current author-bound
-replay limits also apply; archived historical prose establishes no portable v6
-deployment or actual-platform qualification.
-
-- `source/packet/` and `source_archives/` preserve the exact frozen producer.
-- `source/outer/` preserves the exact author-bound wrapper and its readiness.
-- `independent/` supplies the standard-library block auditor with its adjacent
-  hash-pinned `independent_env.py`, readiness and source-peer report.
-- `aggregate/` supplies the standard-library three-block aggregation tool and
-  clearly labeled synthetic metadata test source/report.
-- `reference/admit_block_platform_v6.py.txt` preserves the exact root admission
-  helper as reference text. It is author-bound provenance, not a public launcher.
-
-The MIT `LICENSE` covers the authors' own additions. Exact upstream notices remain
-in `source/packet/third_party/` and `source/packet/native_core/third_party/`.
-See `DATA_ATTRIBUTION.md` for the single small public workload exception.
-The frozen `THIRD_PARTY.md` retains historical artifact-wide references to
-`DATA_ACCESS.md`, `PACKAGING_NOTES.md`, `metadata/PRIOR_WORK_PROVENANCE.json`,
-`metadata/SYSTEMS_FROZEN_INPUTS.json` and PENCIL source paths. Resolve these at the
-base artifact root; they are not claims that unrelated PENCIL material is bundled
-inside this E25 source addition. `reference/` scripts are not replay entry points.
-
-## E25 v6: recorded audit and replay scope
-
-E25 v6 splits the original 24-application protocol into three fresh allocation
-blocks, each containing eight applications. Paired timing ratios stay within
-their allocation block; hardware/topology and retained OS/filesystem-cache
-differences between allocations are disclosed. Source readiness, tiny
-qualification, one completed block and a verified complete24 cohort are separate
-states. Failed or partial historical attempts supply no timing observations.
-
-### Prepared one-command recorded verifier
-
-`verify_recorded_v6.py` and [OFFLINE_VERIFICATION.txt](OFFLINE_VERIFICATION.txt)
-provide a single entry point to the existing standard-library block auditor and
-three-block aggregator. This is prepared source with static review only. The real
-recorded catalog, all three genuine blocks and a genuine public-layout roundtrip
-remain pending; this source preparation creates no catalog or result placeholders
-and establishes no operational verification or complete-24 result.
-
-After verifying the complete published code archive with its externally supplied
-release SHA256, and once its real recorded catalog and all three input sets are
-included, set `ARTIFACT` to the absolute canonical artifact directory and
-`E25_FRESH_OUT` to a new directory outside it whose parent already exists:
+First verify the complete published code archive with its external release
+SHA256. Its unchanged catalog is then the authority for the included evidence;
+an unchecked archive's own manifest is not an independent trust anchor.
+Set `ARTIFACT` to the absolute canonical artifact directory and `E25_FRESH_OUT`
+to a new directory outside it, with an existing parent:
 
 ```sh
 python3 -B -S "$ARTIFACT/extensions/e25/verify_recorded_v6.py" \
   --artifact "$ARTIFACT" --out "$E25_FRESH_OUT"
 ```
 
-The prepared helper checks the fixed catalog/input/source identities and original
-PASS8/PASS24 metadata before creating fresh output, then requires regenerated
-audits and aggregate to match the cataloged bytes and SHA256 values. The exact
-catalog schema and trust boundary are documented in `OFFLINE_VERIFICATION.txt`.
-The reviewed source record is `reference/PUBLIC_VERIFY_ENTRYPOINT_SOURCE_REVIEW.json`;
-a genuine all-three-block roundtrip must still be performed before claiming this
-entry point works on the released evidence.
+This Python 3.10+ standard-library entry point checks all input/source/PASS gates,
+regenerates the three audits and aggregate using the unchanged included tools,
+and requires byte-identical whole hashes before writing
+`VERIFICATION_RECEIPT.json`. It performs no graph/model load, new measurement,
+ML-library import, network or cluster action. Use a fresh output directory.
+The exact schema and trust boundary are in [OFFLINE_VERIFICATION.txt](OFFLINE_VERIFICATION.txt).
+The genuine all-three-block public-layout roundtrip passed with Python 3.12.10:
+[helper receipt](recorded/OFFLINE_VERIFICATION_RECEIPT.json) and
+[root context/argv/identity receipt](recorded/OFFLINE_ROUNDTRIP_ROOT_RECEIPT.json).
+All three fresh audits and the aggregate were byte-identical to the originals.
+The source-only entrypoint review remains a historical static check, distinct
+from this actual validation.
 
-### Offline audit of a recorded block
+## Plot the actual aggregate
 
-Use Python 3.10+ and the standard library. No GPU, graph download, ML packages,
-container image, cluster account or live Kubernetes access is required. Keep
-audit_block_v6.py and the supplied independent_env.py in the same directory.
-
-Each block needs both its original block_raw.tgz and its separate original root
-collection JSON. The latter records observations made after the raw archive,
-including actual wrapper exit0 and owned-tree quiescence; it cannot be replaced
-by an in-archive COMPLETE. Obtain both whole SHA256 values from the release
-catalog/checksums anchored by the verified release, not by trusting an unchecked
-archive's self-manifest.
-
-Set E25_V6_AUDITOR to the directory containing the two auditor files. For each
-of blocks 1, 2 and 3, set E25_BLOCK_RAW and E25_BLOCK_COLLECTION to the published
-files for that block; set E25_BLOCK_RAW_SHA256 and E25_BLOCK_COLLECTION_SHA256
-to their cataloged whole hashes. E25_NEW_AUDIT must be a new output filename
-in an existing writable directory. Run:
+The checked rendering uses Python 3.12.10 and Matplotlib 3.10.3. Set
+`E25_PLOT_PY` to that plotting interpreter and `E25_FRESH_FIGURE` to a fresh output
+directory; rendering is separate from the stdlib-only recorded verifier:
 
 ```sh
-python3 -B "$E25_V6_AUDITOR/audit_block_v6.py" \
-  --archive "$E25_BLOCK_RAW" \
-  --archive-sha256 "$E25_BLOCK_RAW_SHA256" \
-  --root-collection "$E25_BLOCK_COLLECTION" \
-  --root-collection-sha256 "$E25_BLOCK_COLLECTION_SHA256" \
-  --output "$E25_NEW_AUDIT"
+"$E25_PLOT_PY" -B "$ARTIFACT/extensions/e25/figure/plot_aggregate_v6.py" \
+  --aggregate "$ARTIFACT/extensions/e25/recorded/ACTUAL_AGGREGATE.json" \
+  --aggregate-sha256 "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057" \
+  --out "$E25_FRESH_FIGURE"
 ```
 
-The helper streams and rehashes the archive without extraction, checks frozen
-source/platform/exit bindings, and independently recomputes application-clock
-metrics, within-block ratios and sampled PSS eligibility/maxima from saved raw
-records. CPU/disk uncertainty does not filter PSS; missing observations remain
-unobserved. It does not remeasure performance, independently regenerate consumed
-tensor bytes, or establish current cluster state. A successful report says
-PASS_ACTUAL_E25_V6_EIGHT_APP_BLOCK_AUDIT and global24_complete=false. Run it for
-all three blocks; three per-block checks must still be reconciled by the
-release's separately documented complete-cohort aggregation. No global24 audit
-command is supplied by this per-block tool.
+`figure/` includes the exact plot source, PNG/SVG/PDF, `plot_points.csv`,
+`configuration_summary.csv`, `TABLEDATA.json`, a caption and TeX table.
+`FIGURE_MANIFEST.json` pins the actual aggregate, source and output identities;
+`ACTUAL_FIGURE_VISUAL_QA.json` records root's PASS inspection of the shipped
+rendering. A new rendering starts with visual QA pending: the command does not
+reproduce the separate recorded visual review. The current PNG SHA256 is
+`769f56c27a2d6ab68840bea953fe62b2fc070413af036befe1edec42554b3f77`.
 
-### What a fresh replay requires
+## Actual boundary finding
 
-The frozen producer/envelope and root admission sources document the measured
-deployment. They are not a turnkey portable Kubernetes launcher. In particular,
-the envelope checks the authors' original PVC UID/subPath and internal image
-digest. That image reference and the saved platform JSON are provenance; they
-are not public access instructions or valid evidence for another allocation.
-The producer's plan CLI also requires genuine actual-platform JSON.
+Compiled execution had lower launch-to-actual-wait time in all 12 within-block
+pairs. For long applications with eight workers, the native measured-window
+median was 35.22 s versus 38.23 s for compiled (median paired C/N 1.086), but
+actual-wait medians were 332.47 s versus 52.30 s (median paired C/N 0.1573).
+Warm-window ranking therefore did not determine terminated-application ranking
+for this fresh file-backed path on the observed PVC. This is not a universal warm
+native advantage: the long one-worker measured window favored compiled.
+The [actual interpretation peer](recorded/E25_FINAL24_INTERPRETATION_PEER.json)
+checks these scoped comparisons; it does not isolate promotion as the sole cause.
 
-The measured harness requires Linux x86_64, Python 3.10.12, a C++17 compiler,
-NumPy 1.24.4, SciPy 1.10.1, Numba 0.58.0, Torch 2.5.0+cu121 and PyG 2.7.0,
-with the declared public environment extras. It admits one idle whole 80GB
-H100, an actual pool of 27 logical CPUs, quota 2700000/100000 and a 256GiB
-cgroup memory limit, with readable cgroup-v2/proc/sysfs observations. These
-controls are not claims of minimum hardware requirements; no CPU, MIG or DDP
-fallback has been established.
+## Protocol and interpretation
 
-Use the existing public Friendster full-CSR preparation recipe, not the quality
-split. Source, graph, proof, results and temp/cache paths must use the admitted
-writable project mount. At least 40GiB must remain free before each block,
-above the prepared graph; the runtime reserve is 4GiB, with a separate 4GiB
-writable-root check. Each native app writes and fsyncs a fresh
-29,421,941,096-byte representation inside its application clock. Outputs and
-Numba cache are fresh per block; OS/filesystem caches are retained. The
-3900-second producer and 4200-second envelope caps are failure limits, not
+Each original repetition is a fresh allocation block containing both physical
+induction routes (`reference_union_compiled` and
+`reference_union_native_persistent`), one/eight spawn workers and two genuinely
+terminated horizons. Short applications train 576 graphs including 256 warmup
+and 320 measured graphs; long applications train 6,656 including the same 256
+warmup and 6,400 measured graphs. The sampler, ordered inputs, featureless DGCNN
+and initial model are held fixed. Typed/shaped/ordered consumed CPU-input digest
+and checkpoint-prefix equality are checked within and across blocks. This is
+source-bound serialized equality, not independent regeneration of tensor/PyG or
+full-graph bytes by the offline verifier.
+
+Long curves use synchronized checkpoints at 32, 256, 1,280, 3,456 and 6,656
+consumed graphs. The long run's digest at 576 is semantic-only: **there is no
+long timed checkpoint at 576**. Separate markers show the actual waits of short
+and long applications, including teardown and normal child completion. They are
+not CUDA-checkpoint times; the short application is not a truncated long run.
+Pointwise medians do not form one execution trajectory. Whiskers are descriptive
+min/max across allocations, not confidence intervals. Ratios are formed between
+arms within each block before descriptive aggregation; no E23 causal speedup,
+fitted crossover, population uncertainty or time-to-quality claim follows.
+
+The instrumented application clock includes imports/setup, worker spawn, natural
+compiled JIT/cache load, hashing of every consumed model input, resource/PSS/disk
+observations and metadata work. Each native application also creates and fsyncs
+a fresh 29,421,941,096-byte file-backed representation from compact CSR inside
+its clock. Whole-input admission hashes, C++ build and tiny qualification are
+outside individual application lifetimes. The evaluated path is this fresh
+file-backed persistent-native path; preconverted reuse or shared-memory promotion
+would define different setup boundaries and were not timed here.
+
+Outputs and Numba cache are fresh per allocation and shared within that block,
+including qualification; OS/PVC filesystem caches are retained across blocks.
+Source, graph, output, temp/cache and native scratch use the admitted writable
+PVC mount. Its placement can affect setup and execution. These are not cold-cache,
+exclusive-placement or best-possible-native-cost measurements.
+
+PSS is the sampled application-process-tree maximum over every independently
+eligible complete/stable/same-phase observation, including startup, spawn and
+training. Missing eligible PSS remains unobserved, never zero; CPU/disk uncertainty
+does not select PSS samples. File-backed pages are only partly resident and scans
+are non-atomic: these values are not full-resident memory requirements, total RSS
+sums or cache-subtracted private workspace.
+
+## Observed platform and fresh replay boundary
+
+The measured harness uses one whole 80 GB H100, a 256 GiB cgroup memory limit,
+quota `2700000 100000`, and a chosen pool of 27 logical CPUs spanning 14 observed
+physical-core identities. **The CPU marketing model/SKU was not recorded.**
+Topology, quota, logical CPUs and physical cores are different facts; do not infer
+an E25 CPU model from E23's separately observed host or from a node hostname.
+Each block fixes its actual Pod/GPU/pool. All three observed allocations used
+the same node; block 1 had a different logical pool from blocks 2/3, whose pools
+match. These are not three independent machines or data/model seeds. The controls establish neither dedicated physical cores nor
+continuous/exclusive placement. External observed masks may be nonempty subsets
+of the pool; own controller/app/worker boundary leaders retain the exact pool.
+
+A fresh execution needs Linux x86_64/Python 3.10.12, C++17, NumPy 1.24.4,
+SciPy 1.10.1, Numba 0.58.0, Torch 2.5.0+cu121, PyG 2.7.0 and the declared extras,
+readable proc/cgroup-v2/sysfs and the byte-pinned public full Friendster CSR.
+There is no CPU/MIG/DDP fallback. The selected resources are measurement controls,
+not established minimum hardware requirements. At least 40 GiB must remain free
+above the prepared graph before a block; runtime PVC and writable-root reserves
+are 4 GiB. Producer 3,900 s/envelope 4,200 s caps are failure limits, not speed or
 completion guarantees.
 
-External replay therefore needs a separately reviewed admission/deployment
-binding that records that operator's real platform and preserves the scientific
-protocol. Such a portable binding is not supplied or claimed tested here.
-Do not substitute fabricated Pod/PVC identities or reuse the authors' proof.
-Measurements on a different qualified platform are new observations, not a
-promise to reproduce the authors' latency.
+The exact `source/packet/` and `source/outer/` document the author deployment.
+The outer checks the authors' original PVC UID/subPath and internal image digest;
+these are provenance, not a portable launcher or public image-access instructions.
+`reference/admit_block_platform_v6.py.txt` is reference text. Another operator needs
+a separately reviewed genuine admission/deployment binding preserving the
+scientific protocol; no turnkey external binding is supplied or claimed tested.
+Never fabricate identities or reuse the authors' platform proof. New-platform
+measurements are new observations, not promises of the recorded latencies.
 
-### Offline complete-cohort aggregation
+## History, exclusions and notices
 
-After all three genuine archive/collection pairs are independently audited, set
-`E25_V6_AGGREGATOR` to the directory containing `aggregate_blocks_v6.py`. Set the
-three `E25_AUDIT_*` filenames and whole hashes from the verified release catalog,
-`E25_AUDITOR_SOURCE_SHA256` to the cataloged exact block-auditor source hash, and
-`E25_NEW_AGGREGATE` to a fresh output filename. Run:
+`historical/env_v4/` preserves the previous 77-file source/provenance tree byte for
+byte. Its old root-path examples, four-hour single-cohort CLI, v4 hashes,
+`audit_e25_env_v4.py`/`independent_disk.py` and future collection/figure instructions
+retain their original-layout meaning and are not active v6 commands.
+`COPY_LINEAGE.json`, `RELOCATION_LINEAGE.json`, source-only status/readiness,
+static peers and synthetic reviews describe preparation history. They do not
+override the actual catalog/audits/aggregate or the later recorded-verification
+receipt.
 
-```sh
-python3 -B "$E25_V6_AGGREGATOR/aggregate_blocks_v6.py" \
-  --block-audit "$E25_AUDIT_1" "$E25_AUDIT_1_SHA256" \
-  --block-audit "$E25_AUDIT_2" "$E25_AUDIT_2_SHA256" \
-  --block-audit "$E25_AUDIT_3" "$E25_AUDIT_3_SHA256" \
-  --auditor-source-sha256 "$E25_AUDITOR_SOURCE_SHA256" \
-  --output "$E25_NEW_AGGREGATE"
-```
+The latest failed capsule is included **once** under `recorded/excluded/`, with
+v3/v2/v1 retained only inside it and status `FAILED_EXCLUDED_FROM_SCIENCE`.
+Its whole SHA256 is
+`5a470ea09dcfef2c754273dcb9d63288739b7c779799952e5f24a853b25c2365`.
+No historical partial measurements enter the 24 successful applications.
+Public release reviews are under `recorded/public_review/`.
 
-The aggregator checks all three complete block audits, exact scientific/auditor
-source pins, distinct original allocations/archives, the complete original job
-grid, and cross-block source-bound input/prefix identity. Paired ratios are formed
-within blocks. Across-allocation median, min/max and sample SD are descriptive;
-retained OS/PVC caches and platform differences do not support a population
-uncertainty or causal hardware claim. PSS preserves missing values and coverage.
-
-For source-only synthetic checks, keep `aggregate/source_review_aggregate_v6/`
-next to `aggregate/aggregate_blocks_v6.py`, set `E25_SYNTHETIC_CHECK_OUTPUT` to a
-fresh filename, then run:
-
-```sh
-python3 -B "$E25_V6_AGGREGATOR/source_review_aggregate_v6/synthetic_metadata_checks.py" \
-  --output "$E25_SYNTHETIC_CHECK_OUTPUT"
-```
-
-These checks create only a labeled source-test outcome. Their in-memory fixtures
-are synthetic, and no actual aggregate report or scientific result is serialized.
-The supplied synthetic-review JSON is not an actual block/complete-24 audit.
-
-Actual raw archives, post-archive root collection sidecars, independently pinned
-audit reports and aggregate evidence will be added only after genuine collection,
-audit and public-data/credential review. No placeholders stand in for them here.
+Own code is MIT; original upstream MIT/Apache notices remain in the source tree.
+[DATA_ATTRIBUTION.md](DATA_ATTRIBUTION.md) covers every identical small public
+Friendster workload copy, including archived ones: Per Fuchs, Zenodo 5146230,
+CC-BY-4.0. Full graph/native binaries/caches/checkpoints are absent from the raw
+archives. Historical author/container paths, UUIDs and inactive ownership fields
+remain provenance; the offline tools never open those recorded paths.
+The frozen `THIRD_PARTY.md` has artifact-wide references to `DATA_ACCESS.md`,
+`PACKAGING_NOTES.md`, provenance metadata and PENCIL paths; resolve them at the
+base artifact root, not as claims that unrelated PENCIL code is inside E25.

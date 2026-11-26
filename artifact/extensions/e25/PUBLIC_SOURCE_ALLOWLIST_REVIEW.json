@@ -1,10 +1,128 @@
 {
-  "actual_experimental_result_reads": 0,
-  "actual_result_placeholders_added": 0,
-  "all_current_extension_payloads_rehashed": 148,
-  "archived_historical_env_v4_tree_unchanged": true,
-  "authorized_repository_source_edits": true,
-  "binary_allowlist": {
+  "CPU_marketing_SKU_recorded": false,
+  "actual_complete24_included": true,
+  "all_current_extension_payload_hashes_checked": 195,
+  "archive_build_commit_push_network_cluster_publication_actions": 0,
+  "attribution": "DATA_ATTRIBUTION.md covers all identical public Friendster workload copies in active, raw and nested historical sources. Per Fuchs/Zenodo5146230/CC-BY-4.0 terms remain separate from own-code MIT/upstream notices.",
+  "credential_scan_classes": [
+    "private_key",
+    "cloud_access_key",
+    "github_token",
+    "gitlab_token",
+    "literal_bearer",
+    "quoted_credential_assignment",
+    "unquoted_shell_credential",
+    "URL_embedded_password"
+  ],
+  "current_updated_docs_metadata_pattern_checks": {
+    "CITATION.cff": {
+      "bytes": 773,
+      "sha256": "bddbb22a838d6cb717ab6c7d69e000634e15ffa67d5d06ebe4e96bfd051894c6"
+    },
+    "PUBLIC_COMMANDS.txt": {
+      "bytes": 15324,
+      "sha256": "e821234de960f24d77935c6b27db447152e22fbab3db99fee8016ab4b08c14ae"
+    },
+    "PUBLIC_OBJECT_COMMANDS.json": {
+      "bytes": 55635,
+      "sha256": "32d3cebd2d66e140d86e344b455e3a1285df76d504a2a60abff4e676ead780ef"
+    },
+    "README.md": {
+      "bytes": 11282,
+      "sha256": "547b099ced6edfb13155fd8bcc479c753a6892388a2fd283a730bed31c991cdd"
+    },
+    "extensions/e25/OFFLINE_VERIFICATION.txt": {
+      "bytes": 4368,
+      "sha256": "4c02b88f887a94f00da53c264ab543cc2c47582fae093c73cb28ef964422e4b9"
+    },
+    "extensions/e25/README.md": {
+      "bytes": 11295,
+      "sha256": "4a9ccd86fe1fa90b3b63213b407152b136278dc470438da007ae9c185b9c44fa"
+    },
+    "metadata/CANDIDATE_STATUS.json": {
+      "bytes": 617,
+      "sha256": "8ed333584ae52bac16d8cd8b2c53aebc545859d1d2ebd1395942e5a00d576743"
+    },
+    "metadata/PUBLICATION_STATUS.json": {
+      "bytes": 1553,
+      "sha256": "fbe5272739b8bbc43a6f7fec5bf98bc0e6641d018d5c558e9d56b444abe94aca"
+    },
+    "metadata/V0_7_GATES.json": {
+      "bytes": 4478,
+      "sha256": "f7078814234348508197d86b58b53ea9dea50b98bc49e7c62dac4db444c185d9"
+    }
+  },
+  "excluded_self_metadata": [
+    "EXTENSION_CATALOG.json",
+    "PUBLIC_SOURCE_ALLOWLIST_REVIEW.json",
+    "SOURCE_STAGE_MANIFEST.json"
+  ],
+  "extension_catalog": {
+    "bytes": 36315,
+    "sha256": "47a3486132a7b202e2948875804952998286f018d4bbc6cceb7c4058b863740c"
+  },
+  "failed_metrics_used_in_science": false,
+  "figure_binary_pins": {
+    "figure/e25_v6_progress_and_terminated_lifetimes.pdf": {
+      "bytes": 17287,
+      "sha256": "1fffb8fd4f487d49b3dada015925619807676bc3f3c07a59f40d2ab2cc81a66e"
+    },
+    "figure/e25_v6_progress_and_terminated_lifetimes.png": {
+      "bytes": 130831,
+      "sha256": "769f56c27a2d6ab68840bea953fe62b2fc070413af036befe1edec42554b3f77"
+    }
+  },
+  "frozen_scientific_source_and_data_and_figure_bytes_changed": 0,
+  "historical_env_v4_file_count": 77,
+  "historical_env_v4_inventory_sha256": "b549aad246966ebbf29095aa86c8135b0b3d711dad97c812cc713350b90e2229",
+  "inherited_source_preparation_allowlist": {
+    "bytes": 4006,
+    "sha256": "59b71c6bf037d287acc0513884e6145416451246d228747d3a78cfe0499e7f03"
+  },
+  "kind": "E25_V6_ACTUAL_RECORDED_PUBLIC_PAYLOAD_ALLOWLIST_REVIEW",
+  "manifest": {
+    "bytes": 33824,
+    "sha256": "767e32c13ac513a5be63f2203868cfda5216d942316ab5dac16ebb5f84bcc4f3"
+  },
+  "new_docs_metadata_credential_candidates": 0,
+  "old_failed_capsule_standalone_copies": 1,
+  "privacy_review_scope": "New credential patterns checked only in the named updated docs/metadata. Prior bounded raw/archive/decoded-JSON/base64 public reviews are preserved by exact hash, not repeated; external sidecar identity/scope limits remain as stated in those reports. Historical nonsecret paths/UUIDs/ownership fields remain provenance.",
+  "raw_archives_expanded_or_rescanned_by_this_stage": 0,
+  "recorded_raw_archive_pins": {
+    "recorded/block1/block_raw.tgz": {
+      "bytes": 1415665,
+      "sha256": "8a3342735efbf1456bd9a023a09388b9666cc18753fa27d337520e1aa78bb406"
+    },
+    "recorded/block2/block_raw.tgz": {
+      "bytes": 1407276,
+      "sha256": "055adcbadb1f97a683f36ebce86dcd0361dce932363ccf718f226eea3ff0c1f5"
+    },
+    "recorded/block3/block_raw.tgz": {
+      "bytes": 1406139,
+      "sha256": "0c8f0bc145a41e707c0810fa1a420e7a2eed21f450e1fd536cb10c02a7983e1c"
+    },
+    "recorded/excluded/E25_ENV_V4_FAILED_DIAGNOSTIC_v1.tgz": {
+      "bytes": 2697876,
+      "sha256": "5a470ea09dcfef2c754273dcb9d63288739b7c779799952e5f24a853b25c2365"
+    }
+  },
+  "repository_docs_metadata_edits_authorized": true,
+  "results_pending": false,
+  "retained_actual_public_reviews": {
+    "recorded/public_review/PUBLIC_BLOCK12_AND_FAILED_CAPSULE_ALLOWLIST_REVIEW.json": {
+      "bytes": 13372,
+      "sha256": "627ea1fb8d7940f35654117bd0c0e3be8312da2d030619d8d351a52e19861f63"
+    },
+    "recorded/public_review/PUBLIC_BLOCK12_AND_FAILED_CAPSULE_RELEASE_REVIEW.json": {
+      "bytes": 3366,
+      "sha256": "bf81eea9ae374757043122838b5a1a8fb0ff0d94618919591cafda75aa07b4c3"
+    },
+    "recorded/public_review/PUBLIC_BLOCK3_RAW_ARCHIVE_RELEASE_REVIEW.json": {
+      "bytes": 4991,
+      "sha256": "6f5d12f217e3a66fa13294bf87b8f44d2b963b6020dd24a76e23433b5c9b6a65"
+    }
+  },
+  "source_binary_allowlist": {
     "historical/env_v4/source/packet/workloads/friendster_pairs.npy": {
       "bytes": 192128,
       "sha256": "340e61cdd1eb8d329d52be164f919480e6a41feb4c620852df0393c2e9a192f0"
@@ -22,68 +140,6 @@
       "sha256": "241aad9ac3a6407db361465251154cf2fc15e7c03092963a51b1be01465cacb0"
     }
   },
-  "credential_pattern_hits": 0,
-  "credential_scan_classes": [
-    "private_key",
-    "cloud_access_key",
-    "github_token",
-    "gitlab_token",
-    "literal_bearer",
-    "quoted_credential_assignment",
-    "unquoted_shell_credential",
-    "URL_embedded_password"
-  ],
-  "exact_frozen_v6_copies_preserved": 62,
-  "excluded_self_metadata": [
-    "PUBLIC_SOURCE_ALLOWLIST_REVIEW.json",
-    "SOURCE_STAGE_MANIFEST.json"
-  ],
-  "historical_files_preserved_byte_for_byte": 77,
-  "historical_source_inventory_sha256": "b549aad246966ebbf29095aa86c8135b0b3d711dad97c812cc713350b90e2229",
-  "inherited_unchanged_source_allowlist": {
-    "bytes": 2480,
-    "sha256": "b07df148ac59d9c44a55fb16c63852a940779d3ab2ddafb5f0d6ec6fb7b62598"
-  },
-  "kind": "E25_V6_RECORDED_ENTRYPOINT_REPO_SOURCE_INTEGRATION_ALLOWLIST",
-  "manifest": {
-    "bytes": 26069,
-    "sha256": "11ebc0c5c8ebf96c25719da42492e032b8a8f6c5e54cf25816359c6013d505ce"
-  },
-  "network_cluster_archive_build_publication_actions": 0,
-  "new_source_and_docs_checked": {
-    "DATA_ATTRIBUTION.md": {
-      "bytes": 1302,
-      "sha256": "0ef3a39bd970afe0b4c273ccb955766bd4d5fc6e429501b65b074af2b7458740"
-    },
-    "OFFLINE_VERIFICATION.txt": {
-      "bytes": 3814,
-      "sha256": "057cff7105268ca293e9c6ee447b15648d6f6e6ead32a8c1175fa0c6c5cfa9b2"
-    },
-    "README.md": {
-      "bytes": 11573,
-      "sha256": "7af3ca7f9854f43851d97113b6b4fb6691a50585c905486a6774dbfb042ef622"
-    },
-    "reference/PUBLIC_VERIFY_ENTRYPOINT_SOURCE_REVIEW.json": {
-      "bytes": 1963,
-      "sha256": "57009814f4d448b7c6ec19697dfd31671f7cd87f3aece9fbd094b09cb95533b5"
-    },
-    "verify_recorded_v6.py": {
-      "bytes": 7167,
-      "sha256": "655f6db01b91b05c8507c9215646c72abac44e6ec598d79da86b131218895928"
-    }
-  },
-  "python310_AST": "PASS",
-  "real_catalog_or_actual_E25_reads": 0,
-  "repository_commit_push_actions": 0,
-  "results_pending": true,
-  "retained_nonsecret_scope": "Exact frozen source and archived author preflight/schema/provenance paths/hosts/PID/UUID/image literals; token interfaces without literal credential values. No new actual experimental evidence files read or included.",
-  "review_scope": "Current entrypoint source/docs integration only: literal credential checks on five named new/updated texts, exact-source hashes and all source-extension payload hashes. Unchanged source credential allowlist scope inherited by exact hash. No recorded data or scientific outcome reads.",
-  "routing_review": "Only root README v6 commands are current. Historical README source/protocol/maxhours4/audit_v4/independent_disk/schema/figure/collection path examples retain original bytes and original-layout meaning, explicitly retired as active v6 instructions by root README.",
-  "source_helper_or_test_execution": 0,
-  "status": "PASS_NEW_SOURCE_PATTERN_CHECKS_NO_ACTUAL_EXECUTION",
-  "unchanged_frozen_payloads_preserved": true,
-  "v6_base_allowlist_review": {
-    "bytes": 3229,
-    "sha256": "aba6b2efe8dd23ddcda44a2ac3e4a4791c435ab2e65a2f4b4b35f0aa5a08c098"
-  }
+  "status": "PASS_DOCS_SOURCE_CHECKS_WITH_RETAINED_BOUNDED_ACTUAL_PUBLIC_REVIEWS",
+  "version": "0.7.0"
 }

@@ -1,0 +1,22 @@
+{
+  "PVC_deleted": false,
+  "YT_writes": 0,
+  "archive_sha256": "8a3342735efbf1456bd9a023a09388b9666cc18753fa27d337520e1aa78bb406",
+  "audit_sha256": "acaf74fa83d36374d39a83c28e33a7a07fe1ba1cfc0113356673a9ffdb480dc8",
+  "block": 1,
+  "kind": "ROOT_E25_V6_VERIFIED_BLOCK_RESOURCE_RELEASE",
+  "live_precheck": {
+    "actual_wrapper_exit0": true,
+    "pod_uid": "ac6e5b3a-6e6a-4ed8-8475-ed99f1d4cf5b",
+    "unexpected_live_processes": []
+  },
+  "observed_unix": 1795723428.6394722,
+  "other_statefulsets_touched": false,
+  "pod_deletion_still_to_verify": true,
+  "pod_uid": "ac6e5b3a-6e6a-4ed8-8475-ed99f1d4cf5b",
+  "replicas": 0,
+  "resource_version_after": "11664026395",
+  "resource_version_before": "11663759899",
+  "root_collection_sha256": "c2450ce59ffe8906f00bdf2e4c479645332537c95f35b6147482d9966592a98a",
+  "statefulset_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0"
+}

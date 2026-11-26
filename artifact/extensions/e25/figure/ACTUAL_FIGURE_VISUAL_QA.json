@@ -1,0 +1,24 @@
+{
+  "aggregate": {
+    "bytes": 90386,
+    "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057"
+  },
+  "image": {
+    "bytes": 130831,
+    "sha256": "769f56c27a2d6ab68840bea953fe62b2fc070413af036befe1edec42554b3f77"
+  },
+  "kind": "ROOT_ACTUAL_E25_FIGURE_VISUAL_INSPECTION",
+  "limitations": "Visual inspection does not replace numerical verification; the independently checked aggregate and generated CSV retain all values.",
+  "observed": [
+    "Both worker panels and all six log-count tick labels are legible.",
+    "Legends, axis labels and plotted markers are not clipped or overlapping.",
+    "Unconnected short squares and long diamonds are distinguished from long synchronized checkpoint circles.",
+    "Linear time axis starts at zero; whiskers are descriptive min/max, not confidence intervals."
+  ],
+  "observed_unix": 1795729777.838827,
+  "plot_source": {
+    "bytes": 23624,
+    "sha256": "effd6c2591490b4d4c395153788120f07152c461cbaec660f79f6a871d946af8"
+  },
+  "status": "PASS"
+}

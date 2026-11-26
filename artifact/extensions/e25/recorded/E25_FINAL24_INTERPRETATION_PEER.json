@@ -1,0 +1,195 @@
+{
+  "configuration_summary": [
+    {
+      "all_phase_PSS_GiB_ranges": {
+        "C": [
+          9.987287521362305,
+          10.193533897399902
+        ],
+        "N": [
+          41.947646141052246,
+          41.95154666900635
+        ]
+      },
+      "horizon": "short320",
+      "measured_window": {
+        "C_median_s": 12.939952352,
+        "N_median_s": 11.942471439,
+        "paired_C_over_N_median": 1.085648721520416,
+        "paired_range": [
+          1.075212818171917,
+          1.1148521022642572
+        ]
+      },
+      "wait": {
+        "C_median_s": 34.108992974,
+        "N_median_s": 308.137807252,
+        "paired_C_over_N_median": 0.11069395631190795,
+        "paired_range": [
+          0.10991719418893287,
+          0.11089895119181659
+        ]
+      },
+      "workers": 1
+    },
+    {
+      "all_phase_PSS_GiB_ranges": {
+        "C": [
+          12.753052711486816,
+          14.208104133605957
+        ],
+        "N": [
+          41.947279930114746,
+          41.94959259033203
+        ]
+      },
+      "horizon": "short320",
+      "measured_window": {
+        "C_median_s": 2.764552839,
+        "N_median_s": 2.40709299,
+        "paired_C_over_N_median": 1.1534794722090416,
+        "paired_range": [
+          1.1388115890778279,
+          1.203618107188264
+        ]
+      },
+      "wait": {
+        "C_median_s": 15.946791541,
+        "N_median_s": 298.944813333,
+        "paired_C_over_N_median": 0.05334359664315896,
+        "paired_range": [
+          0.052075480945390114,
+          0.05468298396911872
+        ]
+      },
+      "workers": 8
+    },
+    {
+      "all_phase_PSS_GiB_ranges": {
+        "C": [
+          15.75876235961914,
+          15.771764755249023
+        ],
+        "N": [
+          43.11763668060303,
+          43.14419078826904
+        ]
+      },
+      "horizon": "long6400",
+      "measured_window": {
+        "C_median_s": 273.846779851,
+        "N_median_s": 284.961873879,
+        "paired_C_over_N_median": 0.9682014641374529,
+        "paired_range": [
+          0.9600866746668415,
+          0.9880796425567455
+        ]
+      },
+      "wait": {
+        "C_median_s": 295.088241965,
+        "N_median_s": 585.936769724,
+        "paired_C_over_N_median": 0.5039522224763961,
+        "paired_range": [
+          0.4994267443832559,
+          0.5078645957961823
+        ]
+      },
+      "workers": 1
+    },
+    {
+      "all_phase_PSS_GiB_ranges": {
+        "C": [
+          18.420005798339844,
+          18.472848892211914
+        ],
+        "N": [
+          49.06043720245361,
+          49.090264320373535
+        ]
+      },
+      "horizon": "long6400",
+      "measured_window": {
+        "C_median_s": 38.233827536,
+        "N_median_s": 35.22049628,
+        "paired_C_over_N_median": 1.085556183877827,
+        "paired_range": [
+          1.0706948177149853,
+          1.0899531770753081
+        ]
+      },
+      "wait": {
+        "C_median_s": 52.301916435,
+        "N_median_s": 332.471336116,
+        "paired_C_over_N_median": 0.15731255826743437,
+        "paired_range": [
+          0.15542975109611873,
+          0.15994442502147016
+        ]
+      },
+      "workers": 8
+    }
+  ],
+  "input": {
+    "blocks": 3,
+    "bytes": 90386,
+    "file": "blocks_v6/ACTUAL_AGGREGATE.json",
+    "jobs": 24,
+    "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057"
+  },
+  "key_finding": "Compiled has lower actual wait in all 12 paired comparisons. Native has a lower measured window in short W1, short W8 and long W8; long W1 instead favors compiled (window C/N 0.96820). Do not claim universal native warm superiority.",
+  "kind": "INDEPENDENT_ACTUAL_E25_FINAL24_SCIENTIFIC_INTERPRETATION_PEER",
+  "paragraph_word_count": 99,
+  "recommended_results_paragraph": "Starting from full Friendster compact CSR, compiled execution had lower launch-to-wait time in all 12 pairs across three fresh allocation blocks. With eight workers, short/long medians were 15.95/52.30 s for compiled versus 298.94/332.47 s for fresh file-backed native execution; median within-block C/N ratios were 0.0533/0.1573. Yet the long native measured window was faster (35.22 versus 38.23 s; paired ratio 1.086). Thus warm-window performance did not determine terminated-application ranking on this PVC. Native setup includes 29.42 GB promotion/fsync and a 524.87 MB private map per worker; common integrity scans, builds and post-exit checks remain outside application clocks. Variation is descriptive.",
+  "scope": {
+    "aggregate_anchor_verified": true,
+    "claim": "Actual E25 only; no predictive-quality or universal performance inference.",
+    "new_ML_network_cluster_experiments_or_plots": 0,
+    "paired_values_arithmetically_checked": true,
+    "source_or_manuscript_edits": 0
+  },
+  "status": "PASS_WITH_SCOPED_EDITORIAL_RECOMMENDATIONS",
+  "strongest_boundary_example": {
+    "actual_wait": "Native 298.9448 s vs compiled 15.9468 s; median paired C/N 0.0533436 (range 0.0520755–0.0546830).",
+    "configuration": "short320/W8",
+    "direction_in_all_three_blocks": true,
+    "sustained_example": "long6400/W8: native window 35.2205 s vs compiled 38.2338 s (C/N 1.08556), but native wait 332.4713 s vs compiled 52.3019 s (C/N 0.157313).",
+    "window": "Native 2.4071 s vs compiled 2.7646 s; median paired C/N 1.15348 (range 1.13881–1.20362)."
+  },
+  "wording_flags": [
+    {
+      "issue": "The short lifetime must match the long prefix can imply equal durations.",
+      "priority": "Correct before integration",
+      "replacement": "The short consumed-input digest must match the long run’s unsynchronized 576-input prefix.",
+      "where": "compact E25 methods:22"
+    },
+    {
+      "avoid": "Universal native/compiled superiority or a pure language effect; causal attribution to promotion alone.",
+      "issue": "Existing CPU-operator/PENCIL warm rankings remain valid and correctly scoped. Add the distinct measured E25 application ranking.",
+      "where": "introduction second finding; conclusion:8–12"
+    },
+    {
+      "avoid": "Production throughput, total workflow time, time-to-quality or new PENCIL worker-memory evidence.",
+      "issue": "Scope the latency/logical-byte disclaimer to those CPU query controls; identify E25 separately as first-trained-batch progress, terminated lifetimes and spawned-tree PSS.",
+      "where": "limitations:43–44"
+    },
+    {
+      "avoid": "Cold-cache/I/O claims, intrinsic native conversion cost, preconverted/shared-memory reuse claims or extrapolated crossover.",
+      "issue": "Common whole-input integrity scans, library build and post-exit verification remain outside app clocks and may warm caches. Qualification may populate each block’s fresh Numba cache; OS/PVC caches are retained.",
+      "where": "compact E25 methods:16–18"
+    },
+    {
+      "avoid": "Atomic peaks, resident/minimum memory requirements, or transferring E6’s 2.2x representation ratio to E25.",
+      "issue": "All eight cells have 3/3 observed all-phase maxima. These ranges are sampled, non-atomic, partially resident app-tree observations.",
+      "where": "PSS reporting"
+    },
+    {
+      "avoid": "CI/population uncertainty, multi-host generalization or a cross-E23 causal ratio.",
+      "issue": "All three recorded nodes are the same. Block1’s CPU pool differs from blocks2/3; the latter pools match. Fresh allocations are not three independent machines or data/model seeds.",
+      "where": "cross-allocation limitations"
+    },
+    {
+      "issue": "Recorded E25 evidence is offline-auditable, but the frozen deployment guards are author-bound; another cluster needs its own genuine qualified binding.",
+      "where": "artifact accessibility"
+    }
+  ]
+}

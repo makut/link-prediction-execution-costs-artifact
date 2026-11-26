@@ -1,0 +1,62 @@
+{
+  "additional_scans_after_root_stop_instruction": 0,
+  "block3_reads": 0,
+  "coverage": {
+    "credential_candidates": 0,
+    "decoded_explicit_base64_fields": 8,
+    "exact_public_workload_copies": 8,
+    "expanded_limit_bytes": 536870912,
+    "extra_decoded_metadata_bytes": 7446961,
+    "member_limit": 8192,
+    "regular_members": 1397,
+    "tar_decompressed_bytes": 104396800,
+    "unallowlisted_payload_or_encoding_issues": 0,
+    "unique_archives": 6,
+    "v3_alternate_manifest": "Inventory scanned; original whole nested archive SHA anchored by pinned v4 parent. Not represented as a sixth root SHA256_MANIFEST validation.",
+    "whole_member_manifests_present_and_matching": 5
+  },
+  "detailed_review": {
+    "bytes": 13372,
+    "file": "PUBLIC_BLOCK12_AND_FAILED_CAPSULE_ALLOWLIST_REVIEW.json",
+    "sha256": "627ea1fb8d7940f35654117bd0c0e3be8312da2d030619d8d351a52e19861f63"
+  },
+  "extraction_or_ML_network_cluster_repo_publication_actions": 0,
+  "failed_metrics_used_or_pooled": false,
+  "independent_report_only_peer": {
+    "additional_archive_scans": 0,
+    "reviewed_detailed_report_sha256": "627ea1fb8d7940f35654117bd0c0e3be8312da2d030619d8d351a52e19861f63",
+    "reviewer": "independent_ac_review",
+    "status": "PASS_WITHIN_STATED_BOUNDED_SCOPE"
+  },
+  "inputs": [
+    {
+      "bytes": 1415665,
+      "file": "blocks_v6/block1/collected/block_raw.tgz",
+      "sha256": "8a3342735efbf1456bd9a023a09388b9666cc18753fa27d337520e1aa78bb406"
+    },
+    {
+      "bytes": 1407276,
+      "file": "blocks_v6/block2/collected/block_raw.tgz",
+      "sha256": "055adcbadb1f97a683f36ebce86dcd0361dce932363ccf718f226eea3ff0c1f5"
+    },
+    {
+      "bytes": 2697876,
+      "file": "failed_attempt_env_v4/E25_ENV_V4_FAILED_DIAGNOSTIC_v1.tgz",
+      "sha256": "5a470ea09dcfef2c754273dcb9d63288739b7c779799952e5f24a853b25c2365"
+    }
+  ],
+  "kind": "PUBLIC_BLOCK12_AND_LATEST_FAILED_CAPSULE_RELEASE_REVIEW",
+  "limits": "Bounded filename/type/encoding, original member hashes/manifests, literal-pattern and decoded JSON/JSONL/explicit-base64 review. No blanket guarantee beyond this scope; scientific audit/complete 24 and block 3 are outside this review.",
+  "publication_scope": [
+    "Include only the latest 5a470ea09dcfef2c754273dcb9d63288739b7c779799952e5f24a853b25c2365 capsule once; retain v3/v2/v1 nested once, without extra standalone copies.",
+    "Label this capsule FAILED_EXCLUDED_FROM_SCIENCE; no failed/partial timings, metrics or observations are pooled into successful blocks.",
+    "Retain outer MIT/third-party notices and full Per Fuchs / Com-Friendster Dataset Densely Relabelled / DOI 10.5281/zenodo.5146230 / CC-BY-4.0 attribution, explicitly covering every identical archived workload copy. Inside archives only Zenodo markers were found.",
+    "Historical host/container paths, PID/start/device fields, Pod/PVC/boot/GPU identifiers, inactive ownership nonce and token-interface names are retained as provenance, not represented as service credentials."
+  ],
+  "recommendation": "The latest failed capsule may accompany the public artifact exactly once; private-YT-only retention is not required by any finding in this review.",
+  "status": "PASS_BOUNDED_REVIEW_WITH_OUTER_PUBLIC_WORKLOAD_ATTRIBUTION",
+  "workload_identity": {
+    "bytes": 192128,
+    "sha256": "340e61cdd1eb8d329d52be164f919480e6a41feb4c620852df0393c2e9a192f0"
+  }
+}

@@ -1,11 +1,15 @@
 {
-  "version": "0.6.0",
-  "creation_role": "CURRENT_LOCAL_RELEASE_PAYLOAD",
-  "publication_state_at_creation": "NOT_YET_PUBLISHED_V0_6",
-  "published_base": "v0.5.0",
-  "creation_record": "metadata/V0_6_GATES.json",
   "E22_actual_independently_closed": true,
   "E23_actual_independently_closed": true,
   "E24_descriptive_posthoc_closed": true,
-  "publisher_action_is_separate": true
+  "E25_actual_figure_data_and_visual_QA_closed": true,
+  "E25_actual_independently_closed": true,
+  "E25_actual_public_layout_roundtrip_closed": true,
+  "creation_record": "metadata/V0_7_GATES.json",
+  "creation_role": "CURRENT_LOCAL_RECORDED_RELEASE_PAYLOAD",
+  "previous_creation_record": "metadata/V0_6_GATES.json",
+  "publication_state_at_creation": "V0_7_ARCHIVE_AND_PUBLICATION_PENDING",
+  "published_base": "v0.6.0",
+  "publisher_action_is_separate": true,
+  "version": "0.7.0"
 }

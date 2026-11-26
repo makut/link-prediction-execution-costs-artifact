@@ -1,5 +1,5 @@
 {
-  "kind": "CURRENT_MANUSCRIPT_OBJECT_COMMAND_MAP_V0_6_0",
+  "kind": "CURRENT_MANUSCRIPT_OBJECT_COMMAND_MAP_V0_7_0",
   "objects": [
     {
       "manuscript_label": "tab:datasets",
@@ -640,6 +640,195 @@
         }
       ],
       "aggregation": "Stream all6NPZ in256queryblocks, preserve4096distinct official source groups×1001candidates; rank=1+count(negative>positive)+0.5count(ties); MRR=mean1/rank, Hits@K; compare saved metrics then across3seeds mean/sampleSD and paired differences. No model load/test reselection or training."
+    },
+    {
+      "manuscript_label": "fig:e25-lifetimes",
+      "manuscript_binding_status": "CURRENT_E25_ACTUAL24_FIGURE_CONFIRMED_BY_ROOT",
+      "evidence_ids": [
+        "E25"
+      ],
+      "command_ids": [
+        "lifetimes_E25_recorded_verify",
+        "lifetimes_E25_figure"
+      ],
+      "actual_result_status": "PASS_COMPLETE_THREE_BLOCKS_24_APPS",
+      "selector_and_scope": "Actual 24 Friendster instrumented application lifetimes: three fresh allocation blocks, both induction routes, workers 1/8 and genuinely terminated short320/long6400 horizons. Plot joins long synchronized checkpoints and separately marks actual waits.",
+      "raw_inputs": [
+        {
+          "artifact_file": "extensions/e25/recorded/RECORDED_IDENTITIES.json",
+          "bytes": 1913,
+          "sha256": "931c6351e67e2454d53054503bcdc5bec93162b9935c7739bf950d9ff60dc6ce",
+          "fields": [
+            "block1",
+            "block2",
+            "block3",
+            "aggregate",
+            "source_hashes"
+          ],
+          "use": "Externally anchored code archive supplies authority for the exact original raw/collection/audit/aggregate identities; catalog alone is not an independent trust anchor."
+        },
+        {
+          "artifact_file": "extensions/e25/recorded/ACTUAL_AGGREGATE.json",
+          "bytes": 90386,
+          "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057",
+          "fields": [
+            "rows",
+            "paired_compiled_over_native",
+            "platforms",
+            "source_bound_consumed_input_streams",
+            "source_bound_semantic_prefixes_by_horizon"
+          ],
+          "use": "Actual complete 24 descriptive aggregate, excluding every failed/partial attempt."
+        },
+        {
+          "artifact_file": "extensions/e25/recorded/block1/block_raw.tgz",
+          "bytes": 1415665,
+          "sha256": "8a3342735efbf1456bd9a023a09388b9666cc18753fa27d337520e1aa78bb406",
+          "members": [
+            "e25/results/plan.json",
+            "e25/results/SCIENTIFIC_TERMINAL.json",
+            "e25/results/scientific_summary.json",
+            "e25/results/PLATFORM_ADMISSION.json",
+            "e25/results/environment_events.jsonl",
+            "e25/results/disk_observations.jsonl"
+          ],
+          "use": "Eight original apps plus all per-job reports, normal worker-close receipts, clocks and PSS journals. Separate ROOT_COLLECTION.json supplies later outer-exit/lock provenance; exact identity is in RECORDED_IDENTITIES.json."
+        },
+        {
+          "artifact_file": "extensions/e25/recorded/block2/block_raw.tgz",
+          "bytes": 1407276,
+          "sha256": "055adcbadb1f97a683f36ebce86dcd0361dce932363ccf718f226eea3ff0c1f5",
+          "members": [
+            "e25/results/plan.json",
+            "e25/results/SCIENTIFIC_TERMINAL.json",
+            "e25/results/scientific_summary.json",
+            "e25/results/PLATFORM_ADMISSION.json",
+            "e25/results/environment_events.jsonl",
+            "e25/results/disk_observations.jsonl"
+          ],
+          "use": "Eight original apps plus all per-job reports, normal worker-close receipts, clocks and PSS journals. Separate ROOT_COLLECTION.json supplies later outer-exit/lock provenance; exact identity is in RECORDED_IDENTITIES.json."
+        },
+        {
+          "artifact_file": "extensions/e25/recorded/block3/block_raw.tgz",
+          "bytes": 1406139,
+          "sha256": "0c8f0bc145a41e707c0810fa1a420e7a2eed21f450e1fd536cb10c02a7983e1c",
+          "members": [
+            "e25/results/plan.json",
+            "e25/results/SCIENTIFIC_TERMINAL.json",
+            "e25/results/scientific_summary.json",
+            "e25/results/PLATFORM_ADMISSION.json",
+            "e25/results/environment_events.jsonl",
+            "e25/results/disk_observations.jsonl"
+          ],
+          "use": "Eight original apps plus all per-job reports, normal worker-close receipts, clocks and PSS journals. Separate ROOT_COLLECTION.json supplies later outer-exit/lock provenance; exact identity is in RECORDED_IDENTITIES.json."
+        }
+      ],
+      "aggregation": "For each arm/worker group retain the three original block values. Long progress medians/min/max use synchronized prefixes 32/256/1280/3456/6656. Independent short actual waits at 576 and long actual waits at 6656 remain unconnected markers. No long timed 576 checkpoint exists. Ratios are computed within each block before descriptive across-allocation median/min/max/SD. No single execution follows a pointwise median curve.",
+      "claim_limits": "One evaluated reference-sampling DGCNN consumer and two induction routes, with included full-input hash/resource/PSS/disk/metadata observer costs. Fresh native file-backed promotion/fsync is inside the app clock; preconverted/shared-memory native paths were not evaluated. OS/PVC caches link allocations. Descriptive pointwise min/max and sample SD are not CI/population inference; ratios are paired within blocks before aggregation. No time-to-quality, full-upstream SEAL, E23 causal speedup, fitted crossover, cold-cache or best-possible-native-cost claim. PSS is sampled all-eligible-phase app-tree partial residency, with missing values/coverage retained, not full-resident RAM.",
+      "current_artifact_figure": {
+        "file": "extensions/e25/figure/e25_v6_progress_and_terminated_lifetimes.png",
+        "bytes": 130831,
+        "sha256": "769f56c27a2d6ab68840bea953fe62b2fc070413af036befe1edec42554b3f77"
+      },
+      "figure_manifest": {
+        "file": "extensions/e25/figure/FIGURE_MANIFEST.json",
+        "bytes": 3484,
+        "sha256": "343d98627b48ee49b6eb868f5234df0ac4873b970816d57acbb8f873a8fad114"
+      },
+      "derived_fields": [
+        "rows[].metrics.*.by_block",
+        "rows[].metrics.*.median",
+        "rows[].metrics.*.minimum",
+        "rows[].metrics.*.maximum",
+        "rows[].sampled_application_PSS_bytes.by_block",
+        "rows[].sampled_application_PSS_bytes.observed_blocks",
+        "paired_compiled_over_native[].metrics.*.by_block"
+      ],
+      "figure_semantics": {
+        "actual_wait_distinct_from_final_CUDA": true,
+        "linear_y_from_zero": true,
+        "logarithmic_x": true,
+        "median_curve_is_not_one_execution": true,
+        "minmax_is_not_CI": true,
+        "no_time_to_quality_historical_ratio_or_crossover_fit": true,
+        "paired_ratios_before_aggregation": true,
+        "pointwise_median_and_descriptive_minmax": true,
+        "short_wait_not_connected_to_long_curve": true,
+        "timed_long576_invented": false
+      },
+      "actual_offline_roundtrip": {
+        "status": "PASS_ACTUAL_PUBLIC_LAYOUT_E25_V6_ALL3_OFFLINE_ROUNDTRIP",
+        "root_receipt": {
+          "artifact_file": "extensions/e25/recorded/OFFLINE_ROUNDTRIP_ROOT_RECEIPT.json",
+          "bytes": 3672,
+          "sha256": "a2ef5cb6e1e96018e59049042d2fb3a95e3e78da72463df3f0238197d8e01445"
+        },
+        "helper_receipt": {
+          "artifact_file": "extensions/e25/recorded/OFFLINE_VERIFICATION_RECEIPT.json",
+          "bytes": 440,
+          "sha256": "c6a8b1a5614b2081afd4d8b87923f8453cf7008e1d4f055f13ea43b99172d7f3"
+        },
+        "all_four_outputs_byte_identical": true,
+        "python": "3.12.10"
+      },
+      "actual_interpretation_peer": {
+        "artifact_file": "extensions/e25/recorded/E25_FINAL24_INTERPRETATION_PEER.json",
+        "bytes": 7686,
+        "sha256": "e87fb04254911e1b9834bffca25c18da1b83fd0b2a4909ae07537e56db3b9c36"
+      },
+      "actual_figure_data_peer": {
+        "artifact_file": "extensions/e25/figure/INDEPENDENT_ACTUAL_FIGURE_DATA_PEER.json",
+        "bytes": 3659,
+        "sha256": "391b6d6f08559524d70901598798ddbb95013edddc16511fc115af6af40ab002"
+      }
+    },
+    {
+      "manuscript_label": "sec:application-lifetimes",
+      "manuscript_binding_status": "CURRENT_E25_METHOD_PARAGRAPH_CONFIRMED_BY_ROOT",
+      "evidence_ids": [
+        "E23",
+        "E25"
+      ],
+      "command_ids": [
+        "pipeline_E23_recorded_audit",
+        "lifetimes_E25_recorded_verify"
+      ],
+      "selector_and_scope": "E25 method paragraph separates matched terminated lifetimes/checkpoint curves from earlier E23 window boundaries. No new table row or label is asserted.",
+      "raw_inputs": [
+        {
+          "artifact_file": "extensions/e25/source/packet/PROTOCOL.json",
+          "bytes": 8488,
+          "sha256": "88e889be2cac5c8360228ab9181792a4620f9edc3a93014fb66ce49aa697fe98",
+          "canonical_semantic_protocol_sha256": "e89b371089bd01f71579fdc00ec06004373bb549542658cc223914759f392e18"
+        },
+        {
+          "artifact_file": "extensions/e25/source/packet/SOURCE_MANIFEST.json",
+          "bytes": 6307,
+          "sha256": "3fd8783173e4a850018d860459881aafd1dd49e8d4cda101eb273641e47af086"
+        },
+        {
+          "artifact_file": "extensions/e25/recorded/block1/ACTUAL_PLATFORM.json",
+          "bytes": 5586,
+          "sha256": "94621ecca37ab58fbb4b22e11ab5619e22a563e7c6cda1b4422216cbec6c19a6",
+          "use": "Original actual per-block GPU/pool/quota/memory/topology/PVC admission; CPU marketing SKU was not recorded."
+        },
+        {
+          "artifact_file": "extensions/e25/recorded/block2/ACTUAL_PLATFORM.json",
+          "bytes": 5584,
+          "sha256": "c2f2650ed3323b2143952dc17cb99c2f84ae7d0c85fd5a1fefe72782fd2561f7",
+          "use": "Original actual per-block GPU/pool/quota/memory/topology/PVC admission; CPU marketing SKU was not recorded."
+        },
+        {
+          "artifact_file": "extensions/e25/recorded/block3/ACTUAL_PLATFORM.json",
+          "bytes": 5584,
+          "sha256": "99699f6d46f5dd13e863f2c048e8a15de1246d04fa43c37d8240b5dca0270695",
+          "use": "Original actual per-block GPU/pool/quota/memory/topology/PVC admission; CPU marketing SKU was not recorded."
+        }
+      ],
+      "aggregation": "Three complete original allocation blocks preserve sampler/model/input/checkpoint/worker/source contracts. Short 576 includes 256 warmup + 320 measured graphs; long 6656 includes 256 + 6400. Actual wait includes teardown and returned child exit. Native promotion/fsync occurs inside each native app; whole-input admission hash/build/tiny qualification are outside individual app clocks.",
+      "claim_limits": "One evaluated reference-sampling DGCNN consumer and two induction routes, with included full-input hash/resource/PSS/disk/metadata observer costs. Fresh native file-backed promotion/fsync is inside the app clock; preconverted/shared-memory native paths were not evaluated. OS/PVC caches link allocations. Descriptive pointwise min/max and sample SD are not CI/population inference; ratios are paired within blocks before aggregation. No time-to-quality, full-upstream SEAL, E23 causal speedup, fitted crossover, cold-cache or best-possible-native-cost claim. PSS is sampled all-eligible-phase app-tree partial residency, with missing values/coverage retained, not full-resident RAM.",
+      "platform_scope": "One whole 80 GB H100 and 256 GiB cgroup per block, quota 2700000/100000, declared 27 logical-CPU pool spanning 14 observed physical-core identities. CPU marketing SKU unknown. No E25 SKU is inferred from topology/GPU/node identity. Original PVC/internal image binding is author provenance, not a turnkey external replay launcher. All three actual nodes match; block 1 logical pool differs from matching blocks 2/3. Fresh allocations are not independent machines/data/model seeds.",
+      "parent_manuscript_label": "sec:pipeline"
     }
   ],
   "commands": {
@@ -667,7 +856,9 @@
     "cpu_E22_recorded_audit": "python3 -B \"$ARTIFACT/extensions/e22/verify_e22.py\" --output \"$RESULTS/e22_recorded_verified.json\"",
     "pipeline_E23_recorded_audit": "python3 -B \"$ARTIFACT/extensions/e23/verify_e23.py\" --archive \"$ARTIFACT/extensions/e23/recorded/pipeline_repeats_e23_20261126_final_v1.tgz\" --archive-sha256 \"41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073\" --outer-source-sha256 \"e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e\" --outer-complete \"$ARTIFACT/extensions/e23/recorded/outer_COMPLETE.json\" --archive-pointer \"$ARTIFACT/extensions/e23/recorded/archive_pointer.json\" --output \"$RESULTS/e23_recorded_verified.json\"",
     "matched_cost_regimes_recorded": "python3 -B \"$ARTIFACT/extensions/e24/publicanalyze_cost_regimes.py\" --friendster-archive \"$ASSETS/lpp_public_friendster_cpu_matched_v2_raw.tgz\" --citation2-archive \"$ARTIFACT/extensions/e22/recorded/citation2_cpu_matched_v1_20261126.tgz\" --output \"$RESULTS/matched_cost_regimes_recorded.json\"",
-    "matched_cost_regimes_figure": "python3 -B \"$ARTIFACT/extensions/e24/plot_matched_cost_regimes.py\" --input \"$RESULTS/matched_cost_regimes_recorded.json\" --out \"$RESULTS/matched_cost_regimes_figures\""
+    "matched_cost_regimes_figure": "python3 -B \"$ARTIFACT/extensions/e24/plot_matched_cost_regimes.py\" --input \"$RESULTS/matched_cost_regimes_recorded.json\" --out \"$RESULTS/matched_cost_regimes_figures\"",
+    "lifetimes_E25_recorded_verify": "python3 -B -S \"$ARTIFACT/extensions/e25/verify_recorded_v6.py\" --artifact \"$ARTIFACT\" --out \"$RESULTS/e25_recorded_verified\"",
+    "lifetimes_E25_figure": "\"$E25_PLOT_PY\" -B \"$ARTIFACT/extensions/e25/figure/plot_aggregate_v6.py\" --aggregate \"$ARTIFACT/extensions/e25/recorded/ACTUAL_AGGREGATE.json\" --aggregate-sha256 \"2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057\" --out \"$RESULTS/e25_figure\""
   },
   "old_E19_instrumentation_is_separate": true,
   "full_fresh_execution_commands": "PUBLIC_COMMANDS.txt and reproduction/*/README.txt",
@@ -680,7 +871,7 @@
     "pencil_E19_instrumented48_raw": "",
     "pencil_E21_clean44_raw": ""
   },
-  "label_policy": "The map uses manuscript labels, not fixed table counts. E24 is the current two-graph posthoc analysis; E10 and E17 commands remain archival. E23 is recorded PASS. Root reconciles final table/prose layout against the submission manuscript before archive freeze.",
+  "label_policy": "The map uses manuscript labels, not fixed table counts. E24 is the two-graph posthoc analysis; E10/E17 remain archival and E23 is recorded PASS. Root confirmed E25 fig:e25-lifetimes and sec:application-lifetimes under sec:pipeline; no new table row labels are asserted.",
   "immutable_v0_5_companion_assets": {
     "cpu_E20_raw": {
       "filename": "lpp_public_friendster_cpu_matched_v2_raw.tgz",
@@ -731,13 +922,15 @@
       "reuse_unchanged": true
     }
   },
-  "companion_asset_policy": "Reuse the exact six published v0.5.0 URLs/bytes/SHA256 values. New E22/E23 extension payloads do not change those assets or repoint them to a future tag. Historical download_url_at_creation=null flags remain provenance, not current publication status.",
+  "companion_asset_policy": "Reuse the exact six published v0.5.0 URLs/bytes/SHA256 values. New E22/E23/E25 extension payloads do not change those assets or repoint them to a future tag. Historical download_url_at_creation=null flags remain provenance, not current publication status.",
   "command_notes": {
     "cpu_E22_recorded_audit": "Recorded archival verification only; output path must be new. It recomputes E22 Citation2. Keep the unchanged E20 command for the Friendster columns.",
     "pipeline_E23_recorded_audit": "Recorded archival verification with included genuine raw archive, exact SHA and separate final terminal/persistence receipts. Uses only stdlib; output filename must be new. Source-only invocation is a distinct mode.",
     "matched_cost_regimes_recorded": "Stdlib-only posthoc reaggregation, no new experiment. Streams both pinned raw tar archives, uses only the selected128 geometry records in each graph and only actual matched Numba32 timing vectors. --output must be a new JSON filename.",
     "matched_cost_regimes_figure": "Matplotlib rendering of the newly recomputed E24 JSON. Use a new --out directory. All 256 observations are retained; use the accepted filename/hash mapping, with no fit or confidence interval.",
     "posthoc_friendster": "Retained archival E17 Friendster768 diagnostic. It no longer maps to current tab:posthoc-cost-regimes or fig:posthoc-cost-regimes.",
-    "public_figures": "Retains historical figure-generation commands used by other current objects. Its old E17 posthoc PNG is archival; current E24 posthoc rendering uses matched_cost_regimes_figure."
+    "public_figures": "Retains historical figure-generation commands used by other current objects. Its old E17 posthoc PNG is archival; current E24 posthoc rendering uses matched_cost_regimes_figure.",
+    "lifetimes_E25_recorded_verify": "Python 3.10+ stdlib-only recorded verification with the real included three-block catalog. Fresh directory outside ARTIFACT; re-audits/aggregate must match published whole bytes/SHA. Genuine public-layout wrapper receipt is separate from static source reviews. The genuine public-layout Python 3.12.10 wrapper roundtrip passed; helper/root receipts are included and all four outputs match byte-for-byte.",
+    "lifetimes_E25_figure": "Render only from the pinned actual aggregate with Python 3.12.10/Matplotlib 3.10.3 and a fresh output directory; no new measurement. Source emits QA pending; shipped root QA is separate. Long checkpoint curves and independent short/long actual-wait markers retain distinct boundaries."
   }
 }

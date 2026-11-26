@@ -1,0 +1,96 @@
+{
+  "actual_child_returncode": 0,
+  "all_four_outputs_byte_identical": true,
+  "all_generated_workproducts_retained": true,
+  "argv": [
+    "/Users/m.utushkin/.pyenv/versions/3.12.10/bin/python3",
+    "-B",
+    "-S",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_publication_candidate_v0_5/repository/artifact/extensions/e25/verify_recorded_v6.py",
+    "--artifact",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_publication_candidate_v0_5/repository/artifact",
+    "--out",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_native_lifecycle_20261126/public_layout_roundtrip_all3_20261127_01"
+  ],
+  "blocks": 3,
+  "catalog_input": {
+    "bytes": 1913,
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_publication_candidate_v0_5/repository/artifact/extensions/e25/recorded/RECORDED_IDENTITIES.json",
+    "sha256": "931c6351e67e2454d53054503bcdc5bec93162b9935c7739bf950d9ff60dc6ce"
+  },
+  "cwd": "/private/tmp/e25-public-all3-95_yfdqt",
+  "disk_free_bytes_after": 12762370048,
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "removed",
+    "PYTHONSAFEPATH": "removed",
+    "bytecode_disabled_by": "-B",
+    "normal_script_directory_import_retained": true,
+    "site_disabled_by": "-S"
+  },
+  "finished_unix": 1795729981.7465322,
+  "fresh_output_directory": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_native_lifecycle_20261126/public_layout_roundtrip_all3_20261127_01",
+  "frozen_source_or_original_public_record_edits": 0,
+  "helper_receipt": {
+    "bytes": 440,
+    "sha256": "c6a8b1a5614b2081afd4d8b87923f8453cf7008e1d4f055f13ea43b99172d7f3"
+  },
+  "installed_verifier": {
+    "bytes": 7167,
+    "sha256": "655f6db01b91b05c8507c9215646c72abac44e6ec598d79da86b131218895928"
+  },
+  "jobs": 24,
+  "kind": "ROOT_ACTUAL_PUBLIC_LAYOUT_E25_V6_ALL3_OFFLINE_ROUNDTRIP",
+  "new_experiments_ML_graph_model_network_cluster_YT_actions": 0,
+  "python_executable": "/Users/m.utushkin/.pyenv/versions/3.12.10/bin/python3",
+  "python_version": "3.12.10 (main, May 20 2025, 17:57:11) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "raw_data_copies_or_extraction": 0,
+  "started_unix": 1795729980.100102,
+  "status": "PASS_ACTUAL_PUBLIC_LAYOUT_E25_V6_ALL3_OFFLINE_ROUNDTRIP",
+  "verified_outputs": {
+    "ACTUAL_AGGREGATE.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 90386,
+        "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057"
+      },
+      "recorded": {
+        "bytes": 90386,
+        "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057"
+      }
+    },
+    "block1/ACTUAL_AUDIT.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 138549,
+        "sha256": "acaf74fa83d36374d39a83c28e33a7a07fe1ba1cfc0113356673a9ffdb480dc8"
+      },
+      "recorded": {
+        "bytes": 138549,
+        "sha256": "acaf74fa83d36374d39a83c28e33a7a07fe1ba1cfc0113356673a9ffdb480dc8"
+      }
+    },
+    "block2/ACTUAL_AUDIT.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 138495,
+        "sha256": "b292cbebfb327d1ea581f7a9dfd94ca5f9cf63392f6acc6c8a267ca31a4bb02d"
+      },
+      "recorded": {
+        "bytes": 138495,
+        "sha256": "b292cbebfb327d1ea581f7a9dfd94ca5f9cf63392f6acc6c8a267ca31a4bb02d"
+      }
+    },
+    "block3/ACTUAL_AUDIT.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 138506,
+        "sha256": "4f9da3224797eaaa9fbb7c0c6eaea4db103832421a7a76c9957892e00642b789"
+      },
+      "recorded": {
+        "bytes": 138506,
+        "sha256": "4f9da3224797eaaa9fbb7c0c6eaea4db103832421a7a76c9957892e00642b789"
+      }
+    }
+  }
+}

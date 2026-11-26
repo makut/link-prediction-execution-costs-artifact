@@ -1,0 +1,954 @@
+{
+  "PSS_by_stream": {
+    "e25/results/actual_cuda_qualification.pss.jsonl": {
+      "eligible_samples": 18,
+      "ineligible_samples": 2,
+      "maximum": {
+        "phase": "qualification_or_build",
+        "process_count": 11,
+        "sample_index_1based": 14,
+        "scan_end_monotonic_ns": 5392609794279034,
+        "tree_pss_bytes": 3883409408
+      },
+      "phases": {
+        "qualification_or_build": {
+          "eligible_samples": 18,
+          "max_sampled_tree_pss_bytes": 3883409408
+        }
+      },
+      "rejected_observations": [
+        {
+          "reasons": [
+            "incomplete_PSS_unknown"
+          ],
+          "sample_index_1based": 6
+        },
+        {
+          "reasons": [
+            "incomplete_PSS_unknown"
+          ],
+          "sample_index_1based": 15
+        }
+      ],
+      "sampling_errors": 0,
+      "status": "observed",
+      "total_samples": 20,
+      "unknown_PSS_samples": 2
+    },
+    "e25/results/build_native.pss.jsonl": {
+      "eligible_samples": 1,
+      "ineligible_samples": 0,
+      "maximum": {
+        "phase": "qualification_or_build",
+        "process_count": 2,
+        "sample_index_1based": 1,
+        "scan_end_monotonic_ns": 5392566051374709,
+        "tree_pss_bytes": 9201664
+      },
+      "phases": {
+        "qualification_or_build": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 9201664
+        }
+      },
+      "rejected_observations": [],
+      "sampling_errors": 0,
+      "status": "observed",
+      "total_samples": 1,
+      "unknown_PSS_samples": 0
+    },
+    "e25/results/long6400_w1_r1_reference_union_compiled.pss.jsonl": {
+      "eligible_samples": 131,
+      "ineligible_samples": 0,
+      "maximum": {
+        "phase": "checkpointed_measured_window",
+        "process_count": 3,
+        "sample_index_1based": 120,
+        "scan_end_monotonic_ns": 5393280915316334,
+        "tree_pss_bytes": 16934803456
+      },
+      "phases": {
+        "checkpointed_measured_window": {
+          "eligible_samples": 121,
+          "max_sampled_tree_pss_bytes": 16934803456
+        },
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 492375040
+        },
+        "shutdown": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 16924563456
+        },
+        "warmup": {
+          "eligible_samples": 5,
+          "max_sampled_tree_pss_bytes": 6617344000
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 1111187456
+        }
+      },
+      "rejected_observations": [],
+      "sampling_errors": 0,
+      "status": "observed",
+      "total_samples": 131,
+      "unknown_PSS_samples": 0
+    },
+    "e25/results/long6400_w1_r1_reference_union_native_persistent.pss.jsonl": {
+      "eligible_samples": 262,
+      "ineligible_samples": 1,
+      "maximum": {
+        "phase": "shutdown",
+        "process_count": 3,
+        "sample_index_1based": 261,
+        "scan_end_monotonic_ns": 5393904361376503,
+        "tree_pss_bytes": 46297209856
+      },
+      "phases": {
+        "checkpointed_measured_window": {
+          "eligible_samples": 132,
+          "max_sampled_tree_pss_bytes": 46285831168
+        },
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 528881664
+        },
+        "model_setup": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 747753472
+        },
+        "native_promotion": {
+          "eligible_samples": 119,
+          "max_sampled_tree_pss_bytes": 45039004672
+        },
+        "shutdown": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 46297209856
+        },
+        "warmup": {
+          "eligible_samples": 4,
+          "max_sampled_tree_pss_bytes": 10259844096
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 2982094848
+        }
+      },
+      "rejected_observations": [
+        {
+          "reasons": [
+            "incomplete_PSS_unknown"
+          ],
+          "sample_index_1based": 263
+        }
+      ],
+      "sampling_errors": 0,
+      "status": "observed",
+      "total_samples": 263,
+      "unknown_PSS_samples": 1
+    },
+    "e25/results/long6400_w8_r1_reference_union_compiled.pss.jsonl": {
+      "eligible_samples": 21,
+      "ineligible_samples": 2,
+      "maximum": {
+        "phase": "checkpointed_measured_window",
+        "process_count": 10,
+        "sample_index_1based": 20,
+        "scan_end_monotonic_ns": 5394758147516529,
+        "tree_pss_bytes": 19778330624
+      },
+      "phases": {
+        "checkpointed_measured_window": {
+          "eligible_samples": 16,
+          "max_sampled_tree_pss_bytes": 19778330624
+        },
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 546016256
+        },
+        "reporting": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 1557112832
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 3602168832
+        }
+      },
+      "rejected_observations": [
+        {
+          "reasons": [
+            "phase_transition_or_unknown"
+          ],
+          "sample_index_1based": 5
+        },
+        {
+          "reasons": [
+            "unstable_membership",
+            "incomplete_PSS_unknown"
+          ],
+          "sample_index_1based": 22
+        }
+      ],
+      "sampling_errors": 0,
+      "status": "observed",
+      "total_samples": 23,
+      "unknown_PSS_samples": 1
+    },
+    "e25/results/long6400_w8_r1_reference_union_native_persistent.pss.jsonl": {
+      "eligible_samples": 136,
+      "ineligible_samples": 1,
+      "maximum": {
+        "phase": "checkpointed_measured_window",
+        "process_count": 10,
+        "sample_index_1based": 135,
+        "scan_end_monotonic_ns": 5394666266166966,
+        "tree_pss_bytes": 52697571328
+      },
+      "phases": {
+        "checkpointed_measured_window": {
+          "eligible_samples": 15,
+          "max_sampled_tree_pss_bytes": 52697571328
+        },
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 533678080
+        },
+        "native_promotion": {
+          "eligible_samples": 116,
+          "max_sampled_tree_pss_bytes": 45053400064
+        },
+        "shutdown": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 19397513216
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 9576297472
+        }
+      },
+      "rejected_observations": [
+        {
+          "reasons": [
+            "unstable_membership",
+            "phase_transition_or_unknown"
+          ],
+          "sample_index_1based": 137
+        }
+      ],
+      "sampling_errors": 0,
+      "status": "observed",
+      "total_samples": 137,
+      "unknown_PSS_samples": 0
+    },
+    "e25/results/short320_w1_r1_reference_union_compiled.pss.jsonl": {
+      "eligible_samples": 16,
+      "ineligible_samples": 0,
+      "maximum": {
+        "phase": "shutdown",
+        "process_count": 3,
+        "sample_index_1based": 16,
+        "scan_end_monotonic_ns": 5393987411233018,
+        "tree_pss_bytes": 10945223680
+      },
+      "phases": {
+        "checkpointed_measured_window": {
+          "eligible_samples": 6,
+          "max_sampled_tree_pss_bytes": 10560250880
+        },
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 524789760
+        },
+        "shutdown": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 10945223680
+        },
+        "warmup": {
+          "eligible_samples": 5,
+          "max_sampled_tree_pss_bytes": 6677992448
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 1114362880
+        }
+      },
+      "rejected_observations": [],
+      "sampling_errors": 0,
+      "status": "observed",
+      "total_samples": 16,
+      "unknown_PSS_samples": 0
+    },
+    "e25/results/short320_w1_r1_reference_union_native_persistent.pss.jsonl": {
+      "eligible_samples": 134,
+      "ineligible_samples": 0,
+      "maximum": {
+        "phase": "native_promotion",
+        "process_count": 1,
+        "sample_index_1based": 16,
+        "scan_end_monotonic_ns": 5394037733916054,
+        "tree_pss_bytes": 45045130240
+      },
+      "phases": {
+        "checkpointed_measured_window": {
+          "eligible_samples": 5,
+          "max_sampled_tree_pss_bytes": 17079719936
+        },
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 520432640
+        },
+        "native_promotion": {
+          "eligible_samples": 119,
+          "max_sampled_tree_pss_bytes": 45045130240
+        },
+        "reporting": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 1550143488
+        },
+        "shutdown": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 18306197504
+        },
+        "warmup": {
+          "eligible_samples": 4,
+          "max_sampled_tree_pss_bytes": 10014275584
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 2209262592
+        }
+      },
+      "rejected_observations": [],
+      "sampling_errors": 0,
+      "status": "observed",
+      "total_samples": 134,
+      "unknown_PSS_samples": 0
+    },
+    "e25/results/short320_w8_r1_reference_union_compiled.pss.jsonl": {
+      "eligible_samples": 8,
+      "ineligible_samples": 0,
+      "maximum": {
+        "phase": "shutdown",
+        "process_count": 10,
+        "sample_index_1based": 7,
+        "scan_end_monotonic_ns": 5392992620502880,
+        "tree_pss_bytes": 15255835648
+      },
+      "phases": {
+        "checkpointed_measured_window": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 12149600256
+        },
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 492892160
+        },
+        "reporting": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 1537695744
+        },
+        "shutdown": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 15255835648
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 3,
+          "max_sampled_tree_pss_bytes": 6511377408
+        }
+      },
+      "rejected_observations": [],
+      "sampling_errors": 0,
+      "status": "observed",
+      "total_samples": 8,
+      "unknown_PSS_samples": 0
+    },
+    "e25/results/short320_w8_r1_reference_union_native_persistent.pss.jsonl": {
+      "eligible_samples": 124,
+      "ineligible_samples": 3,
+      "maximum": {
+        "phase": "native_promotion",
+        "process_count": 1,
+        "sample_index_1based": 16,
+        "scan_end_monotonic_ns": 5392673643110432,
+        "tree_pss_bytes": 45041647616
+      },
+      "phases": {
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 524686336
+        },
+        "native_promotion": {
+          "eligible_samples": 120,
+          "max_sampled_tree_pss_bytes": 45041647616
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 7612391424
+        }
+      },
+      "rejected_observations": [
+        {
+          "reasons": [
+            "phase_transition_or_unknown"
+          ],
+          "sample_index_1based": 125
+        },
+        {
+          "reasons": [
+            "phase_transition_or_unknown"
+          ],
+          "sample_index_1based": 126
+        },
+        {
+          "reasons": [
+            "incomplete_PSS_unknown"
+          ],
+          "sample_index_1based": 127
+        }
+      ],
+      "sampling_errors": 0,
+      "status": "observed",
+      "total_samples": 127,
+      "unknown_PSS_samples": 1
+    }
+  },
+  "PSS_rule": "Max over every independently eligible complete-PSS, stable PID/start-time membership, same-phase observation. No CPU/environment fields or selected-phase restriction used. First raw tied maximum retained. Incomplete PSS remains unknown, never zero.",
+  "block": 1,
+  "comparisons": "All recomputed raw8 timing metrics, four complete paired metric rows, eight headline PSS maxima and sample indexes/counts/phases, per-phase PSS diagnostics, all ten PSS stream observation counts, archive and manifest hashes compared to ACTUAL_AUDIT.json.",
+  "discrepancies": [],
+  "fresh_application_jobs": 8,
+  "global24_complete": false,
+  "global_repetition": 1,
+  "independence": "Standard-library arithmetic and raw archive streaming; no auditor implementation read or invoked. ACTUAL_AUDIT.json used only for final serialized-output comparison. No source edits, experiment, cluster, network, YT, Git, or CMT action.",
+  "inputs": {
+    "ACTUAL_AUDIT.json": {
+      "sha256": "acaf74fa83d36374d39a83c28e33a7a07fe1ba1cfc0113356673a9ffdb480dc8"
+    },
+    "ROOT_COLLECTION.json": {
+      "sha256": "c2450ce59ffe8906f00bdf2e4c479645332537c95f35b6147482d9966592a98a"
+    },
+    "block_raw.tgz": {
+      "bytes": 1415665,
+      "sha256": "8a3342735efbf1456bd9a023a09388b9666cc18753fa27d337520e1aa78bb406"
+    }
+  },
+  "integrity": {
+    "all_declared_member_bytes_and_sha256_match": true,
+    "manifest_declared_files": 236,
+    "manifest_sha256": "36420dd8e63e66a17767e0d249a05e8eff5c7eb94d903ec6caf402fa6f107394",
+    "uncompressed_member_bytes_including_manifest": 29217908,
+    "whole_archive_members_rehashed_including_manifest": 237
+  },
+  "kind": "E25_BLOCK1_INDEPENDENT_NUMERIC_PEER",
+  "limits": [
+    "Only block1/repetition1 of the required three blocks is checked; no full24 certificate.",
+    "PSS is sampled and non-atomic; maxima are not a continuous or full-resident memory requirement. Unknown/rejected observations are retained and cannot bound unseen peaks.",
+    "No claim of time-to-quality, universal native cost, or independently hashed consumed tensor bytes.",
+    "This peer report checks numeric/integrity scope only; environment/storage/source safety audits remain separate."
+  ],
+  "paired_compiled_over_native": [
+    {
+      "denominator": "reference_union_native_persistent",
+      "horizon": "short320",
+      "metrics": {
+        "checkpointed_measured_seconds": 1.0752128181719167,
+        "first_trained_batch_launch_to_complete_seconds": 0.03131258753834737,
+        "input_hash_seconds_included": 0.9895408824585866,
+        "launch_to_actual_wait_seconds": 0.11069395631190795,
+        "launch_to_first_batch_ready_seconds": 0.02898470353157873,
+        "measured_prefix320_launch_to_complete_seconds": 0.1008398556040989,
+        "warmup_complete_launch_to_complete_seconds": 0.06073654215119887,
+        "worker_shutdown_seconds": 0.8515943770499526
+      },
+      "numerator": "reference_union_compiled",
+      "repetition": 1,
+      "workers": 1
+    },
+    {
+      "denominator": "reference_union_native_persistent",
+      "horizon": "short320",
+      "metrics": {
+        "checkpointed_measured_seconds": 1.1388115890778279,
+        "first_trained_batch_launch_to_complete_seconds": 0.034508396083834776,
+        "input_hash_seconds_included": 1.0199113997254834,
+        "launch_to_actual_wait_seconds": 0.05468298396911872,
+        "launch_to_first_batch_ready_seconds": 0.03230176359459408,
+        "measured_prefix320_launch_to_complete_seconds": 0.043841549702611435,
+        "warmup_complete_launch_to_complete_seconds": 0.03469738592377505,
+        "worker_shutdown_seconds": 1.0342013722485854
+      },
+      "numerator": "reference_union_compiled",
+      "repetition": 1,
+      "workers": 8
+    },
+    {
+      "denominator": "reference_union_native_persistent",
+      "horizon": "long6400",
+      "metrics": {
+        "checkpointed_measured_seconds": 0.9682014641374529,
+        "first_trained_batch_launch_to_complete_seconds": 0.031105019589019508,
+        "input_hash_seconds_included": 0.9996356229222999,
+        "launch_to_actual_wait_seconds": 0.5078645957961823,
+        "launch_to_first_batch_ready_seconds": 0.029019600109213277,
+        "measured_prefix1024_launch_to_complete_seconds": 0.18338969748277584,
+        "measured_prefix3200_launch_to_complete_seconds": 0.3608449281041852,
+        "measured_prefix6400_launch_to_complete_seconds": 0.5069621046285011,
+        "warmup_complete_launch_to_complete_seconds": 0.06105530871389482,
+        "worker_shutdown_seconds": 0.5132916827120533
+      },
+      "numerator": "reference_union_compiled",
+      "repetition": 1,
+      "workers": 1
+    },
+    {
+      "denominator": "reference_union_native_persistent",
+      "horizon": "long6400",
+      "metrics": {
+        "checkpointed_measured_seconds": 1.0706948177149853,
+        "first_trained_batch_launch_to_complete_seconds": 0.0311420347247993,
+        "input_hash_seconds_included": 1.0062036146710176,
+        "launch_to_actual_wait_seconds": 0.1599444250214702,
+        "launch_to_first_batch_ready_seconds": 0.02892730599401529,
+        "measured_prefix1024_launch_to_complete_seconds": 0.05152702760447154,
+        "measured_prefix3200_launch_to_complete_seconds": 0.09273849343907982,
+        "measured_prefix6400_launch_to_complete_seconds": 0.1487700015404759,
+        "warmup_complete_launch_to_complete_seconds": 0.031310960381429435,
+        "worker_shutdown_seconds": 1.0590421892923818
+      },
+      "numerator": "reference_union_compiled",
+      "repetition": 1,
+      "workers": 8
+    }
+  ],
+  "ratio_method": "Exact rational division of decimal seconds corresponding to integer ns durations; round to binary64 only once. Serialized input-hash seconds are used as recorded, not remeasured.",
+  "runs": [
+    {
+      "arm": "reference_union_native_persistent",
+      "checkpoints": [
+        {
+          "elapsed_ns": 288169850863,
+          "elapsed_seconds": 288.169850863,
+          "label": "first_trained_batch",
+          "measured_graphs": 0,
+          "total_trained_graphs": 32
+        },
+        {
+          "elapsed_ns": 288238971690,
+          "elapsed_seconds": 288.23897169,
+          "label": "warmup_complete",
+          "measured_graphs": 0,
+          "total_trained_graphs": 256
+        },
+        {
+          "elapsed_ns": 290646073974,
+          "elapsed_seconds": 290.646073974,
+          "label": "measured_prefix320",
+          "measured_graphs": 320,
+          "total_trained_graphs": 576
+        }
+      ],
+      "horizon": "short320",
+      "iterator_to_first_batch_ns": 4544268553,
+      "launch_ns": 5392639027423516,
+      "launch_to_recorded_wait_ns": 294414578438,
+      "measured_window_ns": 2407092990,
+      "metrics": {
+        "checkpointed_measured_seconds": 2.40709299,
+        "first_trained_batch_launch_to_complete_seconds": 288.169850863,
+        "input_hash_seconds_included": 0.021680294,
+        "launch_to_actual_wait_seconds": 294.414578438,
+        "launch_to_first_batch_ready_seconds": 287.55879594,
+        "measured_prefix320_launch_to_complete_seconds": 290.646073974,
+        "warmup_complete_launch_to_complete_seconds": 288.23897169,
+        "worker_shutdown_seconds": 2.198185396
+      },
+      "name": "short320_w8_r1_reference_union_native_persistent",
+      "recorded_wait_ns": 5392933442001954,
+      "repetition": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "checkpoints": [
+        {
+          "elapsed_ns": 9944279353,
+          "elapsed_seconds": 9.944279353,
+          "label": "first_trained_batch",
+          "measured_graphs": 0,
+          "total_trained_graphs": 32
+        },
+        {
+          "elapsed_ns": 10001138839,
+          "elapsed_seconds": 10.001138839,
+          "label": "warmup_complete",
+          "measured_graphs": 0,
+          "total_trained_graphs": 256
+        },
+        {
+          "elapsed_ns": 12742374298,
+          "elapsed_seconds": 12.742374298,
+          "label": "measured_prefix320",
+          "measured_graphs": 320,
+          "total_trained_graphs": 576
+        }
+      ],
+      "horizon": "short320",
+      "iterator_to_first_batch_ns": 5541386303,
+      "launch_ns": 5392979116853472,
+      "launch_to_recorded_wait_ns": 16099467673,
+      "measured_window_ns": 2741225393,
+      "metrics": {
+        "checkpointed_measured_seconds": 2.741225393,
+        "first_trained_batch_launch_to_complete_seconds": 9.944279353,
+        "input_hash_seconds_included": 0.022111979,
+        "launch_to_actual_wait_seconds": 16.099467673,
+        "launch_to_first_batch_ready_seconds": 9.288656246,
+        "measured_prefix320_launch_to_complete_seconds": 12.742374298,
+        "warmup_complete_launch_to_complete_seconds": 10.001138839,
+        "worker_shutdown_seconds": 2.273366353
+      },
+      "name": "short320_w8_r1_reference_union_compiled",
+      "recorded_wait_ns": 5392995216321145,
+      "repetition": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "checkpoints": [
+        {
+          "elapsed_ns": 8913359133,
+          "elapsed_seconds": 8.913359133,
+          "label": "first_trained_batch",
+          "measured_graphs": 0,
+          "total_trained_graphs": 32
+        },
+        {
+          "elapsed_ns": 17996683484,
+          "elapsed_seconds": 17.996683484,
+          "label": "warmup_complete",
+          "measured_graphs": 0,
+          "total_trained_graphs": 256
+        },
+        {
+          "elapsed_ns": 61483727922,
+          "elapsed_seconds": 61.483727922,
+          "label": "measured_prefix1024",
+          "measured_graphs": 1024,
+          "total_trained_graphs": 1280
+        },
+        {
+          "elapsed_ns": 156177184800,
+          "elapsed_seconds": 156.1771848,
+          "label": "measured_prefix3200",
+          "measured_graphs": 3200,
+          "total_trained_graphs": 3456
+        },
+        {
+          "elapsed_ns": 293897197071,
+          "elapsed_seconds": 293.897197071,
+          "label": "measured_prefix6400",
+          "measured_graphs": 6400,
+          "total_trained_graphs": 6656
+        }
+      ],
+      "horizon": "long6400",
+      "iterator_to_first_batch_ns": 4568466857,
+      "launch_ns": 5393010706726013,
+      "launch_to_recorded_wait_ns": 297576540718,
+      "measured_window_ns": 275900503513,
+      "metrics": {
+        "checkpointed_measured_seconds": 275.900503513,
+        "first_trained_batch_launch_to_complete_seconds": 8.913359133,
+        "input_hash_seconds_included": 0.223483644,
+        "launch_to_actual_wait_seconds": 297.576540718,
+        "launch_to_first_batch_ready_seconds": 8.29721485,
+        "measured_prefix1024_launch_to_complete_seconds": 61.483727922,
+        "measured_prefix3200_launch_to_complete_seconds": 156.1771848,
+        "measured_prefix6400_launch_to_complete_seconds": 293.897197071,
+        "warmup_complete_launch_to_complete_seconds": 17.996683484,
+        "worker_shutdown_seconds": 2.451887096
+      },
+      "name": "long6400_w1_r1_reference_union_compiled",
+      "recorded_wait_ns": 5393308283266731,
+      "repetition": 1,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_native_persistent",
+      "checkpoints": [
+        {
+          "elapsed_ns": 286556936815,
+          "elapsed_seconds": 286.556936815,
+          "label": "first_trained_batch",
+          "measured_graphs": 0,
+          "total_trained_graphs": 32
+        },
+        {
+          "elapsed_ns": 294760338832,
+          "elapsed_seconds": 294.760338832,
+          "label": "warmup_complete",
+          "measured_graphs": 0,
+          "total_trained_graphs": 256
+        },
+        {
+          "elapsed_ns": 335262715223,
+          "elapsed_seconds": 335.262715223,
+          "label": "measured_prefix1024",
+          "measured_graphs": 1024,
+          "total_trained_graphs": 1280
+        },
+        {
+          "elapsed_ns": 432809699226,
+          "elapsed_seconds": 432.809699226,
+          "label": "measured_prefix3200",
+          "measured_graphs": 3200,
+          "total_trained_graphs": 3456
+        },
+        {
+          "elapsed_ns": 579722220631,
+          "elapsed_seconds": 579.722220631,
+          "label": "measured_prefix6400",
+          "measured_graphs": 6400,
+          "total_trained_graphs": 6656
+        }
+      ],
+      "horizon": "long6400",
+      "iterator_to_first_batch_ns": 4277000190,
+      "launch_ns": 5393323791598780,
+      "launch_to_recorded_wait_ns": 585936769724,
+      "measured_window_ns": 284961873879,
+      "metrics": {
+        "checkpointed_measured_seconds": 284.961873879,
+        "first_trained_batch_launch_to_complete_seconds": 286.556936815,
+        "input_hash_seconds_included": 0.223565106,
+        "launch_to_actual_wait_seconds": 585.936769724,
+        "launch_to_first_batch_ready_seconds": 285.917614949,
+        "measured_prefix1024_launch_to_complete_seconds": 335.262715223,
+        "measured_prefix3200_launch_to_complete_seconds": 432.809699226,
+        "measured_prefix6400_launch_to_complete_seconds": 579.722220631,
+        "warmup_complete_launch_to_complete_seconds": 294.760338832,
+        "worker_shutdown_seconds": 4.776791011
+      },
+      "name": "long6400_w1_r1_reference_union_native_persistent",
+      "recorded_wait_ns": 5393909728368504,
+      "repetition": 1,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_compiled",
+      "checkpoints": [
+        {
+          "elapsed_ns": 8910033741,
+          "elapsed_seconds": 8.910033741,
+          "label": "first_trained_batch",
+          "measured_graphs": 0,
+          "total_trained_graphs": 32
+        },
+        {
+          "elapsed_ns": 17759615842,
+          "elapsed_seconds": 17.759615842,
+          "label": "warmup_complete",
+          "measured_graphs": 0,
+          "total_trained_graphs": 256
+        },
+        {
+          "elapsed_ns": 30699576857,
+          "elapsed_seconds": 30.699576857,
+          "label": "measured_prefix320",
+          "measured_graphs": 320,
+          "total_trained_graphs": 576
+        }
+      ],
+      "horizon": "short320",
+      "iterator_to_first_batch_ns": 4541163692,
+      "launch_ns": 5393954805686853,
+      "launch_to_recorded_wait_ns": 34108992974,
+      "measured_window_ns": 12939952352,
+      "metrics": {
+        "checkpointed_measured_seconds": 12.939952352,
+        "first_trained_batch_launch_to_complete_seconds": 8.910033741,
+        "input_hash_seconds_included": 0.019799394,
+        "launch_to_actual_wait_seconds": 34.108992974,
+        "launch_to_first_batch_ready_seconds": 8.227260674,
+        "measured_prefix320_launch_to_complete_seconds": 30.699576857,
+        "warmup_complete_launch_to_complete_seconds": 17.759615842,
+        "worker_shutdown_seconds": 2.273221729
+      },
+      "name": "short320_w1_r1_reference_union_compiled",
+      "recorded_wait_ns": 5393988914679827,
+      "repetition": 1,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_native_persistent",
+      "checkpoints": [
+        {
+          "elapsed_ns": 284551180259,
+          "elapsed_seconds": 284.551180259,
+          "label": "first_trained_batch",
+          "measured_graphs": 0,
+          "total_trained_graphs": 32
+        },
+        {
+          "elapsed_ns": 292404131236,
+          "elapsed_seconds": 292.404131236,
+          "label": "warmup_complete",
+          "measured_graphs": 0,
+          "total_trained_graphs": 256
+        },
+        {
+          "elapsed_ns": 304438921229,
+          "elapsed_seconds": 304.438921229,
+          "label": "measured_prefix320",
+          "measured_graphs": 320,
+          "total_trained_graphs": 576
+        }
+      ],
+      "horizon": "short320",
+      "iterator_to_first_batch_ns": 4194268627,
+      "launch_ns": 5394004406065793,
+      "launch_to_recorded_wait_ns": 308137807252,
+      "measured_window_ns": 12034782448,
+      "metrics": {
+        "checkpointed_measured_seconds": 12.034782448,
+        "first_trained_batch_launch_to_complete_seconds": 284.551180259,
+        "input_hash_seconds_included": 0.020008667,
+        "launch_to_actual_wait_seconds": 308.137807252,
+        "launch_to_first_batch_ready_seconds": 283.848363846,
+        "measured_prefix320_launch_to_complete_seconds": 304.438921229,
+        "warmup_complete_launch_to_complete_seconds": 292.404131236,
+        "worker_shutdown_seconds": 2.669371464
+      },
+      "name": "short320_w1_r1_reference_union_native_persistent",
+      "recorded_wait_ns": 5394312543873045,
+      "repetition": 1,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_native_persistent",
+      "checkpoints": [
+        {
+          "elapsed_ns": 273815824475,
+          "elapsed_seconds": 273.815824475,
+          "label": "first_trained_batch",
+          "measured_graphs": 0,
+          "total_trained_graphs": 32
+        },
+        {
+          "elapsed_ns": 273863433652,
+          "elapsed_seconds": 273.863433652,
+          "label": "warmup_complete",
+          "measured_graphs": 0,
+          "total_trained_graphs": 256
+        },
+        {
+          "elapsed_ns": 279557386651,
+          "elapsed_seconds": 279.557386651,
+          "label": "measured_prefix1024",
+          "measured_graphs": 1024,
+          "total_trained_graphs": 1280
+        },
+        {
+          "elapsed_ns": 291344796352,
+          "elapsed_seconds": 291.344796352,
+          "label": "measured_prefix3200",
+          "measured_graphs": 3200,
+          "total_trained_graphs": 3456
+        },
+        {
+          "elapsed_ns": 308755364740,
+          "elapsed_seconds": 308.75536474,
+          "label": "measured_prefix6400",
+          "measured_graphs": 6400,
+          "total_trained_graphs": 6656
+        }
+      ],
+      "horizon": "long6400",
+      "iterator_to_first_batch_ns": 4344436199,
+      "launch_ns": 5394357700274033,
+      "launch_to_recorded_wait_ns": 312662427223,
+      "measured_window_ns": 34891923676,
+      "metrics": {
+        "checkpointed_measured_seconds": 34.891923676,
+        "first_trained_batch_launch_to_complete_seconds": 273.815824475,
+        "input_hash_seconds_included": 0.209918744,
+        "launch_to_actual_wait_seconds": 312.662427223,
+        "launch_to_first_batch_ready_seconds": 273.179182176,
+        "measured_prefix1024_launch_to_complete_seconds": 279.557386651,
+        "measured_prefix3200_launch_to_complete_seconds": 291.344796352,
+        "measured_prefix6400_launch_to_complete_seconds": 308.75536474,
+        "warmup_complete_launch_to_complete_seconds": 273.863433652,
+        "worker_shutdown_seconds": 2.599057434
+      },
+      "name": "long6400_w8_r1_reference_union_native_persistent",
+      "recorded_wait_ns": 5394670362701256,
+      "repetition": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "checkpoints": [
+        {
+          "elapsed_ns": 8527181914,
+          "elapsed_seconds": 8.527181914,
+          "label": "first_trained_batch",
+          "measured_graphs": 0,
+          "total_trained_graphs": 32
+        },
+        {
+          "elapsed_ns": 8574927121,
+          "elapsed_seconds": 8.574927121,
+          "label": "warmup_complete",
+          "measured_graphs": 0,
+          "total_trained_graphs": 256
+        },
+        {
+          "elapsed_ns": 14404761179,
+          "elapsed_seconds": 14.404761179,
+          "label": "measured_prefix1024",
+          "measured_graphs": 1024,
+          "total_trained_graphs": 1280
+        },
+        {
+          "elapsed_ns": 27018877485,
+          "elapsed_seconds": 27.018877485,
+          "label": "measured_prefix3200",
+          "measured_graphs": 3200,
+          "total_trained_graphs": 3456
+        },
+        {
+          "elapsed_ns": 45933536088,
+          "elapsed_seconds": 45.933536088,
+          "label": "measured_prefix6400",
+          "measured_graphs": 6400,
+          "total_trained_graphs": 6656
+        }
+      ],
+      "horizon": "long6400",
+      "iterator_to_first_batch_ns": 4587349302,
+      "launch_ns": 5394714945417540,
+      "launch_to_recorded_wait_ns": 50008612148,
+      "measured_window_ns": 37358601860,
+      "metrics": {
+        "checkpointed_measured_seconds": 37.35860186,
+        "first_trained_batch_launch_to_complete_seconds": 8.527181914,
+        "input_hash_seconds_included": 0.211220999,
+        "launch_to_actual_wait_seconds": 50.008612148,
+        "launch_to_first_batch_ready_seconds": 7.902337794,
+        "measured_prefix1024_launch_to_complete_seconds": 14.404761179,
+        "measured_prefix3200_launch_to_complete_seconds": 27.018877485,
+        "measured_prefix6400_launch_to_complete_seconds": 45.933536088,
+        "warmup_complete_launch_to_complete_seconds": 8.574927121,
+        "worker_shutdown_seconds": 2.752511475
+      },
+      "name": "long6400_w8_r1_reference_union_compiled",
+      "recorded_wait_ns": 5394764954029688,
+      "repetition": 1,
+      "workers": 8
+    }
+  ],
+  "status": "PASS",
+  "timing_scope": "Integer ns subtraction for launch-to-recorded-wait, launch-to-first-batch-ready, iterator-to-first-batch-ready, every recorded synchronized checkpoint, measured window and worker shutdown. The supplied timestamps and their synchronization instrumentation are not independently reobserved. Input-hash observer seconds are serialized values checked for arithmetic-ratio consistency, not remeasured."
+}

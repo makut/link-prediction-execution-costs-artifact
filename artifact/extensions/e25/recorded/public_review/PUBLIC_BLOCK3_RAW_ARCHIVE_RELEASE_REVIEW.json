@@ -1,0 +1,118 @@
+{
+  "CPU_model_record_evidence": {
+    "conclusion": "No direct CPU model name found in genuine block3 archived environment/platform/host records or recorded logs. No CPU SKU inferred.",
+    "direct_recorded_CPU_fields": [],
+    "found": false,
+    "genuine_JSON_or_JSONL_member_count_searched": 176,
+    "genuine_recorded_CPU_brand_literals": [],
+    "principal_records_checked": [
+      "e25/results/PLATFORM_ADMISSION.json",
+      "e25/results/ENVIRONMENT_ADMISSION.json",
+      "e25/results/host.json",
+      "e25/results/hardware.json",
+      "e25/results/environment_events.jsonl",
+      "e25/envelope/platform_admission.json",
+      "e25/envelope/preflight.json"
+    ],
+    "scope": "Only actual e25/results and e25/envelope records/logs; source comments excluded. CPU model field aliases and recognizable CPU brand/model literals searched; GPU name, DGCNN model, topology IDs/package/core/sibling/NUMA and node hostname do not establish a CPU SKU."
+  },
+  "ML_network_cluster_repo_test_or_publication_actions": 0,
+  "attribution_markers": [
+    {
+      "markers": [
+        "dataset_DOI"
+      ],
+      "member": "e25/sources/packet/pins/friendster_full_expected.json"
+    }
+  ],
+  "attribution_scope": "Retain outer full Per Fuchs / Com-Friendster Dataset Densely Relabelled / DOI 10.5281/zenodo.5146230 / CC-BY-4.0 notice explicitly covering these two additional identical archived public workload copies. Dataset attribution is separate from own-code MIT/upstream notices.",
+  "caps": {
+    "JSONL_line_bytes": 1048576,
+    "members": 8192,
+    "per_explicit_base64_decoded_bytes": 8388608,
+    "per_member_bytes": 33554432,
+    "report_bytes": 20480,
+    "tar_plus_extra_decoded_bytes": 536870912
+  },
+  "credential_candidates": [],
+  "earlier_block12_failed_reviews_modified_or_rescanned": false,
+  "extraction_files": 0,
+  "input_stability": "All three regular files had unchanged size/mtime at two local metadata observations59.935s apart and unchanged identity/stat through review.",
+  "inputs": {
+    "ACTUAL_AUDIT.json": {
+      "bytes": 138506,
+      "file": "blocks_v6/block3/collected/ACTUAL_AUDIT.json",
+      "sha256": "4f9da3224797eaaa9fbb7c0c6eaea4db103832421a7a76c9957892e00642b789"
+    },
+    "ROOT_COLLECTION.json": {
+      "bytes": 5760,
+      "file": "blocks_v6/block3/collected/ROOT_COLLECTION.json",
+      "sha256": "0921be6d243bc088e88fdf726af6093abdbaaecd7f7a05c05e07c2db55af6e99"
+    },
+    "block_raw.tgz": {
+      "bytes": 1406139,
+      "file": "blocks_v6/block3/collected/block_raw.tgz",
+      "sha256": "0c8f0bc145a41e707c0810fa1a420e7a2eed21f450e1fd536cb10c02a7983e1c"
+    }
+  },
+  "kind": "PUBLIC_BLOCK3_RAW_ARCHIVE_BOUNDED_RELEASE_REVIEW",
+  "members": {
+    "every_member_rehashed": true,
+    "frozen_producer_manifest_and_all41_payloads_exact": true,
+    "frozen_wrapper_and_readiness_exact": true,
+    "graphs_included_flag": false,
+    "inventory_sha256": "f9bd51c8ff48c52f528bcc4f3ede00538663722ebd35ee5e7ee1c42de81cd4c9",
+    "namespace_counts": {
+      "e25/envelope": 6,
+      "e25/results": 186,
+      "e25/sources": 44,
+      "root_manifest": 1
+    },
+    "numba_cache_included_flag": false,
+    "payload_bytes": 29340621,
+    "regular_members": 237,
+    "root_whole_member_manifest_exact": true,
+    "suffix_counts": {
+      "": 5,
+      ".cpp": 1,
+      ".json": 176,
+      ".jsonl": 12,
+      ".log": 15,
+      ".md": 1,
+      ".npy": 2,
+      ".py": 23,
+      ".txt": 2
+    }
+  },
+  "observed_budget": {
+    "base64_fields": 0,
+    "decoded_base64_bytes": 0,
+    "decoded_metadata_bytes": 2017963,
+    "json_documents": 176,
+    "jsonl_records": 2993,
+    "members": 237,
+    "tar_decompressed_bytes": 29532160
+  },
+  "old_archive_reads": 0,
+  "payload_encoding_or_name_issues": [],
+  "public_workload_members": [
+    {
+      "bytes": 192128,
+      "class": "exact_public_Friendster_workload",
+      "member": "e25/results/friendster_pairs.npy",
+      "sha256": "340e61cdd1eb8d329d52be164f919480e6a41feb4c620852df0393c2e9a192f0"
+    },
+    {
+      "bytes": 192128,
+      "class": "exact_public_Friendster_workload",
+      "member": "e25/sources/packet/workloads/friendster_pairs.npy",
+      "sha256": "340e61cdd1eb8d329d52be164f919480e6a41feb4c620852df0393c2e9a192f0"
+    }
+  ],
+  "scientific_metrics_pooled_or_recomputed": false,
+  "scope": "Single bounded privacy/member/identity review of genuine block3 raw records; no blanket absence-of-secrets guarantee, new experiment, complete24 claim or recorded-verifier roundtrip. Matching secret values are not printed/serialized.",
+  "sensitive_JSON_string_fields": [],
+  "sidecar_scope": "ROOT_COLLECTION.json and ACTUAL_AUDIT.json were whole-identity/stability checked only; the credential/type/member review applies to block_raw.tgz. No new scientific re-audit or aggregation.",
+  "status": "PASS_BOUNDED_REVIEW_WITH_OUTER_PUBLIC_WORKLOAD_ATTRIBUTION",
+  "whole_input_hash_authority": "Exact byte/SHA anchors supplied by root after genuine collection and independent actual audit."
+}

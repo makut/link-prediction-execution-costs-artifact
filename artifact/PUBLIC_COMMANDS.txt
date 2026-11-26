@@ -1,4 +1,4 @@
-Public per-object commands for artifact v0.6.0
+Public per-object commands for artifact v0.7.0
 
 Use a Linux compute host for full graph preparation/runs. Large graph inputs are
 never included in source/evidence assets or required on a laptop. Set absolute
@@ -13,7 +13,7 @@ Set QUALITY_ASSET="$ASSETS/lpp_public_quality_evidence_v1.tgz" and use fresh
 QUALITY_SMALL_ROOT, C2_VALID512 and RESULTS output paths. Set CPU_SOURCE_PIN and
 PENCIL_SOURCE_PIN to the whole SHA256 of the corresponding reproduction source
 SOURCE_MANIFEST.json, as pinned in metadata/V0_5_GATES.json. AUDIT_PY312 is a
-CPython3.12 interpreter with NumPy. SYSTEMS_ROOT is the extracted directory
+CPython 3.12 interpreter with NumPy. SYSTEMS_ROOT is the extracted directory
 lpp_public_systems_evidence_v1 from its whole-hash-verified external archive;
 extract the separate trusted archive once on the compute host. No new timing
 is performed by the recorded verification commands below.
@@ -134,7 +134,7 @@ E19 OLD instrumented48-job PENCIL study:
     --source-root "$ARTIFACT" --export "$RESULTS/recorded_pencil_e19_export" \
     --root-launch "$ARTIFACT/metadata/evidence/E19/ROOT_LAUNCH.json" \
     --output "$RESULTS/recorded_pencil_e19_audit"
-  # AUDIT_PY312 is a lightweight CPython3.12/NumPy environment for the preserved
+  # AUDIT_PY312 is a lightweight CPython 3.12/NumPy environment for the preserved
   # raw AST/source pins. It is separate from the Linux3.10 science environment.
   # Keep raw archive lpp_public_pencil_instrumented48_raw.tgz and its original
   # explicit audit correction/numeric peer. It contains32ONLINE+4REPLAY timings,
@@ -185,3 +185,38 @@ python3 -B "$ARTIFACT/extensions/e23/verify_e23.py" --archive "$ARTIFACT/extensi
 python3 -B "$ARTIFACT/extensions/e24/publicanalyze_cost_regimes.py" --friendster-archive "$ASSETS/lpp_public_friendster_cpu_matched_v2_raw.tgz" --citation2-archive "$ARTIFACT/extensions/e22/recorded/citation2_cpu_matched_v1_20261126.tgz" --output "$RESULTS/matched_cost_regimes_recorded.json"
 
 python3 -B "$ARTIFACT/extensions/e24/plot_matched_cost_regimes.py" --input "$RESULTS/matched_cost_regimes_recorded.json" --out "$RESULTS/matched_cost_regimes_figures"
+
+
+V0.7 E25 ACTUAL RECORDED LIFETIMES (24 applications, three allocations)
+The real catalog and original inputs are bundled. Verify the entire code archive
+with its externally published SHA256 before trusting the included catalog.
+E25_FRESH_OUT must be a new directory outside ARTIFACT with an existing parent.
+Python 3.10+ standard library; no ML packages, graph load, GPU or external access:
+
+python3 -B -S "$ARTIFACT/extensions/e25/verify_recorded_v6.py" \
+  --artifact "$ARTIFACT" --out "$E25_FRESH_OUT"
+
+The unchanged per-block tools re-audit all three original archives/collection
+sidecars; audits and aggregate must match the cataloged bytes/SHA256 exactly.
+See extensions/e25/OFFLINE_VERIFICATION.txt for the actual catalog schema/trust
+boundary and the separately recorded genuine public-layout receipt.
+
+E25 figure only: E25_PLOT_PY is Python 3.12.10 with Matplotlib 3.10.3.
+E25_FRESH_FIGURE must be a fresh output directory. This does not repeat timings:
+
+"$E25_PLOT_PY" -B "$ARTIFACT/extensions/e25/figure/plot_aggregate_v6.py" \
+  --aggregate "$ARTIFACT/extensions/e25/recorded/ACTUAL_AGGREGATE.json" \
+  --aggregate-sha256 "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057" \
+  --out "$E25_FRESH_FIGURE"
+
+Min/max is descriptive across three allocations; ratios are paired within each
+block. There is no long timed 576 checkpoint or E23 causal speedup. New plots
+start with QA pending; the shipped figure has a separate root visual-QA PASS.
+PSS is sampled complete/stable all-phase app-tree residency, not full-resident
+memory. Fresh Numba/output per allocation does not clear retained OS/PVC caches.
+Native includes fresh file-backed promotion/fsync inside the application clock.
+The exact author-bound wrapper/admission sources are provenance, not a turnkey
+portable fresh launcher; another real platform needs its own reviewed binding.
+CPU model/SKU was not recorded; 27 logical CPUs span 14 physical-core identities.
+The latest failed capsule under recorded/excluded appears once, with old priors
+nested only; no failed/partial measurements enter the successful 24.

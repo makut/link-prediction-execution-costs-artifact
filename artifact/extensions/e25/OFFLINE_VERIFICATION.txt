@@ -1,10 +1,19 @@
-E25 v6 public recorded-verification entrypoint — source candidate only
+E25 v6 public recorded verification — actual complete24 evidence
 
-No catalog, block3 evidence, recorded-result placeholder, audit result or
-aggregate is supplied by this candidate. Root creates the real catalog only
-after all three actual blocks and their independent aggregate are complete.
-The entrypoint has been prepared for static/AST review only; a genuine all-three
-public-layout roundtrip remains required before advertising it as verified.
+The real catalog, all three original block archives/collection sidecars/audits
+and complete24 aggregate are included. RECORDED_IDENTITIES.json is 1913 bytes,
+SHA256 931c6351e67e2454d53054503bcdc5bec93162b9935c7739bf950d9ff60dc6ce.
+ACTUAL_AGGREGATE.json is 90386 bytes,
+SHA256 2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057.
+Genuine public-layout verification PASSED with Python 3.12.10. All three fresh
+audits and the aggregate are byte-identical to their original cataloged outputs.
+recorded/OFFLINE_VERIFICATION_RECEIPT.json is 440 bytes,
+SHA256 c6a8b1a5614b2081afd4d8b87923f8453cf7008e1d4f055f13ea43b99172d7f3.
+recorded/OFFLINE_ROUNDTRIP_ROOT_RECEIPT.json is 3672 bytes,
+SHA256 a2ef5cb6e1e96018e59049042d2fb3a95e3e78da72463df3f0238197d8e01445;
+it records Python/argv/cwd/environment and all four exact output identities.
+Frozen static/source-only reviews remain historical preparation records,
+distinct from this actual validation.
 
 Trust boundary
 
@@ -20,8 +29,8 @@ entrypoint. It reuses those scripts rather than implementing scientific logic.
 One command (Python3.10+ standard library; no packages or GPU)
 
 Set ARTIFACT to the absolute canonical artifact directory and E25_FRESH_OUT to
-a new directory name outside it, whose parent already exists. Once the real
-catalog and all three recorded blocks are published:
+a new directory name outside it, whose parent already exists. Use the real included
+catalog and all three recorded blocks:
 
 python3 -B -S /path/to/verify_recorded_v6.py \
   --artifact "$ARTIFACT" --out "$E25_FRESH_OUT"
@@ -63,6 +72,6 @@ outputs for diagnosis, and never overwrites the original artifact.
 
 This strict byte check includes the scripts' JSON serialization and descriptive
 floating-point output; it does not silently relax numerical/version differences.
-The genuine public-layout validation must record its Python version. Offline
+The genuine public-layout validation records its Python version. Offline
 recorded verification does not establish new platform performance, live resource
 state, predictor quality or a portable execution deployment.

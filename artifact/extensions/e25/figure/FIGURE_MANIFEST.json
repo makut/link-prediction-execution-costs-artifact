@@ -1,0 +1,96 @@
+{
+  "auditor_source_sha256": "b50f69169d8149d090913dcedf5a15aea8ed6d397650a276f432e1781b41deb5",
+  "coverage": {
+    "PSS_missing_values_preserved": true,
+    "applications": 24,
+    "blocks": 3,
+    "configuration_cells": 8,
+    "independent_actual_wait_points": 8,
+    "long_checkpoint_points": 20,
+    "plotted_summary_points": 28,
+    "raw_checkpoint_or_wait_values_in_CSV": 84
+  },
+  "input_aggregate": {
+    "bytes": 90386,
+    "file": "ACTUAL_AGGREGATE.json",
+    "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057"
+  },
+  "kind": "E25_V6_ACTUAL_AGGREGATE_FIGURE_RECEIPT",
+  "manuscript_or_publication_changed": false,
+  "outputs": {
+    "ACTUAL_FIGURE_VISUAL_QA.json": {
+      "bytes": 1020,
+      "sha256": "448d7706ad5c31367d2b6ea2505d4f365d324817f574441db32b8839fa08fc0e"
+    },
+    "INDEPENDENT_ACTUAL_FIGURE_DATA_PEER.json": {
+      "bytes": 3659,
+      "sha256": "391b6d6f08559524d70901598798ddbb95013edddc16511fc115af6af40ab002"
+    },
+    "TABLEDATA.json": {
+      "bytes": 89208,
+      "sha256": "6070ee8bb57e5cc177bd75598ee4bd7c56a40897830cdbf68f75bb0d59821a29"
+    },
+    "caption.txt": {
+      "bytes": 438,
+      "sha256": "202b3329d5618a7495f220600b5ac59c4d1ca819b8f0bea27541f426540e74d6"
+    },
+    "configuration_summary.csv": {
+      "bytes": 1952,
+      "sha256": "68c0ace9e907ba8323c101f50a660e94c99bf083a1f22ad83c886372e2ffabca"
+    },
+    "e25_v6_progress_and_terminated_lifetimes.pdf": {
+      "bytes": 17287,
+      "sha256": "1fffb8fd4f487d49b3dada015925619807676bc3f3c07a59f40d2ab2cc81a66e"
+    },
+    "e25_v6_progress_and_terminated_lifetimes.png": {
+      "bytes": 130831,
+      "sha256": "769f56c27a2d6ab68840bea953fe62b2fc070413af036befe1edec42554b3f77"
+    },
+    "e25_v6_progress_and_terminated_lifetimes.svg": {
+      "bytes": 38991,
+      "sha256": "aced74df1c488aa2ace0443a17975a4624a8c54727be4e5046328e54a6751db2"
+    },
+    "plot_aggregate_v6.py": {
+      "bytes": 23624,
+      "sha256": "effd6c2591490b4d4c395153788120f07152c461cbaec660f79f6a871d946af8"
+    },
+    "plot_points.csv": {
+      "bytes": 5915,
+      "sha256": "ef62e675fed7fe8e062a2717a195cd682cf21156b61a56dbaf68a4d73e5b6806"
+    },
+    "summary_table.tex": {
+      "bytes": 849,
+      "sha256": "605e889543ee548c4a12eeab3ef4d4990d19e4948b484a796ede3ee4cdbe75be"
+    }
+  },
+  "render": {
+    "PNG_dpi": 360,
+    "height_inches": 2.9,
+    "matplotlib": "3.10.3",
+    "python": "3.12.10",
+    "width_inches": 7.1
+  },
+  "script": {
+    "bytes": 23624,
+    "sha256": "effd6c2591490b4d4c395153788120f07152c461cbaec660f79f6a871d946af8"
+  },
+  "semantics": {
+    "actual_wait_distinct_from_final_CUDA": true,
+    "linear_y_from_zero": true,
+    "logarithmic_x": true,
+    "median_curve_is_not_one_execution": true,
+    "minmax_is_not_CI": true,
+    "no_time_to_quality_historical_ratio_or_crossover_fit": true,
+    "paired_ratios_before_aggregation": true,
+    "pointwise_median_and_descriptive_minmax": true,
+    "short_wait_not_connected_to_long_curve": true,
+    "timed_long576_invented": false
+  },
+  "source_hashes": {
+    "protocol_sha256": "e89b371089bd01f71579fdc00ec06004373bb549542658cc223914759f392e18",
+    "source_manifest_sha256": "3fd8783173e4a850018d860459881aafd1dd49e8d4cda101eb273641e47af086",
+    "wrapper_ready_sha256": "88b06c57d7de42c062fbd2ea76cd268999d3bbabe8bbd31130a9ec79dfa5a785",
+    "wrapper_sha256": "072575b15555a83f223e15643b869874f9a5e4f83172c06e0f4f5d032bdae4c9"
+  },
+  "visual_QA": "PASS_ROOT_ACTUAL_FIGURE_INSPECTION"
+}

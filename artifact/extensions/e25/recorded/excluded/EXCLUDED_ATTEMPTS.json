@@ -1,0 +1,11 @@
+{
+  "kind": "FAILED_EXCLUDED_FROM_SCIENCE",
+  "archive": {
+    "bytes": 2697876,
+    "sha256": "5a470ea09dcfef2c754273dcb9d63288739b7c779799952e5f24a853b25c2365"
+  },
+  "included_once": true,
+  "prior_capsules_nested_once": true,
+  "metrics_in_successful_cohort": false,
+  "scope": "Historical failed ENV v4 and its nested prior diagnostic attempts, preserved as provenance only. No failed or partial observations enter the three-block 24-application aggregate. All archived public workload copies are covered by ../../DATA_ATTRIBUTION.md."
+}
