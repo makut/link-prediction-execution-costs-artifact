@@ -1,0 +1,152 @@
+{
+  "kind": "INDEPENDENT_ACTUAL_CITATION2_MATCHED_CPU_E22_RAW_RESULT_AUDIT",
+  "status": "PASS",
+  "audited_utc": "2026-11-26T09:41:05.780550+00:00",
+  "archive": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_science_revision_20261126/e22_raw/citation2_cpu_matched_v1_20261126.tgz",
+    "bytes": 570654,
+    "sha256": "363e25fe48e11792e53b00f37eef567c9da7f766cb1af7175c89fe69f973a61f"
+  },
+  "raw_manifest": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_science_revision_20261126/e22_raw/extracted/citation2_cpu_matched_v1_20261126/MANIFEST.json",
+    "bytes": 20025,
+    "sha256": "dfdf123a0c674c130dfdea75aed9d83840b9cda77dd1c52bd2a3887d093fb7c8"
+  },
+  "deployed_source_manifest": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_science_revision_20261126/e22_raw/extracted/citation2_cpu_matched_v1_20261126/sources/SOURCE_MANIFEST.json",
+    "bytes": 6520,
+    "sha256": "d30698edff9d9d6b1d959e78bedc7ea226359fb667941e70f43a87945443012b"
+  },
+  "post_exit_lifecycle": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_science_revision_20261126/e22_raw/post_exit_lifecycle.json",
+    "bytes": 2550,
+    "sha256": "93b827b9b6619f62168835cc09935035d197b0654c83623a1a141300ba40a485"
+  },
+  "checks": {
+    "raw_archive_and_all_128_regular_members": "PASS: exact archive identity and all 127 payloads plus manifest independently rehashed.",
+    "actual_source_identity": "PASS: all 39 deployed source payloads match the frozen source manifest; no source tests were rerun.",
+    "public_strict_clean_input_and_continuity": "PASS: exact two public structural payload hashes and device/inode/mtime are unchanged before and after execution.",
+    "pre_timing_cohort_selection_and_identity": "PASS: independently reproduced deterministic 12-stratum selection, all ordered node hashes and every replay-plan binding. 128 cases reuse 80 distinct physical pairs and 126 ordered node sets.",
+    "Linux_environment_ABI_and_base_preservation": "PASS: pinned Linux Python 3.10.12 stack, exact official native-wheel source/binary fingerprints, one CPU thread, empty CUDA visibility, identical before/after base and isolated probes.",
+    "actual_native_fixtures_and_conversion": "PASS: genuine installed upstream and compiled C++ arbitrary-root/BFS fixtures passed; converter and four runtime native consumers match independently promoted original-array hashes. Setup/readback remain outside query timers.",
+    "all_seven_arms_same_cohort_oracles_and_timer_identity": "PASS: all 896 arm-case results and 2,688 measured repetitions are complete, finite and oracle-exact under target validation; component row/column/edge-ID hashes agree across native arms. These three hashes identify components, not repetitions.",
+    "aggregation_independently_recomputed": "PASS: every sum is the sum of 128 per-case medians. Edge + DRNL is combined within each repeat before its median. Stored Numba combined vectors and summaries agree with raw times.",
+    "outer_exit_resource_guard_and_lock_release": "PASS: all recorded owned phase exits are zero and quiescent; no guard aborts; real outer wait returned zero, both launcher/controller PIDs are absent, and final owned lock release succeeded. Archived inner lock-retained flag precedes packing/release and is not contradictory."
+  },
+  "cohort": {
+    "cases": 128,
+    "distinct_physical_pairs": 80,
+    "distinct_ordered_node_sets": 126,
+    "strata": 12,
+    "stratum_counts": {
+      "('reference_union', 50, 'twohop_nonedge')": 10,
+      "('reference_union', 50, 'positive')": 10,
+      "('reference_union', 200, 'positive')": 10,
+      "('reference_union', 200, 'twohop_nonedge')": 10,
+      "('production_union', 50, 'positive')": 11,
+      "('production_union', 50, 'twohop_nonedge')": 11,
+      "('production_union', 200, 'positive')": 11,
+      "('production_union', 200, 'twohop_nonedge')": 11,
+      "('per_vertex', 50, 'twohop_nonedge')": 11,
+      "('per_vertex', 50, 'positive')": 11,
+      "('per_vertex', 200, 'positive')": 11,
+      "('per_vertex', 200, 'twohop_nonedge')": 11
+    },
+    "nodes_per_case_min": 21,
+    "nodes_per_case_max": 402,
+    "max_selected_degree_sum": 84132,
+    "warmup": 1,
+    "measured_repetitions": 3
+  },
+  "arm_case_results": 896,
+  "measured_repetitions_per_arm_case": 3,
+  "guard_observations_reviewed": 42,
+  "host": {
+    "hostname": "lpp-cpu-0",
+    "boot_id": "004b9f1b-ff73-4f91-a214-171d590617d6",
+    "cpu_models": [
+      "Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz"
+    ],
+    "affinity_logical_cpu_min": 0,
+    "affinity_logical_cpu_max": 127,
+    "dedicated_pinned_core": false
+  },
+  "raw_recomputed_summaries": {
+    "native_persistent_touched_reset": {
+      "edge_seconds": 0.059479303658008575,
+      "drnl_seconds": 0.1803663745522499,
+      "edge_plus_drnl_seconds": 0.24000322818756104,
+      "raw_operator_seconds": 0.016319990158081055
+    },
+    "native_reference_full_clear": {
+      "edge_seconds": 0.17294742166996002,
+      "drnl_seconds": 0.18197987973690033,
+      "edge_plus_drnl_seconds": 0.35492999106645584,
+      "raw_operator_seconds": 0.12750769406557083
+    },
+    "native_upstream_torch_sparse_direct": {
+      "edge_seconds": 0.3150663375854492,
+      "drnl_seconds": 0.18347463011741638,
+      "edge_plus_drnl_seconds": 0.49977124482393265,
+      "raw_operator_seconds": 0.2709297314286232
+    },
+    "numba32_scan": {
+      "edge_seconds": 0.17432585,
+      "drnl_seconds": 0.155527557,
+      "edge_plus_drnl_seconds": 0.329923783
+    },
+    "numba32_pairwise": {
+      "edge_seconds": 0.227607254,
+      "drnl_seconds": 0.155072908,
+      "edge_plus_drnl_seconds": 0.383035843
+    },
+    "numba64_scan": {
+      "edge_seconds": 0.174024115,
+      "drnl_seconds": 0.15644585,
+      "edge_plus_drnl_seconds": 0.330508012
+    },
+    "numba64_pairwise": {
+      "edge_seconds": 0.229649494,
+      "drnl_seconds": 0.155746653,
+      "edge_plus_drnl_seconds": 0.385472
+    }
+  },
+  "state_and_conversion": {
+    "nodes": 2927963,
+    "stored_entries": 60703502,
+    "source_compact_files_bytes": 266237720,
+    "converted_payload_arrays": 2,
+    "converted_rowptr_elements": 2927964,
+    "converted_col_elements": 60703502,
+    "converted_rowptr_bytes": 23423712,
+    "converted_col_bytes": 485628016,
+    "converted_total_bytes": 509051728,
+    "private_map_bytes_per_worker": 23423704,
+    "one_time_persistent_initialization_seconds": 0.0040909722447395325,
+    "conversion_seconds": 2.3033296316862106,
+    "conversion_preparation_and_readback_seconds": 2.9486724510788918,
+    "cases": 128,
+    "distinct_physical_pairs": 80,
+    "distinct_ordered_node_sets": 126
+  },
+  "outer_elapsed_seconds": 66.68410110473633,
+  "integration_numbers": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_science_revision_20261126/e22_raw/integration_numbers.json",
+    "bytes": 11078,
+    "sha256": "294eef499ee55983effe023d97aa0e2bf81e408d343bfd6a5ba1ec7190156f73"
+  },
+  "must_fix_findings": [],
+  "audit_scope_limits": [
+    "All archived target oracle checks, source identities and cross-arm fingerprints were independently cross-checked. Full graph arrays were not loaded locally, so graph-level edge/DRNL oracles were not regenerated on this laptop.",
+    "The three ordered native hashes identify row, column and original-edge-ID components. The source validates those components on each warmup and measured call; they are not three independent repeat hashes.",
+    "Environment and conversion fingerprints are genuine recorded target observations bound to archived source; no native library/model was loaded by this auditor."
+  ],
+  "actions": {
+    "source_tests_rerun": 0,
+    "fresh_scientific_experiments": 0,
+    "full_graph_or_model_or_native_library_loads": 0,
+    "manuscript_frozen_artifact_edits": 0,
+    "cluster_network_YT_actions": 0,
+    "new_JSON_reports": 2
+  }
+}

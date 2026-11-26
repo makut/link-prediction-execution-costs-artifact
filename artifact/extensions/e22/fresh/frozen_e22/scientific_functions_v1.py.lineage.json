@@ -1,0 +1,9 @@
+{
+  "kind": "ORIGINAL_FUNCTION_AST_IDENTITY",
+  "original_source_sha256": "744d79e8b4544fd2855e8816097b516bbab4005cc1fd713303d0ca81d15cc114",
+  "functions": {
+    "original_identity": "8527989d39c4d38cfb9816bcdd49c29b8fa351e61b5ef4f2dee46481816b0579",
+    "verify_same_selection": "ccefae36e160a1a556ed08533579194338bf4decef394204c5289ee7ee51c97a",
+    "one": "b365fddc6b3c3d7a0ffa01c31fd8fa283f3daee6ae9317e289b2e528062d8bc3"
+  }
+}

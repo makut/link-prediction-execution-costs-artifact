@@ -1,0 +1,10 @@
+{
+  "python": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+  "source_manifest_sha256": "7b406e3e3909f64ebcdd2a3b1cb8b9dd2763b6c44ebc8e791b21d1699e62b2bb",
+  "plan_jobs": 13,
+  "execute": false,
+  "default_plan_graph_reads": 0,
+  "default_plan_numeric_imports": 0,
+  "source_only_portability_check": "PASS",
+  "full_replay_executed": false
+}

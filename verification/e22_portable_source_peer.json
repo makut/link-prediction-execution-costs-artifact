@@ -1,0 +1,192 @@
+{
+  "actual_Linux310_plan_only": {
+    "identity": {
+      "bytes": 349,
+      "sha256": "34ff586a65413ae98c6361e7b2bf2601da36c062a54f4eaa35f2d20e7e75da68"
+    },
+    "receipt": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_science_revision_20261126/E22_PORTABLE_ACTUAL_LINUX_PLAN.json",
+    "result": {
+      "default_plan_graph_reads": 0,
+      "default_plan_numeric_imports": 0,
+      "execute": false,
+      "full_replay_executed": false,
+      "plan_jobs": 13,
+      "python": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+      "source_manifest_sha256": "7b406e3e3909f64ebcdd2a3b1cb8b9dd2763b6c44ebc8e791b21d1699e62b2bb",
+      "source_only_portability_check": "PASS"
+    },
+    "scope": "Root-produced real Linux3.10 source-only plan receipt; not a full portable replay or new scientific measurement."
+  },
+  "actual_scientific_E22_raw_reaudit_performed": false,
+  "budgets_and_lifecycle": {
+    "association_budget_gib": 0.05,
+    "association_private_bytes_per_worker": 23423704,
+    "compressed_archive_mib": 64,
+    "conservative_native_peak_budget_gib": 8,
+    "default_external_guard_gib": 8,
+    "initial_scratch_gib": 8,
+    "live_scratch_reserve_gib": 1.5,
+    "native_budget_gib": 1,
+    "native_bytes": 509051728,
+    "notes": [
+      "Published E20 sampled memory/process supervision is retained; only initial disk admission and role label differ in local_execution.",
+      "Shared nonblocking flock and nonce/PID/start-owned active marker prevent cooperating overlap; unknown/stale marker is preserved.",
+      "Fresh descendant sessions, confirmed owned-group signals, actual child wait/exit and quiescence classification are retained; no foreign process, scheduler, YT or network action is added.",
+      "Final successful scientific raw archive is created before controller __exit__ writes COMPLETE and releases marker/flock. It cannot prove its own future OS exit; README explicitly requires retaining the actual launcher exit separately.",
+      "Runtime arrays/wheels/venv/caches are excluded from raw-evidence packaging; source graph payloads are never packaged."
+    ],
+    "raw_evidence_mib": 96,
+    "status": "PASS_INHERITED_OPERATIONAL_SCOPE",
+    "total_hours": 6
+  },
+  "catalog_and_documentation": {
+    "notes": [
+      "All selected catalog payload hashes and all51 portable source payload hashes matched at review.",
+      "README clearly separates recorded E22 verification, new local replay measurements, and E23 exclusion.",
+      "Recorded128 cases are explicitly described as80 physical pairs/126 ordered sets; repeated-cache observations are not presented as independent samples or population confidence intervals.",
+      "No claim of whole SEAL speedup, language superiority, quality/time-to-quality or newly measured PSS is introduced."
+    ],
+    "status": "PASS"
+  },
+  "environment_preservation": {
+    "notes": [
+      "Portable environment and owned-supervision wrapper bytes equal published E20.",
+      "Fresh --without-pip isolated venv inherits observed supplied-interpreter base package sites via a plain .pth; only two exact official pt22 native wheels installed offline with --prefix to the fresh venv.",
+      "Exact numerical versions and origins, interpreter, 35 native wheel member identities, native origin precedence, one-thread CPU-only environment and before/after base continuity remain required.",
+      "Actual installed upstream and compiled standalone fixture gates execute before full derived int64 allocation."
+    ],
+    "status": "PASS"
+  },
+  "kind": "INDEPENDENT_E22_PORTABLE_OPERATIONAL_SOURCE_PREPUBLISH_REVIEW",
+  "must_fix": [],
+  "original_frozen_E22_source_manifest": {
+    "bytes": 6520,
+    "sha256": "d30698edff9d9d6b1d959e78bedc7ea226359fb667941e70f43a87945443012b"
+  },
+  "path_binding": {
+    "notes": [
+      "Supplied Python lexical path retained for venv identity; source/input/wheels and fresh output are disjoint.",
+      "Generic output/runtime/cohort/native paths replace only operational layout in imported frozen common before coordinator/worker imports.",
+      "Frozen CLI author-host/base gates are bypassed via explicit unchanged execute/classifier functions, with genuine new source/env/input/host admission and no fabricated predecessor completion.",
+      "Only two exact strict-clean Citation2 original payloads are admitted by whole hashes/header/stat before and after; no source graph copy.",
+      "Plan verifies frozen sources and recorded selection using stdlib only, without numeric imports or graph-array reads/output creation."
+    ],
+    "status": "PASS"
+  },
+  "portable_source_payloads": 51,
+  "preserved_original_source_payloads": 39,
+  "published_E20_wrapper_comparison": {
+    "local_execution.py": {
+      "byte_identical": false,
+      "published_E20": {
+        "bytes": 7751,
+        "sha256": "edb6536ceb51bc971c9e4a4c9c165cd3006c26fd892b37849c7ab529c795b0e6"
+      },
+      "reviewed_E22": {
+        "bytes": 7759,
+        "sha256": "0b8352d16decbac39449ccbf289f314b622b6edf091cca87c1dea71f36ffff13"
+      }
+    },
+    "owned_supervision.py": {
+      "byte_identical": true,
+      "published_E20": {
+        "bytes": 4913,
+        "sha256": "fcf494937da9be0d09b8e25f8e55d0f16cfd7970e103b91e61506135d9da74a6"
+      },
+      "reviewed_E22": {
+        "bytes": 4913,
+        "sha256": "fcf494937da9be0d09b8e25f8e55d0f16cfd7970e103b91e61506135d9da74a6"
+      }
+    },
+    "portable_common.py": {
+      "byte_identical": false,
+      "published_E20": {
+        "bytes": 3954,
+        "sha256": "c5235e8f30293126c807393ac2759c8f5a5ce16655a57b8037df981dfd7ce8dc"
+      },
+      "reviewed_E22": {
+        "bytes": 4177,
+        "sha256": "7caa49a8008962cc1962efe34b43a1262b0bb3f450c470f3256ab2d7fcd2eab5"
+      }
+    },
+    "portable_environment.py": {
+      "byte_identical": true,
+      "published_E20": {
+        "bytes": 2283,
+        "sha256": "47310a62dfc0d6c62b0469012ebcb7a5ec70cb86f53c2ecd9b6e029299851cd1"
+      },
+      "reviewed_E22": {
+        "bytes": 2283,
+        "sha256": "47310a62dfc0d6c62b0469012ebcb7a5ec70cb86f53c2ecd9b6e029299851cd1"
+      }
+    },
+    "portable_input.py": {
+      "byte_identical": false,
+      "published_E20": {
+        "bytes": 616,
+        "sha256": "8d4ce05db65dc004b3cd2025dd236d6733460e15aaafc10b75b388a1254c2890"
+      },
+      "reviewed_E22": {
+        "bytes": 632,
+        "sha256": "65c2b264bfb3f939adaf19c52b9ac558939a9c345c36697938caa41417e5ba21"
+      }
+    },
+    "portable_worker.py": {
+      "byte_identical": false,
+      "published_E20": {
+        "bytes": 885,
+        "sha256": "0e133558e3532b95969c01f2d90834d49842c300d607efc6d52060fc9c4c46fb"
+      },
+      "reviewed_E22": {
+        "bytes": 884,
+        "sha256": "9cd361efe6a84d91fda202ea050dac6842b8b5f2feb06f75fcca3afea9bf6f17"
+      }
+    },
+    "run_public_cpu.py": {
+      "byte_identical": false,
+      "published_E20": {
+        "bytes": 14212,
+        "sha256": "71259f8a94553f9128193ec5ea21708a490d0fdde70d4280373472b528c07e1e"
+      },
+      "reviewed_E22": {
+        "bytes": 15071,
+        "sha256": "313f99915f195d4d1667e019ab42e066e108462753684528c24655edf03ce20f"
+      }
+    }
+  },
+  "replay_cohort": {
+    "cases": 128,
+    "notes": [
+      "The actual recorded 3-file cohort is copied byte for byte and bound to the portable source manifest and original COHORT_READY archive/plan/protocol identities.",
+      "No cohort-generation/sampling entrypoint is run. Frozen loaders retain original S/edge/DRNL validation.",
+      "Original plan matching removes only historical archive original_local_path; ordered selections and all other protocol fields remain exact.",
+      "Native3 and Numba32/64 scan/pairwise classifiers still require all128 cases, one warmup, three measured repetitions, exact outputs and the same observed host/boot/affinity."
+    ],
+    "ordered_sets": 126,
+    "physical_pairs": 80,
+    "status": "PASS"
+  },
+  "reviewed_adapter_lineage": {
+    "bytes": 2738,
+    "sha256": "4b7582255cca3e5cf19fced8e71617f3d4dd8f95791f4a742bc668fdcadcbf0c"
+  },
+  "reviewed_documents": {
+    "README.md": {
+      "bytes": 8554,
+      "sha256": "2a7ca0c2d60021fec64e71275a95ddb1b5890a5adcbfda69b6ccd8ec5983eed7"
+    },
+    "RESULT_CATALOG.json": {
+      "bytes": 34159,
+      "sha256": "42fc93f61d7ce18ea90966f031e12c0601151e1606d53ae82b724fcc3f0c79c9"
+    }
+  },
+  "reviewed_source_directory": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh",
+  "reviewed_source_manifest": {
+    "bytes": 8159,
+    "sha256": "7b406e3e3909f64ebcdd2a3b1cb8b9dd2763b6c44ebc8e791b21d1699e62b2bb"
+  },
+  "reviewed_sources_edited": false,
+  "reviewed_unix": 1795687774.860744,
+  "status": "PASS_SOURCE_OPERATIONAL_ADAPTER_FULL_REPLAY_NOT_CLAIMED",
+  "work_performed": "Read-only source/diff/document review, exact wrapper/source/catalog identity checks, and inspection of root actual Linux3.10 plan receipt. No45-test rerun, numeric import, graph read, actual science, cluster or YT action."
+}

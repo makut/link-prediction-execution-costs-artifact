@@ -1,0 +1,99 @@
+{
+  "kind": "PROSPECTIVE_E22_PREDECLARED_FEASIBILITY_PLAN",
+  "status": "LOCAL_SOURCE_CANDIDATE_NO_SCIENTIFIC_RESULT",
+  "dataset": "public_strict_clean_ogbl_citation2",
+  "N": 2927963,
+  "M": 60703502,
+  "default_graph_path": "/home/jovyan/seal_revision_20261124/public_source_repro_v1/execution_v2_runs/citation2_public_repro_20261125_145307_fbdd1d46/dataset/prepared/train_csr",
+  "graph_path_override": "Explicit absolute --graph-path under canonical BASE, exact whole payload SHA required; no copies/symlinks/preparation",
+  "input_source": "Existing public 19-payload exact regeneration proof, two CSR structural files only; prepared_original excluded",
+  "input_pins": {
+    "edge_starts.bin": {
+      "bytes": 23423704,
+      "sha256": "f06070adc368892f8441ea15e691dce400f9d44b6ec3e6e4505134c276c1072d"
+    },
+    "edge_ends.bin": {
+      "bytes": 242814016,
+      "sha256": "d3d8d1e2016675321c1d3d9ae817d2c6dca4a9dd2d5cdbba3e638ea7201057a4"
+    }
+  },
+  "derived_native_bytes": 509051728,
+  "private_association_bytes_per_worker": 23423704,
+  "conservative_converter_peak_bytes": 1896454976,
+  "budgets": {
+    "native_gib": 1,
+    "peak_gib": 8,
+    "association_gib": 0.05,
+    "free_disk_gib": 8,
+    "max_hours": 6,
+    "selected_neighbors": 20000000,
+    "max_local_working_bytes": 6442450944
+  },
+  "cohort": {
+    "kind": "NEW_DETERMINISTIC_PRETIMING_COHORT",
+    "source_protocol": "COHORT_PROTOCOL.json",
+    "candidate_combinations": 768,
+    "selected_cases": 128,
+    "strata": 12,
+    "sampling_laws": 3,
+    "caps": [
+      50,
+      200
+    ],
+    "warmup": 1,
+    "measured_repeats": 3,
+    "generation": "Original deterministic pairs/sampler/oracle functions, pre-timing candidate selection; all nodes/edge/DRNL hashes frozen before7arms; no replacement of guarded cases",
+    "not_original_Citation2_archive": true
+  },
+  "arms": [
+    "upstream_torch_sparse_direct",
+    "reference_full_clear",
+    "persistent_touched_reset",
+    "numba32_scan",
+    "numba32_pairwise",
+    "numba64_scan",
+    "numba64_pairwise"
+  ],
+  "same_host_contract": [
+    "hostname",
+    "boot_id",
+    "CPU model",
+    "affinity",
+    "one numerical thread",
+    "fresh sequential processes",
+    "owned exclusive timing lock"
+  ],
+  "target_environment": {
+    "platform": "Linux x86_64",
+    "python": "3.10.12",
+    "torch": "2.2.2+cu121",
+    "numpy": "1.24.4",
+    "scipy": "1.10.1",
+    "numba": "0.58.0",
+    "compiler": "C++17",
+    "wheel_packet": {
+      "path": "BASE/cpu_pt22_native_wheels_v1.tgz",
+      "bytes": 15064339,
+      "sha256": "5e9edbdc067325cd0b41b5fb292e2cc7343cc535da87ff3bef720cbf85da38cf"
+    },
+    "installation": "Fresh own venv; exact offline --no-deps --prefix install only; no base mutation"
+  },
+  "aggregation": "Sum128record-wise medians; edge+DRNL combined per repeat before median; setup/conversion/verification/JIT/warmup/persistent initialization separate",
+  "cannot_claim": [
+    "language superiority",
+    "cross-host speed ratio",
+    "full SEAL application speedup",
+    "time-to-quality",
+    "new model quality",
+    "new PSS result",
+    "independent-sample timing uncertainty"
+  ],
+  "new_remote_actions_by_this_agent": 0,
+  "root_owns": [
+    "all target probes",
+    "cluster launch/lifecycle",
+    "YT",
+    "collection",
+    "actual result eligibility/review"
+  ]
+}

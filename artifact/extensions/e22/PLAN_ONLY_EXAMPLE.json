@@ -1,0 +1,488 @@
+{
+  "kind": "PUBLIC_PORTABLE_STRICT_CLEAN_CITATION2_CPU7_V1",
+  "execute": false,
+  "source_manifest_sha256": "7b406e3e3909f64ebcdd2a3b1cb8b9dd2763b6c44ebc8e791b21d1699e62b2bb",
+  "original_E22_source_packet": {
+    "bytes": 100500,
+    "sha256": "eacd8d86d6849d8fa5d263272d66026d613f302a8efd558750cbd5964529922c"
+  },
+  "original_E22_manifest_sha256": "d30698edff9d9d6b1d959e78bedc7ea226359fb667941e70f43a87945443012b",
+  "sources": {
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/ADAPTER_LINEAGE.json": {
+      "bytes": 2738,
+      "sha256": "4b7582255cca3e5cf19fced8e71617f3d4dd8f95791f4a742bc668fdcadcbf0c"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/COHORT_PROTOCOL.json": {
+      "bytes": 1388,
+      "sha256": "06b60e34f024c75b664eddc1e8032e21207db73104ff18f273c0ef1515cf3ef9"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/EXPERIMENT_PLAN.json": {
+      "bytes": 3329,
+      "sha256": "fa7921e333b7d2dfe38e0754cd40d6d206404336d1cda923047acacda515a2c6"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/LICENSE": {
+      "bytes": 1073,
+      "sha256": "5096961eb53321c0dd8d8b6eeb978cd3e4a58256f1ab706558500d618ffe26ca"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/PORTABLE_AST_PINS.json": {
+      "bytes": 2974,
+      "sha256": "f6d2d5808788005598e933132abf972fe1dc8526bfb07a5bba459f0fa8c9d349"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/README.md": {
+      "bytes": 7183,
+      "sha256": "37a6faaa1ae5c6351be39e2b41ff02910dfae3968b6308ae5afe370b72263768"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/SOURCE_LINEAGE.json": {
+      "bytes": 9188,
+      "sha256": "69e7a66747b641ed04ec57a9e2ae1040c922b646f631fbd1dfd839e7cd90f02f"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/SOURCE_MANIFEST.json": {
+      "bytes": 6520,
+      "sha256": "d30698edff9d9d6b1d959e78bedc7ea226359fb667941e70f43a87945443012b"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/V1_TARGET310_PORTABILITY_DIAGNOSIS.json": {
+      "bytes": 3731,
+      "sha256": "4f6ca9ea53cc2cb513285dce9b5e7c4df21a2d4ec70cef20ab20a542532a85e2"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/cohort_v1.py": {
+      "bytes": 6767,
+      "sha256": "6a54a21feb93fd891a4cabda11dd5f85cc782ab1eb34cf0fbf79f93de9b49f82"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/cpu_common_v1.py": {
+      "bytes": 11466,
+      "sha256": "913d1bdf47707bf63bdefbfcb5042df6e9107a7249be884c988bf4bff6abf9df"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/cpu_coordinator_v1.py": {
+      "bytes": 21516,
+      "sha256": "3b6d88dc180d1e285040d0004e508ed9edfbd3e23726d5fa5187fe68bbdc93a4"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/cpu_environment_v1.py": {
+      "bytes": 22228,
+      "sha256": "5c3425114c435582217bb40a4c24f5af3cb5495f58ff04ac44eb7f8e49d904c4"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/cpu_input_v1.py": {
+      "bytes": 853,
+      "sha256": "c270a13e5038ded35fc18ecfbf1981b00cb5422d58ccaddb6b6a4b80568965ed"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/cpu_worker_v1.py": {
+      "bytes": 8272,
+      "sha256": "3f039357dc426879eaf7d3e73c867e8a5e0686168b0bc2a5a820d544b0564f6c"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/execution_v1.py": {
+      "bytes": 2903,
+      "sha256": "b8a920aff0ae32a1915da33efcf413dd82115c950807d624bf9f097b34cb05ef"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/execution_v1.py.lineage.json": {
+      "bytes": 516,
+      "sha256": "43e1009149a21139ea36d6aa6b14355ec50694771171e56aa5b40d86b4a06693"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/external_operator_benchmark.py": {
+      "bytes": 29476,
+      "sha256": "525e88c904fd03e10fc617853c8d733e88af90487cbbdd9122ced97962df112c"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/native/build_native_v1.py": {
+      "bytes": 2341,
+      "sha256": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/native/fixtures_v1.py": {
+      "bytes": 1254,
+      "sha256": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/native/native_adapter_v1.py": {
+      "bytes": 8499,
+      "sha256": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/native/native_assoc_v1.cpp": {
+      "bytes": 7987,
+      "sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/native/prepare_native_only_v1.py": {
+      "bytes": 3506,
+      "sha256": "40992a0bb790caaf77194ce568c8c1f88c0040d20a276b8e49beea8837f2e241"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/native/prepare_replay_v1.py": {
+      "bytes": 5719,
+      "sha256": "676dde1982e7f121b8b8343365d44e4fe0ee160ad3a0fd439d9f795585ce456f"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/native/replay_worker_v1.py": {
+      "bytes": 12872,
+      "sha256": "09a628149a8b06baabbb7b551bd98f00f41a8a44b5578ceb7a7d9e659cf147ea"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/native/run_parent_replay_v1.py": {
+      "bytes": 12295,
+      "sha256": "239d499ffff748799207076db782b4f90120dac8f0965d93e7e791a7a77a62b2"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/portable_ast_probe.py": {
+      "bytes": 1074,
+      "sha256": "e1c6203efa4e817dedcd8612cc28af656b3dcb09934981f19b14b236a1a6ed37"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/portable_ast_v1.py": {
+      "bytes": 1475,
+      "sha256": "749f8b3f538c0befbc0e0c15d700695cb53f8f7642901b281d445c51c2e01d3e"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/scientific_functions_v1.py": {
+      "bytes": 2580,
+      "sha256": "d989c604231257e6f3355a642abaeed29587d277d7fdb0d960eaeac29a968443"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/scientific_functions_v1.py.lineage.json": {
+      "bytes": 433,
+      "sha256": "1a10638d34572a676338d1b4bce22187657f3482781c7d2e8b05737ca6404c1a"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/scientific_repo/scripts/seal_revision/exact_benchmark.py": {
+      "bytes": 35079,
+      "sha256": "3ea7075dd80453a61eb42e8e990d21bf153635e6eff2e26379ba21788ad22544"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/scientific_repo/seal/__init__.py": {
+      "bytes": 24,
+      "sha256": "05c21a366b8fe1b60ab07ee6ef4cc5675059d91f624b4fc7fac9c6acabbe3545"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/scientific_repo/seal/graph_csr_kernels.py": {
+      "bytes": 15019,
+      "sha256": "19f517b874cfebc9f9388f094c17cf91b559936cd36f81976292c76025cfb2c5"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/test_ast_portability_v1.py": {
+      "bytes": 4974,
+      "sha256": "bee92e7454495484bc5f5afd90c7d6b78b754d7cc845545bf523407e15cead9b"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/test_citation2_extension_v1.py": {
+      "bytes": 8276,
+      "sha256": "555648c6f8271ce98a60765178ba00f3f4710f31212bb47e3bc1ef4c9a2fef1d"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/test_cpu_environment_v1.py": {
+      "bytes": 10590,
+      "sha256": "ebc3f6b3985213d4c3d117719c0bcc1ab930ba69fe4f40d1c2e0775c4ebeea7d"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/third_party/memory_guard_v3.py": {
+      "bytes": 36012,
+      "sha256": "e5bc616b518c17d6804c72f376872155514b902b490f43639526680ca5a516c8"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/third_party/native_notices/pytorch_sparse_LICENSE": {
+      "bytes": 1086,
+      "sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/third_party/native_notices/saint_cpu.cpp.upstream.txt": {
+      "bytes": 1459,
+      "sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/third_party/native_notices/upstream_pin.json": {
+      "bytes": 1437,
+      "sha256": "d2a5e21560926f462155b95e4e2d51056094298aa1ced75d4856c663726c3943"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/third_party/owned_supervision_v3.py": {
+      "bytes": 26702,
+      "sha256": "ec07bddc13f69cbbc1c5ba63a3ede390cfea254bcc02b811422338f5b9604aaf"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/local_execution.py": {
+      "bytes": 7759,
+      "sha256": "0b8352d16decbac39449ccbf289f314b622b6edf091cca87c1dea71f36ffff13"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/owned_supervision.py": {
+      "bytes": 4913,
+      "sha256": "fcf494937da9be0d09b8e25f8e55d0f16cfd7970e103b91e61506135d9da74a6"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/portable_common.py": {
+      "bytes": 4177,
+      "sha256": "7caa49a8008962cc1962efe34b43a1262b0bb3f450c470f3256ab2d7fcd2eab5"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/portable_environment.py": {
+      "bytes": 2283,
+      "sha256": "47310a62dfc0d6c62b0469012ebcb7a5ec70cb86f53c2ecd9b6e029299851cd1"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/portable_input.py": {
+      "bytes": 632,
+      "sha256": "65c2b264bfb3f939adaf19c52b9ac558939a9c345c36697938caa41417e5ba21"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/portable_worker.py": {
+      "bytes": 884,
+      "sha256": "9cd361efe6a84d91fda202ea050dac6842b8b5f2feb06f75fcca3afea9bf6f17"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/recorded_cohort/COHORT_READY.json": {
+      "bytes": 1216,
+      "sha256": "9e0b1cdbedd208d1c044699fdf40b6e440ddf63fc68d6fd2ee19d7b1616377da"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/recorded_cohort/FROZEN_128_SELECTION.json": {
+      "bytes": 73714,
+      "sha256": "4c6093e6ac941a5b6d03c3e40cb82005e63df39188cfe07574c1957fd446d7eb"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/recorded_cohort/citation2_exact_int32.json": {
+      "bytes": 456993,
+      "sha256": "9da827fa6076f9716ea4edbcfbdc70afc56364d15730a6075690941d88dac98e"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/run_public_cpu.py": {
+      "bytes": 15071,
+      "sha256": "313f99915f195d4d1667e019ab42e066e108462753684528c24655edf03ce20f"
+    },
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/SOURCE_MANIFEST.json": {
+      "bytes": 8159,
+      "sha256": "7b406e3e3909f64ebcdd2a3b1cb8b9dd2763b6c44ebc8e791b21d1699e62b2bb"
+    }
+  },
+  "train_csr_dimensions": {
+    "nodes": 2927963,
+    "stored_entries": 60703502
+  },
+  "both_expected_payloads": {
+    "edge_starts.bin": {
+      "bytes": 23423704,
+      "sha256": "f06070adc368892f8441ea15e691dce400f9d44b6ec3e6e4505134c276c1072d"
+    },
+    "edge_ends.bin": {
+      "bytes": 242814016,
+      "sha256": "d3d8d1e2016675321c1d3d9ae817d2c6dca4a9dd2d5cdbba3e638ea7201057a4"
+    }
+  },
+  "frozen_selection_sha256": "4c6093e6ac941a5b6d03c3e40cb82005e63df39188cfe07574c1957fd446d7eb",
+  "ordered_sets": 128,
+  "warmup": 1,
+  "repeats": 3,
+  "native_modes": [
+    "reference_full_clear",
+    "persistent_touched_reset",
+    "upstream_torch_sparse_direct"
+  ],
+  "numba_widths": [
+    32,
+    64
+  ],
+  "numba_methods": [
+    "scan",
+    "pairwise"
+  ],
+  "wheel_packet": {
+    "bytes": 15064339,
+    "sha256": "5e9edbdc067325cd0b41b5fb292e2cc7343cc535da87ff3bef720cbf85da38cf"
+  },
+  "paths": {
+    "root": "/private/tmp/E22 public plan only new output",
+    "out": "/private/tmp/E22 public plan only new output/results",
+    "full": "/private/tmp/E22 public plan only inputs/train_csr",
+    "base": "/private/tmp/E22 public plan only new output/runtime",
+    "native": "/private/tmp/E22 public plan only new output/runtime/native_i64",
+    "build": "/private/tmp/E22 public plan only new output/runtime/cpp_build",
+    "venv": "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env",
+    "wheels": "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_wheels",
+    "cache": "/private/tmp/E22 public plan only new output/runtime/numba_cache",
+    "cohort": "/private/tmp/E22 public plan only new output/results/cohort",
+    "cohort_archive": "/private/tmp/E22 public plan only new output/results/cohort/citation2_exact_int32.json",
+    "cohort_plan": "/private/tmp/E22 public plan only new output/results/cohort/FROZEN_128_SELECTION.json"
+  },
+  "jobs": [
+    {
+      "name": "base_environment_before",
+      "argv": [
+        "/Users/m.utushkin/.pyenv/versions/3.12.10/bin/python3",
+        "-B",
+        "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/portable_environment.py",
+        "--probe",
+        "base",
+        "--output",
+        "/private/tmp/E22 public plan only new output/results/base_environment_before.json"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "name": "create_isolated_env",
+      "argv": [
+        "/Users/m.utushkin/.pyenv/versions/3.12.10/bin/python3",
+        "-m",
+        "venv",
+        "--without-pip",
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "name": "install_offline_native",
+      "argv": [
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env/bin/python",
+        "-m",
+        "pip",
+        "--isolated",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "--no-compile",
+        "--no-cache-dir",
+        "--disable-pip-version-check",
+        "--ignore-installed",
+        "--prefix",
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env",
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_wheels/torch_scatter-2.1.2+pt22cu121-cp310-cp310-linux_x86_64.whl",
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_wheels/torch_sparse-0.6.18+pt22cu121-cp310-cp310-linux_x86_64.whl"
+      ],
+      "timeout_seconds": 600
+    },
+    {
+      "name": "isolated_environment",
+      "argv": [
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env/bin/python",
+        "-B",
+        "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/portable_environment.py",
+        "--probe",
+        "isolated",
+        "--before",
+        "/private/tmp/E22 public plan only new output/results/base_environment_before.json",
+        "--output",
+        "/private/tmp/E22 public plan only new output/results/isolated_environment.json",
+        "--venv",
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "name": "base_environment_after_install",
+      "argv": [
+        "/Users/m.utushkin/.pyenv/versions/3.12.10/bin/python3",
+        "-B",
+        "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/portable_environment.py",
+        "--probe",
+        "base",
+        "--before",
+        "/private/tmp/E22 public plan only new output/results/base_environment_before.json",
+        "--output",
+        "/private/tmp/E22 public plan only new output/results/base_environment_after_install.json"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "name": "build_standalone_native",
+      "argv": [
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env/bin/python",
+        "-B",
+        "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/native/build_native_v1.py",
+        "--output-dir",
+        "/private/tmp/E22 public plan only new output/runtime/cpp_build"
+      ],
+      "timeout_seconds": 180
+    },
+    {
+      "name": "full_input_before",
+      "operation": "stream_both_strict_clean_CSR_payload_SHA_and_actual_header_stat",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "native_citation2",
+      "argv": [
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env/bin/python",
+        "-B",
+        "-u",
+        "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/native/run_parent_replay_v1.py",
+        "--archive",
+        "/private/tmp/E22 public plan only new output/results/cohort/citation2_exact_int32.json",
+        "--count",
+        "128",
+        "--output-dir",
+        "/private/tmp/E22 public plan only new output/results/native",
+        "--execute",
+        "--library",
+        "/private/tmp/E22 public plan only new output/runtime/cpp_build/native_assoc_v1.so",
+        "--native-dir",
+        "/private/tmp/E22 public plan only new output/runtime/native_i64",
+        "--prepare-native",
+        "--graph-path",
+        "/private/tmp/E22 public plan only inputs/train_csr",
+        "--admission-marker",
+        "/private/tmp/E22 public plan only new output/results/admission.json",
+        "--include-upstream",
+        "--external-helper",
+        "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/frozen_e22/original/external_operator_benchmark.py",
+        "--external-helper-sha256",
+        "525e88c904fd03e10fc617853c8d733e88af90487cbbdd9122ced97962df112c",
+        "--conversion-max-native-gib",
+        "1",
+        "--max-assoc-gib",
+        "0.05",
+        "--max-peak-gib",
+        "8",
+        "--max-query-neighbors",
+        "20000000",
+        "--warmup",
+        "1",
+        "--repeats",
+        "3",
+        "--timeout-seconds",
+        "3600",
+        "--conversion-timeout-seconds",
+        "1800",
+        "--order-seed",
+        "20261125"
+      ],
+      "timeout_seconds": 13000
+    },
+    {
+      "name": "numba32",
+      "argv": [
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env/bin/python",
+        "-B",
+        "-u",
+        "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/portable_worker.py",
+        "--config",
+        "/private/tmp/E22 public plan only new output/results/portable_config.json",
+        "--width",
+        "32"
+      ],
+      "timeout_seconds": 1800
+    },
+    {
+      "name": "numba64",
+      "argv": [
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env/bin/python",
+        "-B",
+        "-u",
+        "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/portable_worker.py",
+        "--config",
+        "/private/tmp/E22 public plan only new output/results/portable_config.json",
+        "--width",
+        "64"
+      ],
+      "timeout_seconds": 1800
+    },
+    {
+      "name": "full_input_after",
+      "operation": "stream_both_strict_clean_CSR_payload_SHA_and_actual_header_stat",
+      "timeout_seconds": 600
+    },
+    {
+      "name": "isolated_environment_after",
+      "argv": [
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env/bin/python",
+        "-B",
+        "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/portable_environment.py",
+        "--probe",
+        "isolated",
+        "--before",
+        "/private/tmp/E22 public plan only new output/results/base_environment_before.json",
+        "--output",
+        "/private/tmp/E22 public plan only new output/results/isolated_environment_after.json",
+        "--venv",
+        "/private/tmp/E22 public plan only new output/runtime/citation2_cpu_matched_v1_env"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "name": "base_environment_after",
+      "argv": [
+        "/Users/m.utushkin/.pyenv/versions/3.12.10/bin/python3",
+        "-B",
+        "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_revision_public_extension_20261126/fresh/portable_environment.py",
+        "--probe",
+        "base",
+        "--before",
+        "/private/tmp/E22 public plan only new output/results/base_environment_before.json",
+        "--output",
+        "/private/tmp/E22 public plan only new output/results/base_environment_after.json"
+      ],
+      "timeout_seconds": 120
+    }
+  ],
+  "memory_budget_gib": 8,
+  "max_hours": 6,
+  "coordination_dir": "/private/tmp/E22 public plan only coordination",
+  "default_plan_graph_reads": 0,
+  "default_plan_numeric_imports": 0,
+  "default_plan_output_creations": 0,
+  "scope": "Fresh public local rerun of the exact recorded cohort around unchanged scientific functions; no node sets are resampled. Different host timings are new evidence, not byte-identical reproduction.",
+  "runtime_storage": "native 509,051,728 bytes plus isolated environment/caches; excluded from 96 MiB raw evidence budget; no source graph copy",
+  "YT_writes": 0,
+  "remote_actions": 0
+}

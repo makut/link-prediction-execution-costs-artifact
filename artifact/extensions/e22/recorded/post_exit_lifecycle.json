@@ -1,0 +1,62 @@
+{
+  "results/citation2_cpu_matched_v1_20261126/COMPLETE.json": {
+    "controller_finished": true,
+    "controller_identity": {
+      "kind": "citation2_cpu_matched_v1_20261126",
+      "pid": 17016,
+      "start_ticks": 4854401667,
+      "entrypoint": "/home/jovyan/seal_revision_20261124/citation2_matched_cpu_v1_code/cpu_coordinator_v1.py",
+      "source_sha256": "3b6d88dc180d1e285040d0004e508ed9edfbd3e23726d5fa5187fe68bbdc93a4",
+      "source_manifest_sha256": "d30698edff9d9d6b1d959e78bedc7ea226359fb667941e70f43a87945443012b"
+    },
+    "scientific_complete": true,
+    "success": true,
+    "failure": null,
+    "owned_tree_quiescent": true,
+    "timing_lock_released": true,
+    "local_archive": {
+      "path": "/home/jovyan/seal_revision_20261124/citation2_cpu_matched_v1_20261126.tgz",
+      "bytes": 570654,
+      "sha256": "363e25fe48e11792e53b00f37eef567c9da7f766cb1af7175c89fe69f973a61f",
+      "files": 127,
+      "manifest_sha256": "dfdf123a0c674c130dfdea75aed9d83840b9cda77dd1c52bd2a3887d093fb7c8",
+      "YT_writes": 0
+    },
+    "YT_writes": 0,
+    "base_package_installs": 0,
+    "GPU_or_pod_lifecycle_actions": 0
+  },
+  "results/citation2_cpu_matched_v1_20261126/ARCHIVE_READY.json": {
+    "path": "/home/jovyan/seal_revision_20261124/citation2_cpu_matched_v1_20261126.tgz",
+    "bytes": 570654,
+    "sha256": "363e25fe48e11792e53b00f37eef567c9da7f766cb1af7175c89fe69f973a61f",
+    "files": 127,
+    "manifest_sha256": "dfdf123a0c674c130dfdea75aed9d83840b9cda77dd1c52bd2a3887d093fb7c8",
+    "YT_writes": 0
+  },
+  "results/citation2_cpu_matched_v1_20261126.outer_exit.json": {
+    "returncode": 0,
+    "finished_unix": 1795685201.3186252,
+    "started_unix": 1795685134.634524,
+    "child_pid": 17016,
+    "child_start_ticks": 4854401667,
+    "source_manifest_sha256": "d30698edff9d9d6b1d959e78bedc7ea226359fb667941e70f43a87945443012b",
+    "wait_returned": true,
+    "child_finite_max_hours": 6
+  },
+  "results/citation2_cpu_matched_v1_outer_launch.json": {
+    "pid": 17015,
+    "start_ticks": 4854401664,
+    "source": "/home/jovyan/seal_revision_20261124/citation2_cpu_matched_v1_outer.py",
+    "source_sha256": "3cff52824aba50b90fd9accb3b1ed98f6ff7f79d55469184d83228aee3a49882",
+    "started_unix": 1795685134.6044512,
+    "source_manifest_sha256": "d30698edff9d9d6b1d959e78bedc7ea226359fb667941e70f43a87945443012b",
+    "execution_host": "lpp-cpu-0",
+    "GPU_allocations": 0,
+    "YT_writes": 0,
+    "CPU_pod_lifecycle_actions": 0,
+    "stdin_dependency": false
+  },
+  "pid17015_exists": false,
+  "pid17016_exists": false
+}

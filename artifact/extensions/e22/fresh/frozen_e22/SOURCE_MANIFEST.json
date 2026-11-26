@@ -1,0 +1,201 @@
+{
+  "kind": "CITATION2_MATCHED_CPU_NEW_SOURCE_CANDIDATE_V1",
+  "scientific_results_claimed": false,
+  "files": [
+    {
+      "path": "COHORT_PROTOCOL.json",
+      "bytes": 1388,
+      "sha256": "06b60e34f024c75b664eddc1e8032e21207db73104ff18f273c0ef1515cf3ef9"
+    },
+    {
+      "path": "EXPERIMENT_PLAN.json",
+      "bytes": 3329,
+      "sha256": "fa7921e333b7d2dfe38e0754cd40d6d206404336d1cda923047acacda515a2c6"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1073,
+      "sha256": "5096961eb53321c0dd8d8b6eeb978cd3e4a58256f1ab706558500d618ffe26ca"
+    },
+    {
+      "path": "PORTABLE_AST_PINS.json",
+      "bytes": 2974,
+      "sha256": "f6d2d5808788005598e933132abf972fe1dc8526bfb07a5bba459f0fa8c9d349"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7183,
+      "sha256": "37a6faaa1ae5c6351be39e2b41ff02910dfae3968b6308ae5afe370b72263768"
+    },
+    {
+      "path": "SOURCE_LINEAGE.json",
+      "bytes": 9188,
+      "sha256": "69e7a66747b641ed04ec57a9e2ae1040c922b646f631fbd1dfd839e7cd90f02f"
+    },
+    {
+      "path": "V1_TARGET310_PORTABILITY_DIAGNOSIS.json",
+      "bytes": 3731,
+      "sha256": "4f6ca9ea53cc2cb513285dce9b5e7c4df21a2d4ec70cef20ab20a542532a85e2"
+    },
+    {
+      "path": "cohort_v1.py",
+      "bytes": 6767,
+      "sha256": "6a54a21feb93fd891a4cabda11dd5f85cc782ab1eb34cf0fbf79f93de9b49f82"
+    },
+    {
+      "path": "cpu_common_v1.py",
+      "bytes": 11466,
+      "sha256": "913d1bdf47707bf63bdefbfcb5042df6e9107a7249be884c988bf4bff6abf9df"
+    },
+    {
+      "path": "cpu_coordinator_v1.py",
+      "bytes": 21516,
+      "sha256": "3b6d88dc180d1e285040d0004e508ed9edfbd3e23726d5fa5187fe68bbdc93a4"
+    },
+    {
+      "path": "cpu_environment_v1.py",
+      "bytes": 22228,
+      "sha256": "5c3425114c435582217bb40a4c24f5af3cb5495f58ff04ac44eb7f8e49d904c4"
+    },
+    {
+      "path": "cpu_input_v1.py",
+      "bytes": 853,
+      "sha256": "c270a13e5038ded35fc18ecfbf1981b00cb5422d58ccaddb6b6a4b80568965ed"
+    },
+    {
+      "path": "cpu_worker_v1.py",
+      "bytes": 8272,
+      "sha256": "3f039357dc426879eaf7d3e73c867e8a5e0686168b0bc2a5a820d544b0564f6c"
+    },
+    {
+      "path": "execution_v1.py",
+      "bytes": 2903,
+      "sha256": "b8a920aff0ae32a1915da33efcf413dd82115c950807d624bf9f097b34cb05ef"
+    },
+    {
+      "path": "execution_v1.py.lineage.json",
+      "bytes": 516,
+      "sha256": "43e1009149a21139ea36d6aa6b14355ec50694771171e56aa5b40d86b4a06693"
+    },
+    {
+      "path": "original/external_operator_benchmark.py",
+      "bytes": 29476,
+      "sha256": "525e88c904fd03e10fc617853c8d733e88af90487cbbdd9122ced97962df112c"
+    },
+    {
+      "path": "original/native/build_native_v1.py",
+      "bytes": 2341,
+      "sha256": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6"
+    },
+    {
+      "path": "original/native/fixtures_v1.py",
+      "bytes": 1254,
+      "sha256": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35"
+    },
+    {
+      "path": "original/native/native_adapter_v1.py",
+      "bytes": 8499,
+      "sha256": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549"
+    },
+    {
+      "path": "original/native/native_assoc_v1.cpp",
+      "bytes": 7987,
+      "sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20"
+    },
+    {
+      "path": "original/native/prepare_native_only_v1.py",
+      "bytes": 3506,
+      "sha256": "40992a0bb790caaf77194ce568c8c1f88c0040d20a276b8e49beea8837f2e241"
+    },
+    {
+      "path": "original/native/prepare_replay_v1.py",
+      "bytes": 5719,
+      "sha256": "676dde1982e7f121b8b8343365d44e4fe0ee160ad3a0fd439d9f795585ce456f"
+    },
+    {
+      "path": "original/native/replay_worker_v1.py",
+      "bytes": 12872,
+      "sha256": "09a628149a8b06baabbb7b551bd98f00f41a8a44b5578ceb7a7d9e659cf147ea"
+    },
+    {
+      "path": "original/native/run_parent_replay_v1.py",
+      "bytes": 12295,
+      "sha256": "239d499ffff748799207076db782b4f90120dac8f0965d93e7e791a7a77a62b2"
+    },
+    {
+      "path": "portable_ast_probe.py",
+      "bytes": 1074,
+      "sha256": "e1c6203efa4e817dedcd8612cc28af656b3dcb09934981f19b14b236a1a6ed37"
+    },
+    {
+      "path": "portable_ast_v1.py",
+      "bytes": 1475,
+      "sha256": "749f8b3f538c0befbc0e0c15d700695cb53f8f7642901b281d445c51c2e01d3e"
+    },
+    {
+      "path": "scientific_functions_v1.py",
+      "bytes": 2580,
+      "sha256": "d989c604231257e6f3355a642abaeed29587d277d7fdb0d960eaeac29a968443"
+    },
+    {
+      "path": "scientific_functions_v1.py.lineage.json",
+      "bytes": 433,
+      "sha256": "1a10638d34572a676338d1b4bce22187657f3482781c7d2e8b05737ca6404c1a"
+    },
+    {
+      "path": "scientific_repo/scripts/seal_revision/exact_benchmark.py",
+      "bytes": 35079,
+      "sha256": "3ea7075dd80453a61eb42e8e990d21bf153635e6eff2e26379ba21788ad22544"
+    },
+    {
+      "path": "scientific_repo/seal/__init__.py",
+      "bytes": 24,
+      "sha256": "05c21a366b8fe1b60ab07ee6ef4cc5675059d91f624b4fc7fac9c6acabbe3545"
+    },
+    {
+      "path": "scientific_repo/seal/graph_csr_kernels.py",
+      "bytes": 15019,
+      "sha256": "19f517b874cfebc9f9388f094c17cf91b559936cd36f81976292c76025cfb2c5"
+    },
+    {
+      "path": "test_ast_portability_v1.py",
+      "bytes": 4974,
+      "sha256": "bee92e7454495484bc5f5afd90c7d6b78b754d7cc845545bf523407e15cead9b"
+    },
+    {
+      "path": "test_citation2_extension_v1.py",
+      "bytes": 8276,
+      "sha256": "555648c6f8271ce98a60765178ba00f3f4710f31212bb47e3bc1ef4c9a2fef1d"
+    },
+    {
+      "path": "test_cpu_environment_v1.py",
+      "bytes": 10590,
+      "sha256": "ebc3f6b3985213d4c3d117719c0bcc1ab930ba69fe4f40d1c2e0775c4ebeea7d"
+    },
+    {
+      "path": "third_party/memory_guard_v3.py",
+      "bytes": 36012,
+      "sha256": "e5bc616b518c17d6804c72f376872155514b902b490f43639526680ca5a516c8"
+    },
+    {
+      "path": "third_party/native_notices/pytorch_sparse_LICENSE",
+      "bytes": 1086,
+      "sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486"
+    },
+    {
+      "path": "third_party/native_notices/saint_cpu.cpp.upstream.txt",
+      "bytes": 1459,
+      "sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c"
+    },
+    {
+      "path": "third_party/native_notices/upstream_pin.json",
+      "bytes": 1437,
+      "sha256": "d2a5e21560926f462155b95e4e2d51056094298aa1ced75d4856c663726c3943"
+    },
+    {
+      "path": "third_party/owned_supervision_v3.py",
+      "bytes": 26702,
+      "sha256": "ec07bddc13f69cbbc1c5ba63a3ede390cfea254bcc02b811422338f5b9604aaf"
+    }
+  ]
+}

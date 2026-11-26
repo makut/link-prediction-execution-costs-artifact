@@ -1,0 +1,322 @@
+{
+  "kind": "E20_E22_EXACT_INTEGRATION_NUMBERS",
+  "E22_status": "PASS_INDEPENDENT_RAW_RESULT_AUDIT",
+  "units": "Seconds; sum of 128 record-wise medians in each graph-specific cohort. Combine edge + DRNL per repeat before taking its median.",
+  "table_rows": [
+    {
+      "arm": "native_persistent_touched_reset",
+      "exact_seconds": {
+        "friendster": {
+          "edge_seconds": 0.09987583011388779,
+          "edge_plus_drnl_seconds": 0.28194282203912735
+        },
+        "citation2": {
+          "edge_seconds": 0.059479303658008575,
+          "edge_plus_drnl_seconds": 0.24000322818756104
+        }
+      },
+      "recommended_six_decimal_seconds": {
+        "friendster": {
+          "edge_seconds": "0.099876",
+          "edge_plus_drnl_seconds": "0.281943"
+        },
+        "citation2": {
+          "edge_seconds": "0.059479",
+          "edge_plus_drnl_seconds": "0.240003"
+        }
+      }
+    },
+    {
+      "arm": "native_reference_full_clear",
+      "exact_seconds": {
+        "friendster": {
+          "edge_seconds": 10.641387857496738,
+          "edge_plus_drnl_seconds": 10.839700855314732
+        },
+        "citation2": {
+          "edge_seconds": 0.17294742166996002,
+          "edge_plus_drnl_seconds": 0.35492999106645584
+        }
+      },
+      "recommended_six_decimal_seconds": {
+        "friendster": {
+          "edge_seconds": "10.641388",
+          "edge_plus_drnl_seconds": "10.839701"
+        },
+        "citation2": {
+          "edge_seconds": "0.172947",
+          "edge_plus_drnl_seconds": "0.354930"
+        }
+      }
+    },
+    {
+      "arm": "native_upstream_torch_sparse_direct",
+      "exact_seconds": {
+        "friendster": {
+          "edge_seconds": 11.42331376671791,
+          "edge_plus_drnl_seconds": 11.622948080301285
+        },
+        "citation2": {
+          "edge_seconds": 0.3150663375854492,
+          "edge_plus_drnl_seconds": 0.49977124482393265
+        }
+      },
+      "recommended_six_decimal_seconds": {
+        "friendster": {
+          "edge_seconds": "11.423314",
+          "edge_plus_drnl_seconds": "11.622948"
+        },
+        "citation2": {
+          "edge_seconds": "0.315066",
+          "edge_plus_drnl_seconds": "0.499771"
+        }
+      }
+    },
+    {
+      "arm": "numba32_pairwise",
+      "exact_seconds": {
+        "friendster": {
+          "edge_seconds": 0.632219917,
+          "edge_plus_drnl_seconds": 0.789365617
+        },
+        "citation2": {
+          "edge_seconds": 0.227607254,
+          "edge_plus_drnl_seconds": 0.383035843
+        }
+      },
+      "recommended_six_decimal_seconds": {
+        "friendster": {
+          "edge_seconds": "0.632220",
+          "edge_plus_drnl_seconds": "0.789366"
+        },
+        "citation2": {
+          "edge_seconds": "0.227607",
+          "edge_plus_drnl_seconds": "0.383036"
+        }
+      }
+    },
+    {
+      "arm": "numba32_scan",
+      "exact_seconds": {
+        "friendster": {
+          "edge_seconds": 0.832035439,
+          "edge_plus_drnl_seconds": 0.989220939
+        },
+        "citation2": {
+          "edge_seconds": 0.17432585,
+          "edge_plus_drnl_seconds": 0.329923783
+        }
+      },
+      "recommended_six_decimal_seconds": {
+        "friendster": {
+          "edge_seconds": "0.832035",
+          "edge_plus_drnl_seconds": "0.989221"
+        },
+        "citation2": {
+          "edge_seconds": "0.174326",
+          "edge_plus_drnl_seconds": "0.329924"
+        }
+      }
+    },
+    {
+      "arm": "numba64_pairwise",
+      "exact_seconds": {
+        "friendster": {
+          "edge_seconds": 0.645111318,
+          "edge_plus_drnl_seconds": 0.799888639
+        },
+        "citation2": {
+          "edge_seconds": 0.229649494,
+          "edge_plus_drnl_seconds": 0.385472
+        }
+      },
+      "recommended_six_decimal_seconds": {
+        "friendster": {
+          "edge_seconds": "0.645111",
+          "edge_plus_drnl_seconds": "0.799889"
+        },
+        "citation2": {
+          "edge_seconds": "0.229649",
+          "edge_plus_drnl_seconds": "0.385472"
+        }
+      }
+    },
+    {
+      "arm": "numba64_scan",
+      "exact_seconds": {
+        "friendster": {
+          "edge_seconds": 0.832849435,
+          "edge_plus_drnl_seconds": 0.987562187
+        },
+        "citation2": {
+          "edge_seconds": 0.174024115,
+          "edge_plus_drnl_seconds": 0.330508012
+        }
+      },
+      "recommended_six_decimal_seconds": {
+        "friendster": {
+          "edge_seconds": "0.832849",
+          "edge_plus_drnl_seconds": "0.987562"
+        },
+        "citation2": {
+          "edge_seconds": "0.174024",
+          "edge_plus_drnl_seconds": "0.330508"
+        }
+      }
+    }
+  ],
+  "ratios_to_persistent_native": {
+    "friendster": {
+      "native_persistent_touched_reset": {
+        "edge_seconds": 1.0,
+        "edge_plus_drnl_seconds": 1.0
+      },
+      "native_reference_full_clear": {
+        "edge_seconds": 106.54617684140828,
+        "edge_plus_drnl_seconds": 38.44645086871701
+      },
+      "native_upstream_torch_sparse_direct": {
+        "edge_seconds": 114.37515716957724,
+        "edge_plus_drnl_seconds": 41.22448656872804
+      },
+      "numba32_pairwise": {
+        "edge_seconds": 6.330059197296118,
+        "edge_plus_drnl_seconds": 2.799736525622396
+      },
+      "numba32_scan": {
+        "edge_seconds": 8.330698608975116,
+        "edge_plus_drnl_seconds": 3.508587066858252
+      },
+      "numba64_pairwise": {
+        "edge_seconds": 6.459133478684318,
+        "edge_plus_drnl_seconds": 2.8370597740877876
+      },
+      "numba64_scan": {
+        "edge_seconds": 8.338848688920102,
+        "edge_plus_drnl_seconds": 3.502703774678642
+      }
+    },
+    "citation2": {
+      "native_persistent_touched_reset": {
+        "edge_seconds": 1.0,
+        "edge_plus_drnl_seconds": 1.0
+      },
+      "native_reference_full_clear": {
+        "edge_seconds": 2.907690760207371,
+        "edge_plus_drnl_seconds": 1.4788550710204624
+      },
+      "native_upstream_torch_sparse_direct": {
+        "edge_seconds": 5.297075086773098,
+        "edge_plus_drnl_seconds": 2.0823521775022313
+      },
+      "numba32_pairwise": {
+        "edge_seconds": 3.826663057602119,
+        "edge_plus_drnl_seconds": 1.5959612122411113
+      },
+      "numba32_scan": {
+        "edge_seconds": 2.93086568400886,
+        "edge_plus_drnl_seconds": 1.3746639388623834
+      },
+      "numba64_pairwise": {
+        "edge_seconds": 3.86099836205932,
+        "edge_plus_drnl_seconds": 1.606111729875383
+      },
+      "numba64_scan": {
+        "edge_seconds": 2.9257927429782304,
+        "edge_plus_drnl_seconds": 1.3770981936197544
+      }
+    }
+  },
+  "state_and_conversion": {
+    "friendster": {
+      "nodes": 65608366,
+      "stored_entries": 3612134270,
+      "source_compact_files_bytes": 14973404016,
+      "converted_payload_arrays": 2,
+      "converted_rowptr_elements": 65608367,
+      "converted_col_elements": 3612134270,
+      "converted_rowptr_bytes": 524866936,
+      "converted_col_bytes": 28897074160,
+      "converted_total_bytes": 29421941096,
+      "private_map_bytes_per_worker": 524866928,
+      "one_time_persistent_initialization_seconds": 0.08544941246509552,
+      "cases": 128,
+      "distinct_physical_pairs": 90,
+      "distinct_ordered_sets": 128
+    },
+    "citation2": {
+      "nodes": 2927963,
+      "stored_entries": 60703502,
+      "source_compact_files_bytes": 266237720,
+      "converted_payload_arrays": 2,
+      "converted_rowptr_elements": 2927964,
+      "converted_col_elements": 60703502,
+      "converted_rowptr_bytes": 23423712,
+      "converted_col_bytes": 485628016,
+      "converted_total_bytes": 509051728,
+      "private_map_bytes_per_worker": 23423704,
+      "one_time_persistent_initialization_seconds": 0.0040909722447395325,
+      "conversion_seconds": 2.3033296316862106,
+      "conversion_preparation_and_readback_seconds": 2.9486724510788918,
+      "cases": 128,
+      "distinct_physical_pairs": 80,
+      "distinct_ordered_node_sets": 126
+    }
+  },
+  "citation2_cohort": {
+    "cases": 128,
+    "distinct_physical_pairs": 80,
+    "distinct_ordered_node_sets": 126,
+    "strata": 12,
+    "stratum_counts": {
+      "('reference_union', 50, 'twohop_nonedge')": 10,
+      "('reference_union', 50, 'positive')": 10,
+      "('reference_union', 200, 'positive')": 10,
+      "('reference_union', 200, 'twohop_nonedge')": 10,
+      "('production_union', 50, 'positive')": 11,
+      "('production_union', 50, 'twohop_nonedge')": 11,
+      "('production_union', 200, 'positive')": 11,
+      "('production_union', 200, 'twohop_nonedge')": 11,
+      "('per_vertex', 50, 'twohop_nonedge')": 11,
+      "('per_vertex', 50, 'positive')": 11,
+      "('per_vertex', 200, 'positive')": 11,
+      "('per_vertex', 200, 'twohop_nonedge')": 11
+    },
+    "nodes_per_case_min": 21,
+    "nodes_per_case_max": 402,
+    "max_selected_degree_sum": 84132,
+    "warmup": 1,
+    "measured_repetitions": 3
+  },
+  "citation2_scan_pair_regime": {
+    "edge_pair_over_scan_numba32": 1.3056425882908358,
+    "combined_pair_over_scan_numba32": 1.160982817052628
+  },
+  "source_E20": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/outputs/vldb_public_fr_cpu_audit_20261125/ACTUAL_PUBLIC_FR_CPU_V2_AUDIT_v2_transport_adapter.json",
+    "bytes": 10462,
+    "sha256": "bd96e6dc5d55af0e8cd7543bc51b1d6a43230e8f43664648acabd1019fd6bb73"
+  },
+  "source_E22_archive": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_science_revision_20261126/e22_raw/citation2_cpu_matched_v1_20261126.tgz",
+    "bytes": 570654,
+    "sha256": "363e25fe48e11792e53b00f37eef567c9da7f766cb1af7175c89fe69f973a61f"
+  },
+  "source_E22_lifecycle": {
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_science_revision_20261126/e22_raw/post_exit_lifecycle.json",
+    "bytes": 2550,
+    "sha256": "93b827b9b6619f62168835cc09935035d197b0654c83623a1a141300ba40a485"
+  },
+  "recommended_integration": [
+    "Extend the existing seven-arm matched CPU table with Citation2 edge and edge + DRNL columns, preserving graph-specific cohort denominators.",
+    "Persistent native has the lowest aggregate time in both matched cohorts; Citation2 full-clear and direct overheads are much smaller than on Friendster.",
+    "Citation2 aggregate scan time is lower than pair probing, illustrating a second workload regime without a universal winning Numba plan.",
+    "Include conversion, map bytes and one-time initialization separately. Retain repeated-cache, unpinned-affinity and differing low-level output-materialization caveats."
+  ],
+  "claim_limits": [
+    "128 cases are not 128 independent queries: Friendster reuses 90 distinct physical pairs; Citation2 reuses 80 pairs and 126 distinct ordered sets.",
+    "No population confidence interval, language superiority, end-to-end/first-batch speedup, quality or new PSS claim.",
+    "Cross-graph differences are descriptive; graph size alone is not isolated as their cause.",
+    "E22 is a new separately audited experiment and does not retroactively modify the published v0.5.0 artifact."
+  ]
+}

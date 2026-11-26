@@ -1,0 +1,165 @@
+{
+  "parent": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate",
+  "copied_original_inputs": {
+    "LICENSE": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/LICENSE",
+      "bytes": 1073,
+      "sha256": "5096961eb53321c0dd8d8b6eeb978cd3e4a58256f1ab706558500d618ffe26ca"
+    },
+    "PORTABLE_AST_PINS.json": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/PORTABLE_AST_PINS.json",
+      "bytes": 2974,
+      "sha256": "f6d2d5808788005598e933132abf972fe1dc8526bfb07a5bba459f0fa8c9d349"
+    },
+    "cpu_common_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/cpu_common_v1.py",
+      "bytes": 10346,
+      "sha256": "fd2f0873239221d20c73cc8356c6bfe124cb17078ba0b0730c7d48bb5a76bbe8"
+    },
+    "cpu_coordinator_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/cpu_coordinator_v1.py",
+      "bytes": 20323,
+      "sha256": "95322468767da771d7368fa21a4d9ff02091f19d8be6c3d3cf2e9bfc5adab470"
+    },
+    "cpu_environment_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/cpu_environment_v1.py",
+      "bytes": 22228,
+      "sha256": "72c286c92e473200e7de50f37a5f2575795b905388404bc14ccc38957e1eff8f"
+    },
+    "cpu_input_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/cpu_input_v1.py",
+      "bytes": 853,
+      "sha256": "c270a13e5038ded35fc18ecfbf1981b00cb5422d58ccaddb6b6a4b80568965ed"
+    },
+    "cpu_worker_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/cpu_worker_v1.py",
+      "bytes": 8141,
+      "sha256": "aa07786f148b0ade804c41640e5eb2832694c009317888e544192c00a50f4337"
+    },
+    "execution_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/execution_v1.py",
+      "bytes": 2903,
+      "sha256": "b8a920aff0ae32a1915da33efcf413dd82115c950807d624bf9f097b34cb05ef"
+    },
+    "execution_v1.py.lineage.json": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/execution_v1.py.lineage.json",
+      "bytes": 516,
+      "sha256": "43e1009149a21139ea36d6aa6b14355ec50694771171e56aa5b40d86b4a06693"
+    },
+    "original/external_operator_benchmark.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/original/external_operator_benchmark.py",
+      "bytes": 29476,
+      "sha256": "525e88c904fd03e10fc617853c8d733e88af90487cbbdd9122ced97962df112c"
+    },
+    "original/native/build_native_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/original/native/build_native_v1.py",
+      "bytes": 2341,
+      "sha256": "09f183d17fcc44416fa109ac05eb7e9b59f509c4443f2c5de9798091005a39e6"
+    },
+    "original/native/fixtures_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/original/native/fixtures_v1.py",
+      "bytes": 1254,
+      "sha256": "28b2114495850fe9fa217de81072b531c1cab1611bc1e6d20f7d2e5fc6029c35"
+    },
+    "original/native/native_adapter_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/original/native/native_adapter_v1.py",
+      "bytes": 8499,
+      "sha256": "4aa4f51fcc6621ec42c6890be42439ef98132cc0554efbde3295e1d1f5e29549"
+    },
+    "original/native/native_assoc_v1.cpp": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/original/native/native_assoc_v1.cpp",
+      "bytes": 7987,
+      "sha256": "67a9e651b7bad7889a73751bff3b33b4309fb2ca8ddfe2660acf851141045d20"
+    },
+    "original/native/prepare_native_only_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/original/native/prepare_native_only_v1.py",
+      "bytes": 3506,
+      "sha256": "40992a0bb790caaf77194ce568c8c1f88c0040d20a276b8e49beea8837f2e241"
+    },
+    "original/native/prepare_replay_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/original/native/prepare_replay_v1.py",
+      "bytes": 5719,
+      "sha256": "676dde1982e7f121b8b8343365d44e4fe0ee160ad3a0fd439d9f795585ce456f"
+    },
+    "original/native/replay_worker_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/original/native/replay_worker_v1.py",
+      "bytes": 12872,
+      "sha256": "09a628149a8b06baabbb7b551bd98f00f41a8a44b5578ceb7a7d9e659cf147ea"
+    },
+    "original/native/run_parent_replay_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/original/native/run_parent_replay_v1.py",
+      "bytes": 12295,
+      "sha256": "239d499ffff748799207076db782b4f90120dac8f0965d93e7e791a7a77a62b2"
+    },
+    "portable_ast_probe.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/portable_ast_probe.py",
+      "bytes": 1074,
+      "sha256": "e1c6203efa4e817dedcd8612cc28af656b3dcb09934981f19b14b236a1a6ed37"
+    },
+    "portable_ast_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/portable_ast_v1.py",
+      "bytes": 1475,
+      "sha256": "749f8b3f538c0befbc0e0c15d700695cb53f8f7642901b281d445c51c2e01d3e"
+    },
+    "scientific_functions_v1.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/scientific_functions_v1.py",
+      "bytes": 2580,
+      "sha256": "d989c604231257e6f3355a642abaeed29587d277d7fdb0d960eaeac29a968443"
+    },
+    "scientific_functions_v1.py.lineage.json": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/scientific_functions_v1.py.lineage.json",
+      "bytes": 433,
+      "sha256": "1a10638d34572a676338d1b4bce22187657f3482781c7d2e8b05737ca6404c1a"
+    },
+    "scientific_repo/scripts/seal_revision/exact_benchmark.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/scientific_repo/scripts/seal_revision/exact_benchmark.py",
+      "bytes": 35079,
+      "sha256": "3ea7075dd80453a61eb42e8e990d21bf153635e6eff2e26379ba21788ad22544"
+    },
+    "scientific_repo/seal/__init__.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/scientific_repo/seal/__init__.py",
+      "bytes": 24,
+      "sha256": "05c21a366b8fe1b60ab07ee6ef4cc5675059d91f624b4fc7fac9c6acabbe3545"
+    },
+    "scientific_repo/seal/graph_csr_kernels.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/scientific_repo/seal/graph_csr_kernels.py",
+      "bytes": 15019,
+      "sha256": "19f517b874cfebc9f9388f094c17cf91b559936cd36f81976292c76025cfb2c5"
+    },
+    "third_party/memory_guard_v3.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/third_party/memory_guard_v3.py",
+      "bytes": 36012,
+      "sha256": "e5bc616b518c17d6804c72f376872155514b902b490f43639526680ca5a516c8"
+    },
+    "third_party/native_notices/pytorch_sparse_LICENSE": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/third_party/native_notices/pytorch_sparse_LICENSE",
+      "bytes": 1086,
+      "sha256": "7cbd1d9075b9cb3daa771f52d10e1a6b9c4577851f055d002449932fee4d7486"
+    },
+    "third_party/native_notices/saint_cpu.cpp.upstream.txt": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/third_party/native_notices/saint_cpu.cpp.upstream.txt",
+      "bytes": 1459,
+      "sha256": "ede9facc6fa6d34a40063bf44568d80fcc32a637c0e2cf1794c21bb234b2333c"
+    },
+    "third_party/native_notices/upstream_pin.json": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/third_party/native_notices/upstream_pin.json",
+      "bytes": 1437,
+      "sha256": "d2a5e21560926f462155b95e4e2d51056094298aa1ced75d4856c663726c3943"
+    },
+    "third_party/owned_supervision_v3.py": {
+      "source": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_public_fr_cpu_v2_candidate/third_party/owned_supervision_v3.py",
+      "bytes": 26702,
+      "sha256": "ec07bddc13f69cbbc1c5ba63a3ede390cfea254bcc02b811422338f5b9604aaf"
+    }
+  },
+  "modified_operational_modules": [
+    "cpu_common_v1.py",
+    "cpu_coordinator_v1.py",
+    "cpu_worker_v1.py",
+    "cpu_input_v1.py",
+    "cpu_environment_v1.py"
+  ],
+  "new_protocol": "COHORT_PROTOCOL.json",
+  "scientific_and_execution_extracted_functions_unchanged": true,
+  "existing_files_modified": false
+}

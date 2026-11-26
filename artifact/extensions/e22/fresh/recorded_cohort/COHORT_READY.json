@@ -1,0 +1,34 @@
+{
+  "status": "FROZEN_BEFORE_ALL_MEASUREMENTS",
+  "record_count": 128,
+  "archive": {
+    "bytes": 456993,
+    "sha256": "9da827fa6076f9716ea4edbcfbdc70afc56364d15730a6075690941d88dac98e"
+  },
+  "plan": {
+    "bytes": 73714,
+    "sha256": "4c6093e6ac941a5b6d03c3e40cb82005e63df39188cfe07574c1957fd446d7eb"
+  },
+  "protocol": {
+    "bytes": 1388,
+    "sha256": "06b60e34f024c75b664eddc1e8032e21207db73104ff18f273c0ef1515cf3ef9"
+  },
+  "stratum_counts": {
+    "('reference_union', 50, 'twohop_nonedge')": 10,
+    "('reference_union', 50, 'positive')": 10,
+    "('reference_union', 200, 'positive')": 10,
+    "('reference_union', 200, 'twohop_nonedge')": 10,
+    "('production_union', 50, 'positive')": 11,
+    "('production_union', 50, 'twohop_nonedge')": 11,
+    "('production_union', 200, 'positive')": 11,
+    "('production_union', 200, 'twohop_nonedge')": 11,
+    "('per_vertex', 50, 'twohop_nonedge')": 11,
+    "('per_vertex', 50, 'positive')": 11,
+    "('per_vertex', 200, 'positive')": 11,
+    "('per_vertex', 200, 'twohop_nonedge')": 11
+  },
+  "candidate_count": 768,
+  "new_sampling_performed_only_in_preparation": true,
+  "timing_or_model_results_consulted": false,
+  "replacement_on_guard_failure": false
+}

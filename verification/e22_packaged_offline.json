@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-26T10:13:18.799261+00:00",
+  "raw_archive": {
+    "bytes": 570654,
+    "sha256": "363e25fe48e11792e53b00f37eef567c9da7f766cb1af7175c89fe69f973a61f"
+  },
+  "archive_members": 128,
+  "source_manifest_sha256": "d30698edff9d9d6b1d959e78bedc7ea226359fb667941e70f43a87945443012b",
+  "cohort_cases": 128,
+  "distinct_physical_pairs": 80,
+  "distinct_ordered_sets": 126,
+  "sum_of_128_per_case_medians_seconds": {
+    "native_persistent_touched_reset": {
+      "edge_seconds": 0.059479303658008575,
+      "edge_plus_drnl_seconds": 0.24000322818756104
+    },
+    "native_reference_full_clear": {
+      "edge_seconds": 0.17294742166996002,
+      "edge_plus_drnl_seconds": 0.35492999106645584
+    },
+    "native_upstream_torch_sparse_direct": {
+      "edge_seconds": 0.3150663375854492,
+      "edge_plus_drnl_seconds": 0.49977124482393265
+    },
+    "numba32_scan": {
+      "edge_seconds": 0.17432585,
+      "edge_plus_drnl_seconds": 0.329923783
+    },
+    "numba32_pairwise": {
+      "edge_seconds": 0.227607254,
+      "edge_plus_drnl_seconds": 0.383035843
+    },
+    "numba64_scan": {
+      "edge_seconds": 0.174024115,
+      "edge_plus_drnl_seconds": 0.330508012
+    },
+    "numba64_pairwise": {
+      "edge_seconds": 0.229649494,
+      "edge_plus_drnl_seconds": 0.385472
+    }
+  },
+  "scope": "Recorded E22 verification and numerical reaggregation only. No graph arrays, models, native libraries or scientific modules are loaded; no fresh timing is performed.",
+  "fresh_Linux_execution_performed_by_verifier": false,
+  "outside_source_paths_used": false,
+  "network_or_cluster_actions": 0
+}

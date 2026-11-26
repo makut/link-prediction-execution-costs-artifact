@@ -1,0 +1,43 @@
+{
+  "kind": "E22_PORTABLE_OPERATIONAL_WRAPPER_REUSE",
+  "E22_frozen_source_manifest_sha256": "d30698edff9d9d6b1d959e78bedc7ea226359fb667941e70f43a87945443012b",
+  "unchanged_scientific_source_files": 40,
+  "reused_E20_wrappers": {
+    "portable_common.py": {
+      "source": "Published v0.5.0 reproduction/public_friendster_cpu_v1/portable_common.py",
+      "before_sha256": "c5235e8f30293126c807393ac2759c8f5a5ce16655a57b8037df981dfd7ce8dc",
+      "adapted_sha256": "7caa49a8008962cc1962efe34b43a1262b0bb3f450c470f3256ab2d7fcd2eab5"
+    },
+    "local_execution.py": {
+      "source": "Published v0.5.0 reproduction/public_friendster_cpu_v1/local_execution.py",
+      "before_sha256": "edb6536ceb51bc971c9e4a4c9c165cd3006c26fd892b37849c7ab529c795b0e6",
+      "adapted_sha256": "0b8352d16decbac39449ccbf289f314b622b6edf091cca87c1dea71f36ffff13"
+    },
+    "owned_supervision.py": {
+      "source": "Published v0.5.0 reproduction/public_friendster_cpu_v1/owned_supervision.py",
+      "before_sha256": "fcf494937da9be0d09b8e25f8e55d0f16cfd7970e103b91e61506135d9da74a6",
+      "adapted_sha256": "fcf494937da9be0d09b8e25f8e55d0f16cfd7970e103b91e61506135d9da74a6"
+    },
+    "portable_environment.py": {
+      "source": "Published v0.5.0 reproduction/public_friendster_cpu_v1/portable_environment.py",
+      "before_sha256": "47310a62dfc0d6c62b0469012ebcb7a5ec70cb86f53c2ecd9b6e029299851cd1",
+      "adapted_sha256": "47310a62dfc0d6c62b0469012ebcb7a5ec70cb86f53c2ecd9b6e029299851cd1"
+    },
+    "portable_input.py": {
+      "source": "Published v0.5.0 reproduction/public_friendster_cpu_v1/portable_input.py",
+      "before_sha256": "8d4ce05db65dc004b3cd2025dd236d6733460e15aaafc10b75b388a1254c2890",
+      "adapted_sha256": "65c2b264bfb3f939adaf19c52b9ac558939a9c345c36697938caa41417e5ba21"
+    },
+    "portable_worker.py": {
+      "source": "Published v0.5.0 reproduction/public_friendster_cpu_v1/portable_worker.py",
+      "before_sha256": "0e133558e3532b95969c01f2d90834d49842c300d607efc6d52060fc9c4c46fb",
+      "adapted_sha256": "9cd361efe6a84d91fda202ea050dac6842b8b5f2feb06f75fcca3afea9bf6f17"
+    },
+    "run_public_cpu.py": {
+      "source": "Published v0.5.0 reproduction/public_friendster_cpu_v1/run_public_cpu.py",
+      "before_sha256": "71259f8a94553f9128193ec5ea21708a490d0fdde70d4280373472b528c07e1e",
+      "adapted_sha256": "313f99915f195d4d1667e019ab42e066e108462753684528c24655edf03ce20f"
+    }
+  },
+  "changes": "Dataset labels and budgets, supplied local paths, E22 admission kind and frozen actual cohort copying only. No new kernels, samplers, experiments or target measurement are introduced. Original root/host CLI gates are bypassed by invoking unchanged execute/classifier functions with explicit bound layouts."
+}

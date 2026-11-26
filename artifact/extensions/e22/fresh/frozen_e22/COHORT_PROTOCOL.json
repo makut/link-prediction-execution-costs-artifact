@@ -1,0 +1,41 @@
+{
+  "kind": "PREDECLARED_CITATION2_MATCHED_CPU_128_V1",
+  "dataset": "public_strict_clean_ogbl_citation2",
+  "nodes": 2927963,
+  "stored_entries": 60703502,
+  "input_files": {
+    "edge_starts.bin": {
+      "bytes": 23423704,
+      "sha256": "f06070adc368892f8441ea15e691dce400f9d44b6ec3e6e4505134c276c1072d"
+    },
+    "edge_ends.bin": {
+      "bytes": 242814016,
+      "sha256": "d3d8d1e2016675321c1d3d9ae817d2c6dca4a9dd2d5cdbba3e638ea7201057a4"
+    }
+  },
+  "pair_count": 128,
+  "pair_seed": 20261126,
+  "pair_kind": "mixed_twohop",
+  "samplers": [
+    "reference_union",
+    "production_union",
+    "per_vertex"
+  ],
+  "caps": [
+    50,
+    200
+  ],
+  "hops": 2,
+  "oversample": 1.5,
+  "candidate_count": 768,
+  "selected_count": 128,
+  "candidate_selection_seed": 20261126,
+  "native_plan_seed": 20261125,
+  "candidate_selection": "Original prepare.choose deterministic round-robin12strata, salted by exact protocolSHA; select before node sampling/oracles/timers; retain original candidate order.",
+  "sampling_seed": "SeedSequence([20261126,sampler_index,cap,pair_index]).generate_state(1)[0]",
+  "max_neighbors": 20000000,
+  "max_subgraph_nodes": 10000,
+  "warmup": 1,
+  "repeats": 3,
+  "scope": "Fresh physical execution extension only. New cohort (no original Citation2 fixed-set archive existed); no held-out quality/model scores, no full SEAL or language superiority claim."
+}

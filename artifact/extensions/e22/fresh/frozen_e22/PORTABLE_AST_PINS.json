@@ -1,0 +1,53 @@
+{
+  "kind": "EXPLICIT_PY310_PY312_EMPTY_TYPE_PARAMS_ONLY_COMPATIBILITY",
+  "canonicalizer": "py310_ast_identity_only_empty_pep695_type_params_v1",
+  "actual_target310_diagnosis_sha256": "4f6ca9ea53cc2cb513285dce9b5e7c4df21a2d4ec70cef20ab20a542532a85e2",
+  "frozen_v1_source_manifest_sha256": "c3c54792e86a08cea32699dc615bbe9c6f6360fce86b2376771ec5ae0a8393c4",
+  "frozen_v1_source_packet_sha256": "bb7014a6cdc202a735373d5537c678b07521bdaeaf6d2521195f695405734990",
+  "scientific_function_files_bytes_unchanged": true,
+  "normalization": "Only FunctionDef/AsyncFunctionDef/ClassDef type_params=[] field introduced inPython3.12 is absent from canonical dump; allother AST fields preserved; nonempty or unsupported field rejected.",
+  "files": {
+    "scientific_functions_v1.py": {
+      "extracted_file_identity": {
+        "bytes": 2580,
+        "sha256": "d989c604231257e6f3355a642abaeed29587d277d7fdb0d960eaeac29a968443"
+      },
+      "unchanged_original_lineage": {
+        "kind": "ORIGINAL_FUNCTION_AST_IDENTITY",
+        "original_source_sha256": "744d79e8b4544fd2855e8816097b516bbab4005cc1fd713303d0ca81d15cc114",
+        "functions": {
+          "original_identity": "8527989d39c4d38cfb9816bcdd49c29b8fa351e61b5ef4f2dee46481816b0579",
+          "verify_same_selection": "ccefae36e160a1a556ed08533579194338bf4decef394204c5289ee7ee51c97a",
+          "one": "b365fddc6b3c3d7a0ffa01c31fd8fa283f3daee6ae9317e289b2e528062d8bc3"
+        }
+      },
+      "portable_functions": {
+        "original_identity": "575674117ca6178a047c028e79b8fc45617ac91b6c02576838c615ecc7235e7a",
+        "verify_same_selection": "abc1f08dd847bc65cabdd5230e401dd4b9d9c119a4c675b8f9d797033d7e3389",
+        "one": "46fc30294e7be97a0fa6d96c7b817b923e36b9809720599c614e9a1ca9869cfa"
+      }
+    },
+    "execution_v1.py": {
+      "extracted_file_identity": {
+        "bytes": 2903,
+        "sha256": "b8a920aff0ae32a1915da33efcf413dd82115c950807d624bf9f097b34cb05ef"
+      },
+      "unchanged_original_lineage": {
+        "kind": "ORIGINAL_FUNCTION_AST_IDENTITY",
+        "original_source_sha256": "35b84f8178b5dc6804e7c9ba71859d714640a2e35751710f879d260fd5750617",
+        "functions": {
+          "acquire_lock": "d4950f71fb06576b9bc9be98307b10ee3e3570e6061f29e59dce41c2ae149ee3",
+          "release_lock": "d535cd498ed7e430afba3f37e47ac0f56874a857f69e43e5fc9a3e9bbedefe75",
+          "cleanup_owned": "007597ba3bc61567ef9bc825642cdb5dee71541ee63cc2262a713f1d2b23b7af",
+          "guarded_run": "d164de5076a5ba386361ec6e5d3d581bdadae910fa17f76a4803e05ea22ba654"
+        }
+      },
+      "portable_functions": {
+        "acquire_lock": "38ebf12a1a110b5148d207c89cee4efb8f5792f82e9cb8adb58309ec9cd5c376",
+        "release_lock": "f4219a2c452cc396116e12e0fd65ef44b6527336b04176e30757300b0dc730c8",
+        "cleanup_owned": "5f30d5e6f89af750f8f56779c4fb8950c10c026df2e5ed13ab0101551ee6da15",
+        "guarded_run": "2c2a571c3556c337ba74853b3e69187dd470520ef62376d798f4696c7df3e656"
+      }
+    }
+  }
+}
