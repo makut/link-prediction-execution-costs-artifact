@@ -1,0 +1,1097 @@
+{
+  "actual_archive": {
+    "bytes": 1496841,
+    "sha256": "41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073"
+  },
+  "aggregation": "Independent Decimal50 mean/sampleSD and per-repetition divisions from all36 actual raw steady times; no runner/producer/verifier summary function imported or called.",
+  "all36_original_child_results_and_configs_match": true,
+  "all_seven_runtime_source_hashes_checked": true,
+  "archive_members_rehashed": 373,
+  "canonical_verifier_or_runner_imported": false,
+  "descriptive_rows": [
+    {
+      "arm": "reference_union_stock",
+      "dataset": "citation2",
+      "maximum": 39.09706312045455,
+      "mean": 38.721630345719554,
+      "median": 38.546471470966935,
+      "minimum": 38.52135644573718,
+      "sample_sd": 0.325376731469824,
+      "steady_seconds": [
+        38.52135644573718,
+        39.09706312045455,
+        38.546471470966935
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_corrected",
+      "dataset": "citation2",
+      "maximum": 42.48026026971638,
+      "mean": 41.5453737732023,
+      "median": 41.35008434019983,
+      "minimum": 40.80577670969069,
+      "sample_sd": 0.8541529547925809,
+      "steady_seconds": [
+        42.48026026971638,
+        40.80577670969069,
+        41.35008434019983
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset": "citation2",
+      "maximum": 31.320632555522025,
+      "mean": 30.747455095872283,
+      "median": 31.187846477143466,
+      "minimum": 29.733886254951358,
+      "sample_sd": 0.8802836941106712,
+      "steady_seconds": [
+        31.187846477143466,
+        29.733886254951358,
+        31.320632555522025
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_stock",
+      "dataset": "citation2",
+      "maximum": 5.5344799449667335,
+      "mean": 5.409829420037568,
+      "median": 5.435791828669608,
+      "minimum": 5.259216486476362,
+      "sample_sd": 0.1394561862790708,
+      "steady_seconds": [
+        5.5344799449667335,
+        5.259216486476362,
+        5.435791828669608
+      ],
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_corrected",
+      "dataset": "citation2",
+      "maximum": 5.801639339886606,
+      "mean": 5.664738955597083,
+      "median": 5.744538512080908,
+      "minimum": 5.448039014823735,
+      "sample_sd": 0.18982695905061375,
+      "steady_seconds": [
+        5.744538512080908,
+        5.801639339886606,
+        5.448039014823735
+      ],
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset": "citation2",
+      "maximum": 4.4643649533391,
+      "mean": 4.2518609793235855,
+      "median": 4.1496003940701485,
+      "minimum": 4.141617590561509,
+      "sample_sd": 0.18407711839675817,
+      "steady_seconds": [
+        4.4643649533391,
+        4.1496003940701485,
+        4.141617590561509
+      ],
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_stock",
+      "dataset": "friendster",
+      "maximum": 811.3943035500124,
+      "mean": 797.441399310405,
+      "median": 801.7788338754326,
+      "minimum": 779.1510605057701,
+      "sample_sd": 16.553449322027774,
+      "steady_seconds": [
+        801.7788338754326,
+        811.3943035500124,
+        779.1510605057701
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_corrected",
+      "dataset": "friendster",
+      "maximum": 215.95232030469924,
+      "mean": 212.90098639857024,
+      "median": 213.08584763109684,
+      "minimum": 209.66479125991464,
+      "sample_sd": 3.147838246911827,
+      "steady_seconds": [
+        209.66479125991464,
+        215.95232030469924,
+        213.08584763109684
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset": "friendster",
+      "maximum": 207.681506998837,
+      "mean": 202.89303236082196,
+      "median": 200.68608584161848,
+      "minimum": 200.31150424201041,
+      "sample_sd": 4.1511678914344285,
+      "steady_seconds": [
+        207.681506998837,
+        200.31150424201041,
+        200.68608584161848
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_stock",
+      "dataset": "friendster",
+      "maximum": 74.0865719858557,
+      "mean": 71.20192826290926,
+      "median": 69.84819384105504,
+      "minimum": 69.67101896181703,
+      "sample_sd": 2.4997449451312006,
+      "steady_seconds": [
+        74.0865719858557,
+        69.84819384105504,
+        69.67101896181703
+      ],
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_corrected",
+      "dataset": "friendster",
+      "maximum": 22.167301604524255,
+      "mean": 21.23402386872719,
+      "median": 20.855634200386703,
+      "minimum": 20.679135801270604,
+      "sample_sd": 0.813045767668409,
+      "steady_seconds": [
+        22.167301604524255,
+        20.679135801270604,
+        20.855634200386703
+      ],
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset": "friendster",
+      "maximum": 21.374207883141935,
+      "mean": 20.868232474351924,
+      "median": 20.62999713420868,
+      "minimum": 20.600492405705154,
+      "sample_sd": 0.4384358196773862,
+      "steady_seconds": [
+        21.374207883141935,
+        20.62999713420868,
+        20.600492405705154
+      ],
+      "workers": 8
+    }
+  ],
+  "graph_model_GPU_network_cluster_YT_actions": 0,
+  "kind": "INDEPENDENT_ACTUAL_E23_RAW_NUMERICAL_PEER",
+  "new_scientific_experiments": 0,
+  "paired_time_ratios": [
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_corrected",
+      "mean": 0.9323766215039145,
+      "median": 0.932198134200484,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        0.9068060365251234,
+        0.9581256937861362,
+        0.932198134200484
+      ],
+      "sample_sd": 0.025660294203985082,
+      "workers": 1
+    },
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_compiled",
+      "mean": 1.2602481942997679,
+      "median": 1.2351399919185893,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        1.2351399919185893,
+        1.3148991956590945,
+        1.23070539532162
+      ],
+      "sample_sd": 0.04738106556344315,
+      "workers": 1
+    },
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_compiled",
+      "mean": 1.3515540466553158,
+      "median": 1.3620773816765048,
+      "numerator": "reference_union_corrected",
+      "paired_time_ratios": [
+        1.3620773816765048,
+        1.3723660728303086,
+        1.3202186854591336
+      ],
+      "sample_sd": 0.027620516602445813,
+      "workers": 1
+    },
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_corrected",
+      "mean": 0.9558968628669178,
+      "median": 0.9634333433969646,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        0.9634333433969646,
+        0.9065052441848538,
+        0.9977520010189348
+      ],
+      "sample_sd": 0.04608786784251696,
+      "workers": 8
+    },
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_compiled",
+      "mean": 1.2731950011668518,
+      "median": 1.2674031200671454,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        1.2397015035312573,
+        1.2674031200671454,
+        1.3124803799021527
+      ],
+      "sample_sd": 0.03673350822420003,
+      "workers": 8
+    },
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_compiled",
+      "mean": 1.3334370927763088,
+      "median": 1.3154374820213919,
+      "numerator": "reference_union_corrected",
+      "paired_time_ratios": [
+        1.2867537874080632,
+        1.3981200088994714,
+        1.3154374820213919
+      ],
+      "sample_sd": 0.057823855914447095,
+      "workers": 8
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_corrected",
+      "mean": 3.745965187430803,
+      "median": 3.7572844894890256,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        3.8240985959416207,
+        3.7572844894890256,
+        3.6565124768617627
+      ],
+      "sample_sd": 0.08436451728289594,
+      "workers": 1
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_compiled",
+      "mean": 3.931238925053304,
+      "median": 3.882436877665133,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        3.860617372542094,
+        4.050662524952685,
+        3.882436877665133
+      ],
+      "sample_sd": 0.1039976916121178,
+      "workers": 1
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_compiled",
+      "mean": 1.0498063205978947,
+      "median": 1.0617868535203994,
+      "numerator": "reference_union_corrected",
+      "paired_time_ratios": [
+        1.0095496430555502,
+        1.0780824652177343,
+        1.0617868535203994
+      ],
+      "sample_sd": 0.03580274857058887,
+      "workers": 1
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_corrected",
+      "mean": 3.3535006603239923,
+      "median": 3.3421556357015025,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        3.3421556357015025,
+        3.3777133876534293,
+        3.340632957617045
+      ],
+      "sample_sd": 0.02098265380461852,
+      "workers": 8
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_compiled",
+      "mean": 3.4113110463819254,
+      "median": 3.385758775760211,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        3.4661669050336394,
+        3.385758775760211,
+        3.3820074583519255
+      ],
+      "sample_sd": 0.04754358018583638,
+      "workers": 8
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_compiled",
+      "mean": 1.0172907688573982,
+      "median": 1.0123852279672154,
+      "numerator": "reference_union_corrected",
+      "paired_time_ratios": [
+        1.0371051748779818,
+        1.0023819037269976,
+        1.0123852279672154
+      ],
+      "sample_sd": 0.0178738534856123,
+      "workers": 8
+    }
+  ],
+  "raw_36_timing_observations": [
+    {
+      "arm": "reference_union_corrected",
+      "block": "friendster_w8_r1",
+      "dataset": "friendster",
+      "graphs_per_second": 144.35676732737255,
+      "kind": "pipeline",
+      "name": "friendster_w8_r1_reference_union_corrected",
+      "position": 1,
+      "repetition": 1,
+      "steady_seconds": 22.167301604524255,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "friendster_w8_r1",
+      "dataset": "friendster",
+      "graphs_per_second": 43.19271244741801,
+      "kind": "pipeline",
+      "name": "friendster_w8_r1_reference_union_stock",
+      "position": 2,
+      "repetition": 1,
+      "steady_seconds": 74.0865719858557,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "friendster_w8_r1",
+      "dataset": "friendster",
+      "graphs_per_second": 149.71315042387485,
+      "kind": "pipeline",
+      "name": "friendster_w8_r1_reference_union_compiled",
+      "position": 3,
+      "repetition": 1,
+      "steady_seconds": 21.374207883141935,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_corrected",
+      "block": "citation2_w8_r1",
+      "dataset": "citation2",
+      "graphs_per_second": 557.050839379059,
+      "kind": "pipeline",
+      "name": "citation2_w8_r1_reference_union_corrected",
+      "position": 1,
+      "repetition": 1,
+      "steady_seconds": 5.744538512080908,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "citation2_w8_r1",
+      "dataset": "citation2",
+      "graphs_per_second": 716.7872773498448,
+      "kind": "pipeline",
+      "name": "citation2_w8_r1_reference_union_compiled",
+      "position": 2,
+      "repetition": 1,
+      "steady_seconds": 4.4643649533391,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "citation2_w8_r1",
+      "dataset": "citation2",
+      "graphs_per_second": 578.1934403629381,
+      "kind": "pipeline",
+      "name": "citation2_w8_r1_reference_union_stock",
+      "position": 3,
+      "repetition": 1,
+      "steady_seconds": 5.5344799449667335,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "citation2_w1_r1",
+      "dataset": "citation2",
+      "graphs_per_second": 83.07080267299662,
+      "kind": "pipeline",
+      "name": "citation2_w1_r1_reference_union_stock",
+      "position": 1,
+      "repetition": 1,
+      "steady_seconds": 38.52135644573718,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "citation2_w1_r1",
+      "dataset": "citation2",
+      "graphs_per_second": 102.60407054219577,
+      "kind": "pipeline",
+      "name": "citation2_w1_r1_reference_union_compiled",
+      "position": 2,
+      "repetition": 1,
+      "steady_seconds": 31.187846477143466,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_corrected",
+      "block": "citation2_w1_r1",
+      "dataset": "citation2",
+      "graphs_per_second": 75.3291053228607,
+      "kind": "pipeline",
+      "name": "citation2_w1_r1_reference_union_corrected",
+      "position": 3,
+      "repetition": 1,
+      "steady_seconds": 42.48026026971638,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "friendster_w1_r1",
+      "dataset": "friendster",
+      "graphs_per_second": 3.991125563308602,
+      "kind": "pipeline",
+      "name": "friendster_w1_r1_reference_union_stock",
+      "position": 1,
+      "repetition": 1,
+      "steady_seconds": 801.7788338754326,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "friendster_w1_r1",
+      "dataset": "friendster",
+      "graphs_per_second": 15.40820868570604,
+      "kind": "pipeline",
+      "name": "friendster_w1_r1_reference_union_compiled",
+      "position": 2,
+      "repetition": 1,
+      "steady_seconds": 207.681506998837,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_corrected",
+      "block": "friendster_w1_r1",
+      "dataset": "friendster",
+      "graphs_per_second": 15.262457662875136,
+      "kind": "pipeline",
+      "name": "friendster_w1_r1_reference_union_corrected",
+      "position": 3,
+      "repetition": 1,
+      "steady_seconds": 209.66479125991464,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "citation2_w8_r2",
+      "dataset": "citation2",
+      "graphs_per_second": 771.1585926618033,
+      "kind": "pipeline",
+      "name": "citation2_w8_r2_reference_union_compiled",
+      "position": 1,
+      "repetition": 2,
+      "steady_seconds": 4.1496003940701485,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "citation2_w8_r2",
+      "dataset": "citation2",
+      "graphs_per_second": 608.455652705785,
+      "kind": "pipeline",
+      "name": "citation2_w8_r2_reference_union_stock",
+      "position": 2,
+      "repetition": 2,
+      "steady_seconds": 5.259216486476362,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_corrected",
+      "block": "citation2_w8_r2",
+      "dataset": "citation2",
+      "graphs_per_second": 551.5682400317122,
+      "kind": "pipeline",
+      "name": "citation2_w8_r2_reference_union_corrected",
+      "position": 3,
+      "repetition": 2,
+      "steady_seconds": 5.801639339886606,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "friendster_w8_r2",
+      "dataset": "friendster",
+      "graphs_per_second": 45.81363989571223,
+      "kind": "pipeline",
+      "name": "friendster_w8_r2_reference_union_stock",
+      "position": 1,
+      "repetition": 2,
+      "steady_seconds": 69.84819384105504,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "friendster_w8_r2",
+      "dataset": "friendster",
+      "graphs_per_second": 155.11393332642578,
+      "kind": "pipeline",
+      "name": "friendster_w8_r2_reference_union_compiled",
+      "position": 2,
+      "repetition": 2,
+      "steady_seconds": 20.62999713420868,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_corrected",
+      "block": "friendster_w8_r2",
+      "dataset": "friendster",
+      "graphs_per_second": 154.74534481288043,
+      "kind": "pipeline",
+      "name": "friendster_w8_r2_reference_union_corrected",
+      "position": 3,
+      "repetition": 2,
+      "steady_seconds": 20.679135801270604,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "citation2_w1_r2",
+      "dataset": "citation2",
+      "graphs_per_second": 107.62131705764256,
+      "kind": "pipeline",
+      "name": "citation2_w1_r2_reference_union_compiled",
+      "position": 1,
+      "repetition": 2,
+      "steady_seconds": 29.733886254951358,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_corrected",
+      "block": "citation2_w1_r2",
+      "dataset": "citation2",
+      "graphs_per_second": 78.42026933505358,
+      "kind": "pipeline",
+      "name": "citation2_w1_r2_reference_union_corrected",
+      "position": 2,
+      "repetition": 2,
+      "steady_seconds": 40.80577670969069,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "citation2_w1_r2",
+      "dataset": "citation2",
+      "graphs_per_second": 81.84757996121311,
+      "kind": "pipeline",
+      "name": "citation2_w1_r2_reference_union_stock",
+      "position": 3,
+      "repetition": 2,
+      "steady_seconds": 39.09706312045455,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "friendster_w1_r2",
+      "dataset": "friendster",
+      "graphs_per_second": 15.975118414236732,
+      "kind": "pipeline",
+      "name": "friendster_w1_r2_reference_union_compiled",
+      "position": 1,
+      "repetition": 2,
+      "steady_seconds": 200.31150424201041,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_corrected",
+      "block": "friendster_w1_r2",
+      "dataset": "friendster",
+      "graphs_per_second": 14.818085749136387,
+      "kind": "pipeline",
+      "name": "friendster_w1_r2_reference_union_corrected",
+      "position": 2,
+      "repetition": 2,
+      "steady_seconds": 215.95232030469924,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "friendster_w1_r2",
+      "dataset": "friendster",
+      "graphs_per_second": 3.9438285257850096,
+      "kind": "pipeline",
+      "name": "friendster_w1_r2_reference_union_stock",
+      "position": 3,
+      "repetition": 2,
+      "steady_seconds": 811.3943035500124,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_corrected",
+      "block": "citation2_w1_r3",
+      "dataset": "citation2",
+      "graphs_per_second": 77.38799209386414,
+      "kind": "pipeline",
+      "name": "citation2_w1_r3_reference_union_corrected",
+      "position": 1,
+      "repetition": 3,
+      "steady_seconds": 41.35008434019983,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "citation2_w1_r3",
+      "dataset": "citation2",
+      "graphs_per_second": 83.01667773690333,
+      "kind": "pipeline",
+      "name": "citation2_w1_r3_reference_union_stock",
+      "position": 2,
+      "repetition": 3,
+      "steady_seconds": 38.546471470966935,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "citation2_w1_r3",
+      "dataset": "citation2",
+      "graphs_per_second": 102.16907319248314,
+      "kind": "pipeline",
+      "name": "citation2_w1_r3_reference_union_compiled",
+      "position": 3,
+      "repetition": 3,
+      "steady_seconds": 31.320632555522025,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_corrected",
+      "block": "friendster_w1_r3",
+      "dataset": "friendster",
+      "graphs_per_second": 15.017421548989843,
+      "kind": "pipeline",
+      "name": "friendster_w1_r3_reference_union_corrected",
+      "position": 1,
+      "repetition": 3,
+      "steady_seconds": 213.08584763109684,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "friendster_w1_r3",
+      "dataset": "friendster",
+      "graphs_per_second": 4.107034132665859,
+      "kind": "pipeline",
+      "name": "friendster_w1_r3_reference_union_stock",
+      "position": 2,
+      "repetition": 3,
+      "steady_seconds": 779.1510605057701,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "friendster_w1_r3",
+      "dataset": "friendster",
+      "graphs_per_second": 15.945300774491367,
+      "kind": "pipeline",
+      "name": "friendster_w1_r3_reference_union_compiled",
+      "position": 3,
+      "repetition": 3,
+      "steady_seconds": 200.68608584161848,
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "citation2_w8_r3",
+      "dataset": "citation2",
+      "graphs_per_second": 588.690682215325,
+      "kind": "pipeline",
+      "name": "citation2_w8_r3_reference_union_stock",
+      "position": 1,
+      "repetition": 3,
+      "steady_seconds": 5.435791828669608,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_corrected",
+      "block": "citation2_w8_r3",
+      "dataset": "citation2",
+      "graphs_per_second": 587.3673061615423,
+      "kind": "pipeline",
+      "name": "citation2_w8_r3_reference_union_corrected",
+      "position": 2,
+      "repetition": 3,
+      "steady_seconds": 5.448039014823735,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "citation2_w8_r3",
+      "dataset": "citation2",
+      "graphs_per_second": 772.6449702388271,
+      "kind": "pipeline",
+      "name": "citation2_w8_r3_reference_union_compiled",
+      "position": 3,
+      "repetition": 3,
+      "steady_seconds": 4.141617590561509,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "block": "friendster_w8_r3",
+      "dataset": "friendster",
+      "graphs_per_second": 155.33609279716944,
+      "kind": "pipeline",
+      "name": "friendster_w8_r3_reference_union_compiled",
+      "position": 1,
+      "repetition": 3,
+      "steady_seconds": 20.600492405705154,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_corrected",
+      "block": "friendster_w8_r3",
+      "dataset": "friendster",
+      "graphs_per_second": 153.43575598102242,
+      "kind": "pipeline",
+      "name": "friendster_w8_r3_reference_union_corrected",
+      "position": 2,
+      "repetition": 3,
+      "steady_seconds": 20.855634200386703,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_stock",
+      "block": "friendster_w8_r3",
+      "dataset": "friendster",
+      "graphs_per_second": 45.93014495386883,
+      "kind": "pipeline",
+      "name": "friendster_w8_r3_reference_union_stock",
+      "position": 3,
+      "repetition": 3,
+      "steady_seconds": 69.67101896181703,
+      "workers": 8
+    }
+  ],
+  "recorded_summary_independently_recomputed": true,
+  "reference_prefix_comparisons": [
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w8_r1",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w8_r1",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w8_r1",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w8_r1",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w8_r1",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w8_r1",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w1_r1",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w1_r1",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w1_r1",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w1_r1",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w1_r1",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w1_r1",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w8_r2",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w8_r2",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w8_r2",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w8_r2",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w8_r2",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w8_r2",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w1_r2",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w1_r2",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w1_r2",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w1_r2",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w1_r2",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w1_r2",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w1_r3",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w1_r3",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w1_r3",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w1_r3",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w1_r3",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w1_r3",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w8_r3",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w8_r3",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "citation2_w8_r3",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w8_r3",
+      "candidate_arm": "reference_union_corrected",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w8_r3",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_stock",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    },
+    {
+      "audited_pairs": 32,
+      "block": "friendster_w8_r3",
+      "candidate_arm": "reference_union_compiled",
+      "reference_arm": "reference_union_corrected",
+      "same_nodes_edges_drnl_and_initial_model": true,
+      "scope": "excluded warmup prefix only; not every measured graph"
+    }
+  ],
+  "scope": "Existing completed E23 archive only; finite-window same-workload process repetitions, descriptive uncertainty. Prefix equality covers32 excluded warmup queries, not every measured graph. This numerical peer does not replace the separate complete source/guard/bootstrap/persistence verifier or live outer lifecycle collection.",
+  "script": {
+    "bytes": 19375,
+    "sha256": "47d3a3f82d21dfe755ae288b844a9e20bbde7cb928c134da31c990996c5c2091"
+  },
+  "status": "PASS_ACTUAL_RAW_NUMERICAL_AUDIT"
+}

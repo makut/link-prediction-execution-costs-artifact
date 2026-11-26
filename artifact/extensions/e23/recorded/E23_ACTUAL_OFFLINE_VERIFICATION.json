@@ -1,0 +1,387 @@
+{
+  "actual_child_wait_zero_quiescence_and_flock_checked": true,
+  "archive_members": 373,
+  "audited_queries_per_timing": 32,
+  "declared_job_gates": 40,
+  "descriptive_rows": [
+    {
+      "arm": "reference_union_stock",
+      "dataset": "citation2",
+      "maximum": 39.09706312045455,
+      "mean": 38.721630345719554,
+      "median": 38.546471470966935,
+      "minimum": 38.52135644573718,
+      "sample_sd": 0.3253767314698228,
+      "steady_seconds": [
+        38.52135644573718,
+        39.09706312045455,
+        38.546471470966935
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_corrected",
+      "dataset": "citation2",
+      "maximum": 42.48026026971638,
+      "mean": 41.5453737732023,
+      "median": 41.35008434019983,
+      "minimum": 40.80577670969069,
+      "sample_sd": 0.8541529547925822,
+      "steady_seconds": [
+        42.48026026971638,
+        40.80577670969069,
+        41.35008434019983
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset": "citation2",
+      "maximum": 31.320632555522025,
+      "mean": 30.747455095872283,
+      "median": 31.187846477143466,
+      "minimum": 29.733886254951358,
+      "sample_sd": 0.8802836941106712,
+      "steady_seconds": [
+        31.187846477143466,
+        29.733886254951358,
+        31.320632555522025
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_stock",
+      "dataset": "citation2",
+      "maximum": 5.5344799449667335,
+      "mean": 5.409829420037568,
+      "median": 5.435791828669608,
+      "minimum": 5.259216486476362,
+      "sample_sd": 0.1394561862790709,
+      "steady_seconds": [
+        5.5344799449667335,
+        5.259216486476362,
+        5.435791828669608
+      ],
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_corrected",
+      "dataset": "citation2",
+      "maximum": 5.801639339886606,
+      "mean": 5.664738955597083,
+      "median": 5.744538512080908,
+      "minimum": 5.448039014823735,
+      "sample_sd": 0.18982695905061378,
+      "steady_seconds": [
+        5.744538512080908,
+        5.801639339886606,
+        5.448039014823735
+      ],
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset": "citation2",
+      "maximum": 4.4643649533391,
+      "mean": 4.2518609793235855,
+      "median": 4.1496003940701485,
+      "minimum": 4.141617590561509,
+      "sample_sd": 0.18407711839675808,
+      "steady_seconds": [
+        4.4643649533391,
+        4.1496003940701485,
+        4.141617590561509
+      ],
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_stock",
+      "dataset": "friendster",
+      "maximum": 811.3943035500124,
+      "mean": 797.441399310405,
+      "median": 801.7788338754326,
+      "minimum": 779.1510605057701,
+      "sample_sd": 16.553449322027753,
+      "steady_seconds": [
+        801.7788338754326,
+        811.3943035500124,
+        779.1510605057701
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_corrected",
+      "dataset": "friendster",
+      "maximum": 215.95232030469924,
+      "mean": 212.90098639857024,
+      "median": 213.08584763109684,
+      "minimum": 209.66479125991464,
+      "sample_sd": 3.1478382469118302,
+      "steady_seconds": [
+        209.66479125991464,
+        215.95232030469924,
+        213.08584763109684
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset": "friendster",
+      "maximum": 207.681506998837,
+      "mean": 202.89303236082196,
+      "median": 200.68608584161848,
+      "minimum": 200.31150424201041,
+      "sample_sd": 4.151167891434425,
+      "steady_seconds": [
+        207.681506998837,
+        200.31150424201041,
+        200.68608584161848
+      ],
+      "workers": 1
+    },
+    {
+      "arm": "reference_union_stock",
+      "dataset": "friendster",
+      "maximum": 74.0865719858557,
+      "mean": 71.20192826290925,
+      "median": 69.84819384105504,
+      "minimum": 69.67101896181703,
+      "sample_sd": 2.499744945131202,
+      "steady_seconds": [
+        74.0865719858557,
+        69.84819384105504,
+        69.67101896181703
+      ],
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_corrected",
+      "dataset": "friendster",
+      "maximum": 22.167301604524255,
+      "mean": 21.23402386872719,
+      "median": 20.855634200386703,
+      "minimum": 20.679135801270604,
+      "sample_sd": 0.8130457676684087,
+      "steady_seconds": [
+        22.167301604524255,
+        20.679135801270604,
+        20.855634200386703
+      ],
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset": "friendster",
+      "maximum": 21.374207883141935,
+      "mean": 20.868232474351924,
+      "median": 20.62999713420868,
+      "minimum": 20.600492405705154,
+      "sample_sd": 0.4384358196773864,
+      "steady_seconds": [
+        21.374207883141935,
+        20.62999713420868,
+        20.600492405705154
+      ],
+      "workers": 8
+    }
+  ],
+  "expected_recorded_final_persistence_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/pipeline_repeats_e23_20261126_final_v1.tgz",
+  "external_receipts": {
+    "archive_pointer": {
+      "bytes": 430,
+      "sha256": "02694f2ada471baf6483047dd28e20b6195e9e1a355193a75a090bfd2789a4ea"
+    },
+    "outer_complete": {
+      "bytes": 850,
+      "sha256": "9b0dc738bf4ef8f8c073079847ac92d4fa373e737fec0c3852bd1575baf027c5"
+    }
+  },
+  "external_scope": "Recorded final receipts checked; no live YT/network or outer PID observation performed.",
+  "final_outer_completion_and_YT_persistence_checked": true,
+  "fresh_science_executed": false,
+  "full_graph_oracles_recomputed": false,
+  "limitation": "Prefix hashes are checked across arms and bound to sources/workloads; graph-derived node/edge/DRNL hashes are not regenerated without graph inputs. Outer final persistence receipts are generated after this archive and require separate verification.",
+  "measured_graphs_per_window": 3200,
+  "outer_source_sha256": "e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e",
+  "paired_time_ratios": [
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_corrected",
+      "mean": 0.9323766215039146,
+      "median": 0.9321981342004841,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        0.9068060365251235,
+        0.9581256937861362,
+        0.9321981342004841
+      ],
+      "sample_sd": 0.025660294203985048,
+      "workers": 1
+    },
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_compiled",
+      "mean": 1.2602481942997679,
+      "median": 1.2351399919185893,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        1.2351399919185893,
+        1.3148991956590945,
+        1.23070539532162
+      ],
+      "sample_sd": 0.04738106556344317,
+      "workers": 1
+    },
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_compiled",
+      "mean": 1.3515540466553155,
+      "median": 1.362077381676505,
+      "numerator": "reference_union_corrected",
+      "paired_time_ratios": [
+        1.362077381676505,
+        1.3723660728303086,
+        1.3202186854591336
+      ],
+      "sample_sd": 0.027620516602445896,
+      "workers": 1
+    },
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_corrected",
+      "mean": 0.9558968628669177,
+      "median": 0.9634333433969646,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        0.9634333433969646,
+        0.9065052441848538,
+        0.9977520010189348
+      ],
+      "sample_sd": 0.046087867842516964,
+      "workers": 8
+    },
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_compiled",
+      "mean": 1.2731950011668518,
+      "median": 1.2674031200671452,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        1.2397015035312573,
+        1.2674031200671452,
+        1.3124803799021527
+      ],
+      "sample_sd": 0.03673350822420006,
+      "workers": 8
+    },
+    {
+      "dataset": "citation2",
+      "denominator": "reference_union_compiled",
+      "mean": 1.3334370927763086,
+      "median": 1.3154374820213917,
+      "numerator": "reference_union_corrected",
+      "paired_time_ratios": [
+        1.2867537874080632,
+        1.3981200088994714,
+        1.3154374820213917
+      ],
+      "sample_sd": 0.05782385591444712,
+      "workers": 8
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_corrected",
+      "mean": 3.7459651874308033,
+      "median": 3.7572844894890256,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        3.824098595941621,
+        3.7572844894890256,
+        3.656512476861763
+      ],
+      "sample_sd": 0.08436451728289592,
+      "workers": 1
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_compiled",
+      "mean": 3.9312389250533037,
+      "median": 3.8824368776651332,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        3.860617372542094,
+        4.050662524952685,
+        3.8824368776651332
+      ],
+      "sample_sd": 0.10399769161211765,
+      "workers": 1
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_compiled",
+      "mean": 1.0498063205978945,
+      "median": 1.0617868535203994,
+      "numerator": "reference_union_corrected",
+      "paired_time_ratios": [
+        1.0095496430555502,
+        1.0780824652177343,
+        1.0617868535203994
+      ],
+      "sample_sd": 0.03580274857058889,
+      "workers": 1
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_corrected",
+      "mean": 3.353500660323992,
+      "median": 3.3421556357015025,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        3.3421556357015025,
+        3.377713387653429,
+        3.340632957617045
+      ],
+      "sample_sd": 0.020982653804618254,
+      "workers": 8
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_compiled",
+      "mean": 3.4113110463819254,
+      "median": 3.385758775760211,
+      "numerator": "reference_union_stock",
+      "paired_time_ratios": [
+        3.4661669050336394,
+        3.385758775760211,
+        3.382007458351925
+      ],
+      "sample_sd": 0.0475435801858366,
+      "workers": 8
+    },
+    {
+      "dataset": "friendster",
+      "denominator": "reference_union_compiled",
+      "mean": 1.0172907688573984,
+      "median": 1.0123852279672154,
+      "numerator": "reference_union_corrected",
+      "paired_time_ratios": [
+        1.0371051748779818,
+        1.0023819037269979,
+        1.0123852279672154
+      ],
+      "sample_sd": 0.017873853485612195,
+      "workers": 8
+    }
+  ],
+  "raw_archive": {
+    "bytes": 1496841,
+    "sha256": "41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073"
+  },
+  "raw_payload_bytes": 8853238,
+  "scope": "Recorded E23 archive verification and independent numerical reaggregation only.",
+  "semantic_protocol_sha256": "6587e2055c5a77f4ffbe075fd7d70a6fcf648ad075e4d4cb8aa6574ae54061a1",
+  "source_manifest_sha256": "16b14211782d5c7c765e52ec36a533131e3bf559633229da19a874cdfb28c68f",
+  "status": "PASS",
+  "timing_jobs": 36,
+  "warmup_prefix_comparisons": 36
+}

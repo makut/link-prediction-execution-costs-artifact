@@ -1,0 +1,12 @@
+{
+  "automatic_retry": false,
+  "bytes": 1496841,
+  "chunk_count": 1,
+  "completed_unix": 1795694507.346355,
+  "new_YT_file_nodes": 1,
+  "readback_verified": true,
+  "sha256": "41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073",
+  "transaction_committed": true,
+  "write_file_calls": 1,
+  "yt_path": "//home/ucp-research/projects/graph_baselines/seal_revision_20261124/pipeline_repeats_e23_20261126_final_v1.tgz"
+}

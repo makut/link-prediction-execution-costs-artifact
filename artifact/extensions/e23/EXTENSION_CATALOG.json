@@ -1,6 +1,7 @@
 {
-  "actual_scientific_results_included": false,
-  "catalog_excludes_itself_readiness_and_archive": true,
+  "kind": "E23_PUBLIC_EXTENSION_RECORDED_RESULT_CATALOG_V1",
+  "status": "RECORDED_PASS",
+  "actual_scientific_results_included": true,
   "files": {
     "LICENSE": {
       "bytes": 1073,
@@ -11,8 +12,8 @@
       "sha256": "bd8a6420f91ebc3f0f4a9ebe2acd8964cbb15e43256883ca0b8002e0206b6f85"
     },
     "README.md": {
-      "bytes": 9923,
-      "sha256": "e0fcda884013409db6e20944bc5f0d4d48673bbe0bfb066dbb5338d2bd580f2e"
+      "bytes": 11265,
+      "sha256": "7c581aa5e7ecadf8b9085cb09bfde668bda97070282615074d309b59cbc8af0c"
     },
     "SCHEMA_REFERENCE.json": {
       "bytes": 754,
@@ -25,6 +26,38 @@
     "SYNTHETIC_VALIDATOR_CHECK.json": {
       "bytes": 1623,
       "sha256": "88cfbac7ace4638bfeed9a45b6649a955ef9d64aebeaafebce5f6e912cdc5a11"
+    },
+    "independent/audit_e23_numbers.py": {
+      "bytes": 19375,
+      "sha256": "47d3a3f82d21dfe755ae288b844a9e20bbde7cb928c134da31c990996c5c2091"
+    },
+    "recorded/ACTUAL_NUMERIC_AUDIT.json": {
+      "bytes": 34412,
+      "sha256": "ce067507dea8088ff0f2a2712d266f565f93259616de4999b0b4f176e503cc9a"
+    },
+    "recorded/E23_ACTUAL_OFFLINE_VERIFICATION.json": {
+      "bytes": 11293,
+      "sha256": "05df01523202eac6222af5dda30dc0fdc37838be223fe494042f0a98cc65e1ba"
+    },
+    "recorded/GPU_E23_PLATFORM_ACTUAL.json": {
+      "bytes": 2151,
+      "sha256": "1e481624aedf4438077a05c84c5f95fd5856ac934f0d5cc4253802654bebec4a"
+    },
+    "recorded/RECORDED_RESULT.json": {
+      "bytes": 11272,
+      "sha256": "509dacca319be5d53304cf179a1f4c0fdaa52f0ac13f12fd7011daef4f0501fc"
+    },
+    "recorded/archive_pointer.json": {
+      "bytes": 430,
+      "sha256": "02694f2ada471baf6483047dd28e20b6195e9e1a355193a75a090bfd2789a4ea"
+    },
+    "recorded/outer_COMPLETE.json": {
+      "bytes": 850,
+      "sha256": "9b0dc738bf4ef8f8c073079847ac92d4fa373e737fec0c3852bd1575baf027c5"
+    },
+    "recorded/pipeline_repeats_e23_20261126_final_v1.tgz": {
+      "bytes": 1496841,
+      "sha256": "41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073"
     },
     "schema_reference/launch_outer_e23.py": {
       "bytes": 2226,
@@ -171,8 +204,9 @@
       "sha256": "5b87d392dbe91349b5114021e26bfac4cb2b5b5f4f1b25f1d350f1dc3a684556"
     }
   },
-  "kind": "E23_PUBLIC_EXTENSION_SOURCE_ONLY_CATALOG_V1",
-  "payload_bytes": 872252,
-  "payloads": 42,
-  "status": "SOURCE_ONLY"
+  "payloads": 50,
+  "payload_bytes": 2450218,
+  "catalog_excludes_itself": true,
+  "raw_archive_included": true,
+  "source_only_receipts_retained_as_historical": true
 }

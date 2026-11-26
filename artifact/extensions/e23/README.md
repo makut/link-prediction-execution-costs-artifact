@@ -1,10 +1,6 @@
 # E23: independent-process repetitions of the public V4 pipeline control
 
-**Current status: SOURCE_ONLY.** This local extension prepares an independent
-offline verifier and the exact public runner packet. It contains no actual E23
-scientific results and has not been published. A complete fresh Linux/H100
-replay has not been executed as part of this packaging work. The published
-v0.5.0 tag/assets, original runner and manuscript are unchanged.
+**Recorded result: independently verified PASS.** The actual Linux/H100 E23 run completed the 40 declared gates and 36 real timing jobs. The exact raw archive, final external receipts and independent verifier output are under `recorded/`. The frozen runner packet and published v0.5.0 assets remain unchanged. New execution on another machine produces new observations.
 
 ## Source-only verification
 
@@ -27,16 +23,17 @@ vectors, and a temporary byte-level archive without scientific result fields.
 No fabricated full experiment or scientific summary is written or distributed.
 The original source packet's larger test suite is not repeated here.
 
-## Verify an actual recorded E23 archive when supplied
+## Verify the included recorded E23 archive
 
-No actual archive or result checksum is asserted by this source-only package.
-Supply the genuine final archive and independently obtained SHA256 values:
+The included raw archive is `pipeline_repeats_e23_20261126_final_v1.tgz`, 1496841 bytes, SHA256 `41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073`. The actual outer source SHA256 is `e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e`. `recorded/RECORDED_RESULT.json` binds the original archived run and the separately generated final outer receipts to the independent PASS receipt. The artifact-wide command is:
 
 ```sh
 python3 -B verify_e23.py \
-  --archive "$E23_RAW_ARCHIVE" \
-  --archive-sha256 "$E23_RAW_SHA256" \
-  --outer-source-sha256 "$E23_ACTUAL_OUTER_SOURCE_SHA256" \
+  --archive "recorded/pipeline_repeats_e23_20261126_final_v1.tgz" \
+  --archive-sha256 "41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073" \
+  --outer-source-sha256 "e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e" \
+  --outer-complete recorded/outer_COMPLETE.json \
+  --archive-pointer recorded/archive_pointer.json \
   --output MY_E23_OFFLINE_VERIFICATION.json
 ```
 
@@ -178,3 +175,17 @@ These are repeated-cache, fixed-workload process/window repetitions. They do
 not estimate independent data or quality-seed uncertainty. No p-values,
 population confidence intervals, cold-I/O speedup, full upstream SEAL
 throughput, historical-to-new causal speedup or time-to-quality is claimed.
+
+
+## Independent actual numerical audit
+
+`recorded/ACTUAL_NUMERIC_AUDIT.json` is the separate actual numerical peer. Its byte-identical stdlib source is `independent/audit_e23_numbers.py`. All three measured wall times in each of the 12 descriptive rows and all three per-repetition ratios in each ratio group are retained; none are replaced by a synthetic mean-only observation. Reproduce the numerical audit with a new output:
+
+```sh
+python3 -B independent/audit_e23_numbers.py \
+  --archive "recorded/pipeline_repeats_e23_20261126_final_v1.tgz" \
+  --archive-sha256 "41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073" \
+  --output MY_E23_NUMERIC_AUDIT.json
+```
+
+This numerical audit complements the complete source/guard/bootstrap/lifecycle/persistence verifier; it does not perform fresh science or substitute for those gates.
