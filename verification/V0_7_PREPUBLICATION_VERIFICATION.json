@@ -1,0 +1,28 @@
+{
+  "actual24_aggregate": {
+    "bytes": 90386,
+    "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057"
+  },
+  "all_audits_and_aggregate_byte_identical": true,
+  "all_regular_members_rehashed": true,
+  "archive": {
+    "bytes": 92596575,
+    "member_count": 1307,
+    "raw_bytes": 129066372,
+    "sha256": "ab8a1619e850fd3c73283d592ed77273ab0defe5aabd37acb9ec58059cd12c15"
+  },
+  "archive_contains_only_artifact_prefix": true,
+  "artifact_tree_commit": "df8ce002bae07ac47e5feea95c6629d5727b1a5b",
+  "companion_assets_downloaded_or_uploaded": 0,
+  "created_unix": 1795732400.8173592,
+  "global_manifest": {
+    "bytes": 324912,
+    "sha256": "d6934548eabcdc1e4571ec6a576ae1c395ea77dedf9e72a1c8e3450651ddc170"
+  },
+  "kind": "V0_7_LOCAL_PREPUBLICATION_VERIFICATION",
+  "prior_companion_entries_preserved": true,
+  "publication_actions_by_this_verification": 0,
+  "recorded_all3_roundtrip": "artifact/extensions/e25/recorded/OFFLINE_ROUNDTRIP_ROOT_RECEIPT.json",
+  "scope": "Local archive and recorded-result checks before service publication; this file is outside the artifact-only archive.",
+  "status": "PASS_LOCAL_RELEASE_INPUTS"
+}

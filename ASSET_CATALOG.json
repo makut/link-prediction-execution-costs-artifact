@@ -1,14 +1,14 @@
 {
-  "version": "0.6.0",
-  "source_archive_sha256": "c9e26c90cffde59c34b1bb9c665e1f7ee3fb2904a0fd5aa3374b340c6bc087a2",
+  "version": "0.7.0",
+  "source_archive_sha256": "ab8a1619e850fd3c73283d592ed77273ab0defe5aabd37acb9ec58059cd12c15",
   "files": [
     {
-      "release_filename": "lpp_vldb_artifact_v0.6.0.tgz",
-      "bytes": 85260158,
-      "sha256": "c9e26c90cffde59c34b1bb9c665e1f7ee3fb2904a0fd5aa3374b340c6bc087a2",
-      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.6.0/lpp_vldb_artifact_v0.6.0.tgz",
-      "release_tag": "v0.6.0",
-      "role": "Current code, E22/E23 raw evidence and E24 analysis"
+      "release_filename": "lpp_vldb_artifact_v0.7.0.tgz",
+      "bytes": 92596575,
+      "sha256": "ab8a1619e850fd3c73283d592ed77273ab0defe5aabd37acb9ec58059cd12c15",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.7.0/lpp_vldb_artifact_v0.7.0.tgz",
+      "release_tag": "v0.7.0",
+      "role": "Current code, E22/E23/E25 raw evidence, E24 analysis and verified E25 offline entrypoint"
     },
     {
       "release_filename": "lpp_public_quality_evidence_v1.tgz",
@@ -59,15 +59,17 @@
       "bytes_reused_unchanged": true
     }
   ],
-  "total_bytes": 610419820,
+  "total_bytes": 617756237,
   "graphs_included": false,
-  "code_archive_members": 1108,
+  "code_archive_members": 1307,
   "source_archive_prefix": "artifact/",
   "companion_assets_reuploaded": false,
-  "local_source_archive_verification": "verification/V0_6_LOCAL_ARCHIVE_VERIFICATION.json",
-  "previous_catalog": "verification/lineage_v0_5/ASSET_CATALOG.json",
-  "prepublication_peer": {
-    "path": "verification/V0_6_PREPUBLICATION_PEER.json",
-    "sha256": "f5a00cbd6660000108c3709ea20492d6d973dce7f2f4e8ae84a2e3d0282b6722"
+  "local_source_archive_verification": "verification/V0_7_LOCAL_ARCHIVE_VERIFICATION.json",
+  "previous_catalog": "verification/lineage_v0_6/ASSET_CATALOG.json",
+  "artifact_tree_commit": "df8ce002bae07ac47e5feea95c6629d5727b1a5b",
+  "prepublication_verification": {
+    "path": "verification/V0_7_PREPUBLICATION_VERIFICATION.json",
+    "bytes": 1158,
+    "sha256": "22d17c2811519cefd16d6d0d7ec4e1c955de90988491297f002efd4410351ffe"
   }
 }

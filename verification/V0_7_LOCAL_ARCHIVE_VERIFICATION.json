@@ -1,0 +1,30 @@
+{
+  "kind": "ARTIFACT_V0_7_LOCAL_FREEZE_RECEIPT",
+  "status": "PASS",
+  "created_unix": 1795732041.260114,
+  "archive": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/outputs/vldb_submission_2026/lpp_vldb_artifact_v0.7.0.tgz",
+  "bytes": 92596575,
+  "sha256": "ab8a1619e850fd3c73283d592ed77273ab0defe5aabd37acb9ec58059cd12c15",
+  "member_count": 1307,
+  "raw_bytes": 129066372,
+  "global_manifest": {
+    "bytes": 324912,
+    "sha256": "d6934548eabcdc1e4571ec6a576ae1c395ea77dedf9e72a1c8e3450651ddc170"
+  },
+  "all_regular_archive_members_rehashed": true,
+  "actual_e25_complete24_aggregate": {
+    "bytes": 90386,
+    "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057"
+  },
+  "artifact_prefix_only": true,
+  "deterministic_tar_gzip_metadata": true,
+  "raw_cap_bytes": 536870912,
+  "compressed_cap_bytes": 536870912,
+  "payload_name_and_text_credential_screen_passed": true,
+  "credential_scope": "Packaging filename/literal-value screen; nested actual raw archives require root reviewed data/credential allowlists.",
+  "no_graphs_or_models_added": true,
+  "companion_assets_reused": true,
+  "companion_download_upload_actions": 0,
+  "root_asset_catalog_outside_code_archive": true,
+  "network_or_publication_actions": 0
+}
