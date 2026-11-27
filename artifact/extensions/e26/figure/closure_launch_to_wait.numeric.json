@@ -1,0 +1,605 @@
+{
+  "auditor_source_sha256": "98ad346c6d6529878e859441df72ce9b33c226eb01229bf015adda1926b0834c",
+  "design": {
+    "allocation_markers": {
+      "1": "o",
+      "2": "s",
+      "3": "^"
+    },
+    "arm_colors": {
+      "reference_union_compiled": "#0072B2",
+      "reference_union_native_fresh": "#D55E00",
+      "reference_union_native_reuse": "#009E73"
+    },
+    "arms": [
+      "reference_union_compiled",
+      "reference_union_native_fresh",
+      "reference_union_native_reuse"
+    ],
+    "design_selection": "Root selected logarithmic axes prospectively, before reading new application outcome times, because oldE25 showed order-of-magnitude fresh-setup costs and the main new question is compiled versus reused native",
+    "excluded": [
+      "progress curves",
+      "timed long576 point",
+      "fitted crossover",
+      "confidence intervals",
+      "synthetic or partial-result placeholders",
+      "quality/time-to-quality interpretation"
+    ],
+    "intended_manuscript_slot": "Existing application-lifetime figure slot; manuscript remains untouched by this script",
+    "limits": "Global minimum/maximum of all36 observations with fixed multiplicative margin; no observation exclusion",
+    "main_measurement": "Actual parent launch to recorded actual wait for separately terminated applications only",
+    "native_boundary": "Fresh conversion is inside each native-fresh application; once-prepared immutable CSR generation/validation is recorded separately, private mutable mapper remains per worker",
+    "panels": [
+      "Friendster",
+      "Citation2"
+    ],
+    "raw_points": "All three original allocation observations per arm/horizon, fixed small x offsets; shape preserves allocation pairing",
+    "scope": "Three matched observations per configuration; retained caches and descriptive allocation variation, no population or universal-native ranking claim",
+    "summary": "Black median segment and descriptive observed minimum/maximum whisker across exactly three allocations",
+    "total_consumed_graphs": {
+      "long6400": 6656,
+      "short320": 576
+    },
+    "version": "closure_launch_wait_main_v1_log_prespecified",
+    "warmup_graphs": 256,
+    "x_groups": [
+      "Short: 320 measured graphs",
+      "Long: 6,400 measured graphs"
+    ],
+    "y_axis": "Shared positive logarithmic seconds scale and identical limits across both panels; no zero-based bars"
+  },
+  "input_identity_scope": "Source-bound consumed-input identity; no independent tensor/graph regeneration or new experiment",
+  "input_pins": {
+    "citation2": {
+      "bytes": 87809,
+      "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_closure_controls_20261127_run2/blocks/ACTUAL_AGGREGATE_citation2.json",
+      "sha256": "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936"
+    },
+    "friendster": {
+      "bytes": 88246,
+      "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_closure_controls_20261127_run2/blocks/ACTUAL_AGGREGATE_friendster.json",
+      "sha256": "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2"
+    },
+    "root_ready": {
+      "bytes": 4945,
+      "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_closure_controls_20261127_run2/root_SOURCE_READY.json",
+      "sha256": "eadd76ed4252672774f1bcfe8288dd4fbf021d0f5de6eb5598ed53fb29926eb5"
+    }
+  },
+  "kind": "CLOSURE_V1_ACTUAL_LAUNCH_WAIT_FIGURE_DATA",
+  "observations": [
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 52.19006015,
+      "pod_uid": "c8f4ce73-97d1-483e-a730-d6b30a1c0629",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 51.177516946,
+      "pod_uid": "0e251093-b95b-4232-853b-c9cfd56477bd",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 49.900650905,
+      "pod_uid": "6383b215-11fa-47d4-8e26-4529647455da",
+      "repetition_block": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 327.90803352,
+      "pod_uid": "c8f4ce73-97d1-483e-a730-d6b30a1c0629",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 327.759805522,
+      "pod_uid": "0e251093-b95b-4232-853b-c9cfd56477bd",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 320.428049072,
+      "pod_uid": "6383b215-11fa-47d4-8e26-4529647455da",
+      "repetition_block": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 48.654173983,
+      "pod_uid": "c8f4ce73-97d1-483e-a730-d6b30a1c0629",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 47.596570781,
+      "pod_uid": "0e251093-b95b-4232-853b-c9cfd56477bd",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 47.919269483,
+      "pod_uid": "6383b215-11fa-47d4-8e26-4529647455da",
+      "repetition_block": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 16.379172603,
+      "pod_uid": "c8f4ce73-97d1-483e-a730-d6b30a1c0629",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 15.576871119,
+      "pod_uid": "0e251093-b95b-4232-853b-c9cfd56477bd",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 15.457360935,
+      "pod_uid": "6383b215-11fa-47d4-8e26-4529647455da",
+      "repetition_block": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 290.216795324,
+      "pod_uid": "c8f4ce73-97d1-483e-a730-d6b30a1c0629",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 291.778948447,
+      "pod_uid": "0e251093-b95b-4232-853b-c9cfd56477bd",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 285.594815551,
+      "pod_uid": "6383b215-11fa-47d4-8e26-4529647455da",
+      "repetition_block": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 14.804399424,
+      "pod_uid": "c8f4ce73-97d1-483e-a730-d6b30a1c0629",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 14.007489988,
+      "pod_uid": "0e251093-b95b-4232-853b-c9cfd56477bd",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 14.253400497,
+      "pod_uid": "6383b215-11fa-47d4-8e26-4529647455da",
+      "repetition_block": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 18.315722083,
+      "pod_uid": "d5803033-9373-4022-a4c0-9e8c72b1305b",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 20.194372398,
+      "pod_uid": "82dd6b40-3beb-47cb-b92a-53764d6853f0",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 18.951850175,
+      "pod_uid": "69c1851b-b284-4b72-9c1a-76679b710bfb",
+      "repetition_block": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 21.07760006,
+      "pod_uid": "d5803033-9373-4022-a4c0-9e8c72b1305b",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 21.780693846,
+      "pod_uid": "82dd6b40-3beb-47cb-b92a-53764d6853f0",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 22.694587584,
+      "pod_uid": "69c1851b-b284-4b72-9c1a-76679b710bfb",
+      "repetition_block": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 16.688158713,
+      "pod_uid": "d5803033-9373-4022-a4c0-9e8c72b1305b",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 18.09482579,
+      "pod_uid": "82dd6b40-3beb-47cb-b92a-53764d6853f0",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "launch_to_actual_wait_seconds": 17.562659039,
+      "pod_uid": "69c1851b-b284-4b72-9c1a-76679b710bfb",
+      "repetition_block": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 11.190309752,
+      "pod_uid": "d5803033-9373-4022-a4c0-9e8c72b1305b",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 11.245405223,
+      "pod_uid": "82dd6b40-3beb-47cb-b92a-53764d6853f0",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 12.273252089,
+      "pod_uid": "69c1851b-b284-4b72-9c1a-76679b710bfb",
+      "repetition_block": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 14.392250674,
+      "pod_uid": "d5803033-9373-4022-a4c0-9e8c72b1305b",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 14.529447975,
+      "pod_uid": "82dd6b40-3beb-47cb-b92a-53764d6853f0",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 15.212640434,
+      "pod_uid": "69c1851b-b284-4b72-9c1a-76679b710bfb",
+      "repetition_block": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 10.07187655,
+      "pod_uid": "d5803033-9373-4022-a4c0-9e8c72b1305b",
+      "repetition_block": 1,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 10.795817667,
+      "pod_uid": "82dd6b40-3beb-47cb-b92a-53764d6853f0",
+      "repetition_block": 2,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "launch_to_actual_wait_seconds": 11.2246628,
+      "pod_uid": "69c1851b-b284-4b72-9c1a-76679b710bfb",
+      "repetition_block": 3,
+      "workers": 8
+    }
+  ],
+  "one_time_native_preparation": {
+    "citation2": {
+      "conversion_seconds": 6.036501782,
+      "native_total_bytes": 509051728,
+      "preparation_clock_scope": "Durations internal to preparation process only; no monotonic comparison across host/boot",
+      "receipt_sha256": "51de95b8852f03002084add1b2de1d69aa72cd00d0ae07c45355fe35710e92f2",
+      "validation_seconds": 0.388683926
+    },
+    "friendster": {
+      "conversion_seconds": 439.660251743,
+      "native_total_bytes": 29421941096,
+      "preparation_clock_scope": "Durations internal to preparation process only; no monotonic comparison across host/boot",
+      "receipt_sha256": "c3009a64ea3756a758412355586e12fc2f201dfd26f5972a796f8fcd0720b8ae",
+      "validation_seconds": 22.101333711
+    }
+  },
+  "shared_log_y_limits_seconds": [
+    7.194197535714287,
+    459.071246928
+  ],
+  "source_hashes": {
+    "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+    "source_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+    "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+  },
+  "status": "COMPLETE_36_ORIGINAL_OBSERVATIONS",
+  "summaries": [
+    {
+      "arm": "reference_union_compiled",
+      "by_block_seconds": {
+        "1": 52.19006015,
+        "2": 51.177516946,
+        "3": 49.900650905
+      },
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "maximum_seconds": 52.19006015,
+      "median_seconds": 51.177516946,
+      "minimum_seconds": 49.900650905,
+      "n": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "by_block_seconds": {
+        "1": 327.90803352,
+        "2": 327.759805522,
+        "3": 320.428049072
+      },
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "maximum_seconds": 327.90803352,
+      "median_seconds": 327.759805522,
+      "minimum_seconds": 320.428049072,
+      "n": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "by_block_seconds": {
+        "1": 48.654173983,
+        "2": 47.596570781,
+        "3": 47.919269483
+      },
+      "dataset_id": "friendster",
+      "horizon": "long6400",
+      "maximum_seconds": 48.654173983,
+      "median_seconds": 47.919269483,
+      "minimum_seconds": 47.596570781,
+      "n": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "by_block_seconds": {
+        "1": 16.379172603,
+        "2": 15.576871119,
+        "3": 15.457360935
+      },
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "maximum_seconds": 16.379172603,
+      "median_seconds": 15.576871119,
+      "minimum_seconds": 15.457360935,
+      "n": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "by_block_seconds": {
+        "1": 290.216795324,
+        "2": 291.778948447,
+        "3": 285.594815551
+      },
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "maximum_seconds": 291.778948447,
+      "median_seconds": 290.216795324,
+      "minimum_seconds": 285.594815551,
+      "n": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "by_block_seconds": {
+        "1": 14.804399424,
+        "2": 14.007489988,
+        "3": 14.253400497
+      },
+      "dataset_id": "friendster",
+      "horizon": "short320",
+      "maximum_seconds": 14.804399424,
+      "median_seconds": 14.253400497,
+      "minimum_seconds": 14.007489988,
+      "n": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "by_block_seconds": {
+        "1": 18.315722083,
+        "2": 20.194372398,
+        "3": 18.951850175
+      },
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "maximum_seconds": 20.194372398,
+      "median_seconds": 18.951850175,
+      "minimum_seconds": 18.315722083,
+      "n": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "by_block_seconds": {
+        "1": 21.07760006,
+        "2": 21.780693846,
+        "3": 22.694587584
+      },
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "maximum_seconds": 22.694587584,
+      "median_seconds": 21.780693846,
+      "minimum_seconds": 21.07760006,
+      "n": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "by_block_seconds": {
+        "1": 16.688158713,
+        "2": 18.09482579,
+        "3": 17.562659039
+      },
+      "dataset_id": "citation2",
+      "horizon": "long6400",
+      "maximum_seconds": 18.09482579,
+      "median_seconds": 17.562659039,
+      "minimum_seconds": 16.688158713,
+      "n": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_compiled",
+      "by_block_seconds": {
+        "1": 11.190309752,
+        "2": 11.245405223,
+        "3": 12.273252089
+      },
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "maximum_seconds": 12.273252089,
+      "median_seconds": 11.245405223,
+      "minimum_seconds": 11.190309752,
+      "n": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_fresh",
+      "by_block_seconds": {
+        "1": 14.392250674,
+        "2": 14.529447975,
+        "3": 15.212640434
+      },
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "maximum_seconds": 15.212640434,
+      "median_seconds": 14.529447975,
+      "minimum_seconds": 14.392250674,
+      "n": 3,
+      "workers": 8
+    },
+    {
+      "arm": "reference_union_native_reuse",
+      "by_block_seconds": {
+        "1": 10.07187655,
+        "2": 10.795817667,
+        "3": 11.2246628
+      },
+      "dataset_id": "citation2",
+      "horizon": "short320",
+      "maximum_seconds": 11.2246628,
+      "median_seconds": 10.795817667,
+      "minimum_seconds": 10.07187655,
+      "n": 3,
+      "workers": 8
+    }
+  ],
+  "summary_arithmetic": "All medians/minima/maxima/SD and within-block ratios rechecked from actual by-block waits; no interpolation or subtraction"
+}

@@ -1,0 +1,15 @@
+{
+  "PVC_retained": true,
+  "PVC_uid": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+  "YT_writes": 0,
+  "dataset_id": "citation2",
+  "kind": "CLOSURE_V1_BLOCK_ALLOCATION_RELEASE_OBSERVATION",
+  "matching_pods": [],
+  "observed_unix": 1795780884.002451,
+  "old_pod_absent": true,
+  "original_pod_uid": "82dd6b40-3beb-47cb-b92a-53764d6853f0",
+  "owned_GPU_reservation_absent": true,
+  "repetition_block": 2,
+  "replicas": 0,
+  "statefulset_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0"
+}

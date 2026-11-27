@@ -1,0 +1,251 @@
+{
+  "GPU_compute_app_pids": [],
+  "GPU_released": false,
+  "YT_writes": 0,
+  "active_marker_absent": true,
+  "actual_launch": {
+    "YT_writes": 0,
+    "automatic_retry": false,
+    "dataset_id": "friendster",
+    "detached_session": true,
+    "driver": {
+      "argv": [
+        "/opt/python/bin/python3",
+        "-B",
+        "-u",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/envelope_v1/wait_driver.py",
+        "--receipt",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/friendster_block1/ENVELOPE_OS_WAIT.json",
+        "--log",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/friendster_block1/envelope.log",
+        "--wrapper-sha256",
+        "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8",
+        "--",
+        "/opt/python/bin/python3",
+        "-B",
+        "-u",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/envelope_v1/run_block.py",
+        "--dataset",
+        "friendster",
+        "--block",
+        "1",
+        "--packet",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/packet_v1",
+        "--graph-root",
+        "/home/jovyan/seal_native_lifecycle_20261126/data/friendster/full_csr",
+        "--native-reuse-root",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/native_prepared/friendster",
+        "--native-reuse-receipt-sha256",
+        "c3009a64ea3756a758412355586e12fc2f201dfd26f5972a796f8fcd0720b8ae",
+        "--packet-manifest-sha256",
+        "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+        "--protocol-sha256",
+        "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+        "--platform-admission-json",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/friendster_block1/PLATFORM_ADMISSION.json",
+        "--platform-admission-sha256",
+        "198f7717f912e7bcb7bbb6f705e59f13c6e579b8241997ffd1fe496667c0e47a",
+        "--out",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results/friendster_block1",
+        "--coordination",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results"
+      ],
+      "entrypoint": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/envelope_v1/wait_driver.py",
+      "launch_monotonic_ns": 5447342575440593,
+      "log": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/friendster_block1/driver.stdout.log",
+      "observed_state": "R",
+      "pid": 23,
+      "source_sha256": "2d4aeff94cff0956bf8c84162d286c6dd815becdbd1a41fec731b42ff33848d8",
+      "start_ticks": 544734257
+    },
+    "kind": "ROOT_CLOSURE_V1_ACTUAL_BLOCK_LAUNCH",
+    "observed_unix": 1795775679.1135056,
+    "ops": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/friendster_block1",
+    "out": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results/friendster_block1",
+    "platform_path": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/friendster_block1/PLATFORM_ADMISSION.json",
+    "pod_uid": "c8f4ce73-97d1-483e-a730-d6b30a1c0629",
+    "repetition_block": 1,
+    "root_ready_sha256": "eadd76ed4252672774f1bcfe8288dd4fbf021d0f5de6eb5598ed53fb29926eb5",
+    "source_hashes": {
+      "driver_sha256": "2d4aeff94cff0956bf8c84162d286c6dd815becdbd1a41fec731b42ff33848d8",
+      "packet_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+      "platform_admission_sha256": "198f7717f912e7bcb7bbb6f705e59f13c6e579b8241997ffd1fe496667c0e47a",
+      "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+      "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+    },
+    "stdin_dependency": false,
+    "sts_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0"
+  },
+  "actual_numeric_audit_pending": true,
+  "all_archive_members_independently_verified": true,
+  "archive": {
+    "bytes": 1487863,
+    "path": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results/friendster_block1/block_raw.tgz",
+    "sha256": "ba8b964795abd1f79c75f0a1a47be03bd4a0dcbe538ca50251d1eafbd717c5ae"
+  },
+  "archive_verification": {
+    "bytes": 571,
+    "sha256": "57f0e0c384f871846e407774ea344a99be9d7612775e251209ea15be85a74488"
+  },
+  "collected_unix": 1795777410.390113,
+  "current_PVC_available_bytes": 40732520448,
+  "current_PVC_device": 66323,
+  "dataset_id": "friendster",
+  "external_wait_sidecar": {
+    "bytes": 2087,
+    "sha256": "129ce58519344ccddd696ee46a0af366f779359e1a92a1322da4ead12277f681"
+  },
+  "external_wrapper_terminal_sidecar": {
+    "bytes": 548,
+    "sha256": "b113f178eee3e621da2d00ac699d286cfa7b97ee9aa04ad2a51ac74bc5df21fb"
+  },
+  "independently_transferred_whole_SHA": true,
+  "kind": "CLOSURE_V1_ROOT_COLLECTION",
+  "local_archive": "block_raw.tgz",
+  "local_fsync": true,
+  "outer_complete": {
+    "YT_writes": 0,
+    "archive": {
+      "all_members_rehashed": true,
+      "bytes": 1487863,
+      "members": 243,
+      "path": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results/friendster_block1/block_raw.tgz",
+      "sha256": "ba8b964795abd1f79c75f0a1a47be03bd4a0dcbe538ca50251d1eafbd717c5ae"
+    },
+    "automatic_retry": false,
+    "block_jobs": 6,
+    "dataset_id": "friendster",
+    "failure": null,
+    "kind": "CLOSURE_V1_BLOCK_ENVELOPE_TERMINAL",
+    "owned_tree_quiescent": true,
+    "repetition_block": 1,
+    "success": true
+  },
+  "outer_process": {
+    "actual_wait_returned": true,
+    "argv": [
+      "/opt/python/bin/python3",
+      "-B",
+      "-u",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/envelope_v1/run_block.py",
+      "--dataset",
+      "friendster",
+      "--block",
+      "1",
+      "--packet",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/packet_v1",
+      "--graph-root",
+      "/home/jovyan/seal_native_lifecycle_20261126/data/friendster/full_csr",
+      "--native-reuse-root",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/native_prepared/friendster",
+      "--native-reuse-receipt-sha256",
+      "c3009a64ea3756a758412355586e12fc2f201dfd26f5972a796f8fcd0720b8ae",
+      "--packet-manifest-sha256",
+      "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+      "--protocol-sha256",
+      "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+      "--platform-admission-json",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/friendster_block1/PLATFORM_ADMISSION.json",
+      "--platform-admission-sha256",
+      "198f7717f912e7bcb7bbb6f705e59f13c6e579b8241997ffd1fe496667c0e47a",
+      "--out",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results/friendster_block1",
+      "--coordination",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results"
+    ],
+    "driver_pid": 23,
+    "driver_source_sha256": "2d4aeff94cff0956bf8c84162d286c6dd815becdbd1a41fec731b42ff33848d8",
+    "failure": null,
+    "kind": "CLOSURE_V1_ENVELOPE_ACTUAL_OS_WAIT",
+    "launch_monotonic_ns": 5447342623580047,
+    "orphan_cleanup": false,
+    "owned_pgids_signaled": [],
+    "owned_tree_quiescent": true,
+    "owned_tree_quiescent_after_cleanup": true,
+    "pid": 24,
+    "pod_uid": "c8f4ce73-97d1-483e-a730-d6b30a1c0629",
+    "returncode": 0,
+    "start_ticks": 544734262,
+    "timed_out": false,
+    "timeout_seconds": 4300,
+    "wait_returned_monotonic_ns": 5448989893474773,
+    "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+  },
+  "owned_postexit_scan": {
+    "live_owned_rows": [],
+    "scope": "All visible non-zombie processes in this exclusively owned Pod were PID1 sleep and this read-only collector. No signals or global-host attribution.",
+    "visible_live_rows": [
+      {
+        "pid": 1,
+        "start_ticks": 544729467,
+        "state": "S"
+      },
+      {
+        "pid": 5834,
+        "start_ticks": 544903160,
+        "state": "R"
+      }
+    ]
+  },
+  "pod_uid": "c8f4ce73-97d1-483e-a730-d6b30a1c0629",
+  "post_exit_observation": {
+    "bytes": 8413,
+    "sha256": "87a95f1aa266dda59269d077259e5209bc96968c015e092c4dedfeede52d9b9a"
+  },
+  "producer_exit": {
+    "actual_wait_returned": true,
+    "guard_abort_reason": null,
+    "orphan_cleanup": false,
+    "owned_pgids_signaled": [],
+    "owned_tree_quiescent": true,
+    "pid": 25,
+    "returncode": 0,
+    "start_ticks": 544734292,
+    "timed_out": false,
+    "timeout_seconds": 3960,
+    "wait_returned_monotonic_ns": 5448988113867539
+  },
+  "repetition_block": 1,
+  "root_current_API_binding_after": {
+    "PVC_uid": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+    "container": "seal",
+    "image_digest": "sha256:2c0d776d47eb7d3b763f5a42c70d51bff2ba6b1f9cb1f01b4adbad76b658cbb1",
+    "node": "ml-kub-node807.i",
+    "pod": "seal-native-pvc-20261126-0",
+    "pod_uid": "c8f4ce73-97d1-483e-a730-d6b30a1c0629",
+    "sts_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0"
+  },
+  "root_current_API_binding_before": {
+    "PVC_uid": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+    "container": "seal",
+    "image_digest": "sha256:2c0d776d47eb7d3b763f5a42c70d51bff2ba6b1f9cb1f01b4adbad76b658cbb1",
+    "node": "ml-kub-node807.i",
+    "pod": "seal-native-pvc-20261126-0",
+    "pod_uid": "c8f4ce73-97d1-483e-a730-d6b30a1c0629",
+    "sts_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0"
+  },
+  "root_input_pins": {
+    "ACTUAL_LAUNCH": {
+      "bytes": 3809,
+      "sha256": "8368ed42261e2cb38748604c1854f3657c65633699f03b9afbf1c0bab99ff8a1"
+    },
+    "ACTUAL_PLATFORM": {
+      "bytes": 5698,
+      "sha256": "198f7717f912e7bcb7bbb6f705e59f13c6e579b8241997ffd1fe496667c0e47a"
+    },
+    "PLATFORM_BINDING": {
+      "bytes": 9032,
+      "sha256": "4a4457c382c941854539fe263b94dceb48c62aefc2b6cc5db5ccb0c4e8bf7c21"
+    }
+  },
+  "scope": "One actual completed dataset block only. Root checked original allocation, parent OS wait0, recorded producer exit0, visible owned-Pod quiescence and idle GPU before bounded transfer. No remote write, deletion, retry, lifecycle, graph/model download or numerical-success claim.",
+  "source_hashes": {
+    "driver_sha256": "2d4aeff94cff0956bf8c84162d286c6dd815becdbd1a41fec731b42ff33848d8",
+    "packet_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+    "platform_admission_sha256": "198f7717f912e7bcb7bbb6f705e59f13c6e579b8241997ffd1fe496667c0e47a",
+    "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+    "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+  },
+  "sts_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0",
+  "timing_lock_available": true
+}

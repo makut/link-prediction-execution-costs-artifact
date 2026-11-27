@@ -1,0 +1,3560 @@
+{
+  "PSS_raw_observation_counts": {
+    "closure/results/actual_cuda_qualification.pss.jsonl": {
+      "eligible": 14,
+      "ineligible": 1,
+      "sampling_error": 0
+    },
+    "closure/results/build_native.pss.jsonl": {
+      "eligible": 1,
+      "ineligible": 0,
+      "sampling_error": 0
+    },
+    "closure/results/citation2_long6400_w8_r2_reference_union_compiled.pss.jsonl": {
+      "eligible": 9,
+      "ineligible": 0,
+      "sampling_error": 0
+    },
+    "closure/results/citation2_long6400_w8_r2_reference_union_native_fresh.pss.jsonl": {
+      "eligible": 10,
+      "ineligible": 0,
+      "sampling_error": 0
+    },
+    "closure/results/citation2_long6400_w8_r2_reference_union_native_reuse.pss.jsonl": {
+      "eligible": 8,
+      "ineligible": 1,
+      "sampling_error": 0
+    },
+    "closure/results/citation2_short320_w8_r2_reference_union_compiled.pss.jsonl": {
+      "eligible": 6,
+      "ineligible": 0,
+      "sampling_error": 0
+    },
+    "closure/results/citation2_short320_w8_r2_reference_union_native_fresh.pss.jsonl": {
+      "eligible": 7,
+      "ineligible": 0,
+      "sampling_error": 0
+    },
+    "closure/results/citation2_short320_w8_r2_reference_union_native_reuse.pss.jsonl": {
+      "eligible": 5,
+      "ineligible": 0,
+      "sampling_error": 0
+    }
+  },
+  "actual_launch_frame": {
+    "packet": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/packet_v1",
+    "producer_launch_ns": 6282538684182819,
+    "producer_wait_ns": 6282791190998509,
+    "wrapper_actual_wait0_checked": true
+  },
+  "actual_new_experiments_GPU_cluster_network_YT_actions": 0,
+  "all_app_waits_zero_normal_worker_close": true,
+  "all_three_complete_blocks_required": true,
+  "archive": {
+    "bytes": 1194322,
+    "sha256": "ec68dff60d7239bb42bde93719b68e77b4035a05b5bf4bcff6288c387f1f6aa7"
+  },
+  "block_jobs": 6,
+  "consumed_tensor_bytes_independently_rehashed": false,
+  "cross_horizon_input_prefix576": {
+    "all_arms_workers_in_block_exact": true,
+    "consumed_input_graphs": 576,
+    "long_prefix_stream_sha256": "e0d6decfe206ecc0dcf0d565c7a015020c7a353881923a0ceed3745e9570eeb6",
+    "repetition_block": 2,
+    "short_final_stream_sha256": "e0d6decfe206ecc0dcf0d565c7a015020c7a353881923a0ceed3745e9570eeb6"
+  },
+  "dataset_id": "citation2",
+  "environment_block": {
+    "actual_H100_W8_three_arm_consumers": 3,
+    "admission": {
+      "all_boundary_attempts_checked": 1,
+      "ambient_pool_variants": [
+        {
+          "cpu_affinity": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "observations": 1
+        }
+      ],
+      "boundary_receipts_checked": 1,
+      "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+      "first_observed_ns": 6282539017314050,
+      "independently_complete_process_scans": 1,
+      "independently_incomplete_process_scans": 0,
+      "last_bracket_ns": 6282539018212890,
+      "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+      "maximum_boundary_attempts": 1,
+      "maximum_declared_boundary_elapsed_seconds": 0.0010508811101317406,
+      "observed_process_leader_mask_variants": [
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ]
+      ],
+      "own_boundary_leader_mask_variants": [
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ]
+      ],
+      "raw_observations": 1,
+      "recorded_stable_processes": 1,
+      "recorded_tasks": 1,
+      "recorded_unstable_processes": 0,
+      "resource_invariant_variants": 1,
+      "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+      "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+      "transient_tree_unobserved": 0
+    },
+    "all_normal_workers": 24,
+    "controller_events": {
+      "all_boundary_attempts_checked": 118,
+      "ambient_pool_variants": [
+        {
+          "cpu_affinity": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "observations": 118
+        }
+      ],
+      "boundary_receipts_checked": 118,
+      "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+      "first_observed_ns": 6282539017314050,
+      "independently_complete_process_scans": 118,
+      "independently_incomplete_process_scans": 0,
+      "last_bracket_ns": 6282790402208820,
+      "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+      "maximum_boundary_attempts": 1,
+      "maximum_declared_boundary_elapsed_seconds": 0.01927273813635111,
+      "observed_process_leader_mask_variants": [
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ]
+      ],
+      "own_boundary_leader_mask_variants": [
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ]
+      ],
+      "raw_observations": 118,
+      "recorded_stable_processes": 118,
+      "recorded_tasks": 118,
+      "recorded_unstable_processes": 0,
+      "resource_invariant_variants": 1,
+      "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+      "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+      "transient_tree_unobserved": 0
+    },
+    "support_commands": [
+      {
+        "controller_labels": {
+          "after_actual_wait": {
+            "first_scan_ns": 6282552632195796,
+            "last_bracket_ns": 6282552633106303
+          },
+          "before_command": {
+            "first_scan_ns": 6282551534977163,
+            "last_bracket_ns": 6282551535884586
+          },
+          "immediately_before_Popen": {
+            "first_scan_ns": 6282551536357123,
+            "last_bracket_ns": 6282551537057221
+          }
+        },
+        "name": "build_native",
+        "sampled_CPU": {
+          "all_boundary_attempts_checked": 0,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 0,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282551581362300,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282551582354923,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 0,
+          "maximum_declared_boundary_elapsed_seconds": 0.0,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [],
+          "raw_observations": 1,
+          "recorded_stable_processes": 2,
+          "recorded_tasks": 2,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        }
+      },
+      {
+        "controller_labels": {
+          "after_actual_wait": {
+            "first_scan_ns": 6282599376554517,
+            "last_bracket_ns": 6282599377482049
+          },
+          "before_command": {
+            "first_scan_ns": 6282567927301063,
+            "last_bracket_ns": 6282567928171723
+          },
+          "immediately_before_Popen": {
+            "first_scan_ns": 6282567928663734,
+            "last_bracket_ns": 6282567929377344
+          }
+        },
+        "name": "actual_cuda_qualification",
+        "sampled_CPU": {
+          "all_boundary_attempts_checked": 0,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 15
+            }
+          ],
+          "boundary_receipts_checked": 0,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282567966775476,
+          "independently_complete_process_scans": 15,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282597836916900,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 0,
+          "maximum_declared_boundary_elapsed_seconds": 0.0,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [],
+          "raw_observations": 15,
+          "recorded_stable_processes": 94,
+          "recorded_tasks": 277,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        }
+      }
+    ],
+    "timing_jobs": [
+      {
+        "controller_labels": {
+          "after_actual_wait": {
+            "first_scan_ns": 6282635008867888,
+            "last_bracket_ns": 6282635009760422
+          },
+          "before_command": {
+            "first_scan_ns": 6282614771572597,
+            "last_bracket_ns": 6282614772467458
+          },
+          "immediately_before_Popen": {
+            "first_scan_ns": 6282614773021596,
+            "last_bracket_ns": 6282614773711668
+          }
+        },
+        "environment_end": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282633496012349,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282633497538119,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.0017301719635725021,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 5,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "environment_start": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282618068168798,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282618069231187,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.0011722669005393982,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 3,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "name": "citation2_long6400_w8_r2_reference_union_compiled",
+        "sampled_CPU": {
+          "all_boundary_attempts_checked": 0,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 9
+            }
+          ],
+          "boundary_receipts_checked": 0,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282614810568472,
+          "independently_complete_process_scans": 9,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282632377674740,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 0,
+          "maximum_declared_boundary_elapsed_seconds": 0.0,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [],
+          "raw_observations": 9,
+          "recorded_stable_processes": 72,
+          "recorded_tasks": 321,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "worker_boundary_pairs_checked": 8
+      },
+      {
+        "controller_labels": {
+          "after_actual_wait": {
+            "first_scan_ns": 6282672275561284,
+            "last_bracket_ns": 6282672276460958
+          },
+          "before_command": {
+            "first_scan_ns": 6282650457550295,
+            "last_bracket_ns": 6282650458306215
+          },
+          "immediately_before_Popen": {
+            "first_scan_ns": 6282650458763282,
+            "last_bracket_ns": 6282650459434850
+          }
+        },
+        "environment_end": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282671119486924,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282671120788445,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.0014939643442630768,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 5,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "environment_start": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282653654728482,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282653655779036,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.0011721337214112282,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 3,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "name": "citation2_long6400_w8_r2_reference_union_native_fresh",
+        "sampled_CPU": {
+          "all_boundary_attempts_checked": 0,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 10
+            }
+          ],
+          "boundary_receipts_checked": 0,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282650496283442,
+          "independently_complete_process_scans": 10,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282670155639259,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 0,
+          "maximum_declared_boundary_elapsed_seconds": 0.0,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [],
+          "raw_observations": 10,
+          "recorded_stable_processes": 64,
+          "recorded_tasks": 275,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "worker_boundary_pairs_checked": 8
+      },
+      {
+        "controller_labels": {
+          "after_actual_wait": {
+            "first_scan_ns": 6282706445646806,
+            "last_bracket_ns": 6282706446601425
+          },
+          "before_command": {
+            "first_scan_ns": 6282688307938334,
+            "last_bracket_ns": 6282688308782374
+          },
+          "immediately_before_Popen": {
+            "first_scan_ns": 6282688309272604,
+            "last_bracket_ns": 6282688309968253
+          }
+        },
+        "environment_end": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282705086183149,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282705087458137,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.001495659351348877,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 5,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "environment_start": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282691480401998,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282691481462480,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.0011736787855625153,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 3,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "name": "citation2_long6400_w8_r2_reference_union_native_reuse",
+        "sampled_CPU": {
+          "all_boundary_attempts_checked": 0,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 9
+            }
+          ],
+          "boundary_receipts_checked": 0,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282688349757128,
+          "independently_complete_process_scans": 9,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282705903347328,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 0,
+          "maximum_declared_boundary_elapsed_seconds": 0.0,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              124
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [],
+          "raw_observations": 9,
+          "recorded_stable_processes": 64,
+          "recorded_tasks": 277,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "worker_boundary_pairs_checked": 8
+      },
+      {
+        "controller_labels": {
+          "after_actual_wait": {
+            "first_scan_ns": 6282736482720798,
+            "last_bracket_ns": 6282736483576006
+          },
+          "before_command": {
+            "first_scan_ns": 6282721899163454,
+            "last_bracket_ns": 6282721899952873
+          },
+          "immediately_before_Popen": {
+            "first_scan_ns": 6282721900405675,
+            "last_bracket_ns": 6282721901085440
+          }
+        },
+        "environment_end": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282735398461409,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282735399723089,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.0014295605942606926,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 5,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "environment_start": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282725079055947,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282725080089301,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.0011388203129172325,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 3,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "name": "citation2_short320_w8_r2_reference_union_native_fresh",
+        "sampled_CPU": {
+          "all_boundary_attempts_checked": 0,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 7
+            }
+          ],
+          "boundary_receipts_checked": 0,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282721938031085,
+          "independently_complete_process_scans": 7,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282734926877358,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 0,
+          "maximum_declared_boundary_elapsed_seconds": 0.0,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [],
+          "raw_observations": 7,
+          "recorded_stable_processes": 34,
+          "recorded_tasks": 113,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "worker_boundary_pairs_checked": 8
+      },
+      {
+        "controller_labels": {
+          "after_actual_wait": {
+            "first_scan_ns": 6282763915925695,
+            "last_bracket_ns": 6282763916771791
+          },
+          "before_command": {
+            "first_scan_ns": 6282752621686938,
+            "last_bracket_ns": 6282752622555275
+          },
+          "immediately_before_Popen": {
+            "first_scan_ns": 6282752625070125,
+            "last_bracket_ns": 6282752625847792
+          }
+        },
+        "environment_end": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282762893902683,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282762895194064,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.0014821384102106094,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 5,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "environment_start": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282755882988662,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282755884099034,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.0012259148061275482,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 3,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "name": "citation2_short320_w8_r2_reference_union_compiled",
+        "sampled_CPU": {
+          "all_boundary_attempts_checked": 0,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 6
+            }
+          ],
+          "boundary_receipts_checked": 0,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282752666326862,
+          "independently_complete_process_scans": 6,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282763369975676,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 0,
+          "maximum_declared_boundary_elapsed_seconds": 0.0,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [],
+          "raw_observations": 6,
+          "recorded_stable_processes": 34,
+          "recorded_tasks": 116,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "worker_boundary_pairs_checked": 8
+      },
+      {
+        "controller_labels": {
+          "after_actual_wait": {
+            "first_scan_ns": 6282790276436177,
+            "last_bracket_ns": 6282790277265009
+          },
+          "before_command": {
+            "first_scan_ns": 6282779442017123,
+            "last_bracket_ns": 6282779442887894
+          },
+          "immediately_before_Popen": {
+            "first_scan_ns": 6282779443361734,
+            "last_bracket_ns": 6282779444051718
+          }
+        },
+        "environment_end": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282788903945954,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282788905176618,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.0013952357694506645,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 5,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "environment_start": {
+          "all_boundary_attempts_checked": 1,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 1
+            }
+          ],
+          "boundary_receipts_checked": 1,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282782700778810,
+          "independently_complete_process_scans": 1,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282782701829159,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 1,
+          "maximum_declared_boundary_elapsed_seconds": 0.0011589322239160538,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "raw_observations": 1,
+          "recorded_stable_processes": 1,
+          "recorded_tasks": 3,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "name": "citation2_short320_w8_r2_reference_union_native_reuse",
+        "sampled_CPU": {
+          "all_boundary_attempts_checked": 0,
+          "ambient_pool_variants": [
+            {
+              "cpu_affinity": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+              ],
+              "observations": 5
+            }
+          ],
+          "boundary_receipts_checked": 0,
+          "exact_boundary_wall_start_and_sleep_durations_independently_recomputed": false,
+          "first_observed_ns": 6282779482064929,
+          "independently_complete_process_scans": 5,
+          "independently_incomplete_process_scans": 0,
+          "last_bracket_ns": 6282788152159236,
+          "masks_resources_PID_TID_cgroup_stability_independently_recomputed": true,
+          "maximum_boundary_attempts": 0,
+          "maximum_declared_boundary_elapsed_seconds": 0.0,
+          "observed_process_leader_mask_variants": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127
+            ]
+          ],
+          "own_boundary_leader_mask_variants": [],
+          "raw_observations": 5,
+          "recorded_stable_processes": 32,
+          "recorded_tasks": 101,
+          "recorded_unstable_processes": 0,
+          "resource_invariant_variants": 1,
+          "scope": "Full recorded PID/TID/cgroup brackets and every boundary attempt recomputed; external nonempty subset masks and own exact27 boundary leaders are checked separately without repin or PSS filtering; observed hard violation cannot heal. Declared elapsed/limits/source-bound10ms pause checked with raw duration lower-bound consistency; absolute boundary start and actual sleep durations were not serialized. Sampled, non-atomic, no continuous or exclusive placement guarantee.",
+          "status": "RECORDED_CPU_OBSERVATIONS_CHECKED",
+          "transient_tree_unobserved": 0
+        },
+        "worker_boundary_pairs_checked": 8
+      }
+    ]
+  },
+  "failed_or_historical_applications_pooled": false,
+  "global_dataset_complete": false,
+  "global_protocol_jobs": 18,
+  "global_two_dataset_jobs": 36,
+  "graph_and_native_payload_bytes_independently_rehashed": false,
+  "headline_application_PSS_all_phases": {
+    "missing_rule": "unobserved, never zero",
+    "runs": [
+      {
+        "eligible_samples": 9,
+        "job": {
+          "arm": "reference_union_compiled",
+          "dataset_id": "citation2",
+          "horizon": "long6400",
+          "name": "citation2_long6400_w8_r2_reference_union_compiled",
+          "position": 1,
+          "repetition": 2,
+          "workers": 8
+        },
+        "maximum": {
+          "phase": "shutdown",
+          "process_count": 10,
+          "sample_index_1based": 9,
+          "scan_end_monotonic_ns": 6282632377805711,
+          "tree_pss_bytes": 5029859328
+        },
+        "status": "observed",
+        "total_samples": 9
+      },
+      {
+        "eligible_samples": 10,
+        "job": {
+          "arm": "reference_union_native_fresh",
+          "dataset_id": "citation2",
+          "horizon": "long6400",
+          "name": "citation2_long6400_w8_r2_reference_union_native_fresh",
+          "position": 2,
+          "repetition": 2,
+          "workers": 8
+        },
+        "maximum": {
+          "phase": "checkpointed_measured_window",
+          "process_count": 10,
+          "sample_index_1based": 9,
+          "scan_end_monotonic_ns": 6282667933421220,
+          "tree_pss_bytes": 5538563072
+        },
+        "status": "observed",
+        "total_samples": 10
+      },
+      {
+        "eligible_samples": 8,
+        "job": {
+          "arm": "reference_union_native_reuse",
+          "dataset_id": "citation2",
+          "horizon": "long6400",
+          "name": "citation2_long6400_w8_r2_reference_union_native_reuse",
+          "position": 3,
+          "repetition": 2,
+          "workers": 8
+        },
+        "maximum": {
+          "phase": "checkpointed_measured_window",
+          "process_count": 10,
+          "sample_index_1based": 8,
+          "scan_end_monotonic_ns": 6282703808945146,
+          "tree_pss_bytes": 5565090816
+        },
+        "status": "observed",
+        "total_samples": 9
+      },
+      {
+        "eligible_samples": 7,
+        "job": {
+          "arm": "reference_union_native_fresh",
+          "dataset_id": "citation2",
+          "horizon": "short320",
+          "name": "citation2_short320_w8_r2_reference_union_native_fresh",
+          "position": 1,
+          "repetition": 2,
+          "workers": 8
+        },
+        "maximum": {
+          "phase": "shutdown",
+          "process_count": 10,
+          "sample_index_1based": 7,
+          "scan_end_monotonic_ns": 6282734926989911,
+          "tree_pss_bytes": 4842656768
+        },
+        "status": "observed",
+        "total_samples": 7
+      },
+      {
+        "eligible_samples": 6,
+        "job": {
+          "arm": "reference_union_compiled",
+          "dataset_id": "citation2",
+          "horizon": "short320",
+          "name": "citation2_short320_w8_r2_reference_union_compiled",
+          "position": 2,
+          "repetition": 2,
+          "workers": 8
+        },
+        "maximum": {
+          "phase": "checkpointed_measured_window",
+          "process_count": 10,
+          "sample_index_1based": 5,
+          "scan_end_monotonic_ns": 6282761267027416,
+          "tree_pss_bytes": 4940067840
+        },
+        "status": "observed",
+        "total_samples": 6
+      },
+      {
+        "eligible_samples": 5,
+        "job": {
+          "arm": "reference_union_native_reuse",
+          "dataset_id": "citation2",
+          "horizon": "short320",
+          "name": "citation2_short320_w8_r2_reference_union_native_reuse",
+          "position": 3,
+          "repetition": 2,
+          "workers": 8
+        },
+        "maximum": {
+          "phase": "shutdown",
+          "process_count": 10,
+          "sample_index_1based": 5,
+          "scan_end_monotonic_ns": 6282788152272191,
+          "tree_pss_bytes": 4814950400
+        },
+        "status": "observed",
+        "total_samples": 5
+      }
+    ],
+    "scope": "Sampled all-phase application-tree maximum; non-atomic and partial residency, not required RAM"
+  },
+  "kind": "INDEPENDENT_CLOSURE_V1_SIX_APP_BLOCK_AUDIT",
+  "native_reuse_preparation": {
+    "conversion_seconds": 6.036501782,
+    "native_total_bytes": 509051728,
+    "preparation_clock_scope": "Durations internal to preparation process only; no monotonic comparison across host/boot",
+    "receipt_sha256": "51de95b8852f03002084add1b2de1d69aa72cd00d0ae07c45355fe35710e92f2",
+    "validation_seconds": 0.388683926
+  },
+  "original_summary_independently_recomputed": true,
+  "paired_arm_ratios": [
+    {
+      "denominator": "reference_union_native_fresh",
+      "horizon": "short320",
+      "metrics": {
+        "checkpointed_measured_seconds": 1.1802867870402511,
+        "first_trained_batch_launch_to_complete_seconds": 0.7097033777652809,
+        "input_hash_seconds_included": 1.062355774201993,
+        "launch_to_actual_wait_seconds": 0.7739733293618128,
+        "launch_to_first_batch_ready_seconds": 0.6909788201529884,
+        "measured_prefix320_launch_to_complete_seconds": 0.727954983971631,
+        "warmup_complete_launch_to_complete_seconds": 0.7111686710713688,
+        "worker_shutdown_seconds": 1.1151558511120372
+      },
+      "numerator": "reference_union_compiled",
+      "repetition": 2,
+      "workers": 8
+    },
+    {
+      "denominator": "reference_union_native_reuse",
+      "horizon": "short320",
+      "metrics": {
+        "checkpointed_measured_seconds": 1.174347264864266,
+        "first_trained_batch_launch_to_complete_seconds": 1.0783325216580157,
+        "input_hash_seconds_included": 1.0746192736213227,
+        "launch_to_actual_wait_seconds": 1.0416446044077117,
+        "launch_to_first_batch_ready_seconds": 1.0803355388596723,
+        "measured_prefix320_launch_to_complete_seconds": 1.0831857375441694,
+        "warmup_complete_launch_to_complete_seconds": 1.0780315039163944,
+        "worker_shutdown_seconds": 1.103449633004007
+      },
+      "numerator": "reference_union_compiled",
+      "repetition": 2,
+      "workers": 8
+    },
+    {
+      "denominator": "reference_union_native_fresh",
+      "horizon": "short320",
+      "metrics": {
+        "checkpointed_measured_seconds": 1.0050577221522898,
+        "first_trained_batch_launch_to_complete_seconds": 0.658148913726593,
+        "input_hash_seconds_included": 0.9885880518613784,
+        "launch_to_actual_wait_seconds": 0.743030133393626,
+        "launch_to_first_batch_ready_seconds": 0.6395964913663194,
+        "measured_prefix320_launch_to_complete_seconds": 0.672050008359667,
+        "warmup_complete_launch_to_complete_seconds": 0.6596919185457524,
+        "worker_shutdown_seconds": 1.0106087471125995
+      },
+      "numerator": "reference_union_native_reuse",
+      "repetition": 2,
+      "workers": 8
+    },
+    {
+      "denominator": "reference_union_native_fresh",
+      "horizon": "long6400",
+      "metrics": {
+        "checkpointed_measured_seconds": 1.1940494644777448,
+        "first_trained_batch_launch_to_complete_seconds": 0.7324479215770525,
+        "input_hash_seconds_included": 0.9569602449912433,
+        "launch_to_actual_wait_seconds": 0.9271684612429679,
+        "launch_to_first_batch_ready_seconds": 0.7211568425710775,
+        "measured_prefix1024_launch_to_complete_seconds": 0.7701146040780998,
+        "measured_prefix3200_launch_to_complete_seconds": 0.8312058455894179,
+        "measured_prefix6400_launch_to_complete_seconds": 0.8942701804207356,
+        "warmup_complete_launch_to_complete_seconds": 0.7330129382686483,
+        "worker_shutdown_seconds": 1.100697137097451
+      },
+      "numerator": "reference_union_compiled",
+      "repetition": 2,
+      "workers": 8
+    },
+    {
+      "denominator": "reference_union_native_reuse",
+      "horizon": "long6400",
+      "metrics": {
+        "checkpointed_measured_seconds": 1.0781085344355088,
+        "first_trained_batch_launch_to_complete_seconds": 1.1597426027751787,
+        "input_hash_seconds_included": 1.03499241576738,
+        "launch_to_actual_wait_seconds": 1.1160302194874019,
+        "launch_to_first_batch_ready_seconds": 1.1798067449754455,
+        "measured_prefix1024_launch_to_complete_seconds": 1.1201478963437432,
+        "measured_prefix3200_launch_to_complete_seconds": 1.1177768415292266,
+        "measured_prefix6400_launch_to_complete_seconds": 1.1196605209230193,
+        "warmup_complete_launch_to_complete_seconds": 1.1587942198680896,
+        "worker_shutdown_seconds": 1.07423027173479
+      },
+      "numerator": "reference_union_compiled",
+      "repetition": 2,
+      "workers": 8
+    },
+    {
+      "denominator": "reference_union_native_fresh",
+      "horizon": "long6400",
+      "metrics": {
+        "checkpointed_measured_seconds": 1.1075410557833512,
+        "first_trained_batch_launch_to_complete_seconds": 0.6315607616934642,
+        "input_hash_seconds_included": 0.9246060458150498,
+        "launch_to_actual_wait_seconds": 0.830773616209802,
+        "launch_to_first_batch_ready_seconds": 0.6112499743219272,
+        "measured_prefix1024_launch_to_complete_seconds": 0.6875115389600057,
+        "measured_prefix3200_launch_to_complete_seconds": 0.7436241427691846,
+        "measured_prefix6400_launch_to_complete_seconds": 0.7986976085247003,
+        "warmup_complete_launch_to_complete_seconds": 0.6325652352253623,
+        "worker_shutdown_seconds": 1.024637981314676
+      },
+      "numerator": "reference_union_native_reuse",
+      "repetition": 2,
+      "workers": 8
+    }
+  ],
+  "platform": {
+    "YT_writes": 0,
+    "actual_scientific_jobs_started": 0,
+    "base": "/home/jovyan/seal_native_lifecycle_20261126",
+    "block": 2,
+    "boot_id": "038e1482-b6bb-46b4-8e45-1af0bdf559c9",
+    "cpu_affinity": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "cpu_max": "2700000 100000",
+    "dataset_id": "citation2",
+    "gpu": {
+      "driver": "535.183.06",
+      "memory_total_mib": 81559,
+      "name": "NVIDIA H100 80GB HBM3",
+      "uuid": "GPU-4016b16d-73fe-7c4a-7595-70562276db1e"
+    },
+    "hostname": "seal-native-pvc-20261126-0",
+    "image_digest": "sha256:2c0d776d47eb7d3b763f5a42c70d51bff2ba6b1f9cb1f01b4adbad76b658cbb1",
+    "kind": "CLOSURE_V1_ACTUAL_BLOCK_PLATFORM_ADMISSION",
+    "kubernetes_binding": {
+      "PVC_name": "claim-vk-b",
+      "PVC_uid": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+      "hostname": "seal-native-pvc-20261126-0",
+      "image_digest": "sha256:2c0d776d47eb7d3b763f5a42c70d51bff2ba6b1f9cb1f01b4adbad76b658cbb1",
+      "node": "ml-kub-node804.i",
+      "pod_uid": "82dd6b40-3beb-47cb-b92a-53764d6853f0",
+      "sts_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0",
+      "subPath": "lpp_seal_e25_20261126_pvc_01",
+      "volume_name": "pvc-cfd8708a-cd0b-4cd9-914c-a860abf63ef5"
+    },
+    "memory_max": "274877906944",
+    "minimum_available_bytes": 6951502672,
+    "native_fresh_logical_bytes": 509051728,
+    "node": "ml-kub-node804.i",
+    "observed_unix": 1795780358.659395,
+    "pod_uid": "82dd6b40-3beb-47cb-b92a-53764d6853f0",
+    "root_admission_source_sha256": "26d3ca77fd91e770e3d2edb5762f2f45f7d49640c52b59c627ef7010692a355e",
+    "root_layer": {
+      "bytes_available": 769781039104,
+      "mount_readonly": false,
+      "write_fsync_readback_unlink": true
+    },
+    "scope": "Exact fresh root API UID/PVC/image binding plus local mount, resource, idle GPU and owned-file probes. Sampled admission, no capacity reservation, continuous health, exclusive cores or bandwidth claim.",
+    "statefulset_actions": 0,
+    "storage": {
+      "PVC_name": "claim-vk-b",
+      "PVC_uid": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+      "bytes_available": 40690819072,
+      "device": 66323,
+      "inodes_available": 13104282,
+      "inodes_total": 13107200,
+      "mount": {
+        "filesystem": "ext4",
+        "major_minor": "259:19",
+        "mount_point": "/home/jovyan/seal_native_lifecycle_20261126",
+        "options": [
+          "rw",
+          "relatime"
+        ],
+        "root": "/lpp_seal_e25_20261126_pvc_01",
+        "source": "/dev/nvme10n1",
+        "super_options": [
+          "rw",
+          "stripe=32"
+        ]
+      },
+      "mount_readonly": false,
+      "subPath": "lpp_seal_e25_20261126_pvc_01",
+      "volume_name": "pvc-cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+      "write_fsync_readback_unlink": true
+    },
+    "sts_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0",
+    "topology": [
+      {
+        "core_id": "3",
+        "cpu": 3,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "3,115"
+      },
+      {
+        "core_id": "4",
+        "cpu": 4,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "4,116"
+      },
+      {
+        "core_id": "5",
+        "cpu": 5,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "5,117"
+      },
+      {
+        "core_id": "6",
+        "cpu": 6,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "6,118"
+      },
+      {
+        "core_id": "7",
+        "cpu": 7,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "7,119"
+      },
+      {
+        "core_id": "8",
+        "cpu": 8,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "8,120"
+      },
+      {
+        "core_id": "9",
+        "cpu": 9,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "9,121"
+      },
+      {
+        "core_id": "10",
+        "cpu": 10,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "10,122"
+      },
+      {
+        "core_id": "11",
+        "cpu": 11,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "11,123"
+      },
+      {
+        "core_id": "12",
+        "cpu": 12,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "12,124"
+      },
+      {
+        "core_id": "13",
+        "cpu": 13,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "13,125"
+      },
+      {
+        "core_id": "14",
+        "cpu": 14,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "14,126"
+      },
+      {
+        "core_id": "15",
+        "cpu": 15,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "15,127"
+      },
+      {
+        "core_id": "16",
+        "cpu": 16,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "16,128"
+      },
+      {
+        "core_id": "3",
+        "cpu": 115,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "3,115"
+      },
+      {
+        "core_id": "4",
+        "cpu": 116,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "4,116"
+      },
+      {
+        "core_id": "5",
+        "cpu": 117,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "5,117"
+      },
+      {
+        "core_id": "6",
+        "cpu": 118,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "6,118"
+      },
+      {
+        "core_id": "7",
+        "cpu": 119,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "7,119"
+      },
+      {
+        "core_id": "8",
+        "cpu": 120,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "8,120"
+      },
+      {
+        "core_id": "9",
+        "cpu": 121,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "9,121"
+      },
+      {
+        "core_id": "10",
+        "cpu": 122,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "10,122"
+      },
+      {
+        "core_id": "11",
+        "cpu": 123,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "11,123"
+      },
+      {
+        "core_id": "12",
+        "cpu": 124,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "12,124"
+      },
+      {
+        "core_id": "13",
+        "cpu": 125,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "13,125"
+      },
+      {
+        "core_id": "14",
+        "cpu": 126,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "14,126"
+      },
+      {
+        "core_id": "15",
+        "cpu": 127,
+        "numa_nodes": [
+          "node0"
+        ],
+        "physical_package_id": "0",
+        "thread_siblings_list": "15,127"
+      }
+    ]
+  },
+  "raw6_metrics": [
+    {
+      "job": {
+        "arm": "reference_union_compiled",
+        "dataset_id": "citation2",
+        "horizon": "long6400",
+        "name": "citation2_long6400_w8_r2_reference_union_compiled",
+        "position": 1,
+        "repetition": 2,
+        "workers": 8
+      },
+      "metrics": {
+        "checkpointed_measured_seconds": 8.112394468,
+        "first_trained_batch_launch_to_complete_seconds": 9.208842313,
+        "input_hash_seconds_included": 0.231080489,
+        "launch_to_actual_wait_seconds": 20.194372398,
+        "launch_to_first_batch_ready_seconds": 8.598467827,
+        "measured_prefix1024_launch_to_complete_seconds": 10.645946115,
+        "measured_prefix3200_launch_to_complete_seconds": 13.384790337,
+        "measured_prefix6400_launch_to_complete_seconds": 17.370528229,
+        "warmup_complete_launch_to_complete_seconds": 9.258116914,
+        "worker_shutdown_seconds": 1.247130384
+      }
+    },
+    {
+      "job": {
+        "arm": "reference_union_native_fresh",
+        "dataset_id": "citation2",
+        "horizon": "long6400",
+        "name": "citation2_long6400_w8_r2_reference_union_native_fresh",
+        "position": 2,
+        "repetition": 2,
+        "workers": 8
+      },
+      "metrics": {
+        "checkpointed_measured_seconds": 6.794018765,
+        "first_trained_batch_launch_to_complete_seconds": 12.572692258,
+        "input_hash_seconds_included": 0.241473447,
+        "launch_to_actual_wait_seconds": 21.780693846,
+        "launch_to_first_batch_ready_seconds": 11.923159179,
+        "measured_prefix1024_launch_to_complete_seconds": 13.823846553,
+        "measured_prefix3200_launch_to_complete_seconds": 16.102858766,
+        "measured_prefix6400_launch_to_complete_seconds": 19.424250757,
+        "warmup_complete_launch_to_complete_seconds": 12.630223057,
+        "worker_shutdown_seconds": 1.13303682
+      }
+    },
+    {
+      "job": {
+        "arm": "reference_union_native_reuse",
+        "dataset_id": "citation2",
+        "horizon": "long6400",
+        "name": "citation2_long6400_w8_r2_reference_union_native_reuse",
+        "position": 3,
+        "repetition": 2,
+        "workers": 8
+      },
+      "metrics": {
+        "checkpointed_measured_seconds": 7.524654716,
+        "first_trained_batch_launch_to_complete_seconds": 7.940419099,
+        "input_hash_seconds_included": 0.223267809,
+        "launch_to_actual_wait_seconds": 18.09482579,
+        "launch_to_first_batch_ready_seconds": 7.288030742,
+        "measured_prefix1024_launch_to_complete_seconds": 9.504054018,
+        "measured_prefix3200_launch_to_complete_seconds": 11.974474546,
+        "measured_prefix6400_launch_to_complete_seconds": 15.514102627,
+        "warmup_complete_launch_to_complete_seconds": 7.989440019,
+        "worker_shutdown_seconds": 1.16095256
+      }
+    },
+    {
+      "job": {
+        "arm": "reference_union_native_fresh",
+        "dataset_id": "citation2",
+        "horizon": "short320",
+        "name": "citation2_short320_w8_r2_reference_union_native_fresh",
+        "position": 1,
+        "repetition": 2,
+        "workers": 8
+      },
+      "metrics": {
+        "checkpointed_measured_seconds": 0.442468948,
+        "first_trained_batch_launch_to_complete_seconds": 11.87636963,
+        "input_hash_seconds_included": 0.019371101,
+        "launch_to_actual_wait_seconds": 14.529447975,
+        "launch_to_first_batch_ready_seconds": 11.24463127,
+        "measured_prefix320_launch_to_complete_seconds": 12.365725813,
+        "warmup_complete_launch_to_complete_seconds": 11.923250067,
+        "worker_shutdown_seconds": 1.044811313
+      }
+    },
+    {
+      "job": {
+        "arm": "reference_union_compiled",
+        "dataset_id": "citation2",
+        "horizon": "short320",
+        "name": "citation2_short320_w8_r2_reference_union_compiled",
+        "position": 2,
+        "repetition": 2,
+        "workers": 8
+      },
+      "metrics": {
+        "checkpointed_measured_seconds": 0.522240253,
+        "first_trained_batch_launch_to_complete_seconds": 8.428699642,
+        "input_hash_seconds_included": 0.020579001,
+        "launch_to_actual_wait_seconds": 11.245405223,
+        "launch_to_first_batch_ready_seconds": 7.769802048,
+        "measured_prefix320_launch_to_complete_seconds": 9.001691736,
+        "warmup_complete_launch_to_complete_seconds": 8.479441905,
+        "worker_shutdown_seconds": 1.165127449
+      }
+    },
+    {
+      "job": {
+        "arm": "reference_union_native_reuse",
+        "dataset_id": "citation2",
+        "horizon": "short320",
+        "name": "citation2_short320_w8_r2_reference_union_native_reuse",
+        "position": 3,
+        "repetition": 2,
+        "workers": 8
+      },
+      "metrics": {
+        "checkpointed_measured_seconds": 0.444706833,
+        "first_trained_batch_launch_to_complete_seconds": 7.816419771,
+        "input_hash_seconds_included": 0.019150039,
+        "launch_to_actual_wait_seconds": 10.795817667,
+        "launch_to_first_batch_ready_seconds": 7.192026707,
+        "measured_prefix320_launch_to_complete_seconds": 8.310386136,
+        "warmup_complete_launch_to_complete_seconds": 7.865671712,
+        "worker_shutdown_seconds": 1.055895452
+      }
+    }
+  ],
+  "repetition_block": 2,
+  "root_collection": {
+    "bytes": 11084,
+    "sha256": "3ee06807daf25ae0bebee4889c5cf681f18cfde2d012906107418f8c2c415457"
+  },
+  "rows": [
+    {
+      "arms": {
+        "reference_union_compiled": {
+          "metrics": {
+            "checkpointed_measured_seconds": 0.522240253,
+            "first_trained_batch_launch_to_complete_seconds": 8.428699642,
+            "input_hash_seconds_included": 0.020579001,
+            "launch_to_actual_wait_seconds": 11.245405223,
+            "launch_to_first_batch_ready_seconds": 7.769802048,
+            "measured_prefix320_launch_to_complete_seconds": 9.001691736,
+            "warmup_complete_launch_to_complete_seconds": 8.479441905,
+            "worker_shutdown_seconds": 1.165127449
+          },
+          "name": "citation2_short320_w8_r2_reference_union_compiled"
+        },
+        "reference_union_native_fresh": {
+          "metrics": {
+            "checkpointed_measured_seconds": 0.442468948,
+            "first_trained_batch_launch_to_complete_seconds": 11.87636963,
+            "input_hash_seconds_included": 0.019371101,
+            "launch_to_actual_wait_seconds": 14.529447975,
+            "launch_to_first_batch_ready_seconds": 11.24463127,
+            "measured_prefix320_launch_to_complete_seconds": 12.365725813,
+            "warmup_complete_launch_to_complete_seconds": 11.923250067,
+            "worker_shutdown_seconds": 1.044811313
+          },
+          "name": "citation2_short320_w8_r2_reference_union_native_fresh"
+        },
+        "reference_union_native_reuse": {
+          "metrics": {
+            "checkpointed_measured_seconds": 0.444706833,
+            "first_trained_batch_launch_to_complete_seconds": 7.816419771,
+            "input_hash_seconds_included": 0.019150039,
+            "launch_to_actual_wait_seconds": 10.795817667,
+            "launch_to_first_batch_ready_seconds": 7.192026707,
+            "measured_prefix320_launch_to_complete_seconds": 8.310386136,
+            "warmup_complete_launch_to_complete_seconds": 7.865671712,
+            "worker_shutdown_seconds": 1.055895452
+          },
+          "name": "citation2_short320_w8_r2_reference_union_native_reuse"
+        }
+      },
+      "horizon": "short320",
+      "repetition": 2,
+      "workers": 8
+    },
+    {
+      "arms": {
+        "reference_union_compiled": {
+          "metrics": {
+            "checkpointed_measured_seconds": 8.112394468,
+            "first_trained_batch_launch_to_complete_seconds": 9.208842313,
+            "input_hash_seconds_included": 0.231080489,
+            "launch_to_actual_wait_seconds": 20.194372398,
+            "launch_to_first_batch_ready_seconds": 8.598467827,
+            "measured_prefix1024_launch_to_complete_seconds": 10.645946115,
+            "measured_prefix3200_launch_to_complete_seconds": 13.384790337,
+            "measured_prefix6400_launch_to_complete_seconds": 17.370528229,
+            "warmup_complete_launch_to_complete_seconds": 9.258116914,
+            "worker_shutdown_seconds": 1.247130384
+          },
+          "name": "citation2_long6400_w8_r2_reference_union_compiled"
+        },
+        "reference_union_native_fresh": {
+          "metrics": {
+            "checkpointed_measured_seconds": 6.794018765,
+            "first_trained_batch_launch_to_complete_seconds": 12.572692258,
+            "input_hash_seconds_included": 0.241473447,
+            "launch_to_actual_wait_seconds": 21.780693846,
+            "launch_to_first_batch_ready_seconds": 11.923159179,
+            "measured_prefix1024_launch_to_complete_seconds": 13.823846553,
+            "measured_prefix3200_launch_to_complete_seconds": 16.102858766,
+            "measured_prefix6400_launch_to_complete_seconds": 19.424250757,
+            "warmup_complete_launch_to_complete_seconds": 12.630223057,
+            "worker_shutdown_seconds": 1.13303682
+          },
+          "name": "citation2_long6400_w8_r2_reference_union_native_fresh"
+        },
+        "reference_union_native_reuse": {
+          "metrics": {
+            "checkpointed_measured_seconds": 7.524654716,
+            "first_trained_batch_launch_to_complete_seconds": 7.940419099,
+            "input_hash_seconds_included": 0.223267809,
+            "launch_to_actual_wait_seconds": 18.09482579,
+            "launch_to_first_batch_ready_seconds": 7.288030742,
+            "measured_prefix1024_launch_to_complete_seconds": 9.504054018,
+            "measured_prefix3200_launch_to_complete_seconds": 11.974474546,
+            "measured_prefix6400_launch_to_complete_seconds": 15.514102627,
+            "warmup_complete_launch_to_complete_seconds": 7.989440019,
+            "worker_shutdown_seconds": 1.16095256
+          },
+          "name": "citation2_long6400_w8_r2_reference_union_native_reuse"
+        }
+      },
+      "horizon": "long6400",
+      "repetition": 2,
+      "workers": 8
+    }
+  ],
+  "sampled_PSS": [
+    {
+      "name": "citation2_long6400_w8_r2_reference_union_compiled",
+      "phases": {
+        "checkpointed_measured_window": {
+          "eligible_samples": 3,
+          "max_sampled_tree_pss_bytes": 5026580480
+        },
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 483323904
+        },
+        "shutdown": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 5029859328
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 3,
+          "max_sampled_tree_pss_bytes": 4262795264
+        }
+      }
+    },
+    {
+      "name": "citation2_long6400_w8_r2_reference_union_native_fresh",
+      "phases": {
+        "checkpointed_measured_window": {
+          "eligible_samples": 3,
+          "max_sampled_tree_pss_bytes": 5538563072
+        },
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 489138176
+        },
+        "native_promotion": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 1416883200
+        },
+        "shutdown": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 5430324224
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 3376870400
+        }
+      }
+    },
+    {
+      "name": "citation2_long6400_w8_r2_reference_union_native_reuse",
+      "phases": {
+        "checkpointed_measured_window": {
+          "eligible_samples": 4,
+          "max_sampled_tree_pss_bytes": 5565090816
+        },
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 524353536
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 3524885504
+        }
+      }
+    },
+    {
+      "name": "citation2_short320_w8_r2_reference_union_native_fresh",
+      "phases": {
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 522675200
+        },
+        "native_promotion": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 1417048064
+        },
+        "shutdown": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 4842656768
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 3705138176
+        }
+      }
+    },
+    {
+      "name": "citation2_short320_w8_r2_reference_union_compiled",
+      "phases": {
+        "checkpointed_measured_window": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 4940067840
+        },
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 490944512
+        },
+        "reporting": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 1542884352
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 3275805696
+        }
+      }
+    },
+    {
+      "name": "citation2_short320_w8_r2_reference_union_native_reuse",
+      "phases": {
+        "interpreter_and_imports": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 488288256
+        },
+        "shutdown": {
+          "eligible_samples": 1,
+          "max_sampled_tree_pss_bytes": 4814950400
+        },
+        "worker_setup_and_first_batch": {
+          "eligible_samples": 2,
+          "max_sampled_tree_pss_bytes": 3517593600
+        }
+      }
+    }
+  ],
+  "scope": "Independent raw clocks/PSS/CPU brackets/source/provenance checks. No producer import or recorded path access. Source-bound graph/native/input identities, not independent payload regeneration.",
+  "script": {
+    "bytes": 93988,
+    "sha256": "98ad346c6d6529878e859441df72ce9b33c226eb01229bf015adda1926b0834c"
+  },
+  "source_bound_consumed_digest_equality_checked": true,
+  "source_bound_consumed_input_streams": {
+    "long6400": "7b65b0658c909be157454f8d4b0e73f7180fe0428991c065921e5bbeaa5deae8",
+    "short320": "e0d6decfe206ecc0dcf0d565c7a015020c7a353881923a0ceed3745e9570eeb6"
+  },
+  "source_bound_semantic_prefixes_by_horizon": {
+    "long6400": {
+      "1280": "e87f43dd9eae9beba61c7840ba149a1fa5501ac416b36d55cbc5532b05a7aca8",
+      "256": "3024ff0ae6941265e94eb59a41f32ba815add9ff7265c87b65f31956c30556d8",
+      "32": "03cb9d43ebb4b1a0966bc8325e1da01a18e3b01d19b0bc2a55b437f8aef3a66b",
+      "3456": "5763498dde638971343b352a30ffbc9f3a731ddf9b152965f25614e8d8d072a6",
+      "576": "e0d6decfe206ecc0dcf0d565c7a015020c7a353881923a0ceed3745e9570eeb6",
+      "6656": "7b65b0658c909be157454f8d4b0e73f7180fe0428991c065921e5bbeaa5deae8"
+    },
+    "short320": {
+      "256": "3024ff0ae6941265e94eb59a41f32ba815add9ff7265c87b65f31956c30556d8",
+      "32": "03cb9d43ebb4b1a0966bc8325e1da01a18e3b01d19b0bc2a55b437f8aef3a66b",
+      "576": "e0d6decfe206ecc0dcf0d565c7a015020c7a353881923a0ceed3745e9570eeb6"
+    }
+  },
+  "source_hashes": {
+    "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+    "source_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+    "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+  },
+  "status": "PASS_SIX_APP_DATASET_BLOCK",
+  "storage_block": {
+    "device": 66323,
+    "first_observed_ns": 6282539234768234,
+    "inode_reporting_observations": 72,
+    "inode_unreported_observations": 0,
+    "last_observed_ns": 6282790159353803,
+    "latest_inventory": {
+      "complete_entry_observations": true,
+      "disk_observed_monotonic_ns": 6282790159353803,
+      "observed_monotonic_ns": 6282790203186839,
+      "observed_non_runtime_bytes": 13420342,
+      "observed_non_runtime_files": 195,
+      "scope": "Non-atomic sampled output-byte cap, not an instantaneous quota; vanished entries are skipped and counted, observed bytes are never subtracted.",
+      "vanished_entries": 0
+    },
+    "minimum_reported_bytes_available": 40170369024,
+    "minimum_reported_inodes_available": 13104000,
+    "path": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results/citation2_block2/producer",
+    "raw_disk_observations_checked": 72,
+    "raw_statvfs_block_arithmetic_independently_recomputed": false,
+    "runtime_thresholds_independently_checked": true,
+    "scope": "Each recorded available-byte/inode/readonly/device threshold and latest sampled inventory checked. Byte availability was derived by pinned statvfs code; raw block components were not serialized. Initial dataset-native-bytes-plus6GiB/positive exposed inodes admission is checked separately from runtime4GiB/positive exposed inodes. No instantaneous quota, capacity reservation, node eviction or continuous-health guarantee."
+  },
+  "whole_members_rehashed": 243
+}

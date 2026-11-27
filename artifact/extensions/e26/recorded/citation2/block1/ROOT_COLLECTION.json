@@ -1,0 +1,251 @@
+{
+  "GPU_compute_app_pids": [],
+  "GPU_released": false,
+  "YT_writes": 0,
+  "active_marker_absent": true,
+  "actual_launch": {
+    "YT_writes": 0,
+    "automatic_retry": false,
+    "dataset_id": "citation2",
+    "detached_session": true,
+    "driver": {
+      "argv": [
+        "/opt/python/bin/python3",
+        "-B",
+        "-u",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/envelope_v1/wait_driver.py",
+        "--receipt",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/citation2_block1/ENVELOPE_OS_WAIT.json",
+        "--log",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/citation2_block1/envelope.log",
+        "--wrapper-sha256",
+        "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8",
+        "--",
+        "/opt/python/bin/python3",
+        "-B",
+        "-u",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/envelope_v1/run_block.py",
+        "--dataset",
+        "citation2",
+        "--block",
+        "1",
+        "--packet",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/packet_v1",
+        "--graph-root",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/data/citation2/full_csr",
+        "--native-reuse-root",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/native_prepared/citation2",
+        "--native-reuse-receipt-sha256",
+        "51de95b8852f03002084add1b2de1d69aa72cd00d0ae07c45355fe35710e92f2",
+        "--packet-manifest-sha256",
+        "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+        "--protocol-sha256",
+        "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+        "--platform-admission-json",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/citation2_block1/PLATFORM_ADMISSION.json",
+        "--platform-admission-sha256",
+        "892764258ac010c94f8249c67d25100780d976f277746187bd06088ae26b43c3",
+        "--out",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results/citation2_block1",
+        "--coordination",
+        "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results"
+      ],
+      "entrypoint": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/envelope_v1/wait_driver.py",
+      "launch_monotonic_ns": 6315330103872894,
+      "log": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/citation2_block1/driver.stdout.log",
+      "observed_state": "R",
+      "pid": 23,
+      "source_sha256": "2d4aeff94cff0956bf8c84162d286c6dd815becdbd1a41fec731b42ff33848d8",
+      "start_ticks": 631533010
+    },
+    "kind": "ROOT_CLOSURE_V1_ACTUAL_BLOCK_LAUNCH",
+    "observed_unix": 1795777740.0349364,
+    "ops": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/citation2_block1",
+    "out": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results/citation2_block1",
+    "platform_path": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/citation2_block1/PLATFORM_ADMISSION.json",
+    "pod_uid": "d5803033-9373-4022-a4c0-9e8c72b1305b",
+    "repetition_block": 1,
+    "root_ready_sha256": "eadd76ed4252672774f1bcfe8288dd4fbf021d0f5de6eb5598ed53fb29926eb5",
+    "source_hashes": {
+      "driver_sha256": "2d4aeff94cff0956bf8c84162d286c6dd815becdbd1a41fec731b42ff33848d8",
+      "packet_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+      "platform_admission_sha256": "892764258ac010c94f8249c67d25100780d976f277746187bd06088ae26b43c3",
+      "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+      "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+    },
+    "stdin_dependency": false,
+    "sts_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0"
+  },
+  "actual_numeric_audit_pending": true,
+  "all_archive_members_independently_verified": true,
+  "archive": {
+    "bytes": 1187799,
+    "path": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results/citation2_block1/block_raw.tgz",
+    "sha256": "31c057e017a654780bb9cb9d133aaeb6894610da2c3963181aa426c732b9c642"
+  },
+  "archive_verification": {
+    "bytes": 571,
+    "sha256": "eb19e55af407ccb919467ae466f78cd95c4d444348b75ddb0d6afa058ac69d06"
+  },
+  "collected_unix": 1795778063.702636,
+  "current_PVC_available_bytes": 40716390400,
+  "current_PVC_device": 66323,
+  "dataset_id": "citation2",
+  "external_wait_sidecar": {
+    "bytes": 2108,
+    "sha256": "572089fc608cea007e72dafa51582f07f3d9fbe39290655ade1514f9f674d8c0"
+  },
+  "external_wrapper_terminal_sidecar": {
+    "bytes": 546,
+    "sha256": "373f610b496e149ff987503cd4d4534ae2c1b95aa215ecd4a5cd23b422a539bc"
+  },
+  "independently_transferred_whole_SHA": true,
+  "kind": "CLOSURE_V1_ROOT_COLLECTION",
+  "local_archive": "block_raw.tgz",
+  "local_fsync": true,
+  "outer_complete": {
+    "YT_writes": 0,
+    "archive": {
+      "all_members_rehashed": true,
+      "bytes": 1187799,
+      "members": 243,
+      "path": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results/citation2_block1/block_raw.tgz",
+      "sha256": "31c057e017a654780bb9cb9d133aaeb6894610da2c3963181aa426c732b9c642"
+    },
+    "automatic_retry": false,
+    "block_jobs": 6,
+    "dataset_id": "citation2",
+    "failure": null,
+    "kind": "CLOSURE_V1_BLOCK_ENVELOPE_TERMINAL",
+    "owned_tree_quiescent": true,
+    "repetition_block": 1,
+    "success": true
+  },
+  "outer_process": {
+    "actual_wait_returned": true,
+    "argv": [
+      "/opt/python/bin/python3",
+      "-B",
+      "-u",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/envelope_v1/run_block.py",
+      "--dataset",
+      "citation2",
+      "--block",
+      "1",
+      "--packet",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/source/packet_v1",
+      "--graph-root",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/data/citation2/full_csr",
+      "--native-reuse-root",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/native_prepared/citation2",
+      "--native-reuse-receipt-sha256",
+      "51de95b8852f03002084add1b2de1d69aa72cd00d0ae07c45355fe35710e92f2",
+      "--packet-manifest-sha256",
+      "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+      "--protocol-sha256",
+      "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+      "--platform-admission-json",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/ops/citation2_block1/PLATFORM_ADMISSION.json",
+      "--platform-admission-sha256",
+      "892764258ac010c94f8249c67d25100780d976f277746187bd06088ae26b43c3",
+      "--out",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results/citation2_block1",
+      "--coordination",
+      "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127_run2/results"
+    ],
+    "driver_pid": 23,
+    "driver_source_sha256": "2d4aeff94cff0956bf8c84162d286c6dd815becdbd1a41fec731b42ff33848d8",
+    "failure": null,
+    "kind": "CLOSURE_V1_ENVELOPE_ACTUAL_OS_WAIT",
+    "launch_monotonic_ns": 6315330162320708,
+    "orphan_cleanup": false,
+    "owned_pgids_signaled": [],
+    "owned_tree_quiescent": true,
+    "owned_tree_quiescent_after_cleanup": true,
+    "pid": 24,
+    "pod_uid": "d5803033-9373-4022-a4c0-9e8c72b1305b",
+    "returncode": 0,
+    "start_ticks": 631533016,
+    "timed_out": false,
+    "timeout_seconds": 4300,
+    "wait_returned_monotonic_ns": 6315578099695821,
+    "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+  },
+  "owned_postexit_scan": {
+    "live_owned_rows": [],
+    "scope": "All visible non-zombie processes in this exclusively owned Pod were PID1 sleep and this read-only collector. No signals or global-host attribution.",
+    "visible_live_rows": [
+      {
+        "pid": 1,
+        "start_ticks": 631528847,
+        "state": "S"
+      },
+      {
+        "pid": 5630,
+        "start_ticks": 631562679,
+        "state": "R"
+      }
+    ]
+  },
+  "pod_uid": "d5803033-9373-4022-a4c0-9e8c72b1305b",
+  "post_exit_observation": {
+    "bytes": 8416,
+    "sha256": "b61ee80978a71311fecd92cdb0a9a8bacf5f1b164cc2a556c42032d7579f6e59"
+  },
+  "producer_exit": {
+    "actual_wait_returned": true,
+    "guard_abort_reason": null,
+    "orphan_cleanup": false,
+    "owned_pgids_signaled": [],
+    "owned_tree_quiescent": true,
+    "pid": 25,
+    "returncode": 0,
+    "start_ticks": 631533047,
+    "timed_out": false,
+    "timeout_seconds": 3960,
+    "wait_returned_monotonic_ns": 6315576415486413
+  },
+  "repetition_block": 1,
+  "root_current_API_binding_after": {
+    "PVC_uid": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+    "container": "seal",
+    "image_digest": "sha256:2c0d776d47eb7d3b763f5a42c70d51bff2ba6b1f9cb1f01b4adbad76b658cbb1",
+    "node": "ml-kub-node801.i",
+    "pod": "seal-native-pvc-20261126-0",
+    "pod_uid": "d5803033-9373-4022-a4c0-9e8c72b1305b",
+    "sts_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0"
+  },
+  "root_current_API_binding_before": {
+    "PVC_uid": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+    "container": "seal",
+    "image_digest": "sha256:2c0d776d47eb7d3b763f5a42c70d51bff2ba6b1f9cb1f01b4adbad76b658cbb1",
+    "node": "ml-kub-node801.i",
+    "pod": "seal-native-pvc-20261126-0",
+    "pod_uid": "d5803033-9373-4022-a4c0-9e8c72b1305b",
+    "sts_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0"
+  },
+  "root_input_pins": {
+    "ACTUAL_LAUNCH": {
+      "bytes": 3823,
+      "sha256": "fe05351cb979081da11d101dd1d056a0cf59758bc203eeb41eea0e175937edde"
+    },
+    "ACTUAL_PLATFORM": {
+      "bytes": 5659,
+      "sha256": "892764258ac010c94f8249c67d25100780d976f277746187bd06088ae26b43c3"
+    },
+    "PLATFORM_BINDING": {
+      "bytes": 8992,
+      "sha256": "5442a76ad3ab0bc9f4133112ab247de55d0cf2417f37508e53d5a240c832536f"
+    }
+  },
+  "scope": "One actual completed dataset block only. Root checked original allocation, parent OS wait0, recorded producer exit0, visible owned-Pod quiescence and idle GPU before bounded transfer. No remote write, deletion, retry, lifecycle, graph/model download or numerical-success claim.",
+  "source_hashes": {
+    "driver_sha256": "2d4aeff94cff0956bf8c84162d286c6dd815becdbd1a41fec731b42ff33848d8",
+    "packet_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+    "platform_admission_sha256": "892764258ac010c94f8249c67d25100780d976f277746187bd06088ae26b43c3",
+    "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+    "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+  },
+  "sts_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0",
+  "timing_lock_available": true
+}

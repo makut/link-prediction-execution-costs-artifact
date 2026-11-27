@@ -1,0 +1,15 @@
+{
+  "PVC_retained": true,
+  "PVC_uid": "cfd8708a-cd0b-4cd9-914c-a860abf63ef5",
+  "YT_writes": 0,
+  "dataset_id": "friendster",
+  "kind": "CLOSURE_V1_BLOCK_ALLOCATION_RELEASE_OBSERVATION",
+  "matching_pods": [],
+  "observed_unix": 1795780266.038889,
+  "old_pod_absent": true,
+  "original_pod_uid": "0e251093-b95b-4232-853b-c9cfd56477bd",
+  "owned_GPU_reservation_absent": true,
+  "repetition_block": 2,
+  "replicas": 0,
+  "statefulset_uid": "33e0e988-e01d-4da3-b21f-2f4f3e7f0fc0"
+}

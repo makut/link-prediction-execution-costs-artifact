@@ -1,0 +1,28 @@
+{
+  "kind": "ROOT_ACTUAL_E26_TIMING_FIGURE_VISUAL_QA",
+  "status": "PASS",
+  "observed_unix": 1795783718.298712,
+  "figure": {
+    "bytes": 19116,
+    "sha256": "e25ba5feae9f4d75ec4a4e1dc234682d042ee7949e182f0b549fa1e55fdb18a5"
+  },
+  "numeric": {
+    "bytes": 19422,
+    "sha256": "443017f444dbdae6c61c42873cdaf84536c27e98879cc68f4fb199a1c2902c68"
+  },
+  "render": {
+    "bytes": 88132,
+    "sha256": "f382cbf844ec8c67022f72a11ad95fd58c1fd3b270333f51f76fb4ac68b14ce8"
+  },
+  "plot_source": {
+    "bytes": 17760,
+    "sha256": "ff5b1e1cee435775c73db5a50a0c33e4e59bc716511a6419bfc619d837f5f70a"
+  },
+  "all36_original_points_preserved": true,
+  "paired_input_and_summary_arithmetic_verified": true,
+  "shared_positive_log_seconds_axis": true,
+  "colored_markers_individual_allocations_black_segments_medians": true,
+  "no_clipping_overlap_or_missing_legend": true,
+  "layout_revision": "Only footnote y coordinate .145 -> .085 after first actual render showed overlap with x tick labels; original plot source/failed private render retained. Numeric figure JSON byte-identical between layouts. Scientific design, values, scale, points, summaries and limits unchanged.",
+  "manual_visual_inspection_tool": "view_image of actual pdftoppm 1800px render"
+}

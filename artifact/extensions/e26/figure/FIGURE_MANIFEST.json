@@ -1,0 +1,82 @@
+{
+  "design": {
+    "allocation_markers": {
+      "1": "o",
+      "2": "s",
+      "3": "^"
+    },
+    "arm_colors": {
+      "reference_union_compiled": "#0072B2",
+      "reference_union_native_fresh": "#D55E00",
+      "reference_union_native_reuse": "#009E73"
+    },
+    "arms": [
+      "reference_union_compiled",
+      "reference_union_native_fresh",
+      "reference_union_native_reuse"
+    ],
+    "design_selection": "Root selected logarithmic axes prospectively, before reading new application outcome times, because oldE25 showed order-of-magnitude fresh-setup costs and the main new question is compiled versus reused native",
+    "excluded": [
+      "progress curves",
+      "timed long576 point",
+      "fitted crossover",
+      "confidence intervals",
+      "synthetic or partial-result placeholders",
+      "quality/time-to-quality interpretation"
+    ],
+    "intended_manuscript_slot": "Existing application-lifetime figure slot; manuscript remains untouched by this script",
+    "limits": "Global minimum/maximum of all36 observations with fixed multiplicative margin; no observation exclusion",
+    "main_measurement": "Actual parent launch to recorded actual wait for separately terminated applications only",
+    "native_boundary": "Fresh conversion is inside each native-fresh application; once-prepared immutable CSR generation/validation is recorded separately, private mutable mapper remains per worker",
+    "panels": [
+      "Friendster",
+      "Citation2"
+    ],
+    "raw_points": "All three original allocation observations per arm/horizon, fixed small x offsets; shape preserves allocation pairing",
+    "scope": "Three matched observations per configuration; retained caches and descriptive allocation variation, no population or universal-native ranking claim",
+    "summary": "Black median segment and descriptive observed minimum/maximum whisker across exactly three allocations",
+    "total_consumed_graphs": {
+      "long6400": 6656,
+      "short320": 576
+    },
+    "version": "closure_launch_wait_main_v1_log_prespecified",
+    "warmup_graphs": 256,
+    "x_groups": [
+      "Short: 320 measured graphs",
+      "Long: 6,400 measured graphs"
+    ],
+    "y_axis": "Shared positive logarithmic seconds scale and identical limits across both panels; no zero-based bars"
+  },
+  "figure": {
+    "bytes": 19116,
+    "sha256": "e25ba5feae9f4d75ec4a4e1dc234682d042ee7949e182f0b549fa1e55fdb18a5"
+  },
+  "input_pins": {
+    "citation2": {
+      "bytes": 87809,
+      "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_closure_controls_20261127_run2/blocks/ACTUAL_AGGREGATE_citation2.json",
+      "sha256": "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936"
+    },
+    "friendster": {
+      "bytes": 88246,
+      "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_closure_controls_20261127_run2/blocks/ACTUAL_AGGREGATE_friendster.json",
+      "sha256": "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2"
+    },
+    "root_ready": {
+      "bytes": 4945,
+      "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_closure_controls_20261127_run2/root_SOURCE_READY.json",
+      "sha256": "eadd76ed4252672774f1bcfe8288dd4fbf021d0f5de6eb5598ed53fb29926eb5"
+    }
+  },
+  "kind": "CLOSURE_V1_ACTUAL_FIGURE_EXPORT",
+  "numeric_data": {
+    "bytes": 19422,
+    "sha256": "443017f444dbdae6c61c42873cdaf84536c27e98879cc68f4fb199a1c2902c68"
+  },
+  "only_genuine_complete_36_observations": true,
+  "source": {
+    "bytes": 17760,
+    "sha256": "ff5b1e1cee435775c73db5a50a0c33e4e59bc716511a6419bfc619d837f5f70a"
+  },
+  "visual_QA": "PENDING_ACTUAL_RENDER_INSPECTION"
+}

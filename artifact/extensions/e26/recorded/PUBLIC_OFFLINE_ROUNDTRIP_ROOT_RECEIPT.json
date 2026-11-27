@@ -1,0 +1,139 @@
+{
+  "actual_child_returncode": 0,
+  "actual_child_wait_returned": true,
+  "all_eight_outputs_byte_identical": true,
+  "argv": [
+    "/Users/m.utushkin/.pyenv/versions/3.12.10/bin/python3",
+    "-B",
+    "-S",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_publication_candidate_v0_5/repository/artifact/extensions/e26/offline_verify_closure.py",
+    "--index",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_publication_candidate_v0_5/repository/artifact/extensions/e26/evidence_index.json",
+    "--index-sha256",
+    "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903",
+    "--out",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_closure_controls_20261127_run2/public_offline_roundtrip_all6"
+  ],
+  "auditor": {
+    "bytes": 93988,
+    "sha256": "98ad346c6d6529878e859441df72ce9b33c226eb01229bf015adda1926b0834c"
+  },
+  "child_launch_monotonic_ns": 1944598953838791,
+  "child_pid": 54577,
+  "child_wait_returned_monotonic_ns": 1944601086539791,
+  "cwd": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_closure_controls_20261127_run2",
+  "fresh_output_directory": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_closure_controls_20261127_run2/public_offline_roundtrip_all6",
+  "frozen_source_or_original_public_record_edits": 0,
+  "helper_receipt": {
+    "bytes": 2118,
+    "sha256": "cf638f5d870d4e2d063c50807e11e4ca1fffc431281bc339791f40a0dbdcc7a5"
+  },
+  "index_input": {
+    "bytes": 5194,
+    "path": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_publication_candidate_v0_5/repository/artifact/extensions/e26/evidence_index.json",
+    "sha256": "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903"
+  },
+  "installed_verifier": {
+    "bytes": 15922,
+    "sha256": "a0f50ef78f3cfec644a81a953bbb741370dadbe95dd08792bab4930c64bd1d11"
+  },
+  "kind": "ROOT_ACTUAL_PUBLIC_LAYOUT_E26_ALL6_OFFLINE_ROUNDTRIP",
+  "new_experiments_ML_graph_model_network_cluster_YT_actions": 0,
+  "python_version": "3.12.10 (main, May 20 2025, 17:57:11) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "source_hashes": {
+    "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+    "source_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+    "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+  },
+  "status": "PASS_ACTUAL_PUBLIC_LAYOUT_E26_ALL6_OFFLINE_ROUNDTRIP",
+  "verified_outputs": {
+    "citation2_aggregate.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 87809,
+        "sha256": "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936"
+      },
+      "recorded": {
+        "bytes": 87809,
+        "sha256": "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936"
+      }
+    },
+    "citation2_block1.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 109217,
+        "sha256": "bcc2526edd6cb300a1428260311dd8eac4e49b86fc572cdf9f115b4231516c1b"
+      },
+      "recorded": {
+        "bytes": 109217,
+        "sha256": "bcc2526edd6cb300a1428260311dd8eac4e49b86fc572cdf9f115b4231516c1b"
+      }
+    },
+    "citation2_block2.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 109190,
+        "sha256": "97855ee44fa0e5d4c7e68448126cde31801a4bcc0f1dc28c41943a081c5c1a9d"
+      },
+      "recorded": {
+        "bytes": 109190,
+        "sha256": "97855ee44fa0e5d4c7e68448126cde31801a4bcc0f1dc28c41943a081c5c1a9d"
+      }
+    },
+    "citation2_block3.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 108930,
+        "sha256": "3adf3864dcf5d928a8dde78f4e691e0ed82deed4ad04528c21debe96c240d192"
+      },
+      "recorded": {
+        "bytes": 108930,
+        "sha256": "3adf3864dcf5d928a8dde78f4e691e0ed82deed4ad04528c21debe96c240d192"
+      }
+    },
+    "friendster_aggregate.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 88246,
+        "sha256": "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2"
+      },
+      "recorded": {
+        "bytes": 88246,
+        "sha256": "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2"
+      }
+    },
+    "friendster_block1.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 110170,
+        "sha256": "c382507086fc27d581ae03c495d544c58d8fb91c60e087ffc756be6510463a99"
+      },
+      "recorded": {
+        "bytes": 110170,
+        "sha256": "c382507086fc27d581ae03c495d544c58d8fb91c60e087ffc756be6510463a99"
+      }
+    },
+    "friendster_block2.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 109214,
+        "sha256": "9744c8c02b50aabb19575e5e7832282ec868a11bba161d6f750f03cfd8380028"
+      },
+      "recorded": {
+        "bytes": 109214,
+        "sha256": "9744c8c02b50aabb19575e5e7832282ec868a11bba161d6f750f03cfd8380028"
+      }
+    },
+    "friendster_block3.json": {
+      "byte_identical": true,
+      "fresh": {
+        "bytes": 109683,
+        "sha256": "25ec3bab82e5b9b19c53055fc5b81b0871d91ad811ac5b1bc921fcefc58e879a"
+      },
+      "recorded": {
+        "bytes": 109683,
+        "sha256": "25ec3bab82e5b9b19c53055fc5b81b0871d91ad811ac5b1bc921fcefc58e879a"
+      }
+    }
+  }
+}
