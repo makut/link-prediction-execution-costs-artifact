@@ -1,0 +1,42 @@
+{
+  "GPU": 0,
+  "YT_writes": 0,
+  "actual_wait_returned": true,
+  "argv": [
+    "/opt/python/bin/python3",
+    "-B",
+    "-u",
+    "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/source/packet_v1/prepare_native.py",
+    "--dataset",
+    "citation2",
+    "--graph-root",
+    "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/data/citation2/full_csr",
+    "--out",
+    "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/native_prepared/citation2",
+    "--max-seconds",
+    "2400"
+  ],
+  "boot_id": "32cbf880-fe63-4124-9b76-f509f318e8ca",
+  "dataset_id": "citation2",
+  "hostname": "seal-closure-prep-20261127-0",
+  "kind": "CLOSURE_NATIVE_PREPARATION_ACTUAL_OS_WAIT",
+  "launch_monotonic_ns": 46454008712376807,
+  "observed_unix": 1795769656.975473,
+  "orphan_cleanup": false,
+  "outside_all_scientific_application_clocks": true,
+  "owned_pgids_signaled": [],
+  "owned_tree_quiescent": true,
+  "pid": 65,
+  "pod_uid": "a3db56e1-b10b-4936-a3ad-6b41bca0e7a4",
+  "prep_driver_source_sha256": "2a5b519166a527ed659419fbe1899f904008e79b959f27227943537552f473bf",
+  "ready_receipt": {
+    "bytes": 3361,
+    "sha256": "51de95b8852f03002084add1b2de1d69aa72cd00d0ae07c45355fe35710e92f2"
+  },
+  "returncode": 0,
+  "source_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+  "start_ticks": 4645400871,
+  "timed_out": false,
+  "timeout_seconds": 2500,
+  "wait_returned_monotonic_ns": 46454022293461980
+}

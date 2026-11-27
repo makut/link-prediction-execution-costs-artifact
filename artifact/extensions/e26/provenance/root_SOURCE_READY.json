@@ -1,0 +1,97 @@
+{
+  "YT_writes": 0,
+  "actual_CUDA_qualification": "Required separately inside each fresh admitted block before scientific applications",
+  "admit_sha256": "26d3ca77fd91e770e3d2edb5762f2f45f7d49640c52b59c627ef7010692a355e",
+  "auditor_sha256": "98ad346c6d6529878e859441df72ce9b33c226eb01229bf015adda1926b0834c",
+  "cluster_ops_sha256": "2e09af35ac53e6b865aa24301a5c2d52c3bc53cf292ae573a7e8a42a6799861a",
+  "created_unix": 1795773456.70441,
+  "driver_sha256": "2d4aeff94cff0956bf8c84162d286c6dd815becdbd1a41fec731b42ff33848d8",
+  "envelope_manifest_sha256": "2dd726761a64c30820eb5b3c59bf726457e49025097e0e79c0df5c144347dab6",
+  "failed_prior_run_local_receipts": {
+    "F1_ACTUAL_FAILED_TERMINAL_POLL.json": {
+      "bytes": 420799,
+      "sha256": "6a0b3348ea2c513c778d43da544d5e9fe7193d03709d1b4241188607399e5488"
+    },
+    "F1_PACKAGING_FAILURE_INSPECTION.json": {
+      "bytes": 3813,
+      "sha256": "5d8720d422c25a79aac8295b0195884bb8ffc475f9224ae3c6ed0bf3052fb4cd"
+    }
+  },
+  "files": {
+    "admit_platform.py": {
+      "bytes": 6356,
+      "sha256": "26d3ca77fd91e770e3d2edb5762f2f45f7d49640c52b59c627ef7010692a355e"
+    },
+    "audit_closure.py": {
+      "bytes": 93988,
+      "sha256": "98ad346c6d6529878e859441df72ce9b33c226eb01229bf015adda1926b0834c"
+    },
+    "cluster_ops.py": {
+      "bytes": 40360,
+      "sha256": "2e09af35ac53e6b865aa24301a5c2d52c3bc53cf292ae573a7e8a42a6799861a"
+    },
+    "collect_block.py": {
+      "bytes": 29705,
+      "sha256": "49c986f3a4c853f8b31b6817313bdf2f6f26645144f990dc29e4a71a6a5b23c8"
+    },
+    "envelope/SOURCE_MANIFEST.json": {
+      "bytes": 814,
+      "sha256": "2dd726761a64c30820eb5b3c59bf726457e49025097e0e79c0df5c144347dab6"
+    },
+    "envelope/run_block.py": {
+      "bytes": 16171,
+      "sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+    },
+    "envelope/wait_driver.py": {
+      "bytes": 2954,
+      "sha256": "2d4aeff94cff0956bf8c84162d286c6dd815becdbd1a41fec731b42ff33848d8"
+    },
+    "packet/PROTOCOL.json": {
+      "bytes": 9067,
+      "sha256": "fa48e5de0f8133e944518597d4fdf1d8057aedc0f8b7774284f294548da508b2"
+    },
+    "packet/SOURCE_MANIFEST.json": {
+      "bytes": 7650,
+      "sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6"
+    },
+    "prep_run.py": {
+      "bytes": 3126,
+      "sha256": "2a5b519166a527ed659419fbe1899f904008e79b959f27227943537552f473bf"
+    }
+  },
+  "finisher_source": {
+    "bytes": 40946,
+    "sha256": "ec1eee955051f6276728c94abf316f9f58f3661e14e697aa117a5e85d7b4b696"
+  },
+  "kind": "CLOSURE_V1_ROOT_SOURCE_READY",
+  "operational_revision": 3,
+  "original_absolute_deadline_unix": 1795798917.5259762,
+  "original_failed_F1_excluded": true,
+  "packet_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+  "prepared_native": {
+    "citation2": {
+      "exit_sha256": "b59608fee97c836d71a5a240941b9245bdecc74bff52a1e12d8a80dbb3de0f8d",
+      "local_exit": "preparation_collected/citation2_actual_exit.json",
+      "local_ready": "preparation_collected/citation2_READY.json",
+      "ready_sha256": "51de95b8852f03002084add1b2de1d69aa72cd00d0ae07c45355fe35710e92f2",
+      "root": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/native_prepared/citation2"
+    },
+    "friendster": {
+      "exit_sha256": "7e5bdf4610b8c7409b0941c80c0b8e56616001b1cfcc188240155a2e679495d2",
+      "local_exit": "preparation_collected/friendster_actual_exit.json",
+      "local_ready": "preparation_collected/friendster_READY.json",
+      "ready_sha256": "c3009a64ea3756a758412355586e12fc2f201dfd26f5972a796f8fcd0720b8ae",
+      "root": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/native_prepared/friendster"
+    }
+  },
+  "prepared_source_namespace": "closure_controls_20261127",
+  "prior_root_ready_sha256": "776b2ac35b1ead82fcefb6049a622fcc96b6fd923a580c2399356b9e44eabae5",
+  "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+  "published_v0_7_preserved": true,
+  "revision_scope": "Fresh run2 filesystem namespace and full36 new scientific cohort. Exact source-pinned tiny qualification manifests omitted from raw packaging; root public workload remains mandatory, all unknown .npy fail. Original failed packaging F1 is diagnostics only, no applications pooled. Shared native preparation and compact source paths/bytes unchanged; no preparation or transfer repeated.",
+  "run_namespace": "closure_controls_20261127_run2",
+  "scientific_applications_already_started": 0,
+  "scope": "Run2 source readiness only, not remote staging or scientific evidence. Same original absolute eight-hour deadline applies; each new block still requires fresh actual admission, CUDA8 qualification, complete six-app producer/wrapper wait0, collection, audit and release.",
+  "status": "READY_FOR_SIX_BLOCK_RUN",
+  "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+}

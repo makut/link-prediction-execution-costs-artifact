@@ -1,0 +1,87 @@
+{
+  "boot_id": "32cbf880-fe63-4124-9b76-f509f318e8ca",
+  "clock_scope": "Monotonic times are comparable only within this preparation host/boot; later fresh application host clocks may differ.",
+  "conversion_seconds": 6.036501782,
+  "dataset_id": "citation2",
+  "expected_native": {
+    "col_bytes": 485628016,
+    "col_sha256": "e02f86c875c0a257d79024f266c7ef43d0d0fac0c26bcfedab8506cceb439d57",
+    "new_measurement": false,
+    "nodes": 2927963,
+    "rowptr_bytes": 23423712,
+    "rowptr_sha256": "ab36a416ba782c06fbb04d5e536852dfc6e6478215137de4c0a4191b3b0fb82a",
+    "scope": "Previously recorded E22 source-bound int64 conversion identities; new conversion must fully match.",
+    "source_member": "citation2_cpu_matched_v1_20261126/results/native/native_conversion_receipt.json",
+    "stored_entries": 60703502
+  },
+  "file_stats": {
+    "col.i8": {
+      "bytes": 485628016,
+      "device": 66308,
+      "inode": 8914451,
+      "mtime_ns": 1795769650449194392
+    },
+    "rowptr.i8": {
+      "bytes": 23423712,
+      "device": 66308,
+      "inode": 8914450,
+      "mtime_ns": 1795769649978196649
+    }
+  },
+  "files": {
+    "col.i8": {
+      "bytes": 485628016,
+      "sha256": "e02f86c875c0a257d79024f266c7ef43d0d0fac0c26bcfedab8506cceb439d57"
+    },
+    "rowptr.i8": {
+      "bytes": 23423712,
+      "sha256": "ab36a416ba782c06fbb04d5e536852dfc6e6478215137de4c0a4191b3b0fb82a"
+    }
+  },
+  "hostname": "seal-closure-prep-20261127-0",
+  "kind": "CLOSURE_V1_IMMUTABLE_NATIVE_REUSE",
+  "native_promotion": {
+    "begin_ns": 46454015270487130,
+    "col_bytes": 485628016,
+    "dtype": "little-endian int64",
+    "end_ns": 46454021306988912,
+    "files_fsynced": true,
+    "full_integrity_readback_inside_application": false,
+    "full_native_copy_once_per_app": false,
+    "nodes": 2927963,
+    "promotion_scope": "once_per_dataset",
+    "rowptr_bytes": 23423712,
+    "sentinel_added": true,
+    "stored_entries": 60703502
+  },
+  "native_validation_begin_ns": 46454021364375421,
+  "native_validation_end_ns": 46454021753059347,
+  "no_private_worker_mapper_prepared": true,
+  "nodes": 2927963,
+  "observed_unix": 1795769656.4352536,
+  "one_time_per_dataset": true,
+  "outside_all_application_clocks": true,
+  "preparation_complete_monotonic_ns": 46454021753449625,
+  "preparation_entry_monotonic_ns": 46454008741108009,
+  "reusable_arrays_readonly": true,
+  "scope": "Measured source-to-int64 promotion/fsync plus separate full readback against previously established native content identities. Source/native scans may warm filesystem caches; no cold-I/O or minimum-memory claim.",
+  "source_admission_begin_ns": 46454008829699165,
+  "source_graph_files": {
+    "edge_ends.bin": {
+      "bytes": 242814016,
+      "sha256": "d3d8d1e2016675321c1d3d9ae817d2c6dca4a9dd2d5cdbba3e638ea7201057a4"
+    },
+    "edge_starts.bin": {
+      "bytes": 23423704,
+      "sha256": "f06070adc368892f8441ea15e691dce400f9d44b6ec3e6e4505134c276c1072d"
+    },
+    "num_nodes.txt": {
+      "bytes": 8,
+      "sha256": "ff1799f8bf9bd540c71427feb1bc07bcab1331eec0d2fcb847a8e68395b8e81f"
+    }
+  },
+  "source_graph_root": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/data/citation2/full_csr",
+  "source_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+  "stored_entries": 60703502,
+  "validation_seconds": 0.388683926
+}

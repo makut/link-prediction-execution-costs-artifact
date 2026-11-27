@@ -1,0 +1,21 @@
+{
+  "dataset": "citation2 strict-clean trainCSR",
+  "files": {
+    "edge_ends.bin": {
+      "bytes": 242814016,
+      "sha256": "d3d8d1e2016675321c1d3d9ae817d2c6dca4a9dd2d5cdbba3e638ea7201057a4"
+    },
+    "edge_starts.bin": {
+      "bytes": 23423704,
+      "sha256": "f06070adc368892f8441ea15e691dce400f9d44b6ec3e6e4505134c276c1072d"
+    },
+    "num_nodes.txt": {
+      "bytes": 8,
+      "sha256": "ff1799f8bf9bd540c71427feb1bc07bcab1331eec0d2fcb847a8e68395b8e81f"
+    }
+  },
+  "num_nodes": 2927963,
+  "schema_version": 1,
+  "scope": "Exact previously verified public strict-clean numeric trainCSR; graph-only staging includes original nodecount bytes.",
+  "stored_entries": 60703502
+}

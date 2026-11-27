@@ -1,0 +1,13 @@
+{
+  "rowptr_sha256": "28060771441d71ba71877e55c0a48230c54d1b2715dd4edd08042019cf4a7a81",
+  "col_sha256": "012e1d0a907d2eb6b46d72f31be8b3ca722d88432b2c0509162c4ff487f25a5d",
+  "nodes": 65608366,
+  "stored_entries": 3612134270,
+  "rowptr_bytes": 524866936,
+  "col_bytes": 28897074160,
+  "source_actual_E20_archive_sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374",
+  "source_member": "public_fr_cpu_matched_v2_20261125/results/native/native_conversion_receipt.json",
+  "source_member_sha256": "5e4d08b717f7157608ad334f3f5390feca6c5fefb27b260b4ebb0c3e25543043",
+  "new_measurement": false,
+  "scope": "Exact derived native hashes previously independently validated for the same full Friendster compact input. Fresh E25 copies must match via post-run full readback."
+}

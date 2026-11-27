@@ -1,0 +1,11 @@
+{
+  "col_bytes": 485628016,
+  "col_sha256": "e02f86c875c0a257d79024f266c7ef43d0d0fac0c26bcfedab8506cceb439d57",
+  "new_measurement": false,
+  "nodes": 2927963,
+  "rowptr_bytes": 23423712,
+  "rowptr_sha256": "ab36a416ba782c06fbb04d5e536852dfc6e6478215137de4c0a4191b3b0fb82a",
+  "scope": "Previously recorded E22 source-bound int64 conversion identities; new conversion must fully match.",
+  "source_member": "citation2_cpu_matched_v1_20261126/results/native/native_conversion_receipt.json",
+  "stored_entries": 60703502
+}

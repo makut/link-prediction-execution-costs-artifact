@@ -1,0 +1,41 @@
+{
+  "canonical_protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+  "created_unix": 1795776613.720541,
+  "historical_preparation_receipts_are_not_application_results": true,
+  "independent_auditor": {
+    "bytes": 93988,
+    "sha256": "98ad346c6d6529878e859441df72ce9b33c226eb01229bf015adda1926b0834c"
+  },
+  "kind": "E26_PUBLIC_EXTENSION_SOURCE_ONLY_STATUS",
+  "manuscript_evidence_registered": false,
+  "new36_complete": false,
+  "offline_helper": {
+    "bytes": 15922,
+    "sha256": "a0f50ef78f3cfec644a81a953bbb741370dadbe95dd08792bab4930c64bd1d11"
+  },
+  "outer_wrapper": {
+    "bytes": 16171,
+    "sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+  },
+  "pending_index_is_not_evidence": true,
+  "planned_applications_per_dataset": 18,
+  "planned_applications_total": 36,
+  "planned_datasets": [
+    "full Friendster",
+    "strict-clean Citation2"
+  ],
+  "planned_fresh_allocations_per_dataset": 3,
+  "plot_source": {
+    "bytes": 17760,
+    "sha256": "ef1ed0704e97b5e22c4f65e6b30b05b1b5149f44b37429d421c5d8e5a9f5032a"
+  },
+  "prior_v0_7_preserved": true,
+  "publication_performed": false,
+  "results_included": false,
+  "scientific_source_manifest": {
+    "bytes": 7650,
+    "sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6"
+  },
+  "scope": "Prospective source addition only. No complete application-result cohort, raw archives, actual new-result audits/aggregates, figure, final v0.8 artifact or publication is asserted. Failed/partial attempts never supply a result. Later results require two complete audited18-app datasets and real8-step recorded replay.",
+  "status": "SOURCE_ONLY_PENDING_COMPLETE_NEW36"
+}

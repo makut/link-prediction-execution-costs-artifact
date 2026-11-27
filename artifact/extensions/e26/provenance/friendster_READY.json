@@ -1,0 +1,89 @@
+{
+  "boot_id": "32cbf880-fe63-4124-9b76-f509f318e8ca",
+  "clock_scope": "Monotonic times are comparable only within this preparation host/boot; later fresh application host clocks may differ.",
+  "conversion_seconds": 439.660251743,
+  "dataset_id": "friendster",
+  "expected_native": {
+    "col_bytes": 28897074160,
+    "col_sha256": "012e1d0a907d2eb6b46d72f31be8b3ca722d88432b2c0509162c4ff487f25a5d",
+    "new_measurement": false,
+    "nodes": 65608366,
+    "rowptr_bytes": 524866936,
+    "rowptr_sha256": "28060771441d71ba71877e55c0a48230c54d1b2715dd4edd08042019cf4a7a81",
+    "scope": "Exact derived native hashes previously independently validated for the same full Friendster compact input. Fresh E25 copies must match via post-run full readback.",
+    "source_actual_E20_archive_sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374",
+    "source_member": "public_fr_cpu_matched_v2_20261125/results/native/native_conversion_receipt.json",
+    "source_member_sha256": "5e4d08b717f7157608ad334f3f5390feca6c5fefb27b260b4ebb0c3e25543043",
+    "stored_entries": 3612134270
+  },
+  "file_stats": {
+    "col.i8": {
+      "bytes": 28897074160,
+      "device": 66308,
+      "inode": 8914436,
+      "mtime_ns": 1795769196839365221
+    },
+    "rowptr.i8": {
+      "bytes": 524866936,
+      "device": 66308,
+      "inode": 8914435,
+      "mtime_ns": 1795768921976773441
+    }
+  },
+  "files": {
+    "col.i8": {
+      "bytes": 28897074160,
+      "sha256": "012e1d0a907d2eb6b46d72f31be8b3ca722d88432b2c0509162c4ff487f25a5d"
+    },
+    "rowptr.i8": {
+      "bytes": 524866936,
+      "sha256": "28060771441d71ba71877e55c0a48230c54d1b2715dd4edd08042019cf4a7a81"
+    }
+  },
+  "hostname": "seal-closure-prep-20261127-0",
+  "kind": "CLOSURE_V1_IMMUTABLE_NATIVE_REUSE",
+  "native_promotion": {
+    "begin_ns": 46453286810241038,
+    "col_bytes": 28897074160,
+    "dtype": "little-endian int64",
+    "end_ns": 46453726470492781,
+    "files_fsynced": true,
+    "full_integrity_readback_inside_application": false,
+    "full_native_copy_once_per_app": false,
+    "nodes": 65608366,
+    "promotion_scope": "once_per_dataset",
+    "rowptr_bytes": 524866936,
+    "sentinel_added": true,
+    "stored_entries": 3612134270
+  },
+  "native_validation_begin_ns": 46453726527567692,
+  "native_validation_end_ns": 46453748628901403,
+  "no_private_worker_mapper_prepared": true,
+  "nodes": 65608366,
+  "observed_unix": 1795769383.3111863,
+  "one_time_per_dataset": true,
+  "outside_all_application_clocks": true,
+  "preparation_complete_monotonic_ns": 46453748629382441,
+  "preparation_entry_monotonic_ns": 46452948274117252,
+  "reusable_arrays_readonly": true,
+  "scope": "Measured source-to-int64 promotion/fsync plus separate full readback against previously established native content identities. Source/native scans may warm filesystem caches; no cold-I/O or minimum-memory claim.",
+  "source_admission_begin_ns": 46452948374206672,
+  "source_graph_files": {
+    "edge_ends.bin": {
+      "bytes": 14448537088,
+      "sha256": "0f74897efa3172252a8371bb0d2c8e0129602475ebb84a863ec1210f9c5e5973"
+    },
+    "edge_starts.bin": {
+      "bytes": 524866928,
+      "sha256": "b6ebf026fa54498f241af834b96b5496b2a1bcbf8be3edea2f4b3a1cf0a674e9"
+    },
+    "num_nodes.txt": {
+      "bytes": 9,
+      "sha256": "8551541f6f2ef955481af83ef5e6f92c5f206c968d5d9db6a4437efecf767753"
+    }
+  },
+  "source_graph_root": "/home/jovyan/seal_native_lifecycle_20261126/data/friendster/full_csr",
+  "source_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+  "stored_entries": 3612134270,
+  "validation_seconds": 22.101333711
+}

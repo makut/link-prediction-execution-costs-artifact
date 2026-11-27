@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/opt/python/bin/python3",
+    "-B",
+    "-u",
+    "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/source/packet_v1/prepare_native.py",
+    "--dataset",
+    "friendster",
+    "--graph-root",
+    "/home/jovyan/seal_native_lifecycle_20261126/data/friendster/full_csr",
+    "--out",
+    "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/native_prepared/friendster",
+    "--max-seconds",
+    "2400"
+  ],
+  "launch_monotonic_ns": 46452948246303456,
+  "pid": 14,
+  "start_ticks": 4645294824
+}

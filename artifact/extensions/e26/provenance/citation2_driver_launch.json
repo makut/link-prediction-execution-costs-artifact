@@ -1,0 +1,27 @@
+{
+  "kind": "CLOSURE_CPU_PREPARATION_DRIVER_LAUNCH",
+  "dataset_id": "citation2",
+  "resource_attempt": 2,
+  "pid": 64,
+  "start_ticks": 4645400864,
+  "argv": [
+    "/opt/python/bin/python3",
+    "-B",
+    "-u",
+    "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/source/prep_run.py",
+    "citation2"
+  ],
+  "entrypoint": "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/source/prep_run.py",
+  "source_sha256": "2a5b519166a527ed659419fbe1899f904008e79b959f27227943537552f473bf",
+  "source_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+  "pod_uid": "a3db56e1-b10b-4936-a3ad-6b41bca0e7a4",
+  "observed_unix": 1795769643.329722,
+  "launch_monotonic_ns": 46454008646306884,
+  "PVC_free_bytes_before": 41292648448,
+  "actual_cgroup_memory_max": "68719476736",
+  "actual_cgroup_cpu_max": "1600000 100000",
+  "GPU": 0,
+  "YT_writes": 0,
+  "detached": true,
+  "automatic_retry": false
+}

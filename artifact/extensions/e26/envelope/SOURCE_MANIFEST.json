@@ -1,0 +1,17 @@
+{
+  "files": {
+    "run_block.py": {
+      "bytes": 16171,
+      "sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+    },
+    "wait_driver.py": {
+      "bytes": 2954,
+      "sha256": "2d4aeff94cff0956bf8c84162d286c6dd815becdbd1a41fec731b42ff33848d8"
+    }
+  },
+  "kind": "CLOSURE_V1_ENVELOPE_SOURCE_MANIFEST",
+  "packet_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+  "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+  "scope": "Source identity only. Run2 skips only the three exact source-pinned tiny qualification manifests; all scientific packet/protocol/timing definitions unchanged. Original failed packaging run excluded; no actual run2 launch, wait, audit or release claimed.",
+  "source_only": true
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "CLOSURE_PREPARATION_EXACT_RECEIPTS_COLLECTED",
+  "observed_unix": 1795769644.832056,
+  "dataset_id": "friendster",
+  "files": {
+    "friendster_READY.json": {
+      "bytes": 3632,
+      "sha256": "c3009a64ea3756a758412355586e12fc2f201dfd26f5972a796f8fcd0720b8ae"
+    },
+    "friendster_actual_exit.json": {
+      "bytes": 1469,
+      "sha256": "7e5bdf4610b8c7409b0941c80c0b8e56616001b1cfcc188240155a2e679495d2"
+    },
+    "friendster_actual_launch.json": {
+      "bytes": 549,
+      "sha256": "089345855d56b36030fd1b9c6e14cbc1df5bdf07aac97e85c25f81e0db4b9dd9"
+    },
+    "friendster_driver_launch.json": {
+      "bytes": 967,
+      "sha256": "c44bdfcc2553a7e71c276921124d5a51b3250e346ee35746b19252ec89ec9f45"
+    }
+  },
+  "pod_uid": "a3db56e1-b10b-4936-a3ad-6b41bca0e7a4",
+  "actual_cgroup_memory_max": "68719476736",
+  "actual_cgroup_cpu_max": "1600000 100000",
+  "GPU": 0,
+  "YT_writes": 0,
+  "arrays_downloaded": false
+}

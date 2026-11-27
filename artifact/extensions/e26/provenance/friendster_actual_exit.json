@@ -1,0 +1,42 @@
+{
+  "GPU": 0,
+  "YT_writes": 0,
+  "actual_wait_returned": true,
+  "argv": [
+    "/opt/python/bin/python3",
+    "-B",
+    "-u",
+    "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/source/packet_v1/prepare_native.py",
+    "--dataset",
+    "friendster",
+    "--graph-root",
+    "/home/jovyan/seal_native_lifecycle_20261126/data/friendster/full_csr",
+    "--out",
+    "/home/jovyan/seal_native_lifecycle_20261126/closure_controls_20261127/native_prepared/friendster",
+    "--max-seconds",
+    "2400"
+  ],
+  "boot_id": "32cbf880-fe63-4124-9b76-f509f318e8ca",
+  "dataset_id": "friendster",
+  "hostname": "seal-closure-prep-20261127-0",
+  "kind": "CLOSURE_NATIVE_PREPARATION_ACTUAL_OS_WAIT",
+  "launch_monotonic_ns": 46452948246303456,
+  "observed_unix": 1795769383.7356088,
+  "orphan_cleanup": false,
+  "outside_all_scientific_application_clocks": true,
+  "owned_pgids_signaled": [],
+  "owned_tree_quiescent": true,
+  "pid": 14,
+  "pod_uid": "a3db56e1-b10b-4936-a3ad-6b41bca0e7a4",
+  "prep_driver_source_sha256": "2a5b519166a527ed659419fbe1899f904008e79b959f27227943537552f473bf",
+  "ready_receipt": {
+    "bytes": 3632,
+    "sha256": "c3009a64ea3756a758412355586e12fc2f201dfd26f5972a796f8fcd0720b8ae"
+  },
+  "returncode": 0,
+  "source_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+  "start_ticks": 4645294824,
+  "timed_out": false,
+  "timeout_seconds": 2500,
+  "wait_returned_monotonic_ns": 46453749053552120
+}

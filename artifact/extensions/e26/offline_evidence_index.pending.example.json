@@ -1,0 +1,148 @@
+{
+  "kind": "CLOSURE_V1_PUBLIC_OFFLINE_EVIDENCE_INDEX",
+  "status": "PENDING_NOT_A_RESULT",
+  "source_hashes": {
+    "source_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+    "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+    "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+  },
+  "auditor": {
+    "path": "audit_closure.py",
+    "bytes": 93988,
+    "sha256": "98ad346c6d6529878e859441df72ce9b33c226eb01229bf015adda1926b0834c"
+  },
+  "blocks": [
+    {
+      "dataset_id": "friendster",
+      "block": 1,
+      "archive": {
+        "path": "evidence/friendster/block1/block_raw.tar.gz",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "root_collection": {
+        "path": "evidence/friendster/block1/ROOT_COLLECTION.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "recorded_audit": {
+        "path": "evidence/friendster/block1/ACTUAL_AUDIT.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      }
+    },
+    {
+      "dataset_id": "citation2",
+      "block": 1,
+      "archive": {
+        "path": "evidence/citation2/block1/block_raw.tar.gz",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "root_collection": {
+        "path": "evidence/citation2/block1/ROOT_COLLECTION.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "recorded_audit": {
+        "path": "evidence/citation2/block1/ACTUAL_AUDIT.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      }
+    },
+    {
+      "dataset_id": "friendster",
+      "block": 2,
+      "archive": {
+        "path": "evidence/friendster/block2/block_raw.tar.gz",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "root_collection": {
+        "path": "evidence/friendster/block2/ROOT_COLLECTION.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "recorded_audit": {
+        "path": "evidence/friendster/block2/ACTUAL_AUDIT.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      }
+    },
+    {
+      "dataset_id": "citation2",
+      "block": 2,
+      "archive": {
+        "path": "evidence/citation2/block2/block_raw.tar.gz",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "root_collection": {
+        "path": "evidence/citation2/block2/ROOT_COLLECTION.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "recorded_audit": {
+        "path": "evidence/citation2/block2/ACTUAL_AUDIT.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      }
+    },
+    {
+      "dataset_id": "friendster",
+      "block": 3,
+      "archive": {
+        "path": "evidence/friendster/block3/block_raw.tar.gz",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "root_collection": {
+        "path": "evidence/friendster/block3/ROOT_COLLECTION.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "recorded_audit": {
+        "path": "evidence/friendster/block3/ACTUAL_AUDIT.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      }
+    },
+    {
+      "dataset_id": "citation2",
+      "block": 3,
+      "archive": {
+        "path": "evidence/citation2/block3/block_raw.tar.gz",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "root_collection": {
+        "path": "evidence/citation2/block3/ROOT_COLLECTION.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      },
+      "recorded_audit": {
+        "path": "evidence/citation2/block3/ACTUAL_AUDIT.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      }
+    }
+  ],
+  "aggregates": [
+    {
+      "dataset_id": "friendster",
+      "recorded_aggregate": {
+        "path": "evidence/friendster/RECORDED_AGGREGATE.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      }
+    },
+    {
+      "dataset_id": "citation2",
+      "recorded_aggregate": {
+        "path": "evidence/citation2/RECORDED_AGGREGATE.json",
+        "bytes": 0,
+        "sha256": "REPLACE_WITH_ACTUAL_COMPLETE_FILE_SHA256"
+      }
+    }
+  ]
+}

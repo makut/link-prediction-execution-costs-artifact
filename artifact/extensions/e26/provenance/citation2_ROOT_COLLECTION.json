@@ -1,0 +1,29 @@
+{
+  "kind": "CLOSURE_PREPARATION_EXACT_RECEIPTS_COLLECTED",
+  "observed_unix": 1795769777.1279218,
+  "dataset_id": "citation2",
+  "files": {
+    "citation2_READY.json": {
+      "bytes": 3361,
+      "sha256": "51de95b8852f03002084add1b2de1d69aa72cd00d0ae07c45355fe35710e92f2"
+    },
+    "citation2_actual_exit.json": {
+      "bytes": 1490,
+      "sha256": "b59608fee97c836d71a5a240941b9245bdecc74bff52a1e12d8a80dbb3de0f8d"
+    },
+    "citation2_actual_launch.json": {
+      "bytes": 572,
+      "sha256": "6b5f3ee431137d0e7d7e2c22d87bf290364f52412c6f45be3b1801f29fd1285a"
+    },
+    "citation2_driver_launch.json": {
+      "bytes": 964,
+      "sha256": "e7e145acd818d2bd12a7e1c53aaa96874ebeb9f5dff1ba7b06a28dd688df04d8"
+    }
+  },
+  "pod_uid": "a3db56e1-b10b-4936-a3ad-6b41bca0e7a4",
+  "actual_cgroup_memory_max": "68719476736",
+  "actual_cgroup_cpu_max": "1600000 100000",
+  "GPU": 0,
+  "YT_writes": 0,
+  "arrays_downloaded": false
+}
