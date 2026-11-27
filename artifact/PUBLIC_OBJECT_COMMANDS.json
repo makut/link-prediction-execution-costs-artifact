@@ -66,13 +66,16 @@
         "E18",
         "E20",
         "E21",
-        "E23"
+        "E23",
+        "E25",
+        "E26"
       ],
       "command_ids": [
         "systems_verify",
         "cpu_E20_recorded_audit",
         "pencil_E21_recorded_audit",
-        "pipeline_E23_recorded_audit"
+        "pipeline_E23_recorded_audit",
+        "lifetimes_E26_recorded_verify"
       ],
       "selector_and_scope": "Original platform provenance plus fresh CPU host/thread/affinity and clean consumer actual environment/root admission.",
       "raw_inputs": [
@@ -131,9 +134,36 @@
             "e23/results/hardware.json"
           ],
           "use": "Actual repeated-pipeline runtime and target GPU UUID binding."
+        },
+        {
+          "artifact_file": "extensions/e26/evidence_index.json",
+          "bytes": 5194,
+          "sha256": "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903"
+        },
+        {
+          "artifact_file": "extensions/e26/recorded/friendster/ACTUAL_AGGREGATE.json",
+          "bytes": 88246,
+          "sha256": "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2",
+          "fields": [
+            "rows",
+            "paired_arm_ratios",
+            "platforms",
+            "native_reuse_preparation"
+          ]
+        },
+        {
+          "artifact_file": "extensions/e26/recorded/citation2/ACTUAL_AGGREGATE.json",
+          "bytes": 87809,
+          "sha256": "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936",
+          "fields": [
+            "rows",
+            "paired_arm_ratios",
+            "platforms",
+            "native_reuse_preparation"
+          ]
         }
       ],
-      "aggregation": "Saved observed metadata and configuration projection with exact source hashes. CPU quota=cpu.max quota/period (64 or54); memory GiB=memory.max/2^30 (256 or512); distinguish scheduler quota from dedicated cores and H100 allocation2 from per-job target1. New clean27CPU/256GiB belongs to its separate control. E23 uses its separate actual Xeon Platinum 8480+ host: cpu.max 2700000/100000 = 27 CPU quota, memory.max 274877906944/2^30 = 256 GiB and one actual H100 UUID; this is a scheduling quota and broad observed affinity, not 27 dedicated pinned cores."
+      "aggregation": "Saved observed metadata and configuration projection with exact source hashes. CPU quota=cpu.max quota/period (64 or54); memory GiB=memory.max/2^30 (256 or512); distinguish scheduler quota from dedicated cores and H100 allocation2 from per-job target1. New clean27CPU/256GiB belongs to its separate control. E23 uses its separate actual Xeon Platinum 8480+ host: cpu.max 2700000/100000 = 27 CPU quota, memory.max 274877906944/2^30 = 256 GiB and one actual H100 UUID; this is a scheduling quota and broad observed affinity, not 27 dedicated pinned cores. E26 actual six allocations each have 27 logical CPUs spanning 14 observed physical-core identities, quota 27 CPU / memory 256 GiB and one H100. CPU marketing SKU unrecorded; F1 on node807, C1 on node801, the remaining four on node804, so no common host/boot assertion. CPU staging with 16 CPU / 64 GiB remains a separate host/context."
     },
     {
       "manuscript_label": "fig:native-global-n",
@@ -398,27 +428,6 @@
       "aggregation": "For each of4representations use all warm_shared_consumers samples with16members, steady/publication/PSS/membership/phase stable; median tree_pss_bytes/2^30 and validscan count. Sampled max only among admitted publication scans. No summed-RSS or baseline subtraction."
     },
     {
-      "manuscript_label": "tab:pipeline",
-      "evidence_ids": [
-        "E10"
-      ],
-      "command_ids": [
-        "systems_verify"
-      ],
-      "selector_and_scope": "numeric_summaries.tab:pipeline plus all12 retained prefix comparisons.",
-      "raw_inputs": [
-        {
-          "asset": "public_systems",
-          "member_pattern": "E10/jobs/{citation2,friendster}_{reference_union_stock,reference_union_corrected,reference_union_compiled,production_union,production_pv}_workers{1,8}/report.json"
-        },
-        {
-          "asset": "public_systems",
-          "member": "E10/projections/summary.json"
-        }
-      ],
-      "aggregation": "All20jobs, one recorded window each: timing.steady_seconds for3200graphs/100steps; graphs_per_second=3200/seconds.12saved32query reference-correction prefix comparisons retained; not all3200graph equality or time-to-quality."
-    },
-    {
       "manuscript_label": "tab:pipeline-repeats",
       "manuscript_binding_status": "RECORDED_PASS_FINAL_LABEL_RECONCILIATION_REQUIRED",
       "evidence_ids": [
@@ -642,8 +651,270 @@
       "aggregation": "Stream all6NPZ in256queryblocks, preserve4096distinct official source groups×1001candidates; rank=1+count(negative>positive)+0.5count(ties); MRR=mean1/rank, Hits@K; compare saved metrics then across3seeds mean/sampleSD and paired differences. No model load/test reselection or training."
     },
     {
+      "manuscript_label": "fig:application-reuse",
+      "manuscript_binding_status": "CURRENT_E26_ACTUAL36_FIGURE_ROOT_VISUAL_PASS",
+      "evidence_ids": [
+        "E26"
+      ],
+      "command_ids": [
+        "lifetimes_E26_recorded_verify",
+        "lifetimes_E26_figure"
+      ],
+      "actual_result_status": "PASS_COMPLETE_TWO_GRAPHS_36_APPS",
+      "selector_and_scope": "Two graphs, three fresh allocations each, six W8 applications per allocation; separately terminated short320 and long6400 horizons for compiled/native-fresh/native-reuse.",
+      "raw_inputs": [
+        {
+          "artifact_file": "extensions/e26/evidence_index.json",
+          "bytes": 5194,
+          "sha256": "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903"
+        },
+        {
+          "artifact_file": "extensions/e26/recorded/friendster/ACTUAL_AGGREGATE.json",
+          "bytes": 88246,
+          "sha256": "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2",
+          "fields": [
+            "rows",
+            "paired_arm_ratios",
+            "platforms",
+            "native_reuse_preparation"
+          ]
+        },
+        {
+          "artifact_file": "extensions/e26/recorded/citation2/ACTUAL_AGGREGATE.json",
+          "bytes": 87809,
+          "sha256": "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936",
+          "fields": [
+            "rows",
+            "paired_arm_ratios",
+            "platforms",
+            "native_reuse_preparation"
+          ]
+        }
+      ],
+      "aggregation": "Actual launch-to-returned-wait times only; all 36 original points with per-cell three-block medians/minmax. Ratios are formed within allocation before descriptive medians/ranges. No long576 CUDA checkpoint, interpolation, progress curve or fitted crossover.",
+      "claim_limits": "Fixed reference-union featureless DGCNN workloads, W8, two horizons and two graphs; retained caches and instrumented actual process lifetimes. Three allocations are descriptive repetitions, not independent seeds/machines/population samples. CPU staging on a different host is separate; no summed GPU amortization, cold-I/O, full upstream SEAL, time-to-quality or universal-native claim. PSS lacks phase coverage and establishes no exact peak or native-reuse memory ranking.",
+      "current_artifact_figure": {
+        "artifact_file": "extensions/e26/figure/closure_launch_to_wait.pdf",
+        "bytes": 19116,
+        "sha256": "e25ba5feae9f4d75ec4a4e1dc234682d042ee7949e182f0b549fa1e55fdb18a5"
+      },
+      "numeric_figure_data": {
+        "artifact_file": "extensions/e26/figure/closure_launch_to_wait.numeric.json",
+        "bytes": 19422,
+        "sha256": "443017f444dbdae6c61c42873cdaf84536c27e98879cc68f4fb199a1c2902c68"
+      },
+      "actual_visual_QA": {
+        "artifact_file": "extensions/e26/figure/ROOT_FIGURE_VISUAL_QA.json",
+        "bytes": 1251,
+        "sha256": "78087cc093dfe706f5108872eb0dc25e52f2ecdf89c25bf707565c172e6db4d0"
+      },
+      "plot_source": {
+        "artifact_file": "extensions/e26/plot_closure_v2.py",
+        "bytes": 17760,
+        "sha256": "ff5b1e1cee435775c73db5a50a0c33e4e59bc716511a6419bfc619d837f5f70a"
+      },
+      "actual_offline_roundtrip": {
+        "root_receipt": {
+          "artifact_file": "extensions/e26/recorded/PUBLIC_OFFLINE_ROUNDTRIP_ROOT_RECEIPT.json",
+          "bytes": 5241,
+          "sha256": "6366b5fe68b455b1cf7ca021dd41632b01135fbc40c1425f93d5e14b7e76dd71"
+        },
+        "helper_receipt": {
+          "artifact_file": "extensions/e26/recorded/OFFLINE_VERIFIED.json",
+          "bytes": 2118,
+          "sha256": "cf638f5d870d4e2d063c50807e11e4ca1fffc431281bc339791f40a0dbdcc7a5"
+        },
+        "all_eight_outputs_byte_identical": true,
+        "tested_python_versions": [
+          "3.12.10",
+          "3.13.12"
+        ],
+        "python313_receipt": {
+          "artifact_file": "extensions/e26/provenance/ROOT_PUBLIC_OFFLINE_PYTHON313_PORTABILITY.json",
+          "bytes": 1383,
+          "sha256": "deafdb338e60b37eb6bb74bd0080359a54ba71661b487943c3413d18330cabfe"
+        }
+      },
+      "independent_raw_numeric_peer": {
+        "artifact_file": "extensions/e26/provenance/FINAL_36_INDEPENDENT_RAW_PEER.json",
+        "bytes": 188848,
+        "sha256": "15c1aba2f77a364a638b6539cb60a344b41766484ea8939c14439f58f75daaa6"
+      },
+      "figure_semantics": {
+        "shared_positive_log_y_seconds": true,
+        "all36_individual_points": true,
+        "black_segments_medians": true,
+        "minmax_descriptive_not_CI": true,
+        "timed_long576_invented": false,
+        "progress_or_crossover_curves": false
+      }
+    },
+    {
+      "manuscript_label": "sec:application-lifetimes",
+      "manuscript_binding_status": "CURRENT_E26_ACTUAL36_METHODS",
+      "evidence_ids": [
+        "E23",
+        "E25",
+        "E26"
+      ],
+      "command_ids": [
+        "lifetimes_E26_recorded_verify"
+      ],
+      "raw_inputs": [
+        {
+          "artifact_file": "extensions/e26/packet/PROTOCOL.json",
+          "bytes": 9067,
+          "sha256": "fa48e5de0f8133e944518597d4fdf1d8057aedc0f8b7774284f294548da508b2"
+        },
+        {
+          "artifact_file": "extensions/e26/packet/SOURCE_MANIFEST.json",
+          "bytes": 7650,
+          "sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6"
+        },
+        {
+          "artifact_file": "extensions/e26/evidence_index.json",
+          "bytes": 5194,
+          "sha256": "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903"
+        },
+        {
+          "artifact_file": "extensions/e26/recorded/friendster/ACTUAL_AGGREGATE.json",
+          "bytes": 88246,
+          "sha256": "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2",
+          "fields": [
+            "rows",
+            "paired_arm_ratios",
+            "platforms",
+            "native_reuse_preparation"
+          ]
+        },
+        {
+          "artifact_file": "extensions/e26/recorded/citation2/ACTUAL_AGGREGATE.json",
+          "bytes": 87809,
+          "sha256": "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936",
+          "fields": [
+            "rows",
+            "paired_arm_ratios",
+            "platforms",
+            "native_reuse_preparation"
+          ]
+        }
+      ],
+      "selector_and_scope": "E26 compares representation availability while retaining compact sampling CSR, private 8N-byte mapper per native worker and the complete source-bound consumed-input stream; E25 remains historical separate 24.",
+      "aggregation": "Three block-paired repetitions per graph; CPU preparation clocks on a different host reported separately from GPU parent launch-to-actual-wait. Full-input scans/build/qualification outside app clocks can warm pages.",
+      "claim_limits": "Fixed reference-union featureless DGCNN workloads, W8, two horizons and two graphs; retained caches and instrumented actual process lifetimes. Three allocations are descriptive repetitions, not independent seeds/machines/population samples. CPU staging on a different host is separate; no summed GPU amortization, cold-I/O, full upstream SEAL, time-to-quality or universal-native claim. PSS lacks phase coverage and establishes no exact peak or native-reuse memory ranking.",
+      "parent_manuscript_label": "sec:pipeline"
+    }
+  ],
+  "commands": {
+    "systems_verify": "python \"$ARTIFACT/tools/public_evidence/verify_systems_v1.py\" --asset-root \"$SYSTEMS_ROOT\"",
+    "public_figures": "python \"$ARTIFACT/tools/public_evidence/plot_public_figures_v1.py\" --asset-root \"$SYSTEMS_ROOT\" --quality-asset \"$QUALITY_ASSET\" --out \"$RESULTS/figures\"",
+    "quality_friendster": [
+      "python \"$ARTIFACT/tools/public_evidence/extract_friendster_rr_v1.py\" --quality-asset \"$QUALITY_ASSET\" --out \"$QUALITY_SMALL_ROOT\"",
+      "python \"$ARTIFACT/tools/public_evidence/reaggregate_quality_v1.py\" --quality-root \"$QUALITY_SMALL_ROOT\" --dataset friendster"
+    ],
+    "quality_citation2": "python \"$ARTIFACT/tools/public_evidence/reaggregate_quality_v1.py\" --quality-asset \"$QUALITY_ASSET\" --manifest \"$ARTIFACT/work/vldb_public_fresh_adapters_v1/QUALITY_MANIFEST.json\" --dataset citation2",
+    "cpu_E20_recorded_audit": [
+      "python \"$ARTIFACT/tools/public_evidence/materialize_cpu_e20_v1.py\" --metadata \"$ARTIFACT/metadata/evidence/E20/recorded_export\" --archive \"$ASSETS/lpp_public_friendster_cpu_matched_v2_raw.tgz\" --out \"$RESULTS/recorded_cpu_e20_export\"",
+      "python \"$ARTIFACT/tools/recorded_cpu_v2/audit_public_fr_cpu_v1.py\" --export-dir \"$RESULTS/recorded_cpu_e20_export\" --root-launch \"$ARTIFACT/metadata/evidence/E20/ROOT_LAUNCH.json\" --source-packet \"$ARTIFACT/metadata/evidence/E20/public_fr_cpu_v2_sources.tgz\" --historical-systems-asset \"$ASSETS/lpp_public_systems_evidence_v1.tgz\" --wheel-packet \"$ASSETS/pt22_native_wheels_v1.tgz\" --output \"$RESULTS/recorded_cpu_e20_verified.json\""
+    ],
+    "pencil_E21_recorded_audit": [
+      "python \"$ARTIFACT/tools/public_evidence/materialize_pencil_export_v1.py\" --role E21 --metadata \"$ARTIFACT/metadata/evidence/E21/recorded_export\" --archive \"$ASSETS/lpp_public_pencil_clean44_raw.tgz\" --out \"$RESULTS/recorded_pencil_clean44_export\"",
+      "python \"$ARTIFACT/tools/recorded_pencil_clean44/audit_clean_v1.py\" --export \"$RESULTS/recorded_pencil_clean44_export\" --root-launch \"$ARTIFACT/metadata/evidence/E21/ROOT_LAUNCH.json\" --root-admission \"$ARTIFACT/metadata/evidence/E21/ROOT_ADMISSION.json\" --output \"$RESULTS/recorded_pencil_clean44_audit\""
+    ],
+    "pencil_E19_historical_diagnostic": [
+      "\"$AUDIT_PY312\" \"$ARTIFACT/tools/public_evidence/materialize_pencil_export_v1.py\" --role E19 --metadata \"$ARTIFACT/metadata/evidence/E19/recorded_export\" --archive \"$ASSETS/lpp_public_pencil_instrumented48_raw.tgz\" --out \"$RESULTS/recorded_pencil_e19_export\"",
+      "\"$AUDIT_PY312\" \"$ARTIFACT/tools/recorded_pencil_e19_v1/audit_recorded_e19.py\" --source-root \"$ARTIFACT\" --export \"$RESULTS/recorded_pencil_e19_export\" --root-launch \"$ARTIFACT/metadata/evidence/E19/ROOT_LAUNCH.json\" --output \"$RESULTS/recorded_pencil_e19_audit\""
+    ],
+    "posthoc_friendster": "PYTHONPATH=\"$ARTIFACT/src\" python -m artifact_public.reproduce_posthoc_friendster --out \"$RESULTS/recomputed_E17\" --execute",
+    "quality_friendster_full_scores": "\"$AUDIT_PY312\" \"$ARTIFACT/tools/recorded_friendster_scores_v1/verify_friendster_scores.py\" --quality-asset \"$QUALITY_ASSET\" --manifest \"$ARTIFACT/work/vldb_public_fresh_adapters_v1/QUALITY_MANIFEST.json\" --output \"$RESULTS/friendster_full_score_rerank.json\"",
+    "cpu_E22_recorded_audit": "python3 -B \"$ARTIFACT/extensions/e22/verify_e22.py\" --output \"$RESULTS/e22_recorded_verified.json\"",
+    "pipeline_E23_recorded_audit": "python3 -B \"$ARTIFACT/extensions/e23/verify_e23.py\" --archive \"$ARTIFACT/extensions/e23/recorded/pipeline_repeats_e23_20261126_final_v1.tgz\" --archive-sha256 \"41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073\" --outer-source-sha256 \"e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e\" --outer-complete \"$ARTIFACT/extensions/e23/recorded/outer_COMPLETE.json\" --archive-pointer \"$ARTIFACT/extensions/e23/recorded/archive_pointer.json\" --output \"$RESULTS/e23_recorded_verified.json\"",
+    "matched_cost_regimes_recorded": "python3 -B \"$ARTIFACT/extensions/e24/publicanalyze_cost_regimes.py\" --friendster-archive \"$ASSETS/lpp_public_friendster_cpu_matched_v2_raw.tgz\" --citation2-archive \"$ARTIFACT/extensions/e22/recorded/citation2_cpu_matched_v1_20261126.tgz\" --output \"$RESULTS/matched_cost_regimes_recorded.json\"",
+    "matched_cost_regimes_figure": "python3 -B \"$ARTIFACT/extensions/e24/plot_matched_cost_regimes.py\" --input \"$RESULTS/matched_cost_regimes_recorded.json\" --out \"$RESULTS/matched_cost_regimes_figures\"",
+    "lifetimes_E25_recorded_verify": "python3 -B -S \"$ARTIFACT/extensions/e25/verify_recorded_v6.py\" --artifact \"$ARTIFACT\" --out \"$RESULTS/e25_recorded_verified\"",
+    "lifetimes_E25_figure": "\"$E25_PLOT_PY\" -B \"$ARTIFACT/extensions/e25/figure/plot_aggregate_v6.py\" --aggregate \"$ARTIFACT/extensions/e25/recorded/ACTUAL_AGGREGATE.json\" --aggregate-sha256 \"2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057\" --out \"$RESULTS/e25_figure\"",
+    "lifetimes_E26_recorded_verify": "python3 -B -S \"$ARTIFACT/extensions/e26/offline_verify_closure.py\" --index \"$ARTIFACT/extensions/e26/evidence_index.json\" --index-sha256 \"9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903\" --out \"$RESULTS/e26_recorded_verified\"",
+    "lifetimes_E26_figure": "\"$E26_PLOT_PY\" -B \"$ARTIFACT/extensions/e26/plot_closure_v2.py\" build --friendster-aggregate \"$ARTIFACT/extensions/e26/recorded/friendster/ACTUAL_AGGREGATE.json\" \"016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2\" --citation2-aggregate \"$ARTIFACT/extensions/e26/recorded/citation2/ACTUAL_AGGREGATE.json\" \"52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936\" --root-ready \"$ARTIFACT/extensions/e26/provenance/root_SOURCE_READY.json\" \"eadd76ed4252672774f1bcfe8288dd4fbf021d0f5de6eb5598ed53fb29926eb5\" --output-dir \"$RESULTS/e26_figure\" --execute"
+  },
+  "old_E19_instrumentation_is_separate": true,
+  "full_fresh_execution_commands": "PUBLIC_COMMANDS.txt and reproduction/*/README.txt",
+  "publication_URLs_are_external_to_code_bytes": true,
+  "asset_member_paths_relative_to_top_archive_prefix": true,
+  "asset_archive_prefixes": {
+    "public_systems": "lpp_public_systems_evidence_v1/",
+    "public_quality": "lpp_public_quality_evidence_v1/",
+    "cpu_E20_raw": "",
+    "pencil_E19_instrumented48_raw": "",
+    "pencil_E21_clean44_raw": ""
+  },
+  "label_policy": "Current manuscript labels, not fixed table numbers. Current application figure fig:application-reuse and methods sec:application-lifetimes bind E26 complete 36; E25 remains separate historical24 with archived figure/method metadata. Other current objects retain prior evidence.",
+  "immutable_v0_5_companion_assets": {
+    "cpu_E20_raw": {
+      "filename": "lpp_public_friendster_cpu_matched_v2_raw.tgz",
+      "bytes": 2121570,
+      "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_friendster_cpu_matched_v2_raw.tgz",
+      "release_tag": "v0.5.0",
+      "reuse_unchanged": true
+    },
+    "cpu_pt22_wheels": {
+      "filename": "pt22_native_wheels_v1.tgz",
+      "bytes": 15064339,
+      "sha256": "5e9edbdc067325cd0b41b5fb292e2cc7343cc535da87ff3bef720cbf85da38cf",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/pt22_native_wheels_v1.tgz",
+      "release_tag": "v0.5.0",
+      "reuse_unchanged": true
+    },
+    "pencil_E19_instrumented48_raw": {
+      "filename": "lpp_public_pencil_instrumented48_raw.tgz",
+      "bytes": 9966534,
+      "sha256": "7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_pencil_instrumented48_raw.tgz",
+      "release_tag": "v0.5.0",
+      "reuse_unchanged": true
+    },
+    "pencil_E21_clean44_raw": {
+      "filename": "lpp_public_pencil_clean44_raw.tgz",
+      "bytes": 10230546,
+      "sha256": "708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_pencil_clean44_raw.tgz",
+      "release_tag": "v0.5.0",
+      "reuse_unchanged": true
+    },
+    "public_quality": {
+      "filename": "lpp_public_quality_evidence_v1.tgz",
+      "bytes": 404147012,
+      "sha256": "e17cdc9678d00a3f372fc8083741a200a63662226f730f47eeda79f89b4ad3b2",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_quality_evidence_v1.tgz",
+      "release_tag": "v0.5.0",
+      "reuse_unchanged": true
+    },
+    "public_systems": {
+      "filename": "lpp_public_systems_evidence_v1.tgz",
+      "bytes": 83629661,
+      "sha256": "48232549089f3295c893bb33f6cea0d1aac4a0ee45b91a2669392c90ae1bfe40",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_systems_evidence_v1.tgz",
+      "release_tag": "v0.5.0",
+      "reuse_unchanged": true
+    }
+  },
+  "companion_asset_policy": "Reuse the exact six published v0.5.0 URLs/bytes/SHA256 values. New E22/E23/E25/E26 extension payloads do not change those assets or repoint them to a future tag. Historical download_url_at_creation=null flags remain provenance, not current publication status.",
+  "command_notes": {
+    "cpu_E22_recorded_audit": "Recorded archival verification only; output path must be new. It recomputes E22 Citation2. Keep the unchanged E20 command for the Friendster columns.",
+    "pipeline_E23_recorded_audit": "Recorded archival verification with included genuine raw archive, exact SHA and separate final terminal/persistence receipts. Uses only stdlib; output filename must be new. Source-only invocation is a distinct mode.",
+    "matched_cost_regimes_recorded": "Stdlib-only posthoc reaggregation, no new experiment. Streams both pinned raw tar archives, uses only the selected128 geometry records in each graph and only actual matched Numba32 timing vectors. --output must be a new JSON filename.",
+    "matched_cost_regimes_figure": "Matplotlib rendering of the newly recomputed E24 JSON. Use a new --out directory. All 256 observations are retained; use the accepted filename/hash mapping, with no fit or confidence interval.",
+    "posthoc_friendster": "Retained archival E17 Friendster768 diagnostic. It no longer maps to current tab:posthoc-cost-regimes or fig:posthoc-cost-regimes.",
+    "public_figures": "Retains historical figure-generation commands used by other current objects. Its old E17 posthoc PNG is archival; current E24 posthoc rendering uses matched_cost_regimes_figure.",
+    "lifetimes_E25_recorded_verify": "Python 3.10+ stdlib-only recorded verification with the real included three-block catalog. Fresh directory outside ARTIFACT; re-audits/aggregate must match published whole bytes/SHA. Genuine public-layout wrapper receipt is separate from static source reviews. The genuine public-layout Python 3.12.10 wrapper roundtrip passed; helper/root receipts are included and all four outputs match byte-for-byte.",
+    "lifetimes_E25_figure": "Render only from the pinned actual aggregate with Python 3.12.10/Matplotlib 3.10.3 and a fresh output directory; no new measurement. Source emits QA pending; shipped root QA is separate. Long checkpoint curves and independent short/long actual-wait markers retain distinct boundaries.",
+    "lifetimes_E26_recorded_verify": "Real public layout reconstructed all8 files byte-identically on Python 3.12.10 and3.13.12, standard library only. Index whole SHA is externally anchored; no GPU/full graph/author account required.",
+    "lifetimes_E26_figure": "Version2 changes only footnote layout after actual visual inspection; all numeric values/design unchanged. Shipped figure has separate actual visual-QA PASS; fresh exports start pending."
+  },
+  "archival_objects_not_in_current_tex": [
+    {
       "manuscript_label": "fig:e25-lifetimes",
-      "manuscript_binding_status": "CURRENT_E25_ACTUAL24_FIGURE_CONFIRMED_BY_ROOT",
+      "manuscript_binding_status": "ARCHIVAL_E25_NOT_CURRENT_FIGURE",
       "evidence_ids": [
         "E25"
       ],
@@ -784,7 +1055,7 @@
     },
     {
       "manuscript_label": "sec:application-lifetimes",
-      "manuscript_binding_status": "CURRENT_E25_METHOD_PARAGRAPH_CONFIRMED_BY_ROOT",
+      "manuscript_binding_status": "HISTORICAL_E25_METHOD_BOUNDARY",
       "evidence_ids": [
         "E23",
         "E25"
@@ -829,108 +1100,27 @@
       "claim_limits": "One evaluated reference-sampling DGCNN consumer and two induction routes, with included full-input hash/resource/PSS/disk/metadata observer costs. Fresh native file-backed promotion/fsync is inside the app clock; preconverted/shared-memory native paths were not evaluated. OS/PVC caches link allocations. Descriptive pointwise min/max and sample SD are not CI/population inference; ratios are paired within blocks before aggregation. No time-to-quality, full-upstream SEAL, E23 causal speedup, fitted crossover, cold-cache or best-possible-native-cost claim. PSS is sampled all-eligible-phase app-tree partial residency, with missing values/coverage retained, not full-resident RAM.",
       "platform_scope": "One whole 80 GB H100 and 256 GiB cgroup per block, quota 2700000/100000, declared 27 logical-CPU pool spanning 14 observed physical-core identities. CPU marketing SKU unknown. No E25 SKU is inferred from topology/GPU/node identity. Original PVC/internal image binding is author provenance, not a turnkey external replay launcher. All three actual nodes match; block 1 logical pool differs from matching blocks 2/3. Fresh allocations are not independent machines/data/model seeds.",
       "parent_manuscript_label": "sec:pipeline"
+    },
+    {
+      "manuscript_label": "tab:pipeline",
+      "evidence_ids": [
+        "E10"
+      ],
+      "command_ids": [
+        "systems_verify"
+      ],
+      "selector_and_scope": "numeric_summaries.tab:pipeline plus all 12 retained prefix comparisons.",
+      "raw_inputs": [
+        {
+          "asset": "public_systems",
+          "member_pattern": "E10/jobs/{citation2,friendster}_{reference_union_stock,reference_union_corrected,reference_union_compiled,production_union,production_pv}_workers{1,8}/report.json"
+        },
+        {
+          "asset": "public_systems",
+          "member": "E10/projections/summary.json"
+        }
+      ],
+      "aggregation": "All20jobs, one recorded window each: timing.steady_seconds for3200graphs/100steps; graphs_per_second=3200/seconds.12saved32query reference-correction prefix comparisons retained; not all3200graph equality or time-to-quality."
     }
-  ],
-  "commands": {
-    "systems_verify": "python \"$ARTIFACT/tools/public_evidence/verify_systems_v1.py\" --asset-root \"$SYSTEMS_ROOT\"",
-    "public_figures": "python \"$ARTIFACT/tools/public_evidence/plot_public_figures_v1.py\" --asset-root \"$SYSTEMS_ROOT\" --quality-asset \"$QUALITY_ASSET\" --out \"$RESULTS/figures\"",
-    "quality_friendster": [
-      "python \"$ARTIFACT/tools/public_evidence/extract_friendster_rr_v1.py\" --quality-asset \"$QUALITY_ASSET\" --out \"$QUALITY_SMALL_ROOT\"",
-      "python \"$ARTIFACT/tools/public_evidence/reaggregate_quality_v1.py\" --quality-root \"$QUALITY_SMALL_ROOT\" --dataset friendster"
-    ],
-    "quality_citation2": "python \"$ARTIFACT/tools/public_evidence/reaggregate_quality_v1.py\" --quality-asset \"$QUALITY_ASSET\" --manifest \"$ARTIFACT/work/vldb_public_fresh_adapters_v1/QUALITY_MANIFEST.json\" --dataset citation2",
-    "cpu_E20_recorded_audit": [
-      "python \"$ARTIFACT/tools/public_evidence/materialize_cpu_e20_v1.py\" --metadata \"$ARTIFACT/metadata/evidence/E20/recorded_export\" --archive \"$ASSETS/lpp_public_friendster_cpu_matched_v2_raw.tgz\" --out \"$RESULTS/recorded_cpu_e20_export\"",
-      "python \"$ARTIFACT/tools/recorded_cpu_v2/audit_public_fr_cpu_v1.py\" --export-dir \"$RESULTS/recorded_cpu_e20_export\" --root-launch \"$ARTIFACT/metadata/evidence/E20/ROOT_LAUNCH.json\" --source-packet \"$ARTIFACT/metadata/evidence/E20/public_fr_cpu_v2_sources.tgz\" --historical-systems-asset \"$ASSETS/lpp_public_systems_evidence_v1.tgz\" --wheel-packet \"$ASSETS/pt22_native_wheels_v1.tgz\" --output \"$RESULTS/recorded_cpu_e20_verified.json\""
-    ],
-    "pencil_E21_recorded_audit": [
-      "python \"$ARTIFACT/tools/public_evidence/materialize_pencil_export_v1.py\" --role E21 --metadata \"$ARTIFACT/metadata/evidence/E21/recorded_export\" --archive \"$ASSETS/lpp_public_pencil_clean44_raw.tgz\" --out \"$RESULTS/recorded_pencil_clean44_export\"",
-      "python \"$ARTIFACT/tools/recorded_pencil_clean44/audit_clean_v1.py\" --export \"$RESULTS/recorded_pencil_clean44_export\" --root-launch \"$ARTIFACT/metadata/evidence/E21/ROOT_LAUNCH.json\" --root-admission \"$ARTIFACT/metadata/evidence/E21/ROOT_ADMISSION.json\" --output \"$RESULTS/recorded_pencil_clean44_audit\""
-    ],
-    "pencil_E19_historical_diagnostic": [
-      "\"$AUDIT_PY312\" \"$ARTIFACT/tools/public_evidence/materialize_pencil_export_v1.py\" --role E19 --metadata \"$ARTIFACT/metadata/evidence/E19/recorded_export\" --archive \"$ASSETS/lpp_public_pencil_instrumented48_raw.tgz\" --out \"$RESULTS/recorded_pencil_e19_export\"",
-      "\"$AUDIT_PY312\" \"$ARTIFACT/tools/recorded_pencil_e19_v1/audit_recorded_e19.py\" --source-root \"$ARTIFACT\" --export \"$RESULTS/recorded_pencil_e19_export\" --root-launch \"$ARTIFACT/metadata/evidence/E19/ROOT_LAUNCH.json\" --output \"$RESULTS/recorded_pencil_e19_audit\""
-    ],
-    "posthoc_friendster": "PYTHONPATH=\"$ARTIFACT/src\" python -m artifact_public.reproduce_posthoc_friendster --out \"$RESULTS/recomputed_E17\" --execute",
-    "quality_friendster_full_scores": "\"$AUDIT_PY312\" \"$ARTIFACT/tools/recorded_friendster_scores_v1/verify_friendster_scores.py\" --quality-asset \"$QUALITY_ASSET\" --manifest \"$ARTIFACT/work/vldb_public_fresh_adapters_v1/QUALITY_MANIFEST.json\" --output \"$RESULTS/friendster_full_score_rerank.json\"",
-    "cpu_E22_recorded_audit": "python3 -B \"$ARTIFACT/extensions/e22/verify_e22.py\" --output \"$RESULTS/e22_recorded_verified.json\"",
-    "pipeline_E23_recorded_audit": "python3 -B \"$ARTIFACT/extensions/e23/verify_e23.py\" --archive \"$ARTIFACT/extensions/e23/recorded/pipeline_repeats_e23_20261126_final_v1.tgz\" --archive-sha256 \"41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073\" --outer-source-sha256 \"e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e\" --outer-complete \"$ARTIFACT/extensions/e23/recorded/outer_COMPLETE.json\" --archive-pointer \"$ARTIFACT/extensions/e23/recorded/archive_pointer.json\" --output \"$RESULTS/e23_recorded_verified.json\"",
-    "matched_cost_regimes_recorded": "python3 -B \"$ARTIFACT/extensions/e24/publicanalyze_cost_regimes.py\" --friendster-archive \"$ASSETS/lpp_public_friendster_cpu_matched_v2_raw.tgz\" --citation2-archive \"$ARTIFACT/extensions/e22/recorded/citation2_cpu_matched_v1_20261126.tgz\" --output \"$RESULTS/matched_cost_regimes_recorded.json\"",
-    "matched_cost_regimes_figure": "python3 -B \"$ARTIFACT/extensions/e24/plot_matched_cost_regimes.py\" --input \"$RESULTS/matched_cost_regimes_recorded.json\" --out \"$RESULTS/matched_cost_regimes_figures\"",
-    "lifetimes_E25_recorded_verify": "python3 -B -S \"$ARTIFACT/extensions/e25/verify_recorded_v6.py\" --artifact \"$ARTIFACT\" --out \"$RESULTS/e25_recorded_verified\"",
-    "lifetimes_E25_figure": "\"$E25_PLOT_PY\" -B \"$ARTIFACT/extensions/e25/figure/plot_aggregate_v6.py\" --aggregate \"$ARTIFACT/extensions/e25/recorded/ACTUAL_AGGREGATE.json\" --aggregate-sha256 \"2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057\" --out \"$RESULTS/e25_figure\""
-  },
-  "old_E19_instrumentation_is_separate": true,
-  "full_fresh_execution_commands": "PUBLIC_COMMANDS.txt and reproduction/*/README.txt",
-  "publication_URLs_are_external_to_code_bytes": true,
-  "asset_member_paths_relative_to_top_archive_prefix": true,
-  "asset_archive_prefixes": {
-    "public_systems": "lpp_public_systems_evidence_v1/",
-    "public_quality": "lpp_public_quality_evidence_v1/",
-    "cpu_E20_raw": "",
-    "pencil_E19_instrumented48_raw": "",
-    "pencil_E21_clean44_raw": ""
-  },
-  "label_policy": "The map uses manuscript labels, not fixed table counts. E24 is the two-graph posthoc analysis; E10/E17 remain archival and E23 is recorded PASS. Root confirmed E25 fig:e25-lifetimes and sec:application-lifetimes under sec:pipeline; no new table row labels are asserted.",
-  "immutable_v0_5_companion_assets": {
-    "cpu_E20_raw": {
-      "filename": "lpp_public_friendster_cpu_matched_v2_raw.tgz",
-      "bytes": 2121570,
-      "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374",
-      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_friendster_cpu_matched_v2_raw.tgz",
-      "release_tag": "v0.5.0",
-      "reuse_unchanged": true
-    },
-    "cpu_pt22_wheels": {
-      "filename": "pt22_native_wheels_v1.tgz",
-      "bytes": 15064339,
-      "sha256": "5e9edbdc067325cd0b41b5fb292e2cc7343cc535da87ff3bef720cbf85da38cf",
-      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/pt22_native_wheels_v1.tgz",
-      "release_tag": "v0.5.0",
-      "reuse_unchanged": true
-    },
-    "pencil_E19_instrumented48_raw": {
-      "filename": "lpp_public_pencil_instrumented48_raw.tgz",
-      "bytes": 9966534,
-      "sha256": "7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c",
-      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_pencil_instrumented48_raw.tgz",
-      "release_tag": "v0.5.0",
-      "reuse_unchanged": true
-    },
-    "pencil_E21_clean44_raw": {
-      "filename": "lpp_public_pencil_clean44_raw.tgz",
-      "bytes": 10230546,
-      "sha256": "708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0",
-      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_pencil_clean44_raw.tgz",
-      "release_tag": "v0.5.0",
-      "reuse_unchanged": true
-    },
-    "public_quality": {
-      "filename": "lpp_public_quality_evidence_v1.tgz",
-      "bytes": 404147012,
-      "sha256": "e17cdc9678d00a3f372fc8083741a200a63662226f730f47eeda79f89b4ad3b2",
-      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_quality_evidence_v1.tgz",
-      "release_tag": "v0.5.0",
-      "reuse_unchanged": true
-    },
-    "public_systems": {
-      "filename": "lpp_public_systems_evidence_v1.tgz",
-      "bytes": 83629661,
-      "sha256": "48232549089f3295c893bb33f6cea0d1aac4a0ee45b91a2669392c90ae1bfe40",
-      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_systems_evidence_v1.tgz",
-      "release_tag": "v0.5.0",
-      "reuse_unchanged": true
-    }
-  },
-  "companion_asset_policy": "Reuse the exact six published v0.5.0 URLs/bytes/SHA256 values. New E22/E23/E25 extension payloads do not change those assets or repoint them to a future tag. Historical download_url_at_creation=null flags remain provenance, not current publication status.",
-  "command_notes": {
-    "cpu_E22_recorded_audit": "Recorded archival verification only; output path must be new. It recomputes E22 Citation2. Keep the unchanged E20 command for the Friendster columns.",
-    "pipeline_E23_recorded_audit": "Recorded archival verification with included genuine raw archive, exact SHA and separate final terminal/persistence receipts. Uses only stdlib; output filename must be new. Source-only invocation is a distinct mode.",
-    "matched_cost_regimes_recorded": "Stdlib-only posthoc reaggregation, no new experiment. Streams both pinned raw tar archives, uses only the selected128 geometry records in each graph and only actual matched Numba32 timing vectors. --output must be a new JSON filename.",
-    "matched_cost_regimes_figure": "Matplotlib rendering of the newly recomputed E24 JSON. Use a new --out directory. All 256 observations are retained; use the accepted filename/hash mapping, with no fit or confidence interval.",
-    "posthoc_friendster": "Retained archival E17 Friendster768 diagnostic. It no longer maps to current tab:posthoc-cost-regimes or fig:posthoc-cost-regimes.",
-    "public_figures": "Retains historical figure-generation commands used by other current objects. Its old E17 posthoc PNG is archival; current E24 posthoc rendering uses matched_cost_regimes_figure.",
-    "lifetimes_E25_recorded_verify": "Python 3.10+ stdlib-only recorded verification with the real included three-block catalog. Fresh directory outside ARTIFACT; re-audits/aggregate must match published whole bytes/SHA. Genuine public-layout wrapper receipt is separate from static source reviews. The genuine public-layout Python 3.12.10 wrapper roundtrip passed; helper/root receipts are included and all four outputs match byte-for-byte.",
-    "lifetimes_E25_figure": "Render only from the pinned actual aggregate with Python 3.12.10/Matplotlib 3.10.3 and a fresh output directory; no new measurement. Source emits QA pending; shipped root QA is separate. Long checkpoint curves and independent short/long actual-wait markers retain distinct boundaries."
-  }
+  ]
 }

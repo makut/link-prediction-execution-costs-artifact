@@ -220,3 +220,21 @@ portable fresh launcher; another real platform needs its own reviewed binding.
 CPU model/SKU was not recorded; 27 logical CPUs span 14 physical-core identities.
 The latest failed capsule under recorded/excluded appears once, with old priors
 nested only; no failed/partial measurements enter the successful 24.
+
+
+V0.8 E26 ACTUAL PREPARED REUSE / TWO-GRAPH LIFETIMES (36 applications)
+Check the external code-archive checksum first. Python standard library only;
+actual public8 replay tested on Python 3.12.10 and3.13.12. Use fresh outputs.
+python3 -B -S "$ARTIFACT/extensions/e26/offline_verify_closure.py" --index "$ARTIFACT/extensions/e26/evidence_index.json" --index-sha256 "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903" --out "$RESULTS/e26_recorded_verified"
+
+E26_PLOT_PY is Python 3.12.10 with Matplotlib 3.10.3. Rendering repeats no science:
+"$E26_PLOT_PY" -B "$ARTIFACT/extensions/e26/plot_closure_v2.py" build --friendster-aggregate "$ARTIFACT/extensions/e26/recorded/friendster/ACTUAL_AGGREGATE.json" "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2" --citation2-aggregate "$ARTIFACT/extensions/e26/recorded/citation2/ACTUAL_AGGREGATE.json" "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936" --root-ready "$ARTIFACT/extensions/e26/provenance/root_SOURCE_READY.json" "eadd76ed4252672774f1bcfe8288dd4fbf021d0f5de6eb5598ed53fb29926eb5" --output-dir "$RESULTS/e26_figure" --execute
+
+Both18-app aggregates remain separate; all 36 original timing points use shared
+positive log-seconds axes. Original plot source is retained; v2 only fixes an
+actual footnote overlap and produces identical numeric JSON. New exports need
+visual review; included ROOT_FIGURE_VISUAL_QA.json records the actual PASS.
+Full fresh lifecycle execution needs a site-specific admission/deployment/
+post-exit collection adapter, as documented in extensions/e26/README.txt.
+CPU preparation is separate, not added to GPU medians or cross-host break-even.
+Missing PSS phase coverage remains unknown; no reuse-memory/peak claim.

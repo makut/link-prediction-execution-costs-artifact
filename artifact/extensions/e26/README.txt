@@ -1,28 +1,40 @@
 Native preparation reuse and two-graph application lifetimes
-Public extension README — prospective draft, 27 November 2026
+Public extension README — recorded v0.8.0 controls, 27 November 2026
 
-This directory is a source-only addition for a possible v0.8 revision. The
-published v0.7 artifact, release catalog and manifests remain unchanged.
-SOURCE_ONLY_STATUS.json and SOURCE_ADDITION_MANIFEST.json inventory this new
-source addition; neither is a result catalog or publication receipt.
+This extension includes 36 complete matched applications: three fresh allocation
+blocks on each of full Friendster and strict-clean Citation2, eight workers,
+three physical paths and two separately terminated horizons. All six blocks
+passed raw audits and an independent numerical peer; all six GPU allocations
+were released. No failed or historical applications are pooled with these 36.
 
-STATUS
+The current authority is evidence_index.json and EXTENSION_CATALOG.json, anchored
+by the external code-archive checksum. SOURCE_ONLY_STATUS.json,
+SOURCE_ADDITION_MANIFEST.json, the pending example and
+provenance/README_SOURCE_ONLY_AT_CREATION.txt preserve the first source commit;
+they are historical records, not current status or a whole-extension inventory.
+E25 remains a separate 24-application Friendster W1/W8 control.
 
-This document describes the frozen design and how its eventual recorded
-evidence is to be checked. It does not report completed experiments or an
-observed winner. A successful tiny qualification, a source review, and a
-complete independently audited 36-application cohort are different milestones.
-Only the last can support the new application-lifetime result.
+RESULTS AND RECORDED VERIFICATION
 
-This extension keeps the earlier E25 experiment separate. E25 contains 24
-Friendster applications with one/eight workers; these new controls require
-36 new applications on two graphs with eight workers only. Do not pool them.
+All twelve block-paired comparisons favor compiled over native-fresh, and
+native-reuse over compiled. Median paired compiled/native-fresh wait ratios
+are 0.0541/0.156 on Friendster and0.778/0.869 on Citation2 (short/long);
+compiled/native-reuse ratios are 1.106/1.073 and1.093/1.098, respectively.
+These are fixed-workload, retained-cache observations, not population inference
+or a universal execution ranking. One-time CPU preparation remains separately
+reported, not added to GPU-clock medians or used for cross-host break-even.
 
-The examples assume an extension directory containing packet/,
-audit_closure.py and the separate offline_verify_closure.py helper. Published
-recorded input paths and hashes must come from a final immutable evidence
-index. No complete recorded index is asserted by this draft. Placeholder
-paths, pending examples and historical source-readiness records are not evidence.
+The genuine public offline replay reconstructed all six audits and both
+separate 18-app aggregates byte for byte. It passed on Python 3.12.10 and3.13.12,
+using the standard library only, without full graphs, ML packages or GPU.
+The complete evidence_index.json is 5,194 bytes, SHA256:
+  9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903
+
+Sampled PSS has important coverage gaps: eligible measured-window observations
+exist for 25/36 applications, warmup for 8/36 and shutdown for 15/36. Missing phases
+remain unknown. No exact peak or native-reuse memory advantage is established.
+The timing figure retains all 36 observations, on shared logarithmic seconds
+axes, with allocation markers and descriptive medians/minimum/maximum.
 
 CHOOSE THE CHECK YOU NEED
 
@@ -226,10 +238,11 @@ required by audit_closure.py. An operator on another platform needs a reviewed
 admission/deployment/collection adapter preserving the scientific protocol.
 No turnkey external adapter or tested full external replay is claimed here.
 
-OFFLINE RECORDED VERIFICATION — AFTER A COMPLETE RELEASE EXISTS
+OFFLINE RECORDED VERIFICATION — ACTUAL COMPLETE36
 
-Use Python 3.10+ and the standard library only. The separate helper takes a
-published immutable evidence index and its externally verified whole SHA256:
+Use the standard library only; actual byte-identical replay was tested on
+Python 3.12.10 and3.13.12. The helper takes the supplied immutable evidence index
+and its externally verified whole SHA256:
 
   python3 -B -S "$CLOSURE_EXT/offline_verify_closure.py" \
     --index "$CLOSURE_EVIDENCE_INDEX" \
@@ -276,21 +289,21 @@ For manual diagnosis, the actual auditor interfaces are:
 
 Run the aggregate separately for each graph. The auditor has no combined
 two-dataset aggregate subcommand; one dataset's complete18 does not establish
-the complete36. Producer summaries cannot replace the original raw evidence.
+the complete 36. Producer summaries cannot replace the original raw evidence.
 In particular, an archive created before its wrapper exits cannot prove that
 future exit; its independently collected post-exit sidecar is also mandatory.
 The verifier never opens recorded historical filesystem paths or executes
 code from a raw archive. It does not fetch inputs or perform new measurements.
 
-PLOTTING — AFTER BOTH REAL AGGREGATES EXIST
+PLOTTING — THE TWO INCLUDED ACTUAL AGGREGATES
 
 The prospective design can be inspected without result files or rendering:
 
-  python3 -B "$CLOSURE_EXT/plot_closure.py" describe
+  python3 -B "$CLOSURE_EXT/plot_closure_v2.py" describe
 
 After successful independent audits, validate both actual aggregates with:
 
-  python3 -B "$CLOSURE_EXT/plot_closure.py" build \
+  python3 -B "$CLOSURE_EXT/plot_closure_v2.py" build \
     --friendster-aggregate "$CLOSURE_FRIENDSTER_AGGREGATE" "$CLOSURE_FRIENDSTER_AGGREGATE_SHA" \
     --citation2-aggregate "$CLOSURE_CITATION2_AGGREGATE" "$CLOSURE_CITATION2_AGGREGATE_SHA" \
     --root-ready "$CLOSURE_EXT/provenance/root_SOURCE_READY.json" \
@@ -299,12 +312,17 @@ After successful independent audits, validate both actual aggregates with:
 
 Without --execute this validates inputs and writes no figure. Rendering needs
 Matplotlib and --execute; each actual exported figure still requires separate
-visual review. No figure or synthetic result panel is included here.
+visual review. The accepted timing figure and numeric data are included under figure/.
+ROOT_FIGURE_VISUAL_QA.json records the later actual visual PASS; the export
+manifest preserves its creation-time pending status. The original plot_closure.py
+is retained; plot_closure_v2.py only moves a footnote clear of the x labels.
+Both layouts produce byte-identical numeric JSON and the same36 plotted values.
 
-The small provenance/ files are original CPU preparation/source-readiness
-records. They describe conversion and validation outside application clocks;
-they do not establish completion of any new scientific application. Historical
-host/container paths are preserved as observations, not public paths to open.
+CPU preparation/source-readiness records in provenance/ describe staging
+outside application clocks. FINISH_SEQUENCE_TERMINAL.json and the six release
+receipts separately establish actual cohort completion/resource release;
+FINAL_36_INDEPENDENT_RAW_PEER.json supplies the additional raw numerical check.
+Historical host/container paths are observations, not public paths to open.
 
 LICENSES AND INTERPRETATION
 

@@ -1,0 +1,28 @@
+{
+  "E25_actual24_and_genuine_recorded_roundtrip_verified": true,
+  "current_evidence_gates": "metadata/V0_7_GATES.json",
+  "data_scope": "Public Friendster and strict-clean Citation2 only",
+  "historical_status": "metadata/lineage/BEFORE_V0_6_FINALIZATION/artifact/metadata/PUBLICATION_STATUS.json",
+  "license_confirmation_date": "2026-11-25",
+  "license_confirmed_by_user": true,
+  "license_ready": true,
+  "manifest_needs_rebuild_before_next_archive": false,
+  "note": "Truthful local v0.7 payload creation state. Prior V0_5/V0_6 gates and existing historical lineage are retained; publication receipts and code-archive whole identity are external. No conference acceptance is claimed.",
+  "own_code_license_ready": true,
+  "previous_creation_record": "metadata/V0_6_GATES.json",
+  "private_raw_data_included": false,
+  "project_code_license": "MIT",
+  "public_citation2_full_reproduction_verified": true,
+  "public_friendster_full_reproduction_verified": true,
+  "publication_state_at_creation": "V0_7_NOT_PUBLISHED_BY_METADATA_STAGE",
+  "published": false,
+  "published_base_release": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/tag/v0.6.0",
+  "required_before_public_release": [
+    "Root rehashes the complete artifact, freezes archive and external checksum/catalog.",
+    "Root checks final package and separately creates/verifies the v0.7 release."
+  ],
+  "schema_version": 2,
+  "stage": "LOCAL_ACTUAL_PAYLOAD_CLOSED_ARCHIVE_AND_PUBLICATION_PENDING",
+  "upstream_notices_retained": true,
+  "version": "0.7.0"
+}

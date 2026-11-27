@@ -1,0 +1,75 @@
+{
+  "version": "0.7.0",
+  "source_archive_sha256": "ab8a1619e850fd3c73283d592ed77273ab0defe5aabd37acb9ec58059cd12c15",
+  "files": [
+    {
+      "release_filename": "lpp_vldb_artifact_v0.7.0.tgz",
+      "bytes": 92596575,
+      "sha256": "ab8a1619e850fd3c73283d592ed77273ab0defe5aabd37acb9ec58059cd12c15",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.7.0/lpp_vldb_artifact_v0.7.0.tgz",
+      "release_tag": "v0.7.0",
+      "role": "Current code, E22/E23/E25 raw evidence, E24 analysis and verified E25 offline entrypoint"
+    },
+    {
+      "release_filename": "lpp_public_quality_evidence_v1.tgz",
+      "bytes": 404147012,
+      "sha256": "e17cdc9678d00a3f372fc8083741a200a63662226f730f47eeda79f89b4ad3b2",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_quality_evidence_v1.tgz",
+      "release_tag": "v0.5.0",
+      "bytes_reused_unchanged": true
+    },
+    {
+      "release_filename": "lpp_public_systems_evidence_v1.tgz",
+      "bytes": 83629661,
+      "sha256": "48232549089f3295c893bb33f6cea0d1aac4a0ee45b91a2669392c90ae1bfe40",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_systems_evidence_v1.tgz",
+      "release_tag": "v0.5.0",
+      "bytes_reused_unchanged": true
+    },
+    {
+      "release_filename": "lpp_public_friendster_cpu_matched_v2_raw.tgz",
+      "bytes": 2121570,
+      "sha256": "546cad6f6b14c9f56844dc3414804e97f0dd303028532910dd74bee9d10f9374",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_friendster_cpu_matched_v2_raw.tgz",
+      "release_tag": "v0.5.0",
+      "bytes_reused_unchanged": true
+    },
+    {
+      "release_filename": "pt22_native_wheels_v1.tgz",
+      "bytes": 15064339,
+      "sha256": "5e9edbdc067325cd0b41b5fb292e2cc7343cc535da87ff3bef720cbf85da38cf",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/pt22_native_wheels_v1.tgz",
+      "release_tag": "v0.5.0",
+      "bytes_reused_unchanged": true
+    },
+    {
+      "release_filename": "lpp_public_pencil_instrumented48_raw.tgz",
+      "bytes": 9966534,
+      "sha256": "7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_pencil_instrumented48_raw.tgz",
+      "release_tag": "v0.5.0",
+      "bytes_reused_unchanged": true
+    },
+    {
+      "release_filename": "lpp_public_pencil_clean44_raw.tgz",
+      "bytes": 10230546,
+      "sha256": "708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0",
+      "download_url": "https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_pencil_clean44_raw.tgz",
+      "release_tag": "v0.5.0",
+      "bytes_reused_unchanged": true
+    }
+  ],
+  "total_bytes": 617756237,
+  "graphs_included": false,
+  "code_archive_members": 1307,
+  "source_archive_prefix": "artifact/",
+  "companion_assets_reuploaded": false,
+  "local_source_archive_verification": "verification/V0_7_LOCAL_ARCHIVE_VERIFICATION.json",
+  "previous_catalog": "verification/lineage_v0_6/ASSET_CATALOG.json",
+  "artifact_tree_commit": "df8ce002bae07ac47e5feea95c6629d5727b1a5b",
+  "prepublication_verification": {
+    "path": "verification/V0_7_PREPUBLICATION_VERIFICATION.json",
+    "bytes": 1158,
+    "sha256": "22d17c2811519cefd16d6d0d7ec4e1c955de90988491297f002efd4410351ffe"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "V0_8_ACTUAL_PREPUBLICATION_LOCAL_VERIFICATION",
+  "status": "PASS_LOCAL_READY_FOR_AUTHORIZED_PUBLICATION",
+  "observed_unix": 1795784859.236373,
+  "actual_applications": 36,
+  "actual_allocations": 6,
+  "all_GPU_allocations_released": true,
+  "archive": {
+    "filename": "lpp_vldb_artifact_v0.8.0.tgz",
+    "bytes": 100349888,
+    "sha256": "92bab6a91a2523eb6f5e1d35485ea0634a2234d601cbb93620462b65be9a716e",
+    "members": 1431
+  },
+  "all_archive_members_rehashed": true,
+  "global_manifest": {
+    "bytes": 264294,
+    "sha256": "f01f6c576fd8134286e2fdf9c1a28885f635ac8cd6dc6906f4fe955c2b6146bb"
+  },
+  "public_offline_eight_byte_identical_tested_python": [
+    "3.12.10",
+    "3.13.12"
+  ],
+  "current_docs_peer": {
+    "bytes": 5967,
+    "sha256": "44b6fd8c9411b9378f3da79a18429ef592cec41873f0e47b1fafc9ed2a7ad6c1"
+  },
+  "actual_numeric_peer": {
+    "bytes": 188848,
+    "sha256": "15c1aba2f77a364a638b6539cb60a344b41766484ea8939c14439f58f75daaa6"
+  },
+  "source_artifact_git_tree_object": "738050227dd75f0bb5df08e941a100162b01b321",
+  "prior_v0_7_catalog": {
+    "bytes": 3645,
+    "sha256": "79a8859ccdd9c4a10319a675642c983247b607540f3a09f5b646fcb2a26b4676"
+  },
+  "published": false,
+  "manuscript_PDF_or_CMT_actions": 0,
+  "conference_acceptance_claimed": false
+}

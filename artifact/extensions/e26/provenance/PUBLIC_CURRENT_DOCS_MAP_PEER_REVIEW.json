@@ -1,0 +1,124 @@
+{
+  "claims_review": {
+    "PSS": "25/36 eligible measured-window,8/36warmup,15/36shutdown match independent raw peer; missing remains unknown; no peak or native-reuse memory ranking.",
+    "matrix_and_eight_ratios": "Agree with independent FINAL_36_INDEPENDENT_RAW_PEER.json; all12 C/fresh<1 and C/reuse>1, separate per-dataset aggregation.",
+    "platforms": "Current platform map points to exact two aggregates/platform objects; all27logical span14physical cores; F1node807,C1node801,remaining4node804; no common host/boot or CPU-SKU claim.",
+    "preparation": "Once-per-dataset CPU preparation is outside all GPU application clocks; CPU16/64GiB and GPU27logical/256GiB/H100 contexts separated; no same-host amortization or cold-I/O claim. Current TeX actual durations439.7/22.1s Friendster and6.04/.39s Citation2 agree peer raw clocks.",
+    "trust": "External code-archive hash and pinned evidence-index hash stated; source-bound recorded input identities explicitly separated from independent tensor/graph regeneration."
+  },
+  "current_E26_map_links_rehashed": {
+    "extensions/e26/evidence_index.json": {
+      "bytes": 5194,
+      "sha256": "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903"
+    },
+    "extensions/e26/figure/ROOT_FIGURE_VISUAL_QA.json": {
+      "bytes": 1251,
+      "sha256": "78087cc093dfe706f5108872eb0dc25e52f2ecdf89c25bf707565c172e6db4d0"
+    },
+    "extensions/e26/figure/closure_launch_to_wait.numeric.json": {
+      "bytes": 19422,
+      "sha256": "443017f444dbdae6c61c42873cdaf84536c27e98879cc68f4fb199a1c2902c68"
+    },
+    "extensions/e26/figure/closure_launch_to_wait.pdf": {
+      "bytes": 19116,
+      "sha256": "e25ba5feae9f4d75ec4a4e1dc234682d042ee7949e182f0b549fa1e55fdb18a5"
+    },
+    "extensions/e26/packet/PROTOCOL.json": {
+      "bytes": 9067,
+      "sha256": "fa48e5de0f8133e944518597d4fdf1d8057aedc0f8b7774284f294548da508b2"
+    },
+    "extensions/e26/packet/SOURCE_MANIFEST.json": {
+      "bytes": 7650,
+      "sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6"
+    },
+    "extensions/e26/plot_closure_v2.py": {
+      "bytes": 17760,
+      "sha256": "ff5b1e1cee435775c73db5a50a0c33e4e59bc716511a6419bfc619d837f5f70a"
+    },
+    "extensions/e26/provenance/FINAL_36_INDEPENDENT_RAW_PEER.json": {
+      "bytes": 188848,
+      "sha256": "15c1aba2f77a364a638b6539cb60a344b41766484ea8939c14439f58f75daaa6"
+    },
+    "extensions/e26/provenance/ROOT_PUBLIC_OFFLINE_PYTHON313_PORTABILITY.json": {
+      "bytes": 1383,
+      "sha256": "deafdb338e60b37eb6bb74bd0080359a54ba71661b487943c3413d18330cabfe"
+    },
+    "extensions/e26/recorded/OFFLINE_VERIFIED.json": {
+      "bytes": 2118,
+      "sha256": "cf638f5d870d4e2d063c50807e11e4ca1fffc431281bc339791f40a0dbdcc7a5"
+    },
+    "extensions/e26/recorded/PUBLIC_OFFLINE_ROUNDTRIP_ROOT_RECEIPT.json": {
+      "bytes": 5241,
+      "sha256": "6366b5fe68b455b1cf7ca021dd41632b01135fbc40c1425f93d5e14b7e76dd71"
+    },
+    "extensions/e26/recorded/citation2/ACTUAL_AGGREGATE.json": {
+      "bytes": 87809,
+      "sha256": "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936"
+    },
+    "extensions/e26/recorded/friendster/ACTUAL_AGGREGATE.json": {
+      "bytes": 88246,
+      "sha256": "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2"
+    }
+  },
+  "current_manuscript_source": "work/vldb_closure_controls_20261127/manuscript_candidate_v0_8/sections",
+  "current_map": {
+    "all_current_figure_table_labels_match_current_tex": true,
+    "archival_objects": 3,
+    "archived_labels": [
+      "fig:e25-lifetimes",
+      "sec:application-lifetimes",
+      "tab:pipeline"
+    ],
+    "current_figures_and_tables": 14,
+    "extra_method_label": "sec:application-lifetimes",
+    "objects": 15,
+    "pre_finalization_whole_documents_preserved": "metadata/lineage/BEFORE_V0_8_FINALIZATION"
+  },
+  "inputs_reviewed": {
+    "artifact/CITATION.cff": {
+      "bytes": 773,
+      "sha256": "901f9944dbb0e68c7d9c5860fd0474b96ca41a191ceafd3c1566964f1c77f77b"
+    },
+    "artifact/PUBLIC_COMMANDS.txt": {
+      "bytes": 17067,
+      "sha256": "417a1b86d535675b4592043093a2118f970d328f2539ea539cc285618e26ebcc"
+    },
+    "artifact/PUBLIC_OBJECT_COMMANDS.json": {
+      "bytes": 65734,
+      "sha256": "d8b7580880b0d7aebe8b3cf2e7b82677a487df2aabdedb3cea2e4ea2656ce8ce"
+    },
+    "artifact/README.md": {
+      "bytes": 12592,
+      "sha256": "02ba3f07dfd5b73de8326049a5e275977e2629be0e91cdc2f8e04bc8e7c8906d"
+    },
+    "artifact/extensions/e26/README.txt": {
+      "bytes": 18982,
+      "sha256": "14c534bfe1c27629592838f21304636a6f90fee29224bd89e078d0b7d1a19b3e"
+    }
+  },
+  "kind": "INDEPENDENT_CURRENT_E26_ARTIFACT_DOCS_AND_PAPER_OBJECT_MAP_REVIEW",
+  "metadata_and_release_scope": "Final EXTENSION_CATALOG/global manifest/archive/release metadata finalization is the separate planned next gate, not certified by this prose/map review. No public file or TeX edited.",
+  "must_fix": [],
+  "observed_unix": 1795784399.9818199,
+  "offline_CLI": {
+    "Python312_and313_actual_eight_output_receipts_present": true,
+    "index": {
+      "bytes": 5194,
+      "sha256": "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903"
+    },
+    "no_replay_rerun_by_this_review": true
+  },
+  "plot_CLI": {
+    "actual_v1_v2_and_shipped_numeric_bytes_identical": true,
+    "colored_points_three_allocations_black_segments_medians": true,
+    "only_source_change": "One footnote y-coordinate .145 -> .085",
+    "shipped_QA_PASS": true,
+    "v1_retained": true,
+    "versioned_source": {
+      "bytes": 17760,
+      "sha256": "ff5b1e1cee435775c73db5a50a0c33e4e59bc716511a6419bfc619d837f5f70a"
+    }
+  },
+  "scope": "Read-only current public prose/map/CLI/link identities and claim limits review. No raw numerical audit, offline8 replay, render, scientific experiment, metadata-helper/freezer review, network or cluster operation rerun. Only this small private review receipt written.",
+  "status": "PASS_NO_CONCRETE_MUST_FIX"
+}

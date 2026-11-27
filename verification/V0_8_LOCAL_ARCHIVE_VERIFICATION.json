@@ -1,0 +1,76 @@
+{
+  "kind": "ARTIFACT_V0_8_LOCAL_FREEZE_RECEIPT",
+  "status": "PASS_LOCAL_COMPLETE36_ARCHIVE",
+  "created_unix": 1795784673.5374951,
+  "archive": "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/outputs/vldb_submission_2026/lpp_vldb_artifact_v0.8.0.tgz",
+  "bytes": 100349888,
+  "sha256": "92bab6a91a2523eb6f5e1d35485ea0634a2234d601cbb93620462b65be9a716e",
+  "member_count": 1431,
+  "raw_bytes": 139668267,
+  "global_manifest": {
+    "bytes": 264294,
+    "sha256": "f01f6c576fd8134286e2fdf9c1a28885f635ac8cd6dc6906f4fe955c2b6146bb"
+  },
+  "all_regular_archive_members_rehashed": true,
+  "actual_e25_complete24_aggregate": {
+    "bytes": 90386,
+    "sha256": "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057"
+  },
+  "actual_e26_complete36": {
+    "index": {
+      "bytes": 5194,
+      "sha256": "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903"
+    },
+    "aggregates": {
+      "friendster": {
+        "bytes": 88246,
+        "sha256": "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2"
+      },
+      "citation2": {
+        "bytes": 87809,
+        "sha256": "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936"
+      }
+    },
+    "public_helper_receipt": {
+      "bytes": 2118,
+      "sha256": "cf638f5d870d4e2d063c50807e11e4ca1fffc431281bc339791f40a0dbdcc7a5"
+    },
+    "public_root_receipt": {
+      "bytes": 5241,
+      "sha256": "6366b5fe68b455b1cf7ca021dd41632b01135fbc40c1425f93d5e14b7e76dd71"
+    },
+    "helper_source": {
+      "bytes": 15922,
+      "sha256": "a0f50ef78f3cfec644a81a953bbb741370dadbe95dd08792bab4930c64bd1d11"
+    },
+    "auditor_source": {
+      "bytes": 93988,
+      "sha256": "98ad346c6d6529878e859441df72ce9b33c226eb01229bf015adda1926b0834c"
+    },
+    "raw_archives_screened": 6,
+    "complete_applications": 36,
+    "failed_or_historical_applications_pooled": false
+  },
+  "current_gates": {
+    "bytes": 3451,
+    "sha256": "98951de83375f14319e885344ad7587589792d4ebea58d8a6d022b1559ed463e"
+  },
+  "artifact_prefix_only": true,
+  "deterministic_tar_gzip_metadata": true,
+  "raw_cap_bytes": 536870912,
+  "compressed_cap_bytes": 536870912,
+  "payload_name_and_text_credential_screen_passed": true,
+  "credential_scope": "Outer filename/literal-value screen and source-bound six E26 raw member inventories/text streaming. Historical E25 reviewed archives remain unchanged; no general secret-detection guarantee.",
+  "no_graphs_or_models_added": true,
+  "companion_assets_reused": true,
+  "companion_download_upload_actions": 0,
+  "root_asset_catalog_outside_code_archive": true,
+  "network_or_publication_actions": 0,
+  "local_disk_reserve_bytes": 10737418240,
+  "preexisting_new_material_bytes": 174004050,
+  "new_material_budget_bytes": 536870912,
+  "original_v0_7_catalog": {
+    "bytes": 3645,
+    "sha256": "79a8859ccdd9c4a10319a675642c983247b607540f3a09f5b646fcb2a26b4676"
+  }
+}

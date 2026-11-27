@@ -1,0 +1,43 @@
+{
+  "allocations": 6,
+  "complete_applications": 36,
+  "current_entrypoint": {
+    "bytes": 18982,
+    "file": "README.txt",
+    "sha256": "14c534bfe1c27629592838f21304636a6f90fee29224bd89e078d0b7d1a19b3e"
+  },
+  "dataset_aggregates": {
+    "citation2": {
+      "bytes": 87809,
+      "sha256": "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936"
+    },
+    "friendster": {
+      "bytes": 88246,
+      "sha256": "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2"
+    }
+  },
+  "genuine_recorded_verification": {
+    "all_eight_outputs_byte_identical": true,
+    "helper_receipt": {
+      "bytes": 2118,
+      "sha256": "cf638f5d870d4e2d063c50807e11e4ca1fffc431281bc339791f40a0dbdcc7a5"
+    },
+    "root_receipt": {
+      "bytes": 5241,
+      "sha256": "6366b5fe68b455b1cf7ca021dd41632b01135fbc40c1425f93d5e14b7e76dd71"
+    }
+  },
+  "kind": "E26_PUBLIC_EXTENSION_RECORDED_RESULT_CATALOG_V1",
+  "public_index": {
+    "bytes": 5194,
+    "sha256": "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903"
+  },
+  "results_pending": false,
+  "source_hashes": {
+    "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+    "source_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+    "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+  },
+  "source_only_status_and_pending_example_are_historical": true,
+  "status": "RECORDED_PASS"
+}

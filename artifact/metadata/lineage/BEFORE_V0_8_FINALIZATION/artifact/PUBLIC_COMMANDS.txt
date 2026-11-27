@@ -1,0 +1,222 @@
+Public per-object commands for artifact v0.7.0
+
+Use a Linux compute host for full graph preparation/runs. Large graph inputs are
+never included in source/evidence assets or required on a laptop. Set absolute
+paths ARTIFACT (code artifact), REPRO_ROOT (its reproduction/ folder), ASSETS,
+DATA, RESULTS, CPU_PY, PENCIL_PY and shared TIMING_COORDINATION. The two supplied
+Python environments differ: CPU usesTorch2.2.2+cu121; PENCIL usesTorch2.5.0+cu121.
+New study runners print plans by default; --execute is explicit. The legacy
+prepared23 builder below executes when invoked and has no --execute flag.
+Preserve failed outputs.
+Recorded-byte verification and fresh execution are separate operations.
+Set QUALITY_ASSET="$ASSETS/lpp_public_quality_evidence_v1.tgz" and use fresh
+QUALITY_SMALL_ROOT, C2_VALID512 and RESULTS output paths. Set CPU_SOURCE_PIN and
+PENCIL_SOURCE_PIN to the whole SHA256 of the corresponding reproduction source
+SOURCE_MANIFEST.json, as pinned in metadata/V0_5_GATES.json. AUDIT_PY312 is a
+CPython 3.12 interpreter with NumPy. SYSTEMS_ROOT is the extracted directory
+lpp_public_systems_evidence_v1 from its whole-hash-verified external archive;
+extract the separate trusted archive once on the compute host. No new timing
+is performed by the recorded verification commands below.
+
+Public graph acquisition/preparation (existing unchanged artifact modules):
+  cd "$ARTIFACT/src"
+  export PYTHONPATH="$ARTIFACT/src"
+  python -m artifact_public.download friendster --out "$DATA/friendster_inputs"
+  python -m artifact_public.download friendster --out "$DATA/friendster_inputs" --execute
+  python -m artifact_public.prepare_friendster_full --inputs "$DATA/friendster_inputs" \
+    --out "$DATA/friendster/full_csr" --workers 8 --memory-budget-gib 64
+  python -m artifact_public.prepare_friendster_full --inputs "$DATA/friendster_inputs" \
+    --out "$DATA/friendster/full_csr" --workers 8 --memory-budget-gib 64 --execute
+  # Inspect --help first. This next legacy command performs actual prepared23
+  # construction immediately; run only on the documented large Linux host.
+  python -m artifact_public.prepare_friendster --help
+  NUMBA_NUM_THREADS=8 python -m artifact_public.prepare_friendster \
+    --full-graph "$DATA/friendster/full_csr" --out "$DATA/friendster/prepared" \
+    --threads 8 --memory-budget-gib 64
+  # The strict23-payload SHA check is decisive. Existing actual full public
+  # reconstruction matched all3 full +23 prepared numeric payloads; generated
+  # timestamps, paths and compression are not byte-identity targets.
+  python -m artifact_public.reproduce_citation2 --work-parent "$DATA/c2_public" --threads 8
+  # Review then append --execute; successful unique run contains dataset/prepared.
+  # Verify all19 numeric files; source compression/timestamps are not identities.
+  python -m artifact_public.verify_payloads --root "$C2_PREPARED" \
+    --expected "$ARTIFACT/metadata/citation2_prepared_expected.json" \
+    --receipt "$RESULTS/citation2_full19_identity.json"
+
+Original512-source C2 validation subset for BOTH PENCIL protocols:
+  python -m artifact_public.prepare_pencil_validation_v2 --citation2-root "$C2_PREPARED" \
+    --out "$C2_VALID512"
+  # Review then append --execute. This unchanged helper opens validation only,
+  # keeps1000 original negatives/source,seed20261124 and exact two outputSHA.
+  # It never fabricates a quality-plan receipt or requires historical mtimes.
+
+Recorded public systems tables/figures E1/E4/E6/E7/E8/E10/E12/E16/E17/E18:
+  python "$ARTIFACT/tools/public_evidence/verify_systems_v1.py" --asset-root "$SYSTEMS_ROOT"
+  python "$ARTIFACT/tools/public_evidence/plot_public_figures_v1.py" \
+    --asset-root "$SYSTEMS_ROOT" --quality-asset "$QUALITY_ASSET" --out "$RESULTS/figures"
+  python "$ARTIFACT/tools/public_evidence/extract_friendster_rr_v1.py" \
+    --quality-asset "$QUALITY_ASSET" --out "$QUALITY_SMALL_ROOT"
+  # Copies only18 small original RR/ID/metric files and the true manifest;
+  # no model/full score NPZ is deserialized or copied. Whole asset SHA checked.
+  python "$ARTIFACT/tools/public_evidence/reaggregate_quality_v1.py" \
+    --quality-root "$QUALITY_SMALL_ROOT" --dataset friendster
+  "$AUDIT_PY312" "$ARTIFACT/tools/recorded_friendster_scores_v1/verify_friendster_scores.py" \
+    --quality-asset "$QUALITY_ASSET" \
+    --manifest "$ARTIFACT/work/vldb_public_fresh_adapters_v1/QUALITY_MANIFEST.json" \
+    --output "$RESULTS/friendster_full_score_rerank.json"
+  # Separate archival check: reranks all6original float32 score NPZs in64query
+  # blocks, independently verifies query-ID/permutation/positive/negative hashes
+  # and midpoint ties, and reproduces every original4096query RR byte exactly.
+  # One reused86MB buffer; enforced peak<256MiB. Non-target checkpoint TAR bytes
+  # stream past in1MiB chunks; no model/weight is deserialized or materialized.
+  python "$ARTIFACT/tools/public_evidence/reaggregate_quality_v1.py" \
+    --quality-asset "$QUALITY_ASSET" \
+    --manifest "$ARTIFACT/work/vldb_public_fresh_adapters_v1/QUALITY_MANIFEST.json" --dataset citation2
+  # SYSTEMS_ROOT is separately extracted immutable public systems83.6MB asset.
+  # Quality404MB asset is streamed; do not load whole scores/models into RAM.
+  # The full E17 numeric table, including frozen-rule agreement, also has its
+  # existing public analysis entrypoint (no graph or new timing):
+  PYTHONPATH="$ARTIFACT/src" python -m artifact_public.reproduce_posthoc_friendster \
+    --out "$RESULTS/recomputed_E17"
+  # Review then append --execute; figures remain the frozen3figure command above.
+  # Friendster table aggregates all4096 original saved per-query RR values per
+  # fit; Citation2 reconstructs midpoint-tie ranks from all original raw logits
+  # in256query blocks. Across paired seeds42/43/44 report means/sampleSD and
+  # PV-minus-union differences. Both assets retain full frozen checkpoints,
+  # original scores, configs and joint pre-test freeze/selection identities;
+  # these verification commands never retrain/reselect or deserialize weights.
+
+Fresh E7 visited-policy and E12 five-heuristic controls, using prepared23:
+  "$CPU_PY" -B "$ARTIFACT/work/vldb_public_fresh_adapters_v1/run_public.py" \
+    --experiment e7 --prepared-root "$DATA/friendster/prepared" --out "$RESULTS/new_e7"
+  "$CPU_PY" -B "$ARTIFACT/work/vldb_public_fresh_adapters_v1/run_public.py" \
+    --experiment e12 --prepared-root "$DATA/friendster/prepared" --out "$RESULTS/new_e12"
+  # Review the two plans, then append --execute on an idle large Linux CPU host.
+  # Exact original plan/freeze/cohort identities and all23 payload SHA remain;
+  # no model is opened, old mtime set, or historical COMPLETE forged. The earlier
+  # actual fresh adapters already reproduced all512x3E7 cases,20480E12 ranks and
+  # all6RR NPY bytes exactly; closure69f215e41196b216e3bd7a9064d49dc615b340a580f00a370833ab59b7e6e1e8.
+  # Their separate independent portable recheck is also available:
+  python "$ARTIFACT/tools/public_evidence/recheck_fresh_friendster_v1.py" \
+    --candidate-root "$ARTIFACT" --systems-asset "$ASSETS/lpp_public_systems_evidence_v1.tgz" \
+    --out "$RESULTS/fresh_e7_e12_recheck.json"
+
+E20 recorded matched Friendster CPU table (7arms ×128S ×3repeats):
+  python "$ARTIFACT/tools/public_evidence/materialize_cpu_e20_v1.py" \
+    --metadata "$ARTIFACT/metadata/evidence/E20/recorded_export" \
+    --archive "$ASSETS/lpp_public_friendster_cpu_matched_v2_raw.tgz" \
+    --out "$RESULTS/recorded_cpu_e20_export"
+  python "$ARTIFACT/tools/recorded_cpu_v2/audit_public_fr_cpu_v1.py" \
+    --export-dir "$RESULTS/recorded_cpu_e20_export" \
+    --root-launch "$ARTIFACT/metadata/evidence/E20/ROOT_LAUNCH.json" \
+    --source-packet "$ARTIFACT/metadata/evidence/E20/public_fr_cpu_v2_sources.tgz" \
+    --historical-systems-asset "$ASSETS/lpp_public_systems_evidence_v1.tgz" \
+    --wheel-packet "$ASSETS/pt22_native_wheels_v1.tgz" \
+    --output "$RESULTS/recorded_cpu_e20_verified.json"
+  # This frozen independent auditor verifies the RECORDED root/provenance
+  # boundary and reaggregates every raw repetition. It is stdlib-only/local.
+
+E20 NEW fresh generic CPU rerun (not a promise of historical wall numbers):
+  "$CPU_PY" "$REPRO_ROOT/public_friendster_cpu_v1/run_public_cpu.py" \
+    --python "$CPU_PY" --full-csr "$DATA/friendster/full_csr" \
+    --wheel-packet "$ASSETS/pt22_native_wheels_v1.tgz" --out "$RESULTS/new_cpu7" \
+    --coordination-dir "$TIMING_COORDINATION" --source-manifest-sha256 "$CPU_SOURCE_PIN"
+  # Review entire13phase/7arm plan then append --execute. The runner internally
+  # validates all outputs/exits/source/input/environment/semantics. No generic
+  # independent auditor for arbitrary fresh public local runs is claimed here.
+
+E19 OLD instrumented48-job PENCIL study:
+  "$AUDIT_PY312" "$ARTIFACT/tools/public_evidence/materialize_pencil_export_v1.py" \
+    --role E19 --metadata "$ARTIFACT/metadata/evidence/E19/recorded_export" \
+    --archive "$ASSETS/lpp_public_pencil_instrumented48_raw.tgz" \
+    --out "$RESULTS/recorded_pencil_e19_export"
+  "$AUDIT_PY312" "$ARTIFACT/tools/recorded_pencil_e19_v1/audit_recorded_e19.py" \
+    --source-root "$ARTIFACT" --export "$RESULTS/recorded_pencil_e19_export" \
+    --root-launch "$ARTIFACT/metadata/evidence/E19/ROOT_LAUNCH.json" \
+    --output "$RESULTS/recorded_pencil_e19_audit"
+  # AUDIT_PY312 is a lightweight CPython 3.12/NumPy environment for the preserved
+  # raw AST/source pins. It is separate from the Linux3.10 science environment.
+  # Keep raw archive lpp_public_pencil_instrumented48_raw.tgz and its original
+  # explicit audit correction/numeric peer. It contains32ONLINE+4REPLAY timings,
+  # per-query memory observations and large unassigned wall-time fractions.
+  # Existing artifact_public.reproduce_pencil_v2 recipe is historical48 science.
+  # Its measurements are not clean throughput and are NEVER relabelled as E21.
+
+E21 NEW clean44-job PENCIL consumer:
+  "$PENCIL_PY" "$REPRO_ROOT/public_pencil_clean_v1/run.py" \
+    --prepared-root "$C2_PREPARED" --validation-root "$C2_VALID512" \
+    --out "$RESULTS/new_pencil_clean44" --python "$PENCIL_PY" \
+    --coordination-dir "$TIMING_COORDINATION" --gpu-uuid "$GPU_UUID" \
+    --source-manifest-sha256 "$PENCIL_SOURCE_PIN"
+  # Review then append --execute. All44/9audits/32ONLINE rows, all8arms/all4
+  # batch-worker groups, disabled per-query memory and null worker memory stay.
+  # Fresh local generation has producer validation, not a separate independent
+  # public-local numeric auditor. The historical clean44 auditor below consumes
+  # the RECORDED root export/launch/admission boundary, not this new local tar.
+  python "$ARTIFACT/tools/public_evidence/materialize_pencil_export_v1.py" \
+    --role E21 --metadata "$ARTIFACT/metadata/evidence/E21/recorded_export" \
+    --archive "$ASSETS/lpp_public_pencil_clean44_raw.tgz" \
+    --out "$RESULTS/recorded_pencil_clean44_export"
+  python "$ARTIFACT/tools/recorded_pencil_clean44/audit_clean_v1.py" \
+    --export "$RESULTS/recorded_pencil_clean44_export" \
+    --root-launch "$ARTIFACT/metadata/evidence/E21/ROOT_LAUNCH.json" \
+    --root-admission "$ARTIFACT/metadata/evidence/E21/ROOT_ADMISSION.json" \
+    --output "$RESULTS/recorded_pencil_clean44_audit"
+  # These recorded commands bind accepted audit4682eef…/raw peer9ef11d… and
+  # unchanged221-member archive708b6f…. No external infrastructure is contacted.
+
+Small target smoke (after timing windows, no full data/model experiment):
+  "$CPU_PY" "$REPRO_ROOT/public_friendster_cpu_v1/tiny_native_smoke.py" \
+    --out "$RESULTS/cpu_tiny" --source-manifest-sha256 "$CPU_SOURCE_PIN"
+  # Root's clean PENCIL target smoke receipts separately cover Linux3.10/H100,
+  # source plan, actual platform probe, C++ build and7query/all8arm/bothwrapper
+  # tinyBERT gates. These are tiny portability results, not full44 reruns.
+
+
+V0.6 RECORDED EXTENSIONS (new output names; base recipes above remain unchanged)
+Set ARTIFACT to artifact/ in a clone or the unpacked artifact-only archive root.
+Exact six companion URLs/SHA: metadata/COMPANION_ASSETS_V0_5.json.
+Recorded verification is separate from fresh replay.
+
+python3 -B "$ARTIFACT/extensions/e22/verify_e22.py" --output "$RESULTS/e22_recorded_verified.json"
+
+python3 -B "$ARTIFACT/extensions/e23/verify_e23.py" --archive "$ARTIFACT/extensions/e23/recorded/pipeline_repeats_e23_20261126_final_v1.tgz" --archive-sha256 "41def9a2735829c741fc9ddc490bda56dcd0780bf37cd9759bd0104e42f05073" --outer-source-sha256 "e8df35bb6ebacf5bc9c9f5b4ea4c2337e6fabb93b5e10fb3c2818c03eb025f5e" --outer-complete "$ARTIFACT/extensions/e23/recorded/outer_COMPLETE.json" --archive-pointer "$ARTIFACT/extensions/e23/recorded/archive_pointer.json" --output "$RESULTS/e23_recorded_verified.json"
+
+python3 -B "$ARTIFACT/extensions/e24/publicanalyze_cost_regimes.py" --friendster-archive "$ASSETS/lpp_public_friendster_cpu_matched_v2_raw.tgz" --citation2-archive "$ARTIFACT/extensions/e22/recorded/citation2_cpu_matched_v1_20261126.tgz" --output "$RESULTS/matched_cost_regimes_recorded.json"
+
+python3 -B "$ARTIFACT/extensions/e24/plot_matched_cost_regimes.py" --input "$RESULTS/matched_cost_regimes_recorded.json" --out "$RESULTS/matched_cost_regimes_figures"
+
+
+V0.7 E25 ACTUAL RECORDED LIFETIMES (24 applications, three allocations)
+The real catalog and original inputs are bundled. Verify the entire code archive
+with its externally published SHA256 before trusting the included catalog.
+E25_FRESH_OUT must be a new directory outside ARTIFACT with an existing parent.
+Python 3.10+ standard library; no ML packages, graph load, GPU or external access:
+
+python3 -B -S "$ARTIFACT/extensions/e25/verify_recorded_v6.py" \
+  --artifact "$ARTIFACT" --out "$E25_FRESH_OUT"
+
+The unchanged per-block tools re-audit all three original archives/collection
+sidecars; audits and aggregate must match the cataloged bytes/SHA256 exactly.
+See extensions/e25/OFFLINE_VERIFICATION.txt for the actual catalog schema/trust
+boundary and the separately recorded genuine public-layout receipt.
+
+E25 figure only: E25_PLOT_PY is Python 3.12.10 with Matplotlib 3.10.3.
+E25_FRESH_FIGURE must be a fresh output directory. This does not repeat timings:
+
+"$E25_PLOT_PY" -B "$ARTIFACT/extensions/e25/figure/plot_aggregate_v6.py" \
+  --aggregate "$ARTIFACT/extensions/e25/recorded/ACTUAL_AGGREGATE.json" \
+  --aggregate-sha256 "2a9bdfbbe4661bd41e1e5d1c1ade8046e40bcdd538bca44b5db1c2caf042e057" \
+  --out "$E25_FRESH_FIGURE"
+
+Min/max is descriptive across three allocations; ratios are paired within each
+block. There is no long timed 576 checkpoint or E23 causal speedup. New plots
+start with QA pending; the shipped figure has a separate root visual-QA PASS.
+PSS is sampled complete/stable all-phase app-tree residency, not full-resident
+memory. Fresh Numba/output per allocation does not clear retained OS/PVC caches.
+Native includes fresh file-backed promotion/fsync inside the application clock.
+The exact author-bound wrapper/admission sources are provenance, not a turnkey
+portable fresh launcher; another real platform needs its own reviewed binding.
+CPU model/SKU was not recorded; 27 logical CPUs span 14 physical-core identities.
+The latest failed capsule under recorded/excluded appears once, with old priors
+nested only; no failed/partial measurements enter the successful 24.

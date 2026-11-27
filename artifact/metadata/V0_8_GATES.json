@@ -1,0 +1,87 @@
+{
+  "E26": {
+    "allocations": 6,
+    "applications": 36,
+    "current_entrypoint": {
+      "bytes": 18982,
+      "file": "extensions/e26/README.txt",
+      "sha256": "14c534bfe1c27629592838f21304636a6f90fee29224bd89e078d0b7d1a19b3e"
+    },
+    "dataset_aggregates": {
+      "citation2": {
+        "bytes": 87809,
+        "sha256": "52718dcaaf1fbcecdac9abfed5749b4d91999ea87e87284619c947d0578a8936"
+      },
+      "friendster": {
+        "bytes": 88246,
+        "sha256": "016ad5896d37fa4ed11a71a8f7e1012ee9e41692f4efdb004ba386392f3913a2"
+      }
+    },
+    "failed_or_historical_applications_pooled": false,
+    "public_helper_receipt": {
+      "bytes": 2118,
+      "sha256": "cf638f5d870d4e2d063c50807e11e4ca1fffc431281bc339791f40a0dbdcc7a5"
+    },
+    "public_index": {
+      "bytes": 5194,
+      "sha256": "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903"
+    },
+    "public_root_receipt": {
+      "bytes": 5241,
+      "sha256": "6366b5fe68b455b1cf7ca021dd41632b01135fbc40c1425f93d5e14b7e76dd71"
+    },
+    "source_hashes": {
+      "protocol_sha256": "ea487e898ae9dd07113408990bb48e55e37dafeef3d23e5b8ef0ab1d88462566",
+      "source_manifest_sha256": "0bb01dfd0524340e5f3f9f08ab1e0f2fc604e47a726db498f59ee1b376149bb6",
+      "wrapper_sha256": "c5b90c729ca3956b9c306967161f8b8a676733d565149f35a55f11757e85a5d8"
+    },
+    "source_only_status_and_pending_example_are_historical": true,
+    "status": "PASS_COMPLETE_TWO_GRAPHS_36_APPS"
+  },
+  "archive_creation_or_release_performed": false,
+  "changed_prior_files": {
+    "CITATION.cff": {
+      "bytes": 773,
+      "file": "metadata/lineage/BEFORE_V0_8_FINALIZATION/artifact/CITATION.cff",
+      "sha256": "bddbb22a838d6cb717ab6c7d69e000634e15ffa67d5d06ebe4e96bfd051894c6"
+    },
+    "PUBLIC_COMMANDS.txt": {
+      "bytes": 15324,
+      "file": "metadata/lineage/BEFORE_V0_8_FINALIZATION/artifact/PUBLIC_COMMANDS.txt",
+      "sha256": "e821234de960f24d77935c6b27db447152e22fbab3db99fee8016ab4b08c14ae"
+    },
+    "PUBLIC_OBJECT_COMMANDS.json": {
+      "bytes": 55635,
+      "file": "metadata/lineage/BEFORE_V0_8_FINALIZATION/artifact/PUBLIC_OBJECT_COMMANDS.json",
+      "sha256": "32d3cebd2d66e140d86e344b455e3a1285df76d504a2a60abff4e676ead780ef"
+    },
+    "README.md": {
+      "bytes": 11282,
+      "file": "metadata/lineage/BEFORE_V0_8_FINALIZATION/artifact/README.md",
+      "sha256": "547b099ced6edfb13155fd8bcc479c753a6892388a2fd283a730bed31c991cdd"
+    },
+    "metadata/CANDIDATE_STATUS.json": {
+      "bytes": 617,
+      "file": "metadata/lineage/BEFORE_V0_8_FINALIZATION/artifact/metadata/CANDIDATE_STATUS.json",
+      "sha256": "8ed333584ae52bac16d8cd8b2c53aebc545859d1d2ebd1395942e5a00d576743"
+    },
+    "metadata/PUBLICATION_STATUS.json": {
+      "bytes": 1553,
+      "file": "metadata/lineage/BEFORE_V0_8_FINALIZATION/artifact/metadata/PUBLICATION_STATUS.json",
+      "sha256": "fbe5272739b8bbc43a6f7fec5bf98bc0e6641d018d5c558e9d56b444abe94aca"
+    }
+  },
+  "conference_acceptance_claimed": false,
+  "kind": "V0_8_0_CURRENT_RECORDED_EVIDENCE_GATES",
+  "prior_evidence_gates": {
+    "bytes": 4478,
+    "file": "metadata/V0_7_GATES.json",
+    "sha256": "f7078814234348508197d86b58b53ea9dea50b98bc49e7c62dac4db444c185d9"
+  },
+  "prior_v0_7_global_manifest": {
+    "bytes": 324912,
+    "file": "metadata/lineage/BEFORE_V0_8_FINALIZATION/artifact/MANIFEST.json",
+    "sha256": "d6934548eabcdc1e4571ec6a576ae1c395ea77dedf9e72a1c8e3450651ddc170"
+  },
+  "version": "0.8.0"
+}

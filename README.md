@@ -1,4 +1,4 @@
-# SEAL-style link prediction: artifact v0.7.0
+# SEAL-style link prediction: artifact v0.8.0
 
 Research artifact for **Execution Costs and Sampling Semantics in SEAL-Style Link Prediction**.
 
@@ -6,24 +6,24 @@ Maksim Utushkin, Renat Aminov and Alexander D’yakonov — AI VK, Moscow, Russi
 
 This study separates the cost of executing a fixed local-graph query from the effect of changing its sampler. It examines global versus local lookup work, state lifetime, representation memory, and sampled-ranking sensitivity on public Friendster and strict-clean Citation2. The PENCIL bridge checks a richer graph-input contract with a frozen random model.
 
-This v0.7.0 revision adds three complete allocation blocks and 24 matched Friendster applications, with original raw records, post-exit provenance, sampled host memory, and progress/termination plots (E25). The standard-library verifier reproduces all three audits and the aggregate byte for byte. E22 CPU controls, E23 repeated training windows and E24 cost-regime analysis remain included. Prior releases and the six v0.5.0 companion assets retain their exact bytes and URLs.
+This v0.8.0 revision adds 36 matched eight-worker application lifetimes on full Friendster and strict-clean Citation2 (E26). Compiled beats native with fresh file-backed conversion in all twelve paired comparisons; native reusing an externally prepared read-only CSR beats compiled in all twelve. The paired-median compiled/native-reuse ratios range from 1.073 to 1.106 across graph/horizon cells. These are fixed-workload, retained-cache measurements, with separate cross-host CPU staging and no native memory-peak claim. Six raw block audits and two separate aggregates reproduce byte for byte using the Python standard library, tested on 3.12.10 and 3.13.12. E25's earlier 24 Friendster W1/W8 applications remain separate; all prior evidence and the six v0.5.0 companion assets retain their bytes and URLs.
 
 ## Download the code
 
-The [v0.7.0 source archive](https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.7.0/lpp_vldb_artifact_v0.7.0.tgz) is 92,596,575 bytes; SHA256:
+The [v0.8.0 source archive](https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.8.0/lpp_vldb_artifact_v0.8.0.tgz) is 100,349,888 bytes; SHA256:
 
-`ab8a1619e850fd3c73283d592ed77273ab0defe5aabd37acb9ec58059cd12c15`
+`92bab6a91a2523eb6f5e1d35485ea0634a2234d601cbb93620462b65be9a716e`
 
 It contains the `artifact/` tree. To unpack it into a new directory, remove that one archive prefix:
 
 ```sh
-mkdir seal-artifact-v0.7
+mkdir seal-artifact-v0.8
 # After downloading and checking the full SHA256 above:
-tar -xzf lpp_vldb_artifact_v0.7.0.tgz --strip-components=1 -C seal-artifact-v0.7
-export ARTIFACT="$PWD/seal-artifact-v0.7"
+tar -xzf lpp_vldb_artifact_v0.8.0.tgz --strip-components=1 -C seal-artifact-v0.8
+export ARTIFACT="$PWD/seal-artifact-v0.8"
 ```
 
-The source archive includes E22, E23 and E25 evidence plus E24 analysis. The six optional companions below retain their v0.5.0 URLs.
+The source archive includes E22, E23, E25 and E26 evidence plus E24 analysis. The six optional companions below retain their v0.5.0 URLs.
 
 ## Start here
 
@@ -31,6 +31,7 @@ Choose the operation you need:
 
 | Goal | Entry point | Compute |
 |---|---|---|
+| Verify the 36 E26 applications | [Two-graph prepared-reuse audit](artifact/extensions/e26/README.txt) | Python standard library; no full graphs or GPU |
 | Verify the 24 E25 applications | [One-command recorded audit](artifact/extensions/e25/README.md#one-command-recorded-verification) | Python standard library; no full graphs or GPU |
 | Check recorded results | [Offline verification](artifact/README.md#verify-recorded-results) | No full graphs or GPU |
 | Acquire public graph inputs | [Public data](artifact/README.md#prepare-public-data) | Linux host with the stated disk/RAM |
@@ -52,7 +53,9 @@ These six archives are reused from their immutable **v0.5.0 download URLs**. The
 | [lpp_public_pencil_instrumented48_raw.tgz](https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_pencil_instrumented48_raw.tgz) | Instrumented consumer diagnostic (E19) | `7ab909e987af900f8ad5f9ea9a559e17e650f78891cb0bc99200a0fdb97fa36c` |
 | [lpp_public_pencil_clean44_raw.tgz](https://github.com/makut/link-prediction-execution-costs-artifact/releases/download/v0.5.0/lpp_public_pencil_clean44_raw.tgz) | Clean PENCIL consumer results (E21) | `708b6f32081d187dbe5e092b6782a36002333c3f8b0c5ff7dcbf20ec48c156b0` |
 
-The E22, E23 and E25 raw archives are included under their `artifact/extensions/*/recorded/` directories. E23 also includes its independently checked final outer-completion and persistence receipts, generated after the raw archive. E25 includes its original post-exit root collection records, all three independently reconstructed audits and the verified aggregate; its fresh-execution admission remains author-bound, while recorded verification is portable. E24 reuses the included E22 archive and the existing 2.1 MB E20 companion; its analysis and plot commands need no full graphs. Set `ARTIFACT` to `artifact/` in a clone or to the root of an unpacked code archive. Whole code-archive checksums are supplied externally by the release catalog.
+The E22, E23, E25 and E26 raw archives are included under their `artifact/extensions/*/recorded/` directories. E23 also includes its independently checked final outer-completion and persistence receipts, generated after the raw archive. E25 includes its original post-exit root collection records, all three independently reconstructed audits and the verified aggregate; its fresh-execution admission remains author-bound, while recorded verification is portable. E24 reuses the included E22 archive and the existing 2.1 MB E20 companion; its analysis and plot commands need no full graphs. Set `ARTIFACT` to `artifact/` in a clone or to the root of an unpacked code archive. Whole code-archive checksums are supplied externally by the release catalog.
+
+The in-archive metadata preserves the actual prepublication creation state. The external catalog, release assets and Git tag identify the published package; no in-archive file claims to authenticate its own containing archive. E26's first source-only notes and pending example are historical. Its current index/catalog, complete raw records, real offline receipts and visual-QA result describe the recorded result. Full fresh lifecycle execution requires a site-specific admission/deployment/collection adapter; offline verification is portable and does not contact the authors' cluster.
 
 ## Interpretation and license
 

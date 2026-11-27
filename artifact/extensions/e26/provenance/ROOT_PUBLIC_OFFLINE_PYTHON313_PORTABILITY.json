@@ -1,0 +1,27 @@
+{
+  "kind": "ROOT_ACTUAL_PUBLIC_E26_OFFLINE_PYTHON313_PORTABILITY",
+  "observed_unix": 1795783807.569879,
+  "actual_child_returncode": 0,
+  "actual_child_wait_returned": true,
+  "argv": [
+    "/opt/homebrew/bin/python3.13",
+    "-B",
+    "-S",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_publication_candidate_v0_5/repository/artifact/extensions/e26/offline_verify_closure.py",
+    "--index",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_publication_candidate_v0_5/repository/artifact/extensions/e26/evidence_index.json",
+    "--index-sha256",
+    "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903",
+    "--out",
+    "/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_closure_controls_20261127_run2/public_offline_roundtrip_all6_python313"
+  ],
+  "launch_monotonic_ns": 1944849124655375,
+  "wait_returned_monotonic_ns": 1944851086118458,
+  "python_version": "Python 3.13.12",
+  "stdout": "{\"status\": \"PASS_COMPLETE_36_APPLICATIONS\", \"verified_replays\": 8, \"out\": \"/Users/m.utushkin/Documents/Codex/2026-11-24/d-x20/work/vldb_closure_controls_20261127_run2/public_offline_roundtrip_all6_python313\"}\n",
+  "stderr": "",
+  "frozen_source_edits": 0,
+  "new_experiments_network_or_cluster_actions": 0,
+  "all_eight_byte_identical_to_recorded": true,
+  "status": "PASS_REAL_PUBLIC_EIGHT_OUTPUT_PORTABILITY"
+}

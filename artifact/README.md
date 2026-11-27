@@ -1,6 +1,6 @@
 # Reproducing the SEAL-style execution study
 
-The v0.7.0 payload adds the actual E25 matched application-lifetime study: three complete allocation blocks, 24 source-bound applications, original raw/provenance/audits and a verified complete-cohort aggregate. [E25 instructions](extensions/e25/README.md) separate recorded verification, rendering and the author-bound fresh-execution boundary. Prior releases and the six immutable companion assets retain their bytes and URLs; whole code-archive identities are supplied by the external release catalog.
+The v0.8.0 payload adds 36 matched application lifetimes on Friendster and strict-clean Citation2 (E26): three fresh allocations per graph, eight workers, compiled/native-fresh/native-reuse paths and two terminated horizons. All six raw audits and two separate aggregates passed real offline byte-identical replay on Python 3.12.10 and 3.13.12. [E26 instructions](extensions/e26/README.txt) explain the complete matrix, timing boundaries, sampled-memory coverage and the site-specific adapter needed for fresh GPU execution. E25's earlier 24 Friendster W1/W8 applications remain separate. Prior releases and the six immutable companion assets retain their bytes and URLs; code-archive identities are external.
 
 This artifact accompanies **Execution Costs and Sampling Semantics in SEAL-Style Link Prediction**. It separates exact local induction, representation memory/sharing, consumer execution and sampling-law sensitivity.
 
@@ -38,7 +38,25 @@ printf '%s  %s\n' \
 
 Linux `sha256sum -c -` is an alternative. [PUBLIC_OBJECT_COMMANDS.json](PUBLIC_OBJECT_COMMANDS.json) maps the paper tables/figures to inputs and aggregation; [PUBLIC_COMMANDS.txt](PUBLIC_COMMANDS.txt) supplies their recorded systems, quality, CPU and PENCIL checks. Quality checks stream scores without loading models; recipes identify separate Python 3.12/NumPy analysis requirements.
 
-### E25 recorded application lifetimes
+### E26 prepared reuse and two-graph application lifetimes
+
+Verify the complete code archive against its external release SHA256 first. Then,
+with a new output directory outside the artifact and no full graph or GPU:
+
+```sh
+python3 -B -S "$ARTIFACT/extensions/e26/offline_verify_closure.py" --index "$ARTIFACT/extensions/e26/evidence_index.json" --index-sha256 "9218f6fcee5cf59c1c5a492c2d7d655a4e6fc35b315916bb451929b32c0ec903" --out "$RESULTS/e26_recorded_verified"
+```
+
+The helper independently reconstructs six block audits and two separate 18-app
+aggregates. The actual recorded and fresh files must match byte for byte.
+[The extension](extensions/e26/README.txt) documents all source/input pins,
+separate one-time CPU staging, the timing figure and exact new-run interfaces.
+Read-only representation reuse changes the observed winner in all 12 matched
+comparisons; this is conditional on the fixed reference-union DGCNN workload,
+retained caches and included observer costs. Application PSS misses phases and
+supports no exact peak or reused-native memory ranking. Old E25 is not pooled.
+
+### Historical E25 recorded application lifetimes
 
 The actual catalog and all three block inputs are bundled. After checking the
 complete code archive against its external release SHA256, run the existing
